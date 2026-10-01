@@ -213,7 +213,7 @@ const DIS = D.diseases, DKEY = Object.fromEntries(DIS.map(d => [d.k, d]));
 const ST = Object.fromEntries(D.states.map(s => [s.k, s]));
 const nf = new Intl.NumberFormat("en-US");
 const fmt = n => nf.format(Math.round(n));
-const fmt1 = n => n >= 100 ? fmt(n) : n >= 10 ? n.toFixed(1) : n.toFixed(2);
+const fmt1 = n => n === 0 ? "0" : n >= 100 ? fmt(n) : n >= 10 ? n.toFixed(1) : n.toFixed(2);
 const short = n => n >= 1e6 ? (n / 1e6).toFixed(n >= 1e7 ? 0 : 1) + "M" : n >= 1e4 ? Math.round(n / 1e3) + "k" : n >= 1e3 ? (n / 1e3).toFixed(1) + "k" : String(n);
 const $ = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -357,7 +357,7 @@ function drawMap() {
     ctx.font = `700 ${fs}px Helvetica Neue,Helvetica,Arial,sans-serif`; ctx.textBaseline = "top";
     ctx.fillStyle = "#55534e"; ctx.textAlign = "left"; ctx.fillText(s.k, x + pad, y + pad);
     ctx.font = `${fs}px Helvetica Neue,Helvetica,Arial,sans-serif`; ctx.textAlign = "right";
-    if (!any) { ctx.fillStyle = "#a9a6a0"; ctx.fillText(dz.length ? "no data" : "", x + tw - pad, y + pad); continue; }
+    if (!any) { ctx.fillStyle = "#a9a6a0"; ctx.fillText(!dz.length ? "" : tw < 56 ? "\u2013" : "no data", x + tw - pad, y + pad); continue; }
     ctx.fillStyle = "#121212"; ctx.fillText(short(total), x + tw - pad, y + pad);
     const top = y + pad + fs + 3;
     drawFigures(ctx, figures(items), x + pad, top, tw - pad * 2, y + th - pad - top, Math.max(3.2, tw * 0.1), "bottom");

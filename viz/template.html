@@ -357,7 +357,7 @@ function drawMap() {
     ctx.font = `700 ${fs}px Helvetica Neue,Helvetica,Arial,sans-serif`; ctx.textBaseline = "top";
     ctx.fillStyle = "#55534e"; ctx.textAlign = "left"; ctx.fillText(s.k, x + pad, y + pad);
     ctx.font = `${fs}px Helvetica Neue,Helvetica,Arial,sans-serif`; ctx.textAlign = "right";
-    if (!any) { ctx.fillStyle = "#a9a6a0"; ctx.fillText(dz.length ? "no data" : "", x + tw - pad, y + pad); continue; }
+    if (!any) { ctx.fillStyle = "#a9a6a0"; ctx.fillText(!dz.length ? "" : tw < 56 ? "\u2013" : "no data", x + tw - pad, y + pad); continue; }
     ctx.fillStyle = "#121212"; ctx.fillText(short(total), x + tw - pad, y + pad);
     const top = y + pad + fs + 3;
     drawFigures(ctx, figures(items), x + pad, top, tw - pad * 2, y + th - pad - top, Math.max(3.2, tw * 0.1), "bottom");
