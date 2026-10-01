@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.idea/workspace.xml
+# raw downloads are re-fetched by scripts/01..07; built data is committed
+data/raw/
