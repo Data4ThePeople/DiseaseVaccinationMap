@@ -565,14 +565,11 @@ function setPlaying(on) {
   if (on) { if (S.year >= D.y1) setYear(D.y0); schedule(); }
 }
 function schedule() {
-  const list = msInScope().filter(m => msYear(m) === S.year);
-  const wait = list.length ? 4200 : 520;
   timer = setTimeout(() => {
     if (!S.playing) return;
-    if (list.length && msIndex < list.length - 1) { msIndex++; renderCard(); return schedule(); }
     if (S.year >= D.y1) return setPlaying(false);
     setYear(S.year + 1); schedule();
-  }, wait);
+  }, 520);
 }
 function setYear(y) { S.year = Math.max(D.y0, Math.min(D.y1, y)); msIndex = 0; $("year").value = S.year; render(); }
 
