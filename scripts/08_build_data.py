@@ -9,7 +9,7 @@ import re
 import pandas as pd
 
 from common import DATA, RAW, STATES
-from project import state_paths  # Albers USA, reused from the BirthRate project
+from project import geometry_paths, state_paths  # Albers USA, reused from the BirthRate project
 
 Y0, Y1 = 1929, 2025
 UNIT = 50  # one figure = this many reported cases per 100,000 residents in a year
@@ -64,7 +64,29 @@ def shapes():
         out[FIPS[fips]] = {"d": d, "box": [round(min(xs) - pad, 2), round(min(ys) - pad, 2),
                                            round(max(xs) - min(xs) + 2 * pad, 2), round(max(ys) - min(ys) + 2 * pad, 2)]}
     assert set(out) == set(STATES), set(STATES) - set(out)
+    names = {g["id"]: g["properties"]["name"] for g in topo["objects"]["counties"]["geometries"]}
+    for fips, d in geometry_paths(topo, precision=2).items():
+        if fips[:2] in FIPS:
+            out[FIPS[fips[:2]]].setdefault("c", {})[fips] = [names[fips], d]
+            nums = [float(v) for v in re.findall(r"-?\d+\.?\d*", d)]
+            xs, ys = nums[0::2], nums[1::2]   # middle of the bounding box, good enough to place a circle
+            out[FIPS[fips[:2]]].setdefault("cc", {})[fips] = [round((min(xs) + max(xs)) / 2, 2), round((min(ys) + max(ys)) / 2, 2)]
     return out
+
+
+def county():
+    mmr = pd.read_csv(DATA / "county_mmr.csv", dtype={"fips": str})
+    M = {}
+    for r in mmr.itertuples():
+        M.setdefault(r.fips, {})[int(r.year)] = r.pct
+    cm = pd.read_csv(DATA / "county_measles.csv", dtype={"fips": str})
+    cm = cm[cm.year.between(Y0, Y1)]
+    K = {}
+    for r in cm.itertuples():
+        K.setdefault(r.fips, {})[int(r.year)] = int(r.cases)
+    meta = pd.read_csv(DATA / "county_mmr_states.csv").fillna("")
+    T = {r.st: {"years": r.years, "unit": r.unit.strip(), "age": r.age, "origin": r.origin, "n": int(r.county_rows)} for r in meta.itertuples()}
+    return M, K, T
 
 
 def main():
@@ -122,8 +144,9 @@ def main():
         seen.add(key)
     ms.sort(key=lambda m: m["date"])
 
+    cmmr, cmeasles, cmeta = county()
     out = {
-        "shapes": shapes(),
+        "shapes": shapes(), "cmmr": cmmr, "cmeasles": cmeasles, "cmeta": cmeta,
         "y0": Y0, "y1": Y1, "unit": UNIT, "diseases": DISEASES, "vaccines": VACCINES,
         "states": [{"k": s, "n": STATES[s], "c": GRID[s][0], "r": GRID[s][1]} for s in sorted(STATES)],
         "pop": P, "income": INC, "cases": C, "src": S, "weeks": W, "vax": V, "milestones": ms,

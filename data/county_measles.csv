@@ -1,0 +1,510 @@
+fips,location_name,year,cases
+00000,"Bear River, Utah",2025,4
+00000,"Bear River, Utah",2026,10
+00000,"Central Region, Virginia",2025,1
+00000,"Central Region, Virginia",2026,155
+00000,"Central, Utah",2025,3
+00000,"Central, Utah",2026,117
+00000,"East Tennessee Region, Tennessee",2026,6
+00000,"Eastern Region, Virginia",2025,1
+00000,"Eastern Region, Virginia",2026,1
+00000,"Mid-Cumberland Region, Tennessee",2025,3
+00000,"Mid-Cumberland Region, Tennessee",2026,1
+00000,"Nashville-Davidson County Region, Tennessee",2025,1
+00000,"Nashville-Davidson County Region, Tennessee",2026,1
+00000,"Northern Region, Virginia",2026,9
+00000,"Northwest Region, Virginia",2025,3
+00000,"Northwest Region, Virginia",2026,6
+00000,"Region 9, Louisiana",2025,1
+00000,"Southeast Health District, Utah",2025,3
+00000,"Southeast Health District, Utah",2026,2
+00000,"Southwest Health District, Utah",2025,155
+00000,"Southwest Health District, Utah",2026,112
+00000,"Tricounty, Utah",2026,80
+00000,"Upper Cumberland Region, Tennessee",2025,4
+00001,"North, Alabama",2025,1
+00006,"Unknown County, California",2025,3
+00006,"Unknown County, California",2026,1
+00013,"Coastal Health District, Georgia",2026,1
+00016,"Unknown County, Idaho",2025,2
+00017,"Metro East , Illinois",2026,1
+00017,"Unknown County, Illinois",2025,2
+00017,"Unknown County, Illinois",2026,16
+00019,"Central, Iowa",2025,2
+00019,"Eastern, Iowa",2025,6
+00019,"HHS District 3, Iowa",2026,9
+00019,"HHS District 4, Iowa",2026,17
+00019,"HHS District 5, Iowa",2026,8
+00019,"HHS District 6, Iowa",2026,4
+00019,"Western, Iowa",2025,1
+00020,"Unknown County, Kansas",2025,20
+00020,"Unknown County, Kansas",2026,3
+00021,"Unknown County, Kentucky",2025,1
+00023,"Unknown County, Maryland",2026,20
+00025,"Unknown County, Massachusetts",2026,1
+00027,"Twin Cities Metro Area, Minnesota",2025,10
+00027,"Unknown County, Minnesota",2025,11
+00027,"Unknown County, Minnesota",2026,18
+00031,"Unknown County, Nebraska",2025,1
+00031,"Unknown County, Nebraska",2026,2
+00034,"Unknown County, New Jersey",2025,3
+00041,"Unknown County, Oregon",2026,54
+00042,"Unknown County, Pennsylvania",2025,1
+00045,"Unknown County, South Carolina",2026,7
+00048,"Unknown County, Texas",2025,1
+02020,"Anchorage, Alaska",2025,3
+02122,"Kenai Peninsula, Alaska",2025,1
+04005,"Coconino, Arizona",2025,1
+04005,"Coconino, Arizona",2026,4
+04013,"Maricopa, Arizona",2026,28
+04015,"Mohave, Arizona",2025,216
+04015,"Mohave, Arizona",2026,69
+04017,"Navajo, Arizona",2025,4
+04019,"Pima, Arizona",2025,1
+04019,"Pima, Arizona",2026,3
+04021,"Pinal, Arizona",2026,18
+04025,"Yavapai, Arizona",2026,1
+05007,"Benton, Arkansas",2025,1
+05045,"Faulkner, Arkansas",2025,6
+05125,"Saline, Arkansas",2025,1
+06013,"Contra Costa, California",2025,1
+06019,"Fresno, California",2025,2
+06029,"Kern, California",2026,2
+06037,"Los Angeles, California",2025,5
+06037,"Los Angeles, California",2026,7
+06055,"Napa, California",2026,1
+06059,"Orange, California",2025,2
+06059,"Orange, California",2026,6
+06061,"Placer, California",2025,1
+06061,"Placer, California",2026,8
+06065,"Riverside, California",2025,1
+06065,"Riverside, California",2026,5
+06067,"Sacramento, California",2025,1
+06067,"Sacramento, California",2026,12
+06073,"San Diego, California",2025,1
+06075,"San Francisco, California",2026,1
+06079,"San Luis Obispo, California",2025,1
+06081,"San Mateo, California",2025,1
+06081,"San Mateo, California",2026,2
+06083,"Santa Barbara, California",2026,1
+06085,"Santa Clara, California",2025,1
+06085,"Santa Clara, California",2026,2
+06089,"Shasta, California",2026,10
+06107,"Tulare, California",2025,2
+06109,"Tuolumne, California",2025,2
+06111,"Ventura, California",2026,1
+06113,"Yolo, California",2025,1
+08001,"Adams, Colorado",2025,4
+08001,"Adams, Colorado",2026,5
+08005,"Arapahoe, Colorado",2025,5
+08005,"Arapahoe, Colorado",2026,1
+08007,"Archuleta, Colorado",2025,1
+08013,"Boulder, Colorado",2025,1
+08014,"Broomfield, Colorado",2026,5
+08029,"Delta, Colorado",2026,1
+08031,"Denver, Colorado",2025,4
+08041,"El Paso, Colorado",2025,4
+08065,"Lake, Colorado",2026,6
+08069,"Larimer, Colorado",2026,1
+08077,"Mesa, Colorado",2025,11
+08083,"Montezuma, Colorado",2025,4
+08101,"Pueblo, Colorado",2025,1
+08109,"Saguache, Colorado",2026,1
+08123,"Weld, Colorado",2025,1
+08123,"Weld, Colorado",2026,5
+09003,"Hartford, Connecticut",2026,3
+09170,"South Central Connecticut, Connecticut",2025,1
+10001,"Kent, Delaware",2026,23
+11001,"Washington, District of Columbia",2025,1
+11001,"Washington, District of Columbia",2026,1
+12001,"Alachua, Florida",2026,2
+12011,"Broward, Florida",2025,2
+12011,"Broward, Florida",2026,5
+12021,"Collier, Florida",2026,99
+12031,"Duval, Florida",2025,1
+12031,"Duval, Florida",2026,7
+12033,"Escambia, Florida",2026,5
+12057,"Hillsborough, Florida",2026,3
+12071,"Lee, Florida",2026,3
+12073,"Leon, Florida",2025,2
+12081,"Manatee, Florida",2026,3
+12086,"Miami-Dade, Florida",2025,1
+12086,"Miami-Dade, Florida",2026,1
+12091,"Okaloosa, Florida",2025,1
+12095,"Orange, Florida",2026,3
+12097,"Osceola, Florida",2026,1
+12099,"Palm Beach, Florida",2026,3
+12101,"Pasco, Florida",2026,3
+12103,"Pinellas, Florida",2026,6
+12105,"Polk, Florida",2026,1
+12109,"St. Johns, Florida",2026,3
+13029,"Bryan, Georgia",2026,1
+13121,"Fulton, Georgia",2025,10
+13121,"Fulton, Georgia",2026,14
+15003,"Honolulu, Hawaii",2025,2
+15003,"Honolulu, Hawaii",2026,1
+16017,"Bonner, Idaho",2025,1
+16019,"Bonneville, Idaho",2025,5
+16021,"Boundary, Idaho",2025,6
+16027,"Canyon, Idaho",2026,6
+16055,"Kootenai, Idaho",2025,1
+16055,"Kootenai, Idaho",2026,1
+16065,"Madison, Idaho",2026,3
+16081,"Teton, Idaho",2026,1
+17031,"Cook, Illinois",2025,8
+17041,"Douglas, Illinois",2026,4
+17089,"Kane, Illinois",2026,2
+17199,"Williamson, Illinois",2025,4
+18001,"Adams, Indiana",2026,2
+18003,"Allen, Indiana",2025,8
+18003,"Allen, Indiana",2026,1
+18089,"Lake, Indiana",2025,2
+18121,"Parke, Indiana",2026,3
+18133,"Putnam, Indiana",2025,1
+18135,"Randolph, Indiana",2026,1
+18155,"Switzerland, Indiana",2026,6
+18177,"Wayne, Indiana",2026,6
+20069,"Gray, Kansas",2025,29
+20081,"Haskell, Kansas",2025,19
+20097,"Kiowa, Kansas",2025,6
+20145,"Pawnee, Kansas",2025,7
+20189,"Stevens, Kansas",2025,10
+21009,"Barren, Kentucky",2026,5
+21033,"Caldwell, Kentucky",2026,2
+21041,"Carroll, Kentucky",2026,5
+21047,"Christian, Kentucky",2026,27
+21067,"Fayette, Kentucky",2025,6
+21073,"Franklin, Kentucky",2025,1
+21111,"Jefferson, Kentucky",2025,2
+21113,"Jessamine, Kentucky",2026,4
+21135,"Lewis, Kentucky",2026,2
+21187,"Owen, Kentucky",2026,2
+21219,"Todd, Kentucky",2025,1
+21219,"Todd, Kentucky",2026,1
+21221,"Trigg, Kentucky",2026,13
+21223,"Trimble, Kentucky",2026,1
+21229,"Washington, Kentucky",2026,5
+21239,"Woodford, Kentucky",2025,3
+22071,"Region 1, Louisiana",2025,2
+22071,"Region 1, Louisiana",2026,1
+23019,"Penobscot, Maine",2026,5
+23025,"Somerset, Maine",2026,1
+24003,"Anne Arundel, Maryland",2026,2
+24013,"Carroll, Maryland",2026,8
+24015,"Cecil, Maryland",2026,5
+24017,"Charles, Maryland",2026,1
+24027,"Howard, Maryland",2025,1
+24033,"Prince George's, Maryland",2025,2
+24033,"Prince George's, Maryland",2026,1
+24037,"St. Mary's, Maryland",2026,13
+24510,"Baltimore, Maryland",2026,1
+25025,"Greater Boston, Massachusetts",2026,1
+26005,"Allegan, Michigan",2025,1
+26055,"Grand Traverse, Michigan",2025,4
+26065,"Ingham, Michigan",2025,1
+26081,"Kent, Michigan",2025,4
+26099,"Macomb, Michigan",2025,2
+26099,"Macomb, Michigan",2026,2
+26103,"Marquette, Michigan",2025,2
+26113,"Missaukee, Michigan",2026,1
+26115,"Monroe, Michigan",2026,1
+26117,"Montcalm, Michigan",2025,4
+26121,"Muskegon, Michigan",2025,3
+26125,"Oakland, Michigan",2025,2
+26133,"Osceola, Michigan",2025,7
+26133,"Osceola, Michigan",2026,1
+26139,"Ottawa, Michigan",2026,4
+26157,"Tuscola, Michigan",2026,1
+26161,"Washtenaw, Michigan",2026,7
+27037,"Dakota, Minnesota",2025,1
+27053,"Hennepin, Minnesota",2025,2
+27109,"Olmsted, Minnesota",2025,1
+27163,"Washington, Minnesota",2025,1
+29039,"Cedar, Missouri",2025,5
+29095,"Jackson, Missouri",2026,1
+29143,"New Madrid, Missouri",2025,1
+29189,"St. Louis, Missouri",2026,1
+29213,"Taney, Missouri",2025,1
+30013,"Cascade, Montana",2025,1
+30029,"Flathead, Montana",2025,2
+30031,"Gallatin, Montana",2025,23
+30041,"Hill, Montana",2025,4
+30049,"Lewis and Clark, Montana",2025,2
+30049,"Lewis and Clark, Montana",2026,5
+30111,"Yellowstone, Montana",2025,4
+31109,"Lancaster, Nebraska",2026,1
+31141,"Platte, Nebraska",2025,1
+31161,"Sheridan, Nebraska",2025,1
+32003,"Clark, Nevada",2025,1
+32031,"Washoe, Nevada",2025,1
+34003,"Bergen, New Jersey",2025,4
+34017,"Hudson, New Jersey",2025,2
+34017,"Hudson, New Jersey",2026,1
+34029,"Ocean, New Jersey",2025,1
+34031,"Passaic, New Jersey",2025,1
+35005,"Chaves, New Mexico",2025,1
+35009,"Curry, New Mexico",2025,1
+35013,"Dona Ana, New Mexico",2025,2
+35013,"Dona Ana, New Mexico",2026,3
+35015,"Eddy, New Mexico",2025,3
+35015,"Eddy, New Mexico",2026,1
+35023,"Hidalgo, New Mexico",2026,2
+35025,"Lea, New Mexico",2025,67
+35029,"Luna, New Mexico",2025,14
+35029,"Luna, New Mexico",2026,12
+35043,"Sandoval, New Mexico",2025,6
+35045,"San Juan, New Mexico",2025,1
+35049,"Santa Fe, New Mexico",2025,5
+35061,"Valencia, New Mexico",2026,1
+36003,"Allegany, New York",2026,6
+36011,"Cayuga, New York",2026,1
+36013,"Chautauqua, New York",2026,2
+36015,"Chemung, New York",2026,1
+36017,"Chenango, New York",2026,1
+36023,"Cortland, New York",2026,2
+36029,"Erie, New York",2026,2
+36031,"Essex, New York",2026,1
+36053,"Madison, New York",2026,1
+36057,"Montgomery, New York",2026,2
+36059,"Nassau, New York",2026,1
+36061,"New York City, New York",2025,20
+36061,"New York City, New York",2026,7
+36069,"Ontario, New York",2025,1
+36069,"Ontario, New York",2026,3
+36071,"Orange, New York",2025,4
+36077,"Otsego, New York",2026,8
+36079,"Putnam, New York",2025,1
+36087,"Rockland, New York",2025,21
+36087,"Rockland, New York",2026,4
+36099,"Seneca, New York",2026,10
+36101,"Steuben, New York",2026,10
+36103,"Suffolk, New York",2025,1
+36107,"Tioga, New York",2026,1
+36117,"Wayne, New York",2026,5
+36123,"Yates, New York",2026,1
+37021,"Buncombe, North Carolina",2026,7
+37023,"Burke, North Carolina",2026,1
+37025,"Cabarrus, North Carolina",2026,2
+37081,"Guilford, North Carolina",2025,1
+37101,"Johnston, North Carolina",2026,1
+37109,"Lincoln, North Carolina",2026,1
+37119,"Mecklenburg, North Carolina",2026,3
+37127,"Nash, North Carolina",2026,1
+37149,"Polk, North Carolina",2025,1
+37149,"Polk, North Carolina",2026,4
+37161,"Rutherford, North Carolina",2025,1
+37179,"Union, North Carolina",2026,2
+38013,"Burke, North Dakota",2025,1
+38017,"Cass, North Dakota",2025,7
+38017,"Cass, North Dakota",2026,1
+38025,"Dunn, North Dakota",2026,1
+38035,"Grand Forks, North Dakota",2025,10
+38035,"Grand Forks, North Dakota",2026,4
+38067,"Pembina, North Dakota",2026,23
+38073,"Ransom, North Dakota",2026,6
+38097,"Traill, North Dakota",2026,1
+38099,"Walsh, North Dakota",2026,1
+38105,"Williams, North Dakota",2025,18
+38105,"Williams, North Dakota",2026,1
+39003,"Allen, Ohio",2025,1
+39007,"Ashtabula, Ohio",2025,16
+39007,"Ashtabula, Ohio",2026,32
+39035,"Cuyahoga, Ohio",2025,2
+39035,"Cuyahoga, Ohio",2026,3
+39039,"Defiance, Ohio",2025,1
+39049,"Franklin, Ohio",2025,7
+39049,"Franklin, Ohio",2026,7
+39053,"Gallia, Ohio",2026,3
+39055,"Geauga, Ohio",2026,45
+39067,"Harrison, Ohio",2026,11
+39075,"Holmes, Ohio",2025,1
+39075,"Holmes, Ohio",2026,9
+39083,"Knox, Ohio",2025,14
+39083,"Knox, Ohio",2026,5
+39105,"Meigs, Ohio",2026,4
+39115,"Morgan, Ohio",2026,3
+39117,"Morrow, Ohio",2026,8
+39119,"Muskingum, Ohio",2025,3
+39123,"Ottawa, Ohio",2026,1
+39133,"Portage, Ohio",2026,1
+39155,"Trumbull, Ohio",2026,8
+39157,"Tuscarawas, Ohio",2026,13
+39169,"Wayne, Ohio",2026,44
+40109,"Unknown County, Oklahoma",2025,17
+40109,"Unknown County, Oklahoma",2026,1
+41005,"Clackamas, Oregon",2026,2
+41043,"Linn, Oregon",2026,2
+41051,"Multnomah, Oregon",2025,1
+42001,"Adams, Pennsylvania",2026,1
+42005,"Armstrong, Pennsylvania",2026,2
+42009,"Bedford, Pennsylvania",2026,2
+42011,"Berks, Pennsylvania",2026,5
+42015,"Bradford, Pennsylvania",2026,1
+42017,"Bucks, Pennsylvania",2025,1
+42021,"Cambria, Pennsylvania",2026,1
+42027,"Centre, Pennsylvania",2026,19
+42029,"Chester, Pennsylvania",2026,82
+42031,"Clarion, Pennsylvania",2026,8
+42033,"Clearfield, Pennsylvania",2026,26
+42035,"Clinton, Pennsylvania",2026,6
+42037,"Columbia, Pennsylvania",2026,4
+42041,"Cumberland, Pennsylvania",2025,2
+42041,"Cumberland, Pennsylvania",2026,1
+42043,"Dauphin, Pennsylvania",2026,7
+42047,"Elk, Pennsylvania",2026,6
+42049,"Erie, Pennsylvania",2025,8
+42055,"Franklin, Pennsylvania",2026,4
+42061,"Huntingdon, Pennsylvania",2026,3
+42063,"Indiana, Pennsylvania",2026,14
+42065,"Jefferson, Pennsylvania",2026,41
+42071,"Lancaster, Pennsylvania",2025,1
+42071,"Lancaster, Pennsylvania",2026,359
+42075,"Lebanon, Pennsylvania",2026,21
+42077,"Lehigh, Pennsylvania",2026,2
+42081,"Lycoming, Pennsylvania",2026,4
+42083,"McKean, Pennsylvania",2026,9
+42085,"Mercer, Pennsylvania",2026,18
+42087,"Mifflin, Pennsylvania",2026,102
+42091,"Montgomery, Pennsylvania",2025,1
+42091,"Montgomery, Pennsylvania",2026,3
+42093,"Montour, Pennsylvania",2026,3
+42097,"Northumberland, Pennsylvania",2026,9
+42099,"Perry, Pennsylvania",2026,4
+42101,"Philadelphia, Pennsylvania",2025,2
+42105,"Potter, Pennsylvania",2026,6
+42107,"Schuylkill, Pennsylvania",2026,1
+42109,"Snyder, Pennsylvania",2026,42
+42111,"Somerset, Pennsylvania",2026,14
+42119,"Union, Pennsylvania",2026,17
+42121,"Venango, Pennsylvania",2026,1
+42123,"Warren, Pennsylvania",2026,8
+42129,"Westmoreland, Pennsylvania",2026,2
+42133,"York, Pennsylvania",2026,32
+44007,"Providence, Rhode Island",2025,1
+44007,"Providence, Rhode Island",2026,2
+45013,"Beaufort, South Carolina",2026,1
+45021,"Cherokee, South Carolina",2026,36
+45045,"Greenville, South Carolina",2026,8
+45049,"Hampton, South Carolina",2026,1
+45077,"Pickens, South Carolina",2026,6
+45081,"Saluda, South Carolina",2026,2
+45083,"Spartanburg, South Carolina",2025,330
+45083,"Spartanburg, South Carolina",2026,610
+45085,"Sumter, South Carolina",2025,3
+46011,"Brookings, South Dakota",2026,3
+46013,"Brown, South Dakota",2026,1
+46019,"Butte, South Dakota",2025,4
+46045,"Edmunds, South Dakota",2026,1
+46051,"Grant, South Dakota",2026,6
+46083,"Lincoln, South Dakota",2025,8
+46093,"Meade, South Dakota",2025,2
+46103,"Pennington, South Dakota",2025,2
+48003,"Andrews, Texas",2025,3
+48013,"Atascosa, Texas",2025,1
+48017,"Bailey, Texas",2025,2
+48019,"Bandera, Texas",2026,5
+48027,"Bell, Texas",2025,1
+48029,"Bexar, Texas",2025,2
+48029,"Bexar, Texas",2026,1
+48033,"Borden, Texas",2025,1
+48039,"Brazoria, Texas",2025,1
+48043,"Brewster, Texas",2025,1
+48049,"Brown, Texas",2025,1
+48065,"Carson, Texas",2025,1
+48079,"Cochran, Texas",2025,14
+48085,"Collin, Texas",2025,4
+48111,"Dallam, Texas",2025,7
+48113,"Dallas, Texas",2025,1
+48113,"Dallas, Texas",2026,1
+48115,"Dawson, Texas",2025,26
+48121,"Denton, Texas",2025,2
+48133,"Eastland, Texas",2025,2
+48135,"Ector, Texas",2025,12
+48141,"El Paso, Texas",2025,61
+48141,"El Paso, Texas",2026,24
+48143,"Erath, Texas",2025,1
+48147,"Fannin, Texas",2025,4
+48157,"Fort Bend, Texas",2025,1
+48163,"Frio, Texas",2026,2
+48165,"Gaines, Texas",2025,414
+48169,"Garza, Texas",2025,2
+48189,"Hale, Texas",2025,5
+48197,"Hardeman, Texas",2025,1
+48201,"Harris, Texas",2025,5
+48201,"Harris, Texas",2026,7
+48203,"Harrison, Texas",2025,1
+48209,"Hays, Texas",2025,1
+48219,"Hockley, Texas",2025,7
+48229,"Hudspeth, Texas",2026,136
+48259,"Kendall, Texas",2026,1
+48277,"Lamar, Texas",2025,28
+48279,"Lamb, Texas",2025,1
+48303,"Lubbock, Texas",2025,52
+48303,"Lubbock, Texas",2026,1
+48305,"Lynn, Texas",2025,2
+48309,"McLennan, Texas",2025,9
+48317,"Martin, Texas",2025,3
+48329,"Midland, Texas",2025,7
+48339,"Montgomery, Texas",2026,4
+48369,"Parmer, Texas",2025,5
+48375,"Potter, Texas",2025,1
+48375,"Potter, Texas",2026,1
+48379,"Rains, Texas",2025,1
+48381,"Randall, Texas",2025,3
+48381,"Randall, Texas",2026,1
+48389,"Reeves, Texas",2025,2
+48397,"Rockwall, Texas",2025,2
+48397,"Rockwall, Texas",2026,6
+48415,"Scurry, Texas",2025,1
+48417,"Shackelford, Texas",2025,1
+48439,"Tarrant, Texas",2025,4
+48445,"Terry, Texas",2025,60
+48453,"Travis, Texas",2025,2
+48453,"Travis, Texas",2026,1
+48459,"Upshur, Texas",2025,5
+48459,"Upshur, Texas",2026,1
+48491,"Williamson, Texas",2025,8
+48501,"Yoakum, Texas",2025,20
+49011,"Davis, Utah",2025,2
+49011,"Davis, Utah",2026,13
+49035,"Salt Lake, Utah",2025,5
+49035,"Salt Lake, Utah",2026,61
+49037,"San Juan, Utah",2026,3
+49043,"Summit, Utah",2026,5
+49045,"Tooele, Utah",2026,19
+49049,"Utah, Utah",2025,16
+49049,"Utah, Utah",2026,100
+49051,"Wasatch, Utah",2025,9
+49051,"Wasatch, Utah",2026,3
+49057,"Weber-Morgan, Utah",2026,2
+50015,"Lamoille, Vermont",2025,1
+50023,"Washington, Vermont",2026,1
+53011,"Clark, Washington",2026,21
+53025,"Grant, Washington",2026,2
+53033,"King, Washington",2025,7
+53033,"King, Washington",2026,3
+53037,"Kittitas, Washington",2026,7
+53061,"Snohomish, Washington",2025,2
+53061,"Snohomish, Washington",2026,14
+53063,"Spokane, Washington",2025,1
+53063,"Spokane, Washington",2026,1
+53065,"Stevens, Washington",2026,3
+53071,"Walla Walla, Washington",2026,7
+53073,"Whatcom, Washington",2025,2
+54001,"Barbour, West Virginia",2026,1
+55017,"Chippewa, Wisconsin",2026,1
+55025,"Dane, Wisconsin",2026,1
+55043,"Grant, Wisconsin",2026,21
+55049,"Iowa, Wisconsin",2026,59
+55065,"Lafayette, Wisconsin",2026,79
+55073,"Marathon, Wisconsin",2026,1
+55083,"Oconto, Wisconsin",2025,36
+55123,"Vernon, Wisconsin",2026,2
+55133,"Waukesha, Wisconsin",2026,1
+56007,"Carbon, Wyoming",2025,7
+56013,"Fremont, Wyoming",2025,5
+56013,"Fremont, Wyoming",2026,1
+56025,"Natrona, Wyoming",2025,1
+56027,"Niobrara, Wyoming",2025,1
+56029,"Park, Wyoming",2025,1
+56039,"Teton, Wyoming",2026,5
