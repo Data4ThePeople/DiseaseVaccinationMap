@@ -1,6 +1,6 @@
 # Status
 
-Project: infectious-disease-map (folder: PythonProject1)
+Project: DiseaseVaccinationMap (folder: PythonProject1 until the rename below)
 Process: ~/.claude/d4tp-process/PROCESS.md
 
 ## Current
@@ -41,3 +41,6 @@ None.
   awkward milestone headlines, remaining 47 states of milestones.
 - 2026-10-01 Eric: keep polio as the fifth disease. Milestones for the other
   47 states and DC started, one file per state in `data/milestones_states/`.
+- 2026-10-01 Renamed to DiseaseVaccinationMap. GitHub repo renamed
+  (`Data4ThePeople/DiseaseVaccinationMap`). The local folder is renamed once
+  the milestone research writing into it has finished.
