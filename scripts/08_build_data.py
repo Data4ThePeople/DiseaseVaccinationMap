@@ -207,10 +207,16 @@ def main():
             L.setdefault(LIC[key][0], []).append([int(year), LIC[key][1]])
 
     ms = []
-    for name in ("milestones_national.json", "milestones_pilot_states.json", "milestones_states.json"):
-        p = DATA / name
+    files = [DATA / "milestones_national.json", DATA / "milestones_pilot_states.json"] + sorted((DATA / "milestones_states").glob("??.json"))
+    for p in files:
         if p.exists():
-            ms += json.loads(p.read_text())
+            items = json.loads(p.read_text())
+            if p.parent.name == "milestones_states":
+                assert all(m["scope"] == p.stem for m in items), f"{p.name}: scope does not match the file name"
+            ms += items
+    need = {"date", "scope", "diseases", "headline", "source", "url", "kind", "blurb"}
+    for m in ms:
+        assert need <= set(m) and (m["scope"] == "US" or m["scope"] in STATES), m.get("headline")
     seen = set()
     for m in ms:
         key = (m["scope"], m["date"], m["headline"])

@@ -39,3 +39,5 @@ None.
   check (`data/COVERAGE.md`) and tie-out (`data/TIEOUT.md`, all passed) run.
   Open with Eric: fifth disease, county data license, Ballotpedia terms,
   awkward milestone headlines, remaining 47 states of milestones.
+- 2026-10-01 Eric: keep polio as the fifth disease. Milestones for the other
+  47 states and DC started, one file per state in `data/milestones_states/`.
