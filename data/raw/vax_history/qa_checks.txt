@@ -1,0 +1,171 @@
+QA log written by scripts/04b_fetch_vax_history.py. Do not edit by hand.
+
+== 1. CDC table by state against CDC table by state and urban area (same survey year)
+1995: 208 cells, 0 differ
+1996: 208 cells, 0 differ
+1997: 208 cells, 0 differ
+1998: 208 cells, 0 differ
+1999: 208 cells, 0 differ
+2000: 208 cells, 0 differ
+2001: 208 cells, 0 differ
+2002: 208 cells, 0 differ
+2003: 208 cells, 0 differ
+2004: 208 cells, 0 differ
+2005: 156 cells, 0 differ
+2006: 156 cells, 0 differ
+2007: 156 cells, 0 differ
+2008: 208 cells, 0 differ
+2009: 260 cells, 0 differ
+2010: 260 cells, 0 differ
+2011: 260 cells, 0 differ
+2012: 260 cells, 0 differ
+2013: 260 cells, 0 differ
+2014: 260 cells, 0 differ
+
+== 2. PDF extraction check: user's guide Table F.7 against the MMWR state table (MMR 1+ and DTaP 4+, 52 areas each)
+2015: 104 cells compared, 0 differ
+2017: 104 cells compared, 0 differ
+2016: no second state table obtained, Table F.7 stands alone (US row checked in sections 4 and 5)
+
+== 3. Range and completeness
+estimates outside 0-100: 0
+CI half-widths outside 0-25: 0
+estimates outside their own CI range: 0
+cells the publisher left without a number: 1
+      1996 Rhode Island dtp_3: cell is empty in the source table
+state cells with CI half-width above 10 points (CDC calls these possibly unreliable): 2
+      2013 Georgia hepa_2 58.0±10.1
+      2013 Virginia hepa_2 48.0±10.8
+non-hepatitis-A estimates below 65: 0
+duplicate year/state/vaccine rows: 0
+states (of 51, counting DC) with an estimate:
+vaccine  mmr_1  dtp_4  dtp_3  polio_3  hepa_2
+year                                         
+1995        51     51     51       51       0
+1996        51     51     50       51       0
+1997        51     51     51       51       0
+1998        51     51     51       51       0
+1999        51     51     51       51       0
+2000        51     51     51       51       0
+2001        51     51     51       51       0
+2002        51     51     51       51       0
+2003        51     51     51       51       0
+2004        51     51     51       51       0
+2005        51     51      0       51       0
+2006        51     51      0       51       0
+2007        51     51      0       51       0
+2008        51     51      0       51      51
+2009        51     51     51       51      51
+2010        51     51     51       51      51
+2011        51     51     51       51      51
+2012        51     51     51       51      51
+2013        51     51     51       51      51
+2014        51     51     51       51      51
+2015        51     51      0       51      51
+2016        51     51      0       51       0
+2017        51     51      0       51      51
+United States row:
+vaccine  mmr_1  dtp_4  dtp_3  polio_3  hepa_2
+year                                         
+1995      89.8   78.4   94.5     87.8     NaN
+1996      90.6   81.1   94.9     91.0     NaN
+1997      90.4   81.5   95.4     90.7     NaN
+1998      92.0   83.9   95.6     90.8     NaN
+1999      91.5   83.3   95.9     89.6     NaN
+2000      90.5   81.7   94.1     89.5     NaN
+2001      91.4   82.1   94.3     89.4     NaN
+2002      91.6   81.6   94.9     90.2     NaN
+2003      93.0   84.8   96.0     91.6     NaN
+2004      93.0   85.5   95.9     91.6     NaN
+2005      91.5   85.7   96.1     91.7     NaN
+2006      92.3   85.2   95.8     92.8     NaN
+2007      92.3   84.5   95.5     92.6     NaN
+2008      92.1   84.6   96.2     93.6    40.4
+2009      90.0   83.9   95.0     92.8    46.6
+2010      91.5   84.4   95.0     93.3    49.7
+2011      91.6   84.6   95.5     93.9    52.2
+2012      90.8   82.5   94.3     92.8    53.0
+2013      91.9   83.1   94.1     92.7    54.7
+2014      91.5   84.2   94.7     93.3    57.5
+2015      91.9   84.6   95.0     93.7    59.6
+2016      91.1   83.4   93.7     91.9    60.6
+2017      91.5   83.2   94.0     92.7    59.7
+state 95% CI half-width, all five vaccines pooled (min, median, max):
+      min  50%   max
+year                
+1995  1.2  4.6   8.4
+1996  0.9  3.7   6.8
+1997  0.6  3.4   6.6
+1998  0.9  3.3   6.0
+1999  0.7  3.4   5.7
+2000  1.2  3.5   5.9
+2001  1.1  3.4   6.5
+2002  0.5  3.7   7.2
+2003  1.0  3.6   7.1
+2004  0.6  3.6   6.5
+2005  1.6  4.2   8.7
+2006  1.8  4.0   8.8
+2007  1.7  4.2   7.5
+2008  0.6  4.6   9.0
+2009  0.9  4.3   9.8
+2010  0.7  4.0   8.2
+2011  1.1  4.5   9.7
+2012  0.9  4.4   8.6
+2013  1.5  4.7  10.8
+2014  1.5  5.0   9.8
+2015  1.8  4.9   8.3
+2016  0.6  4.5   7.2
+2017  1.9  4.4   7.6
+
+== 4. United States row against the survey's own national series (2017 user's guide, Table G.4)
+69 cells compared, 1 differ
+      2007 mmr_1: table 92.3, G.4 93.2
+
+== 5. United States row against the national table printed in MMWR
+1995 dtp_3    MMWR notice on 1998, Table 1: 94.7   our table: 94.5   differs by -0.2
+1995 dtp_4    MMWR notice on 1998, Table 1: 78.5   our table: 78.4   differs by -0.1
+1995 mcv_1    MMWR notice on 1998, Table 1: 89.9   our table: 89.8   differs by -0.1
+1995 polio_3  MMWR notice on 1998, Table 1: 87.9   our table: 87.8   differs by -0.1
+1996 dtp_3    MMWR notice on 1998, Table 1: 95.0   our table: 94.9   differs by -0.1
+1996 dtp_4    MMWR notice on 1998, Table 1: 81.1   our table: 81.1   same
+1996 mcv_1    MMWR notice on 1998, Table 1: 90.7   our table: 90.6   differs by -0.1
+1996 polio_3  MMWR notice on 1998, Table 1: 91.1   our table: 91.0   differs by -0.1
+1997 dtp_3    MMWR notice on 1998, Table 1: 95.5   our table: 95.4   differs by -0.1
+1997 dtp_4    MMWR notice on 1998, Table 1: 81.5   our table: 81.5   same
+1997 mcv_1    MMWR notice on 1998, Table 1: 90.5   our table: 90.4   differs by -0.1
+1997 polio_3  MMWR notice on 1998, Table 1: 90.8   our table: 90.7   differs by -0.1
+1998 dtp_3    MMWR notice on 1998, Table 1: 95.6   our table: 95.6   same
+1998 dtp_4    MMWR notice on 1998, Table 1: 83.9   our table: 83.9   same
+1998 mcv_1    MMWR notice on 1998, Table 1: 92.1   our table: 92.0   differs by -0.1
+1998 polio_3  MMWR notice on 1998, Table 1: 90.8   our table: 90.8   same
+2004-2017 (MMWR reports on 2008, 2012 and 2017, Table 1): 66 cells compared, 0 differ
+1997-2003: the MMWR national tables are images (mmwr_nis2001_table1.gif, mmwr_nis2003_table1.gif); read by eye, see NOTES.md
+
+== 6. Before 1995: Simpson et al. Table 1 (children 1-4, USIS) against Health, United States
+USIS, 1-4 years: dtp_3 1962-1985 (24), measles 1964-1985 (22), mumps 1973-1985 (13), polio_3 1959-1985 (27), rubella 1970-1985 (16)
+USIS, 24-35 months: dtp_3 1979-1985 (7), measles 1979-1985 (7), mumps 1979-1985 (7), polio_3 1979-1985 (7), rubella 1979-1985 (7)
+NHIS, 19-35 months: dtp_3 1992-1994 (3), measles_containing 1992-1994 (3), polio_3 1992-1994 (3)
+NHIS, 24-35 months: dtp_3 1991-1991 (1), measles 1991-1991 (1), polio_3 1991-1991 (1)
+Health US 1986 Table 34, Total column (1970, 1976, 1983-85): 24 cells read, 23 equal, 1 differ
+      (1970, 'polio_3'): Simpson 65.9, Health US 1986 77.5
+Health US 1978 Table 36, measles 1970-76: 7 of 7 Simpson values present in the page's OCR text
+Health US 1978 Table 36, rubella 1970-76: 7 of 7 Simpson values present in the page's OCR text
+Health US 1978 Table 36, dtp_3 1970-76: 7 of 7 Simpson values present in the page's OCR text
+Health US 1978 Table 36, polio_3 1970-76: 7 of 7 Simpson values present in the page's OCR text
+Health US 1978 Table 36, mumps 1970-76: 3 of 4 Simpson values present in the page's OCR text   not found: ['48.3']
+NHIS 1992-93: Simpson Table 2 against Health US 1995 Table 54: 6 cells, 0 differ 
+
+== 7. Licensure: do the sources agree on the year?
+polio_inactivated_salk: [1955] from 2 source(s)
+polio_oral_sabin: [1961] from 1 source(s)
+polio_oral_sabin_trivalent: [1963] from 1 source(s)
+measles: [1963] from 2 source(s)
+mumps: [1967] from 2 source(s)
+rubella: [1969] from 2 source(s)
+mmr_combined: [1971] from 1 source(s)
+pertussis_whole_cell: [1914] from 1 source(s)
+dtp_whole_cell: [1948] from 1 source(s)
+dtap_acellular: [1991] from 1 source(s)
+dtap_acellular_infants: [1996] from 1 source(s)
+hepatitis_a: [1995] from 3 source(s)
+diphtheria_toxoid: [1923] from 1 source(s)

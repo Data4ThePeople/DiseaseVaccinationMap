@@ -89,6 +89,66 @@ def county():
     return M, K, T
 
 
+def kpis(years):
+    """State indicators for the drill-down. Each is one published series per year; where a publisher
+    printed a year twice after a survey redesign, the version that matches the later years is used."""
+    idx = {y: i for i, y in enumerate(years)}
+    k = pd.read_csv(RAW / "kpi" / "kpi_state_year.csv", dtype={"year": int})
+    k = k[k.state.isin(STATES) & k.year.between(Y0, Y1) & k.value.notna()]
+
+    def series(name, variants):
+        """variants: list of (variant, first_year, last_year, label) in order; first match for a year wins."""
+        vals = {s: [None] * len(years) for s in STATES}
+        labels = [None] * len(years)
+        for variant, a, b, label in variants:
+            x = k[(k.series == name) & (k.variant == variant) & k.year.between(a, b)]
+            assert not x.duplicated(["state", "year"]).any()
+            for r in x.itertuples():
+                if vals[r.state][idx[r.year]] is None:
+                    vals[r.state][idx[r.year]] = round(float(r.value), 1)
+                    labels[idx[r.year]] = labels[idx[r.year]] or label
+        return vals, labels
+
+    out = []
+    inc = [("2025_dollars", 1984, 2025, None), ("2025_dollars__2013_redesigned_income_questions", 2013, 2013, None),
+           ("2025_dollars__2017_updated_processing_system", 2017, 2017, None)]
+    v, _ = series("median_household_income", inc)
+    out.append({"label": "Median household income, in 2025 dollars (Census Bureau survey)", "type": "dollars", "values": v})
+    pov = [("cps_asec", 1980, 2025, None), ("cps_asec__2013_redesigned_income_questions", 2013, 2013, None),
+           ("cps_asec__2017_updated_processing_system", 2017, 2017, None)]
+    v, _ = series("poverty_rate", pov)
+    out.append({"label": "Residents below the poverty line (Census Bureau survey)", "type": "pct", "values": v})
+    v, lab = series("bachelors_or_higher_25plus", [
+        ("acs_1yr", 2005, 2025, "Adults 25 and older with a bachelor's degree or more (American Community Survey)"),
+        ("decennial_census", 1940, 2000, "Adults 25 and older with a bachelor's degree or more (census, every ten years)")])
+    out.append({"label": "Adults 25 and older with a bachelor's degree or more (measured in census years until 2005)", "type": "pct", "values": v, "labels": lab})
+    v, lab = series("uninsured_rate", [
+        ("acs_1yr_HIC4", 2008, 2025, "Residents without health insurance (American Community Survey)"),
+        ("cps_asec_HIB4", 2006, 2007, "Residents without health insurance (Current Population Survey, revised series)"),
+        ("cps_asec_original_HI4", 1987, 2005, "Residents without health insurance (Current Population Survey, original series)"),
+        ("cps_asec_original_HI4__1999_before_verification_questions", 1999, 1999, "Residents without health insurance (Current Population Survey, original series)"),
+        ("cps_asec_original_HI4__2004_as_first_published", 2004, 2004, "Residents without health insurance (Current Population Survey, original series)")])
+    out.append({"label": "Residents without health insurance (measured from 1987; the survey changes in 2006 and 2008)", "type": "pct", "values": v, "labels": lab})
+    parts = {}
+    for key in ("manufacturing", "government", "farm"):
+        parts[key], lab = series("employment_share_" + key, [("NAICS", 2001, 2022, "naics"), ("SIC", 1969, 2000, "sic")])
+    jobs = {s: [None if parts["manufacturing"][s][i] is None or parts["government"][s][i] is None or parts["farm"][s][i] is None
+                else " / ".join(f"{parts[key][s][i]:.0f}%" for key in ("manufacturing", "government", "farm"))
+                for i in range(len(years))] for s in STATES}
+    out.append({"label": "Share of jobs in manufacturing / government / farming (BEA, 1969 to 2022; industry classes changed in 2001)", "type": "text", "values": jobs})
+
+    pc = pd.read_csv(RAW / "kpi" / "party_control.csv")
+    pc = pc[pc.state.isin(STATES) & pc.year.between(Y0, Y1)]
+    assert not pc.duplicated(["state", "year"]).any()
+    party = {s: [None] * len(years) for s in STATES}
+    for r in pc.itertuples():
+        if isinstance(r.trifecta, str):
+            detail = "" if r.trifecta == "Nonpartisan legislature" else "; ".join(
+                f"{name} {val}" for name, val in (("governor", r.governor), ("senate", r.senate), ("house", r.house)) if isinstance(val, str))
+            party[r.state][idx[r.year]] = [r.trifecta, detail]
+    return out, party
+
+
 def main():
     years = list(range(Y0, Y1 + 1))
     idx = {y: i for i, y in enumerate(years)}
@@ -126,11 +186,25 @@ def main():
     V = {}
     for r in vax.itertuples():
         row = [r.estimate, r.label]
-        if r.series == "toddler":
-            row += [r.lo, r.hi, int(r.n)]
+        if r.series in ("toddler", "survey"):
+            row += [r.lo, r.hi, None if pd.isna(r.n) else int(r.n)]
+        elif r.series == "national":
+            pass
         else:
             row += [None if pd.isna(r.pct_surveyed) else r.pct_surveyed, r.method if isinstance(r.method, str) else ""]
         V.setdefault(r.series, {}).setdefault(r.vaccine, {}).setdefault(r.st, {})[int(r.year)] = row
+
+    # first licensure of each vaccine, as marks on the vaccination charts
+    LIC = {"measles": ("mmr", "Measles vaccine licensed"), "mumps": ("mmr", "Mumps vaccine licensed"), "mmr_combined": ("mmr", "Combined MMR licensed"),
+           "dtp_whole_cell": ("dtap", "Combined DTP vaccine available"), "dtap_acellular": ("dtap", "DTaP licensed for booster doses"),
+           "polio_inactivated_salk": ("polio", "Salk polio vaccine licensed"), "polio_oral_sabin": ("polio", "Sabin oral polio vaccine licensed"),
+           "hepatitis_a": ("hepa", "Hepatitis A vaccine licensed")}
+    lic = pd.read_csv(RAW / "vax_history" / "licensure.csv")
+    assert lic.groupby("vaccine").year.nunique().max() == 1, "sources disagree on a licensure year"
+    L = {}
+    for key, year in lic.groupby("vaccine").year.first().items():
+        if key in LIC and Y0 <= year <= Y1:
+            L.setdefault(LIC[key][0], []).append([int(year), LIC[key][1]])
 
     ms = []
     for name in ("milestones_national.json", "milestones_pilot_states.json", "milestones_states.json"):
@@ -145,11 +219,12 @@ def main():
     ms.sort(key=lambda m: m["date"])
 
     cmmr, cmeasles, cmeta = county()
+    kpi, party = kpis(years)
     out = {
-        "shapes": shapes(), "cmmr": cmmr, "cmeasles": cmeasles, "cmeta": cmeta,
+        "kpis": kpi, "party": party, "shapes": shapes(), "cmmr": cmmr, "cmeasles": cmeasles, "cmeta": cmeta,
         "y0": Y0, "y1": Y1, "unit": UNIT, "diseases": DISEASES, "vaccines": VACCINES,
         "states": [{"k": s, "n": STATES[s], "c": GRID[s][0], "r": GRID[s][1]} for s in sorted(STATES)],
-        "pop": P, "income": INC, "cases": C, "src": S, "weeks": W, "vax": V, "milestones": ms,
+        "pop": P, "income": INC, "cases": C, "src": S, "weeks": W, "vax": V, "licensed": L, "milestones": ms,
     }
     (DATA.parent / "viz" / "data.json").write_text(json.dumps(out, separators=(",", ":"), ensure_ascii=False))
     print("viz/data.json", (DATA.parent / "viz" / "data.json").stat().st_size, "bytes;", len(ms), "milestones")

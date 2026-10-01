@@ -4,5 +4,11 @@ __pycache__/
 .DS_Store
 .env
 .idea/workspace.xml
-# raw downloads are re-fetched by scripts/01..07; built data is committed
-data/raw/
+# raw downloads are re-fetched by the scripts; extracted tables and their notes are committed
+data/raw/tycho/
+data/raw/cdc/
+data/raw/bea/
+data/raw/geo/
+data/raw/jhu/
+data/raw/owid/
+data/raw/*/src/
