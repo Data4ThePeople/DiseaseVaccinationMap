@@ -1,0 +1,356 @@
+[
+  {
+    "date": "1989-02-03",
+    "scope": "CA",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Current Trends Measles -- Los Angeles County, California, 1988",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00001340.htm",
+    "kind": "report",
+    "published": "1989-02-03",
+    "blurb": "Los Angeles County reported 513 confirmed measles cases in 1988, which was 17.5% of all U.S. cases that year.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2008-02-29",
+    "scope": "CA",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Outbreak of Measles --- San Diego, California, January--February 2008",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5708a3.htm",
+    "kind": "report",
+    "published": "2008-02-29",
+    "blurb": "After an unvaccinated boy from San Diego came home from Europe with measles in January 2008, investigators found 11 more cases in unvaccinated children.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2010-07-09",
+    "scope": "CA",
+    "diseases": [
+      "pertussis"
+    ],
+    "headline": "Notes from the Field: Pertussis --- California, January--June 2010",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5926a5.htm",
+    "kind": "report",
+    "published": "2010-07-09",
+    "blurb": "California counted 1,337 whooping cough cases in the first half of 2010, a 418% increase from 258 cases in the same months of 2009.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2012-09-30",
+    "scope": "CA",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "AB-2109 Communicable disease: immunization exemption.",
+    "source": "California Legislative Information",
+    "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201120120AB2109",
+    "kind": "policy",
+    "published": "2012-09-30",
+    "blurb": "This California law, approved on September 30, 2012, required that starting in 2014 a personal belief exemption from school shots come with a form signed by a health care practitioner.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2015-02-20",
+    "scope": "CA",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Measles Outbreak — California, December 2014–February 2015",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6406a5.htm",
+    "kind": "report",
+    "published": "2015-02-20",
+    "blurb": "By February 11, 2015, 125 measles cases had been confirmed in an outbreak tied to visits to two Disney theme parks in Orange County, and 110 of the patients lived in California.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2015-06-30",
+    "scope": "CA",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "SB-277 Public health: vaccinations.",
+    "source": "California Legislative Information",
+    "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201520160SB277",
+    "kind": "policy",
+    "published": "2015-06-30",
+    "blurb": "This California law, approved on June 30, 2015, ended the personal belief exemption from the vaccines then required for school and child care.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2017-10-13",
+    "scope": "CA",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "California declares state of emergency over deadly hepatitis A outbreak",
+    "source": "CBS News",
+    "url": "https://www.cbsnews.com/news/california-deadly-hepatitis-a-outbreak-state-of-emergency-jerry-brown/",
+    "kind": "news",
+    "published": "2017-10-13",
+    "blurb": "California's governor declared a state of emergency during a hepatitis A outbreak in several counties so the state could increase its supply of hepatitis A vaccine.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2019-09-09",
+    "scope": "CA",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "SB-276 Immunizations: medical exemptions.",
+    "source": "California Legislative Information",
+    "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201920200SB276",
+    "kind": "policy",
+    "published": "2019-09-09",
+    "blurb": "This California law, approved on September 9, 2019, told the state health department to create a standard statewide electronic form for medical exemptions from school vaccines.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1985-02-22",
+    "scope": "OH",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Epidemiologic Notes and Reports Measles on a College Campus -- Ohio",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000486.htm",
+    "kind": "report",
+    "published": "1985-02-22",
+    "blurb": "Twelve confirmed measles cases among students at The Ohio State University were reported to the Ohio Department of Health between January 15 and February 9, 1985.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2014-05-23",
+    "scope": "OH",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Ohio measles outbreak continues to grow",
+    "source": "CNN",
+    "url": "https://www.cnn.com/2014/05/23/health/ohio-measles/index.html",
+    "kind": "news",
+    "published": "2014-05-23",
+    "blurb": "Ohio health officials said a measles outbreak that began when unvaccinated Amish missionaries traveled to the Philippines had reached 155 cases.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2018-06-22",
+    "scope": "OH",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "ODH Declares Statewide Community Outbreak of Hepatitis A",
+    "source": "Ohio Department of Health (archived by the Internet Archive)",
+    "url": "https://web.archive.org/web/20190920062741/https://odh.ohio.gov/wps/portal/gov/odh/media-center/odh-news-releases/odh-declares-statewide-community-outbreak-of-hepatitis-a",
+    "kind": "press release",
+    "published": "2018-06-22",
+    "blurb": "The Ohio Department of Health declared a statewide community outbreak of hepatitis A and urged vaccination for people with certain risk factors.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2022-11-09",
+    "scope": "OH",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Notes from the Field: Measles Outbreak — Central Ohio, 2022–2023",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/volumes/72/wr/mm7231a3.htm",
+    "kind": "report",
+    "published": "2023-08-03",
+    "blurb": "Health departments confirmed a community measles outbreak in central Ohio on November 9, 2022, which reached 85 locally acquired cases and was declared over on February 4, 2023.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2023-10-03",
+    "scope": "OH",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "Section 3313.671 | Proof of required immunizations - exceptions.",
+    "source": "Ohio Revised Code (Ohio Laws and Administrative Rules)",
+    "url": "https://codes.ohio.gov/ohio-revised-code/section-3313.671",
+    "kind": "policy",
+    "published": null,
+    "blurb": "This Ohio law requires students to show proof of vaccination against mumps, polio, diphtheria, whooping cough, tetanus, measles, and rubella, and lets a parent decline for reasons of conscience, including religious beliefs.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-03-20",
+    "scope": "OH",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Health Director Announces Measles Case in Ohio",
+    "source": "Ohio Department of Health (archived by the Internet Archive)",
+    "url": "https://web.archive.org/web/20250327220654/https://odh.ohio.gov/media-center/ODH-News-Releases/health-director-announces-measles-case-in-ohio",
+    "kind": "press release",
+    "published": "2025-03-20",
+    "blurb": "The Ohio Department of Health reported the state's first measles case of 2025, an unvaccinated adult from Ashtabula County.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-03-26",
+    "scope": "OH",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Health Director Urges Parents to Ensure Children Are Vaccinated Against Measles as ODH Confirms Outbreak in Ohio",
+    "source": "Ohio Department of Health (archived by the Internet Archive)",
+    "url": "https://web.archive.org/web/20251009134744/https://odh.ohio.gov/media-center/odh-news-releases/odh-confirms-measles-outbreak-032625",
+    "kind": "press release",
+    "published": "2025-03-26",
+    "blurb": "The Ohio Department of Health announced a measles outbreak in Ashtabula County, with 10 cases identified there, and one confirmed case in a visitor to Knox County.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2026-01-08",
+    "scope": "OH",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "ODH Director Dr. Bruce Vanderhoff Announces Measles Cases and Outbreak in Ohio",
+    "source": "Ohio Department of Health (archived by the Internet Archive)",
+    "url": "https://web.archive.org/web/20260109044530/https://odh.ohio.gov/media-center/odh-news-releases/measles-outbreak-010826",
+    "kind": "press release",
+    "published": "2026-01-08",
+    "blurb": "The Ohio Department of Health reported the state's first measles cases and outbreak of 2026, three unvaccinated children from one household in Cuyahoga County.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1970-06",
+    "scope": "TX",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Texarkana — Epidemic Measles in a Divided City",
+    "source": "CDC, Case Studies in Applied Epidemiology",
+    "url": "https://www.cdc.gov/eis/downloads/xtexark-711-903-student.pdf",
+    "kind": "history page",
+    "published": null,
+    "blurb": "Between June 1970 and January 1971, 633 measles cases were reported from Texarkana, a city that sits on the Texas and Arkansas state line.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1971",
+    "scope": "TX",
+    "diseases": [
+      "diphtheria",
+      "polio",
+      "measles",
+      "rubella"
+    ],
+    "headline": "A School Immunization Law Is Successful In Texas",
+    "source": "Public Health Reports (via CDC Stacks)",
+    "url": "https://stacks.cdc.gov/view/cdc/65058",
+    "kind": "history page",
+    "published": "1975-01-01",
+    "blurb": "In spring 1971, the Texas Legislature passed a law requiring vaccinations for school children, described here by two Texas State Department of Health staff members in 1975.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1982-04-16",
+    "scope": "TX",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Epidemiologic Notes and Reports Measles -- El Paso, Texas, 1981",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000241.htm",
+    "kind": "report",
+    "published": "1982-04-16",
+    "blurb": "The El Paso City-County Health Department reported 219 measles cases from March through June 1981.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2003-12-03",
+    "scope": "TX",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria"
+    ],
+    "headline": "Conscientious Objection to Immunization",
+    "source": "Texas House Research Organization, Interim News",
+    "url": "https://hro.house.texas.gov/interim/int78-1.pdf",
+    "kind": "report",
+    "published": "2003-12-03",
+    "blurb": "A new Texas law let parents who file a conscientious objection enroll their children in public school without the required shots, and by late October 2003 the state had received forms for 1,713 children.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-01-29",
+    "scope": "TX",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Notes from the Field: Initial Public Health Response to a Measles Outbreak in a Close-Knit West Texas Community — January−February 2025",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/volumes/75/wr/mm7523a2.htm",
+    "kind": "report",
+    "published": "2026-06-18",
+    "blurb": "From January 29 to February 28, 2025, Texas reported 207 confirmed measles cases, mostly among members of a close-knit community in West Texas.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-08-18",
+    "scope": "TX",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Texas announces end of West Texas measles outbreak",
+    "source": "Texas Department of State Health Services",
+    "url": "https://www.dshs.texas.gov/news-alerts/texas-announces-end-west-texas-measles-outbreak",
+    "kind": "press release",
+    "published": "2025-08-18",
+    "blurb": "The Texas Department of State Health Services reported the end of the West Texas measles outbreak after 762 confirmed cases and more than 42 days without a new case in the affected counties.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-09-01",
+    "scope": "TX",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "Texas Immunization Exemptions",
+    "source": "Texas Department of State Health Services",
+    "url": "https://www.dshs.texas.gov/immunizations/school/exemptions",
+    "kind": "policy",
+    "published": null,
+    "blurb": "Starting September 1, 2025, under House Bill 1586, families in Texas can download the blank form used to claim a vaccine exemption for reasons of conscience from the state health department website.",
+    "checked": "2026-10-01"
+  }
+]

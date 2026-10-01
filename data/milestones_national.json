@@ -1,0 +1,701 @@
+[
+  {
+    "date": "1928-03",
+    "scope": "US",
+    "diseases": [
+      "diphtheria"
+    ],
+    "headline": "Diphtheria Immunization in Schools",
+    "source": "American Journal of Public Health and the Nation's Health (via PubMed Central)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1580601/",
+    "kind": "report",
+    "published": null,
+    "blurb": "A one-page item in a public health journal from March 1928 about giving diphtheria shots in schools.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1936-01",
+    "scope": "US",
+    "diseases": [
+      "pertussis"
+    ],
+    "headline": "Progress Report on Pertussis Immunization",
+    "source": "American Journal of Public Health and the Nation's Health (via PubMed Central)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1562571/",
+    "kind": "report",
+    "published": null,
+    "blurb": "Pearl Kendrick and Grace Eldering reported on their whooping cough immunization work in a paper first read to the American Public Health Association in October 1935.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1936-02",
+    "scope": "US",
+    "diseases": [
+      "polio"
+    ],
+    "headline": "Active Immunization Against Poliomyelitis",
+    "source": "American Journal of Public Health and the Nation's Health (via PubMed Central)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1562604/",
+    "kind": "report",
+    "published": null,
+    "blurb": "Maurice Brodie and William H. Park published a paper on immunizing people against polio, first read at a public health meeting in St. Louis in November 1935.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1942-04",
+    "scope": "US",
+    "diseases": [
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "Simultaneous Administration of Diphtheria Toxoid and Pertussis Vaccine in Young Children",
+    "source": "American Journal of Public Health and the Nation's Health (via PubMed Central)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1526839/",
+    "kind": "report",
+    "published": null,
+    "blurb": "Louis W. Sauer and Winston H. Tucker published a paper on giving young children diphtheria and whooping cough shots at the same time.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1948-04",
+    "scope": "US",
+    "diseases": [
+      "pertussis"
+    ],
+    "headline": "Current Status of Immunization Procedures—A Symposium: Pertussis",
+    "source": "American Journal of Public Health and the Nation's Health (via PubMed Central)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1624425/",
+    "kind": "report",
+    "published": null,
+    "blurb": "Joseph A. Bell reviewed where whooping cough vaccination stood, in a talk given to the American Public Health Association in October 1947.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1955",
+    "scope": "US",
+    "diseases": [
+      "polio"
+    ],
+    "headline": "Historical Vaccine Concerns",
+    "source": "CDC",
+    "url": "https://www.cdc.gov/vaccine-safety/historical-concerns/index.html",
+    "kind": "history page",
+    "published": "2024-07-31",
+    "blurb": "In 1955, some batches of polio vaccine from Cutter Laboratories contained live polio virus, more than 250 polio cases were tied to them, and the vaccine was recalled.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1955-04-12",
+    "scope": "US",
+    "diseases": [
+      "polio"
+    ],
+    "headline": "Jonas Salk and the Polio Vaccine",
+    "source": "Dwight D. Eisenhower Presidential Library",
+    "url": "https://www.eisenhowerlibrary.gov/research/online-documents/jonas-salk-and-polio-vaccine",
+    "kind": "history page",
+    "published": null,
+    "blurb": "On April 12, 1955, Americans got the news that Dr. Jonas Salk had developed a polio vaccine, and the federal government set up a plan to have six licensed companies make it for children across the country.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1955-05-31",
+    "scope": "US",
+    "diseases": [
+      "polio"
+    ],
+    "headline": "Statement by the President on the Polio Vaccine Situation.",
+    "source": "The American Presidency Project, UC Santa Barbara",
+    "url": "https://www.presidency.ucsb.edu/documents/statement-the-president-the-polio-vaccine-situation",
+    "kind": "press release",
+    "published": "1955-05-31",
+    "blurb": "President Eisenhower said a committee of scientists was screening polio vaccine before release, that more than 5.5 million children had been vaccinated, and how the vaccine would be shared out.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1955-10",
+    "scope": "US",
+    "diseases": [
+      "polio"
+    ],
+    "headline": "The Polio Vaccine Assistance Act of 1955",
+    "source": "American Journal of Public Health and the Nation's Health (via PubMed Central)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1623342/",
+    "kind": "report",
+    "published": null,
+    "blurb": "Otis L. Anderson wrote a two-page article in a public health journal about the 1955 federal law on polio vaccine.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1961",
+    "scope": "US",
+    "diseases": [
+      "polio"
+    ],
+    "headline": "Dr. Albert Sabin: A Closer Look",
+    "source": "National Library of Medicine, Circulating Now",
+    "url": "https://circulatingnow.nlm.nih.gov/2013/08/26/dr-albert-sabin-a-closer-look/",
+    "kind": "history page",
+    "published": "2013-08-26",
+    "blurb": "In 1961, the U.S. Public Health Service approved Albert Sabin's polio vaccine, which was given by mouth and became the preferred polio vaccine in the United States.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1962-10-23",
+    "scope": "US",
+    "diseases": [
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "Public Law 87-868",
+    "source": "U.S. Statutes at Large, 76 Stat. 1155 (govinfo.gov)",
+    "url": "https://www.govinfo.gov/link/statute/76/1155",
+    "kind": "policy",
+    "published": "1962-10-23",
+    "blurb": "The Vaccination Assistance Act of 1962 set aside federal money to help states and communities run vaccination programs against polio, diphtheria, whooping cough, and tetanus, with a focus on preschool children.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1963",
+    "scope": "US",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "History of Measles",
+    "source": "CDC",
+    "url": "https://www.cdc.gov/measles/about/history.html",
+    "kind": "history page",
+    "published": "2026-04-29",
+    "blurb": "In 1963, John Enders and colleagues turned a strain of the measles virus into a vaccine that was licensed in the United States.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1964",
+    "scope": "US",
+    "diseases": [
+      "rubella"
+    ],
+    "headline": "Impact of U.S. MMR Vaccination Program",
+    "source": "CDC",
+    "url": "https://www.cdc.gov/rubella/vaccine-impact/index.html",
+    "kind": "history page",
+    "published": "2025-01-17",
+    "blurb": "During the last major U.S. rubella epidemic, from 1964 to 1965, an estimated 12.5 million people got rubella and about 20,000 babies were born with congenital rubella syndrome.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1967-03",
+    "scope": "US",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Epidemiologic basis for eradication of measles in 1967",
+    "source": "Public Health Reports (via PubMed Central)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1919891/",
+    "kind": "report",
+    "published": null,
+    "blurb": "D. J. Sencer, H. B. Dull, and A. D. Langmuir published a paper in Public Health Reports on the basis for wiping out measles in 1967.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1968-02",
+    "scope": "US",
+    "diseases": [
+      "mumps"
+    ],
+    "headline": "Surveillance of mumps in the United States as background for use of vaccine",
+    "source": "Public Health Reports (via PubMed Central)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1891018/",
+    "kind": "report",
+    "published": null,
+    "blurb": "J. J. Witte and A. W. Karchmer published a report on how mumps cases were tracked in the United States, written as background for using the mumps vaccine.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1971",
+    "scope": "US",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella"
+    ],
+    "headline": "Vaccine History: Developments by Year",
+    "source": "Children's Hospital of Philadelphia, Vaccine Education Center",
+    "url": "https://www.chop.edu/vaccine-education-center/science-history/vaccine-history/developments-by-year",
+    "kind": "history page",
+    "published": null,
+    "blurb": "Vaccines for measles (1963), mumps (1967), and rubella (1969) were combined into one MMR vaccine by Dr. Maurice Hilleman in 1971.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1979-05-25",
+    "scope": "US",
+    "diseases": [
+      "polio"
+    ],
+    "headline": "Poliomyelitis -- United States, Canada",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/lmrk061.htm",
+    "kind": "report",
+    "published": "1979-05-25",
+    "blurb": "As of May 22, 1979, CDC reported four polio cases in Pennsylvania that year and suspected cases in two other states, most of them among Amish residents.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1982-05-07",
+    "scope": "US",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "pertussis",
+      "diphtheria"
+    ],
+    "headline": "Current Trends Childhood Immunization Initiative, United States -- 5-Year Follow-Up",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00001091.htm",
+    "kind": "report",
+    "published": "1982-05-07",
+    "blurb": "CDC looked back at the nationwide Childhood Immunization Initiative announced on April 6, 1977, which set a goal of vaccinating at least 90% of the nation's children by October 1979.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1986-11-14",
+    "scope": "US",
+    "diseases": [
+      "pertussis",
+      "diphtheria",
+      "measles",
+      "mumps",
+      "rubella",
+      "polio"
+    ],
+    "headline": "TITLE III—VACCINE COMPENSATION",
+    "source": "U.S. Statutes at Large, Public Law 99-660, 100 Stat. 3755 (govinfo.gov)",
+    "url": "https://www.govinfo.gov/link/statute/100/3755",
+    "kind": "policy",
+    "published": "1986-11-14",
+    "blurb": "This part of a law approved on November 14, 1986, is the National Childhood Vaccine Injury Act of 1986, which added a new vaccine title to the Public Health Service Act.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1989-06-09",
+    "scope": "US",
+    "diseases": [
+      "mumps"
+    ],
+    "headline": "Recommendations of the Immunization Practices Advisory Committee Mumps Prevention",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00001404.htm",
+    "kind": "policy",
+    "published": "1989-06-09",
+    "blurb": "A federal advisory committee issued mumps vaccine advice and noted that reported mumps cases rose from 2,982 in 1985 to 12,848 in 1987.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1989-12-29",
+    "scope": "US",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella"
+    ],
+    "headline": "Measles Prevention: Recommendations of the Immunization Practices Advisory Committee (ACIP)",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00041753.htm",
+    "kind": "policy",
+    "published": "1989-12-29",
+    "blurb": "A federal advisory committee changed the routine childhood schedule from one dose to two doses of the combined measles, mumps, and rubella (MMR) vaccine.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1991-06-07",
+    "scope": "US",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Current Trends Measles --- United States, 1990",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00001999.htm",
+    "kind": "report",
+    "published": "1991-06-07",
+    "blurb": "Health departments reported 27,672 measles cases and 89 suspected measles deaths in the United States for 1990, up from 18,193 cases in 1989.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1993-08-10",
+    "scope": "US",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "pertussis",
+      "diphtheria",
+      "hepatitis_a"
+    ],
+    "headline": "About the Vaccines for Children (VFC) Program",
+    "source": "CDC",
+    "url": "https://www.cdc.gov/vaccines-for-children/about/index.html",
+    "kind": "history page",
+    "published": "2026-08-27",
+    "blurb": "Congress passed a law on August 10, 1993, that created the Vaccines for Children Program, which began on October 1, 1994, and provides vaccines at no cost to eligible children.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1993-12-17",
+    "scope": "US",
+    "diseases": [
+      "pertussis"
+    ],
+    "headline": "Resurgence of Pertussis -- United States, 1993",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00023030.htm",
+    "kind": "report",
+    "published": "1993-12-17",
+    "blurb": "CDC reported 5,457 whooping cough cases in the first 48 weeks of 1993, the highest yearly number since 1967.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1994-09-29",
+    "scope": "US",
+    "diseases": [
+      "polio"
+    ],
+    "headline": "International Notes Certification of Poliomyelitis Eradication -- the Americas, 1994",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00032760.htm",
+    "kind": "report",
+    "published": "1994-10-07",
+    "blurb": "On September 29, 1994, an international commission announced that the spread of wild polio virus had been stopped in the Americas.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1995-02",
+    "scope": "US",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "Notice to Readers Licensure of Inactivated Hepatitis A Vaccine and Recommendations for Use Among International Travelers",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00038243.htm",
+    "kind": "report",
+    "published": "1995-07-28",
+    "blurb": "In February 1995, the Food and Drug Administration licensed Havrix, a hepatitis A vaccine, for people age 2 and older.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1997-03-28",
+    "scope": "US",
+    "diseases": [
+      "pertussis",
+      "diphtheria"
+    ],
+    "headline": "Pertussis Vaccination: Use of Acellular Pertussis Vaccines Among Infants and Young Children Recommendations of the Advisory Committee on Immunization Practices (ACIP)",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00048610.htm",
+    "kind": "policy",
+    "published": "1997-03-28",
+    "blurb": "A federal advisory committee recommended the newer DTaP vaccines for all five doses of the childhood schedule against diphtheria, tetanus, and whooping cough.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1999-04-02",
+    "scope": "US",
+    "diseases": [
+      "measles",
+      "diphtheria",
+      "pertussis",
+      "polio",
+      "mumps",
+      "rubella"
+    ],
+    "headline": "Achievements in Public Health, 1900-1999 Impact of Vaccines Universally Recommended for Children -- United States, 1990-1998",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00056803.htm",
+    "kind": "report",
+    "published": "1999-04-02",
+    "blurb": "CDC looked back at the 1900s and compared reported cases of diseases such as measles, diphtheria, and whooping cough from early in the century with recent years.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2000",
+    "scope": "US",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Measles --- United States, 2000",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5106a2.htm",
+    "kind": "report",
+    "published": "2002-02-15",
+    "blurb": "CDC counted 86 confirmed measles cases in 2000, a record low at the time, and said the data suggest measles is no longer always present in the United States.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2000-05-19",
+    "scope": "US",
+    "diseases": [
+      "polio"
+    ],
+    "headline": "Poliomyelitis Prevention in the United States",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/rr4905a1.htm",
+    "kind": "policy",
+    "published": "2000-05-19",
+    "blurb": "As of January 1, 2000, a federal advisory committee recommended that children get only the injected polio vaccine (IPV), with the oral vaccine used only in limited cases.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2004-10",
+    "scope": "US",
+    "diseases": [
+      "rubella"
+    ],
+    "headline": "Achievements in Public Health: Elimination of Rubella and Congenital Rubella Syndrome --- United States, 1969--2004",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5411a5.htm",
+    "kind": "report",
+    "published": "2005-03-25",
+    "blurb": "An independent panel that CDC brought together in October 2004 concluded that rubella is no longer constantly present in the United States.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2006-03-24",
+    "scope": "US",
+    "diseases": [
+      "pertussis",
+      "diphtheria"
+    ],
+    "headline": "Preventing Tetanus, Diphtheria, and Pertussis Among Adolescents: Use of Tetanus Toxoid, Reduced Diphtheria Toxoid and Acellular Pertussis Vaccines Recommendations of the Advisory Committee on Immunization Practices (ACIP)",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/rr5503a1.htm",
+    "kind": "policy",
+    "published": "2006-03-24",
+    "blurb": "A federal advisory committee recommended that adolescents ages 11 to 18 get one dose of Tdap, a booster shot against tetanus, diphtheria, and whooping cough.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2006-05-19",
+    "scope": "US",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "Prevention of Hepatitis A Through Active or Passive Immunization: Recommendations of the Advisory Committee on Immunization Practices (ACIP)",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/rr5507a1.htm",
+    "kind": "policy",
+    "published": "2006-05-19",
+    "blurb": "A federal advisory committee recommended that all children get the hepatitis A vaccine at age 1.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2006-05-26",
+    "scope": "US",
+    "diseases": [
+      "mumps"
+    ],
+    "headline": "Update: Multistate Outbreak of Mumps --- United States, January 1--May 2, 2006",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5520a4.htm",
+    "kind": "report",
+    "published": "2006-05-26",
+    "blurb": "Eleven states reported 2,597 mumps cases between January 1 and May 2, 2006, in an outbreak that began in Iowa in December 2005.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2011-02-22",
+    "scope": "US",
+    "diseases": [
+      "pertussis",
+      "diphtheria"
+    ],
+    "headline": "U.S. Reports: Bruesewitz v. Wyeth, 562 U.S. 223 (2011).",
+    "source": "Supreme Court of the United States (U.S. Reports, via Library of Congress)",
+    "url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep562/usrep562223/usrep562223.pdf",
+    "kind": "court",
+    "published": "2011-02-22",
+    "blurb": "In a case about a DTP vaccine, the Supreme Court ruled that the 1986 vaccine injury law blocks lawsuits that claim a vaccine was badly designed.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2012-07-20",
+    "scope": "US",
+    "diseases": [
+      "pertussis"
+    ],
+    "headline": "Pertussis Epidemic — Washington, 2012",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6128a1.htm",
+    "kind": "report",
+    "published": "2012-07-20",
+    "blurb": "Washington State declared a whooping cough epidemic on April 3, 2012, and by June 16 had 2,520 reported cases, the most in any year since 1942.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2014-06-06",
+    "scope": "US",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Measles — United States, January 1–May 23, 2014",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6322a4.htm",
+    "kind": "report",
+    "published": "2014-06-06",
+    "blurb": "CDC counted 288 confirmed measles cases from January 1 to May 23, 2014, more than the highest full-year total since measles was eliminated, which was 220 cases in 2011.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2018-01-11",
+    "scope": "US",
+    "diseases": [
+      "mumps"
+    ],
+    "headline": "Recommendation of the Advisory Committee on Immunization Practices for Use of a Third Dose of Mumps Virus–Containing Vaccine in Persons at Increased Risk for Mumps During an Outbreak",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6701a7.htm",
+    "kind": "policy",
+    "published": "2018-01-11",
+    "blurb": "A federal advisory committee recommended a third dose of mumps vaccine for people whom health officials identify as being at higher risk during a mumps outbreak.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2019-05-09",
+    "scope": "US",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "Increase in Hepatitis A Virus Infections — United States, 2013–2018",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/volumes/68/wr/mm6818a2.htm",
+    "kind": "report",
+    "published": "2019-05-09",
+    "blurb": "Reports of hepatitis A infections in the United States rose 294% in 2016 through 2018 compared with 2013 through 2015.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2019-10-10",
+    "scope": "US",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "National Update on Measles Cases and Outbreaks — United States, January 1–October 1, 2019",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/volumes/68/wr/mm6840e2.htm",
+    "kind": "report",
+    "published": "2019-10-10",
+    "blurb": "The United States had 1,249 reported measles cases from January through September 2019, the highest yearly number since 1992.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2022-08-19",
+    "scope": "US",
+    "diseases": [
+      "polio"
+    ],
+    "headline": "Public Health Response to a Case of Paralytic Poliomyelitis in an Unvaccinated Person and Detection of Poliovirus in Wastewater — New York, June–August 2022",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/volumes/71/wr/mm7133e2.htm",
+    "kind": "report",
+    "published": "2022-08-19",
+    "blurb": "Polio was confirmed in an unvaccinated adult in Rockland County, New York, and the virus was also found in wastewater in two nearby counties.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-01",
+    "scope": "US",
+    "diseases": [
+      "pertussis"
+    ],
+    "headline": "2024 Provisional Pertussis Surveillance Report",
+    "source": "CDC",
+    "url": "https://www.cdc.gov/pertussis/media/pdfs/2025/01/pertuss-surv-report-2024_PROVISIONAL-508.pdf",
+    "kind": "report",
+    "published": null,
+    "blurb": "CDC's early count showed 35,435 reported whooping cough cases in the United States in 2024, compared with 7,063 in 2023.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-04-24",
+    "scope": "US",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Measles Update — United States, January 1–April 17, 2025",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/volumes/74/wr/mm7414a1.htm",
+    "kind": "report",
+    "published": "2025-04-24",
+    "blurb": "CDC counted 800 measles cases from January 1 to April 17, 2025, with 82% tied to an outbreak in New Mexico, Oklahoma, and Texas.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-12-08",
+    "scope": "US",
+    "diseases": [
+      "measles",
+      "polio",
+      "pertussis",
+      "diphtheria",
+      "mumps",
+      "rubella"
+    ],
+    "headline": "Supreme Court Orders New Review of Religious Exemptions to School Vaccines",
+    "source": "Education Week",
+    "url": "https://www.edweek.org/policy-politics/supreme-court-orders-new-review-of-religious-exemptions-to-school-vaccines/2025/12",
+    "kind": "news",
+    "published": "2025-12-08",
+    "blurb": "The Supreme Court told a federal appeals court to take a second look at a challenge by Amish schools and parents to a New York law that ended religious exemptions from required school vaccinations.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2026-01-05",
+    "scope": "US",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "pertussis",
+      "diphtheria"
+    ],
+    "headline": "CDC Acts on Presidential Memorandum to Update Childhood Immunization Schedule",
+    "source": "CDC Newsroom",
+    "url": "https://www.cdc.gov/media/releases/2026/2026-cdc-acts-on-presidential-memorandum-to-update-childhood-immunization-schedule.html",
+    "kind": "press release",
+    "published": "2026-01-05",
+    "blurb": "CDC said it would sort childhood vaccines into three groups, and that vaccines for measles, mumps, rubella, polio, whooping cough, and diphtheria stay in the group recommended for all children.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2026-03-02",
+    "scope": "US",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Update on the review of measles elimination status",
+    "source": "Pan American Health Organization",
+    "url": "https://www.paho.org/en/news/2-3-2026-update-review-measles-elimination-status",
+    "kind": "press release",
+    "published": "2026-03-02",
+    "blurb": "The Pan American Health Organization said the review of whether the United States and Mexico still count as having eliminated measles will take place in November 2026.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2026-09-24",
+    "scope": "US",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Measles Cases and Outbreaks",
+    "source": "CDC",
+    "url": "https://www.cdc.gov/measles/data-research/index.html",
+    "kind": "report",
+    "published": "2026-09-28",
+    "blurb": "As of September 24, 2026, CDC had counted 3,659 confirmed measles cases in the United States in 2026.",
+    "checked": "2026-10-01"
+  }
+]
