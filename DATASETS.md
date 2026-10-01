@@ -189,20 +189,58 @@ National Notifiable Diseases Surveillance System.
 
 ## NNDSS annual tables and MMWR Summary of Notifiable Diseases (CDC)
 
-Status: not yet pulled. Being extracted into `data/raw/bridge/` with its own
-`NOTES.md`; this section is completed from that before any of it is charted.
+Status: read. Full per-year notes (document, page, table, marks, cutoff date)
+are in `data/raw/bridge/NOTES.md`; the extract is rebuilt by
+`scripts/02b_fetch_annual_summaries.py`.
 
 **What it is.** The final yearly count of each notifiable disease by state.
-Printed each year in MMWR as the "Summary of Notifiable Diseases" (1952 to
-2015), then as "NNDSS Annual Tables" (2016 on).
+Printed each year in MMWR as the "Summary of Notifiable Diseases" (to 2015),
+then as "NNDSS Annual Tables" (2016 on).
 
-**Why we need it.** State-level measles is not in Tycho after 2001 and not in
-the current weekly file before 2021. The other diseases need 2018 to 2020.
+**Where it comes from.** 1993 to 2015: Table 2 of each MMWR summary, read from
+the text layer of the issue PDF on cdc.gov. 2016 and 2018 to 2022: tab-delimited
+annual tables on CDC Stacks. 2023: PDF on Stacks. **2017: the Stacks records
+redirect to 2018 and their files return 404, so the 2017 tables come from
+Internet Archive captures of CDC's own files** (the rows match the first
+captures from December 2018). 1984 to 1992: scanned summaries on Stacks, using
+the OCR text already in the PDF.
 
-**Known traps so far.** The tables moved in January 2025 from CDC WONDER to
-CDC Stacks and data.cdc.gov; WONDER's old menu is a stub and blocks scripted
-requests. Some years exist only as PDF tables, so every extracted disease-year
-is checked against the table's own US total row.
+**Coverage.** All seven diseases for every year 1993 to 2023, all 51 areas.
+Before 1993 only the scan years that passed a strict test are used: measles
+1984, 1988, 1990, 1991, 1992; whooping cough 1985, 1990, 1991, 1992. A scan
+year is kept only if every state cell was readable, the states add to each
+printed division row, and the divisions add to the printed U.S. row. The other
+1980 to 1989 years failed on OCR damage and stay on Project Tycho or "no data".
+
+**Checks run.** State sum against the printed U.S. row: 298 disease-years, no
+mismatch. PDF against the separately parsed HTML edition, 2007 to 2015: 66
+disease-years, no cell differs. Measles against Our World in Data's hand
+transcription: 763 of 766 state-years identical; in the 3 that differ our value
+is what the CDC table prints and it adds to the printed total.
+
+**Changes over time.**
+- Measles is printed as "indigenous" and "imported" before 2008; the total is
+  our sum of the two. "Imported" includes cases from other states through 1994
+  and only from other countries from 1995. We show the total only.
+- Hepatitis A got a revised case definition in January 2019.
+- Diphtheria and paralytic polio have no column in years with no U.S. cases.
+  The issue says so in a sentence, and those state-years are zeros on that
+  basis (25 disease-years).
+
+**Suppressed, censored or masked values.** A dash is defined in every table as
+"No reported cases" and is a zero. `N` (not reportable), `NN`, `U` and blank
+cells (31 in all) are not numbers and show as "no data".
+
+**Reporting areas.** New York City is printed apart from the rest of New York.
+The extract adds the two.
+
+**Revisions.** These are final counts, each with a stated cutoff date from
+1994 on. They replace every other source for the same disease, state and year.
+
+**Uncertainty.** None published. Reported cases only.
+
+**License and attribution.** Public domain. Credit CDC, National Notifiable
+Diseases Surveillance System.
 
 ---
 
@@ -379,18 +417,89 @@ Repository at Johns Hopkins University".
 
 ---
 
-## Not yet pulled (placeholders)
+## State NIS estimates by survey year, 1995 to 2017, and national surveys before 1995
 
-Nothing from these may be charted until its section is written out in full.
+Status: read. Full notes, with each definition change quoted from its source,
+are in `data/raw/vax_history/NOTES.md`; rebuilt by `scripts/04b_fetch_vax_history.py`.
 
-- **State NIS estimates by survey year, 1995 to about 2017** (CDC yearly
-  tables) for the earlier vaccination line.
-- **National vaccination before 1995** (United States Immunization Survey,
-  1959 to 1985). National only. No state figures exist for these years.
-- **State KPIs**: BEA per-capita personal income (1929 on) and employment by
-  industry; Census median household income, poverty, education, health
-  insurance.
-- **Party control of state government**: Klarner, State Partisan Balance Data
-  1937 to 2011 (Harvard Dataverse); Ballotpedia trifectas 1992 on.
-- **Milestones** (`data/milestones_*.json`): not a dataset from one publisher.
-  Each entry carries its own URL and the date it was checked.
+**What it is.** (1) CDC's yearly table of vaccination coverage among children
+19 to 35 months by state, from the National Immunization Survey, with 95%
+intervals. (2) National-only figures before that: the U.S. Immunization Survey
+(1959 to 1985, children 1 to 4) and the National Health Interview Survey (1991
+to 1994). (3) The year each vaccine was first licensed.
+
+**Where it comes from.** 1995 to 2014: CDC's "coverage by state" workbooks,
+which survive only as Internet Archive captures of the original cdc.gov files
+(2000 is still on CDC's server). 2015 to 2017: tables in each year's survey
+user's guide and MMWR. Before 1995: Simpson, Ezzati-Rice and Zell, "Forty years
+and four surveys", Am J Prev Med 2001, Table 1, **from a copy on a personal
+website, not the publisher**, and Health, United States 1995. Licensure years:
+CDC Pink Book chapters and MMWR.
+
+**Coverage.** MMR 1+, DTP/DTaP 4+ and polio 3+ for all 51 areas in every year
+1995 to 2017. Hepatitis A 2+ from 2008 (no state figures for 2016). No national
+figure exists for 1986 to 1990. **No state figure exists before 1995.**
+
+**Changes over time.**
+- From 2019 CDC reports by birth year and by age 24 months instead of by survey
+  year. The two are different measures. The page ends the survey-year line at
+  2017 and starts the birth-year line with children born in 2016, drawn at the
+  year they reach the age measured, with a gap between.
+- Phone sample: landline only through 2010, landline and cell from 2011, cell
+  only from 2018. CDC says 2012 on is not directly comparable with earlier years.
+- "DTP" through 2005, "DTaP" from 2006; both count DTP, DTaP and DT doses.
+- The pre-1995 surveys count 3+ DTP doses, not 4+, and took the parent's word
+  without checking records. The authors say this understated coverage, by as
+  much as 23%. A "don't know" answer added in 1976 breaks the series there.
+
+**Checks run.** Two CDC workbooks per year, 4,316 cells, none differ. U.S. row
+against MMWR 2004 to 2017, 66 cells, none differ. Pre-1995 figures confirmed
+against Health, United States for 1970 to 1976 and 1983 to 1985; **1959 to 1969
+and 1977 to 1982 have no second source.**
+
+**Known quirks.** 1970 polio is 65.9 in two sources and 77.5 in a third; 65.9
+is used. Polio drops from 87.6 (1964) to 73.9 (1965) as printed.
+
+**Uncertainty.** A state's 95% interval is typically 3 to 5 points either
+side. CDC calls intervals wider than 10 points possibly unreliable.
+
+**License and attribution.** CDC material is public domain. The Simpson table
+is a journal article; we use the numbers with citation.
+
+---
+
+## State indicators and party control
+
+Status: read. One section per series, in the full template, is in
+`data/raw/kpi/NOTES.md`; rebuilt by `scripts/08b_fetch_kpis.py`.
+
+| Shown on the page | Source | Years | Trap |
+|---|---|---|---|
+| Median household income, 2025 dollars | Census CPS table H-8 | 1984 to 2025 | 2013 and 2017 printed twice after survey changes; we use the version that matches later years |
+| Poverty rate | Census CPS historical table 19 | 1980 to 2025 | same doubled years; one state's two 2013 figures differ by 7 points, mostly sampling noise |
+| Bachelor's degree or more, 25 and older | Decennial census 1940 to 2000; ACS 1-year 2005 to 2024 | census years, then yearly | no 2020 ACS; different surveys |
+| Without health insurance | CPS 1987 to 2007 (two series), ACS 2008 to 2024 | 1987 to 2024 | three surveys, not spliced; ACS and CPS differ by up to 5 points in the same year |
+| Share of jobs: manufacturing, government, farming | BEA SAEMP25 | 1969 to 2022 | table discontinued in 2024; industry classes change in 2001 |
+| Party control | Klarner 1937 to 2011; Ballotpedia 2012 on | 1937 to 2025 | change of source and of definition at 2012 |
+
+Built but not shown: unemployment rate (BLS, 1976 on), current-dollar income.
+
+**Party control.** One field per state-year: Democratic, Republican, Divided,
+or Nonpartisan legislature (Nebraska throughout; Minnesota 1937 to 1974). The
+two sources agree on all but 10 of 1,000 state-years in their 1992 to 2011
+overlap. They define a split chamber differently (no seat majority in one,
+ties and coalitions in the other). Ballotpedia's reuse terms have to be
+checked before publication. This is shown as a fact about the year and nothing
+on the page relates it to disease or vaccination.
+
+**Uncertainty.** Survey figures for small states carry wide margins; the
+publisher's standard errors are kept in the extract's `note` column.
+
+---
+
+## Milestones
+
+`data/milestones_national.json` and `data/milestones_pilot_states.json`. Not a
+dataset from one publisher. Each entry has a URL that was fetched, a headline
+copied from that page, and the date checked. Method and the list of events
+wanted but not verified are in `data/MILESTONES_NOTES.md`.

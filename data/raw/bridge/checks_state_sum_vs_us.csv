@@ -1,0 +1,299 @@
+year,disease,sum_of_states,us_total_row,us_flag,us_minus_states,result,states_missing,states_with_non_numeric_mark,source_file
+1984,measles,2587,2587,sum,0,OK,,,stacks_35267_DS1.pdf
+1984,measles_indigenous,2272,2272,,0,OK,,,stacks_35267_DS1.pdf
+1984,measles_imported,315,315,*,0,OK,,,stacks_35267_DS1.pdf
+1985,pertussis,3589,3589,,0,OK,,,stacks_35429_DS1.pdf
+1988,measles,3396,3396,sum,0,OK,,,stacks_35958_DS1.pdf
+1988,measles_indigenous,3058,3058,,0,OK,,,stacks_35958_DS1.pdf
+1988,measles_imported,338,338,*,0,OK,,,stacks_35958_DS1.pdf
+1990,measles,27786,27786,sum,0,OK,,,stacks_35905_DS1.pdf
+1990,measles_indigenous,26527,26527,,0,OK,,,stacks_35905_DS1.pdf
+1990,measles_imported,1259,1259,*,0,OK,,,stacks_35905_DS1.pdf
+1990,pertussis,4570,4570,,0,OK,,,stacks_35905_DS1.pdf
+1991,measles,9643,9643,sum,0,OK,,,stacks_36010_DS1.pdf
+1991,measles_indigenous,9411,9411,,0,OK,,,stacks_36010_DS1.pdf
+1991,measles_imported,232,232,*,0,OK,,,stacks_36010_DS1.pdf
+1991,pertussis,2719,2719,,0,OK,,,stacks_36010_DS1.pdf
+1992,measles,2237,2237,sum,0,OK,,,stacks_36063_DS1.pdf
+1992,measles_indigenous,2084,2084,,0,OK,,,stacks_36063_DS1.pdf
+1992,measles_imported,153,153,*,0,OK,,,stacks_36063_DS1.pdf
+1992,pertussis,4083,4083,,0,OK,,,stacks_36063_DS1.pdf
+1993,measles,312,312,sum,0,OK,,,mm4253.pdf
+1993,measles_indigenous,237,237,,0,OK,,,mm4253.pdf
+1993,measles_imported,75,75,*,0,OK,,,mm4253.pdf
+1993,pertussis,6586,6586,,0,OK,,,mm4253.pdf
+1993,mumps,1692,1692,,0,OK,,New Mexico=NN;Oregon=NN,mm4253.pdf
+1993,rubella,192,192,,0,OK,,,mm4253.pdf
+1993,hepatitis_a,24238,24238,,0,OK,,,mm4253.pdf
+1993,diphtheria,0,0,-,0,OK,,,mm4253.pdf
+1993,polio_paralytic,3,3,†,0,OK,,,mm4253.pdf
+1994,measles,963,963,sum,0,OK,,,mm4353.pdf
+1994,measles_indigenous,746,746,,0,OK,,,mm4353.pdf
+1994,measles_imported,217,217,*,0,OK,,,mm4353.pdf
+1994,pertussis,4617,4617,,0,OK,,,mm4353.pdf
+1994,mumps,1537,1537,,0,OK,,New Mexico=NN;Oregon=NN,mm4353.pdf
+1994,rubella,227,227,,0,OK,,Mississippi=NN,mm4353.pdf
+1994,hepatitis_a,26796,26796,,0,OK,,,mm4353.pdf
+1994,diphtheria,2,2,,0,OK,,,mm4353.pdf
+1994,polio_paralytic,0,0,-†,0,OK,,,mm4353.pdf
+1995,measles,309,309,sum,0,OK,,,mm4453.pdf
+1995,measles_indigenous,281,281,,0,OK,,,mm4453.pdf
+1995,measles_imported,28,28,,0,OK,,,mm4453.pdf
+1995,pertussis,5137,5137,,0,OK,,,mm4453.pdf
+1995,mumps,906,906,,0,OK,,New Mexico=NN;Oregon=NN,mm4453.pdf
+1995,rubella,128,128,,0,OK,,Mississippi=NN,mm4453.pdf
+1995,hepatitis_a,31582,31582,,0,OK,,,mm4453.pdf
+1995,polio_paralytic,2,2,,0,OK,,,mm4453.pdf
+1995,diphtheria,0,0,fn0,0,OK (footnote: no cases in US),,,mm4453.pdf
+1996,measles,508,508,sum,0,OK,,,mm4553.pdf
+1996,measles_indigenous,443,443,,0,OK,,,mm4553.pdf
+1996,measles_imported,65,65,,0,OK,,,mm4553.pdf
+1996,pertussis,7796,7796,,0,OK,,,mm4553.pdf
+1996,mumps,751,751,,0,OK,,New Mexico=NN;Oregon=NN,mm4553.pdf
+1996,rubella,238,238,,0,OK,,Mississippi=NN,mm4553.pdf
+1996,hepatitis_a,31032,31032,,0,OK,,,mm4553.pdf
+1996,diphtheria,2,2,,0,OK,,,mm4553.pdf
+1996,polio_paralytic,5,5,,0,OK,,,mm4553.pdf
+1997,measles,138,138,sum,0,OK,,,mm4654.pdf
+1997,measles_indigenous,81,81,,0,OK,,,mm4654.pdf
+1997,measles_imported,57,57,,0,OK,,,mm4654.pdf
+1997,pertussis,6564,6564,,0,OK,,,mm4654.pdf
+1997,mumps,683,683,,0,OK,,New Mexico=NN;Oregon=NN,mm4654.pdf
+1997,rubella,181,181,,0,OK,,Mississippi=NN,mm4654.pdf
+1997,hepatitis_a,30021,30021,,0,OK,,,mm4654.pdf
+1997,diphtheria,4,4,,0,OK,,,mm4654.pdf
+1997,polio_paralytic,3,3,,0,OK,,Wisconsin=NN,mm4654.pdf
+1998,measles,100,100,sum,0,OK,,,mm4753.pdf
+1998,measles_indigenous,74,74,,0,OK,,,mm4753.pdf
+1998,measles_imported,26,26,,0,OK,,,mm4753.pdf
+1998,pertussis,7405,7405,,0,OK,,,mm4753.pdf
+1998,mumps,666,666,,0,OK,,New Mexico=NN;Oregon=NN,mm4753.pdf
+1998,rubella,364,364,,0,OK,,Mississippi=NN,mm4753.pdf
+1998,hepatitis_a,23229,23229,,0,OK,,,mm4753.pdf
+1998,diphtheria,1,1,,0,OK,,,mm4753.pdf
+1998,polio_paralytic,1,1,,0,OK,,Wisconsin=NN,mm4753.pdf
+1999,measles,100,100,sum,0,OK,,,mm4853.pdf
+1999,measles_indigenous,66,66,,0,OK,,,mm4853.pdf
+1999,measles_imported,34,34,,0,OK,,,mm4853.pdf
+1999,pertussis,7288,7288,,0,OK,,,mm4853.pdf
+1999,mumps,387,387,,0,OK,,New Mexico=NN;Oregon=NN,mm4853.pdf
+1999,rubella,267,267,,0,OK,,,mm4853.pdf
+1999,hepatitis_a,17047,17047,,0,OK,,,mm4853.pdf
+1999,diphtheria,1,1,,0,OK,,,mm4853.pdf
+1999,polio_paralytic,0,0,fn0,0,OK (footnote: no cases in US),,,mm4853.pdf
+2000,measles,86,86,sum,0,OK,,,mm4953.pdf
+2000,measles_indigenous,60,60,,0,OK,,,mm4953.pdf
+2000,measles_imported,26,26,,0,OK,,,mm4953.pdf
+2000,pertussis,7867,7867,,0,OK,,,mm4953.pdf
+2000,mumps,338,338,,0,OK,,Oregon=NN,mm4953.pdf
+2000,rubella,176,176,,0,OK,,,mm4953.pdf
+2000,hepatitis_a,13397,13397,,0,OK,,,mm4953.pdf
+2000,diphtheria,1,1,,0,OK,,,mm4953.pdf
+2000,polio_paralytic,0,0,fn0,0,OK (footnote: no cases in US),,,mm4953.pdf
+2001,measles,116,116,sum,0,OK,,,mm5053.pdf
+2001,measles_indigenous,62,62,,0,OK,,,mm5053.pdf
+2001,measles_imported,54,54,,0,OK,,,mm5053.pdf
+2001,pertussis,7580,7580,,0,OK,,,mm5053.pdf
+2001,mumps,266,266,,0,OK,,Oregon=NN,mm5053.pdf
+2001,rubella,23,23,,0,OK,,,mm5053.pdf
+2001,hepatitis_a,10609,10609,,0,OK,,,mm5053.pdf
+2001,diphtheria,2,2,,0,OK,,,mm5053.pdf
+2001,polio_paralytic,0,0,fn0,0,OK (footnote: no cases in US),,,mm5053.pdf
+2002,measles,44,44,sum,0,OK,,,mm5153.pdf
+2002,measles_indigenous,26,26,,0,OK,,,mm5153.pdf
+2002,measles_imported,18,18,,0,OK,,,mm5153.pdf
+2002,pertussis,9771,9771,,0,OK,,,mm5153.pdf
+2002,mumps,270,270,,0,OK,,,mm5153.pdf
+2002,rubella,18,18,,0,OK,,,mm5153.pdf
+2002,hepatitis_a,8795,8795,,0,OK,,,mm5153.pdf
+2002,diphtheria,1,1,,0,OK,,,mm5153.pdf
+2002,polio_paralytic,0,0,fn0,0,OK (footnote: no cases in US),,,mm5153.pdf
+2003,measles,56,56,sum,0,OK,,,mm5254.pdf
+2003,measles_indigenous,32,32,,0,OK,,,mm5254.pdf
+2003,measles_imported,24,24,,0,OK,,,mm5254.pdf
+2003,pertussis,11647,11647,,0,OK,,,mm5254.pdf
+2003,mumps,231,231,,0,OK,,Oregon=N,mm5254.pdf
+2003,rubella,7,7,,0,OK,,,mm5254.pdf
+2003,hepatitis_a,7653,7653,,0,OK,,,mm5254.pdf
+2003,diphtheria,1,1,,0,OK,,,mm5254.pdf
+2003,polio_paralytic,0,0,fn0,0,OK (footnote: no cases in US),,,mm5254.pdf
+2004,measles,37,37,sum,0,OK,,,mm5353.pdf
+2004,measles_indigenous,10,10,,0,OK,,,mm5353.pdf
+2004,measles_imported,27,27,,0,OK,,,mm5353.pdf
+2004,pertussis,25827,25827,,0,OK,,,mm5353.pdf
+2004,mumps,258,258,,0,OK,,,mm5353.pdf
+2004,rubella,10,10,,0,OK,,,mm5353.pdf
+2004,hepatitis_a,5683,5683,,0,OK,,,mm5353.pdf
+2004,diphtheria,0,0,fn0,0,OK (footnote: no cases in US),,,mm5353.pdf
+2004,polio_paralytic,0,0,fn0,0,OK (footnote: no cases in US),,,mm5353.pdf
+2005,measles,66,66,sum,0,OK,,,mm5453.pdf
+2005,measles_indigenous,42,42,,0,OK,,,mm5453.pdf
+2005,measles_imported,24,24,,0,OK,,,mm5453.pdf
+2005,pertussis,25616,25616,,0,OK,,,mm5453.pdf
+2005,mumps,314,314,,0,OK,,Oregon=N,mm5453.pdf
+2005,rubella,11,11,,0,OK,,,mm5453.pdf
+2005,hepatitis_a,4488,4488,,0,OK,,,mm5453.pdf
+2005,polio_paralytic,1,1,,0,OK,,,mm5453.pdf
+2005,diphtheria,0,0,fn0,0,OK (footnote: no cases in US),,,mm5453.pdf
+2006,measles,55,55,sum,0,OK,,,mm5553.pdf
+2006,measles_indigenous,24,24,,0,OK,,,mm5553.pdf
+2006,measles_imported,31,31,,0,OK,,,mm5553.pdf
+2006,pertussis,15632,15632,,0,OK,,,mm5553.pdf
+2006,mumps,6584,6584,,0,OK,,,mm5553.pdf
+2006,rubella,11,11,,0,OK,,,mm5553.pdf
+2006,hepatitis_a,3579,3579,,0,OK,,,mm5553.pdf
+2006,diphtheria,0,0,fn0,0,OK (footnote: no cases in US),,,mm5553.pdf
+2006,polio_paralytic,0,0,fn0,0,OK (footnote: no cases in US),,,mm5553.pdf
+2007,measles,43,43,sum,0,OK,,,mm5653.pdf
+2007,measles_indigenous,14,14,,0,OK,,,mm5653.pdf
+2007,measles_imported,29,29,,0,OK,,,mm5653.pdf
+2007,pertussis,10454,10454,,0,OK,,,mm5653.pdf
+2007,mumps,800,800,,0,OK,,,mm5653.pdf
+2007,rubella,12,12,,0,OK,,,mm5653.pdf
+2007,hepatitis_a,2979,2979,,0,OK,,District of Columbia=U,mm5653.pdf
+2007,diphtheria,0,0,fn0,0,OK (footnote: no cases in US),,,mm5653.pdf
+2007,polio_paralytic,0,0,fn0,0,OK (footnote: no cases in US),,,mm5653.pdf
+2008,measles,140,140,,0,OK,,,mm5754.pdf
+2008,measles_indigenous,115,115,,0,OK,,,mm5754.pdf
+2008,measles_imported,25,25,,0,OK,,,mm5754.pdf
+2008,pertussis,13278,13278,,0,OK,,,mm5754.pdf
+2008,mumps,454,454,,0,OK,,,mm5754.pdf
+2008,rubella,16,16,,0,OK,,,mm5754.pdf
+2008,hepatitis_a,2585,2585,,0,OK,,District of Columbia=U,mm5754.pdf
+2008,diphtheria,0,0,fn0,0,OK (footnote: no cases in US),,,mm5754.pdf
+2008,polio_paralytic,0,0,fn0,0,OK (footnote: no cases in US),,,mm5754.pdf
+2009,measles,71,71,,0,OK,,,mm5853.pdf
+2009,measles_indigenous,51,51,,0,OK,,,mm5853.pdf
+2009,measles_imported,20,20,,0,OK,,,mm5853.pdf
+2009,pertussis,16858,16858,,0,OK,,,mm5853.pdf
+2009,mumps,1991,1991,,0,OK,,,mm5853.pdf
+2009,rubella,3,3,,0,OK,,,mm5853.pdf
+2009,hepatitis_a,1987,1987,,0,OK,,,mm5853.pdf
+2009,polio_paralytic,1,1,,0,OK,,,mm5853.pdf
+2009,diphtheria,0,0,fn0,0,OK (footnote: no cases in US),,,mm5853.pdf
+2010,measles,63,63,,0,OK,,,mm5953.pdf
+2010,measles_indigenous,23,23,,0,OK,,,mm5953.pdf
+2010,measles_imported,40,40,,0,OK,,,mm5953.pdf
+2010,pertussis,27550,27550,,0,OK,,,mm5953.pdf
+2010,mumps,2612,2612,,0,OK,,,mm5953.pdf
+2010,rubella,5,5,,0,OK,,,mm5953.pdf
+2010,hepatitis_a,1670,1670,,0,OK,,,mm5953.pdf
+2010,diphtheria,0,0,fn0,0,OK (footnote: no cases in US),,,mm5953.pdf
+2010,polio_paralytic,0,0,fn0,0,OK (footnote: no cases in US),,,mm5953.pdf
+2011,measles,220,220,,0,OK,,District of Columbia=N,mm6053.pdf
+2011,measles_indigenous,140,140,,0,OK,,,mm6053.pdf
+2011,measles_imported,80,80,,0,OK,,,mm6053.pdf
+2011,pertussis,18719,18719,,0,OK,,,mm6053.pdf
+2011,mumps,404,404,,0,OK,,,mm6053.pdf
+2011,rubella,4,4,,0,OK,,,mm6053.pdf
+2011,hepatitis_a,1398,1398,,0,OK,,,mm6053.pdf
+2011,diphtheria,0,0,fn0,0,OK (footnote: no cases in US),,,mm6053.pdf
+2011,polio_paralytic,0,0,fn0,0,OK (footnote: no cases in US),,,mm6053.pdf
+2012,measles,55,55,,0,OK,,,mm6153.pdf
+2012,measles_indigenous,34,34,,0,OK,,,mm6153.pdf
+2012,measles_imported,21,21,,0,OK,,,mm6153.pdf
+2012,pertussis,48277,48277,,0,OK,,,mm6153.pdf
+2012,mumps,229,229,,0,OK,,,mm6153.pdf
+2012,rubella,9,9,,0,OK,,,mm6153.pdf
+2012,hepatitis_a,1562,1562,,0,OK,,,mm6153.pdf
+2012,diphtheria,1,1,,0,OK,,,mm6153.pdf
+2012,polio_paralytic,0,0,fn0,0,OK (footnote: no cases in US),,,mm6153.pdf
+2013,measles,187,187,,0,OK,,,mm6253.pdf
+2013,measles_indigenous,135,135,,0,OK,,,mm6253.pdf
+2013,measles_imported,52,52,,0,OK,,,mm6253.pdf
+2013,pertussis,28639,28639,,0,OK,,,mm6253.pdf
+2013,mumps,584,584,,0,OK,,,mm6253.pdf
+2013,rubella,9,9,,0,OK,,,mm6253.pdf
+2013,hepatitis_a,1781,1781,,0,OK,,,mm6253.pdf
+2013,polio_paralytic,1,1,,0,OK,,,mm6253.pdf
+2013,diphtheria,0,0,fn0,0,OK (footnote: no cases in US),,,mm6253.pdf
+2014,measles,667,667,,0,OK,,,mm6354.pdf
+2014,measles_indigenous,604,604,,0,OK,,,mm6354.pdf
+2014,measles_imported,63,63,,0,OK,,,mm6354.pdf
+2014,pertussis,32971,32971,,0,OK,,,mm6354.pdf
+2014,mumps,1223,1223,,0,OK,,,mm6354.pdf
+2014,rubella,6,6,,0,OK,,,mm6354.pdf
+2014,hepatitis_a,1239,1239,,0,OK,,District of Columbia=U,mm6354.pdf
+2014,diphtheria,1,1,,0,OK,,,mm6354.pdf
+2014,polio_paralytic,0,0,fn0,0,OK (footnote: no cases in US),,,mm6354.pdf
+2015,measles,188,188,,0,OK,,,mm6453.pdf
+2015,measles_indigenous,162,162,,0,OK,,,mm6453.pdf
+2015,measles_imported,26,26,,0,OK,,,mm6453.pdf
+2015,pertussis,20762,20762,,0,OK,,,mm6453.pdf
+2015,mumps,1329,1329,,0,OK,,,mm6453.pdf
+2015,rubella,5,5,,0,OK,,Tennessee=blank,mm6453.pdf
+2015,hepatitis_a,1390,1390,,0,OK,,District of Columbia=U,mm6453.pdf
+2015,diphtheria,0,0,fn0,0,OK (footnote: no cases in US),,,mm6453.pdf
+2015,polio_paralytic,0,0,fn0,0,OK (footnote: no cases in US),,,mm6453.pdf
+2016,diphtheria,0,0,-,0,OK,,,stacks_49381_DS2.txt
+2016,hepatitis_a,2007,2007,,0,OK,,,stacks_49383_DS2.txt
+2016,measles,85,85,,0,OK,,,stacks_49385_DS2.txt
+2016,measles_indigenous,68,68,,0,OK,,,stacks_49385_DS2.txt
+2016,measles_imported,17,17,,0,OK,,,stacks_49385_DS2.txt
+2016,mumps,6369,6369,,0,OK,,,stacks_49386_DS2.txt
+2016,pertussis,17972,17972,,0,OK,,,stacks_49387_DS2.txt
+2016,polio_paralytic,0,0,-,0,OK,,,stacks_49387_DS2.txt
+2016,rubella,1,1,,0,OK,,,stacks_49388_DS2.txt
+2017,diphtheria,0,0,-,0,OK,,,wonder_2017-table2e_wayback_20250109233529.txt
+2017,hepatitis_a,3365,3365,,0,OK,,,wonder_2017-table2g_wayback_20241231182110.txt
+2017,measles,120,120,,0,OK,,,wonder_2017-table2i_wayback_20250110024805.txt
+2017,measles_indigenous,99,99,,0,OK,,,wonder_2017-table2i_wayback_20250110024805.txt
+2017,measles_imported,21,21,,0,OK,,,wonder_2017-table2i_wayback_20250110024805.txt
+2017,mumps,6109,6109,,0,OK,,,wonder_2017-table2j_wayback_20250108105159.txt
+2017,pertussis,18975,18975,,0,OK,,,wonder_2017-table2k_wayback_20250104211127.txt
+2017,polio_paralytic,0,0,-,0,OK,,,wonder_2017-table2k_wayback_20250104211127.txt
+2017,rubella,7,7,,0,OK,,,wonder_2017-table2l_wayback_20250103192204.txt
+2018,diphtheria,1,1,,0,OK,,,stacks_82388_DS2.txt
+2018,hepatitis_a,12474,12474,,0,OK,,,stacks_82390_DS3.txt
+2018,measles,375,375,,0,OK,,,stacks_82392_DS3.txt
+2018,measles_indigenous,296,296,,0,OK,,,stacks_82392_DS3.txt
+2018,measles_imported,79,79,,0,OK,,,stacks_82392_DS3.txt
+2018,mumps,2515,2515,,0,OK,,,stacks_82393_DS3.txt
+2018,pertussis,15609,15609,,0,OK,,,stacks_82394_DS3.txt
+2018,polio_paralytic,0,0,-,0,OK,,,stacks_82394_DS3.txt
+2018,rubella,4,4,,0,OK,,,stacks_82395_DS3.txt
+2019,diphtheria,2,2,,0,OK,,,stacks_106480_DS2.txt
+2019,hepatitis_a,18846,18846,,0,OK,,,stacks_106482_DS2.txt
+2019,measles,1275,1275,,0,OK,,,stacks_106485_DS2.txt
+2019,measles_imported,83,83,,0,OK,,,stacks_106485_DS2.txt
+2019,measles_indigenous,1192,1192,,0,OK,,,stacks_106485_DS2.txt
+2019,mumps,3780,3780,,0,OK,,,stacks_106486_DS2.txt
+2019,pertussis,18617,18617,,0,OK,,,stacks_106486_DS2.txt
+2019,polio_paralytic,0,0,-,0,OK,,,stacks_106487_DS2.txt
+2019,rubella,6,6,,0,OK,,,stacks_106488_DS2.txt
+2020,diphtheria,1,1,,0,OK,,,stacks_175634_DS2.txt
+2020,hepatitis_a,9946,9946,,0,OK,,,stacks_175636_DS2.txt
+2020,measles,12,12,,0,OK,,,stacks_175639_DS2.txt
+2020,measles_imported,6,6,,0,OK,,,stacks_175639_DS2.txt
+2020,measles_indigenous,6,6,,0,OK,,,stacks_175639_DS2.txt
+2020,mumps,694,694,,0,OK,,,stacks_175640_DS2.txt
+2020,pertussis,6124,6124,,0,OK,,,stacks_175640_DS2.txt
+2020,polio_paralytic,0,0,-,0,OK,,,stacks_175641_DS2.txt
+2020,rubella,6,6,,0,OK,,,stacks_175642_DS2.txt
+2021,diphtheria,0,0,-,0,OK,,,stacks_175661_DS2.txt
+2021,hepatitis_a,5726,5726,,0,OK,,,stacks_175663_DS2.txt
+2021,measles,48,48,,0,OK,,,stacks_175666_DS2.txt
+2021,measles_imported,19,19,,0,OK,,,stacks_175666_DS2.txt
+2021,measles_indigenous,29,29,,0,OK,,,stacks_175666_DS2.txt
+2021,mumps,189,189,,0,OK,,,stacks_175667_DS2.txt
+2021,pertussis,2116,2116,,0,OK,,,stacks_175667_DS2.txt
+2021,polio_paralytic,0,0,-,0,OK,,,stacks_175668_DS2.txt
+2021,rubella,7,7,,0,OK,,,stacks_175669_DS2.txt
+2022,diphtheria,1,1,,0,OK,,,stacks_175688_DS2.txt
+2022,hepatitis_a,2264,2264,,0,OK,,,stacks_175690_DS2.txt
+2022,measles,121,121,,0,OK,,,stacks_175693_DS2.txt
+2022,measles_imported,23,23,,0,OK,,,stacks_175693_DS2.txt
+2022,measles_indigenous,98,98,,0,OK,,,stacks_175693_DS2.txt
+2022,mumps,386,386,,0,OK,,,stacks_175694_DS2.txt
+2022,pertussis,3044,3044,,0,OK,,,stacks_175694_DS2.txt
+2022,polio_paralytic,1,1,,0,OK,,,stacks_175695_DS2.txt
+2022,rubella,7,7,,0,OK,,,stacks_175696_DS2.txt
+2023,diphtheria,2,2,,0,OK,,,stacks_251104_DS1.pdf
+2023,hepatitis_a,1643,1643,,0,OK,,,stacks_251106_DS1.pdf
+2023,measles_imported,22,22,,0,OK,,,stacks_251109_DS1.pdf
+2023,measles_indigenous,42,42,,0,OK,,,stacks_251109_DS1.pdf
+2023,measles,64,64,,0,OK,,,stacks_251109_DS1.pdf
+2023,mumps,433,433,,0,OK,,,stacks_251110_DS1.pdf
+2023,pertussis,7063,7063,,0,OK,,,stacks_251111_DS1.pdf
+2023,polio_paralytic,0,0,-,0,OK,,,stacks_251111_DS1.pdf
+2023,rubella,11,11,,0,OK,,,stacks_251112_DS1.pdf

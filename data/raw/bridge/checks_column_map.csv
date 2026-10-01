@@ -1,0 +1,320 @@
+year,source,disease,page_or_table,printed_column_header,us_total_cell
+1984,scan pdf,measles_indigenous,16,Indigenous,"2,272"
+1984,scan pdf,measles_imported,16,Imported,315*
+1985,scan pdf,pertussis,12,Pertussis,"3,589"
+1988,scan pdf,measles_indigenous,15,Measles Indigenous,"3,058"
+1988,scan pdf,measles_imported,15,Imported,338*
+1990,scan pdf,measles_indigenous,19,Measles Indigenous,"26,527"
+1990,scan pdf,measles_imported,19,Imported,"1,259*"
+1990,scan pdf,pertussis,19,Pertussis,"4,570"
+1991,scan pdf,measles_indigenous,21,Measles Indigenous,"9,411"
+1991,scan pdf,measles_imported,21,Imported,232*
+1991,scan pdf,pertussis,21,Pertussis,"2,719"
+1992,scan pdf,measles_indigenous,23,Measles Indigenous,"2,084"
+1992,scan pdf,measles_imported,23,Imported,153*
+1992,scan pdf,pertussis,23,Pertussis,"4,083"
+1993,pdf,diphtheria,24,Diphtheria,-
+1993,pdf,hepatitis_a,25,Hepatitis A,"24,238"
+1993,pdf,measles_indigenous,26,Measles Indigenous,237
+1993,pdf,measles_imported,26,Imported,75*
+1993,pdf,mumps,26,Mumps,"1,692"
+1993,pdf,pertussis,26,Pertussis,"6,586"
+1993,pdf,polio_paralytic,26,"Polio- myelitis, paralytic",3†
+1993,pdf,rubella,27,Rubella,192
+1994,pdf,diphtheria,23,Diphtheria,2
+1994,pdf,hepatitis_a,24,Hepatitis A,"26,796"
+1994,pdf,measles_indigenous,25,Measles Indigenous,746
+1994,pdf,measles_imported,25,Imported,217*
+1994,pdf,mumps,25,Mumps,"1,537"
+1994,pdf,pertussis,25,Pertussis,"4,617"
+1994,pdf,polio_paralytic,25,"Polio- myelitis, paralytic",-†
+1994,pdf,rubella,26,Rubella,227
+1995,pdf,hepatitis_a,17,A,"31,582"
+1995,pdf,measles_indigenous,18,Measles Indigenous,281
+1995,pdf,measles_imported,18,Imported*,28
+1995,pdf,mumps,18,Mumps,906
+1995,pdf,pertussis,18,Pertussis,"5,137"
+1995,pdf,polio_paralytic,18,"Polio- myelitis, paralytic†",2
+1995,pdf,rubella,19,Rubella Rubella,128
+1996,pdf,diphtheria,18,Diphtheria,2
+1996,pdf,hepatitis_a,19,A,"31,032"
+1996,pdf,measles_indigenous,20,Measles Indigenous,443
+1996,pdf,measles_imported,20,Imported*,65
+1996,pdf,mumps,20,Mumps,751
+1996,pdf,pertussis,20,Pertussis,"7,796"
+1996,pdf,polio_paralytic,20,"Polio- myelitis, paralytic",5
+1996,pdf,rubella,21,Rubella,238
+1997,pdf,diphtheria,22,Diphtheria,4
+1997,pdf,hepatitis_a,23,A,"30,021"
+1997,pdf,measles_indigenous,24,Indigenous,81
+1997,pdf,measles_imported,24,Measles Imported*,57
+1997,pdf,mumps,24,Mumps,683
+1997,pdf,pertussis,24,Pertussis,"6,564"
+1997,pdf,polio_paralytic,24,"Polio- myelitis, paralytic",3
+1997,pdf,rubella,25,Rubella Rubella,181
+1998,pdf,diphtheria,25,Diphtheria,1
+1998,pdf,hepatitis_a,27,A,"23,229"
+1998,pdf,measles_indigenous,28,Measles Indigenous,74
+1998,pdf,measles_imported,28,Imported*,26
+1998,pdf,mumps,28,Mumps,666
+1998,pdf,pertussis,28,Pertussis,"7,405"
+1998,pdf,polio_paralytic,29,"Polio- myelitis, paralytic",1
+1998,pdf,rubella,30,Rubella,364
+1999,pdf,diphtheria,23,Diphtheria,1
+1999,pdf,hepatitis_a,25,A,"17,047"
+1999,pdf,measles_indigenous,26,Indigenous,66
+1999,pdf,measles_imported,26,Measles Imported*,34
+1999,pdf,mumps,26,Mumps,387
+1999,pdf,pertussis,26,Pertussis,"7,288"
+1999,pdf,rubella,27,Rubella Rubella,267
+2000,pdf,diphtheria,29,Diphtheria,1
+2000,pdf,hepatitis_a,31,A,"13,397"
+2000,pdf,measles_indigenous,32,Measles Indigenous,60
+2000,pdf,measles_imported,32,Imported†,26
+2000,pdf,mumps,32,Mumps,338
+2000,pdf,pertussis,32,Pertussis,"7,867"
+2000,pdf,rubella,33,Rubella Rubella,176
+2001,pdf,diphtheria,31,Diphtheria,2
+2001,pdf,hepatitis_a,33,A,"10,609"
+2001,pdf,measles_indigenous,34,Measles Indigenous,62
+2001,pdf,measles_imported,34,Imported*,54
+2001,pdf,mumps,35,Mumps,266
+2001,pdf,pertussis,35,Pertussis,"7,580"
+2001,pdf,rubella,35,Rubella,23
+2002,pdf,diphtheria,21,Diphtheria,1
+2002,pdf,hepatitis_a,24,A,"8,795"
+2002,pdf,measles_indigenous,25,Measles Indigenous,26
+2002,pdf,measles_imported,25,Imported*,18
+2002,pdf,mumps,25,Mumps,270
+2002,pdf,pertussis,25,Pertussis,"9,771"
+2002,pdf,rubella,26,Rubella,18
+2003,pdf,diphtheria,21,Diphtheria,1
+2003,pdf,hepatitis_a,24,A,"7,653"
+2003,pdf,measles_indigenous,25,Measles Indigenous,32
+2003,pdf,measles_imported,25,Imported*,24
+2003,pdf,mumps,25,Mumps,231
+2003,pdf,pertussis,25,Pertussis,"11,647"
+2003,pdf,rubella,26,Rubella Rubella,7
+2004,pdf,hepatitis_a,26,A,"5,683"
+2004,pdf,measles_indigenous,27,Measles Indigenous,10
+2004,pdf,measles_imported,27,Imported†††,27
+2004,pdf,mumps,27,Mumps,258
+2004,pdf,pertussis,27,Pertussis,"25,827"
+2004,pdf,rubella,28,Rubella,10
+2005,pdf,hepatitis_a,27,A,"4,488"
+2005,pdf,measles_indigenous,28,Measles Indigenous,42
+2005,pdf,measles_imported,28,Imported†††,24
+2005,pdf,mumps,29,Mumps,314
+2005,pdf,pertussis,29,Pertussis,"25,616"
+2005,pdf,polio_paralytic,29,"Poliomyelitis, paralytic§§§",1
+2005,pdf,rubella,30,Rubella,11
+2006,pdf,hepatitis_a,29,A,"3,579"
+2006,pdf,measles_indigenous,30,Measles Indigenous,24
+2006,pdf,measles_imported,30,Imported¶¶,31
+2006,pdf,mumps,31,Mumps,"6,584"
+2006,pdf,pertussis,31,Pertussis,"15,632"
+2006,pdf,rubella,32,Rubella,11
+2007,pdf,hepatitis_a,31,A,"2,979"
+2007,pdf,measles_indigenous,32,Measles Indigenous,14
+2007,pdf,measles_imported,32,Imported†††,29
+2007,pdf,mumps,33,Mumps,800
+2007,pdf,pertussis,33,Pertussis,"10,454"
+2007,pdf,rubella,34,Rubella,12
+2007,html,hepatitis_a,6," | Hepatitis, viral, acute | A","2,979"
+2007,html,measles_indigenous,7,Measles | Indigenous,14
+2007,html,measles_imported,7,Measles | Imported †††,29
+2007,html,mumps,8, |  | Mumps,800
+2007,html,pertussis,8, |  | Pertussis,"10,454"
+2007,html,rubella,9,Rubella,12
+2008,pdf,hepatitis_a,28,A,"2,585"
+2008,pdf,measles_indigenous,29,Measles Indigenous,115
+2008,pdf,measles_imported,29,Imported***,25
+2008,pdf,measles,29,Total,140
+2008,pdf,mumps,30,Mumps,454
+2008,pdf,pertussis,30,Pertussis,"13,278"
+2008,pdf,rubella,31,Rubella,16
+2008,html,hepatitis_a,6," | Hepatitis, viral, acute | A","2,585"
+2008,html,measles_indigenous,7,Measles | Indigenous,115
+2008,html,measles_imported,7,Measles | Imported***,25
+2008,html,measles,7,Measles | Total,140
+2008,html,mumps,8, | Mumps,454
+2008,html,pertussis,8, | Pertussis,"13,278"
+2008,html,rubella,9,Rubella,16
+2009,pdf,hepatitis_a,30,A,"1,987"
+2009,pdf,measles_indigenous,31,Measles Indigenous,51
+2009,pdf,measles_imported,31,Imported¶¶,20
+2009,pdf,mumps,31,Mumps,"1,991"
+2009,pdf,measles,31,Total,71
+2009,pdf,pertussis,32,Pertussis,"16,858"
+2009,pdf,polio_paralytic,32,"Poliomyelitis, paralytic",1
+2009,pdf,rubella,33,Rubella,3
+2009,html,hepatitis_a,7,"Hepatitis, viral, acute | A","1,987"
+2009,html,measles_indigenous,8,Measles | Indigenous,51
+2009,html,measles_imported,8,Measles | Imported ¶¶,20
+2009,html,mumps,8, | Mumps,"1,991"
+2009,html,measles,8,Measles | Total,71
+2009,html,pertussis,9, | Pertussis,"16,858"
+2009,html,polio_paralytic,9,"Poliomyelitis, paralytic",1
+2009,html,rubella,10,Rubella,3
+2010,pdf,hepatitis_a,33,A,"1,670"
+2010,pdf,measles_indigenous,34,Measles Indigenous,23
+2010,pdf,measles_imported,34,Imported†,40
+2010,pdf,measles,34,Total,63
+2010,pdf,mumps,35,Mumps,"2,612"
+2010,pdf,pertussis,36,Pertussis,"27,550"
+2010,pdf,rubella,37,Rubella,5
+2010,html,hepatitis_a,6,"Hepatitis, viral, acute | A","1,670"
+2010,html,measles_indigenous,7,Measles | Indigenous,23
+2010,html,measles_imported,7,Measles | Imported †,40
+2010,html,measles,7,Measles | Total,63
+2010,html,mumps,8,Mumps,"2,612"
+2010,html,pertussis,9,Pertussis,"27,550"
+2010,html,rubella,10,Rubella,5
+2011,pdf,hepatitis_a,35,A,"1,398"
+2011,pdf,measles_indigenous,36,Measles Indigenous,140
+2011,pdf,measles_imported,36,Imported†,80
+2011,pdf,measles,36,Total,220
+2011,pdf,mumps,37,Mumps,404
+2011,pdf,pertussis,38,Pertussis,"18,719"
+2011,pdf,rubella,39,Rubella,4
+2011,html,hepatitis_a,6,"Hepatitis, viral, acute | A","1,398"
+2011,html,measles_indigenous,7,Measles | Indigenous,140
+2011,html,measles_imported,7,Measles | Imported †,80
+2011,html,measles,7,Measles | Total,220
+2011,html,mumps,8,Mumps,404
+2011,html,pertussis,9,Pertussis,"18,719"
+2011,html,rubella,10,Rubella,4
+2012,pdf,diphtheria,32,Diphtheria,1
+2012,pdf,hepatitis_a,34,A,"1,562"
+2012,pdf,measles_indigenous,36,Measles Indigenous,34
+2012,pdf,measles_imported,36,Imported,21
+2012,pdf,measles,36,Total,55
+2012,pdf,mumps,37,Mumps,229
+2012,pdf,pertussis,37,Pertussis,"48,277"
+2012,pdf,rubella,38,Rubella,9
+2012,html,diphtheria,4, | Diphtheria,1
+2012,html,hepatitis_a,6,"Hepatitis, viral, acute | A","1,562"
+2012,html,measles_indigenous,8,Measles | Indigenous,34
+2012,html,measles_imported,8,Measles | Imported,21
+2012,html,measles,8,Measles | Total,55
+2012,html,mumps,9,Mumps,229
+2012,html,pertussis,9,Pertussis,"48,277"
+2012,html,rubella,10,Rubella,9
+2013,pdf,hepatitis_a,39,A,"1,781"
+2013,pdf,measles_indigenous,41,Measles Indigenous,135
+2013,pdf,measles_imported,41,Imported,52
+2013,pdf,measles,41,Total,187
+2013,pdf,mumps,42,Mumps,584
+2013,pdf,pertussis,42,Pertussis,"28,639"
+2013,pdf,polio_paralytic,42,"Poliomyelitis, paralytic",1
+2013,pdf,rubella,43,Rubella,9
+2013,html,hepatitis_a,6,"Hepatitis, viral, acute | A","1,781"
+2013,html,measles_indigenous,8,Measles | Indigenous,135
+2013,html,measles_imported,8,Measles | Imported,52
+2013,html,measles,8,Measles | Total,187
+2013,html,mumps,9,Mumps,584
+2013,html,pertussis,9,Pertussis,"28,639"
+2013,html,polio_paralytic,9,"Poliomyelitis, paralytic",1
+2013,html,rubella,10,Rubella,9
+2014,pdf,diphtheria,40,Diphtheria,1
+2014,pdf,hepatitis_a,44,"Hepatitis A, acute","1,239"
+2014,pdf,measles_indigenous,48,Measles Indigenous,604
+2014,pdf,measles_imported,48,Imported,63
+2014,pdf,measles,48,Total,667
+2014,pdf,mumps,50,Mumps,"1,223"
+2014,pdf,pertussis,50,Pertussis,"32,971"
+2014,pdf,rubella,52,Rubella,6
+2014,html,diphtheria,4,Diphtheria,1
+2014,html,hepatitis_a,6,"Hepatitis A, acute","1,239"
+2014,html,measles_indigenous,8,Measles | Indigenous,604
+2014,html,measles_imported,8,Measles | Imported,63
+2014,html,measles,8,Measles | Total,667
+2014,html,mumps,9,Mumps,"1,223"
+2014,html,pertussis,9,Pertussis,"32,971"
+2014,html,rubella,10,Rubella,6
+2015,pdf,hepatitis_a,49,"A, acute","1,390"
+2015,pdf,measles_indigenous,53,Measles Indigenous,162
+2015,pdf,measles_imported,53,Imported,26
+2015,pdf,measles,53,Total,188
+2015,pdf,mumps,55,Mumps,"1,329"
+2015,pdf,pertussis,55,Pertussis,"20,762"
+2015,pdf,rubella,57,Rubella,5
+2015,html,hepatitis_a,8,"Hepatitis | A, acute","1,390"
+2015,html,measles_indigenous,10,Measles | Indigenous,162
+2015,html,measles_imported,10,Measles | Imported,26
+2015,html,measles,10,Measles | Total,188
+2015,html,mumps,11,Mumps,"1,329"
+2015,html,pertussis,11,Pertussis,"20,762"
+2015,html,rubella,12,Rubella,5
+2016,nndss stacks_txt,diphtheria,Table 2e,Diphtheria,—
+2016,nndss stacks_txt,hepatitis_a,Table 2g,"Hepatitis, A, acute *","2,007"
+2016,nndss stacks_txt,measles,Table 2i,"Measles, Total",85
+2016,nndss stacks_txt,measles_indigenous,Table 2i,"Measles, Indigenous",68
+2016,nndss stacks_txt,measles_imported,Table 2i,"Measles, Imported",17
+2016,nndss stacks_txt,mumps,Table 2j,Mumps,"6,369"
+2016,nndss stacks_txt,pertussis,Table 2k,Pertussis,"17,972"
+2016,nndss stacks_txt,polio_paralytic,Table 2k,"Poliomyelitis, paralytic",—
+2016,nndss stacks_txt,rubella,Table 2l,Rubella,1
+2017,nndss wayback_txt,diphtheria,Table 2e,Diphtheria,—
+2017,nndss wayback_txt,hepatitis_a,Table 2g,"Hepatitis, A, acute *","3,365"
+2017,nndss wayback_txt,measles,Table 2i,"Measles, Total",120
+2017,nndss wayback_txt,measles_indigenous,Table 2i,"Measles, Indigenous",99
+2017,nndss wayback_txt,measles_imported,Table 2i,"Measles, Imported",21
+2017,nndss wayback_txt,mumps,Table 2j,Mumps,"6,109"
+2017,nndss wayback_txt,pertussis,Table 2k,Pertussis,"18,975"
+2017,nndss wayback_txt,polio_paralytic,Table 2k,"Poliomyelitis, paralytic",—
+2017,nndss wayback_txt,rubella,Table 2l,Rubella,7
+2018,nndss stacks_txt,diphtheria,Table 2e,Diphtheria,1
+2018,nndss stacks_txt,hepatitis_a,Table 2g,"Hepatitis, A, acute *","12,474"
+2018,nndss stacks_txt,measles,Table 2i,"Measles, Total",375
+2018,nndss stacks_txt,measles_indigenous,Table 2i,"Measles, Indigenous",296
+2018,nndss stacks_txt,measles_imported,Table 2i,"Measles, Imported",79
+2018,nndss stacks_txt,mumps,Table 2j,Mumps,"2,515"
+2018,nndss stacks_txt,pertussis,Table 2k,Pertussis,"15,609"
+2018,nndss stacks_txt,polio_paralytic,Table 2k,"Poliomyelitis, paralytic",—
+2018,nndss stacks_txt,rubella,Table 2l,Rubella,4
+2019,nndss stacks_txt,diphtheria,Table 2f,Diphtheria,2
+2019,nndss stacks_txt,hepatitis_a,Table 2h,"Hepatitis, A, acute ¶","18,846"
+2019,nndss stacks_txt,measles,Table 2k,"Measles, Total §","1,275"
+2019,nndss stacks_txt,measles_imported,Table 2k,"Measles, Imported §",83
+2019,nndss stacks_txt,measles_indigenous,Table 2k,"Measles, Indigenous §","1,192"
+2019,nndss stacks_txt,mumps,Table 2l,Mumps,"3,780"
+2019,nndss stacks_txt,pertussis,Table 2l,Pertussis,"18,617"
+2019,nndss stacks_txt,polio_paralytic,Table 2m,"Poliomyelitis, paralytic",—
+2019,nndss stacks_txt,rubella,Table 2n,Rubella,6
+2020,nndss stacks_txt,diphtheria,Table 2f,Diphtheria,1
+2020,nndss stacks_txt,hepatitis_a,Table 2h,"Hepatitis, Viral Disease, Hepatitis A ¶","9,946"
+2020,nndss stacks_txt,measles,Table 2k,"Measles, Total §",12
+2020,nndss stacks_txt,measles_imported,Table 2k,"Measles, Imported §",6
+2020,nndss stacks_txt,measles_indigenous,Table 2k,"Measles, Indigenous §",6
+2020,nndss stacks_txt,mumps,Table 2l,Mumps,694
+2020,nndss stacks_txt,pertussis,Table 2l,Pertussis,"6,124"
+2020,nndss stacks_txt,polio_paralytic,Table 2m,"Poliomyelitis, paralytic",—
+2020,nndss stacks_txt,rubella,Table 2n,Rubella,6
+2021,nndss stacks_txt,diphtheria,Table 2f,Diphtheria,—
+2021,nndss stacks_txt,hepatitis_a,Table 2h,"Hepatitis, Viral Disease, Hepatitis A ¶","5,726"
+2021,nndss stacks_txt,measles,Table 2k,"Measles, Total §",48
+2021,nndss stacks_txt,measles_imported,Table 2k,"Measles, Imported §",19
+2021,nndss stacks_txt,measles_indigenous,Table 2k,"Measles, Indigenous §",29
+2021,nndss stacks_txt,mumps,Table 2l,Mumps,189
+2021,nndss stacks_txt,pertussis,Table 2l,Pertussis,"2,116"
+2021,nndss stacks_txt,polio_paralytic,Table 2m,"Poliomyelitis, paralytic",—
+2021,nndss stacks_txt,rubella,Table 2n,Rubella,7
+2022,nndss stacks_txt,diphtheria,Table 2f,Diphtheria,1
+2022,nndss stacks_txt,hepatitis_a,Table 2h,"Hepatitis, Viral Disease, Hepatitis A ¶","2,264"
+2022,nndss stacks_txt,measles,Table 2k,"Measles, Total §",121
+2022,nndss stacks_txt,measles_imported,Table 2k,"Measles, Imported §",23
+2022,nndss stacks_txt,measles_indigenous,Table 2k,"Measles, Indigenous §",98
+2022,nndss stacks_txt,mumps,Table 2l,Mumps,386
+2022,nndss stacks_txt,pertussis,Table 2l,Pertussis,"3,044"
+2022,nndss stacks_txt,polio_paralytic,Table 2m,"Poliomyelitis, paralytic",1
+2022,nndss stacks_txt,rubella,Table 2n,Rubella,7
+2023,nndss stacks_pdf,diphtheria,Table 2g,Diphtheria,2
+2023,nndss stacks_pdf,hepatitis_a,Table 2i,"Hepatitis A, acute","1,643"
+2023,nndss stacks_pdf,measles_imported,Table 2l,Imported,22
+2023,nndss stacks_pdf,measles_indigenous,Table 2l,Measles† Indigenous,42
+2023,nndss stacks_pdf,measles,Table 2l,Total,64
+2023,nndss stacks_pdf,mumps,Table 2m,Mumps,433
+2023,nndss stacks_pdf,pertussis,Table 2n,Pertussis,"7,063"
+2023,nndss stacks_pdf,polio_paralytic,Table 2n,paralytic,—
+2023,nndss stacks_pdf,rubella,Table 2o,"Rubella Rubella,",11

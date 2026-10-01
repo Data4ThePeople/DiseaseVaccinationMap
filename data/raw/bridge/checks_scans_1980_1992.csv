@@ -1,0 +1,40 @@
+year,disease,used,result_of_strict_check,pdf_page,column_header_as_read,us_total_as_read,source_file
+1980,measles,no,total row not readable: United States = '13.5062',19,Measles,13.5062,stacks_1484_DS1.pdf
+1980,pertussis,no,"3 state cells not readable in the OCR layer: Vermont='-', District of Columbia='-', Hawaii='-'",19,Pertussis,"1,730",stacks_1484_DS1.pdf
+1981,measles,no,column not found in the OCR text layer,,,,stacks_1307_DS1.pdf
+1981,measles_indigenous,no,column not found in the OCR text layer,,,,stacks_1307_DS1.pdf
+1981,measles_imported,no,column not found in the OCR text layer,,,,stacks_1307_DS1.pdf
+1981,pertussis,no,total row not readable: Mountain = '',81,PERTUSSIS Total,"1,248",stacks_1307_DS1.pdf
+1982,measles,no,total row not readable: East South Central = '',16,Measles,"1,714",stacks_35066_DS1.pdf
+1982,pertussis,no,total row not readable: South Atlantic = '',16,Pertussis,"1,895",stacks_35066_DS1.pdf
+1983,measles_indigenous,no,1 state cells not readable in the OCR layer: Arkansas='',21,Indigenous,"1,163",stacks_35188_DS1.pdf
+1983,measles_imported,no,"6 state cells not readable in the OCR layer: Minnesota='', Arkansas='', Montana='', Idaho='', Wyoming='', Colorado=''",21,Measles Imported,334*,stacks_35188_DS1.pdf
+1983,pertussis,no,"15 state cells not readable in the OCR layer: Maine='', New Hampshire='', Rhode Island='', Minnesota='', North Dakota='', Delaware='', Georgia='', Tennessee=''",21,Pertussis,"2,463",stacks_35188_DS1.pdf
+1984,measles_indigenous,yes,all nine division sums and the US sum equal the printed rows,16,Indigenous,"2,272",stacks_35267_DS1.pdf
+1984,measles_imported,yes,all nine division sums and the US sum equal the printed rows,16,Imported,315*,stacks_35267_DS1.pdf
+1984,pertussis,no,total row not readable: United States = '2.276',16,Pertussis,2.276,stacks_35267_DS1.pdf
+1985,measles_indigenous,no,total row not readable: East South Central = '',12,Indigenous,"2,410",stacks_35429_DS1.pdf
+1985,measles_imported,no,all nine division sums and the US sum equal the printed rows; not used because the other measles column failed,12,Measles Imported,412*,stacks_35429_DS1.pdf
+1985,pertussis,yes,all nine division sums and the US sum equal the printed rows,12,Pertussis,"3,589",stacks_35429_DS1.pdf
+1986,measles,no,column not found in the OCR text layer,,,,stacks_35496_DS1.pdf
+1986,measles_indigenous,no,column not found in the OCR text layer,,,,stacks_35496_DS1.pdf
+1986,measles_imported,no,column not found in the OCR text layer,,,,stacks_35496_DS1.pdf
+1986,pertussis,no,total row not readable: Pacific = '',12,Pertussis,"4,195",stacks_35496_DS1.pdf
+1987,measles_indigenous,no,"5 state cells not readable in the OCR layer: Minnesota='', South Dakota='', Nebraska='', Montana='', Colorado=''",12,Meaelee Indigenous,"3,240",stacks_35629_DS1.pdf
+1987,measles_imported,no,total row not readable: Middle Atlantic = '',12,Imported,415*,stacks_35629_DS1.pdf
+1987,pertussis,no,total row not readable: Middle Atlantic = '',12,Pertussis,"2,823",stacks_35629_DS1.pdf
+1988,measles_indigenous,yes,all nine division sums and the US sum equal the printed rows,15,Measles Indigenous,"3,058",stacks_35958_DS1.pdf
+1988,measles_imported,yes,all nine division sums and the US sum equal the printed rows,15,Imported,338*,stacks_35958_DS1.pdf
+1988,pertussis,no,"4 state cells not readable in the OCR layer: Nevada='', Oregon='', California='', Hawaii=''",15,Pertussis,"3,450",stacks_35958_DS1.pdf
+1989,measles_indigenous,no,"4 state cells not readable in the OCR layer: Maine='', South Dakota='', Idaho='', Wyoming=''",13,Measles Indigenous,"17,351",stacks_35853_DS1.pdf
+1989,measles_imported,no,"2 state cells not readable in the OCR layer: Oklahoma='', Wyoming=''",13,Imported,842*,stacks_35853_DS1.pdf
+1989,pertussis,no,1 state cells not readable in the OCR layer: Wyoming='',13,Pertussis,"4,157",stacks_35853_DS1.pdf
+1990,measles_indigenous,yes,all nine division sums and the US sum equal the printed rows,19,Measles Indigenous,"26,527",stacks_35905_DS1.pdf
+1990,measles_imported,yes,all nine division sums and the US sum equal the printed rows,19,Imported,"1,259*",stacks_35905_DS1.pdf
+1990,pertussis,yes,all nine division sums and the US sum equal the printed rows,19,Pertussis,"4,570",stacks_35905_DS1.pdf
+1991,measles_indigenous,yes,all nine division sums and the US sum equal the printed rows,21,Measles Indigenous,"9,411",stacks_36010_DS1.pdf
+1991,measles_imported,yes,all nine division sums and the US sum equal the printed rows,21,Imported,232*,stacks_36010_DS1.pdf
+1991,pertussis,yes,all nine division sums and the US sum equal the printed rows,21,Pertussis,"2,719",stacks_36010_DS1.pdf
+1992,measles_indigenous,yes,all nine division sums and the US sum equal the printed rows,23,Measles Indigenous,"2,084",stacks_36063_DS1.pdf
+1992,measles_imported,yes,all nine division sums and the US sum equal the printed rows,23,Imported,153*,stacks_36063_DS1.pdf
+1992,pertussis,yes,all nine division sums and the US sum equal the printed rows,23,Pertussis,"4,083",stacks_36063_DS1.pdf

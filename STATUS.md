@@ -33,3 +33,9 @@ None.
   vaccination rates, a state drill-down, a milestone timeline, state KPIs and
   party control. Plan approved the same day
   (`~/.claude/plans/proud-stargazing-engelbart.md`).
+- 2026-10-01 First full build in `dist/index.html`: national tile map, state
+  drill-down with county map, vaccination history from 1959, state indicators,
+  party control, 47 national and 23 pilot-state milestones. Source coverage
+  check (`data/COVERAGE.md`) and tie-out (`data/TIEOUT.md`, all passed) run.
+  Open with Eric: fifth disease, county data license, Ballotpedia terms,
+  awkward milestone headlines, remaining 47 states of milestones.
