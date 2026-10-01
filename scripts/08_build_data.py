@@ -23,10 +23,10 @@ DISEASES = [
     {"k": "polio", "name": "Polio", "color": "#4a3aa7", "vax": "polio"},
 ]
 VACCINES = {
-    "mmr": "MMR (measles, mumps, rubella), 1+ dose",
-    "dtap": "DTaP (diphtheria, tetanus, whooping cough), 4+ doses",
-    "polio": "Polio, 3+ doses",
-    "hepa": "Hepatitis A, 2+ doses",
+    "mmr": "MMR vaccine, 1+ dose",
+    "dtap": "DTaP vaccine, 4+ doses",
+    "polio": "Polio vaccine, 3+ doses",
+    "hepa": "Hepatitis A vaccine, 2+ doses",
 }
 SRC = {"tycho_weekly": "w", "tycho_cumulative": "c", "cdc_annual": "a", "cdc_weekly": "r"}
 
