@@ -3,7 +3,7 @@ __pycache__/
 *.pyc
 .DS_Store
 .env
-.idea/workspace.xml
+.idea/
 # raw downloads are re-fetched by the scripts; extracted tables and their notes are committed
 data/raw/tycho/
 data/raw/cdc/
