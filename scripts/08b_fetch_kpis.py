@@ -574,20 +574,32 @@ NCSL_WORD = {"Dem": "Democratic", "Rep": "Republican", "Ind": "Other", "Split": 
 
 def ncsl():
     """NCSL's dated yearly tables, for the years whose PDF is still on its server. Used only as a check."""
-    import pdfplumber
+    import fitz  # PyMuPDF
+
+    def page_lines(pg):
+        """Words on the same baseline, left to right, joined into one printed line."""
+        rows = []   # [baseline y, [(x, word), ...]]; a word joins the current line if it sits within 3 points of it
+        for x0, y0, x1, y1, word, *_ in sorted(pg.get_text("words"), key=lambda w: ((w[1] + w[3]) / 2, w[0])):
+            y = (y0 + y1) / 2
+            if rows and abs(y - rows[-1][0]) <= 3:
+                rows[-1][1].append((x0, word))
+            else:
+                rows.append([y, [(x0, word)]])
+        return [" ".join(w for _, w in sorted(ws)) for _, ws in rows]
+
     names = sorted((n for a, n in STATES.items() if a != "DC"), key=len, reverse=True)
     out = []
     for y, fn in NCSL_FILES.items():
         f = download(NCSL_BASE + fn, SRC / f"ncsl_Legis_Control_{y}.pdf")
-        with pdfplumber.open(f) as pdf:
-            lines = "\n".join(pg.extract_text() or "" for pg in pdf.pages).splitlines()
+        lines = [l for pg in fitz.open(f) for l in page_lines(pg)]
         asof = " ".join(lines[:2]) if "Total Total" not in lines[1] else lines[0]
         notes = " ".join(l for n, l in enumerate(lines) if l.startswith("*Notes") or (n and lines[n - 1].startswith("*Notes")))
         got = {}
         for l in lines:
             for n in names:
                 if re.match(rf"^{n}\*?\s", l) and n not in got:
-                    leg, gov, ctl = l.split()[-3:]
+                    # the last three control codes on the row; stray footnote letters between them are skipped
+                    leg, gov, ctl = [t for t in l.split() if t.rstrip("*") in NCSL_WORD][-3:]
                     got[n] = dict(state=NAME_TO_ABBR[n.upper()], year=y, ncsl_as_of=short(asof, 90),
                                   ncsl_legislature=NCSL_WORD[leg.rstrip("*")], ncsl_governor=NCSL_WORD[gov.rstrip("*")],
                                   ncsl_state_control=NCSL_WORD[ctl.rstrip("*")],
