@@ -1,6 +1,6 @@
 # Status
 
-Project: DiseaseVaccinationMap (folder: PythonProject1 until the rename below)
+Project: DiseaseVaccinationMap
 Process: ~/.claude/d4tp-process/PROCESS.md
 
 ## Current
@@ -44,3 +44,10 @@ None.
 - 2026-10-01 Renamed to DiseaseVaccinationMap. GitHub repo renamed
   (`Data4ThePeople/DiseaseVaccinationMap`). The local folder is renamed once
   the milestone research writing into it has finished.
+- 2026-10-02 Milestones done for all 47 other states and DC (338 items, one
+  file per state in `data/milestones_states/`, notes per batch beside them).
+  Two items held off the page for an editor's decision (MT and ID, 1983).
+  Repo made public and GitHub Pages turned on at Eric's request:
+  https://data4thepeople.github.io/DiseaseVaccinationMap/ . Local folder
+  renamed to `DiseaseVaccinationMap`; `PythonProject1` is a link to it and can
+  be deleted once PyCharm is reopened from the new folder.
