@@ -1,0 +1,126 @@
+[
+ {
+  "date": "1979-09-01",
+  "scope": "WA",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "Immunization program—Purpose.",
+  "source": "Revised Code of Washington, RCW 28A.210.060 (Washington State Legislature)",
+  "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=28A.210.060",
+  "kind": "policy",
+  "published": null,
+  "blurb": "This section of Washington's school immunization law, which took effect September 1, 1979, says the law is meant to provide a way to reach full immunization of school-age children against certain diseases.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1984",
+  "scope": "WA",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "Epidemiologic Notes and Reports Pertussis -- Washington, 1984",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000573.htm",
+  "kind": "report",
+  "published": "1985-07-05",
+  "blurb": "Seattle-King County reported 162 whooping cough cases from January 1 to October 1, 1984, compared with an average of 12 cases a year from 1979 to 1983.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1990-07-20",
+  "scope": "WA",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Epidemiologic Notes and Reports Measles -- Washington, 1990",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00001675.htm",
+  "kind": "report",
+  "published": "1990-07-20",
+  "blurb": "Washington reported 266 measles cases in the first 26 weeks of 1990, compared with 55 cases in all of 1989, the most the state had reported in any year since 1979.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2011-05-10",
+  "scope": "WA",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "K-12--IMMUNIZATION--EXEMPTION",
+  "source": "Washington State Legislature, Chapter 299, Laws of 2011 (Engrossed Senate Bill 5005)",
+  "url": "https://lawfilesext.leg.wa.gov/biennium/2011-12/Pdf/Bills/Session%20Laws/Senate/5005.SL.pdf",
+  "kind": "policy",
+  "published": "2011-05-10",
+  "blurb": "This Washington law, approved on May 10, 2011, required the school vaccine exemption form to include a statement signed by a health care practitioner saying the parent was given information about the benefits and risks of immunization.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2012-04-03",
+  "scope": "WA",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "Pertussis Epidemic — Washington, 2012",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6128a1.htm",
+  "kind": "report",
+  "published": "2012-07-20",
+  "blurb": "Washington's Secretary of Health declared a whooping cough epidemic on April 3, 2012, and by June 16 the state had 2,520 reported cases, a 1,300% increase from the same period in 2011.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2015-07-02",
+  "scope": "WA",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Washington reports first U.S. measles death in 12 years",
+  "source": "CNN",
+  "url": "https://edition.cnn.com/2015/07/02/health/us-measles-death/",
+  "kind": "news",
+  "published": "2015-07-02",
+  "blurb": "The Washington State Department of Health reported that a woman who was likely exposed to measles during an outbreak in Clallam County died of pneumonia due to measles, which it said was the first confirmed U.S. measles death since 2003.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2019-01-03",
+  "scope": "WA",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Notes from the Field: Community Outbreak of Measles — Clark County, Washington, 2018–2019",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/volumes/68/wr/mm6819a5.htm",
+  "kind": "report",
+  "published": "2019-05-16",
+  "blurb": "After measles was confirmed on January 3, 2019, in an unvaccinated child in Clark County, the outbreak grew to 71 confirmed cases among county residents by March 28, 2019.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2019-05-10",
+  "scope": "WA",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella"
+  ],
+  "headline": "MEASLES, MUMPS, AND RUBELLA VACCINE--SCHOOLS AND DAY CARE CENTERS",
+  "source": "Washington State Legislature, Chapter 362, Laws of 2019 (Engrossed House Bill 1638)",
+  "url": "https://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session%20Laws/House/1638.SL.pdf",
+  "kind": "policy",
+  "published": "2019-05-10",
+  "blurb": "This Washington law, approved on May 10, 2019, says a philosophical or personal objection may not be used to exempt a child from the measles, mumps, and rubella vaccine required for school and day care.",
+  "checked": "2026-10-01"
+ }
+]

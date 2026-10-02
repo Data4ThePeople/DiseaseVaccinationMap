@@ -1,0 +1,96 @@
+[
+  {
+    "date": "1973",
+    "scope": "NE",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "Nebraska Revised Statute 79-217",
+    "source": "Nebraska Legislature",
+    "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=79-217",
+    "kind": "policy",
+    "published": null,
+    "blurb": "This Nebraska law, which lists 1973 acts as its first sources, now requires each student to be immunized against measles, mumps, rubella, polio, diphtheria, whooping cough, and tetanus before enrolling in school.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1991",
+    "scope": "NE",
+    "diseases": [
+      "diphtheria",
+      "pertussis",
+      "polio",
+      "measles",
+      "mumps",
+      "rubella"
+    ],
+    "headline": "Early Childhood Vaccination In Two Rural Counties -- Nebraska, 1991-1992",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00017640.htm",
+    "kind": "report",
+    "published": "1992-09-18",
+    "blurb": "The Nebraska Department of Health and Hastings College reviewed school records for 3,897 children in two rural counties in the 1991-92 school year to see how many had received their shots on time.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1999-03-21",
+    "scope": "NE",
+    "diseases": [
+      "rubella"
+    ],
+    "headline": "Rubella Among Hispanic Adults --- Kansas, 1998, and Nebraska, 1999",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm4911a1.htm",
+    "kind": "report",
+    "published": "2000-03-24",
+    "blurb": "The Douglas County Health Department in Nebraska identified 53 confirmed rubella cases between March 21 and May 29, 1999, compared with none in the previous eight years.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2008-09",
+    "scope": "NE",
+    "diseases": [
+      "pertussis"
+    ],
+    "headline": "Local Health Department Costs Associated with Response to a School-Based Pertussis Outbreak --- Omaha, Nebraska, September--November 2008",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6001a2.htm",
+    "kind": "report",
+    "published": "2011-01-14",
+    "blurb": "A whooping cough outbreak at a school in Omaha in late 2008 had 26 cases, and the county health department's response cost $52,131.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2019-08-03",
+    "scope": "NE",
+    "diseases": [
+      "mumps"
+    ],
+    "headline": "Multistate Mumps Outbreak Originating from Asymptomatic Transmission at a Nebraska Wedding — Six States, August–October 2019",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/volumes/69/wr/mm6922a2.htm",
+    "kind": "report",
+    "published": "2020-06-04",
+    "blurb": "In August 2019, 30 people who attended a wedding in Nebraska developed mumps after contact with one fully vaccinated guest who had no symptoms, and the outbreak spread to six states.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-05-27",
+    "scope": "NE",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "First Confirmed Measles Case Reported in Nebraska",
+    "source": "Nebraska Department of Health and Human Services",
+    "url": "https://dhhs.ne.gov/Pages/First-Confirmed-Measles-Case-Reported-in-Nebraska.aspx",
+    "kind": "press release",
+    "published": "2025-05-27",
+    "blurb": "Nebraska health officials reported a confirmed measles case in a vaccinated child in Sheridan County who had not traveled out of state.",
+    "checked": "2026-10-01"
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "date": "1935",
+    "scope": "KY",
+    "diseases": [
+      "polio"
+    ],
+    "headline": "Anterior Poliomyelitis in Kentucky During 1935",
+    "source": "American Journal of Public Health and the Nations Health (PubMed Central)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1562603/",
+    "kind": "report",
+    "published": null,
+    "blurb": "This article by A. T. McCormack and Fred W. Caudill on polio in Kentucky during 1935 was read at a public health meeting in St. Louis in November 1935 and printed in February 1936.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1962",
+    "scope": "KY",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "214.036 Exceptions to testing or immunization requirement.",
+    "source": "Kentucky Revised Statutes (Kentucky General Assembly)",
+    "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=51860",
+    "kind": "policy",
+    "published": null,
+    "blurb": "This Kentucky law, created in 1962 and last amended in 2021, says a child does not have to be immunized when a health care provider writes that it would harm the child's health or when parents object on religious grounds in a sworn statement.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1982-11",
+    "scope": "KY",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "A waterborne outbreak of hepatitis A in Meade County, Kentucky",
+    "source": "American Journal of Public Health (PubMed Central)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1645986/",
+    "kind": "report",
+    "published": null,
+    "blurb": "Health officials in Meade County noticed a sudden rise in hepatitis A in November 1982, and a study of 73 cases found the biggest risk factor was household use of untreated water from one spring.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2003-08",
+    "scope": "KY",
+    "diseases": [
+      "pertussis"
+    ],
+    "headline": "Outbreaks of Pertussis Associated with Hospitals --- Kentucky, Pennsylvania, and Oregon, 2003",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5403a3.htm",
+    "kind": "report",
+    "published": "2005-01-28",
+    "blurb": "In August 2003, a 2-month-old infant in a Kentucky hospital nursery and a doctor who examined the infant both tested positive for whooping cough, and 72 exposed patients and 72 health care workers were given a preventive antibiotic.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2017-11-21",
+    "scope": "KY",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "Acute Hepatitis A Outbreak – Cases Reported in Multiple Counties",
+    "source": "Kentucky Cabinet for Health and Family Services",
+    "url": "https://www.chfs.ky.gov/News/Documents/Acute%20Hepatitis%20A%20Outbreak%20-%20Cases%20Reported%20in%20Multiple%20Counties.pdf",
+    "kind": "press release",
+    "published": "2017-11-21",
+    "blurb": "The Kentucky Department for Public Health declared a hepatitis A outbreak after 31 cases were reported across the state in 2017, a 50% increase over the 10-year average of 20 cases a year.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2018-07-01",
+    "scope": "KY",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "902 KAR 2:060. Immunization schedules for attending child day care centers, certified family child care homes, other licensed facilities which care for children, preschool programs, and public and private primary and secondary schools.",
+    "source": "Kentucky Administrative Regulations (Legislative Research Commission)",
+    "url": "https://apps.legislature.ky.gov/law/kar/titles/902/002/060/",
+    "kind": "policy",
+    "published": null,
+    "blurb": "This Kentucky regulation's immunization schedule took effect for the school year starting on or after July 1, 2018, and it lists two doses of hepatitis A vaccine among the shots for children ages 5 and 6.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-06-30",
+    "scope": "KY",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Health Officials Announce Measles Outbreak in Central Kentucky",
+    "source": "Kentucky Cabinet for Health and Family Services",
+    "url": "https://www.chfs.ky.gov/News/Documents/Health%20Officials%20Announce%20Measles%20Outbreak%20in%20Central%20Kentucky.pdf",
+    "kind": "press release",
+    "published": "2025-06-30",
+    "blurb": "Kentucky health officials said a measles outbreak that started in Woodford County had spread to Fayette County, with five measles cases in the state at the time and four of them tied to the outbreak.",
+    "checked": "2026-10-01"
+  }
+]

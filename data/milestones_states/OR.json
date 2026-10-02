@@ -1,0 +1,129 @@
+[
+  {
+    "date": "1972-01",
+    "scope": "OR",
+    "diseases": [
+      "rubella"
+    ],
+    "headline": "Rub out rubella campaign in Lane County, Oregon",
+    "source": "HSMHA Health Reports",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1616126/",
+    "kind": "report",
+    "published": null,
+    "blurb": "W. A. Miller, A. K. Hottle, and A. E. Berwick published a five-page article in HSMHA Health Reports about a rubella campaign in Lane County, Oregon.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1973",
+    "scope": "OR",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "433.267 Immunization of school children; rules; exceptions; effect of failure to comply.",
+    "source": "Oregon Revised Statutes",
+    "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors433.html",
+    "kind": "policy",
+    "published": null,
+    "blurb": "This Oregon law makes proof of immunization, or a signed medical exemption or parent's form declining shots, a condition of attending school or a children's facility, and its history note starts with a 1973 act.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1978-05",
+    "scope": "OR",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Measles control in Oregon",
+    "source": "Public Health Reports",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1431901/",
+    "kind": "report",
+    "published": null,
+    "blurb": "D. P. Francis, R. S. Pope, and E. J. Pasternak published a paper in Public Health Reports on measles control in Oregon.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2012",
+    "scope": "OR",
+    "diseases": [
+      "pertussis"
+    ],
+    "headline": "Suffer the Infants: A Severe Case of Pertussis in Oregon, 2012",
+    "source": "Public Health Reports",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4529826/",
+    "kind": "report",
+    "published": null,
+    "blurb": "This report describes an Oregon infant who spent 90 days in the hospital with whooping cough and had hospital charges of $1.5 million.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2013",
+    "scope": "OR",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "SB 132 Enrolled",
+    "source": "Oregon Legislative Information System",
+    "url": "https://olis.oregonlegislature.gov/liz/2013R1/Measures/Overview/SB132",
+    "kind": "policy",
+    "published": null,
+    "blurb": "This Oregon law from the 2013 session changed the documents a parent must give a school administrator to opt a child out of immunizations.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2019-05-06",
+    "scope": "OR",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "Oregon House votes 35-25 to end nonmedical exemptions to vaccination",
+    "source": "KVAL",
+    "url": "https://kval.com/news/local/oregon-house-votes-35-25-to-end-nonmedical-exemptions-to-vaccination",
+    "kind": "news",
+    "published": "2019-05-06",
+    "blurb": "The Oregon House voted 35-25 for House Bill 3063, a bill to end nonmedical exemptions from the vaccines required for schools and day cares, and sent it to the Senate.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2024-08-28",
+    "scope": "OR",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Public health leaders urge vaccination in Oregon’s largest measles outbreak in decades",
+    "source": "Oregon Public Broadcasting",
+    "url": "https://www.opb.org/article/2024/08/28/oregon-measles-outbreak-public-health/",
+    "kind": "news",
+    "published": "2024-08-28",
+    "blurb": "In August 2024, Oregon was in its worst measles outbreak since the early 1990s, and a state health official talked about it on public radio.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-12-10",
+    "scope": "OR",
+    "diseases": [
+      "pertussis"
+    ],
+    "headline": "Oregon whooping cough cases hit record; pertussis vaccination, safety measures urged to protect babies",
+    "source": "KTVZ",
+    "url": "https://ktvz.com/health/2025/12/10/oregon-whooping-cough-cases-hit-record-pertussis-vaccination-safety-measures-urged-to-protect-babies/",
+    "kind": "news",
+    "published": "2025-12-10",
+    "blurb": "The Oregon Health Authority said it had received 1,475 reports of whooping cough in 2025, passing the state's annual record of 1,420 set in 1950.",
+    "checked": "2026-10-01"
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "date": "1970-04-15",
+    "scope": "OK",
+    "diseases": [
+      "diphtheria",
+      "pertussis",
+      "measles",
+      "rubella",
+      "polio"
+    ],
+    "headline": "SCHOOL ADMINISTRATOR’S GUIDE TO OKLAHOMA’S IMMUNIZATION LAW",
+    "source": "Oklahoma State Department of Health",
+    "url": "https://oklahoma.gov/content/dam/ok/en/health/health2/documents/imm-school-administrators-guide-to-okla-immunization-law.pdf",
+    "kind": "history page",
+    "published": null,
+    "blurb": "Oklahoma's legislature added immunization requirements for school attendance to the state school code in 1970.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1983-12-23",
+    "scope": "OK",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "Food-borne Hepatitis A -- Oklahoma, Texas",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000191.htm",
+    "kind": "report",
+    "published": "1983-12-23",
+    "blurb": "A hepatitis A outbreak in Marietta, Oklahoma, made 203 people ill between August 15 and October 10, 1983, and most of the patients who were interviewed had eaten at one drive-in restaurant.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1984-01-13",
+    "scope": "OK",
+    "diseases": [
+      "pertussis"
+    ],
+    "headline": "Epidemiologic Notes and Reports Pertussis Outbreak -- Oklahoma",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000258.htm",
+    "kind": "report",
+    "published": "1984-01-13",
+    "blurb": "Oklahoma reported 330 whooping cough cases from January 1 through December 10, 1983, with cases peaking in June and July.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1989-04",
+    "scope": "OK",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "Outbreaks of hepatitis A among illicit drug users, Oklahoma, 1984-87",
+    "source": "American Journal of Public Health",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1349976/",
+    "kind": "report",
+    "published": null,
+    "blurb": "Oklahoma State Department of Health staff described six unrelated hepatitis A outbreaks among people who used marijuana and injected methamphetamine.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1990",
+    "scope": "OK",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella"
+    ],
+    "headline": "SCHOOL ADMINISTRATOR’S GUIDE TO OKLAHOMA’S IMMUNIZATION LAW",
+    "source": "Oklahoma State Department of Health",
+    "url": "https://oklahoma.gov/content/dam/ok/en/health/health2/documents/imm-school-administrators-guide-to-okla-immunization-law.pdf",
+    "kind": "history page",
+    "published": null,
+    "blurb": "Starting in fall 1990, Oklahoma added a second dose of MMR vaccine to its school requirements, beginning with children entering kindergarten.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2016-12-15",
+    "scope": "OK",
+    "diseases": [
+      "mumps"
+    ],
+    "headline": "292 cases reported in Garfield County mumps outbreak",
+    "source": "Enid News & Eagle",
+    "url": "https://www.enidnews.com/news/local_news/cases-reported-in-garfield-county-mumps-outbreak/article_894ea5c1-5e58-5b7c-acd4-96a36212b277.html",
+    "kind": "news",
+    "published": "2016-12-15",
+    "blurb": "The Oklahoma State Department of Health counted 292 mumps cases in Garfield County, part of a statewide outbreak of 342 cases.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-03-11",
+    "scope": "OK",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "First Cases of Measles in Oklahoma Reported",
+    "source": "Oklahoma State Department of Health",
+    "url": "https://oklahoma.gov/health/news---events/newsroom/2025/first-cases-of-measles-in-oklahoma-reported.html",
+    "kind": "press release",
+    "published": "2025-03-11",
+    "blurb": "Oklahoma's health department reported two probable measles cases in people who said they were exposed in the Texas and New Mexico outbreak.",
+    "checked": "2026-10-01"
+  }
+]

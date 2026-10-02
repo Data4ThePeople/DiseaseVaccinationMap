@@ -1,0 +1,100 @@
+[
+ {
+  "date": "1977-03-18",
+  "scope": "AK",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Measles and School Immunizations — Alaska",
+  "source": "CDC, Morbidity and Mortality Weekly Report (via CDC Stacks)",
+  "url": "https://stacks.cdc.gov/view/cdc/1153/cdc_1153_DS1.pdf",
+  "kind": "report",
+  "published": "1977-03-18",
+  "blurb": "After measles outbreaks in Anchorage and Fairbanks, Alaska set a deadline of March 1, 1977, for all school children to have the shots required by a 1970 state law or be kept out of school.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1996-09-13",
+  "scope": "AK",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Measles Outbreak Among School-Aged Children -- Juneau, Alaska, 1996",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00043622.htm",
+  "kind": "report",
+  "published": "1996-09-13",
+  "blurb": "Juneau had 63 confirmed measles cases from February 16 through April 25, 1996, and 41 of them were in school-aged children.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1999-01-08",
+  "scope": "AK",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Transmission of Measles Among a Highly Vaccinated School Population -- Anchorage, Alaska, 1998",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00056144.htm",
+  "kind": "report",
+  "published": "1999-01-08",
+  "blurb": "Health officials counted 33 confirmed measles cases in Anchorage from August 10 through November 23, 1998, including 17 at one high school.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2001",
+  "scope": "AK",
+  "diseases": [
+   "hepatitis_a"
+  ],
+  "headline": "The Epidemiology of Hepatitis A — Alaska, 1973–2016",
+  "source": "Alaska Section of Epidemiology, State of Alaska Epidemiology Bulletin",
+  "url": "https://epi.alaska.gov/bulletins/docs/b2017_12.pdf",
+  "kind": "history page",
+  "published": "2017-06-01",
+  "blurb": "Hepatitis A vaccination became a requirement for daycare and K-12 school attendance in Alaska in 2001, according to this 2017 state health bulletin.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2014-10",
+  "scope": "AK",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "Pertussis Outbreak in the Interior Region ― Alaska, Fall 2014",
+  "source": "Alaska Section of Epidemiology, State of Alaska Epidemiology Bulletin",
+  "url": "https://epi.alaska.gov/bulletins/docs/b2015_03.pdf",
+  "kind": "report",
+  "published": "2015-01-28",
+  "blurb": "State epidemiologists traveled to a remote community in Alaska's Interior region in October 2014 to investigate a whooping cough outbreak and identified 39 cases.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2017-05",
+  "scope": "AK",
+  "diseases": [
+   "mumps"
+  ],
+  "headline": "Notes from the Field: Mumps Outbreak — Alaska, May 2017–July 2018",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6733a6.htm",
+  "kind": "report",
+  "published": "2018-08-24",
+  "blurb": "A mumps outbreak that began in Anchorage in May 2017 reached 391 confirmed and probable cases by July 31, 2018, and the state recommended a third dose of MMR vaccine for all Alaska residents.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2025-01-16",
+  "scope": "AK",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Measles Confirmed in Southern Kenai Peninsula — What Alaska Clinicians Should Know",
+  "source": "Alaska Department of Health, Alaska Public Health Alert",
+  "url": "https://health.alaska.gov/media/pacng45j/akphan_20250116_measles-confirmed-in-southern-kenai-peninsula-what-alaska-clinicians-should-know.pdf",
+  "kind": "press release",
+  "published": "2025-01-16",
+  "blurb": "Alaska health officials confirmed measles in an unvaccinated adult from the Southern Kenai Peninsula who started to feel sick while traveling home from a trip overseas.",
+  "checked": "2026-10-01"
+ }
+]

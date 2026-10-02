@@ -1,0 +1,129 @@
+[
+ {
+  "date": "1934-06",
+  "scope": "WV",
+  "diseases": [
+   "diphtheria"
+  ],
+  "headline": "Diphtheria Prevention in Charleston, West Virginia",
+  "source": "American Journal of Public Health and the Nation's Health (via PubMed Central)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1558667/",
+  "kind": "report",
+  "published": null,
+  "blurb": "Hugh B. Robins published a three-page article in a public health journal in June 1934 about preventing diphtheria in Charleston, West Virginia.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1985-04-17",
+  "scope": "WV",
+  "diseases": [
+   "rubella"
+  ],
+  "headline": "Rubella Outbreaks in Prisons -- New York City, West Virginia, California",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000621.htm",
+  "kind": "report",
+  "published": "1985-10-11",
+  "blurb": "Nine confirmed cases of rubella occurred among inmates at a federal prison in Morgantown, West Virginia, from April 17 to May 6, 1985.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2004-12",
+  "scope": "WV",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "Brief Report: Fatal Case of Pertussis in an Infant --- West Virginia, 2004",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5403a4.htm",
+  "kind": "report",
+  "published": "2005-01-28",
+  "blurb": "In December 2004, a 29-day-old infant in West Virginia died from whooping cough after being around adult family members who probably had undiagnosed whooping cough.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2011-03",
+  "scope": "WV",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "Court Declines Review of School Vaccine, Religious-Flier Cases",
+  "source": "Education Week",
+  "url": "https://www.edweek.org/education/court-declines-review-of-school-vaccine-religious-flier-cases/2011/11",
+  "kind": "news",
+  "published": "2011-11-14",
+  "blurb": "A federal appeals court ruled in March 2011 that West Virginia's school vaccination law did not violate a mother's right to free exercise of religion, and in November 2011 the U.S. Supreme Court declined to hear her appeal.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2015-03-31",
+  "scope": "WV",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "Senate Bill 286",
+  "source": "West Virginia Legislature, Bill Status",
+  "url": "https://www.wvlegislature.gov/Bill_Status/bills_history.cfm?INPUT=286&year=2015&sessiontype=RS",
+  "kind": "policy",
+  "published": null,
+  "blurb": "This West Virginia bill on required immunizations for students and exemptions from them was approved by the governor on March 31, 2015, and took effect on June 16, 2015.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2018-03",
+  "scope": "WV",
+  "diseases": [
+   "hepatitis_a"
+  ],
+  "headline": "Notes from the Field: Hepatitis A Outbreak Associated with Drug Use and Homelessness — West Virginia, 2018",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/volumes/68/wr/mm6814a4.htm",
+  "kind": "report",
+  "published": "2019-04-11",
+  "blurb": "The Kanawha-Charleston Health Department began looking into a cluster of hepatitis A infections in March 2018 and later counted 664 outbreak cases from January 1 to August 28, 2018.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2024-04-26",
+  "scope": "WV",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "West Virginia Department of Health Monitoring for Transmission of Measles",
+  "source": "West Virginia Department of Health",
+  "url": "https://health.wv.gov/article/west-virginia-department-health-monitoring-transmission-measles",
+  "kind": "press release",
+  "published": "2024-04-26",
+  "blurb": "The West Virginia Department of Health said it was watching for spread of measles after the state's first documented case since 2009, and that 152 more people may have been exposed.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2025-01-14",
+  "scope": "WV",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "Immunizations - Religious and Philosophical Exemptions",
+  "source": "West Virginia Office of Epidemiology and Prevention Services",
+  "url": "https://oeps.wv.gov/immunizations-religious-and-philosophical-exemptions",
+  "kind": "policy",
+  "published": null,
+  "blurb": "On January 14, 2025, West Virginia's governor signed Executive Order 7-25 allowing religious exemptions from the vaccines required for school and state-regulated child care, and this state page explains how parents can request one.",
+  "checked": "2026-10-01"
+ }
+]

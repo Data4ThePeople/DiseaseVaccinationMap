@@ -1,0 +1,110 @@
+[
+  {
+    "date": "1961",
+    "scope": "MO",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "167.181. Immunization of pupils against certain diseases compulsory — exceptions — records — to be at public expense, when — fluoride treatments administered, when — rulemaking authority, procedure.",
+    "source": "Missouri Revisor of Statutes",
+    "url": "https://revisor.mo.gov/main/OneSection.aspx?section=167.181",
+    "kind": "policy",
+    "published": null,
+    "blurb": "This Missouri law, which lists a 1961 act as its source, now requires school children to be immunized against polio, rubella, measles, mumps, tetanus, whooping cough, diphtheria, and hepatitis B, with exemptions for religious beliefs and medical reasons.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1990-12-07",
+    "scope": "MO",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "Foodborne Hepatitis A -- Missouri, Wisconsin, and Alaska, 1990-1992",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00021180.htm",
+    "kind": "report",
+    "published": "1993-07-16",
+    "blurb": "Hepatitis A was diagnosed in 110 people who had eaten at one restaurant in Cass County, Missouri, between December 7, 1990, and January 9, 1991, and two of them died.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1994-04-04",
+    "scope": "MO",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Outbreak of Measles Among Christian Science Students -- Missouri and Illinois, 1994",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00031788.htm",
+    "kind": "report",
+    "published": "1994-07-01",
+    "blurb": "From April 16 to May 19, 1994, 141 measles cases linked to a Christian Science boarding school or college were reported to the St. Louis County Health Department, all in people who had not been vaccinated before the outbreak.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2016-11-18",
+    "scope": "MO",
+    "diseases": [
+      "mumps"
+    ],
+    "headline": "Mumps Cases Surge in US as Outbreak at University of Missouri Climbs to 31",
+    "source": "ABC News",
+    "url": "https://abcnews.go.com/Health/mumps-cases-surge-us-outbreak-university-missouri-climbs/story?id=43633317",
+    "kind": "news",
+    "published": "2016-11-18",
+    "blurb": "A mumps outbreak at the University of Missouri had reached 31 confirmed cases and 27 suspected cases by mid-November 2016.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2019-08-21",
+    "scope": "MO",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "Over 400 cases reported statewide in hepatitis A outbreak in Missouri",
+    "source": "Missouri Department of Health and Senior Services (archived by the Internet Archive)",
+    "url": "https://web.archive.org/web/20190917223908/https://health.mo.gov/news/newsitem/uuid/ac4db9a0-01ae-4b1b-b550-83c36f998fa4/over-400-cases-reported-statewide-in-hepatitis-a-outbreak-in-missouri",
+    "kind": "press release",
+    "published": "2019-08-21",
+    "blurb": "Missouri counted 414 hepatitis A outbreak cases in 35 counties from September 15, 2017, to August 20, 2019, with 233 hospital stays and two deaths.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2021-03-05",
+    "scope": "MO",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "20-1222 - B.W.C., et al v. Randall Williams, et al",
+    "source": "U.S. Court of Appeals for the Eighth Circuit (via GovInfo)",
+    "url": "https://www.govinfo.gov/app/details/USCOURTS-ca8-20-01222",
+    "kind": "court",
+    "published": "2021-03-05",
+    "blurb": "A federal appeals court upheld the dismissal of a lawsuit by Missouri families who objected to using a specific state form to claim a religious exemption from school immunizations.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-04-18",
+    "scope": "MO",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Case of measles confirmed in traveler to Missouri",
+    "source": "Missouri Department of Health and Senior Services (archived by the Internet Archive)",
+    "url": "https://web.archive.org/web/20250418201749/https://health.mo.gov/news/newsitem/uuid/58f781a5-e996-4c78-918c-07b00af263cf/case-of-measles-confirmed-in-traveler-to-missouri",
+    "kind": "press release",
+    "published": "2025-04-18",
+    "blurb": "Missouri health officials announced the state's first confirmed measles case of 2025, a child visiting Taney County after international travel.",
+    "checked": "2026-10-01"
+  }
+]

@@ -1,0 +1,86 @@
+[
+ {
+  "date": "1935",
+  "scope": "VA",
+  "diseases": [
+   "polio"
+  ],
+  "headline": "Poliomyelitis in Virginia During 1935",
+  "source": "American Journal of Public Health and the Nation's Health (via PubMed Central)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1562595/",
+  "kind": "report",
+  "published": null,
+  "blurb": "I. C. Riggin published a paper on polio in Virginia during 1935, first read at a public health meeting in St. Louis in November 1935.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1981-11-08",
+  "scope": "VA",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Epidemiologic Notes and Reports Transmission of Measles Across State Lines -- Kentucky, New Hampshire, Tennessee, Virginia",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000223.htm",
+  "kind": "report",
+  "published": "1982-03-19",
+  "blurb": "A measles outbreak linked to one imported case reached 25 cases in four states between November 8, 1981, and January 9, 1982, and 18 of the cases were in Virginia.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2021-07-01",
+  "scope": "VA",
+  "diseases": [
+   "hepatitis_a"
+  ],
+  "headline": "HB 1090 Immunizations; regulations by State Board of Health.",
+  "source": "Virginia Legislative Information System",
+  "url": "https://legacylis.virginia.gov/cgi-bin/legp604.exe?201+sum+HB1090",
+  "kind": "policy",
+  "published": null,
+  "blurb": "This Virginia law from the 2020 session changed the minimum vaccines required to attend school or child care and took effect on July 1, 2021.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2021-09",
+  "scope": "VA",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Public Health Actions to Control Measles Among Afghan Evacuees During Operation Allies Welcome — United States, September–November 2021",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/volumes/71/wr/mm7117a2.htm",
+  "kind": "report",
+  "published": "2022-04-28",
+  "blurb": "Health officials confirmed 47 measles cases among people evacuated from Afghanistan to the United States in fall 2021, and 22 of those cases were in Virginia.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2021-09",
+  "scope": "VA",
+  "diseases": [
+   "hepatitis_a"
+  ],
+  "headline": "Widespread Community Transmission of Hepatitis A Virus Following an Outbreak at a Local Restaurant — Virginia, September 2021–September 2022",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/volumes/72/wr/mm7214a2.htm",
+  "kind": "report",
+  "published": "2023-04-06",
+  "blurb": "A hepatitis A outbreak in southwestern Virginia in September 2021, linked to an infected food handler, resulted in 51 cases, 31 hospital stays, and three deaths.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2025-04-19",
+  "scope": "VA",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Updated: Virginia Health Officials Confirm First 2025 Measles Case in the State",
+  "source": "Virginia Department of Health",
+  "url": "https://www.vdh.virginia.gov/blog/2025/04/19/virginia-health-officials-confirm-first-2025-measles-case-in-the-state/",
+  "kind": "press release",
+  "published": "2025-04-19",
+  "blurb": "The Virginia Department of Health reported the state's first measles case of 2025, in a child age 4 or younger in the Northwest Region who had recently traveled internationally.",
+  "checked": "2026-10-01"
+ }
+]

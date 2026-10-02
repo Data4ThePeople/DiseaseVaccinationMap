@@ -1,0 +1,111 @@
+[
+  {
+    "date": "1975-11",
+    "scope": "LA",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "MEASLES TRAGEDY IN LOUISIANA - 1975",
+    "source": "Louisiana Morbidity Report (Louisiana Department of Health)",
+    "url": "https://ldh.la.gov/assets/oph/Center-PHCH/Center-CH/infectious-epi/LMR/60s70s80s90s/70s/1976/jan76.pdf",
+    "kind": "report",
+    "published": null,
+    "blurb": "Measles cases appeared in Plaquemine, in Iberville Parish, in late November 1975, and by January 7, 1976, health workers had identified 35 cases; 96% of cases had no record of measles vaccination.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1978-04",
+    "scope": "LA",
+    "diseases": [
+      "rubella"
+    ],
+    "headline": "STATEWIDE RUBELLA OUTBREAK",
+    "source": "Louisiana Morbidity Report (Louisiana Department of Health)",
+    "url": "https://ldh.la.gov/assets/oph/Center-PHCH/Center-CH/infectious-epi/LMR/60s70s80s90s/70s/1978/apr78.pdf",
+    "kind": "report",
+    "published": null,
+    "blurb": "In April 1978 the state health department said rubella was widespread across Louisiana, mostly in older children and young adults, and urged doctors to make sure women of childbearing age were immune.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1987-04",
+    "scope": "LA",
+    "diseases": [
+      "mumps"
+    ],
+    "headline": "LOUISIANA MUMPS OUTBREAK",
+    "source": "Louisiana Morbidity Report (Louisiana Department of Health)",
+    "url": "https://ldh.la.gov/assets/oph/Center-PHCH/Center-CH/infectious-epi/LMR/60s70s80s90s/80s/1987/marapr87.pdf#page=2",
+    "kind": "report",
+    "published": null,
+    "blurb": "Concordia Parish had 303 reports of mumps between January 1 and April 17, 1987; Louisiana had fewer than ten reported cases a year from 1981 to 1986.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1992-06-15",
+    "scope": "LA",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "Large Hepatitis A Outbreak in Monroe Area",
+    "source": "Louisiana Morbidity Report (Louisiana Department of Health)",
+    "url": "https://ldh.la.gov/assets/oph/Center-PHCH/Center-CH/infectious-epi/LMR/60s70s80s90s/90s/1992/sepoct92.pdf",
+    "kind": "report",
+    "published": null,
+    "blurb": "After five patients were reported on June 15, 1992, state investigators identified 72 hepatitis A cases in the Monroe area, and 70% of the patients said they had eaten at the same restaurant.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2008-07-01",
+    "scope": "LA",
+    "diseases": [
+      "pertussis",
+      "diphtheria",
+      "measles",
+      "mumps",
+      "rubella",
+      "polio"
+    ],
+    "headline": "NOTICE: Legislative Changes in Immunization Laws for School-Aged Children",
+    "source": "Louisiana Morbidity Report (Louisiana Department of Health)",
+    "url": "https://ldh.la.gov/assets/oph/Center-PHCH/Center-CH/infectious-epi/LMR/2000-2010/2008/julaug08.pdf#page=3",
+    "kind": "policy",
+    "published": null,
+    "blurb": "Louisiana laws that took effect July 1, 2008, required proof of current shots, including Tdap and meningococcal vaccine, to enter sixth grade starting with the 2009-2010 school year.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2024-06-19",
+    "scope": "LA",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "VACCINES/VACCINATION: Requires that communication issued about immunization requirements include exemption information and applies exemptions not only to students seeking to enter school but also to students attending school",
+    "source": "Louisiana State Legislature",
+    "url": "https://www.legis.la.gov/legis/BillInfo.aspx?s=24RS&b=HB47",
+    "kind": "policy",
+    "published": "2024-06-19",
+    "blurb": "This Louisiana law, signed June 19, 2024, as Act 675, requires that messages about school immunization requirements include information on exemptions, and applies the exemptions to students already attending school as well as those entering.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-05-14",
+    "scope": "LA",
+    "diseases": [
+      "pertussis",
+      "measles"
+    ],
+    "headline": "LDH concludes measles investigation, updates whooping cough cases in Louisiana",
+    "source": "Louisiana Department of Health",
+    "url": "https://ldh.la.gov/news/measles-whooping-cough-update",
+    "kind": "press release",
+    "published": "2025-05-14",
+    "blurb": "The Louisiana Department of Health said whooping cough cases had reached 170 for 2025, more than the 154 reported in all of 2024, and that two infants had died within the last year.",
+    "checked": "2026-10-01"
+  }
+]

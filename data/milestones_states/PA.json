@@ -1,0 +1,105 @@
+[
+  {
+    "date": "1963-01",
+    "scope": "PA",
+    "diseases": [
+      "polio"
+    ],
+    "headline": "Oral Poliomyelitis Vaccination Program In Berks County, Pennsylvania",
+    "source": "Public Health Reports (via CDC Stacks)",
+    "url": "https://stacks.cdc.gov/view/cdc/74346",
+    "kind": "report",
+    "published": "1965-05-19",
+    "blurb": "In a 1963 oral polio vaccine program in Berks County, Pennsylvania, 60.2% of county residents took at least one of the three vaccine types at school and Sunday clinics.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1981-09-09",
+    "scope": "PA",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Epidemiologic Notes and Reports A Continuing Measles Outbreak among School-Age Children Despite an Outbreak-Control Program with School Exclusion -- Pennsylvania",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00001120.htm",
+    "kind": "report",
+    "published": "1982-07-02",
+    "blurb": "From September 9 to December 27, 1981, 111 measles cases were reported among school children in Warren County, Pennsylvania, and 146 students without proof of immunity were kept out of school.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1991-02",
+    "scope": "PA",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "1991: The Philly measles outbreak that killed 9 children",
+    "source": "6abc Philadelphia (WPVI-TV)",
+    "url": "https://6abc.com/post/1991-the-philly-measles-outbreak-that-killed-9-children-/504818/",
+    "kind": "history page",
+    "published": "2015-02-06",
+    "blurb": "This 2015 look back describes a Philadelphia measles outbreak that began in October 1990 and in which nine children died, six of them tied to two churches that relied on prayer instead of medical care.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1991-02",
+    "scope": "PA",
+    "diseases": [
+      "rubella"
+    ],
+    "headline": "Congenital Rubella Syndrome Among the Amish -- Pennsylvania, 1991-1992",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00017145.htm",
+    "kind": "report",
+    "published": "1992-07-03",
+    "blurb": "A rubella outbreak among the Amish in Pennsylvania ran from February through May 1991, and investigators later identified 11 infants with congenital rubella syndrome.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2003-11-28",
+    "scope": "PA",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "Hepatitis A Outbreak Associated with Green Onions at a Restaurant --- Monaca, Pennsylvania, 2003",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5247a5.htm",
+    "kind": "report",
+    "published": "2003-11-28",
+    "blurb": "As of November 20, 2003, about 555 people had been identified with hepatitis A in an outbreak among patrons of a restaurant in Monaca, Pennsylvania, and three had died.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2017-03-04",
+    "scope": "PA",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "School Immunizations",
+    "source": "Pennsylvania Bulletin",
+    "url": "https://www.pacodeandbulletin.gov/Display/pabull?file=/secure/pabulletin/data/vol47/47-9/377.html",
+    "kind": "policy",
+    "published": "2017-03-04",
+    "blurb": "This Pennsylvania Department of Health rule, published on March 4, 2017, replaced the 8-month provisional period for school vaccines with a requirement tied to the first five days of school.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2024-01-18",
+    "scope": "PA",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Health Department Update on Measles Outbreak – January 18",
+    "source": "City of Philadelphia, Department of Public Health",
+    "url": "https://www.phila.gov/2024-01-18-health-department-update-on-measles-outbreak-january-18/",
+    "kind": "press release",
+    "published": "2024-01-18",
+    "blurb": "Philadelphia's health department reported a total of nine confirmed measles cases in an outbreak in the city, eight of them counted as Philadelphia cases.",
+    "checked": "2026-10-01"
+  }
+]

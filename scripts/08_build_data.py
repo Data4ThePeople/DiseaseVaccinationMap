@@ -214,6 +214,9 @@ def main():
             if p.parent.name == "milestones_states":
                 assert all(m["scope"] == p.stem for m in items), f"{p.name}: scope does not match the file name"
             ms += items
+    held = [m for m in ms if m.get("hold")]   # kept in the file, left off the page until an editor decides
+    ms = [m for m in ms if not m.get("hold")]
+    print(len(held), "milestone(s) held:", "; ".join(f"{m['scope']} {m['date']}" for m in held))
     need = {"date", "scope", "diseases", "headline", "source", "url", "kind", "blurb"}
     for m in ms:
         assert need <= set(m) and (m["scope"] == "US" or m["scope"] in STATES), m.get("headline")

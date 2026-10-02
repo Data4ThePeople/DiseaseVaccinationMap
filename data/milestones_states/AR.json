@@ -1,0 +1,127 @@
+[
+ {
+  "date": "1937",
+  "scope": "AR",
+  "diseases": [
+   "polio"
+  ],
+  "headline": "Polio",
+  "source": "Encyclopedia of Arkansas",
+  "url": "https://encyclopediaofarkansas.net/entries/polio-4739/",
+  "kind": "history page",
+  "published": "2026-09-29",
+  "blurb": "Arkansas reported 344 polio cases in 1937, which this encyclopedia entry calls the state's first large-scale polio crisis.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1967",
+  "scope": "AR",
+  "diseases": [
+   "polio",
+   "diphtheria",
+   "pertussis",
+   "measles",
+   "rubella"
+  ],
+  "headline": "Vaccination",
+  "source": "Encyclopedia of Arkansas",
+  "url": "https://encyclopediaofarkansas.net/entries/vaccination-8504/",
+  "kind": "history page",
+  "published": "2026-07-13",
+  "blurb": "Arkansas passed a law in 1967 that required children entering public or private schools to be vaccinated against polio, diphtheria, tetanus, whooping cough, and measles, with exemptions for medical or religious reasons.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2001-08",
+  "scope": "AR",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "Pertussis",
+  "source": "Encyclopedia of Arkansas",
+  "url": "https://encyclopediaofarkansas.net/entries/pertussis-7432/",
+  "kind": "history page",
+  "published": "2025-12-27",
+  "blurb": "From August 2001 through June 2002, Arkansas reported 1,053 whooping cough cases in 50 counties, which this encyclopedia entry calls the state's largest outbreak since the vaccine came into use.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2002-07-25",
+  "scope": "AR",
+  "diseases": [
+   "measles",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "McCarthy v. Boozman",
+  "source": "U.S. District Court for the Western District of Arkansas (via Harvard Law School Caselaw Access Project)",
+  "url": "https://static.case.law/f-supp-2d/212/html/0945-01.html",
+  "kind": "court",
+  "published": "2002-07-25",
+  "blurb": "A federal judge ruled that Arkansas could require vaccines for school but that the state's religious exemption, which was limited to members of a recognized church or denomination, was unconstitutional.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2003-04-01",
+  "scope": "AR",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "AN ACT TO REVISE THE RELIGIOUS EXEMPTION TO THE SCHOOL IMMUNIZATION REQUIREMENTS.",
+  "source": "Arkansas State Legislature, Act 999 of 2003",
+  "url": "https://www.arkleg.state.ar.us/Acts/FTPDocument?path=%2FACTS%2F2003%2FPublic%2F&file=999.pdf&ddBienniumSession=2003%2FR",
+  "kind": "policy",
+  "published": "2003-04-01",
+  "blurb": "This Arkansas law, approved on April 1, 2003, lets parents apply each year to the Department of Health for a school vaccine exemption based on religious or philosophical beliefs.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2016-08-08",
+  "scope": "AR",
+  "diseases": [
+   "mumps"
+  ],
+  "headline": "2016–2017 Arkansas Mumps Outbreak in a Close-Knit Community: Assessment of the Economic Impact and Response Strategies",
+  "source": "Vaccine (via PubMed Central)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8963766/",
+  "kind": "report",
+  "published": "2019-12-06",
+  "blurb": "A mumps case in Springdale was reported to the Arkansas Department of Health on August 8, 2016, and by July 2017 nearly 3,000 cases had been reported from 37 of the state's 75 counties.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2025-04-10",
+  "scope": "AR",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Second case of measles in Arkansas identified in 2025",
+  "source": "Arkansas Department of Health",
+  "url": "https://healthy.arkansas.gov/article/second-case-of-measles-in-arkansas-identified-in-2025/",
+  "kind": "press release",
+  "published": "2025-04-10",
+  "blurb": "The Arkansas Department of Health reported the state's second measles case of 2025, an unvaccinated child from Faulkner County who was exposed while traveling out of state.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2025-12-30",
+  "scope": "AR",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "Arkansas Reports Highest Number of Whooping Cough Cases In FifteenYear Collection History",
+  "source": "Arkansas Department of Health",
+  "url": "https://healthy.arkansas.gov/article/arkansas-reports-highest-number-of-whooping-cough-cases-in-fifteenyear-collection-history/",
+  "kind": "press release",
+  "published": "2025-12-30",
+  "blurb": "Arkansas reported more than 500 whooping cough cases in 2025, the most since the state health department began routinely collecting the data 15 years earlier.",
+  "checked": "2026-10-01"
+ }
+]

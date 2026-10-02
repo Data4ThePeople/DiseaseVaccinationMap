@@ -1,0 +1,91 @@
+[
+  {
+    "date": "1971",
+    "scope": "NV",
+    "diseases": [
+      "diphtheria",
+      "pertussis",
+      "polio",
+      "rubella",
+      "measles"
+    ],
+    "headline": "NRS: CHAPTER 392 - PUPILS",
+    "source": "Nevada Legislature, Nevada Revised Statutes",
+    "url": "https://www.leg.state.nv.us/division/legal/lawlibrary/nrs/NRS-392.html#NRS392Sec435",
+    "kind": "policy",
+    "published": null,
+    "blurb": "Nevada added its school immunization law in 1971, and it now requires a certificate showing a child is immunized against diphtheria, tetanus, whooping cough, polio, rubella, and measles to enroll in public school, with exemptions for religious belief and medical conditions.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2008-01-11",
+    "scope": "NV",
+    "diseases": [
+      "pertussis",
+      "diphtheria"
+    ],
+    "headline": "Health District Advises of New School Immunization Requirements",
+    "source": "Southern Nevada Health District",
+    "url": "https://www.southernnevadahealthdistrict.org/news-release/2008-01-11-health-district-advises-of-new-school-immunization-requirements/",
+    "kind": "press release",
+    "published": "2008-01-11",
+    "blurb": "The Southern Nevada Health District said new State Board of Health rules would require students entering seventh grade to be immunized against whooping cough, starting with the 2008-09 school year.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2015-02-11",
+    "scope": "NV",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Health District identifies 3rd and 4th measles cases",
+    "source": "Southern Nevada Health District",
+    "url": "https://www.southernnevadahealthdistrict.org/news-release/2015-02-11-measles/",
+    "kind": "press release",
+    "published": "2015-02-11",
+    "blurb": "The Southern Nevada Health District said four measles cases had been confirmed in Clark County in 2015, the first confirmed cases there since 2011.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2019-06-19",
+    "scope": "NV",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "Health District declares acute hepatitis A outbreak in Clark County",
+    "source": "Southern Nevada Health District",
+    "url": "https://www.southernnevadahealthdistrict.org/news-release/health-district-declares-acute-hepatitis-a-outbreak-in-clark-county/",
+    "kind": "press release",
+    "published": "2019-06-19",
+    "blurb": "The Southern Nevada Health District reported 37 acute hepatitis A cases in Clark County in the first five months of 2019, compared with 17 in the same months of 2018.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2020-06-26",
+    "scope": "NV",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "Public Health Update: Health District declares end to Hepatitis A Outbreak",
+    "source": "Southern Nevada Health District",
+    "url": "https://www.southernnevadahealthdistrict.org/news-release/public-health-update-health-district-declares-end-to-hepatitis-a-outbreak/",
+    "kind": "press release",
+    "published": "2020-06-26",
+    "blurb": "The Southern Nevada Health District declared the Clark County hepatitis A outbreak over after 107 cases, 94 hospital stays, and one death.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-11-07",
+    "scope": "NV",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "First Measles Case Reported in Clark County",
+    "source": "Southern Nevada Health District",
+    "url": "https://www.southernnevadahealthdistrict.org/news-release/first-measles-case-reported-in-clark-county/",
+    "kind": "press release",
+    "published": "2025-11-07",
+    "blurb": "The Southern Nevada Health District reported the first confirmed measles case in Clark County since 2018, in an infant who was not yet old enough to get the MMR vaccine.",
+    "checked": "2026-10-01"
+  }
+]

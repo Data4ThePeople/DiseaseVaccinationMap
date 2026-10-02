@@ -1,0 +1,98 @@
+[
+ {
+  "date": "1931",
+  "scope": "CT",
+  "diseases": [
+   "polio"
+  ],
+  "headline": "An Ecologic Study of Poliomyelitis in Connecticut, 1931-1941",
+  "source": "Yale Journal of Biology and Medicine (via PubMed Central)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2601296/",
+  "kind": "report",
+  "published": null,
+  "blurb": "This journal article from May 1943 is a study of polio in Connecticut over the years 1931 to 1941.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1972-10-25",
+  "scope": "CT",
+  "diseases": [
+   "polio"
+  ],
+  "headline": "Poliomyelitis — Connecticut",
+  "source": "CDC, Morbidity and Mortality Weekly Report (via CDC Stacks)",
+  "url": "https://stacks.cdc.gov/view/cdc/1884/cdc_1884_DS1.pdf",
+  "kind": "report",
+  "published": "1972-10-27",
+  "blurb": "On October 25, 1972, three cases of paralytic polio in students at a private school in Greenwich were reported, with eight more cases of paralytic illness under investigation, and a vaccination program was held at the school the next day.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1990",
+  "scope": "CT",
+  "diseases": [
+   "measles",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "Early Childhood Vaccination Levels Among Urban Children -- Connecticut, 1990 and 1991",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00015823.htm",
+  "kind": "report",
+  "published": "1992-01-03",
+  "blurb": "A review of first graders' school records in Hartford and New Haven in 1990 and 1991 found that 67.2% and 70.8% of the children had finished the vaccines required for school by their second birthday.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2021-04-28",
+  "scope": "CT",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "AN ACT CONCERNING IMMUNIZATIONS.",
+  "source": "Connecticut General Assembly, Public Act No. 21-6",
+  "url": "https://www.cga.ct.gov/2021/act/pa/pdf/2021PA-00006-R00HB-06423-PA.pdf",
+  "kind": "policy",
+  "published": "2021-04-28",
+  "blurb": "This Connecticut law, approved on April 28, 2021, removed the religious exemption from the vaccines required to enroll in school.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2024-06-24",
+  "scope": "CT",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "Attorney General Tong Statement on U.S. Supreme Court Denial of Cert in Case Challenging Connecticut School Vaccine Requirements",
+  "source": "Connecticut Office of the Attorney General",
+  "url": "https://portal.ct.gov/ag/press-releases/2024-press-releases/statement-on-scotus-denial-of-cert-in-case-challenging-connecticut-school-vaccine-requirements",
+  "kind": "press release",
+  "published": "2024-06-24",
+  "blurb": "The U.S. Supreme Court declined to hear a challenge to the 2021 Connecticut law that ended the religious exemption from school vaccine requirements, the state attorney general's office said.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2025-12-11",
+  "scope": "CT",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Connecticut reports first case of measles in years",
+  "source": "Connecticut Department of Public Health",
+  "url": "https://portal.ct.gov/dph/newsroom/press-releases---2025/measles-case-in-connecticut",
+  "kind": "press release",
+  "published": "2025-12-11",
+  "blurb": "The Connecticut Department of Public Health confirmed measles in an unvaccinated Fairfield County child under 10 who had recently traveled abroad, the state's first case in more than four years.",
+  "checked": "2026-10-01"
+ }
+]

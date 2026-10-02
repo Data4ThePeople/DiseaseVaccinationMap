@@ -1,0 +1,119 @@
+[
+  {
+    "date": "1934-05",
+    "scope": "IL",
+    "diseases": [
+      "diphtheria"
+    ],
+    "headline": "Diphtheria Prevention in Chicago: The Health Officer's Problem",
+    "source": "American Journal of Public Health and the Nations Health (PubMed Central)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1558755/",
+    "kind": "report",
+    "published": null,
+    "blurb": "This article by Herman N. Bundesen on preventing diphtheria in Chicago ran in the American Journal of Public Health in May 1934, after it was read at a public health meeting in October 1933.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1984-06-22",
+    "scope": "IL",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Measles Outbreak among Vaccinated High School Students -- Illinois",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000359.htm",
+    "kind": "report",
+    "published": "1984-06-22",
+    "blurb": "From December 9, 1983, to January 13, 1984, Sangamon County had 21 measles cases, including 16 high school students whose school records showed they had been vaccinated.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1985-03-15",
+    "scope": "IL",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Epidemiologic Notes and Reports Multiple Measles Outbreaks on College Campuses -- Ohio, Massachusetts, Illinois",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000500.htm",
+    "kind": "report",
+    "published": "1985-03-15",
+    "blurb": "Principia College, a Christian Science college in Illinois with 712 students, had 128 confirmed or probable measles cases between January 15 and March 10, 1985, and three deaths that appeared to be related.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1987-08-07",
+    "scope": "IL",
+    "diseases": [
+      "mumps"
+    ],
+    "headline": "Mumps Outbreaks on University Campuses -- Illinois, Wisconsin, South Dakota",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000944.htm",
+    "kind": "report",
+    "published": "1987-08-07",
+    "blurb": "Ten colleges and universities in Illinois reported 183 mumps cases during the 1986-87 school year.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1989-09-01",
+    "scope": "IL",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Epidemiologic Notes and Reports Measles Outbreak -- Chicago, 1989",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00001452.htm",
+    "kind": "report",
+    "published": "1989-09-01",
+    "blurb": "By August 23, 1989, Chicago had reported 1,123 confirmed measles cases and four deaths, and 78% of the cases with information were in children under 5.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2006-09-06",
+    "scope": "IL",
+    "diseases": [
+      "pertussis"
+    ],
+    "headline": "Use of Mass Tdap Vaccination to Control an Outbreak of Pertussis in a High School --- Cook County, Illinois, September 2006--January 2007",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5729a2.htm",
+    "kind": "report",
+    "published": "2008-07-25",
+    "blurb": "After a 17-year-old high school student was reported with whooping cough on September 6, 2006, Cook County health officials linked 36 cases to the school and held a Tdap booster clinic there.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2015-08-03",
+    "scope": "IL",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "Public Act 099-0249",
+    "source": "Illinois General Assembly",
+    "url": "https://www.ilga.gov/Legislation/PublicActs/View/099-0249",
+    "kind": "policy",
+    "published": "2015-08-03",
+    "blurb": "This Illinois law, effective August 3, 2015, requires parents who object to school shots on religious grounds to turn in a Certificate of Religious Exemption that states the religious belief and is signed by a health care provider.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2024-05-16",
+    "scope": "IL",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Measles Outbreak Associated with a Migrant Shelter — Chicago, Illinois, February–May 2024",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/volumes/73/wr/mm7319a1.htm",
+    "kind": "report",
+    "published": "2024-05-16",
+    "blurb": "Chicago health officials confirmed a measles case at a temporary shelter for migrants on March 7, 2024, and 57 cases were later tied to the shelter, most of them in people who were not vaccinated.",
+    "checked": "2026-10-01"
+  }
+]

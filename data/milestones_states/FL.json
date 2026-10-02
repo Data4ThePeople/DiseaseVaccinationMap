@@ -1,0 +1,127 @@
+[
+ {
+  "date": "1957-09",
+  "scope": "FL",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "Pertussis in Florida",
+  "source": "Public Health Reports",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2031391/",
+  "kind": "report",
+  "published": "1957-09",
+  "blurb": "Two Florida State Board of Health staff wrote that whooping cough killed more children than polio in Florida in 1955.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1982-12-17",
+  "scope": "FL",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Outbreak of Measles Following an Imported Case -- Florida",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00001206.htm",
+  "kind": "report",
+  "published": "1982-12-17",
+  "blurb": "As of December 13, 1982, 203 confirmed measles cases had been reported from Dade County in an outbreak whose source was a 14-year-old who had vacationed in Peru.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1986-07-14",
+  "scope": "FL",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Measles -- Dade County, Florida",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000860.htm",
+  "kind": "report",
+  "published": "1987-02-06",
+  "blurb": "From July 14 through December 12, 1986, 258 confirmed measles cases were reported to the Dade County Department of Public Health.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1997",
+  "scope": "FL",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "diphtheria"
+  ],
+  "headline": "Effectiveness of a Seventh Grade School Entry Vaccination Requirement -- Statewide and Orange County, Florida, 1997-1998",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00054618.htm",
+  "kind": "report",
+  "published": "1998-09-04",
+  "blurb": "Starting with the 1997-98 school year, Florida required students entering seventh grade to have hepatitis B vaccine, a second dose of MMR and a tetanus and diphtheria booster, and 61.8% were fully vaccinated by November 30, 1997.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1998-11-20",
+  "scope": "FL",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "DEPARTMENT OF HEALTH, Appellant, v. Sara R. Johnson CURRY, and the Holmes County School Board, Appellees.",
+  "source": "Florida First District Court of Appeal (Southern Reporter, via the Caselaw Access Project)",
+  "url": "https://static.case.law/so2d/722/html/0874-01.html",
+  "kind": "court",
+  "published": "1998-11-20",
+  "blurb": "A Florida appeals court ruled that state law did not let the Department of Health question whether a parent's written religious objection to school immunizations was genuine.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2013-09-12",
+  "scope": "FL",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "Notes from the Field: Outbreak of Pertussis in a School and Religious Community Averse to Health Care and Vaccinations — Columbia County, Florida, 2013",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6330a3.htm",
+  "kind": "report",
+  "published": "2014-08-01",
+  "blurb": "After whooping cough cases at a charter school where few kindergarten and seventh grade students were fully immunized, the Florida Department of Health in Columbia County declared a communicable disease emergency on September 12, 2013.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2019-08-01",
+  "scope": "FL",
+  "diseases": [
+   "hepatitis_a"
+  ],
+  "headline": "Florida Surgeon General Scott A. Rivkees Issues Public Health Emergency in Response to Hepatitis A Outbreak",
+  "source": "Florida Department of Health (archived by the Internet Archive)",
+  "url": "https://web.archive.org/web/20190806024600/http://www.floridahealth.gov/newsroom/2019/08/080219-state-of-florida-department-of-health-declaration-of-public-health-emergency.pr.html",
+  "kind": "press release",
+  "published": "2019-08-01",
+  "blurb": "Florida's surgeon general declared a public health emergency over the rise in hepatitis A cases and said vaccination is the best way to prevent infection.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2025-09-03",
+  "scope": "FL",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "Florida plans to become first state to eliminate all childhood vaccine mandates",
+  "source": "WUSF (Associated Press)",
+  "url": "https://www.wusf.org/health-news-florida/2025-09-03/florida-to-eliminate-childhood-vaccine-mandates",
+  "kind": "news",
+  "published": "2025-09-03",
+  "blurb": "Florida's surgeon general announced plans to end vaccine mandates for children; some requirements can be ended by the state health department and others would need action by the legislature.",
+  "checked": "2026-10-01"
+ }
+]

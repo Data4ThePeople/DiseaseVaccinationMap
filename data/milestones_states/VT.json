@@ -1,0 +1,100 @@
+[
+ {
+  "date": "1979",
+  "scope": "VT",
+  "diseases": [
+   "measles",
+   "rubella",
+   "diphtheria",
+   "pertussis",
+   "polio"
+  ],
+  "headline": "§ 1121. Immunizations required prior to attending school and child care facilities",
+  "source": "Vermont Statutes Online (Vermont General Assembly)",
+  "url": "https://legislature.vermont.gov/statutes/section/18/021/01121",
+  "kind": "policy",
+  "published": null,
+  "blurb": "This Vermont law, added in 1979, says a student may not enroll in a Vermont school unless the school has a record showing the student got the required immunizations.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1996",
+  "scope": "VT",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "Pertussis Outbreak -- Vermont, 1996",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00049244.htm",
+  "kind": "report",
+  "published": "1997-09-05",
+  "blurb": "Vermont identified 280 whooping cough cases across the state in 1996, and 46% of them were in people ages 10 to 19.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2012-07-01",
+  "scope": "VT",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "Act No. 157 (S.199). Health; immunizations",
+  "source": "Vermont General Assembly, Summary of the 2012 Acts and Resolves",
+  "url": "https://legislature.vermont.gov/Documents/2012/Docs/BILLS/S-0199/ACT157%20Act%20Summary.htm",
+  "kind": "policy",
+  "published": null,
+  "blurb": "This Vermont law, in effect July 1, 2012, required parents who claim a religious or philosophical exemption from school shots to sign a statement each year on a state health department form.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2016-07-01",
+  "scope": "VT",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "Act No. 37 (H.98). Health; public health; reportable diseases",
+  "source": "Vermont General Assembly, Act Summary",
+  "url": "https://legislature.vermont.gov/Documents/2016/Docs/ACTS/ACT037/ACT037%20Act%20Summary.pdf",
+  "kind": "policy",
+  "published": null,
+  "blurb": "This 2015 Vermont law removed the philosophical exemption from the immunizations required for school and child care, starting July 1, 2016.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2024-04-23",
+  "scope": "VT",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Health Department Confirms Case of Measles in Vermont",
+  "source": "Vermont Department of Health",
+  "url": "https://www.healthvermont.gov/media/news-room/health-department-confirms-case-measles-vermont",
+  "kind": "press release",
+  "published": "2024-04-23",
+  "blurb": "The Vermont Department of Health confirmed a measles case in a person visiting Vermont with an international group program, the first confirmed case in the state since 2018.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2025-03-11",
+  "scope": "VT",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Vermont Department of Health Confirms Case of Measles",
+  "source": "Vermont Department of Health",
+  "url": "https://www.healthvermont.gov/media/current-news-releases/vermont-department-health-confirms-case-measles",
+  "kind": "press release",
+  "published": "2025-03-11",
+  "blurb": "The Vermont Department of Health confirmed measles in a school-aged child in Lamoille County who became sick after traveling internationally, the first case in Vermont in 2025.",
+  "checked": "2026-10-01"
+ }
+]

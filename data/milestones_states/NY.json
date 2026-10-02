@@ -1,0 +1,129 @@
+[
+  {
+    "date": "1989-04",
+    "scope": "NY",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "New York State's two-dose schedule for measles immunization",
+    "source": "Public Health Reports",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1580250/",
+    "kind": "history page",
+    "published": null,
+    "blurb": "In April 1989, New York became the first state to adopt a two-dose schedule for routine measles shots, and it required two doses for entry to kindergarten and college starting in fall 1990.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1991-05-10",
+    "scope": "NY",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Measles Outbreak -- New York City, 1990-1991",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00001980.htm",
+    "kind": "report",
+    "published": "1991-05-10",
+    "blurb": "New York City had about 2,500 reported measles cases and eight deaths in 1990 after an outbreak began that March, and more than 2,000 cases and nine deaths in 1991 through May 7.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2010-02-12",
+    "scope": "NY",
+    "diseases": [
+      "mumps"
+    ],
+    "headline": "Update: Mumps Outbreak --- New York and New Jersey, June 2009--January 2010",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5905a1.htm",
+    "kind": "report",
+    "published": "2010-02-12",
+    "blurb": "A mumps outbreak that began at a New York summer camp in June 2009 had reached 1,521 reported cases in New York and New Jersey by January 29, 2010.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2015-01-07",
+    "scope": "NY",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "Phillips v. City of New York",
+    "source": "U.S. Court of Appeals for the Second Circuit",
+    "url": "https://www.govinfo.gov/content/pkg/USCOURTS-ca2-14-02156/pdf/USCOURTS-ca2-14-02156-0.pdf",
+    "kind": "court",
+    "published": "2015-01-07",
+    "blurb": "A federal appeals court upheld New York's requirement that children be vaccinated to attend public school, along with a state rule that lets officials keep exempt students out of school during an outbreak.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2019-04-09",
+    "scope": "NY",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "De Blasio Administration's Health Department Declares Public Health Emergency Due to Measles Crisis",
+    "source": "City of New York, Office of the Mayor",
+    "url": "https://web.archive.org/web/20200102150235/https://www1.nyc.gov/office-of-the-mayor/news/186-19/de-blasio-administration-s-health-department-declares-public-health-emergency-due-measles-crisis",
+    "kind": "press release",
+    "published": "2019-04-09",
+    "blurb": "New York City declared a public health emergency in parts of Williamsburg, Brooklyn, during a measles outbreak and ordered unvaccinated people there who may have been exposed to get the MMR vaccine.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2019-05-17",
+    "scope": "NY",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Notes from the Field: Measles Outbreaks from Imported Cases in Orthodox Jewish Communities — New York and New Jersey, 2018–2019",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/volumes/68/wr/mm6819a4.htm",
+    "kind": "report",
+    "published": "2019-05-17",
+    "blurb": "From October 1, 2018, to April 30, 2019, investigators counted 242 measles cases in New York outside New York City, including 206 in Rockland County.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2019-06-13",
+    "scope": "NY",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "Governor Cuomo Signs Legislation Removing Non-Medical Exemptions from School Vaccination Requirements",
+    "source": "New York State, Office of the Governor",
+    "url": "https://web.archive.org/web/20190615193413/https://www.governor.ny.gov/news/governor-cuomo-signs-legislation-removing-non-medical-exemptions-school-vaccination",
+    "kind": "press release",
+    "published": "2019-06-13",
+    "blurb": "New York's governor signed a law on June 13, 2019, that removed non-medical exemptions from the vaccines required for children to attend school.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2019-08-16",
+    "scope": "NY",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "Department of Health and Office of Children and Family Services Issue Emergency Regulations to Strengthen Medical Exemption Process for School Vaccinations",
+    "source": "New York State Department of Health",
+    "url": "https://health.ny.gov/press/releases/2019/2019-08-16_vaccinations_emergency_regulations.htm",
+    "kind": "press release",
+    "published": "2019-08-16",
+    "blurb": "New York issued emergency rules that require doctors who grant a medical exemption from school vaccines to use an approved form and give the medical reason for each vaccine.",
+    "checked": "2026-10-01"
+  }
+]

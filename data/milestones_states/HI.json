@@ -1,0 +1,115 @@
+[
+ {
+  "date": "1937-03",
+  "scope": "HI",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "AN UNUSUAL OUTBREAK OF MEASLES IN HAWAII, 1936-37",
+  "source": "Public Health Reports (CDC Stacks)",
+  "url": "https://stacks.cdc.gov/view/cdc/69528/cdc_69528_DS1.pdf",
+  "kind": "report",
+  "published": "1937-12-17",
+  "blurb": "A measles epidemic in the Territory of Hawaii began in November 1936 and peaked in March 1937, when 2,558 cases were reported.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1984-12-21",
+  "scope": "HI",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Measles -- Hawaii",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000455.htm",
+  "kind": "report",
+  "published": "1984-12-21",
+  "blurb": "Between May 5 and June 29, 1984, 106 measles cases were reported on the island of Kauai, and 49% were in children under 5 years old.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1986-05",
+  "scope": "HI",
+  "diseases": [
+   "rubella"
+  ],
+  "headline": "Premarital rubella screening program: from identification to vaccination of susceptible women in the state of Hawaii.",
+  "source": "Public Health Reports",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1477708/",
+  "kind": "report",
+  "published": "1986-05",
+  "blurb": "In a study of Hawaii's premarital rubella screening program, 52% of women who were mailed a letter urging vaccination had been vaccinated three months later, compared with 24% of women who were not sent one.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2016-08-15",
+  "scope": "HI",
+  "diseases": [
+   "hepatitis_a"
+  ],
+  "headline": "Hepatitis A Outbreak 2016",
+  "source": "Hawaii State Department of Health",
+  "url": "https://health.hawaii.gov/docd/hepatitis-a-outbreak-2016/",
+  "kind": "history page",
+  "published": null,
+  "blurb": "On August 15, 2016, Hawaii health officials named raw scallops served at Genki Sushi restaurants on Oahu and Kauai as a likely source of a hepatitis A outbreak that reached 292 confirmed cases.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2018-10-16",
+  "scope": "HI",
+  "diseases": [
+   "mumps"
+  ],
+  "headline": "Hawai‘i Department of Health declares mumps outbreak over",
+  "source": "Hawaii State Department of Health",
+  "url": "https://health.hawaii.gov/news/files/2018/10/18-081-DOH-declares-mumps-outbreak-over.pdf",
+  "kind": "press release",
+  "published": "2018-10-16",
+  "blurb": "Hawaii's health department declared the end of a statewide mumps outbreak that began in March 2017 and included 1,009 people.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2020",
+  "scope": "HI",
+  "diseases": [
+   "pertussis",
+   "diphtheria"
+  ],
+  "headline": "New Immunization Requirements for School Attendance",
+  "source": "Hawaii State Department of Health",
+  "url": "https://health.hawaii.gov/news/olalokahi/new-immunization-requirements-for-school-attendance/",
+  "kind": "policy",
+  "published": "2019-10-29",
+  "blurb": "Hawaii announced updated immunization requirements for school starting in fall 2020, including Tdap, HPV and meningococcal vaccines for all seventh graders.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2025-04-08",
+  "scope": "HI",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "MEASLES CASE CONFIRMED IN CHILD ON OʻAHU — DOH NOTIFIES PUBLIC OF MEASLES EXPOSURE LOCATIONS",
+  "source": "Hawaii State Department of Health",
+  "url": "https://health.hawaii.gov/news/newsroom/measles-case-confirmed-in-child-on-o%ca%bbahu-doh-notifies-public-of-measles-exposure-locations/",
+  "kind": "press release",
+  "published": "2025-04-08",
+  "blurb": "Hawaii's health department confirmed a measles case in an unvaccinated child under 5 years old on Oahu.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2025-08-11",
+  "scope": "HI",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "DOH RESPONDING TO INCREASED PERTUSSIS CASES IN HAWAIʻI IN 2025",
+  "source": "Hawaii State Department of Health",
+  "url": "https://health.hawaii.gov/news/newsroom/doh-responding-to-increased-pertussis-cases-in-hawai%CA%BBi-in-2025/",
+  "kind": "press release",
+  "published": "2025-08-11",
+  "blurb": "Hawaii's health department had identified 203 whooping cough cases as of July 31, 2025, compared with 84 cases in all of 2024.",
+  "checked": "2026-10-01"
+ }
+]

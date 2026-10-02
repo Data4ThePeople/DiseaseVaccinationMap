@@ -1,0 +1,102 @@
+[
+  {
+    "date": "1960-10",
+    "scope": "IN",
+    "diseases": [
+      "diphtheria",
+      "pertussis",
+      "polio"
+    ],
+    "headline": "A noncompulsory immunization law for Indiana school children",
+    "source": "Public Health Reports (PubMed Central)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1929548/",
+    "kind": "report",
+    "published": null,
+    "blurb": "This October 1960 article in Public Health Reports by A. L. Marshall Jr. and Andrew C. Offutt is about an Indiana immunization law for school children that the title calls noncompulsory.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1983-03-04",
+    "scope": "IN",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Measles in Universities -- Indiana, 1983",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00001261.htm",
+    "kind": "report",
+    "published": "1983-03-04",
+    "blurb": "In the first two months of 1983, 85 measles cases were reported among students at Indiana University and Purdue University, and each campus vaccinated more than 9,000 students.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2005-10-28",
+    "scope": "IN",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Import-Associated Measles Outbreak --- Indiana, May--June 2005",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5442a1.htm",
+    "kind": "report",
+    "published": "2005-10-28",
+    "blurb": "An unvaccinated 17-year-old came home to Indiana from Romania with measles in May 2005 and went to a church gathering, and investigators identified 34 cases, three of them needing hospital care.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2011-09-02",
+    "scope": "IN",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Notes from the Field: Measles Outbreak --- Indiana, June--July 2011",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6034a5.htm",
+    "kind": "report",
+    "published": "2011-09-02",
+    "blurb": "Health officials confirmed 14 measles cases in northeast Indiana in June and July 2011, and 13 of the patients were unvaccinated members of one extended family.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2016-02",
+    "scope": "IN",
+    "diseases": [
+      "mumps"
+    ],
+    "headline": "Mumps Outbreaks at Four Universities — Indiana, 2016",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6729a1.htm",
+    "kind": "report",
+    "published": "2018-07-27",
+    "blurb": "The Indiana State Department of Health confirmed mumps outbreaks at four universities from February to April 2016, and 281 cases were identified in the four outbreaks.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2017-12-01",
+    "scope": "IN",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "Hepatitis A Outbreak",
+    "source": "Indiana Department of Health",
+    "url": "https://www.in.gov/health/idepd/diseases-and-conditions-resource-page/hepatitis-a/indiana-hepatitis-a-outbreak/",
+    "kind": "history page",
+    "published": null,
+    "blurb": "Indiana's hepatitis A outbreak ran from December 1, 2017, to December 31, 2023, with 2,678 cases, and more than half of the people who got sick were hospitalized.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2018-08-07",
+    "scope": "IN",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "Hepatitis A Vaccine Required For More Students This Year",
+    "source": "WFYI",
+    "url": "https://www.wfyi.org/education/2018-08-07/hepatitis-a-vaccine-required-for-more-students-this-year",
+    "kind": "news",
+    "published": "2018-08-07",
+    "blurb": "Indiana began requiring a hepatitis A shot for all sixth and 12th graders in 2018, adding to a kindergarten requirement that started in 2014.",
+    "checked": "2026-10-01"
+  }
+]

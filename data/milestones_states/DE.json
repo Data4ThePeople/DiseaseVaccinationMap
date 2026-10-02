@@ -1,0 +1,73 @@
+[
+ {
+  "date": "1980-07-11",
+  "scope": "DE",
+  "diseases": [
+   "measles",
+   "rubella"
+  ],
+  "headline": "AN ACT TO AMEND DELAWARE CODE, TITLE 14 BY PROVIDING FOR A DELAWARE PUBLIC SCHOOL ENROLLEES' IMMUNIZATION PROGRAM AND EXEMPTIONS.",
+  "source": "Delaware General Assembly, Laws of Delaware",
+  "url": "https://delcode.delaware.gov/sessionlaws/ga130/chp404.shtml",
+  "kind": "policy",
+  "published": "1980-07-11",
+  "blurb": "This Delaware law told the State Board of Education to set up an immunization program for public school students, with exemptions for medical reasons and for religious beliefs.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2004-09",
+  "scope": "DE",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "Pertussis Outbreak in an Amish Community --- Kent County, Delaware, September 2004--February 2005",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5530a1.htm",
+  "kind": "report",
+  "published": "2006-08-04",
+  "blurb": "A whooping cough outbreak in an Amish community in Kent County from September 2004 to February 2005 resulted in 345 cases, mostly in preschool-aged children.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2018-03-22",
+  "scope": "DE",
+  "diseases": [
+   "mumps"
+  ],
+  "headline": "DPH Investigating Mumps Outbreak After February Baile Mejicano Dance at Chase Center on the Riverfront",
+  "source": "Delaware Division of Public Health",
+  "url": "https://news.delaware.gov/2018/03/22/dph-investigating-mumps-outbreak-february-baile-mejicano-dance-chase-center-riverfront/",
+  "kind": "press release",
+  "published": "2018-03-22",
+  "blurb": "Delaware health officials confirmed three mumps cases among people who went to a dance at the Chase Center on the Riverfront in Wilmington on February 10, 2018.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2018-08-23",
+  "scope": "DE",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "DPH Investigating Outbreak of Whooping Cough in Kent County; Urging Residents to Get Vaccinated",
+  "source": "Delaware Division of Public Health",
+  "url": "https://news.delaware.gov/2018/08/23/dph-investigating-outbreak-whooping-cough-kent-county-urging-residents-get-vaccinated",
+  "kind": "press release",
+  "published": "2018-08-23",
+  "blurb": "Delaware health officials said they had found 97 whooping cough cases among Amish residents of Kent County as of August 18, 2018, in an investigation that began in June.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2024-01-08",
+  "scope": "DE",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "The Delaware Division of Public Health Issues Notification About Potential Measles Exposure",
+  "source": "Delaware Division of Public Health",
+  "url": "https://news.delaware.gov/2024/01/08/the-delaware-division-of-public-health-issues-notification-about-potential-measles-exposure/",
+  "kind": "press release",
+  "published": "2024-01-08",
+  "blurb": "Delaware health officials reported that an unvaccinated person with a measles case confirmed in Philadelphia had sought care at a Delaware health care facility on December 29, 2023, while infectious.",
+  "checked": "2026-10-01"
+ }
+]

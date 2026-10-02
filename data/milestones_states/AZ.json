@@ -1,0 +1,119 @@
+[
+ {
+  "date": "1985-03-14",
+  "scope": "AZ",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Measles -- Arizona",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000686.htm",
+  "kind": "report",
+  "published": "1986-02-21",
+  "blurb": "Maricopa County reported 54 measles cases from March 14 to July 11, 1985, in an outbreak that spread from a large school-based outbreak in neighboring Pima County.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1987-10-08",
+  "scope": "AZ",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Maricopa County Health Department v. Harmon",
+  "source": "Arizona Court of Appeals (via Harvard Law School Caselaw Access Project)",
+  "url": "https://static.case.law/ariz/156/html/0161-01.html",
+  "kind": "court",
+  "published": "1987-10-08",
+  "blurb": "The Arizona Court of Appeals let stand a court order that kept a group of children out of Franklin Elementary School until March 18, 1986, unless they showed proof of measles vaccination.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1994-06-27",
+  "scope": "AZ",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "Epidemiologic Notes and Reports Erythromycin-Resistant Bordetella pertussis -- Yuma County, Arizona, May-October 1994",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00033472.htm",
+  "kind": "report",
+  "published": "1994-11-11",
+  "blurb": "On June 27, 1994, Arizona health officials received a report of a 2-month-old in Yuma County who had whooping cough caused by a strain that resisted the antibiotic erythromycin.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2002-09-21",
+  "scope": "AZ",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "School-Associated Pertussis Outbreak --- Yavapai County, Arizona, September 2002--February 2003",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5310a4.htm",
+  "kind": "report",
+  "published": "2004-03-19",
+  "blurb": "A whooping cough outbreak that was first reported at a Yavapai County middle school on September 21, 2002, reached 485 reported cases in six communities.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2013-07-29",
+  "scope": "AZ",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "The “Arizona Strip” Whooping Cough Cluster",
+  "source": "Arizona Department of Health Services, Director's Blog",
+  "url": "https://directorsblog.health.azdhs.gov/the-arizona-strip-whooping-cough-cluster/",
+  "kind": "press release",
+  "published": "2013-07-29",
+  "blurb": "Arizona's health director wrote that a whooping cough outbreak in the Colorado City area had lasted a year and a half and had more than 500 cases, mostly in children.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2013-10-28",
+  "scope": "AZ",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "New Vaccine Exemption Form Being Used this Year",
+  "source": "Arizona Department of Health Services, Director's Blog",
+  "url": "https://directorsblog.health.azdhs.gov/new-vaccine-exemption-form-being-used-this-year/",
+  "kind": "policy",
+  "published": "2013-10-28",
+  "blurb": "The Arizona Department of Health Services updated its school vaccine exemption form so that parents initial and date next to each vaccine they decline.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2016-05-25",
+  "scope": "AZ",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Notes from the Field: Measles Outbreak at a United States Immigration and Customs Enforcement Facility ― Arizona, May–June 2016",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/volumes/66/wr/mm6620a5.htm",
+  "kind": "report",
+  "published": "2017-05-26",
+  "blurb": "After a detainee at an immigration detention center in Arizona was confirmed to have measles on May 25, 2016, investigators found 31 cases in all, in 22 detainees and nine staff members.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2019-05-28",
+  "scope": "AZ",
+  "diseases": [
+   "hepatitis_a"
+  ],
+  "headline": "Hepatitis A Outbreak Dashboard and Resources are Live",
+  "source": "Arizona Department of Health Services, Director's Blog",
+  "url": "https://directorsblog.health.azdhs.gov/hepatitis-a-outbreak-dashboard-and-resources-are-live/",
+  "kind": "press release",
+  "published": "2019-05-28",
+  "blurb": "The Arizona Department of Health Services launched an online dashboard to track a hepatitis A outbreak that had more than 300 cases since November 2018.",
+  "checked": "2026-10-01"
+ }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "date": "1985-02-01",
+    "scope": "NM",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Measles in an Immunized School-Aged Population -- New Mexico",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000476.htm",
+    "kind": "report",
+    "published": "1985-02-01",
+    "blurb": "From February 10 to April 15, 1984, 76 measles cases were reported in Hobbs, New Mexico, where the school system said 98% of students had been vaccinated before the outbreak began.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1987-01-23",
+    "scope": "NM",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Epidemiologic Notes and Reports Measles Transmitted in a Medical Office Building -- New Mexico, 1986",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000856.htm",
+    "kind": "report",
+    "published": "1987-01-23",
+    "blurb": "In January 1986, New Mexico health officials identified 24 measles patients after a Santa Fe pediatrician reported three suspected cases, and nine of the patients had visited the same medical offices on one day.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2013-11-27",
+    "scope": "NM",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "EXEMPTION FROM SCHOOL, CHILDCARE, AND PRE-SCHOOL IMMUNIZATION",
+    "source": "New Mexico Administrative Code",
+    "url": "https://www.srca.nm.gov/parts/title07/07.005.0003.html",
+    "kind": "policy",
+    "published": null,
+    "blurb": "This New Mexico rule, in effect since November 27, 2013, sets out how families can ask for a medical or religious exemption from the immunizations required for school and child care.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2024-10-29",
+    "scope": "NM",
+    "diseases": [
+      "pertussis"
+    ],
+    "headline": "Whooping cough cases in New Mexico nearly double this year",
+    "source": "New Mexico Department of Health",
+    "url": "https://www.nmhealth.org/news/vaccine/2024/10/?view=2147",
+    "kind": "press release",
+    "published": "2024-10-29",
+    "blurb": "New Mexico's health department said the state had 60 whooping cough cases as of October 26, 2024, almost double the number from the year before.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-02-14",
+    "scope": "NM",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Measles outbreak declared in Lea County",
+    "source": "New Mexico Department of Health",
+    "url": "https://www.nmhealth.org/news/vaccine/2025/2/?view=2180",
+    "kind": "press release",
+    "published": "2025-02-14",
+    "blurb": "New Mexico's health department declared a measles outbreak after three cases were confirmed in one week in Lea County, which borders Gaines County, Texas.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-03-06",
+    "scope": "NM",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Lea County resident tests positive for measles after death",
+    "source": "New Mexico Department of Health",
+    "url": "https://www.nmhealth.org/news/alert/2025/3/?view=2188",
+    "kind": "press release",
+    "published": "2025-03-06",
+    "blurb": "New Mexico's health department confirmed that an unvaccinated Lea County resident who died had tested positive for measles, and said the cause of death was still under investigation.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-09-26",
+    "scope": "NM",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "New Mexico Health Department calls end of measles outbreak",
+    "source": "New Mexico Department of Health",
+    "url": "https://www.nmhealth.org/news/vaccine/2025/9/?view=2279",
+    "kind": "press release",
+    "published": "2025-09-26",
+    "blurb": "New Mexico declared its measles outbreak over after 42 days with no new cases, with 100 cases counted in what the state called its first measles outbreak since 1996.",
+    "checked": "2026-10-01"
+  }
+]

@@ -1,0 +1,77 @@
+[
+ {
+  "date": "2001-03-08",
+  "scope": "WY",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "In the Matter of the Exemption From Immunization Requested by Susan Le-PAGE, Parent of Lisa LePage, a minor. Susan LePage, Appellant (Petitioner), v. State of Wyoming, Department of Health, Appellee (Respondent).",
+  "source": "Supreme Court of Wyoming (via Harvard Law School Caselaw Access Project)",
+  "url": "https://static.case.law/p3d/18/html/1177-01.html",
+  "kind": "court",
+  "published": null,
+  "blurb": "The Wyoming Supreme Court ruled that state law requires the Department of Health to grant a religious exemption from school immunization when a parent submits a written objection, and that the department went beyond its authority by questioning how sincere the belief was.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2019-05-08",
+  "scope": "WY",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "Cluster of Whooping Cough Cases Seen in Campbell County",
+  "source": "Wyoming Department of Health",
+  "url": "https://health.wyo.gov/cluster-of-whooping-cough-cases-seen-in-campbell-county/",
+  "kind": "press release",
+  "published": "2019-05-08",
+  "blurb": "The Wyoming Department of Health said five whooping cough cases were reported in Campbell County in one week, compared with one case there in all of 2018.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2025",
+  "scope": "WY",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "Whooping Cough Continues Wyoming Spread",
+  "source": "Wyoming Department of Health",
+  "url": "https://health.wyo.gov/whooping-cough-continues-wyoming-spread-2/",
+  "kind": "press release",
+  "published": "2026-03-11",
+  "blurb": "A Wyoming Department of Health epidemiologist said 148 whooping cough cases were reported in Wyoming in 2025, the highest number since 1951.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2025-07-01",
+  "scope": "WY",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Measles Case Confirmed in Natrona County",
+  "source": "Wyoming Department of Health",
+  "url": "https://health.wyo.gov/measles-case-confirmed-in-natrona-county/",
+  "kind": "press release",
+  "published": "2025-07-01",
+  "blurb": "The Wyoming Department of Health confirmed measles in an unvaccinated child from Natrona County, the first case reported in Wyoming since 2010.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2025-12-18",
+  "scope": "WY",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Five Measles Cases Identified in Fremont County, Bringing Wyoming’s Total to Fourteen",
+  "source": "Wyoming Department of Health",
+  "url": "https://health.wyo.gov/five-measles-cases-identified-in-fremont-county-bringing-wyomings-total-to-fourteen/",
+  "kind": "press release",
+  "published": "2025-12-18",
+  "blurb": "The Wyoming Department of Health identified five measles cases among unvaccinated Fremont County residents, bringing the number of cases reported in Wyoming in 2025 to fourteen.",
+  "checked": "2026-10-01"
+ }
+]

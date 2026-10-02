@@ -1,0 +1,118 @@
+[
+  {
+    "date": "1936-02",
+    "scope": "NC",
+    "diseases": [
+      "polio"
+    ],
+    "headline": "Poliomyelitis in North Carolina in 1935",
+    "source": "American Journal of Public Health and the Nation's Health",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1562586/",
+    "kind": "report",
+    "published": null,
+    "blurb": "Carl V. Reynolds and J. C. Knox published a paper on polio in North Carolina in 1935, first read at a public health meeting in St. Louis in November 1935.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1939",
+    "scope": "NC",
+    "diseases": [
+      "diphtheria"
+    ],
+    "headline": "Infectious Diseases",
+    "source": "NCpedia, Encyclopedia of North Carolina",
+    "url": "https://www.ncpedia.org/infectious-diseases",
+    "kind": "history page",
+    "published": null,
+    "blurb": "A 1939 North Carolina statute required all schoolchildren to be vaccinated against diphtheria.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1948",
+    "scope": "NC",
+    "diseases": [
+      "polio"
+    ],
+    "headline": "Polio in North Carolina",
+    "source": "North Carolina History Project",
+    "url": "https://northcarolinahistory.org/encyclopedia/polio-in-north-carolina/",
+    "kind": "history page",
+    "published": "2016-03-07",
+    "blurb": "North Carolina's worst year for polio was 1948, when 2,516 cases and 143 deaths were reported.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1957",
+    "scope": "NC",
+    "diseases": [
+      "diphtheria",
+      "pertussis",
+      "polio",
+      "measles",
+      "rubella"
+    ],
+    "headline": "§ 130A-152. Immunization required.",
+    "source": "North Carolina General Assembly",
+    "url": "https://www.ncleg.net/enactedlegislation/statutes/html/bysection/chapter_130a/gs_130a-152.html",
+    "kind": "policy",
+    "published": null,
+    "blurb": "This North Carolina law says every child in the state must be immunized against diphtheria, tetanus, whooping cough, polio, measles and rubella, and its history note starts with a 1957 act.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1959",
+    "scope": "NC",
+    "diseases": [
+      "polio"
+    ],
+    "headline": "Polio in North Carolina",
+    "source": "North Carolina History Project",
+    "url": "https://northcarolinahistory.org/encyclopedia/polio-in-north-carolina/",
+    "kind": "history page",
+    "published": "2016-03-07",
+    "blurb": "In 1959, North Carolina became the first state to require that all children get the Salk polio vaccine.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2013-09-13",
+    "scope": "NC",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Notes from the Field: Measles Outbreak Associated with a Traveler Returning from India — North Carolina, April–May 2013",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6236a6.htm",
+    "kind": "report",
+    "published": "2013-09-13",
+    "blurb": "In April and May 2013, 23 measles cases in North Carolina were linked to an unvaccinated traveler who had returned from India, and 18 of the patients were unvaccinated.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2021-07-27",
+    "scope": "NC",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "North Carolina Hepatitis A Outbreak Surpasses 1,000 Cases",
+    "source": "North Carolina Department of Health and Human Services",
+    "url": "https://www.ncdhhs.gov/news/press-releases/2021/07/27/north-carolina-hepatitis-outbreak-surpasses-1000-cases",
+    "kind": "press release",
+    "published": "2021-07-27",
+    "blurb": "North Carolina passed 1,000 reported hepatitis A cases tied to a national outbreak, with 63% of cases needing hospital care and 16 deaths.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2024-12-03",
+    "scope": "NC",
+    "diseases": [
+      "pertussis"
+    ],
+    "headline": "Whooping cough cases spike in N.C.",
+    "source": "North Carolina Health News",
+    "url": "https://www.northcarolinahealthnews.org/2024/12/03/whooping-cough-cases-spike-in-n-c/",
+    "kind": "news",
+    "published": "2024-12-03",
+    "blurb": "North Carolina had close to 600 reported whooping cough cases in 2024 by early December, far more than at the same point in 2023.",
+    "checked": "2026-10-01"
+  }
+]

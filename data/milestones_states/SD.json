@@ -1,0 +1,119 @@
+[
+  {
+    "date": "1971",
+    "scope": "SD",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "Immunizations required for admission to school or early childhood program--Exceptions--Rules.",
+    "source": "South Dakota Codified Laws (South Dakota Legislature)",
+    "url": "https://sdlegislature.gov/api/Statutes/13-28-7.1.html",
+    "kind": "policy",
+    "published": null,
+    "blurb": "This South Dakota law, which traces to a 1971 session law, requires proof of vaccination against polio, diphtheria, whooping cough, measles, rubella, mumps and other diseases to enter school, with exceptions for medical reasons and religious doctrine.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1985-06",
+    "scope": "SD",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "Hepatitis transmission among the Sioux Indians of South Dakota.",
+    "source": "American Journal of Public Health (via PubMed Central)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1404852/",
+    "kind": "report",
+    "published": null,
+    "blurb": "A June 1985 blood survey on the Pine Ridge and Rosebud reservations in South Dakota found that 76.2% of people tested had antibodies to the hepatitis A virus.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1986-12-18",
+    "scope": "SD",
+    "diseases": [
+      "mumps"
+    ],
+    "headline": "Mumps Outbreaks on University Campuses -- Illinois, Wisconsin, South Dakota",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000944.htm",
+    "kind": "report",
+    "published": "1987-08-07",
+    "blurb": "A total of 119 mumps cases were reported from five universities and colleges in South Dakota during the 1986-87 school year, including 94 at the University of South Dakota at Vermillion.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1996-08-01",
+    "scope": "SD",
+    "diseases": [
+      "diphtheria"
+    ],
+    "headline": "Toxigenic Corynebacterium diphtheriae -- Northern Plains Indian Community, August-October 1996",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00047859.htm",
+    "kind": "report",
+    "published": "1997-06-06",
+    "blurb": "From August 1 to October 7, 1996, testing at an Indian Health Service hospital and three clinics in South Dakota found diphtheria bacteria in six of 133 patients.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2014-12-31",
+    "scope": "SD",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Measles",
+    "source": "South Dakota Department of Health (archived by the Internet Archive)",
+    "url": "https://web.archive.org/web/20150101175101/http://doh.sd.gov/diseases/measles.aspx",
+    "kind": "report",
+    "published": null,
+    "blurb": "South Dakota's health department said the state had reported its first measles case since 1997 and counted six confirmed cases as of December 31, 2014, five of them Davison County residents and all of them unvaccinated.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2024-07-18",
+    "scope": "SD",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Department of Health Reports Measles Case in South Dakota",
+    "source": "South Dakota Department of Health",
+    "url": "https://doh.sd.gov/sd-doh-press-releases/department-of-health-reports-measles-case-in-south-dakota/",
+    "kind": "press release",
+    "published": "2024-07-18",
+    "blurb": "The South Dakota Department of Health reported measles in an adult Pennington County resident who had traveled internationally.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-01-24",
+    "scope": "SD",
+    "diseases": [
+      "pertussis"
+    ],
+    "headline": "South Dakota Department of Health Reports Pertussis Death",
+    "source": "South Dakota Department of Health",
+    "url": "https://doh.sd.gov/sd-doh-press-releases/south-dakota-department-of-health-reports-pertussis-death/",
+    "kind": "press release",
+    "published": "2025-01-24",
+    "blurb": "The South Dakota Department of Health reported the death of a child who had both whooping cough and influenza, and said whooping cough cases were occurring in multiple communities.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-06-02",
+    "scope": "SD",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Department of Health Reports First Measles Case in South Dakota",
+    "source": "South Dakota Department of Health",
+    "url": "https://doh.sd.gov/sd-doh-press-releases/department-of-health-reports-first-measles-case-in-south-dakota/",
+    "kind": "press release",
+    "published": "2025-06-02",
+    "blurb": "The South Dakota Department of Health reported the state's first measles case of 2025, an adult in Meade County who had traveled internationally.",
+    "checked": "2026-10-01"
+  }
+]

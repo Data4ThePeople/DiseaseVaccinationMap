@@ -1,0 +1,90 @@
+[
+  {
+    "date": "1936-02",
+    "scope": "TN",
+    "diseases": [
+      "polio"
+    ],
+    "headline": "Poliomyelitis in Tennessee",
+    "source": "American Journal of Public Health (via PubMed Central)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1562601/",
+    "kind": "report",
+    "published": null,
+    "blurb": "A paper on polio in Tennessee by W. C. Williams, read at a public health meeting in St. Louis on November 19, 1935, was published in the American Journal of Public Health in February 1936.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1978-04",
+    "scope": "TN",
+    "diseases": [
+      "measles",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "A compulsory school immunization program in Tennessee.",
+    "source": "Public Health Reports (via CDC Stacks)",
+    "url": "https://stacks.cdc.gov/view/cdc/65730",
+    "kind": "history page",
+    "published": null,
+    "blurb": "In April 1978, Tennessee lawmakers extended the state's 1967 school vaccination law to all students in kindergarten through grade 12 at state-supported schools and kept the medical and religious exemptions.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1981-08-03",
+    "scope": "TN",
+    "diseases": [
+      "rubella"
+    ],
+    "headline": "Epidemiologic Notes and Reports Rubella Outbreak among Foreign- Exchange Students -- Tennessee",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000215.htm",
+    "kind": "report",
+    "published": "1982-03-05",
+    "blurb": "On August 3, 1981, the University of Tennessee at Martin reported that seven Japanese exchange students had been hospitalized with suspected rubella, and 188 visiting students and faculty were vaccinated the next day.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2016-04-15",
+    "scope": "TN",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Measles Outbreak of Unknown Source — Shelby County, Tennessee, April–May 2016",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/volumes/65/wr/mm6538a3.htm",
+    "kind": "report",
+    "published": "2016-09-30",
+    "blurb": "Seven measles cases were confirmed in Shelby County, Tennessee, in April and May 2016, and six of the seven patients were unvaccinated.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2018-11-14",
+    "scope": "TN",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "TDH Continues Response to Hepatitis A Outbreak",
+    "source": "Tennessee Department of Health (archived by the Internet Archive)",
+    "url": "https://web.archive.org/web/20190109002113/https://www.tn.gov/health/news/2018/11/14/tdh-continues-response-to-hepatitis-a-outbreak.html",
+    "kind": "press release",
+    "published": "2018-11-14",
+    "blurb": "The Tennessee Department of Health said a hepatitis A outbreak had reached more than 400 cases and one death, with Nashville and Chattanooga most heavily affected.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2019-04-18",
+    "scope": "TN",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "TDH Confirms First Tennessee Measles Case for 2019",
+    "source": "Tennessee Department of Health (archived by the Internet Archive)",
+    "url": "https://web.archive.org/web/20190420221716/https://www.tn.gov/health/news/2019/4/18/measles-case.html",
+    "kind": "press release",
+    "published": "2019-04-18",
+    "blurb": "The Tennessee Department of Health confirmed the state's first measles case of 2019 in a resident of East Tennessee.",
+    "checked": "2026-10-01"
+  }
+]

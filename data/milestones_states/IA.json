@@ -1,0 +1,104 @@
+[
+  {
+    "date": "1952",
+    "scope": "IA",
+    "diseases": [
+      "polio"
+    ],
+    "headline": "Polio in Iowa",
+    "source": "Iowa PBS",
+    "url": "https://www.iowapbs.org/iowapathways/mypath/2712/polio-iowa",
+    "kind": "history page",
+    "published": null,
+    "blurb": "Iowa's polio cases peaked at more than 3,500 in 1952, a quarter of them in Sioux City, where gamma globulin was tested on 16,500 children as part of a national trial.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1979-07-27",
+    "scope": "IA",
+    "diseases": [
+      "polio"
+    ],
+    "headline": "Epidemiologic Notes and Reports Follow-Up on Poliomyelitis -- United States, Canada, Netherlands",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00050435.htm",
+    "kind": "report",
+    "published": "1997-12-19",
+    "blurb": "Iowa reported three of the 17 confirmed polio cases in a 1979 outbreak that mostly struck unvaccinated Amish people in the United States and Canada, which CDC later described as the last polio outbreak in the United States.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2004-03-26",
+    "scope": "IA",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Brief Report: Imported Measles Case Associated with Nonmedical Vaccine Exemption --- Iowa, March 2004",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5311a6.htm",
+    "kind": "report",
+    "published": "2004-03-26",
+    "blurb": "A 19-year-old student who had not been vaccinated because of a nonmedical exemption flew from New Delhi, India, to Cedar Rapids on March 12, 2004, while infectious with measles.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2006-04-07",
+    "scope": "IA",
+    "diseases": [
+      "mumps"
+    ],
+    "headline": "Mumps Epidemic --- Iowa, 2006",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5513a3.htm",
+    "kind": "report",
+    "published": "2006-04-07",
+    "blurb": "By March 28, 2006, Iowa had reported 219 mumps cases in what the report called the largest mumps epidemic in the United States since 1988; the state had averaged five cases a year since 1996.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2015-07",
+    "scope": "IA",
+    "diseases": [
+      "mumps"
+    ],
+    "headline": "Notes from the Field: Complications of Mumps During a University Outbreak Among Students Who Had Received 2 Doses of Measles-Mumps-Rubella Vaccine — Iowa, July 2015–May 2016",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/volumes/66/wr/mm6614a4.htm",
+    "kind": "report",
+    "published": "2017-04-14",
+    "blurb": "The University of Iowa had 301 mumps cases among students from July 2015 to May 2016, and 20 of the 287 students with clinical information had complications.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-05-23",
+    "scope": "IA",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "First case of measles reported in Iowa",
+    "source": "Iowa Department of Health and Human Services",
+    "url": "https://hhs.iowa.gov/news-release/2025-05-23/first-case-measles-reported-iowa",
+    "kind": "press release",
+    "published": "2025-05-23",
+    "blurb": "Iowa reported a confirmed measles case in an unvaccinated adult in central Iowa, the state's first case since 2019.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-05-27",
+    "scope": "IA",
+    "diseases": [
+      "measles",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "PROVISION OF INFORMATION RELATING TO IMMUNIZATION EXEMPTIONS BY SCHOOLS AND CHILD CARE CENTERS",
+    "source": "Iowa Legislature, 2025 Iowa Acts",
+    "url": "https://www.legis.iowa.gov/docs/publications/iactc/91.1/CH0106.pdf",
+    "kind": "policy",
+    "published": "2025-05-27",
+    "blurb": "This Iowa law, approved May 27, 2025, requires schools and licensed child care centers to include information about immunization exemptions in messages to parents about required shots and to post it on their websites.",
+    "checked": "2026-10-01"
+  }
+]

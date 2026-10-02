@@ -1,0 +1,100 @@
+[
+ {
+  "date": "1982-07-14",
+  "scope": "WI",
+  "diseases": [
+   "diphtheria"
+  ],
+  "headline": "Epidemiologic Notes and Reports Fatal Diphtheria -- Wisconsin",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00001176.htm",
+  "kind": "report",
+  "published": "1982-10-22",
+  "blurb": "A 9-year-old Wisconsin girl who had not been immunized died of diphtheria on July 14, 1982, the first diphtheria death reported in Wisconsin since 1968.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1987-02-04",
+  "scope": "WI",
+  "diseases": [
+   "mumps"
+  ],
+  "headline": "Mumps Outbreaks on University Campuses -- Illinois, Wisconsin, South Dakota",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000944.htm",
+  "kind": "report",
+  "published": "1987-08-07",
+  "blurb": "Marquette University in Milwaukee reported 178 cases of mumps between February 4 and May 14, 1987, the largest of the campus outbreaks described in this report.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1989-08",
+  "scope": "WI",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Treating measles: the appropriateness of admission to a Wisconsin children's hospital.",
+  "source": "American Journal of Public Health (via PubMed Central)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1694644/",
+  "kind": "report",
+  "published": null,
+  "blurb": "This study reviewed the charts of 634 patients with a measles diagnosis who were treated at a Wisconsin children's hospital between August 1989 and April 1990, during a measles outbreak in the metropolitan area.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2012",
+  "scope": "WI",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "On the Role of Different Age Groups and Pertussis Vaccines During the 2012 Outbreak in Wisconsin",
+  "source": "Open Forum Infectious Diseases (via PubMed Central)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5961225/",
+  "kind": "report",
+  "published": "2018-04-16",
+  "blurb": "This study of Wisconsin's 2012 whooping cough outbreak counted 7,481 reported cases from late 2011 through early 2013, and 75% of them were in children under age 17.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2021-09-04",
+  "scope": "WI",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Public Health Actions to Control Measles Among Afghan Evacuees During Operation Allies Welcome — United States, September–November 2021",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/volumes/71/wr/mm7117a2.htm",
+  "kind": "report",
+  "published": "2022-04-28",
+  "blurb": "On September 4, 2021, CDC was told of a suspected measles case in a person evacuated from Afghanistan to Fort McCoy, Wisconsin, and 22 of the 47 confirmed cases among evacuees were in Wisconsin.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2024-09-19",
+  "scope": "WI",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "DHS Monitoring Significant Increase in Pertussis (Whooping Cough), Urges Vaccination to Prevent Severe Symptoms",
+  "source": "Wisconsin Department of Health Services",
+  "url": "https://www.dhs.wisconsin.gov/news/releases/091924.htm",
+  "kind": "press release",
+  "published": "2024-09-19",
+  "blurb": "The Wisconsin Department of Health Services said it had received reports of 625 confirmed whooping cough cases as of September 13, 2024, compared with 51 cases reported in 2023.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2025-08-02",
+  "scope": "WI",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "DHS Confirms First Cases of Measles in Wisconsin This Year",
+  "source": "Wisconsin Department of Health Services",
+  "url": "https://www.dhs.wisconsin.gov/news/releases/080225.htm",
+  "kind": "press release",
+  "published": "2025-08-02",
+  "blurb": "The Wisconsin Department of Health Services and Oconto County Public Health confirmed nine measles cases in Oconto County, all exposed to a common source during travel out of state.",
+  "checked": "2026-10-01"
+ }
+]

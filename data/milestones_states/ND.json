@@ -1,0 +1,105 @@
+[
+  {
+    "date": "1938-10-14",
+    "scope": "ND",
+    "diseases": [
+      "pertussis"
+    ],
+    "headline": "Whooping Cough",
+    "source": "Prairie Public, Dakota Datebook",
+    "url": "https://news.prairiepublic.org/show/dakota-datebook-archive/2022-05-27/whooping-cough",
+    "kind": "history page",
+    "published": "2022-05-27",
+    "blurb": "In October 1938, a North Dakota newspaper reminded parents that whooping cough was dangerous, after 30 children in the state had died from it in the first six months of that year.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1946-07-19",
+    "scope": "ND",
+    "diseases": [
+      "polio"
+    ],
+    "headline": "Worst Polio Outbreak",
+    "source": "Prairie Public, Dakota Datebook",
+    "url": "https://news.prairiepublic.org/podcast/dakota-datebook/2021-07-19/worst-polio-outbreak",
+    "kind": "history page",
+    "published": "2021-07-19",
+    "blurb": "North Dakota's worst polio outbreak began in July 1946, and the state ended the year with a record 492 cases and 28 deaths.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1955-10-11",
+    "scope": "ND",
+    "diseases": [
+      "polio"
+    ],
+    "headline": "Polio Vaccinations Expand",
+    "source": "Prairie Public, Dakota Datebook",
+    "url": "https://news.prairiepublic.org/podcast/dakota-datebook/2021-10-11/polio-vaccinations-expand",
+    "kind": "history page",
+    "published": "2021-10-11",
+    "blurb": "On October 11, 1955, North Dakota's health department opened Salk polio shots to everyone age 19 and younger.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1962-09-17",
+    "scope": "ND",
+    "diseases": [
+      "polio"
+    ],
+    "headline": "Sabin Oral Vaccine",
+    "source": "Prairie Public, Dakota Datebook",
+    "url": "https://news.prairiepublic.org/podcast/dakota-datebook/2021-09-17/sabin-oral-vaccine",
+    "kind": "history page",
+    "published": "2021-09-17",
+    "blurb": "The Bismarck Tribune reported on September 17, 1962, that nearly 30,000 people in Burleigh and Morton counties took their first dose of the new oral polio vaccine in six hours on one Sunday afternoon.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1975-03-20",
+    "scope": "ND",
+    "diseases": [
+      "diphtheria",
+      "pertussis",
+      "measles",
+      "rubella",
+      "mumps",
+      "polio"
+    ],
+    "headline": "HOUSE BILL NO. 1093",
+    "source": "North Dakota Legislative Assembly, 1975 Session Laws",
+    "url": "https://ndlegis.gov/assembly/sessionlaws/1975/pdf/HELTH.pdf#page=18",
+    "kind": "policy",
+    "published": "1975-03-20",
+    "blurb": "This North Dakota law, approved on March 20, 1975, required proof of immunization against diphtheria, whooping cough, tetanus, measles, rubella, mumps and polio before a child could be admitted to elementary school or day care.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2024-10-23",
+    "scope": "ND",
+    "diseases": [
+      "pertussis"
+    ],
+    "headline": "HHS reports more than triple the number of whooping cough cases compared to 2023",
+    "source": "North Dakota Health and Human Services",
+    "url": "https://www.hhs.nd.gov/news/hhs-reports-more-triple-number-whooping-cough-cases-compared-2023",
+    "kind": "press release",
+    "published": "2024-10-23",
+    "blurb": "North Dakota had reported 73 whooping cough cases in 2024 as of October 23, compared with 17 cases in all of 2023.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-05-02",
+    "scope": "ND",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "First Case of Measles in North Dakota Since 2011",
+    "source": "North Dakota Health and Human Services, Health Alert Network",
+    "url": "https://www.hhs.nd.gov/sites/www/files/documents/DOH%20Legacy/EPR/HAN%20Alerts/Measles%20HAN%205.2.2025.pdf",
+    "kind": "press release",
+    "published": "2025-05-02",
+    "blurb": "North Dakota confirmed its first measles case since 2011 in an unvaccinated child from Williams County.",
+    "checked": "2026-10-01"
+  }
+]

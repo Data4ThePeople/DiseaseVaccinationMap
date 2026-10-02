@@ -1,0 +1,110 @@
+[
+  {
+    "date": "1961",
+    "scope": "KS",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "72-6262. Same; certification of completion required, alternatives; duties of school boards.",
+    "source": "Kansas Office of Revisor of Statutes",
+    "url": "https://www.ksrevisor.org/statutes/chapters/ch72/072_062_0062.html",
+    "kind": "policy",
+    "published": null,
+    "blurb": "This Kansas law, which dates to 1961, requires pupils entering a Kansas school for the first time to show proof of the tests and shots the state health secretary requires, or to give a doctor's statement or a parent's statement of religious objection instead.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1983-11-04",
+    "scope": "KS",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Measles among Members of a Drum and Bugle Corps -- Arkansas, California, Kansas",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000167.htm",
+    "kind": "report",
+    "published": "1983-11-04",
+    "blurb": "A 17-year-old from England who joined a drum and bugle corps in Hutchinson, Kansas, developed a measles rash on June 19, 1983, and five cases were reported among the 150 corps members during a tour of 24 states.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1986",
+    "scope": "KS",
+    "diseases": [
+      "pertussis"
+    ],
+    "headline": "Current Trends Pertussis Surveillance -- United States, 1986-1988",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00001550.htm",
+    "kind": "report",
+    "published": "1990-02-02",
+    "blurb": "A 1986 whooping cough outbreak in Kansas accounted for 1,030 cases, which CDC called the largest outbreak reported in the United States in the previous 10 years.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1993-04-24",
+    "scope": "KS",
+    "diseases": [
+      "diphtheria",
+      "pertussis",
+      "polio",
+      "measles",
+      "mumps",
+      "rubella"
+    ],
+    "headline": "Assessment of Undervaccinated Children Following a Mass Vaccination Campaign -- Kansas, 1993",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00032258.htm",
+    "kind": "report",
+    "published": "1994-08-12",
+    "blurb": "Kansas vaccinated 7,120 children on April 24 and 25, 1993, in the first weekend of Operation Immunize, a campaign started after a state survey found 52% of children entering school had been fully vaccinated by age 2.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1998-04-22",
+    "scope": "KS",
+    "diseases": [
+      "rubella"
+    ],
+    "headline": "Rubella Among Hispanic Adults --- Kansas, 1998, and Nebraska, 1999",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm4911a1.htm",
+    "kind": "report",
+    "published": "2000-03-24",
+    "blurb": "Kansas received reports of 35 confirmed rubella cases from April 22 to July 14, 1998, and 28 of them were in workers at meat-packing plants in one region.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2019-07-18",
+    "scope": "KS",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "Hepatitis A and Meningococcal vaccines to be required for 2019-20 school year",
+    "source": "KSN News",
+    "url": "https://www.ksn.com/news/local/hepatitis-a-and-meningococcal-vaccines-to-be-required-for-2019-20-school-year/",
+    "kind": "news",
+    "published": "2019-07-18",
+    "blurb": "Kansas health officials approved rules adding hepatitis A and meningococcal vaccines to the shots required for school, with two doses of hepatitis A vaccine needed for kindergarten and first grade in the 2019-20 school year.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-08-21",
+    "scope": "KS",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Kansas Department of Health and Environment Announces End of Measles Outbreak in Southwest Kansas",
+    "source": "Kansas Department of Health and Environment",
+    "url": "https://content.govdelivery.com/accounts/KSDHE/bulletins/3eee449",
+    "kind": "press release",
+    "published": "2025-08-21",
+    "blurb": "Kansas health officials declared the southwest Kansas measles outbreak over on August 21, 2025, after 87 confirmed cases since January, more than 90% of them in people who were not vaccinated.",
+    "checked": "2026-10-01"
+  }
+]

@@ -1,0 +1,119 @@
+[
+ {
+  "date": "1936",
+  "scope": "AL",
+  "diseases": [
+   "polio"
+  ],
+  "headline": "Experience With the Picric Acid-Alum Spray in the Prevention of Poliomyelitis in Alabama, 1936",
+  "source": "American Journal of Public Health and the Nation's Health (via PubMed Central)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1562926/",
+  "kind": "report",
+  "published": null,
+  "blurb": "This journal article from February 1937 reports on a picric acid and alum spray that was tried in Alabama in 1936 as a way to prevent polio.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1953",
+  "scope": "AL",
+  "diseases": [
+   "polio"
+  ],
+  "headline": "Gamma globulin in a poliomyelitis outbreak, Montgomery, Alabama, 1953",
+  "source": "Public Health Reports (via PubMed Central)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2024377/",
+  "kind": "report",
+  "published": null,
+  "blurb": "This Public Health Reports article from November 1953 is about the use of gamma globulin during a polio outbreak in Montgomery, Alabama, that year.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1967-08",
+  "scope": "AL",
+  "diseases": [
+   "diphtheria"
+  ],
+  "headline": "Alabama diphtheria outbreak, 1967.",
+  "source": "HSMHA Health Reports (via CDC Stacks)",
+  "url": "https://stacks.cdc.gov/view/cdc/62771",
+  "kind": "report",
+  "published": null,
+  "blurb": "Twenty diphtheria cases from six Alabama counties were reported to the state health department from August 2 through November 20, 1967.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2002-10-19",
+  "scope": "AL",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Measles Outbreak Associated with an Imported Case in an Infant --- Alabama, 2002",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5302a3.htm",
+  "kind": "report",
+  "published": "2004-01-23",
+  "blurb": "An outbreak of 13 confirmed measles cases occurred in Alabama from October 19 to November 15, 2002, and 11 of the cases were in infants at one day care center who had not yet been vaccinated.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2009-10-23",
+  "scope": "AL",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "IMMUNIZATION OF CHILDREN IN SCHOOLS AND CONGREGATED CARE SETTINGS",
+  "source": "Alabama State Board of Health, Rules, Chapter 420-6-1",
+  "url": "https://www.alabamapublichealth.gov/immunization/assets/schoolImmlaw.pdf",
+  "kind": "policy",
+  "published": null,
+  "blurb": "This Alabama State Board of Health rule requires a certificate of immunization for school and child care, allows religious and medical exemptions, and in the version that took effect October 23, 2009, adds a whooping cough booster for sixth graders starting in fall 2010.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2018-08-03",
+  "scope": "AL",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "Multiple Alabama counties experience pertussis outbreak",
+  "source": "Alabama Department of Public Health",
+  "url": "https://www.alabamapublichealth.gov/blog/2018/08/03.html",
+  "kind": "press release",
+  "published": "2018-08-03",
+  "blurb": "The Alabama Department of Public Health said it was investigating a whooping cough outbreak in Shelby and Jefferson counties, with 9 children who tested positive and 22 people with a similar illness linked to them.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2022-09-08",
+  "scope": "AL",
+  "diseases": [
+   "hepatitis_a"
+  ],
+  "headline": "Hepatitis A outbreak ends in Alabama; vaccine is effective in reducing risk",
+  "source": "Alabama Department of Public Health",
+  "url": "https://www.alabamapublichealth.gov/blog/2022/09/nr_08.html",
+  "kind": "press release",
+  "published": "2022-09-08",
+  "blurb": "The Alabama Department of Public Health said the state's hepatitis A outbreak, which began in September 2018, was over after 1,681 reported cases and 1,177 hospitalizations.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2025-08-25",
+  "scope": "AL",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "ADPH announces first case of measles in Alabama since 2002; MMR vaccination is encouraged",
+  "source": "Alabama Department of Public Health",
+  "url": "https://www.alabamapublichealth.gov/blog/2025/08/nr-25.html",
+  "kind": "press release",
+  "published": "2025-08-25",
+  "blurb": "The Alabama Department of Public Health announced that an unvaccinated child under 5 in North Alabama had measles, caught while traveling outside the United States.",
+  "checked": "2026-10-01"
+ }
+]

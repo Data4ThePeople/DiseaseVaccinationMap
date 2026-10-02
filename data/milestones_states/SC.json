@@ -1,0 +1,91 @@
+[
+  {
+    "date": "1993",
+    "scope": "SC",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "SECTION 44-29-180. School pupils and day care center children to be vaccinated or immunized; department to monitor immunization records of children in day care; exemptions and exclusions.",
+    "source": "South Carolina Code of Laws (South Carolina Legislature)",
+    "url": "https://www.scstatehouse.gov/code/t44c029.php",
+    "kind": "policy",
+    "published": null,
+    "blurb": "This South Carolina law bars schools and child care facilities from admitting a child without proof of the vaccines the state health department requires, and it refers to medical and religious exemption certificates.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2015-09-22",
+    "scope": "SC",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "DHEC: DHEC vaccinates more than 3,700 to help prevent spread of hepatitis A in Upstate",
+    "source": "South Carolina Department of Health and Environmental Control (archived by the Internet Archive)",
+    "url": "https://web.archive.org/web/20180930081553/https://www.scdhec.gov/news-releases/2018-03-20-dhec-dhec-vaccinates-more-3700-help-prevent-spread-hepatitis-upstate",
+    "kind": "press release",
+    "published": "2015-09-22",
+    "blurb": "South Carolina's health department said it had given 3,706 hepatitis A shots at clinics in Spartanburg and Greenville to people who might have been exposed at two restaurants in Spartanburg County.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2018-10-30",
+    "scope": "SC",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "DHEC Confirms Measles in Spartanburg County Resident",
+    "source": "South Carolina Department of Health and Environmental Control (archived by the Internet Archive)",
+    "url": "https://web.archive.org/web/20181101213541/https://www.scdhec.gov/news-releases/2018-10-30-dhec-confirms-measles-spartanburg-county-resident",
+    "kind": "press release",
+    "published": "2018-10-30",
+    "blurb": "South Carolina's health department confirmed measles in a Spartanburg County resident who had recently traveled outside the United States.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2019-05",
+    "scope": "SC",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "DHEC Identifies Spread of Hepatitis A as Statewide Outbreak",
+    "source": "South Carolina Department of Health and Environmental Control (archived by the Internet Archive)",
+    "url": "https://web.archive.org/web/20190601181231/https://www.scdhec.gov/news-releases/dhec-identifies-spread-hepatitis-statewide-outbreak",
+    "kind": "press release",
+    "published": null,
+    "blurb": "South Carolina's health department defined the spread of hepatitis A as a statewide outbreak, citing 86 reported cases, 59 hospitalizations and one death between November 1, 2018, and May 10, 2019.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-10-02",
+    "scope": "SC",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "DPH Confirms Measles Outbreak in Upstate Region",
+    "source": "South Carolina Department of Public Health",
+    "url": "https://dph.sc.gov/news/dph-confirms-measles-outbreak-upstate-region",
+    "kind": "press release",
+    "published": "2025-10-02",
+    "blurb": "The South Carolina Department of Public Health confirmed a measles outbreak in the Upstate region, with eight cases reported there as of October 1, 2025, five of them part of the new outbreak.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2026-04-27",
+    "scope": "SC",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "DPH Announces End to Measles Outbreak in Upstate at 997 Cases",
+    "source": "South Carolina Department of Public Health",
+    "url": "https://dph.sc.gov/news/dph-announces-end-measles-outbreak-upstate-997-cases",
+    "kind": "press release",
+    "published": "2026-04-27",
+    "blurb": "The South Carolina Department of Public Health declared the end of the Upstate measles outbreak, which totaled 997 cases from October 2025 through March 2026, 932 of them in unvaccinated people.",
+    "checked": "2026-10-01"
+  }
+]

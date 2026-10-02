@@ -1,0 +1,105 @@
+[
+ {
+  "date": "1979-09-28",
+  "scope": "DC",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Immunization of School Students Act of 1979",
+  "source": "Council of the District of Columbia",
+  "url": "https://code.dccouncil.gov/us/dc/council/laws/docs/3-20.pdf",
+  "kind": "policy",
+  "published": "1979-09-28",
+  "blurb": "This District law, in effect since September 28, 1979, set up a system to make sure students are immunized against preventable childhood diseases.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2015-02-17",
+  "scope": "DC",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "District of Columbia Confirms Second Case of Measles in 2015",
+  "source": "DC Health",
+  "url": "https://dchealth.dc.gov/release/district-columbia-confirms-second-case-measles-2015",
+  "kind": "press release",
+  "published": "2015-02-17",
+  "blurb": "The District's health department confirmed a second measles case of 2015 and said it was not linked to the outbreak in California.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2021-03-16",
+  "scope": "DC",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis",
+   "hepatitis_a"
+  ],
+  "headline": "D.C. Law 23-193. Minor Consent for Vaccinations Amendment Act of 2020.",
+  "source": "Council of the District of Columbia, D.C. Law Library",
+  "url": "https://code.dccouncil.gov/us/dc/council/laws/23-193",
+  "kind": "policy",
+  "published": "2021-03-16",
+  "blurb": "This District law, in effect since March 16, 2021, lets a minor age 11 or older consent to a recommended vaccine if the minor can meet the informed consent standard.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2022-03-18",
+  "scope": "DC",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis",
+   "hepatitis_a"
+  ],
+  "headline": "Judge bars DC from vaccinating kids without parental permission",
+  "source": "WTOP News",
+  "url": "https://wtop.com/dc/2022/03/judge-bars-dc-from-vaccinating-kids-without-parental-permission/",
+  "kind": "news",
+  "published": "2022-03-21",
+  "blurb": "A federal judge temporarily blocked the District from enforcing its law that lets children as young as 11 be vaccinated without a parent's consent.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2024-01-23",
+  "scope": "DC",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "D.C. Law 25-108. Immunization of School Students Amendment Act of 2023.",
+  "source": "Council of the District of Columbia, D.C. Law Library",
+  "url": "https://code.dccouncil.gov/us/dc/council/laws/25-108",
+  "kind": "policy",
+  "published": "2024-01-23",
+  "blurb": "This District law, in effect since January 23, 2024, updated the rules for school immunization certificates and lets the Mayor set the list of required school immunizations by rule.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2024-03-25",
+  "scope": "DC",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella"
+  ],
+  "headline": "DC Health Recommends Up-to-Date Measles Vaccinations for Children",
+  "source": "DC Health",
+  "url": "https://dchealth.dc.gov/release/dc-health-recommends-date-measles-vaccinations-children",
+  "kind": "press release",
+  "published": "2024-03-25",
+  "blurb": "DC Health advised that all children be fully vaccinated with the MMR vaccine and said no measles cases had been reported in the District so far in 2024.",
+  "checked": "2026-10-01"
+ }
+]

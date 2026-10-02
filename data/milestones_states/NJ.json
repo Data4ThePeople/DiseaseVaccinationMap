@@ -1,0 +1,114 @@
+[
+  {
+    "date": "1959-06-22",
+    "scope": "NJ",
+    "diseases": [
+      "diphtheria"
+    ],
+    "headline": "Mountain Lakes Bd. of Education v. Maas",
+    "source": "Superior Court of New Jersey, Appellate Division (via Justia, archived by the Internet Archive)",
+    "url": "https://web.archive.org/web/20240717164855/https://law.justia.com/cases/new-jersey/appellate-division-published/1959/56-n-j-super-245-0.html",
+    "kind": "court",
+    "published": null,
+    "blurb": "A New Jersey appeals court upheld the Mountain Lakes school board's rule that children be vaccinated against smallpox and immunized against diphtheria before they could attend school.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1960-07",
+    "scope": "NJ",
+    "diseases": [
+      "polio"
+    ],
+    "headline": "New Jersey's action program to prevent poliomyelitis",
+    "source": "Public Health Reports (via PubMed Central)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1929507/",
+    "kind": "report",
+    "published": "1960-07",
+    "blurb": "Three authors described New Jersey's program to prevent polio in this article in the July 1960 issue of Public Health Reports.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1981-06-15",
+    "scope": "NJ",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "Epidemiologic Notes and Reports Outbreak of Food-borne Hepatitis A -- New Jersey",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000232.htm",
+    "kind": "report",
+    "published": "1982-04-02",
+    "blurb": "In the first three weeks of June 1981, 56 hepatitis cases were found in one part of Monmouth County, New Jersey, and 55 of the patients had eaten at the same restaurant.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1983-10-19",
+    "scope": "NJ",
+    "diseases": [
+      "mumps"
+    ],
+    "headline": "Mumps Outbreak -- New Jersey",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000379.htm",
+    "kind": "report",
+    "published": "1984-07-27",
+    "blurb": "From October 19 to December 14, 1983, 63 mumps cases were reported from six schools in one Atlantic County school district; New Jersey began requiring mumps vaccination for young children entering school in 1978.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1985-11-15",
+    "scope": "NJ",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Measles -- New Jersey",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000711.htm",
+    "kind": "report",
+    "published": "1986-04-04",
+    "blurb": "New Jersey reported 334 measles cases between November 15, 1985, and March 13, 1986, and 269 of them were in Jersey City residents.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2010-01-29",
+    "scope": "NJ",
+    "diseases": [
+      "mumps"
+    ],
+    "headline": "Update: Mumps Outbreak --- New York and New Jersey, June 2009--January 2010",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5905a1.htm",
+    "kind": "report",
+    "published": "2010-02-12",
+    "blurb": "A mumps outbreak that began in New York in June 2009 had reached 1,521 cases by January 29, 2010, including 159 cases in four New Jersey counties.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2018-10-17",
+    "scope": "NJ",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Notes from the Field: Measles Outbreaks from Imported Cases in Orthodox Jewish Communities — New York and New Jersey, 2018–2019",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/volumes/68/wr/mm6819a4.htm",
+    "kind": "report",
+    "published": "2019-05-16",
+    "blurb": "Investigators identified 33 measles cases in New Jersey between October 17 and November 30, 2018, after a case in an international traveler was reported in Ocean County.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2021-09-06",
+    "scope": "NJ",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Notes from the Field: Response to Measles Among Persons Evacuated from Afghanistan — Joint Base McGuire-Dix-Lakehurst, New Jersey, August–October 2021",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/volumes/71/wr/mm7117a3.htm",
+    "kind": "report",
+    "published": "2022-04-28",
+    "blurb": "After 16 Afghan evacuees housed at a New Jersey military base were exposed to measles on a flight, a vaccination campaign from September 8 to 12, 2021, screened 8,849 of the 9,503 evacuees there.",
+    "checked": "2026-10-01"
+  }
+]

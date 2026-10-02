@@ -1,0 +1,112 @@
+[
+ {
+  "date": "1955",
+  "scope": "MT",
+  "diseases": [
+   "polio"
+  ],
+  "headline": "Harmon’s Histories: Polio outbreaks create panic in 1950s Montana",
+  "source": "Missoula Current",
+  "url": "https://missoulacurrent.com/montana-polio-vaccine-eradication/",
+  "kind": "history page",
+  "published": "2017-07-16",
+  "blurb": "This history column says about 35,000 first and second graders in Montana schools were expected to get their first polio vaccine shots in the summer of 1955.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1979",
+  "scope": "MT",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "Immunization Required -- Release And Acceptance Of Immunization Records -- Notice Of Exemptions Required",
+  "source": "Montana Code Annotated (Montana Legislature)",
+  "url": "https://mca.legmt.gov/bills/mca/title_0200/chapter_0050/part_0040/section_0030/0200-0050-0040-0030.html",
+  "kind": "policy",
+  "published": null,
+  "blurb": "This Montana law, first enacted in 1979 according to its history note, now requires students to be immunized against chickenpox, diphtheria, whooping cough, tetanus, polio, rubella, mumps, and measles unless they file for an exemption.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1983-09-04",
+  "scope": "MT",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Interstate Transmission of Measles in a Gypsy Population -- Washington, Idaho, Montana, California",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000192.htm",
+  "kind": "report",
+  "published": "1983-12-23",
+  "blurb": "A measles outbreak of 44 cases in four states in fall 1983 included a 2-year-old boy whose rash began in Billings on September 4 and three later cases in Montana.",
+  "checked": "2026-10-01",
+  "hold": "Editor's decision pending: CDC's 1983 title uses an ethnic term now considered offensive."
+ },
+ {
+  "date": "2005-09-01",
+  "scope": "MT",
+  "diseases": [
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "Immunization Requirement for 7th Graders Revised",
+  "source": "Montana Department of Public Health and Human Services (archived by the Internet Archive)",
+  "url": "https://web.archive.org/web/20061004023526/http://www.dphhs.mt.gov/newsevents/newsreleases2005/september/immunizationrequirement.shtml",
+  "kind": "press release",
+  "published": "2005-09-01",
+  "blurb": "During a whooping cough epidemic in Montana, state health officials postponed a new tetanus and diphtheria booster requirement for seventh graders until 2006 so a new combined shot that also covers whooping cough could be used.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2013-05-15",
+  "scope": "MT",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "DPHHS reports high number of pertussis cases in Montana",
+  "source": "Montana Department of Public Health and Human Services (archived by the Internet Archive)",
+  "url": "https://web.archive.org/web/20130528180312/http://www.dphhs.mt.gov/newsevents/newsreleases2013/may/pertussis.shtml",
+  "kind": "press release",
+  "published": "2013-05-15",
+  "blurb": "Montana health officials said more than 265 whooping cough cases had been reported so far in 2013, most of them in school-aged children.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2021-07-01",
+  "scope": "MT",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "AN ACT REVISING LAWS RELATED TO THE MEDICAL EXEMPTION TO STUDENT IMMUNIZATION REQUIREMENTS; revising requirements for Immunization forms; establishing limitations on examination and use of immunization records; AMENDING SECTIONS 20-5-403, 20-5-405, 20-5-406, AND 20-5-408, MCA; and PROVIDING AN EFFECTIVE DATE.",
+  "source": "Montana Legislature (archived by the Internet Archive)",
+  "url": "https://web.archive.org/web/20210731112754/https://leg.mt.gov/bills/2021/billhtml/HB0334.htm",
+  "kind": "policy",
+  "published": null,
+  "blurb": "House Bill 334, effective July 1, 2021, changed Montana law so that a medical exemption from school immunizations can be signed by other licensed health care providers and not only by a physician.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2025-04-17",
+  "scope": "MT",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Measles Cases Confirmed in Montana",
+  "source": "Montana Department of Public Health and Human Services",
+  "url": "https://dphhs.mt.gov/News/2025/April/MeaslesCasesConfirmedinMontana",
+  "kind": "press release",
+  "published": "2025-04-17",
+  "blurb": "Montana health officials reported five confirmed measles cases in Gallatin County, the state's first measles cases since 1990.",
+  "checked": "2026-10-01"
+ }
+]

@@ -1,0 +1,129 @@
+[
+ {
+  "date": "1950",
+  "scope": "CO",
+  "diseases": [
+   "polio"
+  ],
+  "headline": "Poliomyelitis and Atmospheric Humidity in an Elevated Semiarid Region, Denver, Colorado, 1950 and 1951",
+  "source": "American Journal of Public Health and the Nation's Health (via PubMed Central)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1526396/",
+  "kind": "report",
+  "published": null,
+  "blurb": "This journal article from October 1952 looks at polio and air humidity in Denver in 1950 and 1951.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1978",
+  "scope": "CO",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "What’s The History Of Vaccinations In Colorado?",
+  "source": "Colorado Public Radio (CPR News)",
+  "url": "https://www.cpr.org/2019/04/08/whats-the-history-of-vaccinations-in-colorado/",
+  "kind": "history page",
+  "published": "2019-04-08",
+  "blurb": "Colorado enacted its first school-required vaccine laws in 1978, with medical, religious and personal exemptions from the start, according to this 2019 news story.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1985-07-24",
+  "scope": "CO",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Measles in a Population with Religious Exemption to Vaccination -- Colorado",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000644.htm",
+  "kind": "report",
+  "published": "1985-11-29",
+  "blurb": "A 17-year-old at a Colorado camp where the campers and counselors were unvaccinated developed measles on July 24, 1985, and 50 linked cases were later reported, six of them in Colorado.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1994-04",
+  "scope": "CO",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Interstate Measles Transmission from a Ski Resort -- Colorado, 1994",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00032422.htm",
+  "kind": "report",
+  "published": "1994-09-02",
+  "blurb": "A chain of measles spread that began in Breckenridge in April 1994 reached nine other states and 247 reported cases, which was 36% of U.S. measles cases reported through July 2 of that year.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2014-05",
+  "scope": "CO",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "House Bill 14-1288",
+  "source": "Colorado Department of Public Health and Environment",
+  "url": "https://cdphe.colorado.gov/immunization/hb-14-1288",
+  "kind": "policy",
+  "published": null,
+  "blurb": "This Colorado law, passed in May 2014, requires schools to make the immunization and exemption rates of their enrolled students available to the public.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2017-01",
+  "scope": "CO",
+  "diseases": [
+   "mumps"
+  ],
+  "headline": "Mumps Outbreak in a Marshallese Community — Denver Metropolitan Area, Colorado, 2016–2017",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6741a2.htm",
+  "kind": "report",
+  "published": "2018-10-19",
+  "blurb": "In January 2017, Colorado health officials identified four linked mumps cases among members of one church in the Denver area, and the outbreak reached 47 cases.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2020-06",
+  "scope": "CO",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "Senate Bill 20-163, School Entry Immunization",
+  "source": "Colorado Department of Public Health and Environment",
+  "url": "https://cdphe.colorado.gov/immunization/sb20-163",
+  "kind": "policy",
+  "published": "2025-01-06",
+  "blurb": "This Colorado law, passed in June 2020, combined the personal belief and religious exemptions into one nonmedical exemption and set a goal that 95% of students in every school be vaccinated.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2025-05-25",
+  "scope": "CO",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Measles Outbreak Associated with an Infectious Traveler — Colorado, May–June 2025",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/volumes/75/wr/mm7504a1.htm",
+  "kind": "report",
+  "published": "2026-01-29",
+  "blurb": "From May 25 to June 7, 2025, nine Colorado residents got measles after being exposed to a traveler with measles on an international flight or in an airport, one more person caught it from one of them, and four of the ten were hospitalized.",
+  "checked": "2026-10-01"
+ }
+]

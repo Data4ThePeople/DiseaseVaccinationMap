@@ -1,0 +1,110 @@
+[
+  {
+    "date": "1981-11-18",
+    "scope": "NH",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Epidemiologic Notes and Reports Transmission of Measles Across State Lines -- Kentucky, New Hampshire, Tennessee, Virginia",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000223.htm",
+    "kind": "report",
+    "published": "1982-03-19",
+    "blurb": "A measles outbreak linked to one exchange student from El Salvador reached 25 cases in four states between November 1981 and January 1982, including three cases in New Hampshire.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1984-04-09",
+    "scope": "NH",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Epidemiologic Notes and Reports Measles -- New Hampshire",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000410.htm",
+    "kind": "report",
+    "published": "1984-10-05",
+    "blurb": "Between April 9 and June 1, 1984, 37 measles cases were reported from the Hanover, New Hampshire, area, 29 of them among Dartmouth College students and their family contacts.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1987",
+    "scope": "NH",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "Section 141-C:20-a Immunization.",
+    "source": "New Hampshire General Court, Revised Statutes Annotated",
+    "url": "https://www.gencourt.state.nh.us/rsa/html/X/141-C/141-C-20-a.htm",
+    "kind": "policy",
+    "published": null,
+    "blurb": "This New Hampshire law, which lists a 1987 act as its first source, now requires children to be immunized against diphtheria, mumps, whooping cough, polio, rubella, measles, tetanus, chickenpox, hepatitis B, and Hib to enroll in school or child care unless they have an exemption.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2006-03",
+    "scope": "NH",
+    "diseases": [
+      "pertussis"
+    ],
+    "headline": "Outbreaks of Respiratory Illness Mistakenly Attributed to Pertussis --- New Hampshire, Massachusetts, and Tennessee, 2004--2006",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5633a1.htm",
+    "kind": "report",
+    "published": "2007-08-24",
+    "blurb": "A New Hampshire hospital counted 134 suspected whooping cough cases among its staff in spring 2006, but lab cultures did not find the bacteria and investigators concluded whooping cough was probably not the cause.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2019-02-05",
+    "scope": "NH",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "NH In Early Stages Of Hepatitis A Outbreak",
+    "source": "New Hampshire Department of Health and Human Services (archived by the Internet Archive)",
+    "url": "https://web.archive.org/web/20250324073727/https://www.dhhs.nh.gov/news-and-media/nh-early-stages-hepatitis-outbreak",
+    "kind": "press release",
+    "published": "2019-02-05",
+    "blurb": "New Hampshire health officials said 13 people had been diagnosed with hepatitis A in three months, compared with an average of six or seven people a year.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2022-07-19",
+    "scope": "NH",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "Immunization Exemptions for Children",
+    "source": "New Hampshire Department of Health and Human Services (archived by the Internet Archive)",
+    "url": "https://web.archive.org/web/20251106193301/https://www.dhhs.nh.gov/programs-services/disease-prevention/nh-immunization-program/immunization-exemptions-children",
+    "kind": "policy",
+    "published": null,
+    "blurb": "Under House Bill 1035, effective July 19, 2022, a New Hampshire parent's request for a religious exemption from school and child care immunizations no longer needs a notary's signature.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2024-07-09",
+    "scope": "NH",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "NH DHHS Identifies New Hampshire Resident with Measles",
+    "source": "New Hampshire Department of Health and Human Services (archived by the Internet Archive)",
+    "url": "https://web.archive.org/web/20240709213804/https://www.dhhs.nh.gov/news-and-media/nh-dhhs-identifies-new-hampshire-resident-measles",
+    "kind": "press release",
+    "published": "2024-07-09",
+    "blurb": "New Hampshire health officials confirmed measles in an unvaccinated resident, a case they said was likely linked to an international traveler with measles who visited Hanover in late June.",
+    "checked": "2026-10-01"
+  }
+]

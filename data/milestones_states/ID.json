@@ -1,0 +1,131 @@
+[
+ {
+  "date": "1955-04",
+  "scope": "ID",
+  "diseases": [
+   "polio"
+  ],
+  "headline": "Poliomyelitis in Idaho after use of live virus vaccine",
+  "source": "Public Health Reports",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1951689/",
+  "kind": "report",
+  "published": "1958-07",
+  "blurb": "In April 1955, two lots of polio vaccine used in Idaho's school program were later shown to contain live virus, and the program was stopped after polio appeared in vaccinated children.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1978",
+  "scope": "ID",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis",
+   "hepatitis_a"
+  ],
+  "headline": "39-4801. Immunization — exemptions.",
+  "source": "Idaho Legislature, Idaho Statutes",
+  "url": "https://legislature.idaho.gov/statutesrules/idstat/title39/t39ch48/sect39-4801/",
+  "kind": "policy",
+  "published": null,
+  "blurb": "This Idaho law, first passed in 1978, asks for an immunization record when a child enters school and exempts children whose parents sign a statement objecting on religious or other grounds or who have a doctor's certificate.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1983-12-23",
+  "scope": "ID",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Interstate Transmission of Measles in a Gypsy Population -- Washington, Idaho, Montana, California",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000192.htm",
+  "kind": "report",
+  "published": "1983-12-23",
+  "blurb": "Forty-four measles cases with rash onset from September 4 through November 14, 1983, were reported from Washington, Idaho, Montana and California.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1987-09",
+  "scope": "ID",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "\"Immunization mobile\" brings protection to children in southeastern Idaho.",
+  "source": "Public Health Reports",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1477901/",
+  "kind": "report",
+  "published": "1987-09",
+  "blurb": "With the immunity level among 2-year-olds in southeastern Idaho at 58%, a health district used a specially equipped motor home to bring immunizations to children and their parents.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2014-08-12",
+  "scope": "ID",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "Alarming increase of Idaho whooping cough cases prompts public health officials to urge pregnant women, parents of small children to get vaccinated",
+  "source": "Idaho Department of Health and Welfare (archived by the Internet Archive)",
+  "url": "https://web.archive.org/web/20150915043648/http://healthandwelfare.idaho.gov/AboutUs/Newsroom/tabid/130/ctl/ArticleView/mid/3061/articleId/1776/Alarming-increase-of-Idaho-whooping-cough-cases-prompts-public-health-officials-to-urge-pregnant-women-parents-of-small-children-to-get-vaccinated.aspx",
+  "kind": "press release",
+  "published": "2014-08-12",
+  "blurb": "Idaho health officials reported a large increase in whooping cough cases in 2014 compared with 2012 and 2013 and urged pregnant women and people around young children to get vaccinated.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2023-10-06",
+  "scope": "ID",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Measles is back in Idaho",
+  "source": "Idaho Department of Health and Welfare",
+  "url": "https://healthandwelfare.idaho.gov/dhw-voice/measles-back-idaho",
+  "kind": "press release",
+  "published": "2023-10-06",
+  "blurb": "Idaho's health department said southwest Idaho had a measles outbreak with 10 reported cases, after only two cases in the state in the prior 20 years.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2025-04-04",
+  "scope": "ID",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis",
+   "hepatitis_a"
+  ],
+  "headline": "IDAHO MEDICAL FREEDOM ACT – Amends existing law to establish the Idaho Medical Freedom Act.",
+  "source": "Idaho Legislature",
+  "url": "https://legislature.idaho.gov/sessioninfo/2025/legislation/S1210/",
+  "kind": "policy",
+  "published": "2025-04-04",
+  "blurb": "Idaho's governor signed Senate Bill 1210, the Idaho Medical Freedom Act, on April 4, 2025, and it took effect on July 1, 2025.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2025-08-20",
+  "scope": "ID",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Measles circulating among Idaho communities--Health officials urge consultation with healthcare provider if ill",
+  "source": "Idaho Department of Health and Welfare",
+  "url": "https://healthandwelfare.idaho.gov/news/measles-circulating-among-idaho-communities-health-officials-urge-consultation-healthcare",
+  "kind": "press release",
+  "published": "2025-08-20",
+  "blurb": "Idaho health officials announced a third confirmed measles case in a state resident, an unvaccinated child in Bonner County with no known link to a Kootenai County case announced the week before.",
+  "checked": "2026-10-01"
+ }
+]

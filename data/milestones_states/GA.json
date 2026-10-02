@@ -1,0 +1,105 @@
+[
+ {
+  "date": "1951-06-29",
+  "scope": "GA",
+  "diseases": [
+   "diphtheria"
+  ],
+  "headline": "ANDERSON et al. v. THE STATE.",
+  "source": "Court of Appeals of Georgia (Georgia Appeals Reports, via the Caselaw Access Project)",
+  "url": "https://static.case.law/ga-app/84/html/0259-01.html",
+  "kind": "court",
+  "published": "1951-06-29",
+  "blurb": "The Georgia Court of Appeals ruled against parents who, citing their religion, refused the shots that the Tattnall County school board required for school attendance, a list that included diphtheria.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1995-04-28",
+  "scope": "GA",
+  "diseases": [
+   "diphtheria",
+   "pertussis",
+   "polio",
+   "measles",
+   "mumps",
+   "rubella"
+  ],
+  "headline": "Evaluation of Vaccination Strategies in Public Clinics -- Georgia, 1985-1993",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00036920.htm",
+  "kind": "report",
+  "published": "1995-04-28",
+  "blurb": "Among children served by Georgia's public health clinics, the share who were up to date on their shots rose from 35% in 1987 to 80% in 1993.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1996",
+  "scope": "GA",
+  "diseases": [
+   "hepatitis_a"
+  ],
+  "headline": "Hepatitis A Vaccination of Men Who Have Sex With Men -- Atlanta, Georgia, 1996-1997",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00054610.htm",
+  "kind": "report",
+  "published": "1998-09-04",
+  "blurb": "From January through September 1996, 222 hepatitis A cases were reported in Atlanta residents, a 730% increase from the yearly average of 27 in 1993 to 1995, and health officials planned a vaccination campaign.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2015-02-09",
+  "scope": "GA",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "First Confirmed Case of Measles in Georgia",
+  "source": "Georgia Department of Public Health (archived by the Internet Archive)",
+  "url": "https://web.archive.org/web/20170218082202/http://dph.georgia.gov/press-releases/2015-02-09/first-confirmed-case-measles-georgia",
+  "kind": "press release",
+  "published": "2015-02-09",
+  "blurb": "Georgia's health department confirmed the state's first reported measles case since 2012, in an infant who had arrived in Atlanta from outside the United States.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2019-11-18",
+  "scope": "GA",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "DPH Identifies Likely Source of Measles in Cobb County, Additional Cases Confirmed",
+  "source": "Georgia Department of Public Health (archived by the Internet Archive)",
+  "url": "https://web.archive.org/web/20201018084442/https://dph.georgia.gov/press-releases/2019-11-18/dph-identifies-likely-source-measles-cobb-county-additional-cases",
+  "kind": "press release",
+  "published": "2019-11-18",
+  "blurb": "Georgia health officials said the likely source of a measles outbreak in Cobb County was five cases in one family in early October, and confirmed two more cases.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2025-01-28",
+  "scope": "GA",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "DPH Confirms Measles Case in Metro Atlanta - MMR Vaccine is Safe and Effective in Preventing Measles",
+  "source": "Georgia Department of Public Health",
+  "url": "https://dph.georgia.gov/press-releases/2025-01-28/dph-confirms-measles-case-metro-atlan",
+  "kind": "press release",
+  "published": "2025-01-28",
+  "blurb": "Georgia's health department confirmed measles in an unvaccinated metro Atlanta resident who caught the virus while traveling within the United States.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2025-09-23",
+  "scope": "GA",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "DPH Confirms Three New Measles Cases Close Contacts of Previous Case",
+  "source": "Georgia Department of Public Health",
+  "url": "https://dph.georgia.gov/press-releases/2025-09-23/dph-confirms-three-new-measles-cases-close-contacts-previous-case",
+  "kind": "press release",
+  "published": "2025-09-23",
+  "blurb": "Georgia's health department confirmed three new measles cases in close contacts of a person whose case was confirmed on September 11, 2025.",
+  "checked": "2026-10-01"
+ }
+]

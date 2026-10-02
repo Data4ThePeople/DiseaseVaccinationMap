@@ -1,0 +1,105 @@
+[
+  {
+    "date": "1951",
+    "scope": "UT",
+    "diseases": [
+      "polio"
+    ],
+    "headline": "THE EPIDEMIOLOGY OF POLIOMYELITIS—A Study of an Outbreak in Payson, Utah, 1951",
+    "source": "California Medicine (via PubMed Central)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1532406/",
+    "kind": "report",
+    "published": null,
+    "blurb": "This 1955 study of an unusually intense and severe polio outbreak in Payson, Utah, in 1951 reported that close personal contact with people who had polio was the only significant factor most of the cases had in common.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1957",
+    "scope": "UT",
+    "diseases": [
+      "polio"
+    ],
+    "headline": "Poliomyelitis vaccination campaign in Salt Lake City, Utah",
+    "source": "Public Health Reports (via CDC Stacks)",
+    "url": "https://stacks.cdc.gov/view/cdc/73000",
+    "kind": "report",
+    "published": null,
+    "blurb": "Almost 400,000 polio shots were given in a 1957 mass vaccination campaign in Salt Lake City, and 62% of the city's residents were immunized.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "1996-04-09",
+    "scope": "UT",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Measles Outbreak -- Southwestern Utah, 1996",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00049048.htm",
+    "kind": "report",
+    "published": "1997-08-22",
+    "blurb": "From April 9 to July 7, 1996, 107 confirmed measles cases were reported from Washington County, Utah, and 64% of the patients who were eligible for the vaccine had not been vaccinated.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2011-03",
+    "scope": "UT",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Two Measles Outbreaks After Importation — Utah, March–June 2011",
+    "source": "CDC, Morbidity and Mortality Weekly Report",
+    "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6212a2.htm",
+    "kind": "report",
+    "published": "2013-03-29",
+    "blurb": "From March through June 2011, health departments in Utah investigated two measles outbreaks with 13 confirmed cases in all.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2017-03-24",
+    "scope": "UT",
+    "diseases": [
+      "measles",
+      "mumps",
+      "rubella",
+      "polio",
+      "diphtheria",
+      "pertussis"
+    ],
+    "headline": "H.B. 308 Public Health and Schools",
+    "source": "Utah State Legislature",
+    "url": "https://le.utah.gov/~2017/bills/static/HB0308.html",
+    "kind": "policy",
+    "published": "2017-03-24",
+    "blurb": "This Utah bill, signed on March 24, 2017, told the state health department to create an online education module about certain preventable diseases and a new vaccination exemption form, and it took effect on July 1, 2018.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2019-02-13",
+    "scope": "UT",
+    "diseases": [
+      "hepatitis_a"
+    ],
+    "headline": "Utah’s Statewide Hepatitis A Outbreak is Officially Over",
+    "source": "Utah Department of Health and Human Services",
+    "url": "https://dhhs.utah.gov/featured-news/utahs-statewide-hepatitis-a-outbreak-is-officially-over/",
+    "kind": "press release",
+    "published": "2019-02-13",
+    "blurb": "Utah health officials said a hepatitis A outbreak that began on May 8, 2017, infected 281 people and killed three had ended.",
+    "checked": "2026-10-01"
+  },
+  {
+    "date": "2025-06-20",
+    "scope": "UT",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Public health officials warn of first measles case in Utah, media availability today",
+    "source": "Utah Department of Health and Human Services",
+    "url": "https://dhhs.utah.gov/featured-news/public-health-officials-warn-of-first-measles-case-in-utah-media-availability-today/",
+    "kind": "press release",
+    "published": "2025-06-20",
+    "blurb": "Utah public health officials announced a measles case in an unvaccinated adult from Utah County who had no exposures outside the state.",
+    "checked": "2026-10-01"
+  }
+]
