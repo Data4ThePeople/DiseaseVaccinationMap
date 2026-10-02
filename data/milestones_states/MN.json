@@ -1,0 +1,100 @@
+[
+ {
+  "date": "1942-12-17",
+  "scope": "MN",
+  "diseases": [
+   "polio"
+  ],
+  "headline": "Sister Kenny Institute",
+  "source": "Minnesota Historical Society, MNopedia",
+  "url": "https://www.mnhs.org/mnopedia/search/index/thing/sister-kenny-institute",
+  "kind": "history page",
+  "published": "2012-07-31",
+  "blurb": "The Elizabeth Kenny Clinic opened in Minneapolis on December 17, 1942, to treat polio patients with methods such as heat packs and careful exercise.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1967-05-24",
+  "scope": "MN",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "CHAPTER 858\u2014H. F. No. 1191",
+  "source": "Minnesota Legislature, Office of the Revisor of Statutes (Laws of Minnesota 1967)",
+  "url": "https://www.revisor.mn.gov/laws/1967/0/Session+Law/Chapter/858/",
+  "kind": "policy",
+  "published": null,
+  "blurb": "This Minnesota law, approved on May 24, 1967, said every child enrolling in a school in the state for the first time had to show proof of measles immunization, a medical reason not to have it, a religious objection, or a request for the local health officer to give it.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2005-09-29",
+  "scope": "MN",
+  "diseases": [
+   "polio"
+  ],
+  "headline": "Poliovirus Infections in Four Unvaccinated Children --- Minnesota, August--October 2005",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5441a6.htm",
+  "kind": "report",
+  "published": "2005-10-21",
+  "blurb": "On September 29, 2005, the Minnesota Department of Health found poliovirus in an unvaccinated 7-month-old girl in an Amish community, and infections were later found in three other children there.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2011-03-02",
+  "scope": "MN",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Notes from the Field: Measles Outbreak --- Hennepin County, Minnesota, February--March 2011",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6013a6.htm",
+  "kind": "report",
+  "published": "2011-04-08",
+  "blurb": "After Minnesota confirmed measles in a 9-month-old Hennepin County resident on March 2, 2011, investigators found 13 linked cases by April 1, and eight of the patients were hospitalized.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2017-04-10",
+  "scope": "MN",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Measles Outbreak \u2014 Minnesota April\u2013May 2017",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/volumes/66/wr/mm6627a1.htm",
+  "kind": "report",
+  "published": "2017-07-14",
+  "blurb": "Minnesota health officials were told of a suspected measles case in a hospitalized child on April 10, 2017, and by May 31 the outbreak had reached 65 confirmed cases.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2019-08-08",
+  "scope": "MN",
+  "diseases": [
+   "hepatitis_a"
+  ],
+  "headline": "Health officials declare hepatitis A outbreak among people with high-risk factors",
+  "source": "Minnesota Department of Health (archived by the Internet Archive)",
+  "url": "https://web.archive.org/web/20190808232124/https://www.health.state.mn.us/news/pressrel/2019/hepa080819.html",
+  "kind": "press release",
+  "published": "2019-08-08",
+  "blurb": "The Minnesota Department of Health declared a hepatitis A outbreak of 23 cases in nine counties among people who use street drugs, lack stable housing, or were recently in jail or prison.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2024-08-28",
+  "scope": "MN",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Increasing measles cases in metro area highlight need for vaccination",
+  "source": "Minnesota Department of Health",
+  "url": "https://www.health.state.mn.us/news/pressrel/2024/measles082824.html",
+  "kind": "press release",
+  "published": "2024-08-28",
+  "blurb": "Minnesota health officials said 30 measles cases had been reported since May in an outbreak among unvaccinated children in the Twin Cities metro area, and about one in three patients had needed hospital care.",
+  "checked": "2026-10-01"
+ }
+]

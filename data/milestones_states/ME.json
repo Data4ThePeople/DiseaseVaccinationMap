@@ -1,0 +1,106 @@
+[
+ {
+  "date": "1984-07-25",
+  "scope": "ME",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "AN ACT to Correct Errors and Inconsistencies in the School Immunization Law and other Related Laws.",
+  "source": "Maine Legislature, Law and Legislative Digital Library (Public Laws 1983, Chapter 661)",
+  "url": "http://lldc.mainelegislature.org/Open/Laws/1983/1983_PL_c661.pdf",
+  "kind": "policy",
+  "published": null,
+  "blurb": "This Maine law, effective July 25, 1984, said a child could not enroll in school without proof of immunization against diphtheria, measles, mumps, whooping cough, polio, rubella, and tetanus, and it allowed exemptions for medical reasons and for religious, moral, philosophical, or other personal reasons.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2012",
+  "scope": "ME",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "Infectious Disease Epidemiology Report Pertussis, 2012",
+  "source": "Maine Center for Disease Control and Prevention (archived by the Internet Archive)",
+  "url": "https://web.archive.org/web/20140611205241/http://www.maine.gov:80/dhhs/mecdc/infectious-disease/epi/publications/pertussis-survreport-2012.pdf",
+  "kind": "report",
+  "published": null,
+  "blurb": "Maine counted 737 whooping cough cases in 2012, a rate of 55.5 cases per 100,000 people, up from 15.4 per 100,000 in 2011.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2017-06-27",
+  "scope": "ME",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Maine CDC investigates a confirmed case of measles",
+  "source": "Maine Center for Disease Control and Prevention (archived by the Internet Archive)",
+  "url": "https://web.archive.org/web/20170805032721/http://www.maine.gov/dhhs/mecdc/press-release.shtml?id=758686",
+  "kind": "press release",
+  "published": "2017-06-27",
+  "blurb": "The Maine CDC confirmed a travel-related measles case in Franklin County and said the last reported measles case in Maine was in 1997.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2019-05-24",
+  "scope": "ME",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "An Act To Protect Maine Children and Students from Preventable Diseases by Repealing Certain Exemptions from the Laws Governing Immunization Requirements",
+  "source": "Maine Legislature (Public Law 2019, Chapter 154)",
+  "url": "https://legislature.maine.gov/legis/bills/bills_129th/chapters/PUBLIC154.asp",
+  "kind": "policy",
+  "published": null,
+  "blurb": "This Maine law repealed the religious and philosophical exemptions from the vaccines required to attend school and kept the medical exemption.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2020-03-03",
+  "scope": "ME",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "\u2018No\u2019 vote \u2013 to keep state\u2019s new vaccine law \u2013 wins by overwhelming margin",
+  "source": "Portland Press Herald",
+  "url": "https://www.pressherald.com/2020/03/03/no-vote-to-keep-pro-vaccine-law-leading-big-in-referendum/",
+  "kind": "news",
+  "published": "2020-03-03",
+  "blurb": "Maine voters chose to keep the new law that ends non-medical exemptions from school-required vaccines, with 73% voting to keep it when 76% of polling places had reported.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2021-09-01",
+  "scope": "ME",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "Maine Vaccine Laws",
+  "source": "Maine Center for Disease Control and Prevention",
+  "url": "https://www.maine.gov/dhhs/mecdc/diseases-conditions/immunization/school-vaccine-law",
+  "kind": "policy",
+  "published": null,
+  "blurb": "Maine's Public Law Chapter 154, which repealed certain exemptions from the school immunization requirements, took effect on September 1, 2021.",
+  "checked": "2026-10-01"
+ }
+]

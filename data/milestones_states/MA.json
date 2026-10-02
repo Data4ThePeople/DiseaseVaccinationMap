@@ -1,0 +1,105 @@
+[
+ {
+  "date": "1955",
+  "scope": "MA",
+  "diseases": [
+   "polio"
+  ],
+  "headline": "The polio outbreak of 1955: Lessons from an epidemic",
+  "source": "Boston Children's Hospital",
+  "url": "https://answers.childrenshospital.org/polio-outbreak-1955/",
+  "kind": "history page",
+  "published": "2020-05-14",
+  "blurb": "Massachusetts reported more than 2,000 polio cases in the summer of 1955, and Boston Children's Hospital admitted more than 650 of the patients.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1971-03-02",
+  "scope": "MA",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "Beulah G. Dalli & another vs. Board of Education & others.",
+  "source": "Massachusetts Supreme Judicial Court (via the Harvard Law School Caselaw Access Project)",
+  "url": "https://static.case.law/mass/358/html/0753-01.html",
+  "kind": "court",
+  "published": "1971-03-02",
+  "blurb": "The state's highest court ruled that the school vaccination exemption for members of a recognized church or religious denomination was unconstitutional because it was not open to other people who sincerely objected to vaccination on religious grounds.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1985-03-15",
+  "scope": "MA",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Epidemiologic Notes and Reports Multiple Measles Outbreaks on College Campuses -- Ohio, Massachusetts, Illinois",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000500.htm",
+  "kind": "report",
+  "published": "1985-03-15",
+  "blurb": "A measles outbreak at Boston University reached 82 confirmed cases among students by March 12, 1985, and the university required all students to show proof of immunity to return after spring break.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1992-11-16",
+  "scope": "MA",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "Pertussis Outbreaks -- Massachusetts and Maryland, 1992",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00020038.htm",
+  "kind": "report",
+  "published": "1993-03-26",
+  "blurb": "A whooping cough outbreak that centered on a Massachusetts high school and a nearby middle school in the fall of 1992 reached 225 cases, and 95% of the patients were ages 10 to 19.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2017-06-05",
+  "scope": "MA",
+  "diseases": [
+   "mumps"
+  ],
+  "headline": "State Health Officials Warn of Mumps Outbreak",
+  "source": "Massachusetts Department of Public Health (archived by the Internet Archive)",
+  "url": "https://web.archive.org/web/20180618091037/https://www.mass.gov/news/state-health-officials-warn-of-mumps-outbreak",
+  "kind": "press release",
+  "published": "2017-06-05",
+  "blurb": "The Massachusetts Department of Public Health alerted health care providers in greater Boston to a mumps outbreak after 12 cases were reported since the end of March among adults living in Chelsea, Boston, and Revere.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2018-09-24",
+  "scope": "MA",
+  "diseases": [
+   "hepatitis_a"
+  ],
+  "headline": "Department of Public Health announces outbreak of hepatitis A virus infection in people experiencing homelessness and/or substance use disorder",
+  "source": "Massachusetts Department of Public Health (archived by the Internet Archive)",
+  "url": "https://web.archive.org/web/20200103005207/https://www.mass.gov/news/department-of-public-health-announces-outbreak-of-hepatitis-a-virus-infection-in-people",
+  "kind": "press release",
+  "published": "2018-09-24",
+  "blurb": "The Massachusetts Department of Public Health announced that 65 residents who were homeless or had a substance use disorder had recently gotten hepatitis A, and that one person had died.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2024-07-18",
+  "scope": "MA",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "State public health officials announce first confirmed measles case in Massachusetts since 2020",
+  "source": "Massachusetts Department of Public Health (archived by the Internet Archive)",
+  "url": "https://web.archive.org/web/20240718175751/https://www.mass.gov/news/state-public-health-officials-announce-first-confirmed-measles-case-in-massachusetts-since-2020",
+  "kind": "press release",
+  "published": "2024-07-18",
+  "blurb": "State health officials confirmed measles in an adult from Worcester County who had recently traveled abroad, the first confirmed case in a Massachusetts resident since early 2020.",
+  "checked": "2026-10-01"
+ }
+]

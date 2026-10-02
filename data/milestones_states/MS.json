@@ -1,0 +1,113 @@
+[
+ {
+  "date": "1979-12-19",
+  "scope": "MS",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "Charles H. BROWN et al. v. Joe A. STONE, Houston Municipal Separate School District, et al.",
+  "source": "Supreme Court of Mississippi (via the Harvard Law School Caselaw Access Project)",
+  "url": "https://static.case.law/so2d/378/html/0218-01.html",
+  "kind": "court",
+  "published": "1979-12-19",
+  "blurb": "The Mississippi Supreme Court ruled that the religious exemption in the state's school vaccination law violated the Fourteenth Amendment and was void, and that the rest of the law remained valid.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2012-04-09",
+  "scope": "MS",
+  "diseases": [
+   "pertussis",
+   "diphtheria"
+  ],
+  "headline": "New Immunization Requirement Announced For 7th Grade Entry in 2012-2013 School Year",
+  "source": "Mississippi State Department of Health (archived by the Internet Archive)",
+  "url": "https://web.archive.org/web/20120617175633/http://msdh.ms.gov/msdhsite/_static/23,12216,341.html",
+  "kind": "press release",
+  "published": "2012-04-09",
+  "blurb": "The Mississippi State Department of Health said all students entering 7th grade would need the Tdap vaccine, which protects against tetanus, diphtheria, and whooping cough, starting in the 2012-2013 school year.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2015-01-12",
+  "scope": "MS",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella"
+  ],
+  "headline": "Mississippi Recognized for Highest Kindergarten Vaccination Rates Nationwide",
+  "source": "Mississippi State Department of Health (archived by the Internet Archive)",
+  "url": "https://web.archive.org/web/20150922034735/http://msdh.ms.gov/msdhsite/_static/23,15969,341.html",
+  "kind": "press release",
+  "published": "2015-01-12",
+  "blurb": "Mississippi's 45,719 kindergarten students had 99.7% vaccination coverage in the 2013-2014 school year, the highest rate in the country, according to a CDC report cited by the state health department.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2019-07-31",
+  "scope": "MS",
+  "diseases": [
+   "hepatitis_a"
+  ],
+  "headline": "Mississippi Reports Hepatitis A Outbreak, Joins Surrounding States in Fighting National Epidemic",
+  "source": "Mississippi State Department of Health (archived by the Internet Archive)",
+  "url": "https://web.archive.org/web/20190821222116/https://msdh.ms.gov/msdhsite/_static/23,21152,341.html",
+  "kind": "press release",
+  "published": "2019-07-31",
+  "blurb": "The Mississippi State Department of Health reported a hepatitis A outbreak in the state, with 23 cases since April.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2023-07-17",
+  "scope": "MS",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "Religious Exemptions for Immunizations Available",
+  "source": "Mississippi State Department of Health (archived by the Internet Archive)",
+  "url": "https://web.archive.org/web/20231207192356/https://msdh.ms.gov/msdhsite/_static/23,25673,341.html",
+  "kind": "press release",
+  "published": "2023-07-14",
+  "blurb": "The Mississippi State Department of Health said it would begin offering religious exemptions from required immunizations on July 17, 2023, to comply with a federal court order entered in April 2023.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2025-07-16",
+  "scope": "MS",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "MSDH Issues Pertussis Alert",
+  "source": "Mississippi State Department of Health",
+  "url": "https://msdh.ms.gov/msdhsite/_static/23,30218,341,1025.html",
+  "kind": "press release",
+  "published": "2025-07-16",
+  "blurb": "The Mississippi State Department of Health issued a health alert about a rise in whooping cough after 80 cases were reported in the state by July 10, 2025.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2025-09-29",
+  "scope": "MS",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "Pediatric Pertussis Death Reported",
+  "source": "Mississippi State Department of Health",
+  "url": "https://msdh.ms.gov/msdhsite/_static/23,30402,341,1025.html",
+  "kind": "press release",
+  "published": "2025-09-29",
+  "blurb": "The Mississippi State Department of Health confirmed that an infant under 2 months old, who was too young to be vaccinated, had died from whooping cough.",
+  "checked": "2026-10-01"
+ }
+]

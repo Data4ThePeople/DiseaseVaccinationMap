@@ -1,0 +1,119 @@
+[
+ {
+  "date": "1932",
+  "scope": "MI",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "Pearl Kendrick, Grace Eldering, and the Pertussis Vaccine",
+  "source": "CDC, Emerging Infectious Diseases",
+  "url": "https://wwwnc.cdc.gov/eid/article/16/8/10-0288_article",
+  "kind": "history page",
+  "published": null,
+  "blurb": "In 1932, Pearl Kendrick and Grace Eldering began whooping cough research at the Michigan Department of Health laboratory in Grand Rapids, and their 1934 to 1935 field trial of a vaccine involved 1,592 children.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1939",
+  "scope": "MI",
+  "diseases": [
+   "polio"
+  ],
+  "headline": "Epidemiology of Poliomyelitis in Detroit in 1939",
+  "source": "American Journal of Public Health and the Nation's Health (via PubMed Central)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1531580/",
+  "kind": "report",
+  "published": null,
+  "blurb": "A public health journal published an article in August 1941 on the spread of polio in Detroit in 1939.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1956",
+  "scope": "MI",
+  "diseases": [
+   "diphtheria"
+  ],
+  "headline": "Detroit Diphtheria Experience of 1956",
+  "source": "American Journal of Public Health and the Nation's Health (via PubMed Central)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1551034/",
+  "kind": "report",
+  "published": null,
+  "blurb": "A public health journal ran a two-page editorial in June 1957 about Detroit's experience with diphtheria in 1956.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1982-11-14",
+  "scope": "MI",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Imported Measles with Subsequent Airborne Transmission in a Pediatrician's Office -- Michigan",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000120.htm",
+  "kind": "report",
+  "published": "1983-08-12",
+  "blurb": "Seven measles cases were reported in Muskegon County in late 1982 after a 7-month-old baby with measles arrived from Korea and four other children were infected in a pediatrician's office.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1997-03",
+  "scope": "MI",
+  "diseases": [
+   "hepatitis_a"
+  ],
+  "headline": "Hepatitis A Associated with Consumption of Frozen Strawberries -- Michigan, March 1997",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00047129.htm",
+  "kind": "report",
+  "published": "1997-04-04",
+  "blurb": "In March 1997, 153 hepatitis A cases were reported in Calhoun County, 151 of them in students or staff of schools in four districts, and early findings tied the illness to food items with frozen strawberries.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2015-01",
+  "scope": "MI",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "Preliminary data shows a statewide decrease in school-age vaccine waiver rates",
+  "source": "Michigan Department of Health and Human Services (archived by the Internet Archive)",
+  "url": "https://web.archive.org/web/20221012235024/https://www.michigan.gov/mdhhs/inside-mdhhs/newsroom/2016/01/28/preliminary-data-shows-a-statewide-decrease-in-school-age-vaccine-waiver-rates",
+  "kind": "policy",
+  "published": "2016-01-28",
+  "blurb": "A Michigan rule that took effect in January 2015 requires parents who want a non-medical vaccine waiver for school to meet with local health department staff first, and a year later the state reported a 39% decrease in waivers submitted.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2017-10-31",
+  "scope": "MI",
+  "diseases": [
+   "hepatitis_a"
+  ],
+  "headline": "MDHHS activates Community Health Emergency Coordination Center in response to hepatitis A outbreak",
+  "source": "Michigan Department of Health and Human Services (archived by the Internet Archive)",
+  "url": "https://web.archive.org/web/20250328101747/https://www.michigan.gov/mdhhs/inside-mdhhs/newsroom/2017/10/31/mdhhs-activates-community-health-emergency-coordination-center-in-response-to-hepatitis-a-outbreak",
+  "kind": "press release",
+  "published": "2017-10-31",
+  "blurb": "Michigan's health department opened its Community Health Emergency Coordination Center to coordinate the work of the local agencies responding to a hepatitis A outbreak.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2019-04-02",
+  "scope": "MI",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Measles cases reach 34 in Michigan, highest number since 1991 Four additional cases confirmed in Oakland County",
+  "source": "Michigan Department of Health and Human Services (archived by the Internet Archive)",
+  "url": "https://web.archive.org/web/20221205205631/https://www.michigan.gov/mdhhs/inside-mdhhs/newsroom/2019/04/02/measles-cases-reach-34-in-michigan-highest-number-since-1991-four-additional-cases-confirmed-in-oak",
+  "kind": "press release",
+  "published": "2019-04-02",
+  "blurb": "Michigan confirmed 34 measles cases for the year, 33 of them in Oakland County, the highest number in the state since 1991, when 65 cases were reported.",
+  "checked": "2026-10-01"
+ }
+]

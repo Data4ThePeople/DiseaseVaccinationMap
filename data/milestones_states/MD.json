@@ -1,0 +1,105 @@
+[
+ {
+  "date": "1960",
+  "scope": "MD",
+  "diseases": [
+   "polio"
+  ],
+  "headline": "Epidemic of type 3 paralytic poliomyelitis in Baltimore, Maryland, 1960",
+  "source": "Public Health Reports (via PubMed Central)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1914761/",
+  "kind": "report",
+  "published": null,
+  "blurb": "Four authors published a report in Public Health Reports in April 1962 on an epidemic of type 3 paralytic polio in Baltimore in 1960.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1975-04-18",
+  "scope": "MD",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Control of a measles outbreak in an elementary school. Baltimore County, Md. 1975.",
+  "source": "Public Health Reports (via PubMed Central)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1431997/",
+  "kind": "report",
+  "published": null,
+  "blurb": "Between April 18 and May 20, 1975, 16 measles cases occurred among pupils at an elementary school in Baltimore County, and one more case occurred in a sibling at a junior high school.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1982",
+  "scope": "MD",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "Pertussis -- Maryland, 1982",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000094.htm",
+  "kind": "report",
+  "published": "1983-06-17",
+  "blurb": "Maryland received reports of 79 whooping cough cases in 1982, up from 1 to 18 cases a year in the previous 10 years, and 76% of the patients were under 1 year old.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1982-10-05",
+  "scope": "MD",
+  "diseases": [
+   "measles",
+   "mumps",
+   "rubella",
+   "polio",
+   "diphtheria",
+   "pertussis"
+  ],
+  "headline": "IRVING DAVIS, SR. v. STATE OF MARYLAND",
+  "source": "Court of Appeals of Maryland (via the Harvard Law School Caselaw Access Project)",
+  "url": "https://static.case.law/md/294/html/0370-01.html",
+  "kind": "court",
+  "published": "1982-10-05",
+  "blurb": "Maryland's highest court ruled that the religious exemption in the state's school immunization law, which covered only members of a recognized church or denomination, was invalid, and that the immunization requirement itself stayed in force.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "1992-11-16",
+  "scope": "MD",
+  "diseases": [
+   "pertussis"
+  ],
+  "headline": "Pertussis Outbreaks -- Massachusetts and Maryland, 1992",
+  "source": "CDC, Morbidity and Mortality Weekly Report",
+  "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00020038.htm",
+  "kind": "report",
+  "published": "1993-03-26",
+  "blurb": "After a 10-year-old student's whooping cough was reported to Maryland health officials on November 16, 1992, investigators confirmed four cases at the elementary school: three students and their teacher.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2019-04-19",
+  "scope": "MD",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "Fourth Measles Case Confirmed in Maryland",
+  "source": "Maryland Department of Health (archived by the Internet Archive)",
+  "url": "https://web.archive.org/web/20190703203916/https://health.maryland.gov/newsroom/Pages/Fourth-Measles-Case-Confirmed-in-Maryland.aspx",
+  "kind": "press release",
+  "published": "2019-04-19",
+  "blurb": "The Maryland Department of Health confirmed a fourth measles case in a state resident and said the outbreak was localized to three zip codes.",
+  "checked": "2026-10-01"
+ },
+ {
+  "date": "2025-03-09",
+  "scope": "MD",
+  "diseases": [
+   "measles"
+  ],
+  "headline": "One Case of Measles Confirmed in Maryland Resident with Recent International Travel",
+  "source": "Maryland Department of Health",
+  "url": "https://health.maryland.gov/newsroom/Pages/One-Case-of-Measles-Confirmed-in-Maryland.aspx",
+  "kind": "press release",
+  "published": "2025-03-09",
+  "blurb": "The Maryland Department of Health and Howard County health officials announced a measles case in a Howard County resident who had recently traveled abroad, and said it was not tied to the outbreak in Texas and New Mexico.",
+  "checked": "2026-10-01"
+ }
+]
