@@ -1,0 +1,191 @@
+<title>When Vaccination Falls</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&family=Public+Sans:wght@400;600;700&display=swap">
+<style>
+/* Layout: a single reading column (about 68ch) that widens for the county chart grid and the mumps chart. */
+:root{
+  --bg:#ffffff; --ink:#16181b; --muted:#5b5e63; --faint:#8b8e93; --rule:#e2e3e5; --wash:#f4f5f6;
+  --measles:#c8382f; --mumps:#9a6a00; --line:#16181b; --ref:#c8382f;
+  --display:"Newsreader",Georgia,"Times New Roman",serif;
+  --body:"Public Sans","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#141518; --ink:#e9eaec; --muted:#a9acb1; --faint:#7d8187; --rule:#2c2e33; --wash:#1d1f23;
+  --measles:#ef6b62; --mumps:#e0aa3e; --line:#e9eaec; --ref:#ef6b62; color-scheme:dark } }
+:root[data-theme="dark"]{
+  --bg:#141518; --ink:#e9eaec; --muted:#a9acb1; --faint:#7d8187; --rule:#2c2e33; --wash:#1d1f23;
+  --measles:#ef6b62; --mumps:#e0aa3e; --line:#e9eaec; --ref:#ef6b62; color-scheme:dark }
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16.5px;line-height:1.6;padding-inline:20px;padding-block:28px 48px}
+.wrap{max-width:1040px;margin:0 auto;display:grid;gap:0}
+.col{max-width:68ch}
+.kicker{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:0 0 10px}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(32px,5vw,50px);line-height:1.06;letter-spacing:-.01em;margin:0 0 14px;text-wrap:balance}
+.dek{font-family:var(--display);font-size:clamp(19px,2.4vw,22px);line-height:1.4;color:var(--muted);margin:0 0 18px;max-width:46ch}
+.meta{font-size:13px;color:var(--faint);margin:0 0 28px}
+.meta a{color:var(--muted)}
+.caution{border-top:2px solid var(--ink);border-bottom:1px solid var(--rule);padding-block:14px;margin:0 0 40px;font-size:15px}
+.caution b{font-weight:700}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(25px,3.2vw,32px);line-height:1.15;margin:48px 0 6px;text-wrap:balance}
+h2 + .lede{margin-top:0}
+.part{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--measles);font-weight:700;margin:56px 0 0}
+.part.mumps{color:var(--mumps)}
+h3{font-family:var(--display);font-weight:600;font-size:21px;line-height:1.25;margin:34px 0 4px;text-wrap:balance}
+h3 .tag{font-family:var(--body);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:4px}
+p{margin:0 0 12px}
+.lede{font-size:17.5px}
+a{color:var(--ink);text-decoration-color:var(--faint);text-underline-offset:2px}
+a:hover{text-decoration-color:var(--ink)}
+.src{font-size:14px;color:var(--muted);margin:6px 0 0;padding-left:14px;border-left:2px solid var(--rule)}
+.src p{margin:0 0 6px}
+.gap{font-size:14px;color:var(--muted);font-style:italic}
+.grid-c{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:22px 26px;margin:22px 0 8px}
+figure{margin:0}
+.county figcaption{display:grid;gap:2px;margin-bottom:4px}
+.cname{font-weight:700;font-size:15px}
+.ccases{font-size:13px;color:var(--muted)}
+.ccases b{color:var(--measles);font-variant-numeric:tabular-nums}
+svg{display:block;width:100%;height:auto;overflow:visible}
+svg .grid{stroke:var(--rule);stroke-width:1}
+svg .ref{stroke:var(--ref);stroke-width:1;stroke-dasharray:3 3;opacity:.7}
+svg .tick{fill:var(--faint);font:11px var(--body)}
+svg .val{fill:var(--ink);font:600 12px var(--body)}
+svg .line{fill:none;stroke:var(--line);stroke-width:2.2;stroke-linejoin:round;stroke-linecap:round}
+svg .dot{fill:var(--line);stroke:var(--bg);stroke-width:2}
+svg .mline{fill:none;stroke:var(--mumps);stroke-width:2.4;stroke-linejoin:round}
+svg .cdc{fill:var(--bg);stroke:var(--ink);stroke-width:2}
+svg .band{fill:var(--wash)}
+svg .bandlab{fill:var(--muted);font:600 11px var(--body)}
+.figcap{font-size:13px;color:var(--muted);margin:8px 0 0;max-width:80ch}
+.chart-wide{overflow-x:auto;margin:20px 0 4px}
+.chart-wide svg{min-width:520px}
+.tbl{overflow-x:auto;margin:16px 0 8px}
+table{border-collapse:collapse;width:100%;font-size:15px;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:9px 12px 9px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700;border-bottom:2px solid var(--ink)}
+td.n{white-space:nowrap}
+ul.plain{padding-left:18px;margin:0 0 12px}
+ul.plain li{margin-bottom:8px}
+.next{background:var(--wash);padding:18px 20px;margin-top:48px}
+.next h2{margin-top:0;font-size:22px}
+.next ol{margin:0;padding-left:20px}
+.next li{margin-bottom:6px}
+footer{margin-top:40px;padding-top:14px;border-top:1px solid var(--rule);font-size:13px;color:var(--faint)}
+footer p{max-width:80ch}
+@media (max-width:520px){ body{font-size:16px} .chart-wide svg{min-width:480px} }
+</style>
+
+<main class="wrap">
+  <div class="col">
+    <p class="kicker">Data 4 The People · Working findings</p>
+    <h1>When vaccination falls, where does disease follow?</h1>
+    <p class="dek">Places where school vaccination coverage dropped and an outbreak came after, plus the real story behind the mumps “wave.”</p>
+    <p class="meta">October 6, 2026 · Step 1 analysis for the <a href="https://data4thepeople.github.io/DiseaseVaccinationMap/" target="_blank" rel="noopener">disease and vaccination map</a> · Data and code: <a href="https://github.com/Data4ThePeople/DiseaseVaccinationMap" target="_blank" rel="noopener">GitHub</a></p>
+    <div class="caution"><b>Read this first.</b> These are pairings in time and place, not causes. A drop in coverage followed by an outbreak in the same county is worth reporting, but it does not show that one produced the other. Outbreaks also depend on travel, on who is unvaccinated and how closely they live, and on chance. School coverage is reported by each state in its own way, and most counties have figures only from 2017-18 or 2019-20 on.</div>
+  </div>
+
+  <p class="part">Part 1</p>
+  <div class="col">
+    <h2>Where coverage fell and an outbreak followed</h2>
+    <p class="lede">The clearest cases are at the county level, and almost all are measles in 2025 and 2026. Each chart shows the share of kindergartners with two MMR doses, from the first school year with a county figure to 2024-25. The dashed line marks 95%.</p>
+  </div>
+  <div class="grid-c">
+<!--COUNTY_CARDS-->
+  </div>
+  <p class="figcap">Coverage: Johns Hopkins county MMR dataset (Dong et al., JAMA 2025), from state school reports; Spartanburg County figures cover all grades, K through 12. Cases: Johns Hopkins Measles Tracking Team, data through September 25, 2026. The map on the main page ends in 2025, so the 2026 cases are not on it.</p>
+
+  <div class="col">
+    <h3><span class="tag">Largest decline</span>Mohave County, Arizona, and southwest Utah</h3>
+    <p>Mohave County's kindergarten MMR coverage fell from 92.1% in 2017-18 to 76.0% in 2023-24, the steepest drop among the outbreak counties, and was 78.4% in 2024-25. The tracker counts 216 measles cases there in 2025 and 69 in 2026. Next door, Washington County, Utah, fell from 88.5% to 79.2%. Utah reports cases by health district: 155 in 2025 and 112 in 2026 in its Southwest district.</p>
+    <div class="src"><p>Utah DHHS, <a href="https://epi.utah.gov/measles-response/" target="_blank" rel="noopener">“2025–2026 Utah measles response”</a> (updated September 29, 2026): 724 Utah residents diagnosed in this outbreak, 197 in 2025 and 527 in 2026, “most” of them unvaccinated. A live page; the count will change.</p>
+    <p class="gap">Still needed: an Arizona or Mohave County source. We have not confirmed whether the Arizona and Utah cases are one outbreak.</p></div>
+
+    <h3><span class="tag">Largest outbreak</span>Spartanburg County, South Carolina</h3>
+    <p>Coverage across all grades fell from 95.1% in 2019-20 to 90.0% in 2024-25. The tracker counts 330 cases in 2025 and 610 in 2026, more than any other county.</p>
+    <div class="src"><p>SC Department of Public Health, <a href="https://dph.sc.gov/news/dph-confirms-measles-outbreak-upstate-region" target="_blank" rel="noopener">“DPH Confirms Measles Outbreak in Upstate Region”</a> (October 2, 2025).</p>
+    <p>SC Department of Public Health, <a href="https://dph.sc.gov/news/dph-announces-end-measles-outbreak-upstate-997-cases" target="_blank" rel="noopener">“DPH Announces End to Measles Outbreak in Upstate at 997 Cases”</a> (April 27, 2026): 997 cases from October 2025 through March 2026, 932 of them in unvaccinated people.</p></div>
+
+    <h3><span class="tag">Low for years</span>Gaines County, Texas</h3>
+    <p>Gaines County is a different kind of story. Coverage was already 80.4% in 2019-20, stayed between 80% and 83%, and was 77.3% in 2024-25, far below the Texas county median of 94.5%. The tracker counts 414 cases in 2025. This is a pocket that stayed low, not a recent decline, and that may be the more accurate frame for how outbreaks start.</p>
+    <div class="src"><p>CDC, <a href="https://www.cdc.gov/mmwr/volumes/75/wr/mm7523a2.htm" target="_blank" rel="noopener">“Notes from the Field: Initial Public Health Response to a Measles Outbreak in a Close-Knit West Texas Community”</a>: 207 cases from January 29 to February 28, 2025.</p>
+    <p>Texas DSHS, <a href="https://www.dshs.texas.gov/news-alerts/texas-announces-end-west-texas-measles-outbreak" target="_blank" rel="noopener">“Texas announces end of West Texas measles outbreak”</a> (August 18, 2025): 762 confirmed cases.</p>
+    <p>Background: Texas House Research Organization, <a href="https://hro.house.texas.gov/interim/int78-1.pdf" target="_blank" rel="noopener">“Conscientious Objection to Immunization”</a> (2003), on the law that created the state's exemption.</p></div>
+
+    <h3><span class="tag">2026</span>Lancaster County, Pennsylvania, and Collier County, Florida</h3>
+    <p>Lancaster fell from 95.5% in 2017-18 to 88.5% in 2024-25 and had 359 cases in 2026. Collier fell from 93.8% to 86.3% and had 99 cases in 2026. In September 2025 Florida's surgeon general announced plans to end childhood vaccine mandates (<a href="https://www.wusf.org/health-news-florida/2025-09-03/florida-to-eliminate-childhood-vaccine" target="_blank" rel="noopener">WUSF/AP</a>); Collier's decline began years earlier.</p>
+    <p class="gap">Still needed: contemporary sources for both 2026 outbreaks.</p>
+
+    <h3><span class="tag">Clearest statewide decline</span>Idaho</h3>
+    <p>The share of Idaho kindergartners with a non-medical exemption rose from 3.5% in 2009-10 to 17.0% in 2025-26, the highest of any state. Kindergarten MMR coverage fell from 87.0% to 75.2% over the same years. Whooping cough reached 59.9 cases per 100,000 people in 2024, 417% above Idaho's own 2015 to 2019 average; the national rate rose 126% on the same comparison. Measles returned in 2023.</p>
+    <div class="src"><p>Idaho DHW, <a href="https://healthandwelfare.idaho.gov/dhw-voice/measles-back-idaho" target="_blank" rel="noopener">“Measles is back in Idaho”</a> (October 6, 2023): 10 cases in southwest Idaho, after two in the state in the prior 20 years.</p>
+    <p>Idaho Legislature, <a href="https://legislature.idaho.gov/sessioninfo/2025/legislation/S1210/" target="_blank" rel="noopener">Senate Bill 1210, the Idaho Medical Freedom Act</a> (signed April 4, 2025).</p>
+    <p class="gap">Still needed: an Idaho source on the 2024 whooping cough rise.</p></div>
+
+    <h2>The reverse sequence</h2>
+    <p>Four states ended non-medical exemptions after outbreaks or rising exemption rates, and kindergarten coverage went up afterward. The timing is documented; whether the laws were the reason is not something this data can show.</p>
+  </div>
+  <div class="tbl col">
+    <table>
+      <thead><tr><th>State</th><th>Law</th><th>Before</th><th>After</th></tr></thead>
+      <tbody>
+        <tr><td>California</td><td>SB 277, June 30, 2015, months after the Disneyland outbreak</td><td class="n">92.3% MMR (2013-14)</td><td class="n">97.3% (2016-17)</td></tr>
+        <tr><td>Maine</td><td>Public Law 2019, ch. 154, in effect September 2021</td><td class="n">89.9% MMR (2013-14)</td><td class="n">98.0% (2025-26)</td></tr>
+        <tr><td>New York</td><td>Signed June 13, 2019, in a year with 911 measles cases</td><td class="n">1.3% exempt (2018-19)</td><td class="n">0.1% exempt (2019-20)</td></tr>
+        <tr><td>Connecticut</td><td>Public Act 21-6, April 28, 2021</td><td class="n">95.3% MMR (2020-21)</td><td class="n">98.6% (2025-26)</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col">
+    <p class="figcap">Kindergarten figures: CDC SchoolVaxView. Washington removed the personal exemption for MMR in May 2019 after the Clark County outbreak; its coverage rose to 94.4% the next school year and has since fallen back to 90.6%.</p>
+
+    <h2>What the data does not show</h2>
+    <ul class="plain">
+      <li><b>A strong statewide link for measles.</b> Across 46 states, a bigger drop in kindergarten MMR coverage from 2019-20 to 2024-25 goes with a higher 2025 measles rate, but only moderately (rank correlation −0.45). Most of the 2025 total sits in a handful of counties.</li>
+      <li><b>A statewide link for whooping cough.</b> Cases rose from 7,063 in 2023 to 43,321 in 2024 across the country. Idaho and Wisconsin, with large DTaP drops, rose sharply, but so did states with almost no drop: Rhode Island (324% above its own 2015 to 2019 average), Connecticut (339%) and New York (241%). The rank correlation is weak (−0.24).</li>
+      <li><b>Coverage before the earlier outbreaks.</b> Minnesota 2017, Clark County 2019 and New York 2019 came before most county figures begin.</li>
+    </ul>
+  </div>
+
+  <p class="part mumps">Part 2</p>
+  <div class="col">
+    <h2>The mumps “wave” is mostly the start of the record</h2>
+    <p class="lede">On the map, mumps appears in 1968 at its highest level and then shrinks. That is when it was first counted state by state, not when an epidemic began. Then come the vaccine era and a resurgence in 1987 that CDC tied to a gap in vaccination at the time.</p>
+  </div>
+  <figure class="chart-wide">
+<!--MUMPS_SVG-->
+  </figure>
+  <div class="col">
+    <p class="figcap">Line: reported mumps cases, summed over the states reporting each year (Project Tycho through 1992, CDC final annual tables from 1993). Circles: national totals CDC printed in its 1989 mumps recommendations. The shaded years rest on provisional reports that undercount (1986 shows 2,676 against CDC's 7,790) and are being re-extracted from CDC's scanned annual reports.</p>
+
+    <h3><span class="tag">Before 1968</span>Mumps was common long before the map starts</h3>
+    <p>About 110 large cities reported mumps from 1924 to 1932, between 24,585 and 47,208 cases a year in those cities alone, before city reporting of mumps stops in the data. CDC counted 185,691 cases nationwide in 1967.</p>
+
+    <h3><span class="tag">1967 to 1985</span>The decline lines up with the vaccine</h3>
+    <p>The mumps vaccine was licensed in 1967 and recommended for routine use in 1977. CDC reported a 98% decline, from 185,691 cases in 1967 to 2,982 in 1985.</p>
+
+    <h3><span class="tag">1986 to 1987</span>The resurgence, and why CDC said it happened</h3>
+    <p>Reported cases rose to 12,848 in 1987. The steepest increases were among 10 to 14 year olds (almost 600%) and 15 to 19 year olds (more than 700%). CDC attributed the shift to “the relatively underimmunized cohort of children born between 1967 and 1977”: born after the vaccine existed, but before it was routinely given. CDC also compared states. In 1987 the 14 states with no school requirement for mumps vaccine had 11.5 cases per 100,000 people, against 1.1 in the 15 areas that required it from kindergarten through 12th grade. Illinois (23.2 per 100,000), Wisconsin (35.3) and Tennessee (24.6) led that year in our data.</p>
+    <div class="src"><p>CDC, <a href="https://www.cdc.gov/mmwr/preview/mmwrhtml/00001404.htm" target="_blank" rel="noopener">“Recommendations of the Immunization Practices Advisory Committee Mumps Prevention”</a> (June 9, 1989).</p>
+    <p>CDC, <a href="https://www.cdc.gov/mmwr/preview/mmwrhtml/00000944.htm" target="_blank" rel="noopener">“Mumps Outbreaks on University Campuses -- Illinois, Wisconsin, South Dakota”</a> (1987).</p></div>
+    <p>This is the one case in the record where CDC itself tied a gap in vaccination to a rise in disease at the time, which makes it the cleanest fit for the question.</p>
+
+    <h3><span class="tag">2006 and 2016 to 2017</span>Later outbreaks are a different story</h3>
+    <p>The 2006 outbreak (6,584 cases, starting in Iowa) and the 2016 and 2017 outbreaks (6,369 and 6,109 cases, in Arkansas, Hawaii, Washington and on several campuses) happened largely among people who had been vaccinated. In January 2018 CDC's advisory committee recommended a third dose for people at higher risk during an outbreak. These are about protection fading in close-contact settings, not about falling coverage.</p>
+    <div class="src"><p>CDC, <a href="https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5513a3.htm" target="_blank" rel="noopener">“Mumps Epidemic --- Iowa, 2006”</a>; <a href="https://www.cdc.gov/mmwr/volumes/67/wr/mm6701a7.htm" target="_blank" rel="noopener">third-dose recommendation</a> (January 2018).</p></div>
+  </div>
+
+  <div class="next col">
+    <h2>Next steps</h2>
+    <ol>
+      <li>Choose the lead. The strongest candidates are the 1987 mumps resurgence and Mohave County with southwest Utah.</li>
+      <li>Find contemporary sources for Mohave County 2025, Idaho's 2024 whooping cough rise, and the 2026 Lancaster and Collier outbreaks.</li>
+      <li>Finish correcting mumps for 1980 to 1992 from CDC's scanned annual reports (in progress).</li>
+      <li>Check a reporting change in Wisconsin's county figures in 2022-23 before using those counties.</li>
+    </ol>
+  </div>
+
+  <footer class="col">
+    <p>Built by Data 4 The People. Every number is recomputed by <code>analysis/01_vaccination_and_outbreaks.py</code> in the project repository, except figures quoted from the linked sources. Reported cases are not infections. Kindergarten figures follow each state's own method, which differs from state to state.</p>
+  </footer>
+</main>
