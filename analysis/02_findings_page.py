@@ -61,8 +61,8 @@ for v in (0, 50000, 100000, 150000, 200000):
               f'<text x="{mML - 8}" y="{mv(v) + 3.5:.1f}" class="tick" text-anchor="end">{v // 1000}k</text>')
 for y in (1970, 1980, 1990, 2000, 2010, 2020):
     mg.append(f'<text x="{mx(y):.1f}" y="{MH - 8}" class="tick" text-anchor="middle">{y}</text>')
-mg.append(f'<rect x="{mx(1979.5):.1f}" y="{mMT}" width="{mx(1992.5) - mx(1979.5):.1f}" height="{MH - mMT - mMB}" class="band"/>'
-          f'<text x="{mx(1986):.1f}" y="{mMT + 14}" class="bandlab" text-anchor="middle">1980–92: provisional, being corrected</text>')
+mg.append(f'<rect x="{mx(1970.5):.1f}" y="{mMT}" width="{mx(1971.5) - mx(1970.5):.1f}" height="{MH - mMT - mMB}" class="band"/>'
+          f'<text x="{mx(1971) + 6:.1f}" y="{mMT + 14}" class="bandlab">1971: provisional</text>')
 mg.append('<path d="M' + "L".join(f"{mx(y):.1f},{mv(v):.1f}" for y, v in mu.items()) + '" class="mline"/>')
 # CDC's own national figures from the 1989 ACIP report, as points
 for y, v, lab, anc in ((1967, 185691, "1967: 185,691", "start"), (1985, 2982, "", "start"), (1987, 12848, "1987: 12,848", "start")):

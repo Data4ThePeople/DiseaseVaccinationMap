@@ -15,6 +15,7 @@ import pandas as pd
 from common import DATA, NAME_TO_ABBR, RAW, STATES
 
 FIRST_YEAR = 1929
+BLOCKED = set()
 DISEASES = ["measles", "pertussis", "mumps", "diphtheria", "hepatitis_a", "polio", "rubella", "smallpox", "varicella", "hepatitis_b"]
 
 
@@ -49,7 +50,12 @@ def cdc_annual():
     b = b[b.disease.isin(DISEASES)].copy()
     b["st"] = b.state.str.upper().map(NAME_TO_ABBR)
     b["cases"] = pd.to_numeric(b.cases, errors="coerce")
-    b = b[b.st.notna() & b.cases.notna()]
+    b = b[b.st.notna()]
+    # A final table that marks a state (NN not notifiable, N, U, NR, ...) is the last word for that year:
+    # these rows block the provisional layers below and then drop out, so the page shows "no data".
+    global BLOCKED
+    BLOCKED = set(zip(b[b.cases.isna()].disease, b[b.cases.isna()].st, b[b.cases.isna()].year.astype(int)))
+    b = b[b.cases.notna()]
     b["year"] = b.year.astype(int)
     assert not b.duplicated(["disease", "st", "year"]).any(), "duplicate rows in the annual table extract"
     b["source"], b["basis"], b["weeks"], b["check"] = "cdc_annual", "final annual table", pd.NA, 0
@@ -60,6 +66,9 @@ if __name__ == "__main__":
     layers = [x for x in (cdc_annual(), cdc_recent(), tycho()) if x is not None]  # best first
     allrows = pd.concat(layers, ignore_index=True)
     out = allrows.drop_duplicates(["disease", "st", "year"], keep="first").copy()
+    blocked = [k in BLOCKED for k in zip(out.disease, out.st, out.year)]
+    print(sum(blocked), "provisional state-years dropped because the final table marks them")
+    out = out[[not x for x in blocked]]
     assert not out.duplicated(["disease", "st", "year"]).any()
     pop = pd.read_csv(DATA / "state_population.csv")[["st", "year", "pop"]]
     out = out.merge(pop, how="left", on=["st", "year"])

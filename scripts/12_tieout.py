@@ -45,22 +45,33 @@ bad += n + (filled != len(c))
 
 # B
 a = pd.read_csv(RAW / "bridge" / "annual_area_cases_all.csv", dtype=str)
+bs = pd.read_csv(RAW / "bridge" / "annual_state_cases.csv", dtype=str)
 us = a[a.area == "United States"].assign(disease=lambda x: x.disease.replace({"polio_paralytic": "polio"}))
 us = us[us.disease.isin(SHOWN)]
 lines += ["## B. National sum on the page against the U.S. row CDC printed", "",
           "Only years where every state on the page comes from the final annual table. The printed U.S. row is read from the "
           "table itself, with footnote marks stripped.", "", "| disease, year | CDC printed | page sum | |", "|---|---|---|---|"]
-nb = 0
+nb, gaps = 0, []
 for r in us.itertuples():
     y = int(r.year)
     codes = {D["src"][r.disease][s][y - Y0].lower() for s in STATES}
     if codes - {"a", "-"} or pd.isna(r.cases):
         continue
     total = sum(v for s in STATES if (v := page(r.disease, s, y)) is not None)
+    if "-" in codes:   # a state left blank by the table: the printed total still counts any part it gave
+        rows = bs[(bs.year == r.year) & (bs.disease.replace({"polio_paralytic": "polio"}) == r.disease) & bs.flag.fillna("").str.contains("other part=")]
+        part = sum(int(f.split("other part=")[1].split(";")[0]) for f in rows.flag)
+        gaps.append(f"| {r.disease} {y} | {int(float(r.cases))} | {total} | {part} | {'ok' if total + part == int(float(r.cases)) else 'MISMATCH'} |")
+        bad += total + part != int(float(r.cases))
+        continue
     nb += 1
     if total != int(float(r.cases)) or y % 5 == 0 or y in (2019, 2023):
         check(f"{r.disease} {y}", total, int(float(r.cases)))
-lines += ["", f"{nb} disease-years compared in all; the table lists every fifth year, 2019, 2023 and any mismatch.", ""]
+lines += ["", f"{nb} disease-years compared in all; the table lists every fifth year, 2019, 2023 and any mismatch.", "",
+          "Years where the table gives one or more states no figure (NN, not notifiable there). Those states show as no data. "
+          "In 1968 to 1973 upstate New York did not report mumps but the table prints New York City's count, which is in the "
+          "U.S. total and not on the map; the page sum falls short by exactly that part:", "",
+          "| disease, year | CDC printed | page sum | part not mapped | |", "|---|---|---|---|---|"] + gaps + [""]
 
 
 # C
@@ -76,7 +87,7 @@ def tycho_weekly_sum(code, iso, year):
 lines += ["## C. Project Tycho years, re-read from the zip", "", "| disease, state, year | from zip | page | |", "|---|---|---|---|"]
 for d, code, st, y in [("measles", "US.14189004", "OH", 1941), ("measles", "US.14189004", "CA", 1958), ("measles", "US.14189004", "TX", 1934),
                        ("polio", "US.398102009", "NY", 1952), ("polio", "US.398102009", "MN", 1946), ("pertussis", "US.27836007", "PA", 1947),
-                       ("hepatitis_a", "US.40468003", "CA", 1971), ("mumps", "US.36989005", "WI", 1968)]:
+                       ("hepatitis_a", "US.40468003", "CA", 1971), ("pertussis", "US.27836007", "OH", 1950)]:
     assert D["src"][d][st][y - Y0].lower() == "w", (d, st, y)
     check(f"{d} {st} {y}", page(d, st, y), tycho_weekly_sum(code, f"US-{st}", y))
 lines.append("")

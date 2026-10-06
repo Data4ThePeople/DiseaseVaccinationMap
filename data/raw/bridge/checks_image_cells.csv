@@ -1,0 +1,104 @@
+year,disease,area,pdf_page,ocr_text_layer_had,read_from_page_image,source_file
+1968,mumps,Alaska,10,,705,stacks_1717_DS1.pdf
+1970,mumps,Oklahoma,10,,"2,683",stacks_951_DS1.pdf
+1972,mumps,East South Central,10,3y859,"3,859",stacks_1895_DS1.pdf
+1979,mumps,District of Columbia,13,,2,stacks_1577_DS1.pdf
+1979,mumps,Virginia,13,,105,stacks_1577_DS1.pdf
+1979,mumps,South Carolina,13,,5,stacks_1577_DS1.pdf
+1979,mumps,Arkansas,13,,489,stacks_1577_DS1.pdf
+1979,mumps,New England,13,,768,stacks_1577_DS1.pdf
+1979,mumps,Middle Atlantic,13,,"1,360",stacks_1577_DS1.pdf
+1979,mumps,East North Central,13,,"6,056",stacks_1577_DS1.pdf
+1979,mumps,Indiana,13,,360,stacks_1577_DS1.pdf
+1979,mumps,West North Central,13,,760,stacks_1577_DS1.pdf
+1979,mumps,South Atlantic,13,,883,stacks_1577_DS1.pdf
+1979,mumps,East South Central,13,,"1,623",stacks_1577_DS1.pdf
+1979,mumps,Kentucky,13,,"1,378",stacks_1577_DS1.pdf
+1979,mumps,Tennessee,13,,108,stacks_1577_DS1.pdf
+1979,mumps,West South Central,13,,"1,429",stacks_1577_DS1.pdf
+1979,mumps,Mountain,13,,334,stacks_1577_DS1.pdf
+1979,mumps,New Mexico,13,,15,stacks_1577_DS1.pdf
+1979,mumps,Arizona,13,,66,stacks_1577_DS1.pdf
+1979,mumps,Pacific,13,,"1,012",stacks_1577_DS1.pdf
+1979,mumps,Oregon,13,,118,stacks_1577_DS1.pdf
+1980,mumps,New England,19,,618,stacks_1484_DS1.pdf
+1980,mumps,Middle Atlantic,19,,970,stacks_1484_DS1.pdf
+1980,mumps,New York (excluding New York City),19,,174,stacks_1484_DS1.pdf
+1980,mumps,East North Central,19,,"3,311",stacks_1484_DS1.pdf
+1980,mumps,North Dakota,19,,4,stacks_1484_DS1.pdf
+1980,mumps,South Dakota,19,,3,stacks_1484_DS1.pdf
+1981,mumps,New Hampshire,79,,26,stacks_1307_DS1.pdf
+1981,mumps,Vermont,79,,10,stacks_1307_DS1.pdf
+1981,mumps,New York City,79,,95,stacks_1307_DS1.pdf
+1981,mumps,Ohio,79,,687,stacks_1307_DS1.pdf
+1981,mumps,Illinois,79,,343,stacks_1307_DS1.pdf
+1981,mumps,Iowa,79,,94,stacks_1307_DS1.pdf
+1981,mumps,North Dakota,79,,-,stacks_1307_DS1.pdf
+1981,mumps,South Atlantic,79,,601,stacks_1307_DS1.pdf
+1981,mumps,Delaware,79,,10,stacks_1307_DS1.pdf
+1981,mumps,West Virginia,79,,120,stacks_1307_DS1.pdf
+1981,mumps,Arkansas,79,,7,stacks_1307_DS1.pdf
+1981,mumps,Louisiana,79,76,6,stacks_1307_DS1.pdf
+1981,mumps,Oklahoma,79,(•,NN,stacks_1307_DS1.pdf
+1981,mumps,Idaho,79,,8,stacks_1307_DS1.pdf
+1981,mumps,New Mexico,79,(•■,NN,stacks_1307_DS1.pdf
+1982,mumps,Vermont,16,,7,stacks_35066_DS1.pdf
+1982,mumps,Pennsylvania,16,,160,stacks_35066_DS1.pdf
+1982,mumps,Ohio,16,1.775,"1,775",stacks_35066_DS1.pdf
+1982,mumps,North Dakota,16,,-,stacks_35066_DS1.pdf
+1982,mumps,South Atlantic,16,,286,stacks_35066_DS1.pdf
+1982,mumps,District of Columbia,16,,-,stacks_35066_DS1.pdf
+1982,mumps,Georgia,16,,30,stacks_35066_DS1.pdf
+1982,mumps,East South Central,16,,68,stacks_35066_DS1.pdf
+1982,mumps,Mississippi,16,,11,stacks_35066_DS1.pdf
+1983,mumps,Maine,21,,30,stacks_35188_DS1.pdf
+1983,mumps,New Hampshire,21,,29,stacks_35188_DS1.pdf
+1983,mumps,Rhode Island,21,,16,stacks_35188_DS1.pdf
+1983,mumps,Minnesota,21,,30,stacks_35188_DS1.pdf
+1983,mumps,North Dakota,21,,3,stacks_35188_DS1.pdf
+1983,mumps,South Dakota,21,,-,stacks_35188_DS1.pdf
+1983,mumps,Delaware,21,,10,stacks_35188_DS1.pdf
+1983,mumps,South Carolina,21,,14,stacks_35188_DS1.pdf
+1983,mumps,Georgia,21,,63,stacks_35188_DS1.pdf
+1983,mumps,Tennessee,21,,30,stacks_35188_DS1.pdf
+1983,mumps,Alabama,21,,2,stacks_35188_DS1.pdf
+1983,mumps,Arkansas,21,,3,stacks_35188_DS1.pdf
+1983,mumps,Montana,21,,9,stacks_35188_DS1.pdf
+1983,mumps,Idaho,21,,9,stacks_35188_DS1.pdf
+1983,mumps,Wyoming,21,,3,stacks_35188_DS1.pdf
+1983,mumps,Colorado,21,,54,stacks_35188_DS1.pdf
+1983,mumps,New Mexico,21,,NN,stacks_35188_DS1.pdf
+1984,mumps,East North Central,16,1.172,"1,172",stacks_35267_DS1.pdf
+1986,mumps,Maine,12,-,-,stacks_35496_DS1.pdf
+1986,mumps,Tennessee,12,,"1,476",stacks_35496_DS1.pdf
+1986,mumps,Wyoming,12,-,-,stacks_35496_DS1.pdf
+1986,mumps,Colorado,12,,17,stacks_35496_DS1.pdf
+1986,mumps,Utah,12,,16,stacks_35496_DS1.pdf
+1986,mumps,Nevada,12,,11,stacks_35496_DS1.pdf
+1986,mumps,Pacific,12,,416,stacks_35496_DS1.pdf
+1986,mumps,Washington,12,,30,stacks_35496_DS1.pdf
+1986,mumps,Oregon,12,,NN,stacks_35496_DS1.pdf
+1986,mumps,California,12,,354,stacks_35496_DS1.pdf
+1986,mumps,Hawaii,12,,24,stacks_35496_DS1.pdf
+1986,mumps,New York (excluding New York City),12,,79,stacks_35496_DS1.pdf
+1986,mumps,Mississippi,12,,NN,stacks_35496_DS1.pdf
+1986,mumps,Alaska,12,,8,stacks_35496_DS1.pdf
+1987,mumps,Massachusetts,12,,21,stacks_35629_DS1.pdf
+1987,mumps,Rhode Island,12,,-,stacks_35629_DS1.pdf
+1987,mumps,Connecticut,12,,16,stacks_35629_DS1.pdf
+1987,mumps,Middle Atlantic,12,,342,stacks_35629_DS1.pdf
+1987,mumps,Pennsylvania,12,,86,stacks_35629_DS1.pdf
+1987,mumps,Minnesota,12,,810,stacks_35629_DS1.pdf
+1987,mumps,Montana,12,,9,stacks_35629_DS1.pdf
+1987,mumps,Idaho,12,,7,stacks_35629_DS1.pdf
+1987,mumps,Colorado,12,,34,stacks_35629_DS1.pdf
+1987,mumps,New Mexico,12,,NN,stacks_35629_DS1.pdf
+1987,mumps,Utah,12,,12,stacks_35629_DS1.pdf
+1987,mumps,Nevada,12,,5,stacks_35629_DS1.pdf
+1987,mumps,Pacific,12,,490,stacks_35629_DS1.pdf
+1987,mumps,Washington,12,,70,stacks_35629_DS1.pdf
+1987,mumps,California,12,,397,stacks_35629_DS1.pdf
+1989,mumps,Maine,13,,-,stacks_35853_DS1.pdf
+1989,mumps,Rhode Island,13,,-,stacks_35853_DS1.pdf
+1989,mumps,North Dakota,13,,-,stacks_35853_DS1.pdf
+1989,mumps,South Dakota,13,,-,stacks_35853_DS1.pdf

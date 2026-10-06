@@ -152,8 +152,10 @@ the vaccine era.**
    year it was counted state by state, not the start of an epidemic.
 2. **The decline lines up with the vaccine.** The mumps vaccine was licensed in
    1967 and recommended for routine use in 1977. CDC reported a 98% decline from
-   185,691 cases in 1967 to 2,982 in 1985. Our state sums fall from 142,744 in
-   1968 (47 states reporting) to 2,674 in 1985.
+   185,691 cases in 1967 to 2,982 in 1985. CDC's final tables give 152,209 for
+   1968; our state sum is 148,319 because upstate New York did not report mumps
+   that year (New York City's 3,890 cases are in the national total but not on
+   the map). Our 1985 sum is 2,982, the same as CDC's.
 3. **The 1987 resurgence is the best mumps story for this project.** CDC
    reported 12,848 cases in 1987. The rise was steepest among 10 to 14 year olds
    (an increase of almost 600%) and 15 to 19 year olds (more than 700%). CDC said
@@ -162,8 +164,8 @@ the vaccine era.**
    but before it was routinely given. CDC also compared states: in 1987, the 14
    states without a school requirement for mumps vaccine had 11.5 cases per
    100,000, against 1.1 in the 15 areas that required it from kindergarten
-   through 12th grade. In our data Illinois (2,647 cases, 23.2 per 100,000),
-   Wisconsin (35.3 per 100,000) and Tennessee (24.6) led that year. Campus
+   through 12th grade. In our data Illinois (2,737 cases, 24.0 per 100,000),
+   Wisconsin (36.3 per 100,000) and Tennessee (25.2) led that year. Campus
    outbreaks in Illinois, Wisconsin and South Dakota are in the milestone files.
    - CDC MMWR, "Recommendations of the Immunization Practices Advisory
      Committee Mumps Prevention" (June 9, 1989).
@@ -182,11 +184,18 @@ the vaccine era.**
    vaccine-decline stories. Sources are in the milestone files (Iowa 2006,
    Arkansas 2016, Hawaii 2018, the 2018 third-dose recommendation).
 
-**A data problem this turned up.** Our 1986 mumps total (2,676) is far below
-CDC's 7,790. The 1980 to 1992 mumps figures on the page are Project Tycho's
-provisional year-end totals and undercount in some years. The final annual
-tables for those years exist only as scans; extracting mumps from them would
-fix this before mumps is featured in a post.
+**Fixed: the mumps undercount.** The page's 1968 to 1992 mumps figures were
+Project Tycho's provisional totals, which undercounted (1986 showed 2,676
+against CDC's 7,790). They now come from CDC's final annual tables, read from
+the scanned reports, for every year except 1971. Each year passes the same
+test as before: every state present, states adding to the printed regional
+rows, regions adding to the printed U.S. total. 83 state cells were read from
+the page image where the scan's text layer was damaged; they are listed in
+`data/raw/bridge/checks_image_cells.csv`, and two I checked against the page
+(Hawaii 1986, New England 1980) match. 1971 stays provisional because two cells
+are misprinted ("-99" for DC, "8.784" for Ohio) and reading them would mean
+guessing. The page sums now equal CDC's printed totals: 2,982 for 1985, 7,790
+for 1986 and 12,848 for 1987.
 
 ---
 
@@ -198,5 +207,6 @@ fix this before mumps is featured in a post.
 2. Find contemporary sources for the gaps: Mohave County 2025, Idaho whooping
    cough 2024, Lancaster and Collier 2026. This needs more web searches than
    this session has left.
-3. Fix the 1980 to 1992 mumps undercount from the scanned CDC annual summaries.
+3. Decide on 1971 mumps (two misprinted cells) and on whether to show New York
+   City's count for 1968 to 1973, when upstate New York did not report mumps.
 4. Check the Wisconsin county reporting change before using those counties.

@@ -212,7 +212,17 @@ year is kept only if every state cell was readable, the states add to each
 printed division row, and the divisions add to the printed U.S. row. The other
 1980 to 1989 years failed on OCR damage and stay on Project Tycho or "no data".
 
-**Checks run.** State sum against the printed U.S. row: 298 disease-years, no
+**Mumps 1968 to 1992 (added October 6, 2026).** Read from the scanned summaries
+for every year but 1971, with the same three-level sum test. Where the scan's
+text layer was damaged, 103 cells (83 state rows) were read from the page
+image and are listed in `checks_image_cells.csv`. 1971 is left out because two
+cells are misprinted. 1981 uses the by-area-and-age mumps table, since that
+year's general table has no mumps column. States printed NN (not notifiable)
+show as no data, and the build no longer fills them from Tycho. In 1968 to 1973
+upstate New York is NN while New York City is printed; New York shows as no
+data and the City's count is kept in the flag.
+
+**Checks run.** State sum against the printed U.S. row: 322 disease-years, no
 mismatch. PDF against the separately parsed HTML edition, 2007 to 2015: 66
 disease-years, no cell differs. Measles against Our World in Data's hand
 transcription: 763 of 766 state-years identical; in the 3 that differ our value

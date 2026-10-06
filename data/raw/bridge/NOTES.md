@@ -17,7 +17,8 @@ Rebuild without downloading: `.venv/bin/python scripts/02b_fetch_annual_summarie
 | `checks_state_sum_vs_us.csv` | Sum of the 51 areas against the table's own United States row, per disease and year. |
 | `checks_html_vs_pdf.csv` | 2007 to 2015: the HTML edition of each issue parsed separately and compared cell by cell with the PDF. |
 | `checks_owid_measles.csv` | Measles compared with the Our World in Data transcription. Cross-check only, never a source. |
-| `checks_scans_1980_1992.csv` | Which scanned years passed the strict test and why the others failed. |
+| `checks_scans_1980_1992.csv` | Which scanned years passed the strict test and why the others failed. Despite the name it now covers 1968 to 1992 (mumps from 1968, measles and pertussis from 1980). |
+| `checks_image_cells.csv` | Every cell read by eye from a rendered page image: year, disease, area, PDF page, what the OCR text layer had, what the image shows. For spot-checking. |
 | `checks_column_map.csv` | The printed column header and US total cell that was read for each disease and year. |
 | `checks_marks.csv` | Mark definitions as printed in each source, with the page. |
 | `checks_finality.csv` | The sentence in each source that says the data are final and gives the cutoff date. |
@@ -26,20 +27,28 @@ Rebuild without downloading: `.venv/bin/python scripts/02b_fetch_annual_summarie
 
 | Years | Diseases | Source |
 |---|---|---|
+| 1968 to 1970, 1972 to 1992 | mumps | scanned annual summaries, CDC Stacks |
 | 1984, 1988, 1990, 1991, 1992 | measles (total, indigenous, imported) | scanned annual summaries, CDC Stacks |
 | 1985, 1990, 1991, 1992 | pertussis | scanned annual summaries, CDC Stacks |
 | 1993 to 2015 | all seven diseases | MMWR Summary of Notifiable Diseases, Table 2, issue PDF |
 | 2016 to 2023 | all seven diseases | NNDSS Annual Tables, Table 2 parts |
 
-Not obtained: measles for 1980 to 1983, 1985 to 1987 and 1989; pertussis for
-1980 to 1984 and 1986 to 1989. See "Scanned years" below. Mumps, rubella,
-hepatitis A, diphtheria and polio were not attempted before 1993.
+Not obtained: mumps for 1971 (see "Mumps from the scans" below); measles for
+1980 to 1983, 1985 to 1987 and 1989; pertussis for 1980 to 1984 and 1986 to
+1989 (see "Scanned years"). Rubella, hepatitis A, diphtheria and polio were
+not attempted before 1993; measles and pertussis were not attempted before
+1980.
 
 ## Results of the checks
 
-- State sum against the printed United States row: 298 disease-years checked,
-  all equal. 25 of those are trivial (diseases with no US cases, taken from a
-  footnote, see below), 273 are real sums.
+- State sum against the printed United States row: 322 disease-years checked,
+  all pass. 25 of those are trivial (diseases with no US cases, taken from a
+  footnote, see below). For mumps in 1968, 1969, 1970, 1972 and 1973 the 51
+  state rows fall short of the US row by exactly the New York City count:
+  upstate New York is printed NN in those years, so the New York row is left
+  blank (see the New York rule below) while the US total includes the city's
+  cases. Every scanned year kept also passes the stricter division test
+  described under "Scanned years".
 - HTML against PDF, 2007 to 2015: 66 disease-years, no cell differs.
 - Our World in Data, measles: 766 state-years compared (1984 to 2015), 763 the
   same, 3 different. In all three the number here is what the CDC table prints
@@ -52,7 +61,10 @@ hepatitis A, diphtheria and polio were not attempted before 1993.
 
 - **New York.** Every table prints New York City and the rest of New York as
   two rows. The `New York` row here is the sum of the two. Both parts are kept
-  in `annual_area_cases_all.csv`.
+  in `annual_area_cases_all.csv`. When one part is not a number (mumps
+  1968 to 1973: upstate New York is NN), `cases` is blank and the flag says
+  which part is missing and what the other part was, e.g.
+  `upstate:NN;other part=3890` (the New York City count).
 - **Measles total.** From 2008 the tables print a Total column. Before 2008
   they print only Indigenous and Imported, so `measles` is computed as the
   sum of the two and flagged `sum` (or `sum-` when both parts were dashes).
@@ -71,6 +83,15 @@ hepatitis A, diphtheria and polio were not attempted before 1993.
   - `sum`, `sum-`: computed total, see above.
   - `*`, `†` and similar after a number: the footnote symbol printed on the
     cell.
+  - `read from page image`: scanned years only. The OCR text layer was
+    damaged for this cell and the value was read by eye from the page
+    rendered with PyMuPDF. `read from page image: -` and
+    `read from page image: NN` are a dash (0) and NN read the same way. For
+    New York, `read from page image (upstate part)` or `(NYC part)` says
+    which half was read from the image. The page is in `source_table` and
+    every such cell is listed in `checks_image_cells.csv`.
+  - `NR`: printed once (North Carolina mumps, 1974). The 1974 issue does not
+    define it. `cases` blank.
 - **Cells left blank (31 in all).** NN: mumps in New Mexico 1993 to 1999 and
   Oregon 1993 to 2001, rubella in Mississippi 1994 to 1998, paralytic polio in
   Wisconsin 1997 and 1998. N: mumps in Oregon 2003 and 2005, measles total in
@@ -81,16 +102,21 @@ hepatitis A, diphtheria and polio were not attempted before 1993.
 
 | Years | Marks |
 |---|---|
+| 1968, 1969, 1971 to 1974 | `...` Data not available; `-` Quantity zero; `NN` Report of disease not required by State Health Department. Read from the legend on the page image (p.2 of each issue). |
+| 1970 | No legend found in the scan. The 1970 mumps column contains only numbers and NN. |
+| 1975, 1976 | `NA` Data not available; `-` Quantity zero; `NN` not notifiable. Page image, p.2. |
+| 1977 to 1983 | `NA` Data not available; `-` No reported cases; `NN` not notifiable. 1977 to 1981 read from the page image (1977 p.2, 1978 p.10, 1979 p.7, 1980 p.12, 1981 p.15). |
 | 1984 to 2001 | `-` No reported cases; `NA` Data not available; `NN` Report of disease is not required in that jurisdiction (not notifiable). Printed once per issue under "Explanation of symbols used in tables". |
 | 2002 to 2007 | `-` No reported cases; `N` Not notifiable; `U` Unavailable. Printed under each Table 2 page and in the front list. |
 | 2008 to 2015 | `-` No reported cases; `N` Not reportable; `U` Unavailable (2014 and 2015 front list: "Data not available"). |
 | 2016 | `-` No reported cases; `N` Not Reportable; `U` Unavailable. |
 | 2017 to 2023 | `-` No reported cases, the reporting jurisdiction did not submit any cases to CDC; `N` Not reportable by law, statute, or regulation in the reporting jurisdiction; `U` Unavailable. |
 
-In the 1985 and 1988 scans the legend line "No reported cases ....." is
-present but the symbol after the dotted leader is not legible in the OCR text
-layer. It is read as the dash, as in the 1984 and 1990 to 1992 legends where
-the symbol is legible. This is an inference.
+In the 1985, 1986, 1988 and 1989 scans the symbol after "No reported cases
+....." is not legible in the OCR text layer. It was checked on the page
+image: it is the dash in all four (1985 p.6, 1986 p.6, 1988 p.7, 1989 p.6).
+This replaces the inference made in the first pass. Both "Quantity zero" and
+"No reported cases" are taken to define the dash as 0.
 
 ## Definition changes noticed
 
@@ -129,21 +155,97 @@ Cutoff is the date in the source's own statement (`checks_finality.csv`).
 
 ### Scanned annual summaries (CDC Stacks, PDF with OCR text layer)
 
-Each issue says the data are "compiled in final form in this summary". No
-cutoff date is stated.
+From 1978 the issues say the data are "compiled in final form in this
+summary"; 1977 says it "carries final figures". No cutoff date is stated in
+any scanned issue. **The 1973 to 1977 and 1979 issues say they include
+provisional data from California** "in order not to delay the publication".
+No finality statement was found in the OCR text of 1968 to 1972. File name
+is `stacks_<record>_DS1.pdf`; URL `https://stacks.cdc.gov/view/cdc/<record>`.
 
-| Year | Stacks record | File | Page | Used |
+| Year | Stacks record | Table page (PDF) | Used | Table |
 |---|---|---|---|---|
-| 1984 | https://stacks.cdc.gov/view/cdc/35267 | stacks_35267_DS1.pdf | 16 | measles |
-| 1985 | https://stacks.cdc.gov/view/cdc/35429 | stacks_35429_DS1.pdf | 12 | pertussis |
-| 1988 | https://stacks.cdc.gov/view/cdc/35958 | stacks_35958_DS1.pdf | 15 | measles |
-| 1990 | https://stacks.cdc.gov/view/cdc/35905 | stacks_35905_DS1.pdf | 19 | measles, pertussis |
-| 1991 | https://stacks.cdc.gov/view/cdc/36010 | stacks_36010_DS1.pdf | 21 | measles, pertussis |
-| 1992 | https://stacks.cdc.gov/view/cdc/36063 | stacks_36063_DS1.pdf | 23 | measles, pertussis |
+| 1968 | 1717 | 10 | mumps | Table 6, notifiable diseases by division and state |
+| 1969 | 838 | 10 | mumps | Table 6 |
+| 1970 | 951 | 10 | mumps | Table 6 |
+| 1971 | 1829 | 10 | none | Table 6 (mumps left out, see below) |
+| 1972 | 1895 | 10 | mumps | Table 6 |
+| 1973 | 1849 | 10 | mumps | Table 5 |
+| 1974 | 1743 | 10 | mumps | Table 5 |
+| 1975 | 1041 | 10 | mumps | Table 5 |
+| 1976 | 1130 | 11 | mumps | Table 5 |
+| 1977 | 10894 | 12 | mumps | Table 5 |
+| 1978 | 10895 | 21 | mumps | Notifiable diseases by division and state |
+| 1979 | 1577 | 13 | mumps | same |
+| 1980 | 1484 | 19 | mumps | same |
+| 1981 | 1307 | 79 | mumps | "MUMPS - Reported cases, by area and age", Total column (the 1981 issue has no mumps column in the general by-state table) |
+| 1982 | 35066 | 16 | mumps | by division and area |
+| 1983 | 35188 | 21 | mumps | same |
+| 1984 | 35267 | 16 | measles, mumps | same |
+| 1985 | 35429 | 12 | pertussis, mumps | same |
+| 1986 | 35496 | 12 | mumps | same |
+| 1987 | 35629 | 12 | mumps | same |
+| 1988 | 35958 | 15 | measles, mumps | same |
+| 1989 | 35853 | 13 | mumps | same |
+| 1990 | 35905 | 19 | measles, pertussis, mumps | same |
+| 1991 | 36010 | 21 | measles, pertussis, mumps | same |
+| 1992 | 36063 | 23 | measles, pertussis, mumps | same |
 
-The Stacks catalog titles for records 35267 and 35429 give the wrong year
-("Annual Summary 1985", "for 1986"). The documents themselves are the 1984 and
-1985 summaries (cover and table titles).
+Stacks catalog titles that give the wrong year: 35267 ("Annual Summary
+1985") is the 1984 summary, 35429 ("for 1986") is 1985, and 1717 ("Summary
+1967, For Release December 1968") is the 1968 summary; the table pages name
+the year in each case. The 1977 and 1978 summaries (10894, 10895) are in the
+Stacks MMWR collection (cdc:101), not the NNDSS collection.
+
+### Mumps from the scans, 1968 to 1992
+
+Mumps became nationally notifiable in 1968. Each year kept passes the strict
+test: every state cell is a number or a defined mark, the states of each of
+the nine divisions add to the printed division row, and the divisions add to
+the printed US row. The table page of each year names the year it covers.
+
+Where the OCR text layer was damaged, the cell was read by eye from the page
+rendered with PyMuPDF (300 dpi, 600 dpi for single cells). Those cells carry
+the flag `read from page image`. 103 cells were read this way, counting
+division rows (83 of the 1,224 state rows kept carry the flag, including 3
+New York rows where one half was read). By year: 1968 1, 1970 1, 1972 1,
+1979 19, 1980 6, 1981 15, 1982 9, 1983 17, 1984 1, 1986 14, 1987 15, 1989 4.
+In 1981 the OCR layer had a wrong but readable value (Louisiana 76, image
+6), which the Mountain/West South Central division check caught.
+1969, 1973 to 1978, 1985 and 1988 and 1990 to 1992 needed no image reading.
+Row labels the OCR layer garbled ("N. M.", "R.l.", "III.") are matched by
+label only, never by number.
+
+US totals as printed (thousands separators as printed): 1968 152,209;
+1969 90,918; 1970 104,953; 1972 74,215; 1973 69,612; 1974 59,128; 1975
+59,647; 1976 38,492; 1977 21,436; 1978 16,817; 1979 14,225; 1980 8,576; 1981
+4,941; 1982 5,270; 1983 3,355; 1984 3,021; 1985 2,982; 1986 7,790; 1987
+12,848; 1988 4,866; 1989 5,712; 1990 5,292; 1991 4,264; 1992 2,572.
+
+**1971 is left out.** With the OCR damage read from the image, every cell is
+legible, but two cells are printed in a way that can only be turned into a
+count by deciding what the printer meant:
+- District of Columbia is printed `-99` (checked at 600 dpi, p.10).
+- Ohio is printed `8.784`, with a point where a comma belongs.
+
+The year would pass the division test exactly if these were taken as 99 and
+8,784. Doing that would be choosing a reading because it makes the sums
+work, which the rules do not allow, so 1971 is not in the file. The other
+damaged 1971 cells read cleanly from the image (Illinois 5,585, New Jersey
+1,819, Virginia 1,073, Georgia dash, East South Central 8,933, Arkansas
+157, Oregon 1,772).
+
+Other notes:
+- New York 1968 to 1973: upstate New York is NN, so the New York row is
+  blank and its flag carries the New York City count.
+- Mumps NN (not notifiable, `cases` blank) in the scanned years: Pennsylvania
+  1968; North Carolina 1968 to 1970 and 1973; Arizona 1973, 1974, 1977;
+  Oklahoma 1978 to 1986; New Mexico 1980 to 1992; Florida 1982, 1983;
+  Oregon 1982 to 1992; Mississippi 1985 to 1988; Rhode Island 1988. These
+  states' blanks are real gaps in reporting, not zeros.
+- 1974: North Carolina is printed `NR`, which the issue does not define;
+  `cases` blank.
+- 1970: no symbol legend was found in the scan; the mumps column has only
+  numbers and NN, so no mark needed a definition.
 
 ### MMWR Summary of Notifiable Diseases, Table 2 (issue PDF, text layer)
 

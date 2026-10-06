@@ -1,23 +1,47 @@
 year,disease,sum_of_states,us_total_row,us_flag,us_minus_states,result,states_missing,states_with_non_numeric_mark,source_file
+1968,mumps,148319,152209,,3890,OK (difference = New York City cases; the New York row is blank because upstate New York is marked NN),,New York=upstate:NN;other part=3890;North Carolina=NN;Pennsylvania=NN,stacks_1717_DS1.pdf
+1969,mumps,86940,90918,,3978,OK (difference = New York City cases; the New York row is blank because upstate New York is marked NN),,New York=upstate:NN;other part=3978;North Carolina=NN,stacks_838_DS1.pdf
+1970,mumps,101729,104953,,3224,OK (difference = New York City cases; the New York row is blank because upstate New York is marked NN),,New York=upstate:NN;other part=3224;North Carolina=NN,stacks_951_DS1.pdf
+1972,mumps,71658,74215,,2557,OK (difference = New York City cases; the New York row is blank because upstate New York is marked NN),,New York=upstate:NN;other part=2557,stacks_1895_DS1.pdf
+1973,mumps,64695,69612,,4917,OK (difference = New York City cases; the New York row is blank because upstate New York is marked NN),,Arizona=NN;New York=upstate:NN;other part=4917;North Carolina=NN,stacks_1849_DS1.pdf
+1974,mumps,59128,59128,,0,OK,,Arizona=NN;North Carolina=NR,stacks_1743_DS1.pdf
+1975,mumps,59647,59647,,0,OK,,,stacks_1041_DS1.pdf
+1976,mumps,38492,38492,,0,OK,,,stacks_1130_DS1.pdf
+1977,mumps,21436,21436,,0,OK,,Arizona=NN,stacks_10894_DS1.pdf
+1978,mumps,16817,16817,,0,OK,,Oklahoma=NN,stacks_10895_DS1.pdf
+1979,mumps,14225,14225,,0,OK,,Oklahoma=NN,stacks_1577_DS1.pdf
+1980,mumps,8576,8576,,0,OK,,New Mexico=NN;Oklahoma=NN,stacks_1484_DS1.pdf
+1981,mumps,4941,4941,,0,OK,,New Mexico=read from page image: NN;Oklahoma=read from page image: NN,stacks_1307_DS1.pdf
+1982,mumps,5270,5270,,0,OK,,Florida=NN;New Mexico=NN;Oklahoma=NN;Oregon=NN,stacks_35066_DS1.pdf
+1983,mumps,3355,3355,,0,OK,,Florida=NN;New Mexico=read from page image: NN;Oklahoma=NN;Oregon=NN,stacks_35188_DS1.pdf
 1984,measles,2587,2587,sum,0,OK,,,stacks_35267_DS1.pdf
 1984,measles_indigenous,2272,2272,,0,OK,,,stacks_35267_DS1.pdf
 1984,measles_imported,315,315,*,0,OK,,,stacks_35267_DS1.pdf
+1984,mumps,3021,3021,,0,OK,,New Mexico=NN;Oklahoma=NN;Oregon=NN,stacks_35267_DS1.pdf
 1985,pertussis,3589,3589,,0,OK,,,stacks_35429_DS1.pdf
+1985,mumps,2982,2982,,0,OK,,Mississippi=NN;New Mexico=NN;Oklahoma=NN;Oregon=NN,stacks_35429_DS1.pdf
+1986,mumps,7790,7790,,0,OK,,Mississippi=read from page image: NN;New Mexico=NN;Oklahoma=NN;Oregon=read from page image: NN,stacks_35496_DS1.pdf
+1987,mumps,12848,12848,,0,OK,,Mississippi=NN;New Mexico=read from page image: NN;Oregon=NN,stacks_35629_DS1.pdf
 1988,measles,3396,3396,sum,0,OK,,,stacks_35958_DS1.pdf
 1988,measles_indigenous,3058,3058,,0,OK,,,stacks_35958_DS1.pdf
 1988,measles_imported,338,338,*,0,OK,,,stacks_35958_DS1.pdf
+1988,mumps,4866,4866,,0,OK,,Mississippi=NN;New Mexico=NN;Oregon=NN;Rhode Island=NN,stacks_35958_DS1.pdf
+1989,mumps,5712,5712,,0,OK,,New Mexico=NN;Oregon=NN,stacks_35853_DS1.pdf
 1990,measles,27786,27786,sum,0,OK,,,stacks_35905_DS1.pdf
 1990,measles_indigenous,26527,26527,,0,OK,,,stacks_35905_DS1.pdf
 1990,measles_imported,1259,1259,*,0,OK,,,stacks_35905_DS1.pdf
 1990,pertussis,4570,4570,,0,OK,,,stacks_35905_DS1.pdf
+1990,mumps,5292,5292,,0,OK,,New Mexico=NN;Oregon=NN,stacks_35905_DS1.pdf
 1991,measles,9643,9643,sum,0,OK,,,stacks_36010_DS1.pdf
 1991,measles_indigenous,9411,9411,,0,OK,,,stacks_36010_DS1.pdf
 1991,measles_imported,232,232,*,0,OK,,,stacks_36010_DS1.pdf
 1991,pertussis,2719,2719,,0,OK,,,stacks_36010_DS1.pdf
+1991,mumps,4264,4264,,0,OK,,New Mexico=NN;Oregon=NN,stacks_36010_DS1.pdf
 1992,measles,2237,2237,sum,0,OK,,,stacks_36063_DS1.pdf
 1992,measles_indigenous,2084,2084,,0,OK,,,stacks_36063_DS1.pdf
 1992,measles_imported,153,153,*,0,OK,,,stacks_36063_DS1.pdf
 1992,pertussis,4083,4083,,0,OK,,,stacks_36063_DS1.pdf
+1992,mumps,2572,2572,,0,OK,,New Mexico=NN;Oregon=NN,stacks_36063_DS1.pdf
 1993,measles,312,312,sum,0,OK,,,mm4253.pdf
 1993,measles_indigenous,237,237,,0,OK,,,mm4253.pdf
 1993,measles_imported,75,75,*,0,OK,,,mm4253.pdf

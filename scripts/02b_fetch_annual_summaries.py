@@ -551,20 +551,181 @@ def parse_mmwr_pdf(year):
 # --------------------------------------------------------------------------
 # Scanned annual summaries 1980-1992 (CDC Stacks PDFs with an OCR text layer)
 # --------------------------------------------------------------------------
-# Only measles and pertussis are read from these. Nothing is corrected by
-# hand or by guesswork: a disease-year is used only if every state cell reads
-# as a number or a defined mark, the states of every geographic division add
-# up to the printed division row, the divisions add up to the printed United
-# States row, and the states add up to the printed United States row.
+# Measles, pertussis and mumps are read from these. A disease-year is used
+# only if every state cell reads as a number or a defined mark, the states of
+# every geographic division add up to the printed division row, the divisions
+# add up to the printed United States row, and the states add up to the
+# printed United States row. Cells the OCR layer damaged may be read from the
+# rendered page image (SCAN_IMAGE_CELLS below); nothing is filled in to make
+# a sum work.
 SCAN_ISSUES = {
     1992: 36063, 1991: 36010, 1990: 35905, 1989: 35853, 1988: 35958, 1987: 35629,
     1986: 35496, 1985: 35429, 1984: 35267, 1983: 35188, 1982: 35066, 1981: 1307,
     1980: 1484,
+    # 1968-1979: read for mumps only. 1977 and 1978 sit in the Stacks MMWR
+    # collection (cdc:101) rather than the NNDSS collection.
+    1979: 1577, 1978: 10895, 1977: 10894, 1976: 1130, 1975: 1041, 1974: 1743,
+    1973: 1849, 1972: 1895, 1971: 1829, 1970: 951, 1969: 838, 1968: 1717,
 }
-SCAN_DISEASES = ("measles", "measles_indigenous", "measles_imported", "pertussis")
+SCAN_DISEASES = ("measles", "measles_indigenous", "measles_imported", "pertussis", "mumps")
+
+# Cells read by eye from a rendered page image (PyMuPDF, 400 dpi crop of the
+# table) where the OCR text layer is damaged. Key: (year, disease, area as in
+# AREA_KEYS); value: (text as printed on the image, PDF page). Every entry is
+# listed in checks_image_cells.csv with what the OCR layer had. A year is
+# still kept only if the strict sum test passes exactly afterwards.
+SCAN_IMAGE_CELLS = {
+    # 1989 mumps, PDF page 13: dashes the OCR layer did not pick up
+    (1989, "mumps", "Maine"): ("-", 13),
+    (1989, "mumps", "Rhode Island"): ("-", 13),
+    (1989, "mumps", "North Dakota"): ("-", 13),
+    (1989, "mumps", "South Dakota"): ("-", 13),
+    # 1984 mumps, PDF page 16: OCR read the comma as a period
+    (1984, "mumps", "East North Central"): ("1,172", 16),
+    # 1982 mumps, PDF page 16
+    (1982, "mumps", "Vermont"): ("7", 16),
+    (1982, "mumps", "Pennsylvania"): ("160", 16),
+    (1982, "mumps", "Ohio"): ("1,775", 16),
+    (1982, "mumps", "North Dakota"): ("-", 16),
+    (1982, "mumps", "South Atlantic"): ("286", 16),
+    (1982, "mumps", "District of Columbia"): ("-", 16),
+    (1982, "mumps", "Georgia"): ("30", 16),
+    (1982, "mumps", "East South Central"): ("68", 16),
+    (1982, "mumps", "Mississippi"): ("11", 16),
+    # 1983 mumps, PDF page 21
+    (1983, "mumps", "Maine"): ("30", 21),
+    (1983, "mumps", "New Hampshire"): ("29", 21),
+    (1983, "mumps", "Rhode Island"): ("16", 21),
+    (1983, "mumps", "Minnesota"): ("30", 21),
+    (1983, "mumps", "North Dakota"): ("3", 21),
+    (1983, "mumps", "South Dakota"): ("-", 21),
+    (1983, "mumps", "Delaware"): ("10", 21),
+    (1983, "mumps", "South Carolina"): ("14", 21),
+    (1983, "mumps", "Georgia"): ("63", 21),
+    (1983, "mumps", "Tennessee"): ("30", 21),
+    (1983, "mumps", "Alabama"): ("2", 21),
+    (1983, "mumps", "Arkansas"): ("3", 21),
+    (1983, "mumps", "Montana"): ("9", 21),
+    (1983, "mumps", "Idaho"): ("9", 21),
+    (1983, "mumps", "Wyoming"): ("3", 21),
+    (1983, "mumps", "Colorado"): ("54", 21),
+    (1983, "mumps", "New Mexico"): ("NN", 21),
+    # 1986 mumps, PDF page 12 (the Alaska, Mississippi and upstate New York
+    # labels are missing from the OCR layer altogether)
+    (1986, "mumps", "Maine"): ("-", 12),
+    (1986, "mumps", NY_UP): ("79", 12),
+    (1986, "mumps", "Tennessee"): ("1,476", 12),
+    (1986, "mumps", "Mississippi"): ("NN", 12),
+    (1986, "mumps", "Wyoming"): ("-", 12),
+    (1986, "mumps", "Colorado"): ("17", 12),
+    (1986, "mumps", "Utah"): ("16", 12),
+    (1986, "mumps", "Nevada"): ("11", 12),
+    (1986, "mumps", "Pacific"): ("416", 12),
+    (1986, "mumps", "Washington"): ("30", 12),
+    (1986, "mumps", "Oregon"): ("NN", 12),
+    (1986, "mumps", "California"): ("354", 12),
+    (1986, "mumps", "Alaska"): ("8", 12),
+    (1986, "mumps", "Hawaii"): ("24", 12),
+    # 1968 mumps, PDF page 10 (Table: reported cases by division and state)
+    (1968, "mumps", "Alaska"): ("705", 10),
+    # 1970 mumps, PDF page 10 (Table 6)
+    (1970, "mumps", "Oklahoma"): ("2,683", 10),
+    # 1972 mumps, PDF page 10
+    (1972, "mumps", "East South Central"): ("3,859", 10),
+    # 1979 mumps, PDF page 13 (division labels and several state labels are
+    # missing from the OCR layer)
+    (1979, "mumps", "New England"): ("768", 13),
+    (1979, "mumps", "Middle Atlantic"): ("1,360", 13),
+    (1979, "mumps", "East North Central"): ("6,056", 13),
+    (1979, "mumps", "Indiana"): ("360", 13),
+    (1979, "mumps", "West North Central"): ("760", 13),
+    (1979, "mumps", "South Atlantic"): ("883", 13),
+    (1979, "mumps", "District of Columbia"): ("2", 13),
+    (1979, "mumps", "Virginia"): ("105", 13),
+    (1979, "mumps", "South Carolina"): ("5", 13),
+    (1979, "mumps", "East South Central"): ("1,623", 13),
+    (1979, "mumps", "Kentucky"): ("1,378", 13),
+    (1979, "mumps", "Tennessee"): ("108", 13),
+    (1979, "mumps", "West South Central"): ("1,429", 13),
+    (1979, "mumps", "Arkansas"): ("489", 13),
+    (1979, "mumps", "Mountain"): ("334", 13),
+    (1979, "mumps", "New Mexico"): ("15", 13),
+    (1979, "mumps", "Arizona"): ("66", 13),
+    (1979, "mumps", "Pacific"): ("1,012", 13),
+    (1979, "mumps", "Oregon"): ("118", 13),
+    # 1980 mumps, PDF page 19 (the OCR layer lost or garbled these row labels)
+    (1980, "mumps", "New England"): ("618", 19),
+    (1980, "mumps", "Middle Atlantic"): ("970", 19),
+    (1980, "mumps", NY_UP): ("174", 19),
+    (1980, "mumps", "East North Central"): ("3,311", 19),
+    (1980, "mumps", "North Dakota"): ("4", 19),
+    (1980, "mumps", "South Dakota"): ("3", 19),
+    # 1981 mumps, PDF page 79 ("MUMPS - Reported cases, by area and age",
+    # Total column; the OCR layer read Louisiana's 6 as 76)
+    (1981, "mumps", "New Hampshire"): ("26", 79),
+    (1981, "mumps", "Vermont"): ("10", 79),
+    (1981, "mumps", NY_CITY): ("95", 79),
+    (1981, "mumps", "Ohio"): ("687", 79),
+    (1981, "mumps", "Illinois"): ("343", 79),
+    (1981, "mumps", "Iowa"): ("94", 79),
+    (1981, "mumps", "North Dakota"): ("-", 79),
+    (1981, "mumps", "South Atlantic"): ("601", 79),
+    (1981, "mumps", "Delaware"): ("10", 79),
+    (1981, "mumps", "West Virginia"): ("120", 79),
+    (1981, "mumps", "Arkansas"): ("7", 79),
+    (1981, "mumps", "Louisiana"): ("6", 79),
+    (1981, "mumps", "Oklahoma"): ("NN", 79),
+    (1981, "mumps", "Idaho"): ("8", 79),
+    (1981, "mumps", "New Mexico"): ("NN", 79),
+    # 1987 mumps, PDF page 12
+    (1987, "mumps", "Massachusetts"): ("21", 12),
+    (1987, "mumps", "Rhode Island"): ("-", 12),
+    (1987, "mumps", "Connecticut"): ("16", 12),
+    (1987, "mumps", "Middle Atlantic"): ("342", 12),
+    (1987, "mumps", "Pennsylvania"): ("86", 12),
+    (1987, "mumps", "Minnesota"): ("810", 12),
+    (1987, "mumps", "Montana"): ("9", 12),
+    (1987, "mumps", "Idaho"): ("7", 12),
+    (1987, "mumps", "Colorado"): ("34", 12),
+    (1987, "mumps", "New Mexico"): ("NN", 12),
+    (1987, "mumps", "Utah"): ("12", 12),
+    (1987, "mumps", "Nevada"): ("5", 12),
+    (1987, "mumps", "Pacific"): ("490", 12),
+    (1987, "mumps", "Washington"): ("70", 12),
+    (1987, "mumps", "California"): ("397", 12),
+}
+# Symbol legends read from the page image where the OCR layer garbled them.
+_NN_OLD = "Report of disease not required by State Health Department"
+SCAN_IMAGE_MARKS = {
+    1968: {"...": ("Data not available", 2), "-": ("Quantity zero", 2), "NN": (_NN_OLD, 2)},
+    1969: {"...": ("Data not available", 2), "-": ("Quantity zero", 2), "NN": (_NN_OLD, 2)},
+    1971: {"...": ("Data not available", 2), "-": ("Quantity zero", 2), "NN": (_NN_OLD, 2)},
+    1972: {"...": ("Data not available", 2), "-": ("Quantity zero", 2), "NN": (_NN_OLD, 2)},
+    1973: {"...": ("Data not available", 2), "-": ("Quantity zero", 2), "NN": (_NN_OLD, 2)},
+    1974: {"...": ("Data not available", 2), "-": ("Quantity zero", 2), "NN": (_NN_OLD, 2)},
+    1975: {"NA": ("Data not available", 2), "-": ("Quantity zero", 2),
+           "NN": (_NN_OLD + " (Not Notifiable)", 2)},
+    1976: {"NA": ("Data not available", 2), "-": ("Quantity zero", 2),
+           "NN": (_NN_OLD + " (not notifiable)", 2)},
+    1977: {"NA": ("Data not available", 2), "-": ("No reported cases", 2),
+           "NN": (_NN_OLD + " (not notifiable)", 2)},
+    1978: {"NA": ("Data not available", 10), "-": ("No reported cases", 10),
+           "NN": (_NN_OLD + " (not notifiable)", 10)},
+    1979: {"NA": ("Data not available", 7), "-": ("No reported cases", 7),
+           "NN": (_NN_OLD + " (not notifiable)", 7)},
+    1980: {"-": ("No reported cases", 12), "NA": ("Data not available", 12),
+           "NN": ("Report of disease not required by state health department (not notifiable)", 12)},
+    1981: {"-": ("No reported cases", 15), "NA": ("Data not available", 15),
+           "NN": ("Report of disease not required by state health department (not notifiable)", 15)},
+    1985: {"-": ("No reported cases", 6), "NA": ("Data not available", 6)},
+    1986: {"-": ("No reported cases", 6), "NA": ("Data not available", 6)},
+    1988: {"-": ("No reported cases", 7), "NA": ("Data not available", 7)},
+    1989: {"-": ("No reported cases", 6), "NA": ("Data not available", 6)},
+}
 # OCR spellings of area labels seen in the scans (labels only, never numbers)
 SCAN_LABEL_ALIASES = {"rl": "Rhode Island", "iii": "Illinois", "lll": "Illinois",
-                      "ili": "Illinois", "lii": "Illinois", "iil": "Illinois"}
+                      "ili": "Illinois", "lii": "Illinois", "iil": "Illinois",
+                      "nm": "New Mexico"}     # "N. M." in the 1978 summary
 DIVISIONS = {
     "New England": ["Maine", "New Hampshire", "Vermont", "Massachusetts", "Rhode Island",
                     "Connecticut"],
@@ -648,20 +809,24 @@ def parse_scan_pdf(year):
     for pno, page in enumerate(doc, start=1):
         text = page.get_text()
         res["text"].append(text)
-        if not re.search(r"(?i)pertussis|indigenous|rubeola|measles", text):
+        # spaces removed: some OCR layers are letter-spaced ("M U M P S")
+        if not re.search(r"(?i)pertussis|indigenous|rubeola|measles|mumps", re.sub(r"\s", "", text)):
             continue
         if len(re.findall(r"\d", text)) < 250:
             continue
         slope, lines = deskewed_lines(page)
         us_idx = None
+        n_lab = 0
         for li, line in enumerate(lines):
-            if len(line) >= 4 and _key(line[0][4] + line[1][4]) == "unitedstates" and \
-                    sum(1 for w in line[2:] if re.search(r"\d", w[4])) >= (len(line) - 2) * 0.7:
-                us_idx = li
+            # label = the words before the first number ("U N IT E D  S T A T E S ....")
+            k = next((i for i, w in enumerate(line) if re.search(r"\d", w[4])), len(line))
+            if k >= 1 and len(line) - k >= 2 and _key("".join(w[4] for w in line[:k])) == "unitedstates" \
+                    and sum(1 for w in line[k:] if re.search(r"\d", w[4])) >= (len(line) - k) * 0.7:
+                us_idx, n_lab = li, k
                 break
         if us_idx is None:
             continue
-        us_vals = merge_close(lines[us_idx][2:])
+        us_vals = merge_close(lines[us_idx][n_lab:])
         us_vals = [w for w in us_vals if re.search(r"\d", w[4])]
         ncol = len(us_vals)
         anchors = [w[2] for w in us_vals]
@@ -701,7 +866,8 @@ def parse_scan_pdf(year):
             if re.search(r"(?i)reported cases|MMWR|United States[,.]|SUMMARY TABLES|continued", s_):
                 continue
             if us_y - 70 < ly < us_y - 2.5:
-                hdr.extend(merge_close(line, gap=2.0))     # "Im" "ported" -> "Imported"
+                # "Im" "ported" -> "Imported"; "M U M P S" (letter-spaced OCR) -> "MUMPS"
+                hdr.extend(merge_close(line, gap=2.6))
         texts = [[] for _ in range(ncol)]
         for w in sorted(hdr, key=lambda w: (round(w[1]), w[0])):
             if w[4] == "Area":
@@ -725,10 +891,17 @@ def parse_scan_pdf(year):
                 res["cells"].append((area, lab, d, raw,
                                      "Table by geographic division and area, PDF page %d, column \"%s\""
                                      % (pno, texts[j])))
+        last_y = max(max(w[3] for ws in cols.values() for w in ws) if cols else 0
+                     for (_, _, cols) in rows)
         for d, j in cmap.items():
             seen[d] = pno
             res["colmap"].append((d, pno, texts[j], us_vals[j][4]))
+            # where the column sits on the page, for rendering it as an image
+            res.setdefault("geom", {})[d] = (pno, lower[j], upper[j], lower[0], us_y - 40, last_y + 4)
     res["marks"] = find_mark_defs(res["text"])
+    for mk, (meaning, pg) in SCAN_IMAGE_MARKS.get(year, {}).items():
+        # the legend as seen on the page image replaces whatever the OCR layer gave
+        res["marks"][mk] = "%s (p.%d; legend read from the page image)" % (meaning, pg)
     if "-" not in res["marks"]:
         # The legend ("EXPLANATION OF SYMBOLS USED IN TABLES") is there but the
         # OCR layer lost the dash printed after the dotted leader.
@@ -741,44 +914,76 @@ def parse_scan_pdf(year):
     return res
 
 
-def scan_validate(cells, marks, disease):
+def scan_validate(cells, marks, disease, year=None, all_errors=False):
     """Strict acceptance test for one disease of one scanned year.
     Returns (ok, reason, {area: (cases, flag)}). Any state cell that the OCR
-    layer did not read as a number or a mark fails the disease-year."""
+    layer did not read as a number or a mark fails the disease-year.
+    Cells listed in SCAN_IMAGE_CELLS replace the OCR text and carry the flag
+    'read from page image'. With all_errors=True every failing division is
+    listed (used to decide which cells to look at on the image)."""
     need = [s for s in STATES if s != "New York"] + [NY_UP, NY_CITY, US] + list(DIVISIONS)
     got = {}
     unread = []
+
+    def interpret(text, prefix):
+        """-> (cases, flag) or None when the text is not a number or a defined mark."""
+        text = text.strip()
+        if re.fullmatch(r"[.…·]{3,}", text):     # "..." = data not available (1968-1974)
+            return ("", prefix + "...") if "..." in marks else None
+        num, mark, sym = parse_cell(text)
+        if num is not None:
+            return (num, prefix.rstrip(": ") if prefix else sym)
+        if mark == "-" and dash_is_zero(marks):
+            return (0, prefix + "-" + ("" if prefix else sym))
+        # NR is printed once (North Carolina, 1974) and the issue does not define
+        # it; it is kept as a mark with no number, never as zero
+        if mark in ("NN", "NA", "N", "U", "NR") or (mark in marks and mark != "-"):
+            return ("", prefix + mark)
+        return None
+
     for (area, label, d, raw, table) in cells:
         if d != disease or area not in need:
             continue
-        num, mark, sym = parse_cell(raw)
-        if num is not None:
-            got[area] = (num, sym)
-        elif mark == "-" and dash_is_zero(marks):
-            got[area] = (0, "-" + sym)
-        elif mark in ("NN", "NA", "N", "U"):
-            got[area] = ("", mark)
-        elif area in DIVISIONS or area == US:
-            return False, "total row not readable: %s = %r" % (area, raw), got
-        else:
+        img = SCAN_IMAGE_CELLS.get((year, disease, area))
+        if img is not None:
+            rec = interpret(img[0], "read from page image: ")
+            if rec is None:
+                return False, "image reading not usable: %s = %r" % (area, img[0]), got
+            got[area] = rec
+            continue
+        rec = interpret(raw, "")
+        if rec is None:
             unread.append("%s=%r" % (area, raw))
             got[area] = ("", "unread")
+        else:
+            got[area] = rec
+    # rows whose label the OCR layer lost entirely, read from the image
+    for (y_, d_, area), (txt, pg) in SCAN_IMAGE_CELLS.items():
+        if y_ == year and d_ == disease and area not in got:
+            rec = interpret(txt, "read from page image: ")
+            if rec is None:
+                return False, "image reading not usable: %s = %r" % (area, txt), got
+            got[area] = rec
+    errors = []
     if unread:
-        return False, "%d state cells not readable in the OCR layer: %s" % (
-            len(unread), ", ".join(unread[:8])), got
+        errors.append("%d cells not readable in the OCR layer: %s" % (len(unread), ", ".join(unread)))
     miss = [a for a in need if a not in got]
     if miss:
-        return False, "%d rows not found: %s" % (len(miss), ", ".join(miss[:6])), got
-    if got[US][0] == "":
-        return False, "US total not a number", got
-    n = lambda a: got[a][0] if got[a][0] != "" else 0
+        errors.append("%d rows not found: %s" % (len(miss), ", ".join(miss)))
+    if errors and not all_errors:
+        return False, errors[0], got
+    n = lambda a: got[a][0] if a in got and got[a][0] != "" else 0
     for div, members in DIVISIONS.items():
-        if got[div][0] == "" or sum(n(m) for m in members) != got[div][0]:
-            return False, "%s: states add to %d, printed %s" % (
-                div, sum(n(m) for m in members), got[div][0]), got
-    if sum(n(d_) for d_ in DIVISIONS) != got[US][0]:
-        return False, "divisions add to %d, printed US total %d" % (
-            sum(n(d_) for d_ in DIVISIONS), got[US][0]), got
+        if div not in got or got[div][0] == "" or sum(n(m) for m in members) != got[div][0]:
+            errors.append("%s: states add to %d, printed %s" % (
+                div, sum(n(m) for m in members), got.get(div, ("missing",))[0]))
+    if US not in got or got[US][0] == "":
+        errors.append("US total not a number")
+    elif sum(n(d_) for d_ in DIVISIONS) != got[US][0]:
+        errors.append("divisions add to %d, printed US total %d" % (
+            sum(n(d_) for d_ in DIVISIONS), got[US][0]))
+    if errors:
+        return False, " | ".join(errors) if all_errors else errors[0], got
     return True, "all nine division sums and the US sum equal the printed rows", got
 
 
@@ -1040,7 +1245,8 @@ def parse_nndss_pdf(path):
 # --------------------------------------------------------------------------
 def dash_is_zero(marks):
     d = marks.get("-", "")
-    return bool(re.search(r"(?i)no reported cases", d))
+    # "No reported cases" (1977 on) or "Quantity zero" (1968-1976 legends)
+    return bool(re.search(r"(?i)no reported cases|quantity zero", d))
 
 
 def cell_to_record(raw, marks):
@@ -1057,6 +1263,10 @@ def combine_ny(up, city):
     """up/city: (cases, flag). New York = upstate + New York City."""
     (c1, f1), (c2, f2) = up, city
     if c1 != "" and c2 != "":
+        img = "read from page image"
+        if img in f1 or img in f2:
+            parts = [("upstate" if img in f1 else ""), ("NYC" if img in f2 else "")]
+            return c1 + c2, "%s (%s part)" % (img, " and ".join(p for p in parts if p))
         flag = "sum" if (f1.startswith("sum") or f2.startswith("sum")) else ""
         r1, r2 = f1.replace("sum", ""), f2.replace("sum", "")
         if r1.startswith("-") and r2.startswith("-"):
@@ -1075,6 +1285,13 @@ def combine_ny(up, city):
     if known:
         note += ";other part=%d" % known[0]
     return "", note
+
+
+def got_ny_flag(got):
+    """Flag of the combined New York row for one disease ('' if numeric or absent)."""
+    if NY_UP in got and NY_CITY in got and "New York" not in got:
+        return combine_ny(got[NY_UP], got[NY_CITY])[1]
+    return ""
 
 
 def no_cases_statement(text, year):
@@ -1134,6 +1351,7 @@ def main():
     out_rows, area_rows, sumcheck, markrows, colrows, htmlcmp, problems = [], [], [], [], [], [], []
     finalrows = []
     scanrows = []
+    imgrows = []
 
     def emit(year, cells, marks, url, fname, zero_note=None):
         """cells: list of (area, label, disease, raw, table)."""
@@ -1190,9 +1408,17 @@ def main():
                     marks_seen.append("%s=%s" % (st, rec[1]))
             usrec = got.get(US, ("", "missing"))
             ok = (usrec[0] != "" and usrec[0] == total and not missing)
+            result = "OK" if ok else "CHECK"
+            # New York row left blank because one part is not a number (upstate
+            # NN in 1968-1973): the US total still contains the other part
+            ny_part = re.search(r"other part=(\d+)", got_ny_flag(got))
+            if not ok and usrec[0] != "" and not missing and ny_part and \
+                    usrec[0] - total == int(ny_part.group(1)):
+                result = ("OK (difference = New York City cases; the New York row is blank "
+                          "because upstate New York is marked NN)")
             sumcheck.append([year, d, total, usrec[0], usrec[1],
                              "" if usrec[0] == "" else usrec[0] - total,
-                             "OK" if ok else "CHECK", ";".join(missing), ";".join(marks_seen), fname])
+                             result, ";".join(missing), ";".join(marks_seen), fname])
         if zero_note:
             for d, sentence in zero_note.items():
                 if d in by:
@@ -1202,7 +1428,7 @@ def main():
                                      'Table 2 footnote: "%s"' % sentence[:300]])
                 sumcheck.append([year, d, 0, 0, "fn0", 0, "OK (footnote: no cases in US)", "", "", fname])
 
-    # ---- 1980-1992 scanned annual summaries (measles and pertussis only)
+    # ---- scanned annual summaries (measles, pertussis and mumps)
     for year in sorted(SCAN_ISSUES):
         sc = parse_scan_pdf(year)
         if sc is None:
@@ -1211,20 +1437,24 @@ def main():
             continue
         heads = {d: (pno, text, usval) for (d, pno, text, usval) in sc["colmap"]}
         results = {}
-        for d in ("measles", "measles_indigenous", "measles_imported", "pertussis"):
+        wanted = ("mumps",) if year < 1980 else \
+            ("measles", "measles_indigenous", "measles_imported", "pertussis", "mumps")
+        heads = {d: v for d, v in heads.items() if d in wanted}
+        for d in wanted:
             if d not in heads:
                 continue
-            results[d] = scan_validate(sc["cells"], sc["marks"], d)
+            results[d] = scan_validate(sc["cells"], sc["marks"], d, year)
         split = "measles_indigenous" in heads or "measles_imported" in heads
         accept = set()
-        if "pertussis" in results and results["pertussis"][0]:
-            accept.add("pertussis")
+        for d in ("pertussis", "mumps"):
+            if d in results and results[d][0]:
+                accept.add(d)
         if split:
             if all(d in results and results[d][0] for d in ("measles_indigenous", "measles_imported")):
                 accept.update(["measles_indigenous", "measles_imported"])
         elif "measles" in results and results["measles"][0]:
             accept.add("measles")
-        for d in ("measles", "measles_indigenous", "measles_imported", "pertussis"):
+        for d in wanted:
             if d in results:
                 why = results[d][1]
                 if results[d][0] and d not in accept:
@@ -1239,12 +1469,23 @@ def main():
         if not accept:
             continue
         by, tab = defaultdict(dict), {}
+        ocr = {}
         for (area, label, d, raw, table) in sc["cells"]:
-            if d in accept and area in results[d][2]:
-                by[d][area] = results[d][2][area]
-                tab[d] = table + " (scan, OCR text layer)"
-                area_rows.append([year, area, label, d, by[d][area][0], by[d][area][1], raw,
+            ocr.setdefault((d, area), (label, raw))
+            tab.setdefault(d, table + " (scan, OCR text layer)")
+        for d in sorted(accept):
+            for area, rec in results[d][2].items():
+                label, raw = ocr.get((d, area), ("(label not legible in the OCR layer)", ""))
+                by[d][area] = rec
+                area_rows.append([year, area, label, d, rec[0], rec[1], raw,
                                   sc["url"], sc["file"], tab[d]])
+                if rec[1].startswith("read from page image"):
+                    img = SCAN_IMAGE_CELLS[(year, d, area)]
+                    imgrows.append([year, d, area, img[1], raw, img[0], sc["file"]])
+            if any(SCAN_IMAGE_CELLS.get((year, d, a)) for a in results[d][2]):
+                tab[d] = tab[d].replace("(scan, OCR text layer)",
+                                        "(scan, OCR text layer; cells flagged 'read from page image' "
+                                        "were read from the rendered page)")
         for (d, pno, text, usval) in sc["colmap"]:
             if d in accept:
                 colrows.append([year, "scan pdf", d, pno, text, usval])
@@ -1369,6 +1610,9 @@ def main():
           ["year", "disease", "pdf_cells", "html_cells", "cells_differing", "differences"], htmlcmp)
     write("checks_marks.csv", ["year", "source_file", "mark", "definition_as_printed"],
           sorted(set(map(tuple, markrows))))
+    write("checks_image_cells.csv",
+          ["year", "disease", "area", "pdf_page", "ocr_text_layer_had", "read_from_page_image",
+           "source_file"], imgrows)
     write("checks_scans_1980_1992.csv",
           ["year", "disease", "used", "result_of_strict_check", "pdf_page", "column_header_as_read",
            "us_total_as_read", "source_file"], scanrows)
