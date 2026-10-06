@@ -214,7 +214,7 @@ printed division row, and the divisions add to the printed U.S. row. The other
 
 **Mumps 1968 to 1992 (added October 6, 2026).** Read from the scanned summaries
 for every year 1968 to 1992, with the same three-level sum test. Where the scan's
-text layer was damaged, 103 cells (83 state rows) were read from the page
+text layer was damaged, 112 cells (91 state rows) were read from the page
 image and are listed in `checks_image_cells.csv`. Two 1971 cells are misprinted ("-99" for DC,
 "8.784" for Ohio); Eric accepted the readings 99 and 8,784 on October 6, 2026,
 and the flags record it. 1981 uses the by-area-and-age mumps table, since that
