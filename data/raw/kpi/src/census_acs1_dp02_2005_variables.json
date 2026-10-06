@@ -1,0 +1,3768 @@
+{
+  "variables": {
+    "DP02_0019EA": {
+      "label": "Annotation of Estimate!!MARITAL STATUS!!Males 15 years and over!!Now married, except separated",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0072EA": {
+      "label": "Annotation of Estimate!!YEAR OF ENTRY!!Population born outside the United States",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0076MA": {
+      "label": "Annotation of Margin of Error!!YEAR OF ENTRY!!Population born outside the United States!!Foreign born",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0117EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!Scotch-Irish",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0125M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!West Indian (excluding Hispanic origin groups)",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0041MA": {
+      "label": "Annotation of Margin of Error!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years in households!!Years responsible for grandchildren!!5 or more years",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0125E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!West Indian (excluding Hispanic origin groups)",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0039E": {
+      "label": "Estimate!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years in households!!Years responsible for grandchildren!!1 or 2 years",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0108MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!Greek",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0094EA": {
+      "label": "Annotation of Estimate!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Asian and Pacific Islander languages",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0124M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!Welsh",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0104EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!English",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0039M": {
+      "label": "Margin of Error!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years in households!!Years responsible for grandchildren!!1 or 2 years",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0124E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!Welsh",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0098MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0038E": {
+      "label": "Estimate!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years in households!!Years responsible for grandchildren!!Less than 1 year",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0006EA": {
+      "label": "Annotation of Estimate!!SCHOOL ENROLLMENT!!Population 3 years and over enrolled in school!!College or graduate school",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0123M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!Ukrainian",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0063MA": {
+      "label": "Annotation of Margin of Error!!PLACE OF BIRTH!!Total population!!Native",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0038M": {
+      "label": "Margin of Error!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years in households!!Years responsible for grandchildren!!Less than 1 year",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0123E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!Ukrainian",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0032MA": {
+      "label": "Annotation of Margin of Error!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months!!Per 1,000 women 15 to 50 years old",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0037M": {
+      "label": "Margin of Error!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years in households!!Responsible for grandchildren",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0122M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!Swiss",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0037E": {
+      "label": "Estimate!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years in households!!Responsible for grandchildren",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0122E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!Swiss",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0121M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!Swedish",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0085EA": {
+      "label": "Annotation of Estimate!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea!!Northern America",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0036M": {
+      "label": "Margin of Error!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years in households",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0121E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!Swedish",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0036E": {
+      "label": "Estimate!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years in households",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0089MA": {
+      "label": "Annotation of Margin of Error!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Language other than English!!Speak English less than \"very well\"",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0050EA": {
+      "label": "Annotation of Estimate!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 16 to 64 years",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0120M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!Subsaharan African",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0035M": {
+      "label": "Margin of Error!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months!!Per 1,000 women 35 to 50 years old",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0120E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!Subsaharan African",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0054MA": {
+      "label": "Annotation of Margin of Error!!RESIDENCE 1 YEAR AGO!!Population 1 year and over",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0035E": {
+      "label": "Estimate!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months!!Per 1,000 women 35 to 50 years old",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0034M": {
+      "label": "Margin of Error!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months!!Per 1,000 women 20 to 34 years old",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0034E": {
+      "label": "Estimate!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months!!Per 1,000 women 20 to 34 years old",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0015EA": {
+      "label": "Annotation of Estimate!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Percent high school graduate or higher",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0072MA": {
+      "label": "Annotation of Margin of Error!!YEAR OF ENTRY!!Population born outside the United States",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0019MA": {
+      "label": "Annotation of Margin of Error!!MARITAL STATUS!!Males 15 years and over!!Now married, except separated",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0117MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!Scotch-Irish",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0113EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!Norwegian",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0037EA": {
+      "label": "Annotation of Estimate!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years in households!!Responsible for grandchildren",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0100EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!Arab",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0104MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!English",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0094MA": {
+      "label": "Annotation of Margin of Error!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Asian and Pacific Islander languages",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0090EA": {
+      "label": "Annotation of Estimate!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Spanish",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0002EA": {
+      "label": "Annotation of Estimate!!SCHOOL ENROLLMENT!!Population 3 years and over enrolled in school!!Nursery school, preschool",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0006MA": {
+      "label": "Annotation of Margin of Error!!SCHOOL ENROLLMENT!!Population 3 years and over enrolled in school!!College or graduate school",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0028EA": {
+      "label": "Annotation of Estimate!!MARITAL STATUS!!Females 15 years and over!!Divorced",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0085MA": {
+      "label": "Annotation of Margin of Error!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea!!Northern America",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0081EA": {
+      "label": "Annotation of Estimate!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea!!Asia",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0050MA": {
+      "label": "Annotation of Margin of Error!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 16 to 64 years",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0084M": {
+      "label": "Margin of Error!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea!!Latin America",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0085M": {
+      "label": "Margin of Error!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea!!Northern America",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0085E": {
+      "label": "Estimate!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea!!Northern America",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0011EA": {
+      "label": "Annotation of Estimate!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Some college, no degree",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0015MA": {
+      "label": "Annotation of Margin of Error!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Percent high school graduate or higher",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0090MA": {
+      "label": "Annotation of Margin of Error!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Spanish",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0113MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!Norwegian",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0083M": {
+      "label": "Margin of Error!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea!!Oceania",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0084E": {
+      "label": "Estimate!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea!!Latin America",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0068EA": {
+      "label": "Annotation of Estimate!!PLACE OF BIRTH!!Total population!!Foreign born",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0100MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!Arab",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0082M": {
+      "label": "Margin of Error!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea!!Africa",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0083E": {
+      "label": "Estimate!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea!!Oceania",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0033EA": {
+      "label": "Annotation of Estimate!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months!!Per 1,000 women 15 to 19 years old",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0037MA": {
+      "label": "Annotation of Margin of Error!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years in households!!Responsible for grandchildren",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0081M": {
+      "label": "Margin of Error!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea!!Asia",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0002MA": {
+      "label": "Annotation of Margin of Error!!SCHOOL ENROLLMENT!!Population 3 years and over enrolled in school!!Nursery school, preschool",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0082E": {
+      "label": "Estimate!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea!!Africa",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0081MA": {
+      "label": "Annotation of Margin of Error!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea!!Asia",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0080M": {
+      "label": "Margin of Error!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea!!Europe",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0059EA": {
+      "label": "Annotation of Estimate!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Different house in the U.S.!!Different county!!Same state",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0122EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!Swiss",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0081E": {
+      "label": "Estimate!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea!!Asia",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "NAME": {
+      "label": "Geographic Area Name",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0080E": {
+      "label": "Estimate!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea!!Europe",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0024EA": {
+      "label": "Annotation of Estimate!!MARITAL STATUS!!Females 15 years and over!!Never married",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0028MA": {
+      "label": "Annotation of Margin of Error!!MARITAL STATUS!!Females 15 years and over!!Divorced",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0046EA": {
+      "label": "Annotation of Estimate!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 5 years and over",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0109EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!Hungarian",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0011MA": {
+      "label": "Annotation of Margin of Error!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Some college, no degree",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0099EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!American",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0045M": {
+      "label": "Margin of Error!!VETERAN STATUS!!Civilian population 18 years and over!!Civilian veterans",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0045E": {
+      "label": "Estimate!!VETERAN STATUS!!Civilian population 18 years and over!!Civilian veterans",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0044M": {
+      "label": "Margin of Error!!VETERAN STATUS!!Civilian population 18 years and over",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0064EA": {
+      "label": "Annotation of Estimate!!PLACE OF BIRTH!!Total population!!Native!!Born in United States",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0044E": {
+      "label": "Estimate!!VETERAN STATUS!!Civilian population 18 years and over",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0068MA": {
+      "label": "Annotation of Margin of Error!!PLACE OF BIRTH!!Total population!!Foreign born",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0043M": {
+      "label": "Margin of Error!!GRANDPARENTS!!Characteristics of grandparents responsible for own grandchildren under 18 years!!Who are married",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "float",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0033MA": {
+      "label": "Annotation of Margin of Error!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months!!Per 1,000 women 15 to 19 years old",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0043E": {
+      "label": "Estimate!!GRANDPARENTS!!Characteristics of grandparents responsible for own grandchildren under 18 years!!Who are married",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "float",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0086EA": {
+      "label": "Annotation of Estimate!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0042M": {
+      "label": "Margin of Error!!GRANDPARENTS!!Characteristics of grandparents responsible for own grandchildren under 18 years!!Who are female",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "float",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0042E": {
+      "label": "Estimate!!GRANDPARENTS!!Characteristics of grandparents responsible for own grandchildren under 18 years!!Who are female",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "float",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0122MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!Swiss",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0040M": {
+      "label": "Margin of Error!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years in households!!Years responsible for grandchildren!!3 or 4 years",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0059MA": {
+      "label": "Annotation of Margin of Error!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Different house in the U.S.!!Different county!!Same state",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0041M": {
+      "label": "Margin of Error!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years in households!!Years responsible for grandchildren!!5 or more years",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0055EA": {
+      "label": "Annotation of Estimate!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Same house",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0089M": {
+      "label": "Margin of Error!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Language other than English!!Speak English less than \"very well\"",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0041E": {
+      "label": "Estimate!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years in households!!Years responsible for grandchildren!!5 or more years",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0089E": {
+      "label": "Estimate!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Language other than English!!Speak English less than \"very well\"",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0088M": {
+      "label": "Margin of Error!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Language other than English",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0024MA": {
+      "label": "Annotation of Margin of Error!!MARITAL STATUS!!Females 15 years and over!!Never married",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0040E": {
+      "label": "Estimate!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years in households!!Years responsible for grandchildren!!3 or 4 years",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0088E": {
+      "label": "Estimate!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Language other than English",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0020EA": {
+      "label": "Annotation of Estimate!!MARITAL STATUS!!Males 15 years and over!!Separated",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0087M": {
+      "label": "Margin of Error!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!English only",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0077EA": {
+      "label": "Annotation of Estimate!!YEAR OF ENTRY!!Population born outside the United States!!Foreign born!!Entered 2000 or later",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0087E": {
+      "label": "Estimate!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!English only",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0046MA": {
+      "label": "Annotation of Margin of Error!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 5 years and over",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0086M": {
+      "label": "Margin of Error!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0086E": {
+      "label": "Estimate!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0042EA": {
+      "label": "Annotation of Estimate!!GRANDPARENTS!!Characteristics of grandparents responsible for own grandchildren under 18 years!!Who are female",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0029E": {
+      "label": "Estimate!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0109MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!Hungarian",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0095EA": {
+      "label": "Annotation of Estimate!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Asian and Pacific Islander languages!!Speak English less than \"very well\"",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0114M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!Polish",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0105EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!French (except Basque)",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0029M": {
+      "label": "Margin of Error!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0114E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!Polish",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0099MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!American",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0007EA": {
+      "label": "Annotation of Estimate!!EDUCATIONAL ATTAINMENT!!Population 25 years and over",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0028E": {
+      "label": "Estimate!!MARITAL STATUS!!Females 15 years and over!!Divorced",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0113M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!Norwegian",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0028M": {
+      "label": "Margin of Error!!MARITAL STATUS!!Females 15 years and over!!Divorced",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0064MA": {
+      "label": "Annotation of Margin of Error!!PLACE OF BIRTH!!Total population!!Native!!Born in United States",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0113E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!Norwegian",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0060EA": {
+      "label": "Annotation of Estimate!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Different house in the U.S.!!Different county!!Different state",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0027E": {
+      "label": "Estimate!!MARITAL STATUS!!Females 15 years and over!!Widowed",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0112M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!Lithuanian",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0027M": {
+      "label": "Margin of Error!!MARITAL STATUS!!Females 15 years and over!!Widowed",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0112E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!Lithuanian",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0029EA": {
+      "label": "Annotation of Estimate!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0026M": {
+      "label": "Margin of Error!!MARITAL STATUS!!Females 15 years and over!!Separated",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0111M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!Italian",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0086MA": {
+      "label": "Annotation of Margin of Error!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0026E": {
+      "label": "Estimate!!MARITAL STATUS!!Females 15 years and over!!Separated",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0082EA": {
+      "label": "Annotation of Estimate!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea!!Africa",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0111E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!Italian",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0110M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!Irish",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0051EA": {
+      "label": "Annotation of Estimate!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 16 to 64 years!!With a disability",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0025M": {
+      "label": "Margin of Error!!MARITAL STATUS!!Females 15 years and over!!Now married, except separated",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0110E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!Irish",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0055MA": {
+      "label": "Annotation of Margin of Error!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Same house",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0025E": {
+      "label": "Estimate!!MARITAL STATUS!!Females 15 years and over!!Now married, except separated",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0020MA": {
+      "label": "Annotation of Margin of Error!!MARITAL STATUS!!Males 15 years and over!!Separated",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0024M": {
+      "label": "Margin of Error!!MARITAL STATUS!!Females 15 years and over!!Never married",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0024E": {
+      "label": "Estimate!!MARITAL STATUS!!Females 15 years and over!!Never married",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0073EA": {
+      "label": "Annotation of Estimate!!YEAR OF ENTRY!!Population born outside the United States!!Native",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0023M": {
+      "label": "Margin of Error!!MARITAL STATUS!!Females 15 years and over",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0077MA": {
+      "label": "Annotation of Margin of Error!!YEAR OF ENTRY!!Population born outside the United States!!Foreign born!!Entered 2000 or later",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0023E": {
+      "label": "Estimate!!MARITAL STATUS!!Females 15 years and over",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0022M": {
+      "label": "Margin of Error!!MARITAL STATUS!!Males 15 years and over!!Divorced",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0118EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!Scottish",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0042MA": {
+      "label": "Annotation of Margin of Error!!GRANDPARENTS!!Characteristics of grandparents responsible for own grandchildren under 18 years!!Who are female",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0022E": {
+      "label": "Estimate!!MARITAL STATUS!!Males 15 years and over!!Divorced",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0038EA": {
+      "label": "Annotation of Estimate!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years in households!!Years responsible for grandchildren!!Less than 1 year",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0060MA": {
+      "label": "Annotation of Margin of Error!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Different house in the U.S.!!Different county!!Different state",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0101EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!Czech",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0105MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!French (except Basque)",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0095MA": {
+      "label": "Annotation of Margin of Error!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Asian and Pacific Islander languages!!Speak English less than \"very well\"",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0091EA": {
+      "label": "Annotation of Estimate!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Spanish!!Speak English less than \"very well\"",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0003EA": {
+      "label": "Annotation of Estimate!!SCHOOL ENROLLMENT!!Population 3 years and over enrolled in school!!Kindergarten",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0007MA": {
+      "label": "Annotation of Margin of Error!!EDUCATIONAL ATTAINMENT!!Population 25 years and over",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0082MA": {
+      "label": "Annotation of Margin of Error!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea!!Africa",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0123EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!Ukrainian",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0025EA": {
+      "label": "Annotation of Estimate!!MARITAL STATUS!!Females 15 years and over!!Now married, except separated",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0119E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!Slovak",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0029MA": {
+      "label": "Annotation of Margin of Error!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0119M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!Slovak",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0118E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!Scottish",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0118M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!Scottish",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0051MA": {
+      "label": "Annotation of Margin of Error!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 16 to 64 years!!With a disability",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0117E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!Scotch-Irish",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0117M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!Scotch-Irish",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0116E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!Russian",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0016EA": {
+      "label": "Annotation of Estimate!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Percent bachelor's degree or higher",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0073MA": {
+      "label": "Annotation of Margin of Error!!YEAR OF ENTRY!!Population born outside the United States!!Native",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0116M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!Russian",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0115E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!Portuguese",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0118MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!Scottish",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0114EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!Polish",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0115M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!Portuguese",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0101MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!Czech",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0072M": {
+      "label": "Margin of Error!!YEAR OF ENTRY!!Population born outside the United States",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0073E": {
+      "label": "Estimate!!YEAR OF ENTRY!!Population born outside the United States!!Native",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0034EA": {
+      "label": "Annotation of Estimate!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months!!Per 1,000 women 20 to 34 years old",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0038MA": {
+      "label": "Annotation of Margin of Error!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years in households!!Years responsible for grandchildren!!Less than 1 year",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0071M": {
+      "label": "Margin of Error!!U.S. CITIZENSHIP STATUS!!Foreign-born population!!Not a U.S. citizen",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0072E": {
+      "label": "Estimate!!YEAR OF ENTRY!!Population born outside the United States",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0003MA": {
+      "label": "Annotation of Margin of Error!!SCHOOL ENROLLMENT!!Population 3 years and over enrolled in school!!Kindergarten",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0123MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!Ukrainian",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0070M": {
+      "label": "Margin of Error!!U.S. CITIZENSHIP STATUS!!Foreign-born population!!Naturalized U.S. citizen",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0071E": {
+      "label": "Estimate!!U.S. CITIZENSHIP STATUS!!Foreign-born population!!Not a U.S. citizen",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0056EA": {
+      "label": "Annotation of Estimate!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Different house in the U.S.",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0070E": {
+      "label": "Estimate!!U.S. CITIZENSHIP STATUS!!Foreign-born population!!Naturalized U.S. citizen",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0021EA": {
+      "label": "Annotation of Estimate!!MARITAL STATUS!!Males 15 years and over!!Widowed",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0025MA": {
+      "label": "Annotation of Margin of Error!!MARITAL STATUS!!Females 15 years and over!!Now married, except separated",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0047EA": {
+      "label": "Annotation of Estimate!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 5 years and over!!With a disability",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0012EA": {
+      "label": "Annotation of Estimate!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Associate's degree",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0016MA": {
+      "label": "Annotation of Margin of Error!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Percent bachelor's degree or higher",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0091MA": {
+      "label": "Annotation of Margin of Error!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Spanish!!Speak English less than \"very well\"",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0069EA": {
+      "label": "Annotation of Estimate!!U.S. CITIZENSHIP STATUS!!Foreign-born population",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0110EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!Irish",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0114MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!Polish",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0033M": {
+      "label": "Margin of Error!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months!!Per 1,000 women 15 to 19 years old",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0034MA": {
+      "label": "Annotation of Margin of Error!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months!!Per 1,000 women 20 to 34 years old",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0033E": {
+      "label": "Estimate!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months!!Per 1,000 women 15 to 19 years old",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0030EA": {
+      "label": "Annotation of Estimate!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months!!Unmarried women (widowed, divorced, and never married)",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0032M": {
+      "label": "Margin of Error!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months!!Per 1,000 women 15 to 50 years old",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0087EA": {
+      "label": "Annotation of Estimate!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!English only",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0032E": {
+      "label": "Estimate!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months!!Per 1,000 women 15 to 50 years old",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0052EA": {
+      "label": "Annotation of Estimate!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 65 years and over",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0031M": {
+      "label": "Margin of Error!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months!!Per 1,000 unmarried women",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0079M": {
+      "label": "Margin of Error!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0031E": {
+      "label": "Estimate!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months!!Per 1,000 unmarried women",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0056MA": {
+      "label": "Annotation of Margin of Error!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Different house in the U.S.",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0079E": {
+      "label": "Estimate!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0021MA": {
+      "label": "Annotation of Margin of Error!!MARITAL STATUS!!Males 15 years and over!!Widowed",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0030M": {
+      "label": "Margin of Error!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months!!Unmarried women (widowed, divorced, and never married)",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0078M": {
+      "label": "Margin of Error!!YEAR OF ENTRY!!Population born outside the United States!!Foreign born!!Entered before 2000",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0030E": {
+      "label": "Estimate!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months!!Unmarried women (widowed, divorced, and never married)",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0078E": {
+      "label": "Estimate!!YEAR OF ENTRY!!Population born outside the United States!!Foreign born!!Entered before 2000",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0077M": {
+      "label": "Margin of Error!!YEAR OF ENTRY!!Population born outside the United States!!Foreign born!!Entered 2000 or later",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0078EA": {
+      "label": "Annotation of Estimate!!YEAR OF ENTRY!!Population born outside the United States!!Foreign born!!Entered before 2000",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0077E": {
+      "label": "Estimate!!YEAR OF ENTRY!!Population born outside the United States!!Foreign born!!Entered 2000 or later",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0076M": {
+      "label": "Margin of Error!!YEAR OF ENTRY!!Population born outside the United States!!Foreign born",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0076E": {
+      "label": "Estimate!!YEAR OF ENTRY!!Population born outside the United States!!Foreign born",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0043EA": {
+      "label": "Annotation of Estimate!!GRANDPARENTS!!Characteristics of grandparents responsible for own grandchildren under 18 years!!Who are married",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0047MA": {
+      "label": "Annotation of Margin of Error!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 5 years and over!!With a disability",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0012MA": {
+      "label": "Annotation of Margin of Error!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Associate's degree",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0075M": {
+      "label": "Margin of Error!!YEAR OF ENTRY!!Population born outside the United States!!Native!!Entered before 2000",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0075E": {
+      "label": "Estimate!!YEAR OF ENTRY!!Population born outside the United States!!Native!!Entered before 2000",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0110MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!Irish",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0073M": {
+      "label": "Margin of Error!!YEAR OF ENTRY!!Population born outside the United States!!Native",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0069MA": {
+      "label": "Annotation of Margin of Error!!U.S. CITIZENSHIP STATUS!!Foreign-born population",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0074M": {
+      "label": "Margin of Error!!YEAR OF ENTRY!!Population born outside the United States!!Native!!Entered 2000 or later",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0065EA": {
+      "label": "Annotation of Estimate!!PLACE OF BIRTH!!Total population!!Native!!Born in United States!!State of residence",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0074E": {
+      "label": "Estimate!!YEAR OF ENTRY!!Population born outside the United States!!Native!!Entered 2000 or later",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0017E": {
+      "label": "Estimate!!MARITAL STATUS!!Males 15 years and over",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0030MA": {
+      "label": "Annotation of Margin of Error!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months!!Unmarried women (widowed, divorced, and never married)",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0102M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!Danish",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0017M": {
+      "label": "Margin of Error!!MARITAL STATUS!!Males 15 years and over",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0102E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!Danish",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0016E": {
+      "label": "Estimate!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Percent bachelor's degree or higher",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "float",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0083EA": {
+      "label": "Annotation of Estimate!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea!!Oceania",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0101M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!Czech",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0016M": {
+      "label": "Margin of Error!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Percent bachelor's degree or higher",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "float",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0087MA": {
+      "label": "Annotation of Margin of Error!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!English only",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0101E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!Czech",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0015M": {
+      "label": "Margin of Error!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Percent high school graduate or higher",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "float",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0100M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!Arab",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0052MA": {
+      "label": "Annotation of Margin of Error!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 65 years and over",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0015E": {
+      "label": "Estimate!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Percent high school graduate or higher",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "float",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0100E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!Arab",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0014M": {
+      "label": "Margin of Error!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Graduate or professional degree",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0014E": {
+      "label": "Estimate!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Graduate or professional degree",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0074EA": {
+      "label": "Annotation of Estimate!!YEAR OF ENTRY!!Population born outside the United States!!Native!!Entered 2000 or later",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0013M": {
+      "label": "Margin of Error!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Bachelor's degree",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0013E": {
+      "label": "Estimate!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Bachelor's degree",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0078MA": {
+      "label": "Annotation of Margin of Error!!YEAR OF ENTRY!!Population born outside the United States!!Foreign born!!Entered before 2000",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0119EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!Slovak",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0043MA": {
+      "label": "Annotation of Margin of Error!!GRANDPARENTS!!Characteristics of grandparents responsible for own grandchildren under 18 years!!Who are married",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0012M": {
+      "label": "Margin of Error!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Associate's degree",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0012E": {
+      "label": "Estimate!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Associate's degree",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0011M": {
+      "label": "Margin of Error!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Some college, no degree",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0096EA": {
+      "label": "Annotation of Estimate!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Other languages",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0106EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!French Canadian",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0059M": {
+      "label": "Margin of Error!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Different house in the U.S.!!Different county!!Same state",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0011E": {
+      "label": "Estimate!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Some college, no degree",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0059E": {
+      "label": "Estimate!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Different house in the U.S.!!Different county!!Same state",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0008EA": {
+      "label": "Annotation of Estimate!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Less than 9th grade",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0061EA": {
+      "label": "Annotation of Estimate!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Abroad",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0010M": {
+      "label": "Margin of Error!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!High school graduate (includes equivalency)",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0058M": {
+      "label": "Margin of Error!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Different house in the U.S.!!Different county",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0010E": {
+      "label": "Estimate!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!High school graduate (includes equivalency)",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0065MA": {
+      "label": "Annotation of Margin of Error!!PLACE OF BIRTH!!Total population!!Native!!Born in United States!!State of residence",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0058E": {
+      "label": "Estimate!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Different house in the U.S.!!Different county",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0124EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!Welsh",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0109E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!Hungarian",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0026EA": {
+      "label": "Annotation of Estimate!!MARITAL STATUS!!Females 15 years and over!!Separated",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0083MA": {
+      "label": "Annotation of Margin of Error!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea!!Oceania",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0109M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!Hungarian",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0108E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!Greek",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0108M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!Greek",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0107E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!German",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0048EA": {
+      "label": "Annotation of Estimate!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 5 to 15 years",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0070MA": {
+      "label": "Annotation of Margin of Error!!U.S. CITIZENSHIP STATUS!!Foreign-born population!!Naturalized U.S. citizen",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0107M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!German",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0106E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!French Canadian",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0017EA": {
+      "label": "Annotation of Estimate!!MARITAL STATUS!!Males 15 years and over",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0106M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!French Canadian",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0074MA": {
+      "label": "Annotation of Margin of Error!!YEAR OF ENTRY!!Population born outside the United States!!Native!!Entered 2000 or later",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0070EA": {
+      "label": "Annotation of Estimate!!U.S. CITIZENSHIP STATUS!!Foreign-born population!!Naturalized U.S. citizen",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0105E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!French (except Basque)",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0119MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!Slovak",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0115EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!Portuguese",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0105M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!French (except Basque)",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0019E": {
+      "label": "Estimate!!MARITAL STATUS!!Males 15 years and over!!Now married, except separated",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0104E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!English",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0039EA": {
+      "label": "Annotation of Estimate!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years in households!!Years responsible for grandchildren!!1 or 2 years",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0106MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!French Canadian",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0102EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!Danish",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0096MA": {
+      "label": "Annotation of Margin of Error!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Other languages",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0019M": {
+      "label": "Margin of Error!!MARITAL STATUS!!Males 15 years and over!!Now married, except separated",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0104M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!English",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0092EA": {
+      "label": "Annotation of Estimate!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Other Indo-European languages",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0018E": {
+      "label": "Estimate!!MARITAL STATUS!!Males 15 years and over!!Never married",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0004EA": {
+      "label": "Annotation of Estimate!!SCHOOL ENROLLMENT!!Population 3 years and over enrolled in school!!Elementary school (grades 1-8)",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0103M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!Dutch",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0061MA": {
+      "label": "Annotation of Margin of Error!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Abroad",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0018M": {
+      "label": "Margin of Error!!MARITAL STATUS!!Males 15 years and over!!Never married",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0008MA": {
+      "label": "Annotation of Margin of Error!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Less than 9th grade",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0103E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!Dutch",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0120EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!Subsaharan African",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0124MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!Welsh",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0060M": {
+      "label": "Margin of Error!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Different house in the U.S.!!Different county!!Different state",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0061E": {
+      "label": "Estimate!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Abroad",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0057EA": {
+      "label": "Annotation of Estimate!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Different house in the U.S.!!Same county",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0060E": {
+      "label": "Estimate!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Different house in the U.S.!!Different county!!Different state",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0022EA": {
+      "label": "Annotation of Estimate!!MARITAL STATUS!!Males 15 years and over!!Divorced",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0026MA": {
+      "label": "Annotation of Margin of Error!!MARITAL STATUS!!Females 15 years and over!!Separated",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0079EA": {
+      "label": "Annotation of Estimate!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0044EA": {
+      "label": "Annotation of Estimate!!VETERAN STATUS!!Civilian population 18 years and over",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0048MA": {
+      "label": "Annotation of Margin of Error!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 5 to 15 years",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0013EA": {
+      "label": "Annotation of Estimate!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Bachelor's degree",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0017MA": {
+      "label": "Annotation of Margin of Error!!MARITAL STATUS!!Males 15 years and over",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0092MA": {
+      "label": "Annotation of Margin of Error!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Other Indo-European languages",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0111EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!Italian",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0115MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!Portuguese",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0102MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!Danish",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0035EA": {
+      "label": "Annotation of Estimate!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months!!Per 1,000 women 35 to 50 years old",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0039MA": {
+      "label": "Annotation of Margin of Error!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years in households!!Years responsible for grandchildren!!1 or 2 years",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0004MA": {
+      "label": "Annotation of Margin of Error!!SCHOOL ENROLLMENT!!Population 3 years and over enrolled in school!!Elementary school (grades 1-8)",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0120MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!Subsaharan African",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0021M": {
+      "label": "Margin of Error!!MARITAL STATUS!!Males 15 years and over!!Widowed",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0053EA": {
+      "label": "Annotation of Estimate!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 65 years and over!!With a disability",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0069M": {
+      "label": "Margin of Error!!U.S. CITIZENSHIP STATUS!!Foreign-born population",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0021E": {
+      "label": "Estimate!!MARITAL STATUS!!Males 15 years and over!!Widowed",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0069E": {
+      "label": "Estimate!!U.S. CITIZENSHIP STATUS!!Foreign-born population",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0057MA": {
+      "label": "Annotation of Margin of Error!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Different house in the U.S.!!Same county",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0020M": {
+      "label": "Margin of Error!!MARITAL STATUS!!Males 15 years and over!!Separated",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0022MA": {
+      "label": "Annotation of Margin of Error!!MARITAL STATUS!!Males 15 years and over!!Divorced",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0068M": {
+      "label": "Margin of Error!!PLACE OF BIRTH!!Total population!!Foreign born",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0020E": {
+      "label": "Estimate!!MARITAL STATUS!!Males 15 years and over!!Separated",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0068E": {
+      "label": "Estimate!!PLACE OF BIRTH!!Total population!!Foreign born",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0075EA": {
+      "label": "Annotation of Estimate!!YEAR OF ENTRY!!Population born outside the United States!!Native!!Entered before 2000",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0067M": {
+      "label": "Margin of Error!!PLACE OF BIRTH!!Total population!!Native!!Born in Puerto Rico, U.S. Island areas, or born abroad to American parent(s)",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0079MA": {
+      "label": "Annotation of Margin of Error!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0067E": {
+      "label": "Estimate!!PLACE OF BIRTH!!Total population!!Native!!Born in Puerto Rico, U.S. Island areas, or born abroad to American parent(s)",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0066M": {
+      "label": "Margin of Error!!PLACE OF BIRTH!!Total population!!Native!!Born in United States!!Different state",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0044MA": {
+      "label": "Annotation of Margin of Error!!VETERAN STATUS!!Civilian population 18 years and over",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0066E": {
+      "label": "Estimate!!PLACE OF BIRTH!!Total population!!Native!!Born in United States!!Different state",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0040EA": {
+      "label": "Annotation of Estimate!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years in households!!Years responsible for grandchildren!!3 or 4 years",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0065M": {
+      "label": "Margin of Error!!PLACE OF BIRTH!!Total population!!Native!!Born in United States!!State of residence",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0013MA": {
+      "label": "Annotation of Margin of Error!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Bachelor's degree",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0065E": {
+      "label": "Estimate!!PLACE OF BIRTH!!Total population!!Native!!Born in United States!!State of residence",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0111MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!Italian",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0064M": {
+      "label": "Margin of Error!!PLACE OF BIRTH!!Total population!!Native!!Born in United States",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0066EA": {
+      "label": "Annotation of Estimate!!PLACE OF BIRTH!!Total population!!Native!!Born in United States!!Different state",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0064E": {
+      "label": "Estimate!!PLACE OF BIRTH!!Total population!!Native!!Born in United States",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0062M": {
+      "label": "Margin of Error!!PLACE OF BIRTH!!Total population",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0035MA": {
+      "label": "Annotation of Margin of Error!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months!!Per 1,000 women 35 to 50 years old",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0063M": {
+      "label": "Margin of Error!!PLACE OF BIRTH!!Total population!!Native",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0063E": {
+      "label": "Estimate!!PLACE OF BIRTH!!Total population!!Native",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0031EA": {
+      "label": "Annotation of Estimate!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months!!Per 1,000 unmarried women",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0061M": {
+      "label": "Margin of Error!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Abroad",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0088EA": {
+      "label": "Annotation of Estimate!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Language other than English",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0062E": {
+      "label": "Estimate!!PLACE OF BIRTH!!Total population",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0005E": {
+      "label": "Estimate!!SCHOOL ENROLLMENT!!Population 3 years and over enrolled in school!!High school (grades 9-12)",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0053MA": {
+      "label": "Annotation of Margin of Error!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 65 years and over!!With a disability",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0005M": {
+      "label": "Margin of Error!!SCHOOL ENROLLMENT!!Population 3 years and over enrolled in school!!High school (grades 9-12)",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0004M": {
+      "label": "Margin of Error!!SCHOOL ENROLLMENT!!Population 3 years and over enrolled in school!!Elementary school (grades 1-8)",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0004E": {
+      "label": "Estimate!!SCHOOL ENROLLMENT!!Population 3 years and over enrolled in school!!Elementary school (grades 1-8)",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0018EA": {
+      "label": "Annotation of Estimate!!MARITAL STATUS!!Males 15 years and over!!Never married",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0003M": {
+      "label": "Margin of Error!!SCHOOL ENROLLMENT!!Population 3 years and over enrolled in school!!Kindergarten",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0075MA": {
+      "label": "Annotation of Margin of Error!!YEAR OF ENTRY!!Population born outside the United States!!Native!!Entered before 2000",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0003E": {
+      "label": "Estimate!!SCHOOL ENROLLMENT!!Population 3 years and over enrolled in school!!Kindergarten",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0071EA": {
+      "label": "Annotation of Estimate!!U.S. CITIZENSHIP STATUS!!Foreign-born population!!Not a U.S. citizen",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0002M": {
+      "label": "Margin of Error!!SCHOOL ENROLLMENT!!Population 3 years and over enrolled in school!!Nursery school, preschool",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0040MA": {
+      "label": "Annotation of Margin of Error!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years in households!!Years responsible for grandchildren!!3 or 4 years",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0116EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!Russian",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0002E": {
+      "label": "Estimate!!SCHOOL ENROLLMENT!!Population 3 years and over enrolled in school!!Nursery school, preschool",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0049E": {
+      "label": "Estimate!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 5 to 15 years!!With a disability",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0097EA": {
+      "label": "Annotation of Estimate!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Other languages!!Speak English less than \"very well\"",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0107EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!German",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0001M": {
+      "label": "Margin of Error!!SCHOOL ENROLLMENT!!Population 3 years and over enrolled in school",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0049M": {
+      "label": "Margin of Error!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 5 to 15 years!!With a disability",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0001E": {
+      "label": "Estimate!!SCHOOL ENROLLMENT!!Population 3 years and over enrolled in school",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0009EA": {
+      "label": "Annotation of Estimate!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!9th to 12th grade, no diploma",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0062EA": {
+      "label": "Annotation of Estimate!!PLACE OF BIRTH!!Total population",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0048M": {
+      "label": "Margin of Error!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 5 to 15 years",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0048E": {
+      "label": "Estimate!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 5 to 15 years",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0066MA": {
+      "label": "Annotation of Margin of Error!!PLACE OF BIRTH!!Total population!!Native!!Born in United States!!Different state",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0031MA": {
+      "label": "Annotation of Margin of Error!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months!!Per 1,000 unmarried women",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0047M": {
+      "label": "Margin of Error!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 5 years and over!!With a disability",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0047E": {
+      "label": "Estimate!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 5 years and over!!With a disability",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0084EA": {
+      "label": "Annotation of Estimate!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea!!Latin America",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0046M": {
+      "label": "Margin of Error!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 5 years and over",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0088MA": {
+      "label": "Annotation of Margin of Error!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Language other than English",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0046E": {
+      "label": "Estimate!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 5 years and over",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0049EA": {
+      "label": "Annotation of Estimate!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 5 to 15 years!!With a disability",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0071MA": {
+      "label": "Annotation of Margin of Error!!U.S. CITIZENSHIP STATUS!!Foreign-born population!!Not a U.S. citizen",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0014EA": {
+      "label": "Annotation of Estimate!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Graduate or professional degree",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0018MA": {
+      "label": "Annotation of Margin of Error!!MARITAL STATUS!!Males 15 years and over!!Never married",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0093MA": {
+      "label": "Annotation of Margin of Error!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Other Indo-European languages!!Speak English less than \"very well\"",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0112EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!Lithuanian",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0116MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!Russian",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0009E": {
+      "label": "Estimate!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!9th to 12th grade, no diploma",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0107MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!German",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0103EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!Dutch",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0097MA": {
+      "label": "Annotation of Margin of Error!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Other languages!!Speak English less than \"very well\"",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0093EA": {
+      "label": "Annotation of Estimate!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Other Indo-European languages!!Speak English less than \"very well\"",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0009M": {
+      "label": "Margin of Error!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!9th to 12th grade, no diploma",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0008E": {
+      "label": "Estimate!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Less than 9th grade",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0005EA": {
+      "label": "Annotation of Estimate!!SCHOOL ENROLLMENT!!Population 3 years and over enrolled in school!!High school (grades 9-12)",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0009MA": {
+      "label": "Annotation of Margin of Error!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!9th to 12th grade, no diploma",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0008M": {
+      "label": "Margin of Error!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Less than 9th grade",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0062MA": {
+      "label": "Annotation of Margin of Error!!PLACE OF BIRTH!!Total population",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0007E": {
+      "label": "Estimate!!EDUCATIONAL ATTAINMENT!!Population 25 years and over",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0125EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!West Indian (excluding Hispanic origin groups)",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0007M": {
+      "label": "Margin of Error!!EDUCATIONAL ATTAINMENT!!Population 25 years and over",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0006E": {
+      "label": "Estimate!!SCHOOL ENROLLMENT!!Population 3 years and over enrolled in school!!College or graduate school",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0027EA": {
+      "label": "Annotation of Estimate!!MARITAL STATUS!!Females 15 years and over!!Widowed",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "GEO_ID": {
+      "label": "Geography",
+      "concept": "General Demographic Characteristics:  2005;Selected Social Characteristics in the United States: 2005;Selected Social Characteristics in Puerto Rico: 2005;Selected Economic Characteristics:  2005;Selected Housing Characteristics:  2005",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0084MA": {
+      "label": "Annotation of Margin of Error!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea!!Latin America",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0006M": {
+      "label": "Margin of Error!!SCHOOL ENROLLMENT!!Population 3 years and over enrolled in school!!College or graduate school",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0080EA": {
+      "label": "Annotation of Estimate!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea!!Europe",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0097M": {
+      "label": "Margin of Error!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Other languages!!Speak English less than \"very well\"",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0097E": {
+      "label": "Estimate!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Other languages!!Speak English less than \"very well\"",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0095M": {
+      "label": "Margin of Error!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Asian and Pacific Islander languages!!Speak English less than \"very well\"",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0096M": {
+      "label": "Margin of Error!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Other languages",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0045EA": {
+      "label": "Annotation of Estimate!!VETERAN STATUS!!Civilian population 18 years and over!!Civilian veterans",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0096E": {
+      "label": "Estimate!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Other languages",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0049MA": {
+      "label": "Annotation of Margin of Error!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 5 to 15 years!!With a disability",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0094M": {
+      "label": "Margin of Error!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Asian and Pacific Islander languages",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0095E": {
+      "label": "Estimate!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Asian and Pacific Islander languages!!Speak English less than \"very well\"",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0010EA": {
+      "label": "Annotation of Estimate!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!High school graduate (includes equivalency)",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0014MA": {
+      "label": "Annotation of Margin of Error!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Graduate or professional degree",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0112MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!Lithuanian",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0093M": {
+      "label": "Margin of Error!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Other Indo-European languages!!Speak English less than \"very well\"",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0094E": {
+      "label": "Estimate!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Asian and Pacific Islander languages",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0067EA": {
+      "label": "Annotation of Estimate!!PLACE OF BIRTH!!Total population!!Native!!Born in Puerto Rico, U.S. Island areas, or born abroad to American parent(s)",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0036EA": {
+      "label": "Annotation of Estimate!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years in households",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0103MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!Dutch",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0092M": {
+      "label": "Margin of Error!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Other Indo-European languages",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0093E": {
+      "label": "Estimate!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Other Indo-European languages!!Speak English less than \"very well\"",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0091M": {
+      "label": "Margin of Error!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Spanish!!Speak English less than \"very well\"",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0092E": {
+      "label": "Estimate!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Other Indo-European languages",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0001EA": {
+      "label": "Annotation of Estimate!!SCHOOL ENROLLMENT!!Population 3 years and over enrolled in school",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0005MA": {
+      "label": "Annotation of Margin of Error!!SCHOOL ENROLLMENT!!Population 3 years and over enrolled in school!!High school (grades 9-12)",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0080MA": {
+      "label": "Annotation of Margin of Error!!WORLD REGION OF BIRTH OF FOREIGN BORN!!Foreign-born population, excluding population born at sea!!Europe",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0058EA": {
+      "label": "Annotation of Estimate!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Different house in the U.S.!!Different county",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0121EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!Swedish",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0090M": {
+      "label": "Margin of Error!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Spanish",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0125MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!West Indian (excluding Hispanic origin groups)",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0091E": {
+      "label": "Estimate!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Spanish!!Speak English less than \"very well\"",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0090E": {
+      "label": "Estimate!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Spanish",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0023EA": {
+      "label": "Annotation of Estimate!!MARITAL STATUS!!Females 15 years and over",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0027MA": {
+      "label": "Annotation of Margin of Error!!MARITAL STATUS!!Females 15 years and over!!Widowed",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0076EA": {
+      "label": "Annotation of Estimate!!YEAR OF ENTRY!!Population born outside the United States!!Foreign born",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0057M": {
+      "label": "Margin of Error!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Different house in the U.S.!!Same county",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0057E": {
+      "label": "Estimate!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Different house in the U.S.!!Same county",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0045MA": {
+      "label": "Annotation of Margin of Error!!VETERAN STATUS!!Civilian population 18 years and over!!Civilian veterans",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0056M": {
+      "label": "Margin of Error!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Different house in the U.S.",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0041EA": {
+      "label": "Annotation of Estimate!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years in households!!Years responsible for grandchildren!!5 or more years",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0056E": {
+      "label": "Estimate!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Different house in the U.S.",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0055M": {
+      "label": "Margin of Error!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Same house",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0010MA": {
+      "label": "Annotation of Margin of Error!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!High school graduate (includes equivalency)",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0108EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population!!Greek",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0098EA": {
+      "label": "Annotation of Estimate!!ANCESTRY!!Total population",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0055E": {
+      "label": "Estimate!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Same house",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0054M": {
+      "label": "Margin of Error!!RESIDENCE 1 YEAR AGO!!Population 1 year and over",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0063EA": {
+      "label": "Annotation of Estimate!!PLACE OF BIRTH!!Total population!!Native",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0054E": {
+      "label": "Estimate!!RESIDENCE 1 YEAR AGO!!Population 1 year and over",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0067MA": {
+      "label": "Annotation of Margin of Error!!PLACE OF BIRTH!!Total population!!Native!!Born in Puerto Rico, U.S. Island areas, or born abroad to American parent(s)",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0053M": {
+      "label": "Margin of Error!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 65 years and over!!With a disability",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0053E": {
+      "label": "Estimate!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 65 years and over!!With a disability",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0032EA": {
+      "label": "Annotation of Estimate!!FERTILITY!!Number of women 15 to 50 years old who had a birth in the past 12 months!!Per 1,000 women 15 to 50 years old",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0036MA": {
+      "label": "Annotation of Margin of Error!!GRANDPARENTS!!Number of grandparents living with own grandchildren under 18 years in households",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0051M": {
+      "label": "Margin of Error!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 16 to 64 years!!With a disability",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0052M": {
+      "label": "Margin of Error!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 65 years and over",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0001MA": {
+      "label": "Annotation of Margin of Error!!SCHOOL ENROLLMENT!!Population 3 years and over enrolled in school",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0089EA": {
+      "label": "Annotation of Estimate!!LANGUAGE SPOKEN AT HOME!!Population 5 years and over!!Language other than English!!Speak English less than \"very well\"",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0052E": {
+      "label": "Estimate!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 65 years and over",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0121MA": {
+      "label": "Annotation of Margin of Error!!ANCESTRY!!Total population!!Swedish",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0050M": {
+      "label": "Margin of Error!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 16 to 64 years",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0058MA": {
+      "label": "Annotation of Margin of Error!!RESIDENCE 1 YEAR AGO!!Population 1 year and over!!Different house in the U.S.!!Different county",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0099M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population!!American",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0051E": {
+      "label": "Estimate!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 16 to 64 years!!With a disability",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0054EA": {
+      "label": "Annotation of Estimate!!RESIDENCE 1 YEAR AGO!!Population 1 year and over",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0099E": {
+      "label": "Estimate!!ANCESTRY!!Total population!!American",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0023MA": {
+      "label": "Annotation of Margin of Error!!MARITAL STATUS!!Females 15 years and over",
+      "predicateType": "string",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0098M": {
+      "label": "Margin of Error!!ANCESTRY!!Total population",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0050E": {
+      "label": "Estimate!!DISABILITY STATUS OF THE CIVILIAN NONINSTITUTIONALIZED POPULATION!!Population 16 to 64 years",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "DP02_0098E": {
+      "label": "Estimate!!ANCESTRY!!Total population",
+      "concept": "Selected Social Characteristics in the United States: 2005",
+      "predicateType": "int",
+      "group": "DP02",
+      "limit": 0,
+      "predicateOnly": true
+    }
+  }
+}

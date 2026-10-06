@@ -11,7 +11,8 @@ Some sources are live and keep changing (CDC's weekly table, the Johns Hopkins t
 and Census revisions), so a fresh run can differ slightly from the committed files in recent
 years. `git diff --stat data/` after a run shows what moved.
 
-Optional: set CENSUS_API_KEY for the Census requests in 08b; they also work without a key.
+No key is needed: the Census API responses are saved in the repo. CENSUS_API_KEY is only
+needed to fetch a year that is not saved yet.
 """
 import subprocess
 import sys

@@ -72,26 +72,41 @@ updates or send changes back.
 Open `dist/index.html` in a browser. It needs no server and no internet
 connection.
 
-## Rebuild the page
+## Rebuild the data and the page
 
-The built tables are already in the repo, so a rebuild needs only one small
-download (the map shapes):
+The raw downloads are not in the repo (they are large and are re-fetched), so
+a fresh clone has the built tables but not the source files behind them. One
+script recreates everything, in order:
 
 ```bash
-cd scripts
-python 02c_fetch_geo.py     # state and county shapes, once
-python 08_build_data.py     # packs everything into viz/data.json
-python 09_build_viz.py      # writes dist/index.html
+python scripts/run_all.py
 ```
 
-After a change to `viz/template.html`, run only the last line.
+It downloads every source that is missing into `data/raw/`, re-extracts the
+CDC annual tables and the other hand-built extracts, rebuilds every table in
+`data/`, writes `dist/index.html` and `dist/findings.html`, and finishes with
+the coverage check and the tie-out (`data/TIEOUT.md`). A first run downloads
+roughly 700 MB and takes a while; later runs skip anything already downloaded.
+If a step fails, fix it and run the script again; finished downloads are kept.
 
-To rebuild everything from the original sources, run the scripts in number
-order, starting with `01_fetch_tycho.py`. That downloads several hundred
-megabytes. `08b_fetch_kpis.py` uses a free
-[Census API key](https://api.census.gov/data/key_signup.html) for some of its
-requests; the rest need no key. `12_tieout.py` rechecks the page's numbers
-against the raw files and needs the full download.
+Some sources are live (CDC's weekly table, the Johns Hopkins trackers, BEA and
+Census revisions), so a fresh run can differ slightly from the committed files
+in the most recent years. `git diff --stat data/` shows what moved.
+
+No API key is needed. The Census responses the build uses (2005 to 2024) are
+saved in the repo; a key is only needed to fetch a newer year. If you have one
+([free sign-up](https://api.census.gov/data/key_signup.html)), set
+`CENSUS_API_KEY`.
+
+To rebuild only the page from the committed tables (a small download for the
+map shapes, then two quick steps):
+
+```bash
+python scripts/run_all.py --quick
+```
+
+After a change to `viz/template.html`, `python scripts/09_build_viz.py` alone
+is enough.
 
 ## Work on it with Claude Code
 

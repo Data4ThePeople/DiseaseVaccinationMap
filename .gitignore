@@ -11,4 +11,6 @@ data/raw/bea/
 data/raw/geo/
 data/raw/jhu/
 data/raw/owid/
-data/raw/*/src/
+data/raw/*/src/*
+# Census API responses are small, public and hold no key; kept so a rebuild needs no Census key
+!data/raw/kpi/src/census_acs1_*.json

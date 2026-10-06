@@ -184,8 +184,8 @@ ACS_YEARS = [y for y in range(2005, 2026) if y != 2020]
 
 def census_key():
     """A Census API key from the CENSUS_API_KEY environment variable, or from the Data 4 The
-    People key loader when it is installed. Without one, requests go out keyless, which the
-    Census API allows at this volume."""
+    People key loader when it is installed. Only needed for a year whose response is not
+    already saved in data/raw/kpi/src/ (the repo carries 2005 to 2024)."""
     if os.environ.get("CENSUS_API_KEY"):
         return os.environ["CENSUS_API_KEY"]
     loader = os.path.expanduser("~/.claude/d4tp-process")
@@ -210,7 +210,12 @@ def get_json(url, dest, key=None):
         if e.code == 404:
             return None
         raise RuntimeError(f"HTTP {e.code} for {url}") from None
-    data = json.loads(body)
+    try:
+        data = json.loads(body)
+    except json.JSONDecodeError:
+        raise RuntimeError(f"Census API did not return data for {url}. It now requires a key: set CENSUS_API_KEY "
+                           "(free at https://api.census.gov/data/key_signup.html). The responses saved in the repo "
+                           "cover 2005 to 2024, so a key is only needed for a year that is not saved yet.") from None
     dest.write_bytes(body)
     time.sleep(0.6)
     return data
