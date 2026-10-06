@@ -14427,7 +14427,7 @@ measles,WY,2025,0,cdc_weekly,"provisional, week 53 of 2025",,0,588753,0.0
 mumps,AK,1968,705,cdc_annual,final annual table,,0,285000,247.37
 mumps,AK,1969,1001,cdc_annual,final annual table,,0,296000,338.18
 mumps,AK,1970,461,cdc_annual,final annual table,,0,304328,151.48
-mumps,AK,1971,130,tycho_cumulative,"year-end running total, week 52",,0,316494,41.08
+mumps,AK,1971,164,cdc_annual,final annual table,,0,316494,51.82
 mumps,AK,1972,324,cdc_annual,final annual table,,0,326494,99.24
 mumps,AK,1973,938,cdc_annual,final annual table,,0,333232,281.49
 mumps,AK,1974,152,cdc_annual,final annual table,,0,344696,44.1
@@ -14485,7 +14485,7 @@ mumps,AK,2025,0,cdc_weekly,"provisional, week 53 of 2025",,0,737270,0.0
 mumps,AL,1968,550,cdc_annual,final annual table,,0,3446000,15.96
 mumps,AL,1969,236,cdc_annual,final annual table,,0,3440000,6.86
 mumps,AL,1970,401,cdc_annual,final annual table,,0,3449846,11.62
-mumps,AL,1971,1036,tycho_cumulative,"year-end running total, week 52",,0,3497452,29.62
+mumps,AL,1971,1044,cdc_annual,final annual table,,0,3497452,29.85
 mumps,AL,1972,860,cdc_annual,final annual table,,0,3540080,24.29
 mumps,AL,1973,758,cdc_annual,final annual table,,0,3580769,21.17
 mumps,AL,1974,618,cdc_annual,final annual table,,0,3627805,17.04
@@ -14543,7 +14543,7 @@ mumps,AL,2025,3,cdc_weekly,"provisional, week 53 of 2025",,0,5193088,0.06
 mumps,AR,1968,30,cdc_annual,final annual table,,0,1902000,1.58
 mumps,AR,1969,73,cdc_annual,final annual table,,0,1913000,3.82
 mumps,AR,1970,165,cdc_annual,final annual table,,0,1930077,8.55
-mumps,AR,1971,158,tycho_cumulative,"year-end running total, week 52",,0,1972028,8.01
+mumps,AR,1971,157,cdc_annual,final annual table,,0,1972028,7.96
 mumps,AR,1972,227,cdc_annual,final annual table,,0,2018116,11.25
 mumps,AR,1973,417,cdc_annual,final annual table,,0,2058491,20.26
 mumps,AR,1974,256,cdc_annual,final annual table,,0,2100385,12.19
@@ -14601,7 +14601,7 @@ mumps,AR,2025,0,cdc_weekly,"provisional, week 53 of 2025",,0,3114791,0.0
 mumps,AZ,1968,2032,cdc_annual,final annual table,,0,1682000,120.81
 mumps,AZ,1969,2556,cdc_annual,final annual table,,0,1737000,147.15
 mumps,AZ,1970,1486,cdc_annual,final annual table,,0,1794912,82.79
-mumps,AZ,1971,1274,tycho_cumulative,"year-end running total, week 52",,0,1896108,67.19
+mumps,AZ,1971,1422,cdc_annual,final annual table,,0,1896108,75.0
 mumps,AZ,1972,1059,cdc_annual,final annual table,,0,2008847,52.72
 mumps,AZ,1975,0,cdc_annual,final annual table,,0,2286348,0.0
 mumps,AZ,1976,0,cdc_annual,final annual table,,0,2347976,0.0
@@ -14656,7 +14656,7 @@ mumps,AZ,2025,4,cdc_weekly,"provisional, week 53 of 2025",,0,7623818,0.05
 mumps,CA,1968,17598,cdc_annual,final annual table,,0,19394000,90.74
 mumps,CA,1969,8348,cdc_annual,final annual table,,0,19711000,42.35
 mumps,CA,1970,6357,cdc_annual,final annual table,,0,20023181,31.75
-mumps,CA,1971,7654,tycho_cumulative,"year-end running total, week 52",,0,20345575,37.62
+mumps,CA,1971,7690,cdc_annual,final annual table,,0,20345575,37.8
 mumps,CA,1972,7386,cdc_annual,final annual table,,0,20584794,35.88
 mumps,CA,1973,5931,cdc_annual,final annual table,,0,20867737,28.42
 mumps,CA,1974,2639,cdc_annual,final annual table,,0,21172548,12.46
@@ -14714,7 +14714,7 @@ mumps,CA,2025,53,cdc_weekly,"provisional, week 53 of 2025",,0,39355309,0.13
 mumps,CO,1968,2789,cdc_annual,final annual table,,0,2120000,131.56
 mumps,CO,1969,958,cdc_annual,final annual table,,0,2166000,44.23
 mumps,CO,1970,1677,cdc_annual,final annual table,,0,2223979,75.41
-mumps,CO,1971,1636,tycho_cumulative,"year-end running total, week 52",,0,2303502,71.02
+mumps,CO,1971,1637,cdc_annual,final annual table,,0,2303502,71.07
 mumps,CO,1972,773,cdc_annual,final annual table,,0,2404576,32.15
 mumps,CO,1973,618,cdc_annual,final annual table,,0,2495803,24.76
 mumps,CO,1974,616,cdc_annual,final annual table,,0,2541318,24.24
@@ -14772,7 +14772,7 @@ mumps,CO,2025,20,cdc_weekly,"provisional, week 53 of 2025",,0,6012561,0.33
 mumps,CT,1968,3996,cdc_annual,final annual table,,0,2964000,134.82
 mumps,CT,1969,4086,cdc_annual,final annual table,,0,3000000,136.2
 mumps,CT,1970,3704,cdc_annual,final annual table,,0,3038782,121.89
-mumps,CT,1971,1610,tycho_cumulative,"year-end running total, week 52",,0,3061448,52.59
+mumps,CT,1971,1612,cdc_annual,final annual table,,0,3061448,52.65
 mumps,CT,1972,1168,cdc_annual,final annual table,,0,3069617,38.05
 mumps,CT,1973,1632,cdc_annual,final annual table,,0,3069140,53.17
 mumps,CT,1974,1698,cdc_annual,final annual table,,0,3075784,55.21
@@ -14830,7 +14830,7 @@ mumps,CT,2025,0,cdc_weekly,"provisional, week 53 of 2025",,0,3688496,0.0
 mumps,DC,1968,255,cdc_annual,final annual table,,0,778000,32.78
 mumps,DC,1969,101,cdc_annual,final annual table,,0,762000,13.25
 mumps,DC,1970,230,cdc_annual,final annual table,,0,755087,30.46
-mumps,DC,1971,101,tycho_cumulative,"year-end running total, week 52",,0,750641,13.46
+mumps,DC,1971,99,cdc_annual,final annual table,,0,750641,13.19
 mumps,DC,1972,31,cdc_annual,final annual table,,0,743775,4.17
 mumps,DC,1973,167,cdc_annual,final annual table,,0,733674,22.76
 mumps,DC,1974,52,cdc_annual,final annual table,,0,720755,7.21
@@ -14888,7 +14888,7 @@ mumps,DC,2025,0,cdc_weekly,"provisional, week 53 of 2025",,0,693645,0.0
 mumps,DE,1968,311,cdc_annual,final annual table,,0,534000,58.24
 mumps,DE,1969,141,cdc_annual,final annual table,,0,540000,26.11
 mumps,DE,1970,379,cdc_annual,final annual table,,0,550332,68.87
-mumps,DE,1971,188,tycho_cumulative,"year-end running total, week 52",,0,565207,33.26
+mumps,DE,1971,187,cdc_annual,final annual table,,0,565207,33.09
 mumps,DE,1972,181,cdc_annual,final annual table,,0,573821,31.54
 mumps,DE,1973,284,cdc_annual,final annual table,,0,579078,49.04
 mumps,DE,1974,107,cdc_annual,final annual table,,0,583150,18.35
@@ -14946,7 +14946,7 @@ mumps,DE,2025,0,cdc_weekly,"provisional, week 53 of 2025",,0,1059952,0.0
 mumps,FL,1968,2252,cdc_annual,final annual table,,0,6433000,35.01
 mumps,FL,1969,1691,cdc_annual,final annual table,,0,6641000,25.46
 mumps,FL,1970,3030,cdc_annual,final annual table,,0,6845353,44.26
-mumps,FL,1971,2974,tycho_cumulative,"year-end running total, week 52",,0,7163026,41.52
+mumps,FL,1971,2995,cdc_annual,final annual table,,0,7163026,41.81
 mumps,FL,1972,1525,cdc_annual,final annual table,,0,7520324,20.28
 mumps,FL,1973,2682,cdc_annual,final annual table,,0,7927099,33.83
 mumps,FL,1974,2003,cdc_annual,final annual table,,0,8317034,24.08
@@ -15002,7 +15002,7 @@ mumps,FL,2025,11,cdc_weekly,"provisional, week 53 of 2025",,0,23462518,0.05
 mumps,GA,1968,10,cdc_annual,final annual table,,0,4482000,0.22
 mumps,GA,1969,5,cdc_annual,final annual table,,0,4551000,0.11
 mumps,GA,1970,1,cdc_annual,final annual table,,0,4605421,0.02
-mumps,GA,1971,11,tycho_cumulative,"year-end running total, week 52",,0,4710272,0.23
+mumps,GA,1971,0,cdc_annual,final annual table,,0,4710272,0.0
 mumps,GA,1972,32,cdc_annual,final annual table,,0,4807151,0.67
 mumps,GA,1973,35,cdc_annual,final annual table,,0,4906940,0.71
 mumps,GA,1974,1,cdc_annual,final annual table,,0,4994870,0.02
@@ -15060,7 +15060,7 @@ mumps,GA,2025,3,cdc_weekly,"provisional, week 53 of 2025",,0,11302748,0.03
 mumps,HI,1968,1026,cdc_annual,final annual table,,0,734000,139.78
 mumps,HI,1969,627,cdc_annual,final annual table,,0,743000,84.39
 mumps,HI,1970,1669,cdc_annual,final annual table,,0,762920,218.76
-mumps,HI,1971,937,tycho_cumulative,"year-end running total, week 52",,0,791580,118.37
+mumps,HI,1971,937,cdc_annual,final annual table,,0,791580,118.37
 mumps,HI,1972,316,cdc_annual,final annual table,,0,818104,38.63
 mumps,HI,1973,283,cdc_annual,final annual table,,0,841851,33.62
 mumps,HI,1974,80,cdc_annual,final annual table,,0,858121,9.32
@@ -15118,7 +15118,7 @@ mumps,HI,2025,4,cdc_weekly,"provisional, week 53 of 2025",,0,1432820,0.28
 mumps,IA,1968,12539,cdc_annual,final annual table,,0,2803000,447.34
 mumps,IA,1969,4533,cdc_annual,final annual table,,0,2805000,161.6
 mumps,IA,1970,3546,cdc_annual,final annual table,,0,2828534,125.37
-mumps,IA,1971,5721,tycho_cumulative,"year-end running total, week 52",,0,2851828,200.61
+mumps,IA,1971,5750,cdc_annual,final annual table,,0,2851828,201.63
 mumps,IA,1972,6986,cdc_annual,final annual table,,0,2860506,244.22
 mumps,IA,1973,4095,cdc_annual,final annual table,,0,2864031,142.98
 mumps,IA,1974,1985,cdc_annual,final annual table,,0,2867941,69.21
@@ -15176,7 +15176,7 @@ mumps,IA,2025,8,cdc_weekly,"provisional, week 53 of 2025",,0,3238387,0.25
 mumps,ID,1968,548,cdc_annual,final annual table,,0,695000,78.85
 mumps,ID,1969,220,cdc_annual,final annual table,,0,707000,31.12
 mumps,ID,1970,133,cdc_annual,final annual table,,0,717255,18.54
-mumps,ID,1971,183,tycho_cumulative,"year-end running total, week 52",,0,738749,24.77
+mumps,ID,1971,203,cdc_annual,final annual table,,0,738749,27.48
 mumps,ID,1972,219,cdc_annual,final annual table,,0,763229,28.69
 mumps,ID,1973,134,cdc_annual,final annual table,,0,782061,17.13
 mumps,ID,1974,162,cdc_annual,final annual table,,0,807973,20.05
@@ -15234,7 +15234,7 @@ mumps,ID,2025,2,cdc_weekly,"provisional, week 53 of 2025",,0,2029733,0.1
 mumps,IL,1968,5404,cdc_annual,final annual table,,0,10995000,49.15
 mumps,IL,1969,3212,cdc_annual,final annual table,,0,11039000,29.1
 mumps,IL,1970,2387,cdc_annual,final annual table,,0,11124681,21.46
-mumps,IL,1971,5332,tycho_cumulative,"year-end running total, week 52",,0,11205816,47.58
+mumps,IL,1971,5585,cdc_annual,final annual table,,0,11205816,49.84
 mumps,IL,1972,3399,cdc_annual,final annual table,,0,11258111,30.19
 mumps,IL,1973,2944,cdc_annual,final annual table,,0,11260248,26.15
 mumps,IL,1974,1707,cdc_annual,final annual table,,0,11273745,15.14
@@ -15292,7 +15292,7 @@ mumps,IL,2025,21,cdc_weekly,"provisional, week 53 of 2025",,0,12719141,0.17
 mumps,IN,1968,4292,cdc_annual,final annual table,,0,5093000,84.27
 mumps,IN,1969,2888,cdc_annual,final annual table,,0,5143000,56.15
 mumps,IN,1970,2481,cdc_annual,final annual table,,0,5203700,47.68
-mumps,IN,1971,5371,tycho_cumulative,"year-end running total, week 52",,0,5249921,102.31
+mumps,IN,1971,5457,cdc_annual,final annual table,,0,5249921,103.94
 mumps,IN,1972,1276,cdc_annual,final annual table,,0,5296129,24.09
 mumps,IN,1973,1786,cdc_annual,final annual table,,0,5329122,33.51
 mumps,IN,1974,1477,cdc_annual,final annual table,,0,5349886,27.61
@@ -15350,7 +15350,7 @@ mumps,IN,2025,8,cdc_weekly,"provisional, week 53 of 2025",,0,6973333,0.11
 mumps,KS,1968,781,cdc_annual,final annual table,,0,2216000,35.24
 mumps,KS,1969,186,cdc_annual,final annual table,,0,2236000,8.32
 mumps,KS,1970,165,cdc_annual,final annual table,,0,2247823,7.34
-mumps,KS,1971,1031,tycho_cumulative,"year-end running total, week 52",,0,2246132,45.9
+mumps,KS,1971,1074,cdc_annual,final annual table,,0,2246132,47.82
 mumps,KS,1972,774,cdc_annual,final annual table,,0,2255525,34.32
 mumps,KS,1973,986,cdc_annual,final annual table,,0,2264369,43.54
 mumps,KS,1974,842,cdc_annual,final annual table,,0,2267881,37.13
@@ -15408,7 +15408,7 @@ mumps,KS,2025,4,cdc_weekly,"provisional, week 53 of 2025",,0,2977220,0.13
 mumps,KY,1968,2830,cdc_annual,final annual table,,0,3195000,88.58
 mumps,KY,1969,1417,cdc_annual,final annual table,,0,3198000,44.31
 mumps,KY,1970,2269,cdc_annual,final annual table,,0,3230587,70.23
-mumps,KY,1971,2534,tycho_cumulative,"year-end running total, week 52",,0,3298262,76.83
+mumps,KY,1971,2532,cdc_annual,final annual table,,0,3298262,76.77
 mumps,KY,1972,590,cdc_annual,final annual table,,0,3336106,17.69
 mumps,KY,1973,1759,cdc_annual,final annual table,,0,3371573,52.17
 mumps,KY,1974,3198,cdc_annual,final annual table,,0,3417039,93.59
@@ -15466,7 +15466,7 @@ mumps,KY,2025,12,cdc_weekly,"provisional, week 53 of 2025",,0,4606864,0.26
 mumps,LA,1968,69,cdc_annual,final annual table,,0,3603000,1.92
 mumps,LA,1969,28,cdc_annual,final annual table,,0,3619000,0.77
 mumps,LA,1970,50,cdc_annual,final annual table,,0,3650209,1.37
-mumps,LA,1971,157,tycho_cumulative,"year-end running total, week 52",,0,3710666,4.23
+mumps,LA,1971,163,cdc_annual,final annual table,,0,3710666,4.39
 mumps,LA,1972,339,cdc_annual,final annual table,,0,3761967,9.01
 mumps,LA,1973,156,cdc_annual,final annual table,,0,3788840,4.12
 mumps,LA,1974,323,cdc_annual,final annual table,,0,3820720,8.45
@@ -15524,7 +15524,7 @@ mumps,LA,2025,4,cdc_weekly,"provisional, week 53 of 2025",,0,4618189,0.09
 mumps,MA,1968,9024,cdc_annual,final annual table,,0,5618000,160.63
 mumps,MA,1969,4475,cdc_annual,final annual table,,0,5650000,79.2
 mumps,MA,1970,3270,cdc_annual,final annual table,,0,5703706,57.33
-mumps,MA,1971,1844,tycho_cumulative,"year-end running total, week 52",,0,5738589,32.13
+mumps,MA,1971,1887,cdc_annual,final annual table,,0,5738589,32.88
 mumps,MA,1972,829,cdc_annual,final annual table,,0,5762122,14.39
 mumps,MA,1973,1330,cdc_annual,final annual table,,0,5783809,23.0
 mumps,MA,1974,1117,cdc_annual,final annual table,,0,5776992,19.34
@@ -15582,7 +15582,7 @@ mumps,MA,2025,8,cdc_weekly,"provisional, week 53 of 2025",,0,7154084,0.11
 mumps,MD,1968,1197,cdc_annual,final annual table,,0,3815000,31.38
 mumps,MD,1969,600,cdc_annual,final annual table,,0,3868000,15.51
 mumps,MD,1970,1160,cdc_annual,final annual table,,0,3938051,29.46
-mumps,MD,1971,785,tycho_cumulative,"year-end running total, week 52",,0,4022507,19.52
+mumps,MD,1971,830,cdc_annual,final annual table,,0,4022507,20.63
 mumps,MD,1972,570,cdc_annual,final annual table,,0,4081121,13.97
 mumps,MD,1973,696,cdc_annual,final annual table,,0,4109038,16.94
 mumps,MD,1974,160,cdc_annual,final annual table,,0,4133341,3.87
@@ -15640,7 +15640,7 @@ mumps,MD,2025,9,cdc_weekly,"provisional, week 53 of 2025",,0,6265347,0.14
 mumps,ME,1968,1091,cdc_annual,final annual table,,0,994000,109.76
 mumps,ME,1969,1461,cdc_annual,final annual table,,0,992000,147.28
 mumps,ME,1970,927,cdc_annual,final annual table,,0,996784,93.0
-mumps,ME,1971,1293,tycho_cumulative,"year-end running total, week 52",,0,1015677,127.3
+mumps,ME,1971,1284,cdc_annual,final annual table,,0,1015677,126.42
 mumps,ME,1972,319,cdc_annual,final annual table,,0,1034817,30.83
 mumps,ME,1973,573,cdc_annual,final annual table,,0,1046420,54.76
 mumps,ME,1974,982,cdc_annual,final annual table,,0,1060050,92.64
@@ -15698,7 +15698,7 @@ mumps,ME,2025,0,cdc_weekly,"provisional, week 53 of 2025",,0,1414874,0.0
 mumps,MI,1968,14655,cdc_annual,final annual table,,0,8696000,168.53
 mumps,MI,1969,5215,cdc_annual,final annual table,,0,8781000,59.39
 mumps,MI,1970,7825,cdc_annual,final annual table,,0,8896558,87.96
-mumps,MI,1971,10748,tycho_cumulative,"year-end running total, week 52",,0,8971835,119.8
+mumps,MI,1971,10748,cdc_annual,final annual table,,0,8971835,119.8
 mumps,MI,1972,3729,cdc_annual,final annual table,,0,9024681,41.32
 mumps,MI,1973,5042,cdc_annual,final annual table,,0,9071764,55.58
 mumps,MI,1974,7230,cdc_annual,final annual table,,0,9109374,79.37
@@ -15756,7 +15756,7 @@ mumps,MI,2025,19,cdc_weekly,"provisional, week 53 of 2025",,0,10127884,0.19
 mumps,MN,1968,698,cdc_annual,final annual table,,0,3703000,18.85
 mumps,MN,1969,746,cdc_annual,final annual table,,0,3758000,19.85
 mumps,MN,1970,606,cdc_annual,final annual table,,0,3815249,15.88
-mumps,MN,1971,1415,tycho_cumulative,"year-end running total, week 52",,0,3851901,36.74
+mumps,MN,1971,1422,cdc_annual,final annual table,,0,3851901,36.92
 mumps,MN,1972,727,cdc_annual,final annual table,,0,3866878,18.8
 mumps,MN,1973,109,cdc_annual,final annual table,,0,3885164,2.81
 mumps,MN,1974,100,cdc_annual,final annual table,,0,3898450,2.57
@@ -15814,7 +15814,7 @@ mumps,MN,2025,3,cdc_weekly,"provisional, week 53 of 2025",,0,5830405,0.05
 mumps,MO,1968,1183,cdc_annual,final annual table,,0,4568000,25.9
 mumps,MO,1969,439,cdc_annual,final annual table,,0,4640000,9.46
 mumps,MO,1970,521,cdc_annual,final annual table,,0,4684768,11.12
-mumps,MO,1971,1151,tycho_cumulative,"year-end running total, week 52",,0,4722703,24.37
+mumps,MO,1971,1165,cdc_annual,final annual table,,0,4722703,24.67
 mumps,MO,1972,854,cdc_annual,final annual table,,0,4753234,17.97
 mumps,MO,1973,637,cdc_annual,final annual table,,0,4774601,13.34
 mumps,MO,1974,1755,cdc_annual,final annual table,,0,4785391,36.67
@@ -15872,7 +15872,7 @@ mumps,MO,2025,0,cdc_weekly,"provisional, week 53 of 2025",,0,6270541,0.0
 mumps,MS,1968,250,cdc_annual,final annual table,,0,2219000,11.27
 mumps,MS,1969,51,cdc_annual,final annual table,,0,2220000,2.3
 mumps,MS,1970,73,cdc_annual,final annual table,,0,2221128,3.29
-mumps,MS,1971,162,tycho_cumulative,"year-end running total, week 52",,0,2265529,7.15
+mumps,MS,1971,163,cdc_annual,final annual table,,0,2265529,7.19
 mumps,MS,1972,130,cdc_annual,final annual table,,0,2307291,5.63
 mumps,MS,1973,491,cdc_annual,final annual table,,0,2349802,20.9
 mumps,MS,1974,403,cdc_annual,final annual table,,0,2378603,16.94
@@ -15926,7 +15926,7 @@ mumps,MS,2025,1,cdc_weekly,"provisional, week 53 of 2025",,0,2954160,0.03
 mumps,MT,1968,631,cdc_annual,final annual table,,0,700000,90.14
 mumps,MT,1969,766,cdc_annual,final annual table,,0,694000,110.37
 mumps,MT,1970,827,cdc_annual,final annual table,,0,697172,118.62
-mumps,MT,1971,453,tycho_cumulative,"year-end running total, week 52",,0,711037,63.71
+mumps,MT,1971,455,cdc_annual,final annual table,,0,711037,63.99
 mumps,MT,1972,276,cdc_annual,final annual table,,0,719138,38.38
 mumps,MT,1973,314,cdc_annual,final annual table,,0,727389,43.17
 mumps,MT,1974,164,cdc_annual,final annual table,,0,737203,22.25
@@ -16036,7 +16036,7 @@ mumps,NC,2025,7,cdc_weekly,"provisional, week 53 of 2025",,0,11197968,0.06
 mumps,ND,1968,1571,cdc_annual,final annual table,,0,621000,252.98
 mumps,ND,1969,460,cdc_annual,final annual table,,0,621000,74.07
 mumps,ND,1970,314,cdc_annual,final annual table,,0,618851,50.74
-mumps,ND,1971,425,tycho_cumulative,"year-end running total, week 52",,0,626659,67.82
+mumps,ND,1971,406,cdc_annual,final annual table,,0,626659,64.79
 mumps,ND,1972,417,cdc_annual,final annual table,,0,630937,66.09
 mumps,ND,1973,78,cdc_annual,final annual table,,0,632411,12.33
 mumps,ND,1974,118,cdc_annual,final annual table,,0,634212,18.61
@@ -16094,7 +16094,7 @@ mumps,ND,2025,0,cdc_weekly,"provisional, week 53 of 2025",,0,799358,0.0
 mumps,NE,1968,596,cdc_annual,final annual table,,0,1467000,40.63
 mumps,NE,1969,258,cdc_annual,final annual table,,0,1474000,17.5
 mumps,NE,1970,412,cdc_annual,final annual table,,0,1487963,27.69
-mumps,NE,1971,240,tycho_cumulative,"year-end running total, week 52",,0,1504208,15.96
+mumps,NE,1971,239,cdc_annual,final annual table,,0,1504208,15.89
 mumps,NE,1972,274,cdc_annual,final annual table,,0,1518293,18.05
 mumps,NE,1973,194,cdc_annual,final annual table,,0,1528517,12.69
 mumps,NE,1974,93,cdc_annual,final annual table,,0,1537809,6.05
@@ -16152,7 +16152,7 @@ mumps,NE,2025,4,cdc_weekly,"provisional, week 53 of 2025",,0,2018006,0.2
 mumps,NH,1968,333,cdc_annual,final annual table,,0,709000,46.97
 mumps,NH,1969,418,cdc_annual,final annual table,,0,724000,57.73
 mumps,NH,1970,485,cdc_annual,final annual table,,0,741932,65.37
-mumps,NH,1971,684,tycho_cumulative,"year-end running total, week 52",,0,762173,89.74
+mumps,NH,1971,709,cdc_annual,final annual table,,0,762173,93.02
 mumps,NH,1972,199,cdc_annual,final annual table,,0,781699,25.46
 mumps,NH,1973,305,cdc_annual,final annual table,,0,801824,38.04
 mumps,NH,1974,307,cdc_annual,final annual table,,0,817073,37.57
@@ -16210,7 +16210,7 @@ mumps,NH,2025,0,cdc_weekly,"provisional, week 53 of 2025",,0,1415342,0.0
 mumps,NJ,1968,4010,cdc_annual,final annual table,,0,7005000,57.24
 mumps,NJ,1969,1973,cdc_annual,final annual table,,0,7095000,27.81
 mumps,NJ,1970,2868,cdc_annual,final annual table,,0,7190282,39.89
-mumps,NJ,1971,1820,tycho_cumulative,"year-end running total, week 52",,0,7281935,24.99
+mumps,NJ,1971,1819,cdc_annual,final annual table,,0,7281935,24.98
 mumps,NJ,1972,1103,cdc_annual,final annual table,,0,7336538,15.03
 mumps,NJ,1973,1684,cdc_annual,final annual table,,0,7335240,22.96
 mumps,NJ,1974,784,cdc_annual,final annual table,,0,7335227,10.69
@@ -16268,7 +16268,7 @@ mumps,NJ,2025,7,cdc_weekly,"provisional, week 53 of 2025",,0,9548215,0.07
 mumps,NM,1968,983,cdc_annual,final annual table,,0,994000,98.89
 mumps,NM,1969,1052,cdc_annual,final annual table,,0,1011000,104.06
 mumps,NM,1970,794,cdc_annual,final annual table,,0,1023206,77.6
-mumps,NM,1971,770,tycho_cumulative,"year-end running total, week 52",,0,1053258,73.11
+mumps,NM,1971,796,cdc_annual,final annual table,,0,1053258,75.58
 mumps,NM,1972,827,cdc_annual,final annual table,,0,1077815,76.73
 mumps,NM,1973,1044,cdc_annual,final annual table,,0,1104225,94.55
 mumps,NM,1974,187,cdc_annual,final annual table,,0,1129568,16.56
@@ -16306,6 +16306,7 @@ mumps,NM,2025,0,cdc_weekly,"provisional, week 53 of 2025",,0,2125498,0.0
 mumps,NV,1968,318,cdc_annual,final annual table,,0,464000,68.53
 mumps,NV,1969,29,cdc_annual,final annual table,,0,480000,6.04
 mumps,NV,1970,80,cdc_annual,final annual table,,0,493223,16.22
+mumps,NV,1971,4,cdc_annual,final annual table,,0,519989,0.77
 mumps,NV,1972,65,cdc_annual,final annual table,,0,546736,11.89
 mumps,NV,1973,23,cdc_annual,final annual table,,0,568910,4.04
 mumps,NV,1974,23,cdc_annual,final annual table,,0,596713,3.85
@@ -16360,6 +16361,12 @@ mumps,NV,2022,1,cdc_annual,final annual table,,0,3177672,0.03
 mumps,NV,2023,0,cdc_annual,final annual table,,0,3211077,0.0
 mumps,NV,2024,4,cdc_weekly,as of week 53 of 2025,,0,3253543,0.12
 mumps,NV,2025,2,cdc_weekly,"provisional, week 53 of 2025",,0,3282188,0.06
+mumps,NY,1968,3890,cdc_annual_part,"final annual table, New York City only",,0,18051000,21.55
+mumps,NY,1969,3978,cdc_annual_part,"final annual table, New York City only",,0,18105000,21.97
+mumps,NY,1970,3224,cdc_annual_part,"final annual table, New York City only",,0,18271605,17.64
+mumps,NY,1971,2081,cdc_annual_part,"final annual table, New York City only",,0,18364865,11.33
+mumps,NY,1972,2557,cdc_annual_part,"final annual table, New York City only",,0,18351767,13.93
+mumps,NY,1973,4917,cdc_annual_part,"final annual table, New York City only",,0,18194767,27.02
 mumps,NY,1974,1955,cdc_annual,final annual table,,0,18072768,10.82
 mumps,NY,1975,2214,cdc_annual,final annual table,,0,18032254,12.28
 mumps,NY,1976,2206,cdc_annual,final annual table,,0,17974654,12.27
@@ -16415,7 +16422,7 @@ mumps,NY,2025,28,cdc_weekly,"provisional, week 53 of 2025",,0,20002427,0.14
 mumps,OH,1968,2633,cdc_annual,final annual table,,0,10516000,25.04
 mumps,OH,1969,2212,cdc_annual,final annual table,,0,10563000,20.94
 mumps,OH,1970,5077,cdc_annual,final annual table,,0,10668839,47.59
-mumps,OH,1971,8858,tycho_cumulative,"year-end running total, week 52",,0,10734782,82.52
+mumps,OH,1971,8784,cdc_annual,final annual table,,0,10734782,81.83
 mumps,OH,1972,2761,cdc_annual,final annual table,,0,10746920,25.69
 mumps,OH,1973,3216,cdc_annual,final annual table,,0,10767205,29.87
 mumps,OH,1974,3547,cdc_annual,final annual table,,0,10765613,32.95
@@ -16473,7 +16480,7 @@ mumps,OH,2025,22,cdc_weekly,"provisional, week 53 of 2025",,0,11900510,0.18
 mumps,OK,1968,191,cdc_annual,final annual table,,0,2503000,7.63
 mumps,OK,1969,1020,cdc_annual,final annual table,,0,2535000,40.24
 mumps,OK,1970,2683,cdc_annual,final annual table,,0,2566485,104.54
-mumps,OK,1971,217,tycho_cumulative,"year-end running total, week 52",,0,2617944,8.29
+mumps,OK,1971,237,cdc_annual,final annual table,,0,2617944,9.05
 mumps,OK,1972,160,cdc_annual,final annual table,,0,2657448,6.02
 mumps,OK,1973,512,cdc_annual,final annual table,,0,2694182,19.0
 mumps,OK,1974,417,cdc_annual,final annual table,,0,2732454,15.26
@@ -16522,7 +16529,7 @@ mumps,OK,2025,4,cdc_weekly,"provisional, week 53 of 2025",,0,4123288,0.1
 mumps,OR,1968,1025,cdc_annual,final annual table,,0,2004000,51.15
 mumps,OR,1969,669,cdc_annual,final annual table,,0,2062000,32.44
 mumps,OR,1970,1436,cdc_annual,final annual table,,0,2100388,68.37
-mumps,OR,1971,1772,tycho_cumulative,"year-end running total, week 52",,0,2149890,82.42
+mumps,OR,1971,1772,cdc_annual,final annual table,,0,2149890,82.42
 mumps,OR,1972,2085,cdc_annual,final annual table,,0,2195219,94.98
 mumps,OR,1973,2140,cdc_annual,final annual table,,0,2238878,95.58
 mumps,OR,1974,857,cdc_annual,final annual table,,0,2280956,37.57
@@ -16557,7 +16564,7 @@ mumps,OR,2024,5,cdc_weekly,as of week 53 of 2025,,0,4265324,0.12
 mumps,OR,2025,2,cdc_weekly,"provisional, week 53 of 2025",,0,4273586,0.05
 mumps,PA,1969,295,cdc_annual,final annual table,,0,11741000,2.51
 mumps,PA,1970,3613,cdc_annual,final annual table,,0,11811561,30.59
-mumps,PA,1971,3005,tycho_cumulative,"year-end running total, week 52",,0,11884354,25.29
+mumps,PA,1971,3005,cdc_annual,final annual table,,0,11884354,25.29
 mumps,PA,1972,912,cdc_annual,final annual table,,0,11904541,7.66
 mumps,PA,1973,1743,cdc_annual,final annual table,,0,11885202,14.67
 mumps,PA,1974,1557,cdc_annual,final annual table,,0,11863936,13.12
@@ -16615,7 +16622,7 @@ mumps,PA,2025,10,cdc_weekly,"provisional, week 53 of 2025",,0,13059432,0.08
 mumps,RI,1968,1668,cdc_annual,final annual table,,0,922000,180.91
 mumps,RI,1969,1378,cdc_annual,final annual table,,0,932000,147.85
 mumps,RI,1970,2384,cdc_annual,final annual table,,0,950561,250.8
-mumps,RI,1971,1322,tycho_cumulative,"year-end running total, week 52",,0,963974,137.14
+mumps,RI,1971,1322,cdc_annual,final annual table,,0,963974,137.14
 mumps,RI,1972,434,cdc_annual,final annual table,,0,976365,44.45
 mumps,RI,1973,911,cdc_annual,final annual table,,0,978010,93.15
 mumps,RI,1974,2693,cdc_annual,final annual table,,0,953503,282.43
@@ -16672,7 +16679,7 @@ mumps,RI,2025,0,cdc_weekly,"provisional, week 53 of 2025",,0,1114521,0.0
 mumps,SC,1968,287,cdc_annual,final annual table,,0,2559000,11.22
 mumps,SC,1969,481,cdc_annual,final annual table,,0,2570000,18.72
 mumps,SC,1970,1028,cdc_annual,final annual table,,0,2598210,39.57
-mumps,SC,1971,915,tycho_cumulative,"year-end running total, week 52",,0,2661836,34.37
+mumps,SC,1971,943,cdc_annual,final annual table,,0,2661836,35.43
 mumps,SC,1972,188,cdc_annual,final annual table,,0,2718404,6.92
 mumps,SC,1973,358,cdc_annual,final annual table,,0,2775442,12.9
 mumps,SC,1974,144,cdc_annual,final annual table,,0,2843199,5.06
@@ -16730,7 +16737,7 @@ mumps,SC,2025,2,cdc_weekly,"provisional, week 53 of 2025",,0,5570274,0.04
 mumps,SD,1968,1,cdc_annual,final annual table,,0,669000,0.15
 mumps,SD,1969,0,cdc_annual,final annual table,,0,668000,0.0
 mumps,SD,1970,57,cdc_annual,final annual table,,0,666641,8.55
-mumps,SD,1971,309,tycho_cumulative,"year-end running total, week 52",,0,671382,46.02
+mumps,SD,1971,313,cdc_annual,final annual table,,0,671382,46.62
 mumps,SD,1972,123,cdc_annual,final annual table,,0,677389,18.16
 mumps,SD,1973,21,cdc_annual,final annual table,,0,678939,3.09
 mumps,SD,1974,3,cdc_annual,final annual table,,0,679877,0.44
@@ -16788,7 +16795,7 @@ mumps,SD,2025,0,cdc_weekly,"provisional, week 53 of 2025",,0,935094,0.0
 mumps,TN,1968,4321,cdc_annual,final annual table,,0,3878000,111.42
 mumps,TN,1969,2339,cdc_annual,final annual table,,0,3897000,60.02
 mumps,TN,1970,3462,cdc_annual,final annual table,,0,3936975,87.94
-mumps,TN,1971,5232,tycho_cumulative,"year-end running total, week 52",,0,4010238,130.47
+mumps,TN,1971,5194,cdc_annual,final annual table,,0,4010238,129.52
 mumps,TN,1972,2279,cdc_annual,final annual table,,0,4088445,55.74
 mumps,TN,1973,2836,cdc_annual,final annual table,,0,4138417,68.53
 mumps,TN,1974,2893,cdc_annual,final annual table,,0,4201621,68.85
@@ -16846,7 +16853,7 @@ mumps,TN,2025,10,cdc_weekly,"provisional, week 53 of 2025",,0,7315076,0.14
 mumps,TX,1968,11611,cdc_annual,final annual table,,0,10819000,107.32
 mumps,TX,1969,8342,cdc_annual,final annual table,,0,11045000,75.53
 mumps,TX,1970,6150,cdc_annual,final annual table,,0,11236772,54.73
-mumps,TX,1971,9143,tycho_cumulative,"year-end running total, week 52",,0,11509640,79.44
+mumps,TX,1971,9231,cdc_annual,final annual table,,0,11509640,80.2
 mumps,TX,1972,5108,cdc_annual,final annual table,,0,11758760,43.44
 mumps,TX,1973,3786,cdc_annual,final annual table,,0,12018970,31.5
 mumps,TX,1974,3500,cdc_annual,final annual table,,0,12267865,28.53
@@ -16904,7 +16911,7 @@ mumps,TX,2025,0,cdc_weekly,"provisional, week 53 of 2025",,0,31709821,0.0
 mumps,UT,1968,696,cdc_annual,final annual table,,0,1029000,67.64
 mumps,UT,1969,355,cdc_annual,final annual table,,0,1047000,33.91
 mumps,UT,1970,142,cdc_annual,final annual table,,0,1065672,13.32
-mumps,UT,1971,201,tycho_cumulative,"year-end running total, week 52",,0,1100733,18.26
+mumps,UT,1971,201,cdc_annual,final annual table,,0,1100733,18.26
 mumps,UT,1972,141,cdc_annual,final annual table,,0,1134601,12.43
 mumps,UT,1973,134,cdc_annual,final annual table,,0,1168784,11.46
 mumps,UT,1974,77,cdc_annual,final annual table,,0,1198793,6.42
@@ -16962,7 +16969,7 @@ mumps,UT,2025,9,cdc_weekly,"provisional, week 53 of 2025",,0,3538904,0.25
 mumps,VA,1968,1266,cdc_annual,final annual table,,0,4558000,27.78
 mumps,VA,1969,1334,cdc_annual,final annual table,,0,4614000,28.91
 mumps,VA,1970,2271,cdc_annual,final annual table,,0,4659930,48.73
-mumps,VA,1971,1085,tycho_cumulative,"year-end running total, week 52",,0,4752846,22.83
+mumps,VA,1971,1073,cdc_annual,final annual table,,0,4752846,22.58
 mumps,VA,1972,1319,cdc_annual,final annual table,,0,4828131,27.32
 mumps,VA,1973,799,cdc_annual,final annual table,,0,4906648,16.28
 mumps,VA,1974,822,cdc_annual,final annual table,,0,4978155,16.51
@@ -17020,7 +17027,7 @@ mumps,VA,2025,12,cdc_weekly,"provisional, week 53 of 2025",,0,8880107,0.14
 mumps,VT,1968,1265,cdc_annual,final annual table,,0,430000,294.19
 mumps,VT,1969,1298,cdc_annual,final annual table,,0,437000,297.03
 mumps,VT,1970,767,cdc_annual,final annual table,,0,446323,171.85
-mumps,VT,1971,498,tycho_cumulative,"year-end running total, week 52",,0,454357,109.61
+mumps,VT,1971,462,cdc_annual,final annual table,,0,454357,101.68
 mumps,VT,1972,144,cdc_annual,final annual table,,0,463214,31.09
 mumps,VT,1973,278,cdc_annual,final annual table,,0,468533,59.33
 mumps,VT,1974,21,cdc_annual,final annual table,,0,473138,4.44
@@ -17078,7 +17085,7 @@ mumps,VT,2025,1,cdc_weekly,"provisional, week 53 of 2025",,0,644663,0.16
 mumps,WA,1968,7891,cdc_annual,final annual table,,0,3270000,241.31
 mumps,WA,1969,5175,cdc_annual,final annual table,,0,3343000,154.8
 mumps,WA,1970,6976,cdc_annual,final annual table,,0,3417362,204.13
-mumps,WA,1971,6816,tycho_cumulative,"year-end running total, week 52",,0,3446958,197.74
+mumps,WA,1971,9483,cdc_annual,final annual table,,0,3446958,275.11
 mumps,WA,1972,6616,cdc_annual,final annual table,,0,3446815,191.95
 mumps,WA,1973,1949,cdc_annual,final annual table,,0,3477227,56.05
 mumps,WA,1974,2284,cdc_annual,final annual table,,0,3547877,64.38
@@ -17136,7 +17143,7 @@ mumps,WA,2025,10,cdc_weekly,"provisional, week 53 of 2025",,0,8001020,0.12
 mumps,WI,1968,17067,cdc_annual,final annual table,,0,4345000,392.8
 mumps,WI,1969,8879,cdc_annual,final annual table,,0,4378000,202.81
 mumps,WI,1970,12293,cdc_annual,final annual table,,0,4425944,277.75
-mumps,WI,1971,17172,tycho_cumulative,"year-end running total, week 52",,0,4459968,385.03
+mumps,WI,1971,17081,cdc_annual,final annual table,,0,4459968,382.98
 mumps,WI,1972,8420,cdc_annual,final annual table,,0,4498433,187.18
 mumps,WI,1973,4671,cdc_annual,final annual table,,0,4518461,103.38
 mumps,WI,1974,3553,cdc_annual,final annual table,,0,4538173,78.29
@@ -17194,7 +17201,7 @@ mumps,WI,2025,8,cdc_weekly,"provisional, week 53 of 2025",,0,5972787,0.13
 mumps,WV,1968,3482,cdc_annual,final annual table,,0,1763000,197.5
 mumps,WV,1969,2905,cdc_annual,final annual table,,0,1746000,166.38
 mumps,WV,1970,2591,cdc_annual,final annual table,,0,1746629,148.34
-mumps,WV,1971,2670,tycho_cumulative,"year-end running total, week 52",,0,1770252,150.83
+mumps,WV,1971,2670,cdc_annual,final annual table,,0,1770252,150.83
 mumps,WV,1972,2807,cdc_annual,final annual table,,0,1796910,156.21
 mumps,WV,1973,2783,cdc_annual,final annual table,,0,1805293,154.16
 mumps,WV,1974,3448,cdc_annual,final annual table,,0,1814048,190.07
@@ -17252,7 +17259,7 @@ mumps,WV,2025,2,cdc_weekly,"provisional, week 53 of 2025",,0,1766147,0.11
 mumps,WY,1968,358,cdc_annual,final annual table,,0,324000,110.49
 mumps,WY,1969,8,cdc_annual,final annual table,,0,329000,2.43
 mumps,WY,1970,46,cdc_annual,final annual table,,0,333795,13.78
-mumps,WY,1971,426,tycho_cumulative,"year-end running total, week 52",,0,340023,125.29
+mumps,WY,1971,452,cdc_annual,final annual table,,0,340023,132.93
 mumps,WY,1972,377,cdc_annual,final annual table,,0,346863,108.69
 mumps,WY,1973,433,cdc_annual,final annual table,,0,353353,122.54
 mumps,WY,1974,18,cdc_annual,final annual table,,0,364548,4.94

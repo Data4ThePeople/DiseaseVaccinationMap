@@ -1,6 +1,15 @@
 year,disease,area,pdf_page,ocr_text_layer_had,read_from_page_image,source_file
 1968,mumps,Alaska,10,,705,stacks_1717_DS1.pdf
 1970,mumps,Oklahoma,10,,"2,683",stacks_951_DS1.pdf
+1971,mumps,Ohio,10,8.784,"8,784",stacks_1829_DS1.pdf
+1971,mumps,Illinois,10,"5,S85","5,585",stacks_1829_DS1.pdf
+1971,mumps,District of Columbia,10,-99,99,stacks_1829_DS1.pdf
+1971,mumps,East South Central,10,,"8,933",stacks_1829_DS1.pdf
+1971,mumps,New Jersey,10,,"1,819",stacks_1829_DS1.pdf
+1971,mumps,Virginia,10,,"1,073",stacks_1829_DS1.pdf
+1971,mumps,Georgia,10,,-,stacks_1829_DS1.pdf
+1971,mumps,Arkansas,10,,157,stacks_1829_DS1.pdf
+1971,mumps,Oregon,10,,"1,772",stacks_1829_DS1.pdf
 1972,mumps,East South Central,10,3y859,"3,859",stacks_1895_DS1.pdf
 1979,mumps,District of Columbia,13,,2,stacks_1577_DS1.pdf
 1979,mumps,Virginia,13,,105,stacks_1577_DS1.pdf

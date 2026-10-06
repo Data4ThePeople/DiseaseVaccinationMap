@@ -221,7 +221,7 @@ US totals as printed (thousands separators as printed): 1968 152,209;
 4,941; 1982 5,270; 1983 3,355; 1984 3,021; 1985 2,982; 1986 7,790; 1987
 12,848; 1988 4,866; 1989 5,712; 1990 5,292; 1991 4,264; 1992 2,572.
 
-**1971 is left out.** With the OCR damage read from the image, every cell is
+**1971 (now kept by editor decision, see the note after this paragraph).** With the OCR damage read from the image, every cell is
 legible, but two cells are printed in a way that can only be turned into a
 count by deciding what the printer meant:
 - District of Columbia is printed `-99` (checked at 600 dpi, p.10).
@@ -233,6 +233,14 @@ work, which the rules do not allow, so 1971 is not in the file. The other
 damaged 1971 cells read cleanly from the image (Illinois 5,585, New Jersey
 1,819, Virginia 1,073, Georgia dash, East South Central 8,933, Arkansas
 157, Oregon 1,772).
+
+**Update, October 6, 2026.** Eric accepted the readings 99 (DC) and 8,784
+(Ohio). They are in `SCAN_IMAGE_CELLS` with the other 1971 image cells, and
+`SCAN_EDITOR_READINGS` puts the misprint and the decision in each flag. 1971
+then passes the strict test exactly. Separately, the build now shows New
+York's 1968 to 1973 mumps value as the New York City count, by the same
+decision; this extract still leaves the New York row blank with the City count
+in its flag, and the build reads it from there.
 
 Other notes:
 - New York 1968 to 1973: upstate New York is NN, so the New York row is

@@ -51,6 +51,11 @@ def cdc_annual():
     b["st"] = b.state.str.upper().map(NAME_TO_ABBR)
     b["cases"] = pd.to_numeric(b.cases, errors="coerce")
     b = b[b.st.notna()]
+    # New York 1968-1973: upstate did not report mumps, the table prints New York City. Show the City's
+    # count, marked as City only (editor decision, October 6, 2026).
+    part = b.cases.isna() & b.flag.fillna("").str.contains("other part=")
+    b.loc[part, "cases"] = b.loc[part, "flag"].str.extract(r"other part=(\d+)")[0].astype(float)
+    b["part"] = part
     # A final table that marks a state (NN not notifiable, N, U, NR, ...) is the last word for that year:
     # these rows block the provisional layers below and then drop out, so the page shows "no data".
     global BLOCKED
@@ -58,7 +63,9 @@ def cdc_annual():
     b = b[b.cases.notna()]
     b["year"] = b.year.astype(int)
     assert not b.duplicated(["disease", "st", "year"]).any(), "duplicate rows in the annual table extract"
-    b["source"], b["basis"], b["weeks"], b["check"] = "cdc_annual", "final annual table", pd.NA, 0
+    b["source"] = b.part.map({True: "cdc_annual_part", False: "cdc_annual"})
+    b["basis"] = b.part.map({True: "final annual table, New York City only", False: "final annual table"})
+    b["weeks"], b["check"] = pd.NA, 0
     return b[["disease", "st", "year", "cases", "source", "basis", "weeks", "check"]]
 
 

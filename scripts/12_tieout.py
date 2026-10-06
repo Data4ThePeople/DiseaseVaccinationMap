@@ -15,7 +15,7 @@ import zipfile
 
 import pandas as pd
 
-from common import DATA, RAW, ROOT, STATES
+from common import DATA, NAME_TO_ABBR, RAW, ROOT, STATES
 
 D = json.loads((ROOT / "viz" / "data.json").read_text())
 Y0 = D["y0"]
@@ -55,12 +55,13 @@ nb, gaps = 0, []
 for r in us.itertuples():
     y = int(r.year)
     codes = {D["src"][r.disease][s][y - Y0].lower() for s in STATES}
-    if codes - {"a", "-"} or pd.isna(r.cases):
+    if codes - {"a", "-", "n"} or pd.isna(r.cases):
         continue
     total = sum(v for s in STATES if (v := page(r.disease, s, y)) is not None)
-    if "-" in codes:   # a state left blank by the table: the printed total still counts any part it gave
+    if codes & {"-", "n"}:   # a state left blank by the table, or shown as one part of it: the printed total still counts any part it gave
         rows = bs[(bs.year == r.year) & (bs.disease.replace({"polio_paralytic": "polio"}) == r.disease) & bs.flag.fillna("").str.contains("other part=")]
-        part = sum(int(f.split("other part=")[1].split(";")[0]) for f in rows.flag)
+        part = sum(int(f.split("other part=")[1].split(";")[0]) for f, s_ in zip(rows.flag, rows.state)
+                   if page(r.disease, NAME_TO_ABBR[s_.upper()], y) is None)   # only parts the map does not show
         gaps.append(f"| {r.disease} {y} | {int(float(r.cases))} | {total} | {part} | {'ok' if total + part == int(float(r.cases)) else 'MISMATCH'} |")
         bad += total + part != int(float(r.cases))
         continue
@@ -68,9 +69,9 @@ for r in us.itertuples():
     if total != int(float(r.cases)) or y % 5 == 0 or y in (2019, 2023):
         check(f"{r.disease} {y}", total, int(float(r.cases)))
 lines += ["", f"{nb} disease-years compared in all; the table lists every fifth year, 2019, 2023 and any mismatch.", "",
-          "Years where the table gives one or more states no figure (NN, not notifiable there). Those states show as no data. "
-          "In 1968 to 1973 upstate New York did not report mumps but the table prints New York City's count, which is in the "
-          "U.S. total and not on the map; the page sum falls short by exactly that part:", "",
+          "Years where the table gives one or more states no figure (NN, not notifiable there), which show as no data, "
+          "or where New York shows New York City only (mumps, 1968 to 1973, when upstate New York did not report). "
+          "The page sum must equal the printed U.S. total, plus any printed part the map does not show:", "",
           "| disease, year | CDC printed | page sum | part not mapped | |", "|---|---|---|---|---|"] + gaps + [""]
 
 

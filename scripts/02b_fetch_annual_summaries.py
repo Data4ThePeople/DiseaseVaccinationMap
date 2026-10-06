@@ -569,12 +569,30 @@ SCAN_ISSUES = {
 }
 SCAN_DISEASES = ("measles", "measles_indigenous", "measles_imported", "pertussis", "mumps")
 
+# Misprinted cells whose reading is an editor's decision rather than a plain read
+# of the page. Their flag says so.
+SCAN_EDITOR_READINGS = {
+    (1971, "mumps", "District of Columbia"): 'printed "-99", read as 99 by editor decision 2026-10-06',
+    (1971, "mumps", "Ohio"): 'printed "8.784", read as 8,784 by editor decision 2026-10-06',
+}
+
 # Cells read by eye from a rendered page image (PyMuPDF, 400 dpi crop of the
 # table) where the OCR text layer is damaged. Key: (year, disease, area as in
 # AREA_KEYS); value: (text as printed on the image, PDF page). Every entry is
 # listed in checks_image_cells.csv with what the OCR layer had. A year is
 # still kept only if the strict sum test passes exactly afterwards.
 SCAN_IMAGE_CELLS = {
+    # 1971 mumps, PDF page 10. Two cells are misprinted on the page; Eric accepted
+    # the readings below on October 6, 2026 (see SCAN_EDITOR_READINGS).
+    (1971, "mumps", "Illinois"): ("5,585", 10),
+    (1971, "mumps", "New Jersey"): ("1,819", 10),
+    (1971, "mumps", "Virginia"): ("1,073", 10),
+    (1971, "mumps", "Georgia"): ("-", 10),
+    (1971, "mumps", "East South Central"): ("8,933", 10),
+    (1971, "mumps", "Arkansas"): ("157", 10),
+    (1971, "mumps", "Oregon"): ("1,772", 10),
+    (1971, "mumps", "District of Columbia"): ("99", 10),   # printed "-99"
+    (1971, "mumps", "Ohio"): ("8,784", 10),                # printed "8.784"
     # 1989 mumps, PDF page 13: dashes the OCR layer did not pick up
     (1989, "mumps", "Maine"): ("-", 13),
     (1989, "mumps", "Rhode Island"): ("-", 13),
@@ -946,7 +964,8 @@ def scan_validate(cells, marks, disease, year=None, all_errors=False):
             continue
         img = SCAN_IMAGE_CELLS.get((year, disease, area))
         if img is not None:
-            rec = interpret(img[0], "read from page image: ")
+            ed = SCAN_EDITOR_READINGS.get((year, disease, area))
+            rec = interpret(img[0], f"read from page image, {ed}: " if ed else "read from page image: ")
             if rec is None:
                 return False, "image reading not usable: %s = %r" % (area, img[0]), got
             got[area] = rec

@@ -28,7 +28,7 @@ VACCINES = {
     "polio": "Polio vaccine, 3+ doses",
     "hepa": "Hepatitis A vaccine, 2+ doses",
 }
-SRC = {"tycho_weekly": "w", "tycho_cumulative": "c", "cdc_annual": "a", "cdc_weekly": "r"}
+SRC = {"tycho_weekly": "w", "tycho_cumulative": "c", "cdc_annual": "a", "cdc_annual_part": "n", "cdc_weekly": "r"}
 
 # Tile-grid position of each state: column, row.
 GRID = {

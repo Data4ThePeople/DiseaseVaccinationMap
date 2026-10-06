@@ -257,6 +257,7 @@ function sourceNote(c) {
   let t = k === "w" ? `Sum of ${c.weeks} weekly reports (Project Tycho)` + (c.weeks < 45 ? "; weeks are missing, so this is likely an undercount" : "")
     : k === "c" ? "Year-end running total from weekly reports, provisional (Project Tycho)"
     : k === "a" ? "Final annual count (CDC)"
+    : k === "n" ? "Final annual count (CDC) for New York City only; the rest of the state did not report mumps this year"
     : k === "r" ? "CDC weekly tables, as counted one year later"
     : "CDC weekly tables, provisional";
   if (c.code !== k) t += ". The weekly reports for this year disagree with each other; treat with care";

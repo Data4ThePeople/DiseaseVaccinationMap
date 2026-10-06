@@ -2,6 +2,7 @@ year,disease,sum_of_states,us_total_row,us_flag,us_minus_states,result,states_mi
 1968,mumps,148319,152209,,3890,OK (difference = New York City cases; the New York row is blank because upstate New York is marked NN),,New York=upstate:NN;other part=3890;North Carolina=NN;Pennsylvania=NN,stacks_1717_DS1.pdf
 1969,mumps,86940,90918,,3978,OK (difference = New York City cases; the New York row is blank because upstate New York is marked NN),,New York=upstate:NN;other part=3978;North Carolina=NN,stacks_838_DS1.pdf
 1970,mumps,101729,104953,,3224,OK (difference = New York City cases; the New York row is blank because upstate New York is marked NN),,New York=upstate:NN;other part=3224;North Carolina=NN,stacks_951_DS1.pdf
+1971,mumps,122858,124939,,2081,OK (difference = New York City cases; the New York row is blank because upstate New York is marked NN),,New York=upstate:NN;other part=2081;North Carolina=NN,stacks_1829_DS1.pdf
 1972,mumps,71658,74215,,2557,OK (difference = New York City cases; the New York row is blank because upstate New York is marked NN),,New York=upstate:NN;other part=2557,stacks_1895_DS1.pdf
 1973,mumps,64695,69612,,4917,OK (difference = New York City cases; the New York row is blank because upstate New York is marked NN),,Arizona=NN;New York=upstate:NN;other part=4917;North Carolina=NN,stacks_1849_DS1.pdf
 1974,mumps,59128,59128,,0,OK,,Arizona=NN;North Carolina=NR,stacks_1743_DS1.pdf

@@ -153,9 +153,8 @@ the vaccine era.**
 2. **The decline lines up with the vaccine.** The mumps vaccine was licensed in
    1967 and recommended for routine use in 1977. CDC reported a 98% decline from
    185,691 cases in 1967 to 2,982 in 1985. CDC's final tables give 152,209 for
-   1968; our state sum is 148,319 because upstate New York did not report mumps
-   that year (New York City's 3,890 cases are in the national total but not on
-   the map). Our 1985 sum is 2,982, the same as CDC's.
+   1968, and our state sum now matches it, with New York counted as New York
+   City only that year. Our 1985 sum is 2,982, the same as CDC's.
 3. **The 1987 resurgence is the best mumps story for this project.** CDC
    reported 12,848 cases in 1987. The rise was steepest among 10 to 14 year olds
    (an increase of almost 600%) and 15 to 19 year olds (more than 700%). CDC said
@@ -187,15 +186,18 @@ the vaccine era.**
 **Fixed: the mumps undercount.** The page's 1968 to 1992 mumps figures were
 Project Tycho's provisional totals, which undercounted (1986 showed 2,676
 against CDC's 7,790). They now come from CDC's final annual tables, read from
-the scanned reports, for every year except 1971. Each year passes the same
+the scanned reports, for every year from 1968 to 1992. Each year passes the same
 test as before: every state present, states adding to the printed regional
-rows, regions adding to the printed U.S. total. 83 state cells were read from
+rows, regions adding to the printed U.S. total. 91 state cells were read from
 the page image where the scan's text layer was damaged; they are listed in
 `data/raw/bridge/checks_image_cells.csv`, and two I checked against the page
-(Hawaii 1986, New England 1980) match. 1971 stays provisional because two cells
-are misprinted ("-99" for DC, "8.784" for Ohio) and reading them would mean
-guessing. The page sums now equal CDC's printed totals: 2,982 for 1985, 7,790
-for 1986 and 12,848 for 1987.
+(Hawaii 1986, New England 1980) match. Two 1971 cells are misprinted on the page
+("-99" for DC, "8.784" for Ohio); Eric accepted the readings 99 and 8,784 on
+October 6, 2026, and their flags say so. For 1968 to 1973, when upstate New
+York did not report mumps, New York shows New York City's count, labeled as
+City only. The page's national sums now equal CDC's printed totals in every
+year from 1968 to 1992, including 2,982 for 1985, 7,790 for 1986 and 12,848
+for 1987.
 
 ---
 
@@ -207,6 +209,4 @@ for 1986 and 12,848 for 1987.
 2. Find contemporary sources for the gaps: Mohave County 2025, Idaho whooping
    cough 2024, Lancaster and Collier 2026. This needs more web searches than
    this session has left.
-3. Decide on 1971 mumps (two misprinted cells) and on whether to show New York
-   City's count for 1968 to 1973, when upstate New York did not report mumps.
 4. Check the Wisconsin county reporting change before using those counties.

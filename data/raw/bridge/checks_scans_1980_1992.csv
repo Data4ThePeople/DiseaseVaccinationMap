@@ -2,7 +2,7 @@ year,disease,used,result_of_strict_check,pdf_page,column_header_as_read,us_total
 1968,mumps,yes,all nine division sums and the US sum equal the printed rows,10,MUMPS,"152,209",stacks_1717_DS1.pdf
 1969,mumps,yes,all nine division sums and the US sum equal the printed rows,10,MUMPS,"90,918",stacks_838_DS1.pdf
 1970,mumps,yes,all nine division sums and the US sum equal the printed rows,10,MUMPS,"104,953",stacks_951_DS1.pdf
-1971,mumps,no,"4 cells not readable in the OCR layer: Ohio='8.784', Illinois='5,S85', District of Columbia='-99', East South Central=''",10,MUMPS,"124,939",stacks_1829_DS1.pdf
+1971,mumps,yes,all nine division sums and the US sum equal the printed rows,10,MUMPS,"124,939",stacks_1829_DS1.pdf
 1972,mumps,yes,all nine division sums and the US sum equal the printed rows,10,MUMPS,"74,215",stacks_1895_DS1.pdf
 1973,mumps,yes,all nine division sums and the US sum equal the printed rows,10,MUMPS,"69,612",stacks_1849_DS1.pdf
 1974,mumps,yes,all nine division sums and the US sum equal the printed rows,10,MUMPS,"59,128",stacks_1743_DS1.pdf

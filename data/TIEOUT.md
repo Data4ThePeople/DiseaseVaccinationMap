@@ -5,7 +5,7 @@ Built by `scripts/12_tieout.py`. Every line below was recomputed from a raw file
 
 ## A. Packed data against the case table
 
-17,678 state-years in the table, 17,678 filled cells on the page, 0 differ.
+17,685 state-years in the table, 17,685 filled cells on the page, 0 differ.
 
 ## B. National sum on the page against the U.S. row CDC printed
 
@@ -49,15 +49,16 @@ Only years where every state on the page comes from the final annual table. The 
 
 114 disease-years compared in all; the table lists every fifth year, 2019, 2023 and any mismatch.
 
-Years where the table gives one or more states no figure (NN, not notifiable there). Those states show as no data. In 1968 to 1973 upstate New York did not report mumps but the table prints New York City's count, which is in the U.S. total and not on the map; the page sum falls short by exactly that part:
+Years where the table gives one or more states no figure (NN, not notifiable there), which show as no data, or where New York shows New York City only (mumps, 1968 to 1973, when upstate New York did not report). The page sum must equal the printed U.S. total, plus any printed part the map does not show:
 
 | disease, year | CDC printed | page sum | part not mapped | |
 |---|---|---|---|---|
-| mumps 1968 | 152209 | 148319 | 3890 | ok |
-| mumps 1969 | 90918 | 86940 | 3978 | ok |
-| mumps 1970 | 104953 | 101729 | 3224 | ok |
-| mumps 1972 | 74215 | 71658 | 2557 | ok |
-| mumps 1973 | 69612 | 64695 | 4917 | ok |
+| mumps 1968 | 152209 | 152209 | 0 | ok |
+| mumps 1969 | 90918 | 90918 | 0 | ok |
+| mumps 1970 | 104953 | 104953 | 0 | ok |
+| mumps 1971 | 124939 | 124939 | 0 | ok |
+| mumps 1972 | 74215 | 74215 | 0 | ok |
+| mumps 1973 | 69612 | 69612 | 0 | ok |
 | mumps 1974 | 59128 | 59128 | 0 | ok |
 | mumps 1977 | 21436 | 21436 | 0 | ok |
 | mumps 1978 | 16817 | 16817 | 0 | ok |
