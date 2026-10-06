@@ -183,10 +183,18 @@ ACS_YEARS = [y for y in range(2005, 2026) if y != 2020]
 
 
 def census_key():
-    sys.path.insert(0, os.path.expanduser("~/.claude/d4tp-process"))
-    from d4tp_env import get_key, load_env
-    load_env()
-    return get_key("CENSUS_API_KEY")
+    """A Census API key from the CENSUS_API_KEY environment variable, or from the Data 4 The
+    People key loader when it is installed. Without one, requests go out keyless, which the
+    Census API allows at this volume."""
+    if os.environ.get("CENSUS_API_KEY"):
+        return os.environ["CENSUS_API_KEY"]
+    loader = os.path.expanduser("~/.claude/d4tp-process")
+    if os.path.exists(os.path.join(loader, "d4tp_env.py")):
+        sys.path.insert(0, loader)
+        from d4tp_env import get_key, load_env
+        load_env()
+        return get_key("CENSUS_API_KEY")
+    return None
 
 
 def get_json(url, dest, key=None):
