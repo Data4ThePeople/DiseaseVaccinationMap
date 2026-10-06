@@ -5,7 +5,7 @@ Built by `scripts/12_tieout.py`. Every line below was recomputed from a raw file
 
 ## A. Packed data against the case table
 
-17,685 state-years in the table, 17,685 filled cells on the page, 0 differ.
+18,722 state-years in the table, 18,722 filled cells on the page, 0 differ.
 
 ## B. National sum on the page against the U.S. row CDC printed
 
@@ -13,7 +13,13 @@ Only years where every state on the page comes from the final annual table. The 
 
 | disease, year | CDC printed | page sum | |
 |---|---|---|---|
+| pertussis 1960 | 14809 | 14809 | ok |
+| measles 1970 | 47351 | 47351 | ok |
+| measles 1975 | 24374 | 24374 | ok |
 | mumps 1975 | 59647 | 59647 | ok |
+| pertussis 1975 | 1738 | 1738 | ok |
+| measles 1980 | 13506 | 13506 | ok |
+| pertussis 1980 | 1730 | 1730 | ok |
 | pertussis 1985 | 3589 | 3589 | ok |
 | pertussis 1990 | 4570 | 4570 | ok |
 | hepatitis_a 1995 | 31582 | 31582 | ok |
@@ -47,20 +53,31 @@ Only years where every state on the page comes from the final annual table. The 
 | pertussis 2023 | 7063 | 7063 | ok |
 | polio 2023 | 0 | 0 | ok |
 
-114 disease-years compared in all; the table lists every fifth year, 2019, 2023 and any mismatch.
+150 disease-years compared in all; the table lists every fifth year, 2019, 2023 and any mismatch.
 
 Years where the table gives one or more states no figure (NN, not notifiable there), which show as no data, or where New York shows New York City only (mumps, 1968 to 1973, when upstate New York did not report). The page sum must equal the printed U.S. total, plus any printed part the map does not show:
 
 | disease, year | CDC printed | page sum | part not mapped | |
 |---|---|---|---|---|
+| pertussis 1956 | 31732 | 31732 | 0 | ok |
+| pertussis 1957 | 28295 | 28295 | 0 | ok |
+| pertussis 1958 | 32148 | 32148 | 0 | ok |
+| pertussis 1959 | 40005 | 40005 | 0 | ok |
+| pertussis 1962 | 17749 | 17749 | 0 | ok |
+| pertussis 1963 | 17135 | 17135 | 0 | ok |
+| pertussis 1965 | 6799 | 6799 | 0 | ok |
+| pertussis 1966 | 7717 | 7717 | 0 | ok |
 | mumps 1968 | 152209 | 152209 | 0 | ok |
 | mumps 1969 | 90918 | 90918 | 0 | ok |
 | mumps 1970 | 104953 | 104953 | 0 | ok |
 | mumps 1971 | 124939 | 124939 | 0 | ok |
 | mumps 1972 | 74215 | 74215 | 0 | ok |
 | mumps 1973 | 69612 | 69612 | 0 | ok |
+| pertussis 1973 | 1759 | 1759 | 0 | ok |
 | mumps 1974 | 59128 | 59128 | 0 | ok |
+| pertussis 1974 | 2402 | 2402 | 0 | ok |
 | mumps 1977 | 21436 | 21436 | 0 | ok |
+| pertussis 1977 | 2177 | 2177 | 0 | ok |
 | mumps 1978 | 16817 | 16817 | 0 | ok |
 | mumps 1979 | 14225 | 14225 | 0 | ok |
 | mumps 1980 | 8576 | 8576 | 0 | ok |

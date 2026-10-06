@@ -1,4 +1,67 @@
 year,state,this_file,owid,result,owid_source
+1968,New York,3811,3811,same,https://stacks.cdc.gov/view/cdc/1717
+1969,New York,5681,5681,same,https://stacks.cdc.gov/view/cdc/838
+1970,New York,1581,1581,same,https://stacks.cdc.gov/view/cdc/951
+1971,New York,4563,4563,same,https://stacks.cdc.gov/view/cdc/1829
+1972,New York,673,673,same,https://stacks.cdc.gov/view/cdc/1895
+1973,New York,1791,1791,same,https://stacks.cdc.gov/view/cdc/1849
+1974,New York,1654,1654,same,https://stacks.cdc.gov/view/cdc/1743
+1975,New York,1245,1245,same,https://stacks.cdc.gov/view/cdc/1041
+1976,Alabama,0,0,same,https://stacks.cdc.gov/view/cdc/1130
+1976,New York,3495,3495,same,https://stacks.cdc.gov/view/cdc/1130
+1977,New York,4763,4763,same,https://stacks.cdc.gov/view/cdc/51062
+1978,Nebraska,5,5,same,https://stacks.cdc.gov/view/cdc/51063
+1978,New Mexico,0,0,same,https://stacks.cdc.gov/view/cdc/51063
+1978,New York,1844,1844,same,https://stacks.cdc.gov/view/cdc/51063
+1978,South Dakota,0,0,same,https://stacks.cdc.gov/view/cdc/51063
+1978,Wyoming,0,0,same,https://stacks.cdc.gov/view/cdc/51063
+1979,New York,1538,1538,same,https://stacks.cdc.gov/view/cdc/1577
+1979,Wyoming,36,36,same,https://stacks.cdc.gov/view/cdc/1577
+1980,Idaho,0,0,same,https://stacks.cdc.gov/view/cdc/1484
+1980,New York,1945,1945,same,https://stacks.cdc.gov/view/cdc/1484
+1980,North Dakota,0,0,same,https://stacks.cdc.gov/view/cdc/1484
+1980,South Dakota,0,0,same,https://stacks.cdc.gov/view/cdc/1484
+1980,Wyoming,0,0,same,https://stacks.cdc.gov/view/cdc/1484
+1981,Alabama,2,2,same,https://stacks.cdc.gov/view/cdc/1307
+1981,Delaware,0,0,same,https://stacks.cdc.gov/view/cdc/1307
+1981,Mississippi,0,0,same,https://stacks.cdc.gov/view/cdc/1307
+1981,Montana,0,0,same,https://stacks.cdc.gov/view/cdc/1307
+1981,New York,336,336,same,https://stacks.cdc.gov/view/cdc/1307
+1981,North Dakota,0,0,same,https://stacks.cdc.gov/view/cdc/1307
+1981,Rhode Island,0,0,same,https://stacks.cdc.gov/view/cdc/1307
+1981,South Carolina,2,2,same,https://stacks.cdc.gov/view/cdc/1307
+1981,South Dakota,0,0,same,https://stacks.cdc.gov/view/cdc/1307
+1981,Utah,0,0,same,https://stacks.cdc.gov/view/cdc/1307
+1982,Arkansas,0,0,same,https://stacks.cdc.gov/view/cdc/35066
+1982,Delaware,0,0,same,https://stacks.cdc.gov/view/cdc/35066
+1982,Georgia,0,0,same,https://stacks.cdc.gov/view/cdc/35066
+1982,Idaho,0,0,same,https://stacks.cdc.gov/view/cdc/35066
+1982,Iowa,0,0,same,https://stacks.cdc.gov/view/cdc/35066
+1982,Maine,0,0,same,https://stacks.cdc.gov/view/cdc/35066
+1982,Minnesota,0,0,same,https://stacks.cdc.gov/view/cdc/35066
+1982,Montana,0,0,same,https://stacks.cdc.gov/view/cdc/35066
+1982,Nevada,0,0,same,https://stacks.cdc.gov/view/cdc/35066
+1982,New Mexico,0,0,same,https://stacks.cdc.gov/view/cdc/35066
+1982,New York,161,161,same,https://stacks.cdc.gov/view/cdc/35066
+1982,North Dakota,0,0,same,https://stacks.cdc.gov/view/cdc/35066
+1982,Rhode Island,0,0,same,https://stacks.cdc.gov/view/cdc/35066
+1982,South Carolina,0,0,same,https://stacks.cdc.gov/view/cdc/35066
+1982,South Dakota,0,0,same,https://stacks.cdc.gov/view/cdc/35066
+1982,Wyoming,1,1,same,https://stacks.cdc.gov/view/cdc/35066
+1983,Delaware,0,0,same,https://stacks.cdc.gov/view/cdc/35188
+1983,Iowa,0,0,same,https://stacks.cdc.gov/view/cdc/35188
+1983,Maine,0,0,same,https://stacks.cdc.gov/view/cdc/35188
+1983,Minnesota,1,1,same,https://stacks.cdc.gov/view/cdc/35188
+1983,Nebraska,0,0,same,https://stacks.cdc.gov/view/cdc/35188
+1983,New Mexico,0,0,same,https://stacks.cdc.gov/view/cdc/35188
+1983,New York,90,90,same,https://stacks.cdc.gov/view/cdc/35188
+1983,North Dakota,0,0,same,https://stacks.cdc.gov/view/cdc/35188
+1983,Pennsylvania,3,3,same,https://stacks.cdc.gov/view/cdc/35188
+1983,Rhode Island,0,0,same,https://stacks.cdc.gov/view/cdc/35188
+1983,South Dakota,0,0,same,https://stacks.cdc.gov/view/cdc/35188
+1983,Vermont,0,0,same,https://stacks.cdc.gov/view/cdc/35188
+1983,Wisconsin,1,1,same,https://stacks.cdc.gov/view/cdc/35188
+1983,Wyoming,1,1,same,https://stacks.cdc.gov/view/cdc/35188
 1984,Alabama,3,3,same,https://stacks.cdc.gov/view/cdc/35267
 1984,Delaware,0,0,same,https://stacks.cdc.gov/view/cdc/35267
 1984,Idaho,23,23,same,https://stacks.cdc.gov/view/cdc/35267
@@ -18,6 +81,40 @@ year,state,this_file,owid,result,owid_source
 1984,Tennessee,2,2,same,https://stacks.cdc.gov/view/cdc/35267
 1984,West Virginia,0,0,same,https://stacks.cdc.gov/view/cdc/35267
 1984,Wyoming,0,0,same,https://stacks.cdc.gov/view/cdc/35267
+1985,Alabama,0,0,same,https://stacks.cdc.gov/view/cdc/35429
+1985,Arkansas,0,0,same,https://stacks.cdc.gov/view/cdc/35429
+1985,Delaware,0,0,same,https://stacks.cdc.gov/view/cdc/35429
+1985,Iowa,0,0,same,https://stacks.cdc.gov/view/cdc/35429
+1985,Nebraska,0,0,same,https://stacks.cdc.gov/view/cdc/35429
+1985,Nevada,0,0,same,https://stacks.cdc.gov/view/cdc/35429
+1985,New Hampshire,0,0,same,https://stacks.cdc.gov/view/cdc/35429
+1985,New Mexico,6,6,same,https://stacks.cdc.gov/view/cdc/35429
+1985,New York,166,166,same,https://stacks.cdc.gov/view/cdc/35429
+1985,Rhode Island,0,0,same,https://stacks.cdc.gov/view/cdc/35429
+1985,South Dakota,0,0,same,https://stacks.cdc.gov/view/cdc/35429
+1985,Tennessee,1,1,same,https://stacks.cdc.gov/view/cdc/35429
+1985,Utah,0,0,same,https://stacks.cdc.gov/view/cdc/35429
+1985,Vermont,0,0,same,https://stacks.cdc.gov/view/cdc/35429
+1985,Wisconsin,59,59,same,https://stacks.cdc.gov/view/cdc/35429
+1986,Nebraska,1,1,same,https://stacks.cdc.gov/view/cdc/35496
+1986,New York,1049,1049,same,https://stacks.cdc.gov/view/cdc/35496
+1986,North Dakota,25,25,same,https://stacks.cdc.gov/view/cdc/35496
+1986,South Dakota,0,0,same,https://stacks.cdc.gov/view/cdc/35496
+1986,Vermont,0,0,same,https://stacks.cdc.gov/view/cdc/35496
+1986,Wisconsin,286,286,same,https://stacks.cdc.gov/view/cdc/35496
+1986,Wyoming,0,0,same,https://stacks.cdc.gov/view/cdc/35496
+1987,Arkansas,0,0,same,https://stacks.cdc.gov/view/cdc/35629
+1987,Idaho,0,0,same,https://stacks.cdc.gov/view/cdc/35629
+1987,Indiana,0,0,same,https://stacks.cdc.gov/view/cdc/35629
+1987,Iowa,0,0,same,https://stacks.cdc.gov/view/cdc/35629
+1987,Kentucky,0,0,same,https://stacks.cdc.gov/view/cdc/35629
+1987,Louisiana,0,0,same,https://stacks.cdc.gov/view/cdc/35629
+1987,Nebraska,0,0,same,https://stacks.cdc.gov/view/cdc/35629
+1987,New York,512,512,same,https://stacks.cdc.gov/view/cdc/35629
+1987,North Dakota,2,2,same,https://stacks.cdc.gov/view/cdc/35629
+1987,South Dakota,0,0,same,https://stacks.cdc.gov/view/cdc/35629
+1987,Tennessee,0,0,same,https://stacks.cdc.gov/view/cdc/35629
+1987,West Virginia,0,0,same,https://stacks.cdc.gov/view/cdc/35629
 1988,Arkansas,1,1,same,https://stacks.cdc.gov/view/cdc/35958
 1988,Delaware,0,0,same,https://stacks.cdc.gov/view/cdc/35958
 1988,Georgia,0,0,same,https://stacks.cdc.gov/view/cdc/35958
@@ -32,6 +129,13 @@ year,state,this_file,owid,result,owid_source
 1988,South Dakota,0,0,same,https://stacks.cdc.gov/view/cdc/35958
 1988,Vermont,0,0,same,https://stacks.cdc.gov/view/cdc/35958
 1988,Wyoming,0,0,same,https://stacks.cdc.gov/view/cdc/35958
+1989,Nebraska,158,158,same,https://stacks.cdc.gov/view/cdc/35853
+1989,New York,333,333,same,https://stacks.cdc.gov/view/cdc/35853
+1989,North Dakota,0,0,same,https://stacks.cdc.gov/view/cdc/35853
+1989,South Dakota,0,0,same,https://stacks.cdc.gov/view/cdc/35853
+1989,Vermont,3,3,same,https://stacks.cdc.gov/view/cdc/35853
+1989,Wisconsin,869,869,same,https://stacks.cdc.gov/view/cdc/35853
+1989,Wyoming,0,0,same,https://stacks.cdc.gov/view/cdc/35853
 1990,Connecticut,196,196,same,https://stacks.cdc.gov/view/cdc/35905
 1990,Louisiana,10,10,same,https://stacks.cdc.gov/view/cdc/35905
 1990,Mississippi,28,28,same,https://stacks.cdc.gov/view/cdc/35905

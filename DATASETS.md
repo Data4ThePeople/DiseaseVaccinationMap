@@ -74,7 +74,8 @@ measures this by disease, state and year.
 **Gaps found once the files were summed by year** (see `data/COVERAGE.md`,
 rebuilt by `scripts/11_coverage.py`). These are whole runs of years where the
 weekly reports did not list the disease by state, so Tycho has nothing:
-- Whooping cough: no state rows 1956 to 1973, and few before 1938.
+- Whooping cough: no state rows 1956 to 1973, and few before 1938. (Filled from
+  CDC's scanned annual summaries, except 1970; see the annual tables section.)
 - Measles: state rows thin out after 1991 and stop in 2002.
 - Mumps: no state rows 2003 to 2010. Rubella: none 2003 to 2014.
 - Polio: stops in 1971. Diphtheria: thin after 1960, stops in 1981.
@@ -206,11 +207,14 @@ captures from December 2018). 1984 to 1992: scanned summaries on Stacks, using
 the OCR text already in the PDF.
 
 **Coverage.** All seven diseases for every year 1993 to 2023, all 51 areas.
-Before 1993 only the scan years that passed a strict test are used: measles
-1984, 1988, 1990, 1991, 1992; whooping cough 1985, 1990, 1991, 1992. A scan
-year is kept only if every state cell was readable, the states add to each
-printed division row, and the divisions add to the printed U.S. row. The other
-1980 to 1989 years failed on OCR damage and stay on Project Tycho or "no data".
+Before 1993 the scanned annual summaries are used, read for measles and mumps
+from 1968 and for whooping cough from 1956 (October 6, 2026). Every scan year
+kept passes a strict test: every state cell readable, the states add to each
+printed division row, and the divisions add to the printed U.S. row. Where the
+scan's text layer is damaged, cells were read from the page image and are
+listed in `checks_image_cells.csv` (three whole columns were read this way:
+1960 and 1981 whooping cough, 1981 measles). The only year not recovered is
+1970 whooping cough, held for an editor's decision on two misprinted cells.
 
 **Mumps 1968 to 1992 (added October 6, 2026).** Read from the scanned summaries
 for every year 1968 to 1992, with the same three-level sum test. Where the scan's

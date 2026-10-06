@@ -27,31 +27,32 @@ Rebuild without downloading: `.venv/bin/python scripts/02b_fetch_annual_summarie
 
 | Years | Diseases | Source |
 |---|---|---|
-| 1968 to 1970, 1972 to 1992 | mumps | scanned annual summaries, CDC Stacks |
-| 1984, 1988, 1990, 1991, 1992 | measles (total, indigenous, imported) | scanned annual summaries, CDC Stacks |
-| 1985, 1990, 1991, 1992 | pertussis | scanned annual summaries, CDC Stacks |
+| 1956 to 1969, 1971 to 1992 | pertussis | scanned annual summaries, CDC Stacks |
+| 1968 to 1992 | measles total | scanned annual summaries, CDC Stacks |
+| 1983 to 1992 | measles indigenous and imported (printed split) | scanned annual summaries, CDC Stacks |
+| 1968 to 1992 | mumps | scanned annual summaries, CDC Stacks |
 | 1993 to 2015 | all seven diseases | MMWR Summary of Notifiable Diseases, Table 2, issue PDF |
 | 2016 to 2023 | all seven diseases | NNDSS Annual Tables, Table 2 parts |
 
-Not obtained: mumps for 1971 (see "Mumps from the scans" below); measles for
-1980 to 1983, 1985 to 1987 and 1989; pertussis for 1980 to 1984 and 1986 to
-1989 (see "Scanned years"). Rubella, hepatitis A, diphtheria and polio were
-not attempted before 1993; measles and pertussis were not attempted before
-1980.
+Not obtained: pertussis 1970 (two misprinted cells awaiting an editor decision,
+see "Measles and pertussis from the scans"). Rubella, hepatitis A, diphtheria
+and polio were not attempted before 1993; measles before 1968; pertussis
+before 1956. The 1968 to 1982 measles tables print a total only (no
+indigenous/imported split).
 
 ## Results of the checks
 
-- State sum against the printed United States row: 322 disease-years checked,
+- State sum against the printed United States row: 385 disease-years checked,
   all pass. 25 of those are trivial (diseases with no US cases, taken from a
-  footnote, see below). For mumps in 1968, 1969, 1970, 1972 and 1973 the 51
+  footnote, see below). For mumps in 1968 to 1973 the 51
   state rows fall short of the US row by exactly the New York City count:
   upstate New York is printed NN in those years, so the New York row is left
   blank (see the New York rule below) while the US total includes the city's
   cases. Every scanned year kept also passes the stricter division test
   described under "Scanned years".
 - HTML against PDF, 2007 to 2015: 66 disease-years, no cell differs.
-- Our World in Data, measles: 766 state-years compared (1984 to 2015), 763 the
-  same, 3 different. In all three the number here is what the CDC table prints
+- Our World in Data, measles: 870 state-years compared (1968 to 2015), 867 the
+  same, 3 different. The 104 added comparisons (1968 to 1983) all agree. In all three the number here is what the CDC table prints
   and it is consistent with the printed US total:
   - 1994 New York: 43 here (rest of state 28, New York City 15), OWID 87.
   - 1997 New York: 16 here (rest of state 5, New York City 11), OWID 32.
@@ -102,8 +103,12 @@ not attempted before 1993; measles and pertussis were not attempted before
 
 | Years | Marks |
 |---|---|
-| 1968, 1969, 1971 to 1974 | `...` Data not available; `-` Quantity zero; `NN` Report of disease not required by State Health Department. Read from the legend on the page image (p.2 of each issue). |
-| 1970 | No legend found in the scan. The 1970 mumps column contains only numbers and NN. |
+| 1956, 1957 | `-` No cases reported (1 dash); `*` Disease stated not notifiable (1 asterisk); `**` No report made by State (2 asterisks); `---` Data not available (3 dashes). Page image, 1956 p.3, 1957 p.2. Because one dash means zero and three dashes mean not available, every dash cell in 1956 to 1959 was checked on the page image; dashes taken from the OCR layer alone are not accepted. |
+| 1958 | `-` Quantity zero; `*` Disease stated not notifiable; `**` No report made by State; `---` Data not available. Page image p.3. |
+| 1959 | `---` Data not available; `-` Quantity zero; `*` Disease stated not notifiable. Page image p.3. |
+| 1960, 1961 | `...` Data not available; `-` Quantity zero. Page image p.2. |
+| 1962 to 1967 | `...` Data not available; `-` Quantity zero; `NN` Report of disease not required by State Health Department. Page image p.2. |
+| 1968 to 1974 | `...` Data not available; `-` Quantity zero; `NN` Report of disease not required by State Health Department. Read from the legend on the page image (p.2 of each issue). |
 | 1975, 1976 | `NA` Data not available; `-` Quantity zero; `NN` not notifiable. Page image, p.2. |
 | 1977 to 1983 | `NA` Data not available; `-` No reported cases; `NN` not notifiable. 1977 to 1981 read from the page image (1977 p.2, 1978 p.10, 1979 p.7, 1980 p.12, 1981 p.15). |
 | 1984 to 2001 | `-` No reported cases; `NA` Data not available; `NN` Report of disease is not required in that jurisdiction (not notifiable). Printed once per issue under "Explanation of symbols used in tables". |
@@ -164,28 +169,28 @@ is `stacks_<record>_DS1.pdf`; URL `https://stacks.cdc.gov/view/cdc/<record>`.
 
 | Year | Stacks record | Table page (PDF) | Used | Table |
 |---|---|---|---|---|
-| 1968 | 1717 | 10 | mumps | Table 6, notifiable diseases by division and state |
-| 1969 | 838 | 10 | mumps | Table 6 |
-| 1970 | 951 | 10 | mumps | Table 6 |
-| 1971 | 1829 | 10 | none | Table 6 (mumps left out, see below) |
-| 1972 | 1895 | 10 | mumps | Table 6 |
-| 1973 | 1849 | 10 | mumps | Table 5 |
-| 1974 | 1743 | 10 | mumps | Table 5 |
-| 1975 | 1041 | 10 | mumps | Table 5 |
-| 1976 | 1130 | 11 | mumps | Table 5 |
-| 1977 | 10894 | 12 | mumps | Table 5 |
-| 1978 | 10895 | 21 | mumps | Notifiable diseases by division and state |
-| 1979 | 1577 | 13 | mumps | same |
-| 1980 | 1484 | 19 | mumps | same |
-| 1981 | 1307 | 79 | mumps | "MUMPS - Reported cases, by area and age", Total column (the 1981 issue has no mumps column in the general by-state table) |
-| 1982 | 35066 | 16 | mumps | by division and area |
-| 1983 | 35188 | 21 | mumps | same |
-| 1984 | 35267 | 16 | measles, mumps | same |
-| 1985 | 35429 | 12 | pertussis, mumps | same |
-| 1986 | 35496 | 12 | mumps | same |
-| 1987 | 35629 | 12 | mumps | same |
-| 1988 | 35958 | 15 | measles, mumps | same |
-| 1989 | 35853 | 13 | mumps | same |
+| 1968 | 1717 | 10 | measles, pertussis, mumps | Table 6, notifiable diseases by division and state |
+| 1969 | 838 | 10 | measles, pertussis, mumps | Table 6 |
+| 1970 | 951 | 10 | measles, mumps (pertussis awaiting a decision) | Table 6 |
+| 1971 | 1829 | 10 | measles, pertussis, mumps | Table 6 (mumps kept by editor decision, see below) |
+| 1972 | 1895 | 10 | measles, pertussis, mumps | Table 6 |
+| 1973 | 1849 | 10 | measles, pertussis, mumps | Table 5 |
+| 1974 | 1743 | 10 | measles, pertussis, mumps | Table 5 |
+| 1975 | 1041 | 10 | measles, pertussis, mumps | Table 5 |
+| 1976 | 1130 | 11 | measles, pertussis, mumps | Table 5 |
+| 1977 | 10894 | 12 | measles, pertussis, mumps | Table 5 |
+| 1978 | 10895 | 21 | measles, pertussis, mumps | Notifiable diseases by division and state |
+| 1979 | 1577 | 13 | measles, pertussis, mumps | same |
+| 1980 | 1484 | 19 | measles, pertussis, mumps | same |
+| 1981 | 1307 | 79 (mumps), 70 (measles), 81 (pertussis) | measles, pertussis, mumps | Separate per-disease tables, Total column: mumps and pertussis "by area and age", measles "by area and month" (the 1981 issue has no general by-state table for these) |
+| 1982 | 35066 | 16 | measles, pertussis, mumps | by division and area |
+| 1983 | 35188 | 21 | measles, pertussis, mumps | same |
+| 1984 | 35267 | 16 | measles, pertussis, mumps | same |
+| 1985 | 35429 | 12 | measles, pertussis, mumps | same |
+| 1986 | 35496 | 12 | measles, pertussis, mumps | same |
+| 1987 | 35629 | 12 | measles, pertussis, mumps | same |
+| 1988 | 35958 | 15 | measles, pertussis, mumps | same |
+| 1989 | 35853 | 13 | measles, pertussis, mumps | same |
 | 1990 | 35905 | 19 | measles, pertussis, mumps | same |
 | 1991 | 36010 | 21 | measles, pertussis, mumps | same |
 | 1992 | 36063 | 23 | measles, pertussis, mumps | same |
@@ -323,38 +328,78 @@ the HTML editions show Table 2 as images, so only the PDF could be read.
 - The NNDSS tables on data.cdc.gov are the weekly provisional tables and were
   not used.
 
-## Scanned years, 1980 to 1992
+## Measles and pertussis from the scans
 
-The scans on CDC Stacks carry an OCR text layer. No OCR was run here and no
-cell was corrected or read by eye. A disease-year is used only if all of the
-following hold: every state cell reads as a number or a defined mark; the
-states of each of the nine divisions add up to the printed division row; the
-divisions add up to the printed United States row. For measles both the
-indigenous and the imported column have to pass.
+Measles 1968 to 1992 and pertussis 1956 to 1992 come from the scanned annual
+summaries (same documents as mumps, plus the 1956 to 1967 issues for
+pertussis). Every disease-year kept passes the strict test: every state cell is
+a number or a defined mark, the states of each division add to the printed
+division row, and the divisions add to the printed US row. The table page of
+each year names the year. Where the OCR layer was damaged the cell was read by
+eye from the page rendered with PyMuPDF (300 dpi; 600 to 800 dpi for single
+cells), flag `read from page image`, listed in `checks_image_cells.csv`.
 
-| Year | Disease | Why it was not used |
-|---|---|---|
-| 1980 | measles | US total read as "13.5062" |
-| 1980 | pertussis | six rows not found in the OCR layer |
-| 1981 | measles | column not found in the OCR layer |
-| 1981 | pertussis | Mountain division row not readable |
-| 1982 | measles | East South Central row not readable |
-| 1982 | pertussis | South Atlantic row not readable |
-| 1983 | measles | West South Central: states add to 40 (indigenous) and 27 (imported), printed 45 and 35 |
-| 1983 | pertussis | New England: states add to 55, printed 75 |
-| 1984 | pertussis | US total read as "2.276" |
-| 1985 | measles | indigenous: East South Central row not readable (imported passed) |
-| 1986 | measles | column not found in the OCR layer |
-| 1986 | pertussis | Pacific row not readable |
-| 1987 | measles | indigenous: West North Central adds to 191, printed 210; imported: Middle Atlantic row not readable |
-| 1987 | pertussis | Middle Atlantic row not readable |
-| 1988 | pertussis | Mountain: states add to 1,041, printed 1,043 |
-| 1989 | measles | six state cells empty in the OCR layer (Maine, South Dakota, Idaho, Wyoming indigenous; Oklahoma, Wyoming imported) |
-| 1989 | pertussis | one state cell empty in the OCR layer (Wyoming) |
+Cells read from the image (rows in `checks_image_cells.csv`, division and US
+rows included): measles 208, pertussis 258. 389 of the 4,131 measles and
+pertussis state rows before 1993 carry the flag. By year:
+- measles: 1968 3, 1969 1, 1971 5, 1974 1, 1975 2, 1976 1, 1979 18, 1980 7,
+  1981 61, 1982 19, 1983 7, 1985 1, 1986 56, 1987 20, 1989 6.
+- pertussis: 1956 8, 1957 1, 1958 1, 1959 1, 1960 61, 1961 9, 1962 1, 1963 5,
+  1964 1, 1965 9, 1966 1, 1967 3, 1968 1, 1971 7, 1979 19, 1980 6, 1981 61,
+  1982 11, 1983 15, 1984 1, 1986 16, 1987 15, 1988 4, 1989 1.
+- Whole columns were read from the image where the OCR layer was unusable:
+  1960 pertussis (p.9, labels and numbers at different heights), 1981
+  pertussis (p.81, column mixed with its neighbours) and 1981 measles (p.70,
+  curved scan, most labels lost). In 1960 and 1981 the values were matched to
+  states in table order within each division; every division sum holds.
 
-Several of these are one cell away from passing (1984 pertussis, 1985 measles,
-1988 pertussis, 1989). They could be recovered by reading those cells from the
-page image, which was not done. The PDFs for all thirteen years are in `src/`.
+Tables used:
+- 1956 to 1959: "Reported cases of specified notifiable diseases: United
+  States, each division and state", column "Whooping cough (pertussis)"
+  (1956 p.10 record 10893, 1957 p.10 record 1035, 1958 p.10 record 1162,
+  1959 p.11 record 1302). 1960 to 1967: same table, column "Pertussis
+  (whooping cough)" (1960 p.9 record 1360, 1961 p.10 1427, 1962 p.10 380,
+  1963 p.10 491, 1964 p.12 698, 1965 p.10 740, 1966 p.10 615, 1967 p.10
+  1555). 1956 is in the Stacks MMWR collection, the rest in NNDSS.
+- 1968 to 1992: the same pages as mumps (see the table above), except 1981:
+  measles from "MEASLES (Rubeola) - by area and month", Total column (p.70),
+  pertussis from "PERTUSSIS (Whooping cough) - by area and age", Total column
+  (p.81). In 1986 the OCR layer lost the measles headers and the imported US
+  total entirely; they were read from the page image (`SCAN_PAGE_FIXES`).
+
+Things that differ from the later tables:
+- **Alaska and Hawaii.** Not in the 1956 to 1958 tables; Alaska appears in
+  1959, Hawaii in 1960. Missing years carry the flag `not in the table (not
+  yet a state)` with `cases` blank, and the Pacific division is Washington,
+  Oregon and California in those years.
+- **New York** is one row through 1964; the split into New York City and
+  upstate starts in 1965.
+- **Measles split.** 1968 to 1982 print measles as one column. Indigenous and
+  imported start in 1983 (1981 total only, from the separate measles table).
+- **Mississippi measles 1968 and 1969** is printed with an asterisk: "Includes
+  rubella" (footnote on the same page). Kept with flag `read from page image;
+  *` and the footnote noted here.
+- **Measles US totals 1979 and 1980** carry footnote 2: 1979 "Includes 28
+  imported cases", 1980 "Includes 38 imported cases".
+- **Finality.** 1957 and 1958 say they contain "final figures on the reported
+  incidence of notifiable diseases"; no statement was found in the OCR text of
+  the other 1956 to 1967 issues. The 1973 to 1977 and 1979 issues include
+  provisional California data (see above).
+
+Readings past a printing blemish, applied (the digits themselves are clear;
+listed so they can be checked):
+- 1956 pertussis Arizona: "780" with a small raised speck before it.
+- 1961 pertussis New Jersey: "337" with a small dot before it.
+- 1975 measles West South Central: "635" with a small raised speck before it.
+- 1958 pertussis Pacific total: first digit faintly printed; at 800 dpi it is
+  a 5 ("5,393").
+
+**Awaiting an editor decision (not applied, year left out):**
+- **1970 pertussis**, p.10 (record 951). New York City is printed "163" with a
+  small stroke after it (OCR "163-") and Virginia "163" with a small slanted
+  stroke after it (OCR "163'"). There is no footnote on the page. Read as 163
+  and 163, the year passes exactly: Middle Atlantic 163 + 61 + 0 + 158 = 382,
+  South Atlantic 15 + 44 + 8 + 163 + 73 + 106 + 38 + 12 + 95 = 554, US 4,249.
 
 ## Other things to know
 

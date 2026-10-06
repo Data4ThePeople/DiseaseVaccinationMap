@@ -1,6 +1,117 @@
 year,disease,area,pdf_page,ocr_text_layer_had,read_from_page_image,source_file
+1956,pertussis,Arizona,10,•780,780,stacks_10893_DS1.pdf
+1956,pertussis,New York,10,,"2,248",stacks_10893_DS1.pdf
+1956,pertussis,Illinois,10,,569,stacks_10893_DS1.pdf
+1956,pertussis,Michigan,10,,"1,907",stacks_10893_DS1.pdf
+1956,pertussis,Wisconsin,10,,982,stacks_10893_DS1.pdf
+1956,pertussis,Minnesota,10,,123,stacks_10893_DS1.pdf
+1956,pertussis,Maryland,10,,179,stacks_10893_DS1.pdf
+1956,pertussis,West Virginia,10,,297,stacks_10893_DS1.pdf
+1957,pertussis,East South Central,10,,"1,921",stacks_1035_DS1.pdf
+1958,pertussis,Pacific,10,"f,393","5,393",stacks_1162_DS1.pdf
+1959,pertussis,Alaska,11,-,-,stacks_1302_DS1.pdf
+1960,pertussis,United States,9,,"14,809",stacks_1360_DS1.pdf
+1960,pertussis,New England,9,,821,stacks_1360_DS1.pdf
+1960,pertussis,Maine,9,,173,stacks_1360_DS1.pdf
+1960,pertussis,New Hampshire,9,,103,stacks_1360_DS1.pdf
+1960,pertussis,Vermont,9,,45,stacks_1360_DS1.pdf
+1960,pertussis,Massachusetts,9,,226,stacks_1360_DS1.pdf
+1960,pertussis,Rhode Island,9,,43,stacks_1360_DS1.pdf
+1960,pertussis,Connecticut,9,,231,stacks_1360_DS1.pdf
+1960,pertussis,Middle Atlantic,9,,"1,297",stacks_1360_DS1.pdf
+1960,pertussis,New York,9,,734,stacks_1360_DS1.pdf
+1960,pertussis,New Jersey,9,,226,stacks_1360_DS1.pdf
+1960,pertussis,Pennsylvania,9,,337,stacks_1360_DS1.pdf
+1960,pertussis,East North Central,9,,"2,215",stacks_1360_DS1.pdf
+1960,pertussis,Ohio,9,,127,stacks_1360_DS1.pdf
+1960,pertussis,Indiana,9,,290,stacks_1360_DS1.pdf
+1960,pertussis,Illinois,9,,442,stacks_1360_DS1.pdf
+1960,pertussis,Michigan,9,,"1,129",stacks_1360_DS1.pdf
+1960,pertussis,Wisconsin,9,,227,stacks_1360_DS1.pdf
+1960,pertussis,West North Central,9,,457,stacks_1360_DS1.pdf
+1960,pertussis,Minnesota,9,,22,stacks_1360_DS1.pdf
+1960,pertussis,Iowa,9,,115,stacks_1360_DS1.pdf
+1960,pertussis,Missouri,9,,71,stacks_1360_DS1.pdf
+1960,pertussis,North Dakota,9,,56,stacks_1360_DS1.pdf
+1960,pertussis,South Dakota,9,,66,stacks_1360_DS1.pdf
+1960,pertussis,Nebraska,9,,66,stacks_1360_DS1.pdf
+1960,pertussis,Kansas,9,,61,stacks_1360_DS1.pdf
+1960,pertussis,South Atlantic,9,,"1,387",stacks_1360_DS1.pdf
+1960,pertussis,Delaware,9,,24,stacks_1360_DS1.pdf
+1960,pertussis,Maryland,9,,120,stacks_1360_DS1.pdf
+1960,pertussis,District of Columbia,9,,52,stacks_1360_DS1.pdf
+1960,pertussis,Virginia,9,,344,stacks_1360_DS1.pdf
+1960,pertussis,West Virginia,9,,164,stacks_1360_DS1.pdf
+1960,pertussis,North Carolina,9,,111,stacks_1360_DS1.pdf
+1960,pertussis,South Carolina,9,,128,stacks_1360_DS1.pdf
+1960,pertussis,Georgia,9,,21,stacks_1360_DS1.pdf
+1960,pertussis,Florida,9,,423,stacks_1360_DS1.pdf
+1960,pertussis,East South Central,9,,"1,595",stacks_1360_DS1.pdf
+1960,pertussis,Kentucky,9,,336,stacks_1360_DS1.pdf
+1960,pertussis,Tennessee,9,,"1,111",stacks_1360_DS1.pdf
+1960,pertussis,Alabama,9,,104,stacks_1360_DS1.pdf
+1960,pertussis,Mississippi,9,,44,stacks_1360_DS1.pdf
+1960,pertussis,West South Central,9,,"2,705",stacks_1360_DS1.pdf
+1960,pertussis,Arkansas,9,,54,stacks_1360_DS1.pdf
+1960,pertussis,Louisiana,9,,14,stacks_1360_DS1.pdf
+1960,pertussis,Oklahoma,9,,103,stacks_1360_DS1.pdf
+1960,pertussis,Texas,9,,"2,534",stacks_1360_DS1.pdf
+1960,pertussis,Mountain,9,,"1,586",stacks_1360_DS1.pdf
+1960,pertussis,Montana,9,,301,stacks_1360_DS1.pdf
+1960,pertussis,Idaho,9,,107,stacks_1360_DS1.pdf
+1960,pertussis,Wyoming,9,,27,stacks_1360_DS1.pdf
+1960,pertussis,Colorado,9,,448,stacks_1360_DS1.pdf
+1960,pertussis,New Mexico,9,,50,stacks_1360_DS1.pdf
+1960,pertussis,Arizona,9,,398,stacks_1360_DS1.pdf
+1960,pertussis,Utah,9,,249,stacks_1360_DS1.pdf
+1960,pertussis,Nevada,9,,6,stacks_1360_DS1.pdf
+1960,pertussis,Pacific,9,,"2,746",stacks_1360_DS1.pdf
+1960,pertussis,Washington,9,,251,stacks_1360_DS1.pdf
+1960,pertussis,Oregon,9,,534,stacks_1360_DS1.pdf
+1960,pertussis,California,9,,"1,957",stacks_1360_DS1.pdf
+1960,pertussis,Alaska,9,,4,stacks_1360_DS1.pdf
+1960,pertussis,Hawaii,9,,-,stacks_1360_DS1.pdf
+1961,pertussis,New Jersey,10,.337,337,stacks_1427_DS1.pdf
+1961,pertussis,Oklahoma,10,,16,stacks_1427_DS1.pdf
+1961,pertussis,Texas,10,,"1,365",stacks_1427_DS1.pdf
+1961,pertussis,Montana,10,,92,stacks_1427_DS1.pdf
+1961,pertussis,Washington,10,,344,stacks_1427_DS1.pdf
+1961,pertussis,Maine,10,,220,stacks_1427_DS1.pdf
+1961,pertussis,Kansas,10,,-,stacks_1427_DS1.pdf
+1961,pertussis,Alabama,10,,64,stacks_1427_DS1.pdf
+1961,pertussis,Arkansas,10,,33,stacks_1427_DS1.pdf
+1962,pertussis,Montana,10,,70,stacks_380_DS1.pdf
+1963,pertussis,New Jersey,10,,-,stacks_491_DS1.pdf
+1963,pertussis,Tennessee,10,,865,stacks_491_DS1.pdf
+1963,pertussis,Alabama,10,,142,stacks_491_DS1.pdf
+1963,pertussis,Alaska,10,,17,stacks_491_DS1.pdf
+1963,pertussis,Iowa,10,,149,stacks_491_DS1.pdf
+1964,pertussis,New Mexico,12,,49,stacks_698_DS1.pdf
+1965,pertussis,United States,10,6.799,"6,799",stacks_740_DS1.pdf
+1965,pertussis,Kentucky,10,•68,68,stacks_740_DS1.pdf
+1965,pertussis,Alabama,10,,57,stacks_740_DS1.pdf
+1965,pertussis,Arkansas,10,,25,stacks_740_DS1.pdf
+1965,pertussis,Louisiana,10,,4,stacks_740_DS1.pdf
+1965,pertussis,Colorado,10,,98,stacks_740_DS1.pdf
+1965,pertussis,New Mexico,10,,6,stacks_740_DS1.pdf
+1965,pertussis,Utah,10,,51,stacks_740_DS1.pdf
+1965,pertussis,Alaska,10,,9,stacks_740_DS1.pdf
+1966,pertussis,Alaska,10,.,-,stacks_615_DS1.pdf
+1967,pertussis,Maine,10,,265,stacks_1555_DS1.pdf
+1967,pertussis,Texas,10,,846,stacks_1555_DS1.pdf
+1967,pertussis,Montana,10,,199,stacks_1555_DS1.pdf
+1968,measles,New Hampshire,10,ISO,150,stacks_1717_DS1.pdf
+1968,measles,Mississippi,10,*248,248*,stacks_1717_DS1.pdf
+1968,measles,Alaska,10,,11,stacks_1717_DS1.pdf
 1968,mumps,Alaska,10,,705,stacks_1717_DS1.pdf
+1968,pertussis,Alaska,10,,3,stacks_1717_DS1.pdf
+1969,measles,Mississippi,10,*221,221*,stacks_838_DS1.pdf
 1970,mumps,Oklahoma,10,,"2,683",stacks_951_DS1.pdf
+1971,measles,Arkansas,10,,819,stacks_1829_DS1.pdf
+1971,measles,Georgia,10,,390,stacks_1829_DS1.pdf
+1971,measles,New Jersey,10,,"1,260",stacks_1829_DS1.pdf
+1971,measles,Oregon,10,,388,stacks_1829_DS1.pdf
+1971,measles,Virginia,10,,"1,628",stacks_1829_DS1.pdf
 1971,mumps,Ohio,10,8.784,"8,784",stacks_1829_DS1.pdf
 1971,mumps,Illinois,10,"5,S85","5,585",stacks_1829_DS1.pdf
 1971,mumps,District of Columbia,10,-99,99,stacks_1829_DS1.pdf
@@ -10,7 +121,36 @@ year,disease,area,pdf_page,ocr_text_layer_had,read_from_page_image,source_file
 1971,mumps,Georgia,10,,-,stacks_1829_DS1.pdf
 1971,mumps,Arkansas,10,,157,stacks_1829_DS1.pdf
 1971,mumps,Oregon,10,,"1,772",stacks_1829_DS1.pdf
+1971,pertussis,East South Central,10,,377,stacks_1829_DS1.pdf
+1971,pertussis,Hawaii,10,,-,stacks_1829_DS1.pdf
+1971,pertussis,Arkansas,10,,51,stacks_1829_DS1.pdf
+1971,pertussis,Georgia,10,,18,stacks_1829_DS1.pdf
+1971,pertussis,New Jersey,10,,7,stacks_1829_DS1.pdf
+1971,pertussis,Oregon,10,,108,stacks_1829_DS1.pdf
+1971,pertussis,Virginia,10,,61,stacks_1829_DS1.pdf
 1972,mumps,East South Central,10,3y859,"3,859",stacks_1895_DS1.pdf
+1974,measles,California,10,"1,1IS","1,115",stacks_1743_DS1.pdf
+1975,measles,Connecticut,10,I29,129,stacks_1041_DS1.pdf
+1975,measles,West South Central,10,•635,635,stacks_1041_DS1.pdf
+1976,measles,Idaho,11,"*2,024","2,024",stacks_1130_DS1.pdf
+1979,measles,United States,13,13.5972,"13,597",stacks_1577_DS1.pdf
+1979,measles,District of Columbia,13,,-,stacks_1577_DS1.pdf
+1979,measles,Virginia,13,,288,stacks_1577_DS1.pdf
+1979,measles,New England,13,,292,stacks_1577_DS1.pdf
+1979,measles,Middle Atlantic,13,,"1,648",stacks_1577_DS1.pdf
+1979,measles,East North Central,13,,"3,645",stacks_1577_DS1.pdf
+1979,measles,Indiana,13,,228,stacks_1577_DS1.pdf
+1979,measles,West North Central,13,,"1,846",stacks_1577_DS1.pdf
+1979,measles,South Atlantic,13,,"2,194",stacks_1577_DS1.pdf
+1979,measles,East South Central,13,,278,stacks_1577_DS1.pdf
+1979,measles,Kentucky,13,,60,stacks_1577_DS1.pdf
+1979,measles,Tennessee,13,,69,stacks_1577_DS1.pdf
+1979,measles,West South Central,13,,987,stacks_1577_DS1.pdf
+1979,measles,Mountain,13,,341,stacks_1577_DS1.pdf
+1979,measles,New Mexico,13,,38,stacks_1577_DS1.pdf
+1979,measles,Arizona,13,,80,stacks_1577_DS1.pdf
+1979,measles,Pacific,13,,"2,366",stacks_1577_DS1.pdf
+1979,measles,Oregon,13,,66,stacks_1577_DS1.pdf
 1979,mumps,District of Columbia,13,,2,stacks_1577_DS1.pdf
 1979,mumps,Virginia,13,,105,stacks_1577_DS1.pdf
 1979,mumps,South Carolina,13,,5,stacks_1577_DS1.pdf
@@ -30,12 +170,105 @@ year,disease,area,pdf_page,ocr_text_layer_had,read_from_page_image,source_file
 1979,mumps,Arizona,13,,66,stacks_1577_DS1.pdf
 1979,mumps,Pacific,13,,"1,012",stacks_1577_DS1.pdf
 1979,mumps,Oregon,13,,118,stacks_1577_DS1.pdf
+1979,pertussis,District of Columbia,13,,-,stacks_1577_DS1.pdf
+1979,pertussis,Virginia,13,,16,stacks_1577_DS1.pdf
+1979,pertussis,Montana,13,,15,stacks_1577_DS1.pdf
+1979,pertussis,Colorado,13,,42,stacks_1577_DS1.pdf
+1979,pertussis,New England,13,,56,stacks_1577_DS1.pdf
+1979,pertussis,Middle Atlantic,13,,152,stacks_1577_DS1.pdf
+1979,pertussis,East North Central,13,,588,stacks_1577_DS1.pdf
+1979,pertussis,Indiana,13,,41,stacks_1577_DS1.pdf
+1979,pertussis,West North Central,13,,59,stacks_1577_DS1.pdf
+1979,pertussis,South Atlantic,13,,234,stacks_1577_DS1.pdf
+1979,pertussis,East South Central,13,,72,stacks_1577_DS1.pdf
+1979,pertussis,Kentucky,13,,30,stacks_1577_DS1.pdf
+1979,pertussis,Tennessee,13,,31,stacks_1577_DS1.pdf
+1979,pertussis,West South Central,13,,173,stacks_1577_DS1.pdf
+1979,pertussis,Mountain,13,,123,stacks_1577_DS1.pdf
+1979,pertussis,New Mexico,13,,30,stacks_1577_DS1.pdf
+1979,pertussis,Arizona,13,,30,stacks_1577_DS1.pdf
+1979,pertussis,Pacific,13,,166,stacks_1577_DS1.pdf
+1979,pertussis,Oregon,13,,11,stacks_1577_DS1.pdf
+1980,measles,United States,19,13.5062,"13,506",stacks_1484_DS1.pdf
+1980,measles,New England,19,,677,stacks_1484_DS1.pdf
+1980,measles,Middle Atlantic,19,,"3,940",stacks_1484_DS1.pdf
+1980,measles,New York (excluding New York City),19,,735,stacks_1484_DS1.pdf
+1980,measles,East North Central,19,,"2,459",stacks_1484_DS1.pdf
+1980,measles,North Dakota,19,,-,stacks_1484_DS1.pdf
+1980,measles,South Dakota,19,,-,stacks_1484_DS1.pdf
 1980,mumps,New England,19,,618,stacks_1484_DS1.pdf
 1980,mumps,Middle Atlantic,19,,970,stacks_1484_DS1.pdf
 1980,mumps,New York (excluding New York City),19,,174,stacks_1484_DS1.pdf
 1980,mumps,East North Central,19,,"3,311",stacks_1484_DS1.pdf
 1980,mumps,North Dakota,19,,4,stacks_1484_DS1.pdf
 1980,mumps,South Dakota,19,,3,stacks_1484_DS1.pdf
+1980,pertussis,New England,19,,49,stacks_1484_DS1.pdf
+1980,pertussis,Middle Atlantic,19,,256,stacks_1484_DS1.pdf
+1980,pertussis,New York (excluding New York City),19,,160,stacks_1484_DS1.pdf
+1980,pertussis,East North Central,19,,474,stacks_1484_DS1.pdf
+1980,pertussis,North Dakota,19,,7,stacks_1484_DS1.pdf
+1980,pertussis,South Dakota,19,,3,stacks_1484_DS1.pdf
+1981,measles,Maine,70,5,5,stacks_1307_DS1.pdf
+1981,measles,New Hampshire,70,9,9,stacks_1307_DS1.pdf
+1981,measles,Vermont,70,3,3,stacks_1307_DS1.pdf
+1981,measles,Massachusetts,70,59,59,stacks_1307_DS1.pdf
+1981,measles,Rhode Island,70,,-,stacks_1307_DS1.pdf
+1981,measles,Connecticut,70,10,10,stacks_1307_DS1.pdf
+1981,measles,Pennsylvania,70,762,762,stacks_1307_DS1.pdf
+1981,measles,Indiana,70,,9,stacks_1307_DS1.pdf
+1981,measles,Wisconsin,70,,3,stacks_1307_DS1.pdf
+1981,measles,Kansas,70,,1,stacks_1307_DS1.pdf
+1981,measles,New England,70,,86,stacks_1307_DS1.pdf
+1981,measles,Middle Atlantic,70,,"1,159",stacks_1307_DS1.pdf
+1981,measles,New York (excluding New York City),70,,228,stacks_1307_DS1.pdf
+1981,measles,New York City,70,,108,stacks_1307_DS1.pdf
+1981,measles,New Jersey,70,,61,stacks_1307_DS1.pdf
+1981,measles,East North Central,70,,90,stacks_1307_DS1.pdf
+1981,measles,Ohio,70,,20,stacks_1307_DS1.pdf
+1981,measles,Illinois,70,,24,stacks_1307_DS1.pdf
+1981,measles,Michigan,70,,34,stacks_1307_DS1.pdf
+1981,measles,West North Central,70,,10,stacks_1307_DS1.pdf
+1981,measles,Minnesota,70,,3,stacks_1307_DS1.pdf
+1981,measles,Iowa,70,,1,stacks_1307_DS1.pdf
+1981,measles,Missouri,70,,1,stacks_1307_DS1.pdf
+1981,measles,North Dakota,70,,-,stacks_1307_DS1.pdf
+1981,measles,South Dakota,70,,-,stacks_1307_DS1.pdf
+1981,measles,Nebraska,70,,4,stacks_1307_DS1.pdf
+1981,measles,South Atlantic,70,,494,stacks_1307_DS1.pdf
+1981,measles,Delaware,70,,-,stacks_1307_DS1.pdf
+1981,measles,Maryland,70,,5,stacks_1307_DS1.pdf
+1981,measles,District of Columbia,70,,1,stacks_1307_DS1.pdf
+1981,measles,Virginia,70,,18,stacks_1307_DS1.pdf
+1981,measles,West Virginia,70,,9,stacks_1307_DS1.pdf
+1981,measles,North Carolina,70,,3,stacks_1307_DS1.pdf
+1981,measles,South Carolina,70,,2,stacks_1307_DS1.pdf
+1981,measles,Georgia,70,,111,stacks_1307_DS1.pdf
+1981,measles,Florida,70,,345,stacks_1307_DS1.pdf
+1981,measles,East South Central,70,,6,stacks_1307_DS1.pdf
+1981,measles,Kentucky,70,,2,stacks_1307_DS1.pdf
+1981,measles,Tennessee,70,,2,stacks_1307_DS1.pdf
+1981,measles,Alabama,70,,2,stacks_1307_DS1.pdf
+1981,measles,Mississippi,70,,-,stacks_1307_DS1.pdf
+1981,measles,West South Central,70,,886,stacks_1307_DS1.pdf
+1981,measles,Arkansas,70,,25,stacks_1307_DS1.pdf
+1981,measles,Louisiana,70,,4,stacks_1307_DS1.pdf
+1981,measles,Oklahoma,70,,6,stacks_1307_DS1.pdf
+1981,measles,Texas,70,,851,stacks_1307_DS1.pdf
+1981,measles,Mountain,70,,39,stacks_1307_DS1.pdf
+1981,measles,Montana,70,,-,stacks_1307_DS1.pdf
+1981,measles,Idaho,70,,1,stacks_1307_DS1.pdf
+1981,measles,Wyoming,70,,1,stacks_1307_DS1.pdf
+1981,measles,Colorado,70,,11,stacks_1307_DS1.pdf
+1981,measles,New Mexico,70,,9,stacks_1307_DS1.pdf
+1981,measles,Arizona,70,,7,stacks_1307_DS1.pdf
+1981,measles,Utah,70,,-,stacks_1307_DS1.pdf
+1981,measles,Nevada,70,,10,stacks_1307_DS1.pdf
+1981,measles,Pacific,70,,354,stacks_1307_DS1.pdf
+1981,measles,Washington,70,,3,stacks_1307_DS1.pdf
+1981,measles,Oregon,70,,5,stacks_1307_DS1.pdf
+1981,measles,California,70,,339,stacks_1307_DS1.pdf
+1981,measles,Alaska,70,,-,stacks_1307_DS1.pdf
+1981,measles,Hawaii,70,,7,stacks_1307_DS1.pdf
 1981,mumps,New Hampshire,79,,26,stacks_1307_DS1.pdf
 1981,mumps,Vermont,79,,10,stacks_1307_DS1.pdf
 1981,mumps,New York City,79,,95,stacks_1307_DS1.pdf
@@ -51,6 +284,86 @@ year,disease,area,pdf_page,ocr_text_layer_had,read_from_page_image,source_file
 1981,mumps,Oklahoma,79,(•,NN,stacks_1307_DS1.pdf
 1981,mumps,Idaho,79,,8,stacks_1307_DS1.pdf
 1981,mumps,New Mexico,79,(•■,NN,stacks_1307_DS1.pdf
+1981,pertussis,New England,81,49,49,stacks_1307_DS1.pdf
+1981,pertussis,Maine,81,,13,stacks_1307_DS1.pdf
+1981,pertussis,New Hampshire,81,138,8,stacks_1307_DS1.pdf
+1981,pertussis,Vermont,81,,-,stacks_1307_DS1.pdf
+1981,pertussis,Massachusetts,81,15,15,stacks_1307_DS1.pdf
+1981,pertussis,Rhode Island,81,,11,stacks_1307_DS1.pdf
+1981,pertussis,Connecticut,81,,2,stacks_1307_DS1.pdf
+1981,pertussis,Middle Atlantic,81,169,169,stacks_1307_DS1.pdf
+1981,pertussis,New York (excluding New York City),81,97,97,stacks_1307_DS1.pdf
+1981,pertussis,New York City,81,,25,stacks_1307_DS1.pdf
+1981,pertussis,New Jersey,81,2512,12,stacks_1307_DS1.pdf
+1981,pertussis,Pennsylvania,81,35,35,stacks_1307_DS1.pdf
+1981,pertussis,East North Central,81,281,281,stacks_1307_DS1.pdf
+1981,pertussis,Ohio,81,43,43,stacks_1307_DS1.pdf
+1981,pertussis,Indiana,81,87,87,stacks_1307_DS1.pdf
+1981,pertussis,Illinois,81,88,88,stacks_1307_DS1.pdf
+1981,pertussis,Michigan,81,30,30,stacks_1307_DS1.pdf
+1981,pertussis,Wisconsin,81,33,33,stacks_1307_DS1.pdf
+1981,pertussis,West North Central,81,66,66,stacks_1307_DS1.pdf
+1981,pertussis,Minnesota,81,16,16,stacks_1307_DS1.pdf
+1981,pertussis,Iowa,81,9,9,stacks_1307_DS1.pdf
+1981,pertussis,Missouri,81,24,24,stacks_1307_DS1.pdf
+1981,pertussis,North Dakota,81,1,1,stacks_1307_DS1.pdf
+1981,pertussis,South Dakota,81,2,2,stacks_1307_DS1.pdf
+1981,pertussis,Nebraska,81,6,6,stacks_1307_DS1.pdf
+1981,pertussis,Kansas,81,8,8,stacks_1307_DS1.pdf
+1981,pertussis,Delaware,81,17721,2,stacks_1307_DS1.pdf
+1981,pertussis,Maryland,81,,1,stacks_1307_DS1.pdf
+1981,pertussis,District of Columbia,81,,-,stacks_1307_DS1.pdf
+1981,pertussis,Virginia,81,,10,stacks_1307_DS1.pdf
+1981,pertussis,West Virginia,81,,6,stacks_1307_DS1.pdf
+1981,pertussis,North Carolina,81,,12,stacks_1307_DS1.pdf
+1981,pertussis,South Carolina,81,,11,stacks_1307_DS1.pdf
+1981,pertussis,Georgia,81,57,57,stacks_1307_DS1.pdf
+1981,pertussis,Florida,81,78,78,stacks_1307_DS1.pdf
+1981,pertussis,East South Central,81,49,49,stacks_1307_DS1.pdf
+1981,pertussis,Kentucky,81,25,25,stacks_1307_DS1.pdf
+1981,pertussis,Tennessee,81,16,16,stacks_1307_DS1.pdf
+1981,pertussis,Alabama,81,,-,stacks_1307_DS1.pdf
+1981,pertussis,Mississippi,81,,8,stacks_1307_DS1.pdf
+1981,pertussis,West South Central,81,106,106,stacks_1307_DS1.pdf
+1981,pertussis,Arkansas,81,,5,stacks_1307_DS1.pdf
+1981,pertussis,Louisiana,81,582,8,stacks_1307_DS1.pdf
+1981,pertussis,Oklahoma,81,,2,stacks_1307_DS1.pdf
+1981,pertussis,Texas,81,91,91,stacks_1307_DS1.pdf
+1981,pertussis,Mountain,81,,86,stacks_1307_DS1.pdf
+1981,pertussis,Montana,81,,12,stacks_1307_DS1.pdf
+1981,pertussis,Idaho,81,4,4,stacks_1307_DS1.pdf
+1981,pertussis,Wyoming,81,7,7,stacks_1307_DS1.pdf
+1981,pertussis,Colorado,81,24,24,stacks_1307_DS1.pdf
+1981,pertussis,New Mexico,81,16,16,stacks_1307_DS1.pdf
+1981,pertussis,Arizona,81,,13,stacks_1307_DS1.pdf
+1981,pertussis,Utah,81,138,8,stacks_1307_DS1.pdf
+1981,pertussis,Nevada,81,2,2,stacks_1307_DS1.pdf
+1981,pertussis,Pacific,81,265,265,stacks_1307_DS1.pdf
+1981,pertussis,Washington,81,58,58,stacks_1307_DS1.pdf
+1981,pertussis,Oregon,81,18,18,stacks_1307_DS1.pdf
+1981,pertussis,California,81,,185,stacks_1307_DS1.pdf
+1981,pertussis,Alaska,81,1851,1,stacks_1307_DS1.pdf
+1981,pertussis,Hawaii,81,3,3,stacks_1307_DS1.pdf
+1981,pertussis,South Atlantic,81,,177,stacks_1307_DS1.pdf
+1982,measles,Maine,16,,-,stacks_35066_DS1.pdf
+1982,measles,Vermont,16,,2,stacks_35066_DS1.pdf
+1982,measles,Rhode Island,16,,-,stacks_35066_DS1.pdf
+1982,measles,Pennsylvania,16,,7,stacks_35066_DS1.pdf
+1982,measles,Minnesota,16,,-,stacks_35066_DS1.pdf
+1982,measles,Iowa,16,,-,stacks_35066_DS1.pdf
+1982,measles,North Dakota,16,,-,stacks_35066_DS1.pdf
+1982,measles,South Dakota,16,,-,stacks_35066_DS1.pdf
+1982,measles,South Atlantic,16,-,271,stacks_35066_DS1.pdf
+1982,measles,Delaware,16,,-,stacks_35066_DS1.pdf
+1982,measles,South Carolina,16,,-,stacks_35066_DS1.pdf
+1982,measles,Georgia,16,,-,stacks_35066_DS1.pdf
+1982,measles,East South Central,16,,15,stacks_35066_DS1.pdf
+1982,measles,Mississippi,16,,6,stacks_35066_DS1.pdf
+1982,measles,Arkansas,16,,-,stacks_35066_DS1.pdf
+1982,measles,Montana,16,,-,stacks_35066_DS1.pdf
+1982,measles,Idaho,16,,-,stacks_35066_DS1.pdf
+1982,measles,New Mexico,16,,-,stacks_35066_DS1.pdf
+1982,measles,Nevada,16,,-,stacks_35066_DS1.pdf
 1982,mumps,Vermont,16,,7,stacks_35066_DS1.pdf
 1982,mumps,Pennsylvania,16,,160,stacks_35066_DS1.pdf
 1982,mumps,Ohio,16,1.775,"1,775",stacks_35066_DS1.pdf
@@ -60,6 +373,24 @@ year,disease,area,pdf_page,ocr_text_layer_had,read_from_page_image,source_file
 1982,mumps,Georgia,16,,30,stacks_35066_DS1.pdf
 1982,mumps,East South Central,16,,68,stacks_35066_DS1.pdf
 1982,mumps,Mississippi,16,,11,stacks_35066_DS1.pdf
+1982,pertussis,Vermont,16,,2,stacks_35066_DS1.pdf
+1982,pertussis,Pennsylvania,16,,204,stacks_35066_DS1.pdf
+1982,pertussis,North Dakota,16,,-,stacks_35066_DS1.pdf
+1982,pertussis,South Atlantic,16,,302,stacks_35066_DS1.pdf
+1982,pertussis,District of Columbia,16,,-,stacks_35066_DS1.pdf
+1982,pertussis,South Carolina,16,,16,stacks_35066_DS1.pdf
+1982,pertussis,Georgia,16,,43,stacks_35066_DS1.pdf
+1982,pertussis,East South Central,16,,54,stacks_35066_DS1.pdf
+1982,pertussis,Mississippi,16,,16,stacks_35066_DS1.pdf
+1982,pertussis,Nevada,16,,-,stacks_35066_DS1.pdf
+1982,pertussis,Alaska,16,,-,stacks_35066_DS1.pdf
+1983,measles_imported,Minnesota,21,,-,stacks_35188_DS1.pdf
+1983,measles_imported,Arkansas,21,,8,stacks_35188_DS1.pdf
+1983,measles_imported,Montana,21,,4,stacks_35188_DS1.pdf
+1983,measles_imported,Idaho,21,,10,stacks_35188_DS1.pdf
+1983,measles_imported,Wyoming,21,,1,stacks_35188_DS1.pdf
+1983,measles_imported,Colorado,21,,3,stacks_35188_DS1.pdf
+1983,measles_indigenous,Arkansas,21,,5,stacks_35188_DS1.pdf
 1983,mumps,Maine,21,,30,stacks_35188_DS1.pdf
 1983,mumps,New Hampshire,21,,29,stacks_35188_DS1.pdf
 1983,mumps,Rhode Island,21,,16,stacks_35188_DS1.pdf
@@ -77,7 +408,80 @@ year,disease,area,pdf_page,ocr_text_layer_had,read_from_page_image,source_file
 1983,mumps,Wyoming,21,,3,stacks_35188_DS1.pdf
 1983,mumps,Colorado,21,,54,stacks_35188_DS1.pdf
 1983,mumps,New Mexico,21,,NN,stacks_35188_DS1.pdf
+1983,pertussis,Maine,21,,5,stacks_35188_DS1.pdf
+1983,pertussis,New Hampshire,21,,10,stacks_35188_DS1.pdf
+1983,pertussis,Rhode Island,21,,5,stacks_35188_DS1.pdf
+1983,pertussis,Minnesota,21,,49,stacks_35188_DS1.pdf
+1983,pertussis,North Dakota,21,,3,stacks_35188_DS1.pdf
+1983,pertussis,Delaware,21,,5,stacks_35188_DS1.pdf
+1983,pertussis,Georgia,21,,70,stacks_35188_DS1.pdf
+1983,pertussis,Tennessee,21,,8,stacks_35188_DS1.pdf
+1983,pertussis,Alabama,21,,5,stacks_35188_DS1.pdf
+1983,pertussis,Arkansas,21,,28,stacks_35188_DS1.pdf
+1983,pertussis,Montana,21,,2,stacks_35188_DS1.pdf
+1983,pertussis,Idaho,21,,16,stacks_35188_DS1.pdf
+1983,pertussis,Wyoming,21,,6,stacks_35188_DS1.pdf
+1983,pertussis,Colorado,21,,138,stacks_35188_DS1.pdf
+1983,pertussis,New Mexico,21,,13,stacks_35188_DS1.pdf
 1984,mumps,East North Central,16,1.172,"1,172",stacks_35267_DS1.pdf
+1984,pertussis,United States,16,2.276,"2,276",stacks_35267_DS1.pdf
+1985,measles_indigenous,East South Central,12,,-,stacks_35429_DS1.pdf
+1986,measles_imported,United States,12,,327*,stacks_35496_DS1.pdf
+1986,measles_imported,New Hampshire,12,,-,stacks_35496_DS1.pdf
+1986,measles_imported,Vermont,12,,-,stacks_35496_DS1.pdf
+1986,measles_imported,Massachusetts,12,,13,stacks_35496_DS1.pdf
+1986,measles_imported,Rhode Island,12,,-,stacks_35496_DS1.pdf
+1986,measles_imported,Connecticut,12,,2,stacks_35496_DS1.pdf
+1986,measles_imported,Illinois,12,,6,stacks_35496_DS1.pdf
+1986,measles_imported,Michigan,12,,-,stacks_35496_DS1.pdf
+1986,measles_imported,Wisconsin,12,,3,stacks_35496_DS1.pdf
+1986,measles_imported,South Dakota,12,,-,stacks_35496_DS1.pdf
+1986,measles_imported,Nebraska,12,,1,stacks_35496_DS1.pdf
+1986,measles_imported,South Atlantic,12,,57,stacks_35496_DS1.pdf
+1986,measles_imported,Delaware,12,,-,stacks_35496_DS1.pdf
+1986,measles_imported,Maryland,12,,9,stacks_35496_DS1.pdf
+1986,measles_imported,West Virginia,12,,-,stacks_35496_DS1.pdf
+1986,measles_imported,North Carolina,12,,1,stacks_35496_DS1.pdf
+1986,measles_imported,South Carolina,12,,-,stacks_35496_DS1.pdf
+1986,measles_imported,Florida,12,,7,stacks_35496_DS1.pdf
+1986,measles_imported,Tennessee,12,,1,stacks_35496_DS1.pdf
+1986,measles_imported,Louisiana,12,,-,stacks_35496_DS1.pdf
+1986,measles_imported,Oklahoma,12,,-,stacks_35496_DS1.pdf
+1986,measles_imported,Texas,12,,34,stacks_35496_DS1.pdf
+1986,measles_imported,Idaho,12,,-,stacks_35496_DS1.pdf
+1986,measles_imported,Wyoming,12,,-,stacks_35496_DS1.pdf
+1986,measles_imported,Colorado,12,,8,stacks_35496_DS1.pdf
+1986,measles_imported,New Mexico,12,,7,stacks_35496_DS1.pdf
+1986,measles_imported,Arizona,12,,6,stacks_35496_DS1.pdf
+1986,measles_imported,Utah,12,,-,stacks_35496_DS1.pdf
+1986,measles_imported,Nevada,12,,-,stacks_35496_DS1.pdf
+1986,measles_imported,Oregon,12,,6,stacks_35496_DS1.pdf
+1986,measles_imported,California,12,,31,stacks_35496_DS1.pdf
+1986,measles_imported,Hawaii,12,,10,stacks_35496_DS1.pdf
+1986,measles_imported,New York (excluding New York City),12,,29,stacks_35496_DS1.pdf
+1986,measles_imported,Mississippi,12,,1,stacks_35496_DS1.pdf
+1986,measles_imported,Alaska,12,,-,stacks_35496_DS1.pdf
+1986,measles_indigenous,Vermont,12,,-,stacks_35496_DS1.pdf
+1986,measles_indigenous,Ohio,12,,-,stacks_35496_DS1.pdf
+1986,measles_indigenous,South Dakota,12,,-,stacks_35496_DS1.pdf
+1986,measles_indigenous,Nebraska,12,,-,stacks_35496_DS1.pdf
+1986,measles_indigenous,South Atlantic,12,,841,stacks_35496_DS1.pdf
+1986,measles_indigenous,Maryland,12,,26,stacks_35496_DS1.pdf
+1986,measles_indigenous,District of Columbia,12,,-,stacks_35496_DS1.pdf
+1986,measles_indigenous,North Carolina,12,,3,stacks_35496_DS1.pdf
+1986,measles_indigenous,Florida,12,,393,stacks_35496_DS1.pdf
+1986,measles_indigenous,East South Central,12,,61,stacks_35496_DS1.pdf
+1986,measles_indigenous,Kentucky,12,,-,stacks_35496_DS1.pdf
+1986,measles_indigenous,Tennessee,12,,55,stacks_35496_DS1.pdf
+1986,measles_indigenous,Mountain,12,,302,stacks_35496_DS1.pdf
+1986,measles_indigenous,Montana,12,,-,stacks_35496_DS1.pdf
+1986,measles_indigenous,Idaho,12,,1,stacks_35496_DS1.pdf
+1986,measles_indigenous,Wyoming,12,,-,stacks_35496_DS1.pdf
+1986,measles_indigenous,California,12,,455,stacks_35496_DS1.pdf
+1986,measles_indigenous,Hawaii,12,,27,stacks_35496_DS1.pdf
+1986,measles_indigenous,New York (excluding New York City),12,,74,stacks_35496_DS1.pdf
+1986,measles_indigenous,Mississippi,12,,5,stacks_35496_DS1.pdf
+1986,measles_indigenous,Alaska,12,,-,stacks_35496_DS1.pdf
 1986,mumps,Maine,12,-,-,stacks_35496_DS1.pdf
 1986,mumps,Tennessee,12,,"1,476",stacks_35496_DS1.pdf
 1986,mumps,Wyoming,12,-,-,stacks_35496_DS1.pdf
@@ -92,6 +496,42 @@ year,disease,area,pdf_page,ocr_text_layer_had,read_from_page_image,source_file
 1986,mumps,New York (excluding New York City),12,,79,stacks_35496_DS1.pdf
 1986,mumps,Mississippi,12,,NN,stacks_35496_DS1.pdf
 1986,mumps,Alaska,12,,8,stacks_35496_DS1.pdf
+1986,pertussis,Maine,12,,1,stacks_35496_DS1.pdf
+1986,pertussis,District of Columbia,12,,-,stacks_35496_DS1.pdf
+1986,pertussis,Tennessee,12,,18,stacks_35496_DS1.pdf
+1986,pertussis,Colorado,12,,84,stacks_35496_DS1.pdf
+1986,pertussis,New Mexico,12,,29,stacks_35496_DS1.pdf
+1986,pertussis,Arizona,12,,78,stacks_35496_DS1.pdf
+1986,pertussis,Utah,12,,44,stacks_35496_DS1.pdf
+1986,pertussis,Nevada,12,,4,stacks_35496_DS1.pdf
+1986,pertussis,Pacific,12,,534,stacks_35496_DS1.pdf
+1986,pertussis,Washington,12,,163,stacks_35496_DS1.pdf
+1986,pertussis,Oregon,12,,16,stacks_35496_DS1.pdf
+1986,pertussis,California,12,,299,stacks_35496_DS1.pdf
+1986,pertussis,Hawaii,12,,51,stacks_35496_DS1.pdf
+1986,pertussis,New York (excluding New York City),12,,153,stacks_35496_DS1.pdf
+1986,pertussis,Mississippi,12,,1,stacks_35496_DS1.pdf
+1986,pertussis,Alaska,12,,5,stacks_35496_DS1.pdf
+1987,measles_imported,Massachusetts,12,,39,stacks_35629_DS1.pdf
+1987,measles_imported,Connecticut,12,,6,stacks_35629_DS1.pdf
+1987,measles_imported,Middle Atlantic,12,,53,stacks_35629_DS1.pdf
+1987,measles_imported,Pennsylvania,12,,13,stacks_35629_DS1.pdf
+1987,measles_imported,Minnesota,12,,20,stacks_35629_DS1.pdf
+1987,measles_imported,South Dakota,12,,-,stacks_35629_DS1.pdf
+1987,measles_imported,Nebraska,12,,-,stacks_35629_DS1.pdf
+1987,measles_imported,Montana,12,,1,stacks_35629_DS1.pdf
+1987,measles_imported,Wyoming,12,,2,stacks_35629_DS1.pdf
+1987,measles_imported,Colorado,12,,4,stacks_35629_DS1.pdf
+1987,measles_imported,New Mexico,12,,9,stacks_35629_DS1.pdf
+1987,measles_imported,Utah,12,,1,stacks_35629_DS1.pdf
+1987,measles_imported,Nevada,12,,1,stacks_35629_DS1.pdf
+1987,measles_imported,Pacific,12,,115,stacks_35629_DS1.pdf
+1987,measles_imported,Washington,12,,13,stacks_35629_DS1.pdf
+1987,measles_indigenous,Minnesota,12,,19,stacks_35629_DS1.pdf
+1987,measles_indigenous,South Dakota,12,,-,stacks_35629_DS1.pdf
+1987,measles_indigenous,Nebraska,12,,-,stacks_35629_DS1.pdf
+1987,measles_indigenous,Montana,12,,127,stacks_35629_DS1.pdf
+1987,measles_indigenous,Colorado,12,,5,stacks_35629_DS1.pdf
 1987,mumps,Massachusetts,12,,21,stacks_35629_DS1.pdf
 1987,mumps,Rhode Island,12,,-,stacks_35629_DS1.pdf
 1987,mumps,Connecticut,12,,16,stacks_35629_DS1.pdf
@@ -107,7 +547,33 @@ year,disease,area,pdf_page,ocr_text_layer_had,read_from_page_image,source_file
 1987,mumps,Pacific,12,,490,stacks_35629_DS1.pdf
 1987,mumps,Washington,12,,70,stacks_35629_DS1.pdf
 1987,mumps,California,12,,397,stacks_35629_DS1.pdf
+1987,pertussis,Massachusetts,12,,153,stacks_35629_DS1.pdf
+1987,pertussis,Connecticut,12,,31,stacks_35629_DS1.pdf
+1987,pertussis,Middle Atlantic,12,,327,stacks_35629_DS1.pdf
+1987,pertussis,Pennsylvania,12,,105,stacks_35629_DS1.pdf
+1987,pertussis,Minnesota,12,,17,stacks_35629_DS1.pdf
+1987,pertussis,Montana,12,,8,stacks_35629_DS1.pdf
+1987,pertussis,Idaho,12,,91,stacks_35629_DS1.pdf
+1987,pertussis,Wyoming,12,,5,stacks_35629_DS1.pdf
+1987,pertussis,Colorado,12,,86,stacks_35629_DS1.pdf
+1987,pertussis,New Mexico,12,,13,stacks_35629_DS1.pdf
+1987,pertussis,Utah,12,,15,stacks_35629_DS1.pdf
+1987,pertussis,Pacific,12,,660,stacks_35629_DS1.pdf
+1987,pertussis,Washington,12,,110,stacks_35629_DS1.pdf
+1987,pertussis,California,12,,217,stacks_35629_DS1.pdf
+1987,pertussis,Hawaii,12,,245,stacks_35629_DS1.pdf
+1988,pertussis,Nevada,15,,2,stacks_35958_DS1.pdf
+1988,pertussis,Oregon,15,,53,stacks_35958_DS1.pdf
+1988,pertussis,California,15,,270,stacks_35958_DS1.pdf
+1988,pertussis,Hawaii,15,,50,stacks_35958_DS1.pdf
+1989,measles_imported,Oklahoma,13,,-,stacks_35853_DS1.pdf
+1989,measles_imported,Wyoming,13,,-,stacks_35853_DS1.pdf
+1989,measles_indigenous,Maine,13,,-,stacks_35853_DS1.pdf
+1989,measles_indigenous,South Dakota,13,,-,stacks_35853_DS1.pdf
+1989,measles_indigenous,Idaho,13,,-,stacks_35853_DS1.pdf
+1989,measles_indigenous,Wyoming,13,,-,stacks_35853_DS1.pdf
 1989,mumps,Maine,13,,-,stacks_35853_DS1.pdf
 1989,mumps,Rhode Island,13,,-,stacks_35853_DS1.pdf
 1989,mumps,North Dakota,13,,-,stacks_35853_DS1.pdf
 1989,mumps,South Dakota,13,,-,stacks_35853_DS1.pdf
+1989,pertussis,Wyoming,13,,-,stacks_35853_DS1.pdf

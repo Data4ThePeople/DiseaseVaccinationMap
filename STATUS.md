@@ -51,3 +51,9 @@ None.
   https://data4thepeople.github.io/DiseaseVaccinationMap/ . Local folder
   renamed to `DiseaseVaccinationMap`; `PythonProject1` is a link to it and can
   be deleted once PyCharm is reopened from the new folder.
+- 2026-10-06 Step 1 analysis: `analysis/FINDINGS.md` and the shareable page
+  https://data4thepeople.github.io/DiseaseVaccinationMap/findings.html .
+  Mumps 1968-1992, measles 1968-1992 and whooping cough 1956-1992 now come from
+  CDC's scanned final annual summaries (strict sum test, image-read cells
+  listed). Eric accepted the 1971 mumps readings and New York City-only mumps
+  for 1968-1973. Open: 1970 whooping cough (two misprinted cells).

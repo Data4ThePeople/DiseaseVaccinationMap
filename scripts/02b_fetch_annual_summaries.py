@@ -322,7 +322,7 @@ def classify_columns(texts, page_has_hepatitis=True):
             put("measles_imported", i)
         if "mumps" in t:
             put("mumps", i)
-        if "pertussis" in t:
+        if "pertussis" in t or "whooping" in t:     # "Whooping cough" in the 1950s
             put("pertussis", i)
         if "diphtheria" in t:
             put("diphtheria", i)
@@ -566,6 +566,10 @@ SCAN_ISSUES = {
     # collection (cdc:101) rather than the NNDSS collection.
     1979: 1577, 1978: 10895, 1977: 10894, 1976: 1130, 1975: 1041, 1974: 1743,
     1973: 1849, 1972: 1895, 1971: 1829, 1970: 951, 1969: 838, 1968: 1717,
+    # 1956-1967: read for pertussis only. 1956 (10893) is in the MMWR
+    # collection; the others are in the NNDSS collection.
+    1967: 1555, 1966: 615, 1965: 740, 1964: 698, 1963: 491, 1962: 380, 1961: 1427,
+    1960: 1360, 1959: 1302, 1958: 1162, 1957: 1035, 1956: 10893,
 }
 SCAN_DISEASES = ("measles", "measles_indigenous", "measles_imported", "pertussis", "mumps")
 
@@ -712,11 +716,553 @@ SCAN_IMAGE_CELLS = {
     (1987, "mumps", "Washington"): ("70", 12),
     (1987, "mumps", "California"): ("397", 12),
 }
+# Table pages where the OCR layer lost a column header or a US total entirely.
+# "insert_us": (x0, x1, text) of a US-row cell read from the page image, placed
+# at the column's position on the page; "headers": column index (left to right,
+# after the insert) -> header text read from the page image.
+SCAN_PAGE_FIXES = {
+    # 1981: measles is in its own table, "MEASLES (Rubeola) - Reported cases, by
+    # area and month"; its first column is "Total".
+    (1981, 70): {"headers": {0: "Measles (Rubeola) Total"}, "only_these_headers": True,
+                 "min_rows": 5},
+    # 1960 Table 5, p.9: numbers and row labels sit at different heights and the
+    # OCR layer splits every row; the pertussis column is read from the image.
+    (1960, 9): {"image_only": {"pertussis": ("PERTUSSIS (whooping cough)", "14,809")}},
+    (1986, 12): {"insert_us": [(124.0, 137.0, "327*")],
+                 "headers": {0: "Measles Indigenous", 1: "Measles Imported"}},
+}
+
+# Measles and pertussis cells read from the page image (same rules as above).
+_MP_IMAGE = """
+# year | disease | area | text on the image | PDF page
+1989 | measles_indigenous | Maine | - | 13
+1989 | measles_indigenous | South Dakota | - | 13
+1989 | measles_indigenous | Idaho | - | 13
+1989 | measles_indigenous | Wyoming | - | 13
+1989 | measles_imported | Oklahoma | - | 13
+1989 | measles_imported | Wyoming | - | 13
+1989 | pertussis | Wyoming | - | 13
+1988 | pertussis | Nevada | 2 | 15
+1988 | pertussis | Oregon | 53 | 15
+1988 | pertussis | California | 270 | 15
+1988 | pertussis | Hawaii | 50 | 15
+1987 | measles_indigenous | Minnesota | 19 | 12
+1987 | measles_indigenous | South Dakota | - | 12
+1987 | measles_indigenous | Nebraska | - | 12
+1987 | measles_indigenous | Montana | 127 | 12
+1987 | measles_indigenous | Colorado | 5 | 12
+1987 | measles_imported | Massachusetts | 39 | 12
+1987 | measles_imported | Connecticut | 6 | 12
+1987 | measles_imported | Middle Atlantic | 53 | 12
+1987 | measles_imported | Pennsylvania | 13 | 12
+1987 | measles_imported | Minnesota | 20 | 12
+1987 | measles_imported | South Dakota | - | 12
+1987 | measles_imported | Nebraska | - | 12
+1987 | measles_imported | Montana | 1 | 12
+1987 | measles_imported | Wyoming | 2 | 12
+1987 | measles_imported | Colorado | 4 | 12
+1987 | measles_imported | New Mexico | 9 | 12
+1987 | measles_imported | Utah | 1 | 12
+1987 | measles_imported | Nevada | 1 | 12
+1987 | measles_imported | Pacific | 115 | 12
+1987 | measles_imported | Washington | 13 | 12
+1987 | pertussis | Massachusetts | 153 | 12
+1987 | pertussis | Connecticut | 31 | 12
+1987 | pertussis | Middle Atlantic | 327 | 12
+1987 | pertussis | Pennsylvania | 105 | 12
+1987 | pertussis | Minnesota | 17 | 12
+1987 | pertussis | Montana | 8 | 12
+1987 | pertussis | Idaho | 91 | 12
+1987 | pertussis | Wyoming | 5 | 12
+1987 | pertussis | Colorado | 86 | 12
+1987 | pertussis | New Mexico | 13 | 12
+1987 | pertussis | Utah | 15 | 12
+1987 | pertussis | Pacific | 660 | 12
+1987 | pertussis | Washington | 110 | 12
+1987 | pertussis | California | 217 | 12
+1987 | pertussis | Hawaii | 245 | 12
+1986 | pertussis | Maine | 1 | 12
+1986 | pertussis | NY_UP | 153 | 12
+1986 | pertussis | District of Columbia | - | 12
+1986 | pertussis | Tennessee | 18 | 12
+1986 | pertussis | Mississippi | 1 | 12
+1986 | pertussis | Colorado | 84 | 12
+1986 | pertussis | New Mexico | 29 | 12
+1986 | pertussis | Arizona | 78 | 12
+1986 | pertussis | Utah | 44 | 12
+1986 | pertussis | Nevada | 4 | 12
+1986 | pertussis | Pacific | 534 | 12
+1986 | pertussis | Washington | 163 | 12
+1986 | pertussis | Oregon | 16 | 12
+1986 | pertussis | California | 299 | 12
+1986 | pertussis | Alaska | 5 | 12
+1986 | pertussis | Hawaii | 51 | 12
+1986 | measles_indigenous | Vermont | - | 12
+1986 | measles_indigenous | NY_UP | 74 | 12
+1986 | measles_indigenous | Ohio | - | 12
+1986 | measles_indigenous | South Dakota | - | 12
+1986 | measles_indigenous | Nebraska | - | 12
+1986 | measles_indigenous | South Atlantic | 841 | 12
+1986 | measles_indigenous | Maryland | 26 | 12
+1986 | measles_indigenous | District of Columbia | - | 12
+1986 | measles_indigenous | North Carolina | 3 | 12
+1986 | measles_indigenous | Florida | 393 | 12
+1986 | measles_indigenous | East South Central | 61 | 12
+1986 | measles_indigenous | Kentucky | - | 12
+1986 | measles_indigenous | Tennessee | 55 | 12
+1986 | measles_indigenous | Mississippi | 5 | 12
+1986 | measles_indigenous | Mountain | 302 | 12
+1986 | measles_indigenous | Montana | - | 12
+1986 | measles_indigenous | Idaho | 1 | 12
+1986 | measles_indigenous | Wyoming | - | 12
+1986 | measles_indigenous | California | 455 | 12
+1986 | measles_indigenous | Alaska | - | 12
+1986 | measles_indigenous | Hawaii | 27 | 12
+1986 | measles_imported | United States | 327* | 12
+1986 | measles_imported | New Hampshire | - | 12
+1986 | measles_imported | Vermont | - | 12
+1986 | measles_imported | Massachusetts | 13 | 12
+1986 | measles_imported | Rhode Island | - | 12
+1986 | measles_imported | Connecticut | 2 | 12
+1986 | measles_imported | NY_UP | 29 | 12
+1986 | measles_imported | Illinois | 6 | 12
+1986 | measles_imported | Michigan | - | 12
+1986 | measles_imported | Wisconsin | 3 | 12
+1986 | measles_imported | South Dakota | - | 12
+1986 | measles_imported | Nebraska | 1 | 12
+1986 | measles_imported | South Atlantic | 57 | 12
+1986 | measles_imported | Delaware | - | 12
+1986 | measles_imported | Maryland | 9 | 12
+1986 | measles_imported | West Virginia | - | 12
+1986 | measles_imported | North Carolina | 1 | 12
+1986 | measles_imported | South Carolina | - | 12
+1986 | measles_imported | Florida | 7 | 12
+1986 | measles_imported | Tennessee | 1 | 12
+1986 | measles_imported | Mississippi | 1 | 12
+1986 | measles_imported | Louisiana | - | 12
+1986 | measles_imported | Oklahoma | - | 12
+1986 | measles_imported | Texas | 34 | 12
+1986 | measles_imported | Idaho | - | 12
+1986 | measles_imported | Wyoming | - | 12
+1986 | measles_imported | Colorado | 8 | 12
+1986 | measles_imported | New Mexico | 7 | 12
+1986 | measles_imported | Arizona | 6 | 12
+1986 | measles_imported | Utah | - | 12
+1986 | measles_imported | Nevada | - | 12
+1986 | measles_imported | Oregon | 6 | 12
+1986 | measles_imported | California | 31 | 12
+1986 | measles_imported | Alaska | - | 12
+1986 | measles_imported | Hawaii | 10 | 12
+1985 | measles_indigenous | East South Central | - | 12
+1984 | pertussis | United States | 2,276 | 16
+1983 | measles_indigenous | Arkansas | 5 | 21
+1983 | measles_imported | Minnesota | - | 21
+1983 | measles_imported | Arkansas | 8 | 21
+1983 | measles_imported | Montana | 4 | 21
+1983 | measles_imported | Idaho | 10 | 21
+1983 | measles_imported | Wyoming | 1 | 21
+1983 | measles_imported | Colorado | 3 | 21
+1983 | pertussis | Maine | 5 | 21
+1983 | pertussis | New Hampshire | 10 | 21
+1983 | pertussis | Rhode Island | 5 | 21
+1983 | pertussis | Minnesota | 49 | 21
+1983 | pertussis | North Dakota | 3 | 21
+1983 | pertussis | Delaware | 5 | 21
+1983 | pertussis | Georgia | 70 | 21
+1983 | pertussis | Tennessee | 8 | 21
+1983 | pertussis | Alabama | 5 | 21
+1983 | pertussis | Arkansas | 28 | 21
+1983 | pertussis | Montana | 2 | 21
+1983 | pertussis | Idaho | 16 | 21
+1983 | pertussis | Wyoming | 6 | 21
+1983 | pertussis | Colorado | 138 | 21
+1983 | pertussis | New Mexico | 13 | 21
+1982 | measles | Maine | - | 16
+1982 | measles | Vermont | 2 | 16
+1982 | measles | Rhode Island | - | 16
+1982 | measles | Pennsylvania | 7 | 16
+1982 | measles | Minnesota | - | 16
+1982 | measles | Iowa | - | 16
+1982 | measles | North Dakota | - | 16
+1982 | measles | South Dakota | - | 16
+1982 | measles | South Atlantic | 271 | 16
+1982 | measles | Delaware | - | 16
+1982 | measles | South Carolina | - | 16
+1982 | measles | Georgia | - | 16
+1982 | measles | East South Central | 15 | 16
+1982 | measles | Mississippi | 6 | 16
+1982 | measles | Arkansas | - | 16
+1982 | measles | Montana | - | 16
+1982 | measles | Idaho | - | 16
+1982 | measles | New Mexico | - | 16
+1982 | measles | Nevada | - | 16
+1982 | pertussis | Vermont | 2 | 16
+1982 | pertussis | Pennsylvania | 204 | 16
+1982 | pertussis | North Dakota | - | 16
+1982 | pertussis | South Atlantic | 302 | 16
+1982 | pertussis | District of Columbia | - | 16
+1982 | pertussis | South Carolina | 16 | 16
+1982 | pertussis | Georgia | 43 | 16
+1982 | pertussis | East South Central | 54 | 16
+1982 | pertussis | Mississippi | 16 | 16
+1982 | pertussis | Nevada | - | 16
+1982 | pertussis | Alaska | - | 16
+# 1981 pertussis, p.81 ("PERTUSSIS (Whooping cough) - by area and age", Total
+# column). The OCR layer mixes this column with its neighbours, so every cell
+# below the US row was read from the image.
+1981 | pertussis | New England | 49 | 81
+1981 | pertussis | Maine | 13 | 81
+1981 | pertussis | New Hampshire | 8 | 81
+1981 | pertussis | Vermont | - | 81
+1981 | pertussis | Massachusetts | 15 | 81
+1981 | pertussis | Rhode Island | 11 | 81
+1981 | pertussis | Connecticut | 2 | 81
+1981 | pertussis | Middle Atlantic | 169 | 81
+1981 | pertussis | NY_UP | 97 | 81
+1981 | pertussis | NY_CITY | 25 | 81
+1981 | pertussis | New Jersey | 12 | 81
+1981 | pertussis | Pennsylvania | 35 | 81
+1981 | pertussis | East North Central | 281 | 81
+1981 | pertussis | Ohio | 43 | 81
+1981 | pertussis | Indiana | 87 | 81
+1981 | pertussis | Illinois | 88 | 81
+1981 | pertussis | Michigan | 30 | 81
+1981 | pertussis | Wisconsin | 33 | 81
+1981 | pertussis | West North Central | 66 | 81
+1981 | pertussis | Minnesota | 16 | 81
+1981 | pertussis | Iowa | 9 | 81
+1981 | pertussis | Missouri | 24 | 81
+1981 | pertussis | North Dakota | 1 | 81
+1981 | pertussis | South Dakota | 2 | 81
+1981 | pertussis | Nebraska | 6 | 81
+1981 | pertussis | Kansas | 8 | 81
+1981 | pertussis | South Atlantic | 177 | 81
+1981 | pertussis | Delaware | 2 | 81
+1981 | pertussis | Maryland | 1 | 81
+1981 | pertussis | District of Columbia | - | 81
+1981 | pertussis | Virginia | 10 | 81
+1981 | pertussis | West Virginia | 6 | 81
+1981 | pertussis | North Carolina | 12 | 81
+1981 | pertussis | South Carolina | 11 | 81
+1981 | pertussis | Georgia | 57 | 81
+1981 | pertussis | Florida | 78 | 81
+1981 | pertussis | East South Central | 49 | 81
+1981 | pertussis | Kentucky | 25 | 81
+1981 | pertussis | Tennessee | 16 | 81
+1981 | pertussis | Alabama | - | 81
+1981 | pertussis | Mississippi | 8 | 81
+1981 | pertussis | West South Central | 106 | 81
+1981 | pertussis | Arkansas | 5 | 81
+1981 | pertussis | Louisiana | 8 | 81
+1981 | pertussis | Oklahoma | 2 | 81
+1981 | pertussis | Texas | 91 | 81
+1981 | pertussis | Mountain | 86 | 81
+1981 | pertussis | Montana | 12 | 81
+1981 | pertussis | Idaho | 4 | 81
+1981 | pertussis | Wyoming | 7 | 81
+1981 | pertussis | Colorado | 24 | 81
+1981 | pertussis | New Mexico | 16 | 81
+1981 | pertussis | Arizona | 13 | 81
+1981 | pertussis | Utah | 8 | 81
+1981 | pertussis | Nevada | 2 | 81
+1981 | pertussis | Pacific | 265 | 81
+1981 | pertussis | Washington | 58 | 81
+1981 | pertussis | Oregon | 18 | 81
+1981 | pertussis | California | 185 | 81
+1981 | pertussis | Alaska | 1 | 81
+1981 | pertussis | Hawaii | 3 | 81
+# 1981 measles, p.70 ("MEASLES (Rubeola) - by area and month", Total column).
+# The scan is curved and the OCR layer lost most row labels; every cell below
+# the US row was read from the image, in table order within each division.
+1981 | measles | New England | 86 | 70
+1981 | measles | Maine | 5 | 70
+1981 | measles | New Hampshire | 9 | 70
+1981 | measles | Vermont | 3 | 70
+1981 | measles | Massachusetts | 59 | 70
+1981 | measles | Rhode Island | - | 70
+1981 | measles | Connecticut | 10 | 70
+1981 | measles | Middle Atlantic | 1,159 | 70
+1981 | measles | NY_UP | 228 | 70
+1981 | measles | NY_CITY | 108 | 70
+1981 | measles | New Jersey | 61 | 70
+1981 | measles | Pennsylvania | 762 | 70
+1981 | measles | East North Central | 90 | 70
+1981 | measles | Ohio | 20 | 70
+1981 | measles | Indiana | 9 | 70
+1981 | measles | Illinois | 24 | 70
+1981 | measles | Michigan | 34 | 70
+1981 | measles | Wisconsin | 3 | 70
+1981 | measles | West North Central | 10 | 70
+1981 | measles | Minnesota | 3 | 70
+1981 | measles | Iowa | 1 | 70
+1981 | measles | Missouri | 1 | 70
+1981 | measles | North Dakota | - | 70
+1981 | measles | South Dakota | - | 70
+1981 | measles | Nebraska | 4 | 70
+1981 | measles | Kansas | 1 | 70
+1981 | measles | South Atlantic | 494 | 70
+1981 | measles | Delaware | - | 70
+1981 | measles | Maryland | 5 | 70
+1981 | measles | District of Columbia | 1 | 70
+1981 | measles | Virginia | 18 | 70
+1981 | measles | West Virginia | 9 | 70
+1981 | measles | North Carolina | 3 | 70
+1981 | measles | South Carolina | 2 | 70
+1981 | measles | Georgia | 111 | 70
+1981 | measles | Florida | 345 | 70
+1981 | measles | East South Central | 6 | 70
+1981 | measles | Kentucky | 2 | 70
+1981 | measles | Tennessee | 2 | 70
+1981 | measles | Alabama | 2 | 70
+1981 | measles | Mississippi | - | 70
+1981 | measles | West South Central | 886 | 70
+1981 | measles | Arkansas | 25 | 70
+1981 | measles | Louisiana | 4 | 70
+1981 | measles | Oklahoma | 6 | 70
+1981 | measles | Texas | 851 | 70
+1981 | measles | Mountain | 39 | 70
+1981 | measles | Montana | - | 70
+1981 | measles | Idaho | 1 | 70
+1981 | measles | Wyoming | 1 | 70
+1981 | measles | Colorado | 11 | 70
+1981 | measles | New Mexico | 9 | 70
+1981 | measles | Arizona | 7 | 70
+1981 | measles | Utah | - | 70
+1981 | measles | Nevada | 10 | 70
+1981 | measles | Pacific | 354 | 70
+1981 | measles | Washington | 3 | 70
+1981 | measles | Oregon | 5 | 70
+1981 | measles | California | 339 | 70
+1981 | measles | Alaska | - | 70
+1981 | measles | Hawaii | 7 | 70
+# 1980, p.19. The US measles cell is printed "13,506" with footnote 2
+# ("Includes 38 imported cases"); the OCR layer read it as "13.5062".
+1980 | measles | United States | 13,506 | 19
+1980 | measles | New England | 677 | 19
+1980 | measles | Middle Atlantic | 3,940 | 19
+1980 | measles | NY_UP | 735 | 19
+1980 | measles | East North Central | 2,459 | 19
+1980 | measles | North Dakota | - | 19
+1980 | measles | South Dakota | - | 19
+1980 | pertussis | New England | 49 | 19
+1980 | pertussis | Middle Atlantic | 256 | 19
+1980 | pertussis | NY_UP | 160 | 19
+1980 | pertussis | East North Central | 474 | 19
+1980 | pertussis | North Dakota | 7 | 19
+1980 | pertussis | South Dakota | 3 | 19
+# 1979, p.13. US measles printed "13,597" with footnote 2 ("Includes 28
+# imported cases"); OCR read "13.5972". Division labels lost in the OCR layer.
+1979 | measles | United States | 13,597 | 13
+1979 | measles | New England | 292 | 13
+1979 | measles | Middle Atlantic | 1,648 | 13
+1979 | measles | East North Central | 3,645 | 13
+1979 | measles | Indiana | 228 | 13
+1979 | measles | West North Central | 1,846 | 13
+1979 | measles | South Atlantic | 2,194 | 13
+1979 | measles | District of Columbia | - | 13
+1979 | measles | Virginia | 288 | 13
+1979 | measles | East South Central | 278 | 13
+1979 | measles | Kentucky | 60 | 13
+1979 | measles | Tennessee | 69 | 13
+1979 | measles | West South Central | 987 | 13
+1979 | measles | Mountain | 341 | 13
+1979 | measles | New Mexico | 38 | 13
+1979 | measles | Arizona | 80 | 13
+1979 | measles | Pacific | 2,366 | 13
+1979 | measles | Oregon | 66 | 13
+1979 | pertussis | New England | 56 | 13
+1979 | pertussis | Middle Atlantic | 152 | 13
+1979 | pertussis | East North Central | 588 | 13
+1979 | pertussis | Indiana | 41 | 13
+1979 | pertussis | West North Central | 59 | 13
+1979 | pertussis | South Atlantic | 234 | 13
+1979 | pertussis | District of Columbia | - | 13
+1979 | pertussis | Virginia | 16 | 13
+1979 | pertussis | East South Central | 72 | 13
+1979 | pertussis | Kentucky | 30 | 13
+1979 | pertussis | Tennessee | 31 | 13
+1979 | pertussis | West South Central | 173 | 13
+1979 | pertussis | Mountain | 123 | 13
+1979 | pertussis | Montana | 15 | 13
+1979 | pertussis | Colorado | 42 | 13
+1979 | pertussis | New Mexico | 30 | 13
+1979 | pertussis | Arizona | 30 | 13
+1979 | pertussis | Pacific | 166 | 13
+1979 | pertussis | Oregon | 11 | 13
+1976 | measles | Idaho | 2,024 | 11
+1975 | measles | Connecticut | 129 | 10
+# printed "635" with a small raised speck before it (OCR "•635")
+1975 | measles | West South Central | 635 | 10
+1974 | measles | California | 1,115 | 10
+# 1968 and 1969, p.10 (Table 6). Mississippi's measles cell is printed with an
+# asterisk: "*Includes rubella" (footnote on the same page). Recorded as "n*".
+1968 | measles | New Hampshire | 150 | 10
+1968 | measles | Mississippi | 248* | 10
+1968 | measles | Alaska | 11 | 10
+1968 | pertussis | Alaska | 3 | 10
+1969 | measles | Mississippi | 221* | 10
+# 1970 pertussis, p.10. New York City and Virginia are both printed "163"
+# followed by a small unexplained stroke; there is no footnote on the page.
+# They are NOT entered here (awaiting an editor decision), so 1970 pertussis
+# stays out. With both read as 163 the year passes the division test.
+1970 | pertussis | New Jersey | - | 10
+1970 | pertussis | Kansas | - | 10
+1970 | pertussis | Oklahoma | 45 | 10
+1970 | pertussis | Wyoming | - | 10
+1970 | pertussis | Nevada | - | 10
+# 1971, p.10 (the OCR layer lost the Arkansas, Georgia, New Jersey, Oregon and
+# Virginia rows)
+1971 | measles | Arkansas | 819 | 10
+1971 | measles | Georgia | 390 | 10
+1971 | measles | New Jersey | 1,260 | 10
+1971 | measles | Oregon | 388 | 10
+1971 | measles | Virginia | 1,628 | 10
+1971 | pertussis | Arkansas | 51 | 10
+1971 | pertussis | Georgia | 18 | 10
+1971 | pertussis | New Jersey | 7 | 10
+1971 | pertussis | Oregon | 108 | 10
+1971 | pertussis | Virginia | 61 | 10
+1971 | pertussis | East South Central | 377 | 10
+1971 | pertussis | Hawaii | - | 10
+1957 | pertussis | East South Central | 1,921 | 10
+# 1958, p.10: the first digit of the Pacific total is faintly printed; at
+# 800 dpi it is a 5 (OCR "f,393")
+1958 | pertussis | Pacific | 5,393 | 10
+1959 | pertussis | Alaska | - | 11
+# 1956, p.10 (one New York row; Alaska and Hawaii not in the table)
+1956 | pertussis | New York | 2,248 | 10
+1956 | pertussis | Illinois | 569 | 10
+1956 | pertussis | Michigan | 1,907 | 10
+1956 | pertussis | Wisconsin | 982 | 10
+1956 | pertussis | Minnesota | 123 | 10
+1956 | pertussis | Maryland | 179 | 10
+1956 | pertussis | West Virginia | 297 | 10
+# printed "780" with a small raised speck before it (OCR "•780")
+1956 | pertussis | Arizona | 780 | 10
+# 1960 pertussis, p.9, whole column from the image (one New York row)
+1960 | pertussis | United States | 14,809 | 9
+1960 | pertussis | New England | 821 | 9
+1960 | pertussis | Maine | 173 | 9
+1960 | pertussis | New Hampshire | 103 | 9
+1960 | pertussis | Vermont | 45 | 9
+1960 | pertussis | Massachusetts | 226 | 9
+1960 | pertussis | Rhode Island | 43 | 9
+1960 | pertussis | Connecticut | 231 | 9
+1960 | pertussis | Middle Atlantic | 1,297 | 9
+1960 | pertussis | New York | 734 | 9
+1960 | pertussis | New Jersey | 226 | 9
+1960 | pertussis | Pennsylvania | 337 | 9
+1960 | pertussis | East North Central | 2,215 | 9
+1960 | pertussis | Ohio | 127 | 9
+1960 | pertussis | Indiana | 290 | 9
+1960 | pertussis | Illinois | 442 | 9
+1960 | pertussis | Michigan | 1,129 | 9
+1960 | pertussis | Wisconsin | 227 | 9
+1960 | pertussis | West North Central | 457 | 9
+1960 | pertussis | Minnesota | 22 | 9
+1960 | pertussis | Iowa | 115 | 9
+1960 | pertussis | Missouri | 71 | 9
+1960 | pertussis | North Dakota | 56 | 9
+1960 | pertussis | South Dakota | 66 | 9
+1960 | pertussis | Nebraska | 66 | 9
+1960 | pertussis | Kansas | 61 | 9
+1960 | pertussis | South Atlantic | 1,387 | 9
+1960 | pertussis | Delaware | 24 | 9
+1960 | pertussis | Maryland | 120 | 9
+1960 | pertussis | District of Columbia | 52 | 9
+1960 | pertussis | Virginia | 344 | 9
+1960 | pertussis | West Virginia | 164 | 9
+1960 | pertussis | North Carolina | 111 | 9
+1960 | pertussis | South Carolina | 128 | 9
+1960 | pertussis | Georgia | 21 | 9
+1960 | pertussis | Florida | 423 | 9
+1960 | pertussis | East South Central | 1,595 | 9
+1960 | pertussis | Kentucky | 336 | 9
+1960 | pertussis | Tennessee | 1,111 | 9
+1960 | pertussis | Alabama | 104 | 9
+1960 | pertussis | Mississippi | 44 | 9
+1960 | pertussis | West South Central | 2,705 | 9
+1960 | pertussis | Arkansas | 54 | 9
+1960 | pertussis | Louisiana | 14 | 9
+1960 | pertussis | Oklahoma | 103 | 9
+1960 | pertussis | Texas | 2,534 | 9
+1960 | pertussis | Mountain | 1,586 | 9
+1960 | pertussis | Montana | 301 | 9
+1960 | pertussis | Idaho | 107 | 9
+1960 | pertussis | Wyoming | 27 | 9
+1960 | pertussis | Colorado | 448 | 9
+1960 | pertussis | New Mexico | 50 | 9
+1960 | pertussis | Arizona | 398 | 9
+1960 | pertussis | Utah | 249 | 9
+1960 | pertussis | Nevada | 6 | 9
+1960 | pertussis | Pacific | 2,746 | 9
+1960 | pertussis | Washington | 251 | 9
+1960 | pertussis | Oregon | 534 | 9
+1960 | pertussis | California | 1,957 | 9
+1960 | pertussis | Alaska | 4 | 9
+1960 | pertussis | Hawaii | - | 9
+# 1961 pertussis, p.10
+1961 | pertussis | Maine | 220 | 10
+# printed "337" with a small dot before it (OCR ".337")
+1961 | pertussis | New Jersey | 337 | 10
+1961 | pertussis | Kansas | - | 10
+1961 | pertussis | Alabama | 64 | 10
+1961 | pertussis | Arkansas | 33 | 10
+1961 | pertussis | Oklahoma | 16 | 10
+1961 | pertussis | Texas | 1,365 | 10
+1961 | pertussis | Montana | 92 | 10
+1961 | pertussis | Washington | 344 | 10
+1962 | pertussis | Montana | 70 | 10
+1963 | pertussis | New Jersey | - | 10
+1963 | pertussis | Iowa | 149 | 10
+1963 | pertussis | Tennessee | 865 | 10
+1963 | pertussis | Alabama | 142 | 10
+1963 | pertussis | Alaska | 17 | 10
+1964 | pertussis | New Mexico | 49 | 12
+1965 | pertussis | United States | 6,799 | 10
+1965 | pertussis | Kentucky | 68 | 10
+1965 | pertussis | Alabama | 57 | 10
+1965 | pertussis | Arkansas | 25 | 10
+1965 | pertussis | Louisiana | 4 | 10
+1965 | pertussis | Colorado | 98 | 10
+1965 | pertussis | New Mexico | 6 | 10
+1965 | pertussis | Utah | 51 | 10
+1965 | pertussis | Alaska | 9 | 10
+1966 | pertussis | Alaska | - | 10
+1967 | pertussis | Maine | 265 | 10
+1967 | pertussis | Texas | 846 | 10
+1967 | pertussis | Montana | 199 | 10
+#END
+"""
+for _ln in _MP_IMAGE.strip().splitlines():
+    if _ln.startswith("#"):
+        continue
+    _y, _d, _a, _t, _p = [x.strip() for x in _ln.split("|")]
+    _a = {"NY_UP": NY_UP, "NY_CITY": NY_CITY}.get(_a, _a)
+    SCAN_IMAGE_CELLS[(int(_y), _d, _a)] = (_t, int(_p))
+
 # Symbol legends read from the page image where the OCR layer garbled them.
 _NN_OLD = "Report of disease not required by State Health Department"
+_M5657 = {"-": "No cases reported (1 dash)", "*": "Disease stated not notifiable (1 asterisk)",
+          "**": "No report made by State (2 asterisks)", "---": "Data not available (3 dashes)"}
 SCAN_IMAGE_MARKS = {
+    1956: {k: (v, 3) for k, v in _M5657.items()},
+    1957: {k: (v, 2) for k, v in _M5657.items()},
+    1958: {"-": ("Quantity zero", 3), "*": ("Disease stated not notifiable", 3),
+           "**": ("No report made by State", 3), "---": ("Data not available", 3)},
+    1959: {"---": ("Data not available", 3), "-": ("Quantity zero", 3),
+           "*": ("Disease stated not notifiable", 3)},
+    1960: {"...": ("Data not available", 2), "-": ("Quantity zero", 2)},
+    1961: {"...": ("Data not available", 2), "-": ("Quantity zero", 2)},
+    1962: {"...": ("Data not available", 2), "-": ("Quantity zero", 2), "NN": (_NN_OLD, 2)},
+    1963: {"...": ("Data not available", 2), "-": ("Quantity zero", 2), "NN": (_NN_OLD, 2)},
+    1964: {"...": ("Data not available", 2), "-": ("Quantity zero", 2), "NN": (_NN_OLD, 2)},
+    1965: {"...": ("Data not available", 2), "-": ("Quantity zero", 2), "NN": (_NN_OLD, 2)},
+    1966: {"...": ("Data not available", 2), "-": ("Quantity zero", 2), "NN": (_NN_OLD, 2)},
+    1967: {"...": ("Data not available", 2), "-": ("Quantity zero", 2), "NN": (_NN_OLD, 2)},
     1968: {"...": ("Data not available", 2), "-": ("Quantity zero", 2), "NN": (_NN_OLD, 2)},
     1969: {"...": ("Data not available", 2), "-": ("Quantity zero", 2), "NN": (_NN_OLD, 2)},
+    1970: {"...": ("Data not available", 2), "-": ("Quantity zero", 2), "NN": (_NN_OLD, 2)},
     1971: {"...": ("Data not available", 2), "-": ("Quantity zero", 2), "NN": (_NN_OLD, 2)},
     1972: {"...": ("Data not available", 2), "-": ("Quantity zero", 2), "NN": (_NN_OLD, 2)},
     1973: {"...": ("Data not available", 2), "-": ("Quantity zero", 2), "NN": (_NN_OLD, 2)},
@@ -772,7 +1318,43 @@ def scan_file(year):
 
 def scan_area(label):
     k = _key(label)
+    if k == "newyork":          # the 1950s and early 1960s tables print one New York row
+        return "New York"
     return AREA_KEYS.get(k) or SCAN_LABEL_ALIASES.get(k)
+
+
+def scan_layout(year, cells, disease):
+    """(need, divisions) for one scanned disease-year.
+    New York is one row in the older tables and two rows (upstate, city) later.
+    Alaska and Hawaii are not in the tables before they became states (1959)."""
+    single_ny = any(a == "New York" for (a, _, d, _, _) in cells if d == disease) or \
+        any(k[0] == year and k[1] == disease and k[2] == "New York" for k in SCAN_IMAGE_CELLS)
+    ny = ["New York"] if single_ny else [NY_UP, NY_CITY]
+    # Alaska joins the tables in 1959, Hawaii in 1960 (statehood 1959)
+    absent = {"Alaska"} if year <= 1958 else set()
+    if year <= 1959:
+        absent.add("Hawaii")
+    if year > 1959:
+        absent = set()
+    if year <= 1958:
+        absent = {"Alaska", "Hawaii"}
+    divs = {}
+    for div, members in DIVISIONS.items():
+        m = []
+        for s in members:
+            if s in (NY_UP, NY_CITY):
+                if s == NY_UP:
+                    m.extend(ny)
+                continue
+            if s in absent:
+                continue
+            m.append(s)
+        divs[div] = m
+    states = [s for v in divs.values() for s in v]
+    return states + [US] + list(divs), divs
+
+
+NOT_YET_STATE = "not in the table (not yet a state)"
 
 
 def deskewed_lines(page, tol=2.6):
@@ -827,6 +1409,15 @@ def parse_scan_pdf(year):
     for pno, page in enumerate(doc, start=1):
         text = page.get_text()
         res["text"].append(text)
+        fix0 = SCAN_PAGE_FIXES.get((year, pno), {})
+        if fix0.get("image_only"):
+            # the OCR layer of this page cannot be used at all: every cell of
+            # these columns comes from SCAN_IMAGE_CELLS
+            for d, (hdr_txt, us_txt) in fix0["image_only"].items():
+                if d not in seen:
+                    seen[d] = pno
+                    res["colmap"].append((d, pno, hdr_txt + " [read from page image]", us_txt))
+            continue
         # spaces removed: some OCR layers are letter-spaced ("M U M P S")
         if not re.search(r"(?i)pertussis|indigenous|rubeola|measles|mumps", re.sub(r"\s", "", text)):
             continue
@@ -846,6 +1437,11 @@ def parse_scan_pdf(year):
             continue
         us_vals = merge_close(lines[us_idx][n_lab:])
         us_vals = [w for w in us_vals if re.search(r"\d", w[4])]
+        fix = SCAN_PAGE_FIXES.get((year, pno), {})
+        for (x0, x1, txt) in fix.get("insert_us", []):
+            # a US total the OCR layer dropped, read from the page image
+            us_vals.append((x0, us_vals[0][1], x1, us_vals[0][3], txt))
+        us_vals.sort(key=lambda w: w[0])
         ncol = len(us_vals)
         anchors = [w[2] for w in us_vals]
         centers = [(w[0] + w[2]) / 2 for w in us_vals]
@@ -874,7 +1470,7 @@ def parse_scan_pdf(year):
             area = scan_area(lab)
             if area:
                 rows.append((area, lab, cols))
-        if len(rows) < 45:
+        if len(rows) < fix.get("min_rows", 45):
             continue
         us_y = (lines[us_idx][0][1] + lines[us_idx][0][3]) / 2 - slope * lines[us_idx][0][0]
         hdr = []
@@ -894,6 +1490,11 @@ def parse_scan_pdf(year):
             j = min(range(ncol), key=lambda j: abs(c - centers[j]))
             texts[j].append(w[4])
         texts = [" ".join(t) for t in texts]
+        if fix.get("only_these_headers"):
+            texts = ["" for _ in texts]
+        for j, txt in fix.get("headers", {}).items():
+            # column header the OCR layer lost, read from the page image
+            texts[j] = txt + " [header read from page image]"
         try:
             cmap = classify_columns(texts, False)
         except ValueError as e:
@@ -939,18 +1540,31 @@ def scan_validate(cells, marks, disease, year=None, all_errors=False):
     Cells listed in SCAN_IMAGE_CELLS replace the OCR text and carry the flag
     'read from page image'. With all_errors=True every failing division is
     listed (used to decide which cells to look at on the image)."""
-    need = [s for s in STATES if s != "New York"] + [NY_UP, NY_CITY, US] + list(DIVISIONS)
+    need, divisions = scan_layout(year, cells, disease)
     got = {}
     unread = []
 
     def interpret(text, prefix):
         """-> (cases, flag) or None when the text is not a number or a defined mark."""
         text = text.strip()
-        if re.fullmatch(r"[.…·]{3,}", text):     # "..." = data not available (1968-1974)
+        if re.fullmatch(r"[.…·]{3,}", text):     # "..." = data not available (1960-1974)
             return ("", prefix + "...") if "..." in marks else None
+        if "---" in marks:
+            # 1956-1959: one dash = zero, three dashes = data not available. The
+            # OCR layer cannot be trusted to keep the count, so a dash is only
+            # accepted when read from the page image.
+            if re.fullmatch(r"[%s]+" % DASHES, text):
+                if not prefix:
+                    return None
+                return ("", prefix + "---") if text == "---" else \
+                    ((0, prefix + "-") if text == "-" else None)
+        if text in ("*", "**"):                   # 1956-1959: not notifiable / no report
+            return ("", prefix + text) if text in marks else None
         num, mark, sym = parse_cell(text)
         if num is not None:
-            return (num, prefix.rstrip(": ") if prefix else sym)
+            if prefix:     # keep a printed footnote mark, e.g. "read from page image; *"
+                return (num, prefix.rstrip(": ") + ("; " + sym if sym else ""))
+            return (num, sym)
         if mark == "-" and dash_is_zero(marks):
             return (0, prefix + "-" + ("" if prefix else sym))
         # NR is printed once (North Carolina, 1974) and the issue does not define
@@ -992,17 +1606,20 @@ def scan_validate(cells, marks, disease, year=None, all_errors=False):
     if errors and not all_errors:
         return False, errors[0], got
     n = lambda a: got[a][0] if a in got and got[a][0] != "" else 0
-    for div, members in DIVISIONS.items():
+    for div, members in divisions.items():
         if div not in got or got[div][0] == "" or sum(n(m) for m in members) != got[div][0]:
             errors.append("%s: states add to %d, printed %s" % (
                 div, sum(n(m) for m in members), got.get(div, ("missing",))[0]))
     if US not in got or got[US][0] == "":
         errors.append("US total not a number")
-    elif sum(n(d_) for d_ in DIVISIONS) != got[US][0]:
+    elif sum(n(d_) for d_ in divisions) != got[US][0]:
         errors.append("divisions add to %d, printed US total %d" % (
-            sum(n(d_) for d_ in DIVISIONS), got[US][0]))
+            sum(n(d_) for d_ in divisions), got[US][0]))
     if errors:
         return False, " | ".join(errors) if all_errors else errors[0], got
+    for s in ("Alaska", "Hawaii"):
+        if s not in need and s not in got:
+            got[s] = ("", NOT_YET_STATE)
     return True, "all nine division sums and the US sum equal the printed rows", got
 
 
@@ -1265,7 +1882,7 @@ def parse_nndss_pdf(path):
 def dash_is_zero(marks):
     d = marks.get("-", "")
     # "No reported cases" (1977 on) or "Quantity zero" (1968-1976 legends)
-    return bool(re.search(r"(?i)no reported cases|quantity zero", d))
+    return bool(re.search(r"(?i)no reported cases|no cases reported|quantity zero", d))
 
 
 def cell_to_record(raw, marks):
@@ -1456,7 +2073,8 @@ def main():
             continue
         heads = {d: (pno, text, usval) for (d, pno, text, usval) in sc["colmap"]}
         results = {}
-        wanted = ("mumps",) if year < 1980 else \
+        # before 1968 (mumps not yet notifiable) only pertussis is read
+        wanted = ("pertussis",) if year < 1968 else \
             ("measles", "measles_indigenous", "measles_imported", "pertussis", "mumps")
         heads = {d: v for d, v in heads.items() if d in wanted}
         for d in wanted:
@@ -1492,9 +2110,13 @@ def main():
         for (area, label, d, raw, table) in sc["cells"]:
             ocr.setdefault((d, area), (label, raw))
             tab.setdefault(d, table + " (scan, OCR text layer)")
+        for (d, pno, text, usval) in sc["colmap"]:
+            tab.setdefault(d, "Table by geographic division and area, PDF page %d, column \"%s\" "
+                              "(scan, OCR text layer)" % (pno, text))
         for d in sorted(accept):
             for area, rec in results[d][2].items():
-                label, raw = ocr.get((d, area), ("(label not legible in the OCR layer)", ""))
+                label, raw = ocr.get((d, area), ("(not in the table)" if rec[1] == NOT_YET_STATE
+                                                 else "(label not legible in the OCR layer)", ""))
                 by[d][area] = rec
                 area_rows.append([year, area, label, d, rec[0], rec[1], raw,
                                   sc["url"], sc["file"], tab[d]])
