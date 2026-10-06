@@ -1,0 +1,76 @@
+== 1. Kindergarten non-medical exemptions, selected states (percent of kindergartners)
+y   2010  2015  2020  2025  2026
+st                              
+US   1.5   2.0   2.2   3.4   4.0
+ID   3.5   6.2   7.2  15.1  17.0
+UT   3.6   4.1   5.2  10.0  12.2
+AZ   2.8   4.6   5.4   9.0  10.4
+OR   5.2   5.8   6.9   9.7  10.9
+WI   3.1   4.9   5.5   6.3   7.3
+
+== 1b. Kindergarten MMR coverage, selected states
+y   2010  2015  2020  2025  2026
+st                              
+US  94.4  94.0  95.2  92.5  92.4
+ID  87.0  89.5  89.1  78.5  75.2
+UT  97.7  94.0  92.7  88.6  87.2
+AZ  95.0  94.2  92.8  88.6  87.4
+WI  94.2  91.6  92.8  84.8  85.1
+
+== 2. State MMR change 2019-20 to 2024-25 against 2025 measles rate (rank correlation, 47 states with both years)
+46 states; Spearman -0.45
+
+== 3. Whooping cough 2024 against each state's 2015-2019 average, with DTaP kindergarten change 2019-20 to 2023-24
+    dtap_chg  base  r2024  pct_above_base
+st                                       
+ID      -9.5  11.6   59.9           416.6
+WI      -8.8  14.4   49.8           246.7
+SD      -5.3   8.0   41.0           413.1
+MN      -4.9  11.5   53.2           364.0
+RI      -0.5   5.2   21.9           324.2
+CT       1.4   2.0    8.6           339.0
+NY      -1.0   4.2   14.4           240.5
+47 states; Spearman dtap_chg vs pct_above_base -0.24
+U.S. whooping cough cases 2023, 2024: 7063 43321
+
+== 4. Counties: kindergarten MMR (Johns Hopkins) and measles cases (Johns Hopkins tracker)
+tracker data through 2026-09-25
+Mohave, AZ         MMR by school year ending: {2018: 92.1, 2019: 88.4, 2020: 90.3, 2021: 87.1, 2022: 84.3, 2023: 82.8, 2024: 76.0, 2025: 78.4} | measles 2025: 216 2026: 69
+Washington, UT     MMR by school year ending: {2018: nan, 2019: 88.5, 2020: 88.7, 2021: 89.1, 2022: 85.5, 2023: 82.8, 2024: 82.6, 2025: 79.2} | measles 2025: 0 2026: 0
+Spartanburg, SC    MMR by school year ending: {2018: nan, 2019: nan, 2020: 95.1, 2021: 95.1, 2022: 93.9, 2023: 92.7, 2024: 91.2, 2025: 90.0} | measles 2025: 330 2026: 610
+Gaines, TX         MMR by school year ending: {2018: nan, 2019: nan, 2020: 80.4, 2021: 80.8, 2022: 82.9, 2023: 82.8, 2024: 82.0, 2025: 77.3} | measles 2025: 414 2026: 0
+Lancaster, PA      MMR by school year ending: {2018: 95.5, 2019: 94.7, 2020: 94.3, 2021: 93.6, 2022: 93.4, 2023: 91.0, 2024: 90.5, 2025: 88.5} | measles 2025: 1 2026: 359
+Collier, FL        MMR by school year ending: {2018: 93.8, 2019: 92.8, 2020: 92.8, 2021: 93.1, 2022: 90.1, 2023: 88.1, 2024: 85.9, 2025: 86.3} | measles 2025: 0 2026: 99
+Clark, WA          MMR by school year ending: {2018: nan, 2019: nan, 2020: 92.1, 2021: 93.7, 2022: 92.8, 2023: 90.8, 2024: 89.9, 2025: 86.8} | measles 2025: 0 2026: 21
+Hennepin, MN       MMR by school year ending: {2018: 90.4, 2019: 91.4, 2020: 91.3, 2021: 88.6, 2022: 88.3, 2023: 85.9, 2024: 84.1, 2025: 84.4} | measles 2025: 2 2026: 0
+Oconto, WI         MMR by school year ending: {2018: nan, 2019: 90.0, 2020: 84.0, 2021: 84.0, 2022: 89.0, 2023: 90.0, 2024: 89.0, 2025: 83.0} | measles 2025: 36 2026: 0
+
+== 5. Measles counts by state, outbreak years
+year  2014  2015  2017  2019  2024  2025
+st                                      
+CA      92   109    15    73    15    48
+WA      33    10     3    90     6    12
+NY      32     7     4   911    15    48
+MN       2     2    75     0    69    26
+OH     382     1     1     1     7    39
+TX      10     1     1    22     1   803
+UT       3     1     3     0     0   178
+AZ       3     7     0     1     5   206
+SC       0     0     0     1     1   123
+
+== 6. States that ended non-medical exemptions: kindergarten MMR before and after
+y   2014  2015  2016  2017  2019  2020  2021  2023  2026
+st                                                      
+CA  92.3  92.6  94.5  97.3  96.5  96.5  95.1  96.5  95.7
+ME  89.9  92.1  95.1  94.9  93.8  94.1  94.3  96.8  98.0
+NY  96.8  98.2  95.6  97.3  97.2  98.6  98.3  97.9  97.7
+CT  96.9  97.0  97.0  96.7  95.9  96.2  95.3  97.3  98.6
+
+== 7. Mumps: reported cases in the U.S. (sum of states reporting) and leading states
+{1968: 142744, 1975: 56206, 1985: 2674, 1986: 2676, 1987: 12155, 1988: 4508, 2005: 314, 2006: 6584, 2016: 6369, 2017: 6109, 2019: 3780, 2025: 338}
+1968 [('CA', 16895, 87.1), ('WI', 15413, 354.7), ('MI', 14314, 164.6), ('IA', 11927, 425.5)]
+1987 [('IL', 2647, 23.2), ('WI', 1688, 35.3), ('TN', 1178, 24.6), ('MI', 1108, 12.1)]
+2006 [('IA', 1964, 65.8), ('KS', 968, 35.0), ('WI', 842, 15.1), ('IL', 798, 6.3)]
+2016 [('AR', 2411, 80.9), ('IA', 732, 23.2), ('OK', 505, 12.9), ('NY', 386, 1.9)]
+2017 [('HI', 832, 57.1), ('WA', 779, 10.5), ('NY', 545, 2.7), ('AR', 542, 18.1)]
+U.S. whooping cough rate 2024 12.7 per 100,000, 126% above the 2015-2019 average of 5.6
