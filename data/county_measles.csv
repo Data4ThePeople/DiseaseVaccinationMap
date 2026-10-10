@@ -8,6 +8,7 @@ fips,location_name,year,cases
 00000,"East Tennessee Region, Tennessee",2026,6
 00000,"Eastern Region, Virginia",2025,1
 00000,"Eastern Region, Virginia",2026,1
+00000,"Memphis-Shelby County Region, Tennessee",2026,1
 00000,"Mid-Cumberland Region, Tennessee",2025,3
 00000,"Mid-Cumberland Region, Tennessee",2026,1
 00000,"Nashville-Davidson County Region, Tennessee",2025,1
@@ -20,7 +21,11 @@ fips,location_name,year,cases
 00000,"Southeast Health District, Utah",2026,2
 00000,"Southwest Health District, Utah",2025,155
 00000,"Southwest Health District, Utah",2026,112
+00000,"Southwest Region, Virginia",2026,8
 00000,"Tricounty, Utah",2026,80
+00000,"Unknown County, Oklahoma",2025,17
+00000,"Unknown County, Oklahoma",2026,1
+00000,"Unknown County, Vermont",2025,1
 00000,"Upper Cumberland Region, Tennessee",2025,4
 00001,"North, Alabama",2025,1
 00006,"Unknown County, California",2025,3
@@ -330,8 +335,6 @@ fips,location_name,year,cases
 39155,"Trumbull, Ohio",2026,8
 39157,"Tuscarawas, Ohio",2026,13
 39169,"Wayne, Ohio",2026,44
-40109,"Unknown County, Oklahoma",2025,17
-40109,"Unknown County, Oklahoma",2026,1
 41005,"Clackamas, Oregon",2026,2
 41043,"Linn, Oregon",2026,2
 41051,"Multnomah, Oregon",2025,1

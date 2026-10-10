@@ -30,7 +30,8 @@ h1{font-family:var(--serif);font-weight:700;font-size:22px;line-height:1.15;marg
 .controls label{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;cursor:pointer;user-select:none;white-space:nowrap}
 .controls input{width:15px;height:15px;margin:0;accent-color:var(--c)}
 .controls svg{flex:none}
-.unit{margin-left:auto;font-size:12px;color:var(--ink2);display:inline-flex;align-items:center;gap:6px}
+.unit{margin-left:auto;font-size:12px;color:var(--ink2);display:inline-flex;align-items:center;gap:4px 6px;flex-wrap:wrap}
+.unit .mk{display:inline-flex;align-items:center;gap:4px;margin-left:8px;white-space:nowrap}
 .player{display:grid;grid-template-columns:auto auto minmax(0,1fr);gap:12px;align-items:center;padding:6px 0 2px;flex:none}
 #play{width:38px;height:38px;border-radius:50%;border:1px solid var(--ink);background:var(--bg);cursor:pointer;display:grid;place-items:center}
 #play:hover{background:var(--tile)}
@@ -58,6 +59,7 @@ h1{font-family:var(--serif);font-weight:700;font-size:22px;line-height:1.15;marg
 .vchart>svg{display:block;width:100%;height:60px;overflow:visible}
 .vchart .read{font-size:11.5px;color:var(--ink2);line-height:1.3;height:1.3em;margin:1px 0 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .vchart .read b{color:var(--ink);font-weight:700}
+.vchart .what{font-size:10.5px;color:var(--ink3);line-height:1.25;margin:0 0 1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .note{font-size:11px;color:var(--ink3);line-height:1.35;margin:4px 0 0}
 .keyline{font-size:11px;color:var(--ink2);display:flex;gap:2px 12px;flex-wrap:wrap;margin:0 0 5px}
 .keyline span{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
@@ -241,29 +243,52 @@ function cell(dk, st, y) {
   if (c == null) return null;
   const p = D.pop[st][i];
   const code = D.src[dk][st][i];
-  return { cases: c, pop: p, rate: p ? c / p * 1e5 : null, code, weeks: (D.weeks[dk][st] || [])[i] || 0 };
+  // "n" = the count covers New York City only: shown as a count, with no rate and no figures
+  const part = code.toLowerCase() === "n";
+  return { cases: c, pop: p, rate: p && !part ? c / p * 1e5 : null, code, part, weeks: (D.weeks[dk][st] || [])[i] || 0 };
 }
 /* national figure = sum of the states that reported, over the population of those states */
 function usCell(dk, y) {
-  let cases = 0, pop = 0, n = 0;
+  let cases = 0, pop = 0, n = 0, popAll = 0, nThin = 0, prov = false;
   for (const s of D.states) {
+    popAll += D.pop[s.k][yi(y)] || 0;
     const c = cell(dk, s.k, y);
-    if (c && c.pop) { cases += c.cases; pop += c.pop; n++; }
+    if (c && c.pop) { cases += c.cases; pop += c.pop; n++; if (thin(c)) nThin++; if (c.code.toLowerCase() === "p") prov = true; }
   }
-  return n ? { cases, pop, rate: cases / pop * 1e5, n } : null;
+  if (!n) return null;
+  // incomplete: reporting states hold under 90% of residents, or most of them are short of weeks
+  const share = popAll ? pop / popAll : 1, incomplete = !prov && (share < 0.9 || nThin > n / 2);
+  return { cases, pop, rate: cases / pop * 1e5, n, share, incomplete, prov };
 }
-function sourceNote(c) {
+const FULL_YEAR = 52, THIN_WEEKS = 48;   // weekly reports in a full year; fewer than THIN_WEEKS draws faded
+function sourceNote(c, dk) {
   const k = c.code.toLowerCase();
-  let t = k === "w" ? `Sum of ${c.weeks} weekly reports (Project Tycho)` + (c.weeks < 45 ? "; weeks are missing, so this is likely an undercount" : "")
+  let t = k === "w" ? `Sum of ${c.weeks} weekly reports (Project Tycho)` + (c.weeks < FULL_YEAR ? `; ${FULL_YEAR - c.weeks} of ${FULL_YEAR} weeks have no report, so this is likely an undercount` : "")
     : k === "c" ? "Year-end running total from weekly reports, provisional (Project Tycho)"
     : k === "a" ? "Final annual count (CDC)"
-    : k === "n" ? "Final annual count (CDC) for New York City only; the rest of the state did not report mumps this year"
+    : k === "n" ? "Final annual count (CDC) for New York City only; the rest of the state did not report mumps this year, so no rate is shown"
     : k === "r" ? "CDC weekly tables, as counted one year later"
-    : "CDC weekly tables, provisional";
+    : "CDC weekly tables, provisional; final counts are usually higher" + (dk === "pertussis" ? " (whooping cough counts rose 22% to 30% after year-end in 2022 to 2024)" : "");
+  if (dk === "polio") t += k === "w" || k === "c" ? ". Counts all reported polio, paralytic and not" : ". Counts paralytic polio only";
   if (c.code !== k) t += ". The weekly reports for this year disagree with each other; treat with care";
   return t + ".";
 }
-const thin = c => c.code.toLowerCase() === "w" && c.weeks < 40;
+/* drawn faded: a year short of weekly reports, or a provisional count */
+const thin = c => { const k = c.code.toLowerCase(); return (k === "w" && c.weeks < THIN_WEEKS) || k === "p"; };
+/* a disease with no state counts at all in a year, said in words */
+function gapNote(dk, y) {
+  let first = null, last = null;
+  for (let yy = D.y0; yy <= D.y1; yy++) if (D.states.some(s => D.cases[dk][s.k][yi(yy)] != null)) { if (first == null) first = yy; last = yy; }
+  if (first == null) return "no data";
+  if (y < first) return `not counted by state before ${first}`;
+  if (y > last) return `no state counts after ${last}`;
+  let a = y, b = y;
+  const has = yy => D.states.some(s => D.cases[dk][s.k][yi(yy)] != null);
+  while (a > D.y0 && !has(a - 1)) a--;
+  while (b < D.y1 && !has(b + 1)) b++;
+  return a === b ? "no state counts this year" : `no state counts ${a} to ${b}`;
+}
+const SMALL = 0.04;   // under this share of one figure nothing is drawn; a dot marks it instead
 
 /* ---------- the figure ---------- */
 function person(ctx, x, y, w, color, frac, alpha) {
@@ -296,7 +321,7 @@ function figures(items) {
   for (const it of items) {
     const n = it.rate / D.unit, full = Math.floor(n), frac = n - full;
     for (let k = 0; k < full; k++) out.push({ color: it.color, frac: 1, alpha: it.alpha });
-    if (frac >= 0.04) out.push({ color: it.color, frac, alpha: it.alpha });
+    if (frac >= SMALL) out.push({ color: it.color, frac, alpha: it.alpha });
   }
   return out;
 }
@@ -325,7 +350,10 @@ function setupCanvas(cv, cssW, cssH) {
 function buildControls() {
   const el = $("controls");
   el.innerHTML = DIS.map(d => `<label style="--c:${d.color}"><input type="checkbox" data-k="${d.k}" checked>${personSvg(d.color, 8)}${esc(d.name)}</label>`).join("")
-    + `<span class="unit">${personSvg("#55534e", 8)}<span>1 figure = 1 reported case per ${fmt(1e5 / D.unit)} residents in a year</span></span>`;
+    + `<span class="unit">${personSvg("#55534e", 8)}<span>1 figure = 1 reported case per ${fmt(1e5 / D.unit)} residents in a year</span>`
+    + `<span class="mk"><svg width="8" height="8" aria-hidden="true"><circle cx="4" cy="4" r="2.6" fill="#55534e"/></svg>cases, under ${D.unit * SMALL} per 100,000</span>`
+    + `<span class="mk"><svg width="8" height="8" aria-hidden="true"><circle cx="4" cy="4" r="2.6" fill="none" stroke="#55534e" stroke-width="1.2"/></svg>no data</span>`
+    + `<span class="mk"><span style="opacity:.5">${personSvg("#55534e", 8)}</span>incomplete or provisional</span></span>`;
   el.addEventListener("change", e => {
     const k = e.target.dataset.k; if (!k) return;
     e.target.checked ? S.on.add(k) : S.on.delete(k);
@@ -368,16 +396,22 @@ function layoutMap() {
 function drawMap() {
   const { W, H, tw, th, gap } = GEO, ctx = setupCanvas($("map"), W, H), dz = shown();
   const fs = Math.max(8, Math.min(11, tw * 0.17)), pad = Math.max(3, tw * 0.07);
+  // a ring is drawn only for a disease some state counted this year; a year with no state counts at all is said once, in the U.S. row
+  const counted = Object.fromEntries(dz.map(d => [d.k, D.states.some(s => cell(d.k, s.k, S.year))]));
   for (const s of D.states) {
     const x = s.c * (tw + gap), y = s.r * (th + gap);
     ctx.fillStyle = S.hover === s.k ? "#ebebe7" : "#f5f5f3";
     ctx.beginPath(); ctx.roundRect(x, y, tw, th, 4); ctx.fill();
     if (S.hover === s.k) { ctx.strokeStyle = "#121212"; ctx.lineWidth = 1; ctx.stroke(); }
-    const items = []; let total = 0, any = false;
+    // marks: a ring for a checked disease with no figure this year (no data is not zero),
+    // a dot for one with cases but too few to draw a figure
+    const items = [], marks = []; let total = 0, any = false;
     for (const d of dz) {
       const c = cell(d.k, s.k, S.year);
-      if (!c || c.rate == null) continue;
+      if (!c) { if (counted[d.k]) marks.push({ color: d.color, ring: true }); continue; }
       any = true; total += c.cases;
+      if (c.rate == null) { marks.push({ color: d.color, ring: true }); continue; }
+      if (c.cases > 0 && c.rate / D.unit < SMALL) { marks.push({ color: d.color, ring: false, alpha: thin(c) ? 0.5 : 1 }); continue; }
       items.push({ rate: c.rate, color: d.color, alpha: thin(c) ? 0.5 : 1 });
     }
     ctx.font = `700 ${fs}px Helvetica Neue,Helvetica,Arial,sans-serif`; ctx.textBaseline = "top";
@@ -385,7 +419,17 @@ function drawMap() {
     ctx.font = `${fs}px Helvetica Neue,Helvetica,Arial,sans-serif`; ctx.textAlign = "right";
     if (!any) { ctx.fillStyle = "#a9a6a0"; ctx.fillText(!dz.length ? "" : tw < 56 ? "\u2013" : "no data", x + tw - pad, y + pad); continue; }
     ctx.fillStyle = "#121212"; ctx.fillText(short(total), x + tw - pad, y + pad);
-    const top = y + pad + fs + 3;
+    let top = y + pad + fs + 3;
+    if (marks.length) {
+      const r = Math.max(1.5, Math.min(2.6, tw * 0.035)), step = r * 2 + 2;
+      marks.forEach((m, i) => {
+        ctx.beginPath(); ctx.arc(x + pad + r + i * step, top + r, r - (m.ring ? 0.5 : 0), 0, Math.PI * 2);
+        ctx.globalAlpha = m.alpha || 1;
+        if (m.ring) { ctx.strokeStyle = m.color; ctx.lineWidth = 1; ctx.stroke(); } else { ctx.fillStyle = m.color; ctx.fill(); }
+        ctx.globalAlpha = 1;
+      });
+      top += r * 2 + 2;
+    }
     drawFigures(ctx, figures(items), x + pad, top, tw - pad * 2, y + th - pad - top, Math.max(3.2, tw * 0.1), "bottom");
   }
 }
@@ -411,8 +455,8 @@ function tipHtml(st) {
   for (const d of shown()) {
     const c = cell(d.k, st, S.year);
     if (!c) { rows.push(`<tr><td>${personSvg(d.color, 6)} ${esc(d.name)}</td><td class="n" colspan="2" style="color:#8a8780">no data</td></tr>`); continue; }
-    rows.push(`<tr><td>${personSvg(d.color, 6)} ${esc(d.name)}</td><td class="n"><b>${fmt(c.cases)}</b></td><td class="n">${c.rate == null ? "" : fmt1(c.rate) + " per 100k"}</td></tr>`);
-    notes.push(`<div><b>${esc(d.name)}:</b> ${esc(sourceNote(c))}</div>`);
+    rows.push(`<tr><td>${personSvg(d.color, 6)} ${esc(d.name)}</td><td class="n"><b>${fmt(c.cases)}</b></td><td class="n">${c.rate == null ? (c.part ? "New York City only" : "") : fmt1(c.rate) + " per 100k"}</td></tr>`);
+    notes.push(`<div><b>${esc(d.name)}:</b> ${esc(sourceNote(c, d.k))}</div>`);
   }
   const v = vaxLines(st, S.year).map(t => `<div>${t}</div>`).join("");
   return `<h4>${esc(ST[st].n)}, ${S.year}</h4><table>${rows.join("")}</table>`
@@ -437,37 +481,67 @@ function vaxLines(st, y) {
   }
   return out;
 }
-const VY0 = 50, VY1 = 100;
+const VY1 = 100;
+/* lowest value any line on this vaccine's chart reaches, so the axis never hides a point below its floor */
+const vaxFloorCache = {};
+function vaxFloor(vk) {
+  if (vk in vaxFloorCache) return vaxFloorCache[vk];
+  let m = 100;
+  for (const series in D.vax) { const byState = D.vax[series][vk] || {}; for (const st in byState) for (const y in byState[st]) if (byState[st][y][0] < m) m = byState[st][y][0]; }
+  return vaxFloorCache[vk] = m < 50 ? 0 : 50;
+}
 function vaxChart(vk, focus, width) {
   const W = Math.max(200, Math.round(width || 280)), H = 60, ml = 34, mr = 6, mt = 5, mb = 13;
+  const VY0 = vaxFloor(vk);
   const x = y => ml + (y - D.y0) / (D.y1 + 1 - D.y0) * (W - ml - mr);
   const yy = v => mt + (VY1 - Math.max(VY0, Math.min(VY1, v))) / (VY1 - VY0) * (H - mt - mb);
-  const path = (series, st) => {
-    const o = ((D.vax[series] || {})[vk] || {})[st] || {};
-    return Object.keys(o).map(Number).sort((a, b) => a - b).map(y => [x(y), yy(o[y][0])]);
+  /* a line is cut where a year has no measurement, and (kindergartners) where the state moved between
+     surveying a sample of schools and counting all of them */
+  const kind = m => !m ? "" : /sample/i.test(m) ? "sample" : "count";
+  const segments = (series, st) => {
+    const o = ((D.vax[series] || {})[vk] || {})[st] || {}, out = [];
+    let prev = null;
+    for (const y of Object.keys(o).map(Number).sort((a, b) => a - b)) {
+      const cut = prev == null || y - prev > 1 || (series === "kinder" && kind(o[y][3]) && kind(o[prev][3]) && kind(o[y][3]) !== kind(o[prev][3]));
+      if (cut) out.push([]);
+      out[out.length - 1].push([x(y), yy(o[y][0]), o[y]]);
+      prev = y;
+    }
+    return out;
   };
-  const line = (pts, stroke, dash, w) => pts.length ? `<path d="M${pts.map(p => p[0].toFixed(1) + "," + p[1].toFixed(1)).join("L")}" fill="none" stroke="${stroke}" stroke-width="${w}" ${dash ? `stroke-dasharray="${dash === true ? "3 3" : dash}"` : ""} stroke-linejoin="round" stroke-linecap="round"/>` : "";
+  const line = (segs, stroke, dash, w) => segs.map(pts => pts.length > 1
+    ? `<path d="M${pts.map(p => p[0].toFixed(1) + "," + p[1].toFixed(1)).join("L")}" fill="none" stroke="${stroke}" stroke-width="${w}" ${dash ? `stroke-dasharray="${dash === true ? "3 3" : dash}"` : ""} stroke-linejoin="round" stroke-linecap="round"/>`
+    : `<circle cx="${pts[0][0].toFixed(1)}" cy="${pts[0][1].toFixed(1)}" r="${w * 0.75}" fill="${stroke}"/>`).join("");
+  /* the survey's 95% range around the toddler line of the place in focus */
+  const band = segs => segs.map(pts => {
+    const q = pts.filter(p => p[2][2] != null && p[2][3] != null);
+    if (q.length < 2) return "";
+    const up = q.map(p => p[0].toFixed(1) + "," + yy(p[2][3]).toFixed(1)), dn = q.slice().reverse().map(p => p[0].toFixed(1) + "," + yy(p[2][2]).toFixed(1));
+    return `<path d="M${up.join("L")}L${dn.join("L")}Z" fill="#121212" fill-opacity=".13" stroke="none"/>`;
+  }).join("");
   let g = "";
-  for (const v of [50, 75, 100]) g += `<line x1="${ml}" x2="${W - mr}" y1="${yy(v)}" y2="${yy(v)}" stroke="#e3e2dd"/><text x="${ml - 4}" y="${yy(v) + 3.5}" text-anchor="end" font-size="10" fill="#8a8780">${v}%</text>`;
-  for (const y of [1930, 1960, 1990, 2020]) g += `<text x="${x(y)}" y="${H - 3}" text-anchor="middle" font-size="10" fill="#8a8780">${y}</text>`;
+  for (const v of [VY0, (VY0 + VY1) / 2, VY1]) g += `<line x1="${ml}" x2="${W - mr}" y1="${yy(v)}" y2="${yy(v)}" stroke="#e3e2dd"/><text x="${ml - 4}" y="${yy(v) + 3.5}" text-anchor="end" font-size="10" fill="#8a8780">${v}%</text>`;
+  for (const y of [1940, 1960, 1980, 2000, 2020]) g += `<text x="${x(y)}" y="${H - 3}" text-anchor="middle" font-size="10" fill="#8a8780">${y}</text>`;
   for (const [ly, lt] of (D.licensed[vk] || [])) g += `<path d="M${x(ly) - 3.5},${H - mb + 1}h7l-3.5,-6z" fill="#55534e"><title>${ly}: ${esc(lt)}</title></path>`;
-  g += line(path("national", "US"), "#8a8780", "1 3", 1.5);   // before 1995 there is only a national figure
-  if (focus !== "US") g += line(path("survey", "US"), "#b9b6af", false, 1.5) + line(path("toddler", "US"), "#b9b6af", false, 1.5) + line(path("kinder", "US"), "#b9b6af", true, 1.5);
-  g += line(path("survey", focus), "#121212", false, 2) + line(path("toddler", focus), "#121212", false, 2) + line(path("kinder", focus), "#121212", true, 2);
+  g += line(segments("national", "US"), "#8a8780", "1 3", 1.5);   // before 1995 there is only a national figure
+  if (focus !== "US") g += line(segments("survey", "US"), "#b9b6af", false, 1.5) + line(segments("toddler", "US"), "#b9b6af", false, 1.5) + line(segments("kinder", "US"), "#b9b6af", true, 1.5);
+  g += band(segments("survey", focus)) + band(segments("toddler", focus));
+  g += line(segments("survey", focus), "#121212", false, 2) + line(segments("toddler", focus), "#121212", false, 2) + line(segments("kinder", focus), "#121212", true, 2);
   g += `<line class="cur" x1="${x(S.year)}" x2="${x(S.year)}" y1="${mt}" y2="${H - mb}" stroke="#121212" stroke-width="1"/>`;
   const SER = [["national", "U.S. only, parent recall", "US"], ["survey", "Toddlers", focus], ["toddler", "Toddlers", focus], ["kinder", "Kindergartners", focus]];
   const txt = [];
   for (const [series, name, who] of SER) {
-    const p = vaxPoint(series, vk, who, S.year); if (!p) continue;
-    g += `<circle cx="${x(S.year)}" cy="${yy(p[0])}" r="${series === "national" ? 3 : 4}" fill="${series === "national" ? "#8a8780" : "#121212"}" stroke="#fff" stroke-width="2"/>`;
-    txt.push(`${series === "national" && p[1].includes("Interview") ? "U.S. only" : name} <b>${p[0].toFixed(1)}%</b>`);
+    const pt = vaxPoint(series, vk, who, S.year); if (!pt) continue;
+    g += `<circle cx="${x(S.year)}" cy="${yy(pt[0])}" r="${series === "national" ? 3 : 4}" fill="${series === "national" ? "#8a8780" : "#121212"}" stroke="#fff" stroke-width="2"/>`;
+    txt.push(`${series === "national" && pt[1].includes("Interview") ? "U.S. only" : name} <b>${pt[0].toFixed(1)}%</b>`);
   }
   const lic = (D.licensed[vk] || []).filter(l => l[0] === S.year).map(l => esc(l[1]));
   const read = [...(txt.length ? txt : [`Not measured in ${S.year}`]), ...lic].join(" · ");
   const names = DIS.filter(d => d.vax === vk && S.on.has(d.k)).map(d => `${personSvg(d.color, 6)}`).join(" ");
-  return `<div class="vchart"><h3>${names} ${esc(D.vaccines[vk])}</h3><svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="${esc(D.vaccines[vk])} coverage over time">${g}</svg><p class="read">${read}</p></div>`;
+  const what = (D.vaxnote || {})[vk] || "";
+  return `<div class="vchart"><h3>${names} ${esc(D.vaccines[vk])}</h3><p class="what" title="${esc(what)}">${esc(what)}</p><svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="${esc(D.vaccines[vk])} coverage over time">${g}</svg><p class="read">${read}</p></div>`;
 }
-const KEYLINE = (focusName) => `<span><svg width="22" height="6"><line x1="0" x2="22" y1="3" y2="3" stroke="#8a8780" stroke-width="2" stroke-dasharray="1 3" stroke-linecap="round"/></svg>U.S. only, before 1995</span><span><svg width="22" height="6"><line x1="0" x2="22" y1="3" y2="3" stroke="#121212" stroke-width="2"/></svg>Toddlers (survey)</span><span><svg width="22" height="6"><line x1="0" x2="22" y1="3" y2="3" stroke="#121212" stroke-width="2" stroke-dasharray="3 3"/></svg>Kindergartners (state count)</span>` + (focusName ? `<span><svg width="22" height="6"><line x1="0" x2="22" y1="3" y2="3" stroke="#b9b6af" stroke-width="2"/></svg>United States</span>` : "");
+const KEYLINE = (focusName) => `<span><svg width="22" height="6"><line x1="0" x2="22" y1="3" y2="3" stroke="#8a8780" stroke-width="2" stroke-dasharray="1 3" stroke-linecap="round"/></svg>U.S. only, before 1995</span><span><svg width="22" height="8"><rect x="0" y="0" width="22" height="8" fill="#121212" fill-opacity=".13"/><line x1="0" x2="22" y1="4" y2="4" stroke="#121212" stroke-width="2"/></svg>Toddlers (survey, with its 95% range)</span><span><svg width="22" height="6"><line x1="0" x2="22" y1="3" y2="3" stroke="#121212" stroke-width="2" stroke-dasharray="3 3"/></svg>Kindergartners (state count)</span>` + (focusName ? `<span><svg width="22" height="6"><line x1="0" x2="22" y1="3" y2="3" stroke="#b9b6af" stroke-width="2"/></svg>United States</span>` : "");
 function vaxFirstYear() {
   let m = Infinity;
   for (const s in D.vax) if (s !== "national") for (const v in D.vax[s]) for (const st in D.vax[s][v]) for (const y in D.vax[s][v][st]) if (+y < m) m = +y;
@@ -479,7 +553,7 @@ function renderRail() {
   $("railkey").innerHTML = KEYLINE(focus !== "US");
   const fitW = $("viz").classList.contains("fit"), w = fitW ? $("railcharts").clientWidth : ($("railcharts").clientWidth - 16) / 2;
   $("railcharts").innerHTML = vaxKeys().map(vk => vaxChart(vk, focus, w)).join("") || `<p class="note">Check a disease to see its vaccine.</p>`;
-  $("railnote").textContent = `State figures start in ${vaxFirstYear()}. Before that only national surveys exist, and they relied on parents' recall. Triangles mark when a vaccine was licensed. Hover a state for its lines and the survey details.`;
+  $("railnote").textContent = `State figures start in ${vaxFirstYear()}. Before that only national surveys exist, and they relied on parents' recall. A gap in a line means no measurement that year, or that the state moved between a sample of schools and a count of all kindergartners, so the two sides should not be compared. Triangles mark when a vaccine was licensed. Hover a state for its lines and the survey details.`;
 }
 
 /* ---------- U.S. row ---------- */
@@ -488,9 +562,10 @@ function renderUS() {
   const items = [], stats = [];
   for (const d of shown()) {
     const u = usCell(d.k, S.year);
-    if (!u) { stats.push(`<span>${personSvg(d.color, 6)} ${esc(d.name)} <b style="font-weight:400;color:#8a8780">no data</b></span>`); continue; }
-    items.push({ rate: u.rate, color: d.color, alpha: 1 });
-    stats.push(`<span>${personSvg(d.color, 6)} ${esc(d.name)} <b>${fmt(u.cases)}</b> ${fmt1(u.rate)} per 100k${u.n < 51 ? ` · ${u.n} of 51` : ""}</span>`);
+    if (!u) { stats.push(`<span>${personSvg(d.color, 6)} ${esc(d.name)} <b style="font-weight:400;color:#8a8780">${gapNote(d.k, S.year)}</b></span>`); continue; }
+    const soft = u.incomplete || u.prov;   // faded like an incomplete state year
+    items.push({ rate: u.rate, color: d.color, alpha: soft ? 0.5 : 1 });
+    stats.push(`<span>${personSvg(d.color, 6)} ${esc(d.name)} <b>${fmt(u.cases)}</b> ${fmt1(u.rate)} per 100k${u.n < 51 ? ` · ${u.n} of 51 states` : ""}${u.prov ? " · provisional" : u.incomplete ? " · incomplete" : ""}</span>`);
   }
   drawFigures(ctx, figures(items), 0, 1, W, 22, 10.5, "top");
   $("usstats").innerHTML = stats.join("");
@@ -518,8 +593,8 @@ function renderState() {
     const c = cell(d.k, st, S.year);
     if (!c) { stats.push(`<span>${personSvg(d.color, 6)} ${esc(d.name)} <b style="font-weight:400;color:#8a8780">no data</b></span>`); continue; }
     if (c.rate != null) items.push({ rate: c.rate, color: d.color, alpha: thin(c) ? 0.5 : 1 });
-    stats.push(`<span>${personSvg(d.color, 6)} ${esc(d.name)} <b>${fmt(c.cases)}</b>${c.rate == null ? "" : " " + fmt1(c.rate) + " per 100k"}</span>`);
-    notes.push(`${d.name}: ${sourceNote(c)}`);
+    stats.push(`<span>${personSvg(d.color, 6)} ${esc(d.name)} <b>${fmt(c.cases)}</b>${c.rate == null ? (c.part ? " New York City only" : "") : " " + fmt1(c.rate) + " per 100k"}${thin(c) ? (c.code.toLowerCase() === "p" ? " · provisional" : " · incomplete") : ""}</span>`);
+    notes.push(`${d.name}: ${sourceNote(c, d.k)}`);
   }
   drawFigures(ctx, figures(items), 0, 2, W, 44, 18, "top");
   $("sstats").innerHTML = stats.join("");
@@ -550,6 +625,7 @@ function stateSvg(st) {
   const svg = `<svg viewBox="${sh.box.join(" ")}" role="img" aria-label="County map of ${esc(ST[st].n)}">${paths}<path d="${sh.d}" fill="none" stroke="#55534e" stroke-width="${sw}" stroke-linejoin="round" pointer-events="none"/>${dots}</svg>`;
   let cap;
   if (any) cap = `<div class="mapkey"><b>Kindergartners with 2 MMR doses, ${y - 1}-${String(y).slice(2)} school year, by county</b><div>${MMR_BINS.slice().reverse().map(b => `<span><i style="background:${b[1]}"></i>${b[2]}</span>`).join("")}<span><i style="background:#f5f5f3;outline:1px solid #e3e2dd"></i>no figure</span></div>${dots ? `<div><span>${personSvg(DKEY.measles.color, 6)} Circles: confirmed measles cases in ${y}</span></div>` : ""}</div>`;
+  else if (meta.unmapped && meta.unmapped[y]) cap = `<p class="note">${esc(ST[st].n)} reported ${y - 1}-${String(y).slice(2)} by ${meta.unmapped[y][0]} planning regions, not by county, so the map cannot draw them. The regions ranged from ${meta.unmapped[y][1].toFixed(1)}% to ${meta.unmapped[y][2].toFixed(1)}%.</p>`;
   else if (!meta.n) cap = `<p class="note">No county vaccination figures are available for ${esc(ST[st].n)}.</p>`;
   else cap = `<p class="note">County vaccination figures for ${esc(ST[st].n)} cover school years ${esc(meta.years)}. Move the year there to color the map.</p>`;
   return svg + cap;
@@ -619,7 +695,7 @@ function renderTable() {
   if (!$("tbl").open) return;
   const dz = shown();
   const head = `<tr><th>${S.year}</th>${dz.map(d => `<th>${esc(d.name)}<br>cases</th><th>per 100k</th>`).join("")}</tr>`;
-  const row = (name, f) => `<tr><td>${esc(name)}</td>${dz.map(d => { const c = f(d.k); return c ? `<td>${fmt(c.cases)}</td><td>${c.rate == null ? "" : fmt1(c.rate)}</td>` : `<td colspan="2" style="color:#8a8780">no data</td>`; }).join("")}</tr>`;
+  const row = (name, f) => `<tr><td>${esc(name)}</td>${dz.map(d => { const c = f(d.k); return c ? `<td>${fmt(c.cases)}${c.incomplete || (c.code && thin(c) && c.code.toLowerCase() !== "p") ? " (incomplete)" : c.prov || (c.code && c.code.toLowerCase() === "p") ? " (provisional)" : ""}</td><td>${c.rate == null ? (c.part ? "New York City only" : "") : fmt1(c.rate)}</td>` : `<td colspan="2" style="color:#8a8780">no data</td>`; }).join("")}</tr>`;
   const list = S.sel ? [ST[S.sel]] : D.states.slice().sort((a, b) => a.n.localeCompare(b.n));
   $("tblwrap").innerHTML = `<table><thead>${head}</thead><tbody>${row("United States (states reporting)", k => usCell(k, S.year))}${list.map(s => row(s.n, k => cell(k, s.k, S.year))).join("")}</tbody></table>`;
 }
@@ -647,7 +723,7 @@ function init() {
     setPlaying(false); msIndex = (Math.min(msIndex, n - 1) + step + n) % n; renderCard();
   });
   document.addEventListener("keydown", e => { if (e.key === "Escape" && S.sel) closeState(); });
-  $("foot").innerHTML = `Reported cases, not infections; many cases were never reported, and reporting rules changed over the century. A state with no report for a year shows \u201cno data\u201d, which is not zero. Faded figures mark years with fewer than 40 weekly reports. Sources: CDC final annual tables of notifiable diseases (whooping cough from 1956, measles and mumps from 1968, all five diseases from 1993, through 2023); CDC weekly tables (2024 and 2025, provisional for 2025); Project Tycho, University of Pittsburgh, CC BY 4.0, from the weekly federal notifiable disease reports (earlier years). Vaccination: CDC National Immunization Survey and SchoolVaxView; U.S. Immunization Survey and National Health Interview Survey before 1995. County figures: Johns Hopkins University. State indicators: Census Bureau and Bureau of Economic Analysis. Party control: Klarner, State Partisan Balance Data (through 2011), and Ballotpedia (2012 on).`;
+  $("foot").innerHTML = `Reported cases, not infections; many cases were never reported, and reporting rules changed over the century. A ring marks a disease that other states counted that year but this state did not, which is not zero; a dot marks a count too small to draw a figure. The diseases were not all counted from the same year (mumps from 1968, hepatitis A from 1966), so a jump in a state's total can come from a disease entering the record. Faded figures mark an incomplete count: a year with fewer than ${THIN_WEEKS} of ${FULL_YEAR} weekly reports, a national figure where states holding more than 10% of residents did not report or most states were short of weeks, or the provisional year 2025. Where a count is a sum of weekly reports (all three diseases shown before 1956) it can differ from CDC's own yearly total and usually runs lower, by up to 18% for measles and 13% for whooping cough. Polio counts all reported polio before 1956 and paralytic polio only from 1956, so the 1955 to 1956 change is partly a change in what was counted; the paralytic counts are as first printed, and CDC later revised some yearly totals. Hepatitis A before 1974 includes hepatitis of unspecified type. Sources: CDC final annual tables of notifiable diseases (whooping cough, measles and paralytic polio from 1956, hepatitis A from 1966, mumps from 1968, all five diseases from 1993, through 2023); CDC weekly tables (2024 and 2025, provisional for 2025); Project Tycho, University of Pittsburgh, CC BY 4.0, from the weekly federal notifiable disease reports (earlier years). Vaccination: CDC National Immunization Survey and SchoolVaxView; U.S. Immunization Survey and National Health Interview Survey before 1995. County figures: Johns Hopkins University. State indicators: Census Bureau and Bureau of Economic Analysis. Party control: Klarner, State Partisan Balance Data (through 2011), and Ballotpedia (2012 on).`;
   const h = new URLSearchParams(location.hash.slice(1));   // #st=OH&y=1958 opens a state and year
   if (+h.get("y") >= D.y0 && +h.get("y") <= D.y1) { S.year = +h.get("y"); yr.value = S.year; }
   setPlaying(false); layoutMap(); buildTicks(); render();

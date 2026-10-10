@@ -17,8 +17,10 @@ UT  97.7  94.0  92.7  88.6  87.2
 AZ  95.0  94.2  92.8  88.6  87.4
 WI  94.2  91.6  92.8  84.8  85.1
 
-== 2. State MMR change 2019-20 to 2024-25 against 2025 measles rate (rank correlation, 47 states with both years)
+== 2. State MMR change 2019-20 to 2024-25 against 2025 measles rate (rank correlation, states with both years)
 46 states; Spearman -0.45
+left out, no kindergarten MMR figure in one of the two years: AK, DC, DE, MT, WV
+leaving out one state at a time, the correlation runs from -0.52 to -0.42
 
 == 3. Whooping cough 2024 against each state's 2015-2019 average, with DTaP kindergarten change 2019-20 to 2023-24
     dtap_chg  base  r2024  pct_above_base

@@ -3,8 +3,10 @@
 Built by `scripts/02b_fetch_annual_summaries.py`. Every row in
 `annual_state_cases.csv` comes from a file saved in `src/`; the row names the
 file, the URL it was downloaded from, and the table, page and printed column
-header it was read from. No number was typed in by hand and nothing was taken
-from memory.
+header it was read from. Nothing was taken from memory. Where the scan's text layer is damaged, cells
+were read from the rendered page image and typed into the script
+(`SCAN_IMAGE_CELLS`, 2,803 cells, each listed with its page in
+`checks_image_cells.csv`); every other number is parsed from the file.
 
 Rebuild without downloading: `.venv/bin/python scripts/02b_fetch_annual_summaries.py --no-download`
 
@@ -28,15 +30,18 @@ Rebuild without downloading: `.venv/bin/python scripts/02b_fetch_annual_summarie
 | Years | Diseases | Source |
 |---|---|---|
 | 1956 to 1969, 1971 to 1992 | pertussis | scanned annual summaries, CDC Stacks |
-| 1968 to 1992 | measles total | scanned annual summaries, CDC Stacks |
+| 1956 to 1992 | measles total | scanned annual summaries, CDC Stacks |
+| 1956 to 1992 | paralytic polio | scanned annual summaries, CDC Stacks |
 | 1983 to 1992 | measles indigenous and imported (printed split) | scanned annual summaries, CDC Stacks |
 | 1968 to 1992 | mumps | scanned annual summaries, CDC Stacks |
+| 1966 to 1992 | hepatitis A ("infectious" to 1972) | scanned annual summaries, CDC Stacks |
 | 1993 to 2015 | all seven diseases | MMWR Summary of Notifiable Diseases, Table 2, issue PDF |
 | 2016 to 2023 | all seven diseases | NNDSS Annual Tables, Table 2 parts |
 
 Not obtained: pertussis 1970 (two misprinted cells awaiting an editor decision,
-see "Measles and pertussis from the scans"). Rubella, hepatitis A, diphtheria
-and polio were not attempted before 1993; measles before 1968; pertussis
+see "Measles and pertussis from the scans"). Rubella and diphtheria
+were not attempted before 1993; hepatitis A before 1966 (the tables
+print infectious and serum hepatitis as one figure); measles before 1956; pertussis
 before 1956. The 1968 to 1982 measles tables print a total only (no
 indigenous/imported split).
 
@@ -93,7 +98,7 @@ indigenous/imported split).
     every such cell is listed in `checks_image_cells.csv`.
   - `NR`: printed once (North Carolina mumps, 1974). The 1974 issue does not
     define it. `cases` blank.
-- **Cells left blank (31 in all).** NN: mumps in New Mexico 1993 to 1999 and
+- **Cells left blank (31 in the 1993 to 2023 tables; 108 with the scanned years, see `annual_state_cases.csv`).** NN: mumps in New Mexico 1993 to 1999 and
   Oregon 1993 to 2001, rubella in Mississippi 1994 to 1998, paralytic polio in
   Wisconsin 1997 and 1998. N: mumps in Oregon 2003 and 2005, measles total in
   DC 2011. U: hepatitis A in DC 2007, 2008, 2014, 2015. blank: rubella in
@@ -210,8 +215,8 @@ the printed US row. The table page of each year names the year it covers.
 
 Where the OCR text layer was damaged, the cell was read by eye from the page
 rendered with PyMuPDF (300 dpi, 600 dpi for single cells). Those cells carry
-the flag `read from page image`. 103 cells were read this way, counting
-division rows (83 of the 1,224 state rows kept carry the flag, including 3
+the flag `read from page image`. 112 mumps cells were read this way, counting
+division rows (91 of the state rows kept carry the flag, including 3
 New York rows where one half was read). By year: 1968 1, 1970 1, 1972 1,
 1979 19, 1980 6, 1981 15, 1982 9, 1983 17, 1984 1, 1986 14, 1987 15, 1989 4.
 In 1981 the OCR layer had a wrong but readable value (Louisiana 76, image
@@ -259,6 +264,113 @@ Other notes:
   `cases` blank.
 - 1970: no symbol legend was found in the scan; the mumps column has only
   numbers and NN, so no mark needed a definition.
+
+### Paralytic polio from the scans, 1956 to 1992
+
+Added October 10, 2026, by Eric's decision to show paralytic polio and not all
+polio. Column "Paralytic" under "Poliomyelitis". All 37 years pass the strict
+sum test.
+
+- 1956 to 1959, 1961, 1963, 1964, 1991: the text layer, with 56 single cells
+  read from the image (`_PP_IMAGE`).
+- 1960, 1962, 1965 to 1990, 1992: the whole column read from the page image
+  (`_PP_COLUMNS`). The script lists only the cells that are not a dash; every
+  other row of the column is a dash on the page. Pages: 1960 and 1962 p.10;
+  1965 p.11; 1966 to 1972 p.8 (table of low-frequency diseases); 1973 to 1975
+  p.12; 1976 p.13; 1977 p.14; then the general table.
+- 1986 and 1987: the text layer puts the plague column under the polio header;
+  the image shows the true column (U.S. 3 in 1986 and a dash in 1987, both with
+  a "subject to change" footnote).
+- 1981: the page is curved at the binding. Rows were followed across from the
+  malaria column: Minnesota, Missouri, Nebraska, Maryland, West Virginia and
+  Washington have one case each.
+- A superscript footnote number on a count is left off (Texas 1977, New Mexico
+  1978, California 1979); printed symbols are kept in the flag.
+- These are first-printed counts. CDC's later historical tables give higher
+  national totals for some years.
+
+### Measles from the scans, 1956 to 1963
+
+Added October 10, 2026. General table by division and state: p.8 in 1956 to
+1958, p.9 in 1959 to 1963. All eight years pass the strict sum test. 134 cells
+read from the page image; 1960 is a whole column (61 cells), because that page's
+text layer has no usable rows (the same page the 1960 pertussis column was read
+from).
+
+- Three reader rules were corrected to reach these pages: "Non- paralytic"
+  broken across lines was being taken for a second paralytic polio column, which
+  made the reader skip the page; "Rubella (German measles)" was being taken for
+  measles; and the encephalitis-table rule added for 1964 was narrowed, because
+  the 1962 and 1963 general table has an "Encephalitis" column of its own.
+  None of this changed any year already extracted.
+- Kansas: `*` (not notifiable) 1957 to 1959, `NN` 1960 to 1963. In 1956 Kansas
+  has a count (3,662).
+- Nebraska 1956, 1957, 1958 and Mississippi 1957 carry a superscript footnote
+  number in front of the count; the text layer joined it to the number (Nebraska
+  1956 read as 32,289 for 2,289), which the division sum caught.
+- Hawaii 1963 is printed "3.623". Read as 3,623 by Eric's decision of October
+  10, 2026 (`SCAN_EDITOR_READINGS`).
+- Alaska 1956 to 1958 and Hawaii 1956 to 1959 are not in the table.
+  `06_build_cases.py` no longer lets that absence block the Tycho weekly rows
+  for the two territories.
+
+### Measles from the scans, 1964 to 1967
+
+Added October 10, 2026. General table by division and state: 1964 p.11, 1965
+p.10, 1966 p.10, 1967 p.10. Printed U.S. totals 458,083; 261,904; 204,136;
+62,705. All four years pass the strict sum test. Ten cells read from the page
+image (`checks_image_cells.csv`).
+
+- The encephalitis table comes first in these issues and has its own "Measles"
+  and "Mumps" columns (post-infectious encephalitis). A page whose headers
+  mention post-infectious, arbovirus or encephalitis is no longer read for
+  disease counts. This changed nothing in the years already extracted.
+- 1964: a footnote line ending "New York)." was being read as a New York row
+  with no number. A "New York" label with no number is no longer treated as a
+  row; upstate New York (13,124) was read from the image.
+- Kansas is NN in 1964, 1965 and 1966. South Carolina 1964 and Mississippi 1967
+  carry a footnote mark, kept in the flag.
+
+### Hepatitis A from the scans, 1966 to 1992
+
+Added October 10, 2026. Same reader and same strict test as mumps: every state
+cell a number or a defined mark, states adding to each printed division row,
+divisions adding to the printed U.S. row. All 27 years pass. Printed U.S.
+totals: 1966 32,859; 1967 38,909; 1968 45,893; 1969 48,416; 1970 56,797; 1971
+59,606; 1972 54,074; 1973 50,749; 1974 40,358; 1975 35,855; 1976 33,288; 1977
+31,153; 1978 29,500; 1979 30,407; 1980 29,087; 1981 25,802; 1982 23,403; 1983
+21,532; 1984 22,040; 1985 23,210; 1986 23,430; 1987 25,280; 1988 28,507; 1989
+35,821; 1990 31,441; 1991 24,378; 1992 23,112.
+
+- **Which table.** The general table by geographic division and state, not the
+  by-month or by-age hepatitis tables. For 1976 the text layer of the by-month table gives
+  a U.S. total of 33,759 (not checked on the page image) against 33,288 in the
+  general table; 33,288 is the figure in CDC's later ten-year tables.
+- **Column header.** "Hepatitis, infectious" 1966 to 1971; "Infectious (A)"
+  1972; a bare "A" under "Hepatitis" or "Viral hepatitis" 1973 to 1977;
+  "Hepatitis A" from 1978. The 1986 and 1991 headers were read from the page
+  image (`SCAN_PAGE_FIXES`). A page that mentions hepatitis but none of the
+  other diseases is read for this column only, because its "Imported" header
+  belongs to malaria, not measles.
+- **Read from the image.** 229 cells, 192 of them state rows, each with the
+  page number, in `checks_image_cells.csv`. 1967 (p.9) and 1977 (p.11) are whole
+  columns: the text layer has no usable United States row, and the 1977 page is
+  skewed by most of a row. In those two columns each number was assigned to its
+  state in printed order, checked by the nine division sums. A swap of two
+  states inside one division would not be caught by the sums.
+- **Text-layer errors the sum test caught.** 1986 Oregon and Alaska read as
+  1,896 and 106 in the text layer; the page prints 1,898 and 108. 1978 to 1980
+  and 1982 New York City had the footnote digit joined to the number (4993 for
+  499).
+- **Marks.** Georgia 1974 "NA". New York City 1985 "NA*" and 1986 "NA¶": New
+  York State is left with no figure and the upstate count is kept in the flag
+  (`other part=618`, `other part=520`). `06_build_cases.py` shows a part of New
+  York only when the missing part is upstate (mumps 1968 to 1973).
+- **Footnote mark in front of a number** ("*873", Louisiana) is now read as the
+  number with the mark kept in the flag. This did not change any other disease.
+- **Meaning.** The 1973 issue's by-age table says hepatitis A "includes viral
+  hepatitis, type unspecified" and that A, B and unspecified have been reported
+  separately since January 1, 1974.
 
 ### MMWR Summary of Notifiable Diseases, Table 2 (issue PDF, text layer)
 

@@ -328,7 +328,8 @@ def classify_columns(texts, page_has_hepatitis=True):
             put("diphtheria", i)
         if "rubella" in t and "cong" not in t and "syndrome" not in t:
             put("rubella", i)
-        if "paralytic" in t and "nonparalytic" not in t and "non-paralytic" not in t:
+        # "Non- paralytic" and "Non\xadparalytic" (line-broken headers in the 1950s scans) are not paralytic
+        if "paralytic" in t and not re.search(r"non[\xad\s-]*paralytic", t):
             put("polio_paralytic", i)
         if page_has_hepatitis and "influenza" not in t and "serogroup" not in t:
             raw_toks = re.split(r"[ |]+", texts[i])
@@ -347,7 +348,7 @@ def classify_columns(texts, page_has_hepatitis=True):
             raise ValueError("two possible measles total columns")
     elif "measles_indigenous" not in out and "measles_imported" not in out:
         for i, t in enumerate(low):
-            if "measles" in t:
+            if "measles" in t and "german" not in t and "rubella" not in t:     # "Rubella (German measles)"
                 put("measles", i)
     return out
 
@@ -566,18 +567,21 @@ SCAN_ISSUES = {
     # collection (cdc:101) rather than the NNDSS collection.
     1979: 1577, 1978: 10895, 1977: 10894, 1976: 1130, 1975: 1041, 1974: 1743,
     1973: 1849, 1972: 1895, 1971: 1829, 1970: 951, 1969: 838, 1968: 1717,
-    # 1956-1967: read for pertussis only. 1956 (10893) is in the MMWR
+    # 1956-1967: read for pertussis and measles; 1966 and 1967
+    # also for hepatitis A (the column is "Hepatitis, infectious" until 1972). 1956 (10893) is in the MMWR
     # collection; the others are in the NNDSS collection.
     1967: 1555, 1966: 615, 1965: 740, 1964: 698, 1963: 491, 1962: 380, 1961: 1427,
     1960: 1360, 1959: 1302, 1958: 1162, 1957: 1035, 1956: 10893,
 }
-SCAN_DISEASES = ("measles", "measles_indigenous", "measles_imported", "pertussis", "mumps")
+SCAN_DISEASES = ("measles", "measles_indigenous", "measles_imported", "pertussis", "mumps",
+                 "hepatitis_a", "polio_paralytic")
 
 # Misprinted cells whose reading is an editor's decision rather than a plain read
 # of the page. Their flag says so.
 SCAN_EDITOR_READINGS = {
     (1971, "mumps", "District of Columbia"): 'printed "-99", read as 99 by editor decision 2026-10-06',
     (1971, "mumps", "Ohio"): 'printed "8.784", read as 8,784 by editor decision 2026-10-06',
+    (1963, "measles", "Hawaii"): 'printed "3.623", read as 3,623 by editor decision 2026-10-10',
 }
 
 # Cells read by eye from a rendered page image (PyMuPDF, 400 dpi crop of the
@@ -727,9 +731,17 @@ SCAN_PAGE_FIXES = {
                  "min_rows": 5},
     # 1960 Table 5, p.9: numbers and row labels sit at different heights and the
     # OCR layer splits every row; the pertussis column is read from the image.
-    (1960, 9): {"image_only": {"pertussis": ("PERTUSSIS (whooping cough)", "14,809")}},
+    (1960, 9): {"image_only": {"pertussis": ("PERTUSSIS (whooping cough)", "14,809"),
+                               "measles": ("MEASLES", "441,703")}},
     (1986, 12): {"insert_us": [(124.0, 137.0, "327*")],
                  "headers": {0: "Measles Indigenous", 1: "Measles Imported"}},
+    # Hepatitis A. 1967 Table 6, p.9 and 1977 Table 5, p.11: the OCR layer has no
+    # usable United States row (1977 is also skewed by most of a row), so the
+    # whole column is read from the image.
+    (1967, 9): {"image_only": {"hepatitis_a": ("HEPATITIS INFECTIOUS", "38,909")}},
+    (1977, 11): {"image_only": {"hepatitis_a": ("VIRAL HEPATITIS A", "31,153")}},
+    (1986, 11): {"headers": {0: "Hepatitis A"}},
+    (1991, 20): {"headers": {0: "Hepatitis A"}},
 }
 
 # Measles and pertussis cells read from the page image (same rules as above).
@@ -1241,6 +1253,553 @@ for _ln in _MP_IMAGE.strip().splitlines():
     _a = {"NY_UP": NY_UP, "NY_CITY": NY_CITY}.get(_a, _a)
     SCAN_IMAGE_CELLS[(int(_y), _d, _a)] = (_t, int(_p))
 
+# Measles 1956-1967 cells read from the page image (same rules as above). 1960 is a
+# whole column (the page's text layer has no usable rows). In 1956-1958 Nebraska and
+# 1957 Mississippi carry a superscript footnote number, which is not part of the count.
+_M6467_IMAGE = """
+# year | disease | area | text on the image | PDF page
+1964 | measles | NY_UP | 13,124 | 11
+1964 | measles | South Carolina | 4,269† | 11
+1964 | measles | New Mexico | 1,181 | 11
+1964 | measles | Arizona | 6,767 | 11
+1964 | measles | Utah | 2,435 | 11
+1965 | measles | Rhode Island | 3,973 | 10
+1966 | measles | Hawaii | 168 | 10
+1967 | measles | Maine | 278 | 10
+1967 | measles | Texas | 13,411 | 10
+1967 | measles | Montana | 340 | 10
+1956 | measles | Rhode Island | 254 | 8
+1956 | measles | Nebraska | 2,289 | 8
+1956 | measles | Pacific | 48,125 | 8
+1956 | measles | Washington | 12,862 | 8
+1957 | measles | Ohio | 8,627 | 8
+1957 | measles | Nebraska | 322 | 8
+1957 | measles | Kansas | * | 8
+1957 | measles | Mississippi | 1,290 | 8
+1957 | measles | Montana | 3,746 | 8
+1958 | measles | New Hampshire | 4,711 | 8
+1958 | measles | Ohio | 31,444 | 8
+1958 | measles | Nebraska | 1,519 | 8
+1958 | measles | Mississippi | 1,549 | 8
+1958 | measles | Oklahoma | 7,500 | 8
+1959 | measles | Pennsylvania | 32,195 | 9
+1959 | measles | Indiana | 5,279 | 9
+1959 | measles | Wisconsin | 16,559 | 9
+1959 | measles | Minnesota | 2,844 | 9
+1959 | measles | Kentucky | 7,037 | 9
+1959 | measles | Mississippi | 1,952 | 9
+1959 | measles | Arkansas | 898 | 9
+1959 | measles | New Mexico | 4,735 | 9
+1960 | measles | United States | 441,703 | 9
+1960 | measles | New England | 44,355 | 9
+1960 | measles | Maine | 3,538 | 9
+1960 | measles | New Hampshire | 1,929 | 9
+1960 | measles | Vermont | 3,266 | 9
+1960 | measles | Massachusetts | 22,403 | 9
+1960 | measles | Rhode Island | 1,892 | 9
+1960 | measles | Connecticut | 11,327 | 9
+1960 | measles | Middle Atlantic | 64,347 | 9
+1960 | measles | New York | 46,443 | 9
+1960 | measles | New Jersey | 10,559 | 9
+1960 | measles | Pennsylvania | 7,345 | 9
+1960 | measles | East North Central | 131,527 | 9
+1960 | measles | Ohio | 18,170 | 9
+1960 | measles | Indiana | 10,225 | 9
+1960 | measles | Illinois | 22,448 | 9
+1960 | measles | Michigan | 36,161 | 9
+1960 | measles | Wisconsin | 44,523 | 9
+1960 | measles | West North Central | 9,862 | 9
+1960 | measles | Minnesota | 4,203 | 9
+1960 | measles | Iowa | 1,790 | 9
+1960 | measles | Missouri | 799 | 9
+1960 | measles | North Dakota | 2,774 | 9
+1960 | measles | South Dakota | 79 | 9
+1960 | measles | Nebraska | 217 | 9
+1960 | measles | Kansas | NN | 9
+1960 | measles | South Atlantic | 24,007 | 9
+1960 | measles | Delaware | 656 | 9
+1960 | measles | Maryland | 3,202 | 9
+1960 | measles | District of Columbia | 1,197 | 9
+1960 | measles | Virginia | 7,595 | 9
+1960 | measles | West Virginia | 3,812 | 9
+1960 | measles | North Carolina | 1,417 | 9
+1960 | measles | South Carolina | 1,799 | 9
+1960 | measles | Georgia | 236 | 9
+1960 | measles | Florida | 4,093 | 9
+1960 | measles | East South Central | 34,719 | 9
+1960 | measles | Kentucky | 11,367 | 9
+1960 | measles | Tennessee | 19,202 | 9
+1960 | measles | Alabama | 2,069 | 9
+1960 | measles | Mississippi | 2,081 | 9
+1960 | measles | West South Central | 53,582 | 9
+1960 | measles | Arkansas | 1,410 | 9
+1960 | measles | Louisiana | 266 | 9
+1960 | measles | Oklahoma | 1,232 | 9
+1960 | measles | Texas | 50,674 | 9
+1960 | measles | Mountain | 25,604 | 9
+1960 | measles | Montana | 2,438 | 9
+1960 | measles | Idaho | 3,227 | 9
+1960 | measles | Wyoming | 716 | 9
+1960 | measles | Colorado | 6,794 | 9
+1960 | measles | New Mexico | 1,901 | 9
+1960 | measles | Arizona | 4,863 | 9
+1960 | measles | Utah | 4,908 | 9
+1960 | measles | Nevada | 757 | 9
+1960 | measles | Pacific | 53,700 | 9
+1960 | measles | Washington | 13,678 | 9
+1960 | measles | Oregon | 11,104 | 9
+1960 | measles | California | 22,684 | 9
+1960 | measles | Alaska | 1,260 | 9
+1960 | measles | Hawaii | 4,974 | 9
+1961 | measles | Louisiana | 48 | 9
+1961 | measles | Texas | 16,697 | 9
+1961 | measles | Montana | 2,484 | 9
+1961 | measles | Idaho | 2,051 | 9
+1961 | measles | Wyoming | 493 | 9
+1961 | measles | Colorado | 4,046 | 9
+1961 | measles | New Mexico | 914 | 9
+1961 | measles | Arizona | 8,570 | 9
+1961 | measles | Utah | 1,711 | 9
+1961 | measles | Nevada | 685 | 9
+1961 | measles | Oregon | 5,939 | 9
+1962 | measles | Maine | 7,135 | 9
+1962 | measles | Vermont | 2,040 | 9
+1962 | measles | Minnesota | 1,675 | 9
+1962 | measles | West Virginia | 10,007 | 9
+1962 | measles | South Carolina | 930 | 9
+1962 | measles | Alabama | 2,423 | 9
+1962 | measles | Mississippi | 2,757 | 9
+1962 | measles | Louisiana | 252 | 9
+1962 | measles | Oklahoma | 2,095 | 9
+1962 | measles | Texas | 66,915 | 9
+1962 | measles | Mountain | 32,340 | 9
+1962 | measles | Montana | 8,662 | 9
+1962 | measles | Idaho | 1,688 | 9
+1962 | measles | Wyoming | 491 | 9
+1962 | measles | Colorado | 9,001 | 9
+1962 | measles | New Mexico | 1,451 | 9
+1962 | measles | Arizona | 6,305 | 9
+1962 | measles | Utah | 4,067 | 9
+1962 | measles | Nevada | 675 | 9
+1962 | measles | Pacific | 69,074 | 9
+1962 | measles | Washington | 22,060 | 9
+1962 | measles | Oregon | 13,868 | 9
+1962 | measles | California | 28,585 | 9
+1962 | measles | Alaska | 1,386 | 9
+1962 | measles | Hawaii | 3,175 | 9
+1963 | measles | Vermont | 1,928 | 9
+1963 | measles | Massachusetts | 4,978 | 9
+1963 | measles | Minnesota | 3,368 | 9
+1963 | measles | Maryland | 2,274 | 9
+1963 | measles | West Virginia | 14,273 | 9
+1963 | measles | North Carolina | 1,607 | 9
+1963 | measles | Georgia | 226 | 9
+1963 | measles | Tennessee | 7,880 | 9
+1963 | measles | Alabama | 1,336 | 9
+1963 | measles | Wyoming | 824 | 9
+1963 | measles | Colorado | 7,137 | 9
+1963 | measles | New Mexico | 815 | 9
+1963 | measles | Utah | 3,400 | 9
+1963 | measles | Pacific | 41,870 | 9
+1963 | measles | Hawaii | 3,623 | 9
+"""
+for _ln in _M6467_IMAGE.strip().splitlines():
+    if _ln.startswith("#"):
+        continue
+    _y, _d, _a, _t, _p = [x.strip() for x in _ln.split("|")]
+    _a = {"NY_UP": NY_UP, "NY_CITY": NY_CITY}.get(_a, _a)
+    SCAN_IMAGE_CELLS[(int(_y), _d, _a)] = (_t, int(_p))
+
+# Hepatitis A cells read from the page image (same rules as above). The column is
+# "Hepatitis, infectious" in 1966-1971, "Infectious (A)" in 1972 and "Hepatitis A"
+# from 1973. New York City carries a footnote mark in 1977-1984 (its cases were
+# typed by a blood test); 1986 New York City is printed "NA".
+_HA_IMAGE = """
+# year | disease | area | text on the image | PDF page
+1966 | hepatitis_a | Ohio | 1,344 | 9
+1967 | hepatitis_a | United States | 38,909 | 9
+1967 | hepatitis_a | New England | 1,750 | 9
+1967 | hepatitis_a | Maine | 171 | 9
+1967 | hepatitis_a | New Hampshire | 44 | 9
+1967 | hepatitis_a | Vermont | 16 | 9
+1967 | hepatitis_a | Massachusetts | 716 | 9
+1967 | hepatitis_a | Rhode Island | 195 | 9
+1967 | hepatitis_a | Connecticut | 608 | 9
+1967 | hepatitis_a | Middle Atlantic | 6,154 | 9
+1967 | hepatitis_a | NY_CITY | 1,965 | 9
+1967 | hepatitis_a | NY_UP | 1,444 | 9
+1967 | hepatitis_a | New Jersey | 1,260 | 9
+1967 | hepatitis_a | Pennsylvania | 1,485 | 9
+1967 | hepatitis_a | East North Central | 6,161 | 9
+1967 | hepatitis_a | Ohio | 1,422 | 9
+1967 | hepatitis_a | Indiana | 618 | 9
+1967 | hepatitis_a | Illinois | 1,763 | 9
+1967 | hepatitis_a | Michigan | 1,882 | 9
+1967 | hepatitis_a | Wisconsin | 476 | 9
+1967 | hepatitis_a | West North Central | 2,549 | 9
+1967 | hepatitis_a | Minnesota | 511 | 9
+1967 | hepatitis_a | Iowa | 350 | 9
+1967 | hepatitis_a | Missouri | 1,307 | 9
+1967 | hepatitis_a | North Dakota | 77 | 9
+1967 | hepatitis_a | South Dakota | 14 | 9
+1967 | hepatitis_a | Nebraska | 72 | 9
+1967 | hepatitis_a | Kansas | 218 | 9
+1967 | hepatitis_a | South Atlantic | 4,231 | 9
+1967 | hepatitis_a | Delaware | 176 | 9
+1967 | hepatitis_a | Maryland | 879 | 9
+1967 | hepatitis_a | District of Columbia | 45 | 9
+1967 | hepatitis_a | Virginia | 744 | 9
+1967 | hepatitis_a | West Virginia | 383 | 9
+1967 | hepatitis_a | North Carolina | 338 | 9
+1967 | hepatitis_a | South Carolina | 111 | 9
+1967 | hepatitis_a | Georgia | 916 | 9
+1967 | hepatitis_a | Florida | 639 | 9
+1967 | hepatitis_a | East South Central | 2,746 | 9
+1967 | hepatitis_a | Kentucky | 1,135 | 9
+1967 | hepatitis_a | Tennessee | 835 | 9
+1967 | hepatitis_a | Alabama | 293 | 9
+1967 | hepatitis_a | Mississippi | 483 | 9
+1967 | hepatitis_a | West South Central | 4,083 | 9
+1967 | hepatitis_a | Arkansas | 285 | 9
+1967 | hepatitis_a | Louisiana | 652* | 9
+1967 | hepatitis_a | Oklahoma | 345 | 9
+1967 | hepatitis_a | Texas | 2,801 | 9
+1967 | hepatitis_a | Mountain | 1,794 | 9
+1967 | hepatitis_a | Montana | 185 | 9
+1967 | hepatitis_a | Idaho | 131 | 9
+1967 | hepatitis_a | Wyoming | 70 | 9
+1967 | hepatitis_a | Colorado | 328 | 9
+1967 | hepatitis_a | New Mexico | 446 | 9
+1967 | hepatitis_a | Arizona | 416 | 9
+1967 | hepatitis_a | Utah | 169 | 9
+1967 | hepatitis_a | Nevada | 49 | 9
+1967 | hepatitis_a | Pacific | 9,441 | 9
+1967 | hepatitis_a | Washington | 983 | 9
+1967 | hepatitis_a | Oregon | 864 | 9
+1967 | hepatitis_a | California | 7,499 | 9
+1967 | hepatitis_a | Alaska | 41 | 9
+1967 | hepatitis_a | Hawaii | 54 | 9
+1968 | hepatitis_a | Pennsylvania | 1,831 | 9
+1968 | hepatitis_a | North Carolina | 375 | 9
+1968 | hepatitis_a | Kentucky | 1,152 | 9
+1968 | hepatitis_a | Louisiana | *751 | 9
+1969 | hepatitis_a | Louisiana | *873 | 9
+1970 | hepatitis_a | Ohio | 2,280 | 9
+1970 | hepatitis_a | South Atlantic | 6,751 | 9
+1970 | hepatitis_a | South Carolina | 358 | 9
+1970 | hepatitis_a | East South Central | 3,229 | 9
+1970 | hepatitis_a | West South Central | 4,206 | 9
+1970 | hepatitis_a | Mountain | 3,217 | 9
+1970 | hepatitis_a | Nevada | 192 | 9
+1970 | hepatitis_a | Pacific | 12,781 | 9
+1970 | hepatitis_a | Oregon | 1,033 | 9
+1970 | hepatitis_a | Hawaii | 233 | 9
+1972 | hepatitis_a | Maine | 464 | 9
+1972 | hepatitis_a | Florida | 2,459 | 9
+1972 | hepatitis_a | Tennessee | 1,435 | 9
+1972 | hepatitis_a | Alabama | 382 | 9
+1972 | hepatitis_a | Mississippi | 237 | 9
+1972 | hepatitis_a | Arkansas | 340 | 9
+1972 | hepatitis_a | Louisiana | 630 | 9
+1972 | hepatitis_a | Texas | 3,905 | 9
+1972 | hepatitis_a | Montana | 258 | 9
+1972 | hepatitis_a | Idaho | 383 | 9
+1972 | hepatitis_a | Wyoming | 49 | 9
+1972 | hepatitis_a | Arizona | 750 | 9
+1972 | hepatitis_a | Nevada | 98 | 9
+1972 | hepatitis_a | Alaska | 247 | 9
+1973 | hepatitis_a | Middle Atlantic | 5,929 | 9
+1973 | hepatitis_a | West North Central | 2,047 | 9
+1973 | hepatitis_a | West South Central | 7,075 | 9
+1973 | hepatitis_a | Mountain | 2,628 | 9
+1973 | hepatitis_a | Pacific | 9,960 | 9
+1974 | hepatitis_a | District of Columbia | 44 | 9
+1975 | hepatitis_a | New England | 1,196 | 9
+1975 | hepatitis_a | Ohio | 1,648 | 9
+1975 | hepatitis_a | Missouri | 542 | 9
+1975 | hepatitis_a | Virginia | 420 | 9
+1975 | hepatitis_a | West Virginia | 160 | 9
+1975 | hepatitis_a | South Carolina | 340 | 9
+1975 | hepatitis_a | Florida | 2,967 | 9
+1975 | hepatitis_a | West South Central | 4,215 | 9
+1975 | hepatitis_a | Mountain | 1,988 | 9
+1975 | hepatitis_a | Wyoming | 30 | 9
+1975 | hepatitis_a | Pacific | 7,326 | 9
+1977 | hepatitis_a | United States | 31,153 | 11
+1977 | hepatitis_a | New England | 667 | 11
+1977 | hepatitis_a | Maine | 26 | 11
+1977 | hepatitis_a | New Hampshire | 65 | 11
+1977 | hepatitis_a | Vermont | 43 | 11
+1977 | hepatitis_a | Massachusetts | 145 | 11
+1977 | hepatitis_a | Rhode Island | 114 | 11
+1977 | hepatitis_a | Connecticut | 274 | 11
+1977 | hepatitis_a | Middle Atlantic | 3,169 | 11
+1977 | hepatitis_a | NY_UP | 734 | 11
+1977 | hepatitis_a | NY_CITY | 566 | 11
+1977 | hepatitis_a | New Jersey | 844 | 11
+1977 | hepatitis_a | Pennsylvania | 1,025 | 11
+1977 | hepatitis_a | East North Central | 5,076 | 11
+1977 | hepatitis_a | Ohio | 1,428 | 11
+1977 | hepatitis_a | Indiana | 253 | 11
+1977 | hepatitis_a | Illinois | 1,424 | 11
+1977 | hepatitis_a | Michigan | 1,602 | 11
+1977 | hepatitis_a | Wisconsin | 369 | 11
+1977 | hepatitis_a | West North Central | 1,661 | 11
+1977 | hepatitis_a | Minnesota | 440 | 11
+1977 | hepatitis_a | Iowa | 118 | 11
+1977 | hepatitis_a | Missouri | 504 | 11
+1977 | hepatitis_a | North Dakota | 67 | 11
+1977 | hepatitis_a | South Dakota | 34 | 11
+1977 | hepatitis_a | Nebraska | 164 | 11
+1977 | hepatitis_a | Kansas | 334 | 11
+1977 | hepatitis_a | South Atlantic | 4,319 | 11
+1977 | hepatitis_a | Delaware | 47 | 11
+1977 | hepatitis_a | Maryland | 425 | 11
+1977 | hepatitis_a | District of Columbia | 37 | 11
+1977 | hepatitis_a | Virginia | 345 | 11
+1977 | hepatitis_a | West Virginia | 303 | 11
+1977 | hepatitis_a | North Carolina | 442 | 11
+1977 | hepatitis_a | South Carolina | 180 | 11
+1977 | hepatitis_a | Georgia | 1,165 | 11
+1977 | hepatitis_a | Florida | 1,375 | 11
+1977 | hepatitis_a | East South Central | 2,363 | 11
+1977 | hepatitis_a | Kentucky | 526 | 11
+1977 | hepatitis_a | Tennessee | 1,054 | 11
+1977 | hepatitis_a | Alabama | 212 | 11
+1977 | hepatitis_a | Mississippi | 571 | 11
+1977 | hepatitis_a | West South Central | 3,535 | 11
+1977 | hepatitis_a | Arkansas | 485 | 11
+1977 | hepatitis_a | Louisiana | 517 | 11
+1977 | hepatitis_a | Oklahoma | 447 | 11
+1977 | hepatitis_a | Texas | 2,086 | 11
+1977 | hepatitis_a | Mountain | 2,860 | 11
+1977 | hepatitis_a | Montana | 250 | 11
+1977 | hepatitis_a | Idaho | 142 | 11
+1977 | hepatitis_a | Wyoming | 23 | 11
+1977 | hepatitis_a | Colorado | 534 | 11
+1977 | hepatitis_a | New Mexico | 547 | 11
+1977 | hepatitis_a | Arizona | 1,087 | 11
+1977 | hepatitis_a | Utah | 223 | 11
+1977 | hepatitis_a | Nevada | 54 | 11
+1977 | hepatitis_a | Pacific | 7,503 | 11
+1977 | hepatitis_a | Washington | 626 | 11
+1977 | hepatitis_a | Oregon | 767 | 11
+1977 | hepatitis_a | California | 5,400 | 11
+1977 | hepatitis_a | Alaska | 568 | 11
+1977 | hepatitis_a | Hawaii | 142 | 11
+1978 | hepatitis_a | New England | 817 | 20
+1978 | hepatitis_a | NY_CITY | 499 | 20
+1978 | hepatitis_a | East North Central | 4,171 | 20
+1979 | hepatitis_a | NY_CITY | 386 | 12
+1980 | hepatitis_a | NY_CITY | 364 | 18
+1980 | hepatitis_a | North Dakota | 57 | 18
+1980 | hepatitis_a | South Dakota | 72 | 18
+1982 | hepatitis_a | NY_CITY | 689 | 15
+1982 | hepatitis_a | Missouri | 204 | 15
+1982 | hepatitis_a | District of Columbia | 17 | 15
+1982 | hepatitis_a | West Virginia | 91 | 15
+1982 | hepatitis_a | South Carolina | 316 | 15
+1982 | hepatitis_a | Kentucky | 336 | 15
+1982 | hepatitis_a | Tennessee | 346 | 15
+1983 | hepatitis_a | NY_UP | 344 | 20
+1983 | hepatitis_a | NY_CITY | 507 | 20
+1984 | hepatitis_a | NY_CITY | 560 | 15
+1984 | hepatitis_a | New Jersey | 656 | 15
+1984 | hepatitis_a | Indiana | 120 | 15
+1984 | hepatitis_a | Illinois | 462 | 15
+1984 | hepatitis_a | Michigan | 423 | 15
+1984 | hepatitis_a | Wisconsin | 232 | 15
+1984 | hepatitis_a | Minnesota | 130 | 15
+1984 | hepatitis_a | Iowa | 60 | 15
+1984 | hepatitis_a | Delaware | 44 | 15
+1984 | hepatitis_a | Maryland | 60 | 15
+1984 | hepatitis_a | District of Columbia | 13 | 15
+1984 | hepatitis_a | Kentucky | 316 | 15
+1984 | hepatitis_a | Tennessee | 110 | 15
+1984 | hepatitis_a | Louisiana | 316 | 15
+1984 | hepatitis_a | Texas | 2,605 | 15
+1985 | hepatitis_a | Indiana | 123 | 11
+1985 | hepatitis_a | Pacific | 10,114 | 11
+1986 | hepatitis_a | Vermont | 22 | 11
+1986 | hepatitis_a | NY_CITY | NA¶ | 11
+1986 | hepatitis_a | New Jersey | 383 | 11
+1986 | hepatitis_a | Illinois | 342 | 11
+1986 | hepatitis_a | Michigan | 289 | 11
+1986 | hepatitis_a | South Dakota | 171 | 11
+1986 | hepatitis_a | Kansas | 137 | 11
+1986 | hepatitis_a | Tennessee | 77 | 11
+1986 | hepatitis_a | Colorado | 210 | 11
+1986 | hepatitis_a | New Mexico | 567 | 11
+1986 | hepatitis_a | Arizona | 1,427 | 11
+1986 | hepatitis_a | Utah | 161 | 11
+1986 | hepatitis_a | Oregon | 1,898 | 11
+1986 | hepatitis_a | Alaska | 108 | 11
+1986 | hepatitis_a | Hawaii | 14 | 11
+1987 | hepatitis_a | Vermont | 14 | 11
+1987 | hepatitis_a | Massachusetts | 342 | 11
+1987 | hepatitis_a | NY_UP | 808 | 11
+1989 | hepatitis_a | Colorado | 540 | 12
+1990 | hepatitis_a | New Jersey | 437 | 18
+1990 | hepatitis_a | Nebraska | 104 | 18
+1990 | hepatitis_a | District of Columbia | 39 | 18
+1990 | hepatitis_a | North Carolina | 649 | 18
+1991 | hepatitis_a | Connecticut | 122 | 20
+1992 | hepatitis_a | Hawaii | 171 | 22
+"""
+for _ln in _HA_IMAGE.strip().splitlines():
+    if _ln.startswith("#"):
+        continue
+    _y, _d, _a, _t, _p = [x.strip() for x in _ln.split("|")]
+    _a = {"NY_UP": NY_UP, "NY_CITY": NY_CITY}.get(_a, _a)
+    SCAN_IMAGE_CELLS[(int(_y), _d, _a)] = (_t, int(_p))
+
+# Paralytic polio, 1956-1992. Two kinds of entry.
+# _PP_IMAGE: single cells read from the page image where the OCR layer is damaged
+# (1956-1959, 1961, 1963, 1964; same rules as above).
+# _PP_COLUMNS: years where the whole "Paralytic" column was read from the page image,
+# because the column sits in a table the OCR layer cannot be used for (the tables of
+# low-frequency diseases, 1965-1977) or is nearly all dashes that the OCR layer drops.
+# Only the cells that are not a dash are listed; every other state and division row
+# of that column is a dash on the page (no reported cases). Format per year:
+#   page | United States | Division total: State n, State n; Division total: ...
+# A superscript footnote number printed on a count (Texas 1977, New Mexico 1978,
+# California 1979) is left off; a printed symbol is kept.
+_PP_IMAGE = """
+# year | disease | area | text on the image | PDF page
+1956 | polio_paralytic | Rhode Island | 2 | 8
+1956 | polio_paralytic | Kansas | - | 8
+1956 | polio_paralytic | Delaware | 11 | 8
+1956 | polio_paralytic | Oklahoma | 93 | 8
+1956 | polio_paralytic | New Mexico | 37 | 8
+1956 | polio_paralytic | Pacific | 1,532 | 8
+1956 | polio_paralytic | Washington | 98 | 8
+1957 | polio_paralytic | Rhode Island | - | 8
+1957 | polio_paralytic | Ohio | 122 | 8
+1957 | polio_paralytic | Montana | 5 | 8
+1958 | polio_paralytic | New Hampshire | 1 | 8
+1958 | polio_paralytic | Ohio | 276 | 8
+1958 | polio_paralytic | Mississippi | 42 | 8
+1958 | polio_paralytic | Oklahoma | 26 | 8
+1959 | polio_paralytic | New England | 353 | 9
+1959 | polio_paralytic | Pennsylvania | 165 | 9
+1959 | polio_paralytic | Indiana | 109 | 9
+1959 | polio_paralytic | Wisconsin | 43 | 9
+1959 | polio_paralytic | Minnesota | 200 | 9
+1959 | polio_paralytic | Mississippi | 81 | 9
+1959 | polio_paralytic | Arkansas | 231 | 9
+1959 | polio_paralytic | New Mexico | 24 | 9
+1961 | polio_paralytic | Maine | 7 | 9
+1961 | polio_paralytic | North Dakota | 1 | 9
+1961 | polio_paralytic | Virginia | 14 | 9
+1961 | polio_paralytic | Louisiana | 44 | 9
+1961 | polio_paralytic | Texas | 37 | 9
+1961 | polio_paralytic | Montana | 1 | 9
+1961 | polio_paralytic | Idaho | 13 | 9
+1961 | polio_paralytic | Wyoming | 1 | 9
+1961 | polio_paralytic | Colorado | 11 | 9
+1961 | polio_paralytic | New Mexico | 2 | 9
+1961 | polio_paralytic | Arizona | 6 | 9
+1961 | polio_paralytic | Utah | 4 | 9
+1961 | polio_paralytic | Nevada | - | 9
+1961 | polio_paralytic | Oregon | 9 | 9
+1963 | polio_paralytic | New Hampshire | - | 10
+1963 | polio_paralytic | Rhode Island | - | 10
+1963 | polio_paralytic | Iowa | - | 10
+1963 | polio_paralytic | North Dakota | - | 10
+1963 | polio_paralytic | Kansas | - | 10
+1963 | polio_paralytic | Delaware | 1 | 10
+1963 | polio_paralytic | District of Columbia | 1 | 10
+1963 | polio_paralytic | Kentucky | - | 10
+1963 | polio_paralytic | Alabama | 49 | 10
+1963 | polio_paralytic | Mississippi | 15 | 10
+1963 | polio_paralytic | Montana | - | 10
+1963 | polio_paralytic | Wyoming | - | 10
+1963 | polio_paralytic | New Mexico | - | 10
+1963 | polio_paralytic | California | 15 | 10
+1963 | polio_paralytic | Alaska | - | 10
+1963 | polio_paralytic | Hawaii | - | 10
+1964 | polio_paralytic | Montana | - | 12
+1964 | polio_paralytic | New Mexico | - | 12
+1964 | polio_paralytic | Washington | - | 12
+1964 | polio_paralytic | Hawaii | - | 12
+"""
+for _ln in _PP_IMAGE.strip().splitlines():
+    if _ln.startswith("#"):
+        continue
+    _y, _d, _a, _t, _p = [x.strip() for x in _ln.split("|")]
+    SCAN_IMAGE_CELLS[(int(_y), _d, _a)] = (_t, int(_p))
+
+_PP_COLUMNS = {
+    1960: "10 | 2,525 | New England 195: Maine 49, New Hampshire 1, Vermont 10, Massachusetts 29, Rhode Island 79, Connecticut 27; "
+          "Middle Atlantic 409: New York 213, New Jersey 64, Pennsylvania 132; "
+          "East North Central 395: Ohio 89, Indiana 117, Illinois 112, Michigan 56, Wisconsin 21; "
+          "West North Central 109: Minnesota 37, Iowa 6, Missouri 38, North Dakota 6, South Dakota 2, Nebraska 11, Kansas 9; "
+          "South Atlantic 488: Maryland 147, District of Columbia 5, Virginia 55, West Virginia 51, North Carolina 64, South Carolina 92, Georgia 27, Florida 47; "
+          "East South Central 249: Kentucky 127, Tennessee 41, Alabama 24, Mississippi 57; "
+          "West South Central 191: Arkansas 27, Louisiana 32, Oklahoma 14, Texas 118; "
+          "Mountain 77: Montana 15, Idaho 10, Wyoming 18, Colorado 21, New Mexico 4, Arizona 4, Utah 5; "
+          "Pacific 412: Washington 46, Oregon 17, California 340, Alaska 1, Hawaii 8",
+    1962: "10 | 762 | New England 13: New Hampshire 3, Vermont 1, Massachusetts 7, Connecticut 2; "
+          "Middle Atlantic 79: New York 53, New Jersey 7, Pennsylvania 19; "
+          "East North Central 124: Ohio 18, Indiana 24, Illinois 54, Michigan 19, Wisconsin 9; "
+          "West North Central 35: Minnesota 7, Iowa 4, Missouri 10, North Dakota 3, South Dakota 2, Nebraska 9; "
+          "South Atlantic 77: Maryland 2, District of Columbia 1, Virginia 8, West Virginia 18, North Carolina 13, South Carolina 7, Georgia 18, Florida 10; "
+          "East South Central 72: Kentucky 20, Tennessee 8, Alabama 21, Mississippi 23; "
+          "West South Central 267: Arkansas 21, Louisiana 31, Oklahoma 29, Texas 186; "
+          "Mountain 13: Montana 1, Idaho 1, Wyoming 1, Colorado 4, New Mexico 2, Arizona 3, Utah 1; "
+          "Pacific 82: Washington 6, Oregon 4, California 72",
+    1965: "11 | 61 | New England 1: Massachusetts 1; Middle Atlantic 4: NY_UP 1, New Jersey 3; East North Central 5: Illinois 4, Michigan 1; "
+          "West North Central 10: Minnesota 1, Iowa 3, Missouri 1, Nebraska 4, Kansas 1; South Atlantic 3: Maryland 1, South Carolina 1, Georgia 1; "
+          "East South Central 2: Tennessee 1, Mississippi 1; West South Central 24: Arkansas 2, Louisiana 1, Oklahoma 2, Texas 19; "
+          "Mountain 3: Colorado 1, Arizona 2; Pacific 9: Washington 3, Oregon 1, California 5",
+    1966: "8 | 106 | Middle Atlantic 1: Pennsylvania 1; East North Central 7: Ohio 2, Indiana 2, Illinois 2, Michigan 1; West North Central 1: Minnesota 1; "
+          "South Atlantic 4: West Virginia 2, Georgia 1, Florida 1; East South Central 4: Alabama 1, Mississippi 3; "
+          "West South Central 75: Louisiana 1, Oklahoma 1, Texas 73; Pacific 14: Washington 5, California 9",
+    1967: "8 | 40 | Middle Atlantic 5: NY_CITY 1, NY_UP 1, Pennsylvania 3; East North Central 7: Indiana 3, Illinois 1, Michigan 3; "
+          "West North Central 4: Iowa 1, Missouri 1, Kansas 2; South Atlantic 2: Maryland 1, North Carolina 1; East South Central 2: Mississippi 2; "
+          "West South Central 14: Arkansas 1, Louisiana 1, Oklahoma 2, Texas 10; Mountain 1: Colorado 1; Pacific 5: California 5*",
+    1968: "8 | 53 | New England 2: Maine 1, Massachusetts 1; Middle Atlantic 2: NY_CITY 1, NY_UP 1; East North Central 11: Ohio 2, Indiana 3, Illinois 3, Michigan 3; "
+          "West North Central 3: Iowa 1, Missouri 2; South Atlantic 3: District of Columbia 1, West Virginia 1, North Carolina 1; East South Central 1: Kentucky 1; "
+          "West South Central 24: Arkansas 1, Oklahoma 1, Texas 22; Mountain 4: New Mexico 3*, Arizona 1; Pacific 3: Washington 1, California 2**",
+    1969: "8 | 18 | New England 2: Maine 1, Connecticut 1; Middle Atlantic 2: NY_UP 1, Pennsylvania 1; East North Central 2: Illinois 1, Michigan 1; "
+          "West North Central 1: Kansas 1; South Atlantic 1: Florida 1; East South Central 1: Alabama 1; West South Central 7: Arkansas 1, Texas 6; "
+          "Mountain 1: Montana 1; Pacific 1: California 1",
+    1970: "8 | 31 | East North Central 3: Illinois 1, Michigan 2; West North Central 1: Missouri 1; East South Central 1: Mississippi 1; "
+          "West South Central 22: Texas 22; Mountain 1: Colorado 1; Pacific 3: Washington 1, California 2",
+    1971: "8 | 17 | Middle Atlantic 1: New Jersey 1; East North Central 2: Indiana 1, Illinois 1; West North Central 1: Iowa 1; "
+          "West South Central 4: Texas 4; Mountain 3: Montana 1, Colorado 1, Nevada 1; Pacific 6: Washington 1, Oregon 1, California 4",
+    1972: "8 | 29 | New England 12: Maine 1, Connecticut 11; Middle Atlantic 5: NY_UP 4, NY_CITY 1; East North Central 3: Indiana 1, Michigan 1, Wisconsin 1; "
+          "West North Central 1: Iowa 1; South Atlantic 2: Virginia 1, Florida 1; West South Central 4: Texas 4; Pacific 2: California 2",
+    1973: "12 | 7 | Middle Atlantic 1: Pennsylvania 1; West North Central 1: Iowa 1; South Atlantic 2: Maryland 1, Virginia 1; Pacific 3: California 2, Hawaii 1",
+    1974: "12 | 7 | East North Central 3: Indiana 1, Michigan 2; West North Central 2: Iowa 2; South Atlantic 1: Virginia 1; East South Central 1: Alabama 1",
+    1975: "12 | 8 | New England 1: Connecticut 1; Middle Atlantic 1: Pennsylvania 1; East North Central 1: Indiana 1; East South Central 1: Tennessee 1; "
+          "West South Central 2: Texas 2; Pacific 2: California 2",
+    1976: "13 | 12 | New England 2: New Hampshire 1, Connecticut 1; Middle Atlantic 1: NY_CITY 1; East North Central 2: Indiana 1, Michigan 1; "
+          "West North Central 1: Minnesota 1; South Atlantic 1: Maryland 1; West South Central 1: Arkansas 1; Mountain 1: Arizona 1; Pacific 3: Washington 1, California 2",
+    1977: "14 | 17 | New England 2: New Hampshire 2; Middle Atlantic 1: NY_CITY 1; East North Central 1: Indiana 1; West North Central 5: Minnesota 4, North Dakota 1; "
+          "South Atlantic 2: Maryland 1, South Carolina 1; West South Central 3: Texas 3; Mountain 1: Arizona 1; Pacific 2: Washington 1, Oregon 1",
+    1978: "21 | 9 | East North Central 2: Ohio 1, Michigan 1; South Atlantic 3: Virginia 1, North Carolina 1, Georgia 1; Mountain 1: New Mexico 1; "
+          "Pacific 3: Washington 1, California 1, Hawaii 1",
+    1979: "13 | 26 | New England 1: Massachusetts 1; Middle Atlantic 9: NY_CITY 1, Pennsylvania 8; East North Central 4: Illinois 1, Wisconsin 3; "
+          "West North Central 6: Minnesota 1, Iowa 3, Missouri 1, Nebraska 1; South Atlantic 1: North Carolina 1; Mountain 1: Arizona 1; Pacific 4: Washington 1, California 3",
+    1980: "19 | 8 | Middle Atlantic 1: New Jersey 1; East North Central 1: Michigan 1; West South Central 1: Louisiana 1; Mountain 1: Wyoming 1; "
+          "Pacific 4: Washington 1, Oregon 1, California 2",
+    1981: "22 | 6 | West North Central 3: Minnesota 1, Missouri 1, Nebraska 1; South Atlantic 2: Maryland 1, West Virginia 1; Pacific 1: Washington 1",
+    1982: "16 | 8 | Middle Atlantic 1: NY_CITY 1; East North Central 2: Indiana 2; West North Central 1: Iowa 1; Mountain 1: Idaho 1; Pacific 3: Washington 1, California 2",
+    1983: "21 | 15 | Middle Atlantic 2: NY_CITY 1, Pennsylvania 1; East North Central 5: Ohio 1, Indiana 3, Illinois 1; West North Central 2: Missouri 2; "
+          "East South Central 1: Kentucky 1; West South Central 2: Louisiana 1, Texas 1; Pacific 3: Washington 1, Oregon 1, California 1",
+    1984: "16 | 8† | Middle Atlantic 2: Pennsylvania 2; West North Central 1: Minnesota 1; South Atlantic 1: Maryland 1; East South Central 1: Tennessee 1; "
+          "West South Central 2: Louisiana 1, Texas 1; Pacific 1: California 1",
+    1985: "12 | 7† | New England 1: Massachusetts 1; Middle Atlantic 1: NY_CITY 1; West North Central 1: Missouri 1; South Atlantic 1: Florida 1; "
+          "Mountain 1: Nevada 1; Pacific 2: California 2",
+    1986: "12 | 3† | East North Central 1: Michigan 1; South Atlantic 1: Georgia 1; Pacific 1: California 1§",
+    1987: "12 | -† | ",
+    1988: "15 | 9† | New England 1: Massachusetts 1; East North Central 2: Illinois 1, Wisconsin 1; West North Central 1: Missouri 1; South Atlantic 1: South Carolina 1; "
+          "West South Central 2: Oklahoma 1, Texas 1; Mountain 1: Wyoming 1; Pacific 1: Washington 1",
+    1989: "13 | 5† | South Atlantic 3: Maryland 1, North Carolina 1, Georgia 1; East South Central 1: Kentucky 1; Pacific 1: California 1",
+    1990: "19 | 7† | Middle Atlantic 3: NY_UP 2, Pennsylvania 1; South Atlantic 1: Florida 1; West South Central 2: Texas 2; Mountain 1: Arizona 1",
+    1992: "23 | 4† | New England 1: Rhode Island 1; East South Central 1: Kentucky 1; Pacific 2: Washington 1, California 1",
+}
 # Symbol legends read from the page image where the OCR layer garbled them.
 _NN_OLD = "Report of disease not required by State Health Department"
 _M5657 = {"-": "No cases reported (1 dash)", "*": "Disease stated not notifiable (1 asterisk)",
@@ -1307,6 +1866,26 @@ DIVISIONS = {
 }
 
 
+# (year, disease) -> (PDF page, header as printed, United States cell as printed)
+SCAN_IMAGE_COLUMNS = {}
+for _y, _spec in _PP_COLUMNS.items():
+    _pg, _us, _rest = [x.strip() for x in _spec.split("|")]
+    _vals = {US: _us}
+    for _part in filter(None, (x.strip() for x in _rest.split(";"))):
+        _head, _states = _part.split(":")
+        _dv, _dt = _head.strip().rsplit(" ", 1)
+        _vals[_dv] = _dt
+        for _it in _states.split(","):
+            _a, _v = _it.strip().rsplit(" ", 1)
+            _vals[{"NY_UP": NY_UP, "NY_CITY": NY_CITY}.get(_a, _a)] = _v
+    _ny = ["New York"] if "New York" in _vals else [NY_UP, NY_CITY]
+    for _a in [US] + list(DIVISIONS) + [x for x in STATES if x != "New York"] + _ny:
+        assert _a == US or _a in DIVISIONS or _a in STATES or _a in (NY_UP, NY_CITY), _a
+        SCAN_IMAGE_CELLS[(_y, "polio_paralytic", _a)] = (_vals.pop(_a, "-"), int(_pg))
+    assert not _vals, (_y, _vals)      # every name in the list above was a real row
+    SCAN_IMAGE_COLUMNS[(_y, "polio_paralytic")] = (int(_pg), "POLIOMYELITIS Paralytic", _us)
+
+
 def scan_url(year):
     r = SCAN_ISSUES[year]
     return "https://stacks.cdc.gov/view/cdc/%d/cdc_%d_DS1.pdf" % (r, r)
@@ -1327,7 +1906,8 @@ def scan_layout(year, cells, disease):
     """(need, divisions) for one scanned disease-year.
     New York is one row in the older tables and two rows (upstate, city) later.
     Alaska and Hawaii are not in the tables before they became states (1959)."""
-    single_ny = any(a == "New York" for (a, _, d, _, _) in cells if d == disease) or \
+    # a "New York" label with no number is a footnote line ("... New York)."), not a row
+    single_ny = any(a == "New York" and r.strip() for (a, _, d, r, _) in cells if d == disease) or \
         any(k[0] == year and k[1] == disease and k[2] == "New York" for k in SCAN_IMAGE_CELLS)
     ny = ["New York"] if single_ny else [NY_UP, NY_CITY]
     # Alaska joins the tables in 1959, Hawaii in 1960 (statehood 1959)
@@ -1355,6 +1935,26 @@ def scan_layout(year, cells, disease):
 
 
 NOT_YET_STATE = "not in the table (not yet a state)"
+
+
+def scan_hepatitis_a_column(texts):
+    """{"hepatitis_a": column index} for a scanned table page, or {}.
+    The column is headed "Hepatitis, infectious" (1966-1971), "Infectious (A)"
+    (1972), a bare "A" under "Hepatitis" (1973-1977) or "Hepatitis A". Serum,
+    B, non-A non-B and unspecified hepatitis, post-infectious encephalitis and
+    the by-month and by-age detail tables are not this column."""
+    for i, t in enumerate(texts):
+        low = re.sub(r"\s+", " ", t.lower())
+        sq = re.sub(r"[^a-z]", "", low)
+        if sq == "a":
+            return {"hepatitis_a": i}
+        if "hepatitis" not in sq and "infectious" not in sq:
+            continue
+        if re.search(r"serum|unsp|nona|hepatitisb|post", sq) or re.search(r"jan|apr|<1|\b5-9\b", low):
+            continue
+        if "infectious" in sq or re.search(r"hepatitisa($|[^n])", sq):
+            return {"hepatitis_a": i}
+    return {}
 
 
 def deskewed_lines(page, tol=2.6):
@@ -1419,8 +2019,12 @@ def parse_scan_pdf(year):
                     res["colmap"].append((d, pno, hdr_txt + " [read from page image]", us_txt))
             continue
         # spaces removed: some OCR layers are letter-spaced ("M U M P S")
-        if not re.search(r"(?i)pertussis|indigenous|rubeola|measles|mumps", re.sub(r"\s", "", text)):
+        squeezed = re.sub(r"\s", "", text)
+        if not re.search(r"(?i)pertussis|indigenous|rubeola|measles|mumps|hepatitis", squeezed):
             continue
+        # a page that only mentions hepatitis is read for hepatitis A alone: its
+        # other headers ("Imported" under Malaria) are not the measles columns
+        hepatitis_page_only = not re.search(r"(?i)pertussis|indigenous|rubeola|measles|mumps", squeezed)
         if len(re.findall(r"\d", text)) < 250:
             continue
         slope, lines = deskewed_lines(page)
@@ -1496,11 +2100,17 @@ def parse_scan_pdf(year):
             # column header the OCR layer lost, read from the page image
             texts[j] = txt + " [header read from page image]"
         try:
-            cmap = classify_columns(texts, False)
+            cmap = {} if hepatitis_page_only else classify_columns(texts, False)
+            if re.search(r"(?i)post-?infectious|arbovirus", " ".join(texts)) or (year == 1964 and pno == 9):
+                # the encephalitis table has "Measles" and "Mumps" columns of its own
+                # (post-infectious encephalitis): never the disease counts
+                cmap = {}
+            cmap.update(scan_hepatitis_a_column(texts))
         except ValueError as e:
             res["warn"].append("p%d: %s" % (pno, e))
             continue
-        cmap = {d: j for d, j in cmap.items() if d in SCAN_DISEASES and d not in seen}
+        cmap = {d: j for d, j in cmap.items() if d in SCAN_DISEASES and d not in seen
+                and (year, d) not in SCAN_IMAGE_COLUMNS}
         if not cmap:
             continue
         for (area, lab, cols) in rows:
@@ -1517,6 +2127,11 @@ def parse_scan_pdf(year):
             res["colmap"].append((d, pno, texts[j], us_vals[j][4]))
             # where the column sits on the page, for rendering it as an image
             res.setdefault("geom", {})[d] = (pno, lower[j], upper[j], lower[0], us_y - 40, last_y + 4)
+    for (y_, d), (pg, hdr_txt, us_txt) in SCAN_IMAGE_COLUMNS.items():
+        # a whole column read from the page image (every cell is in SCAN_IMAGE_CELLS)
+        if y_ == year and d not in seen:
+            seen[d] = pg
+            res["colmap"].append((d, pg, hdr_txt + " [read from page image]", us_txt))
     res["marks"] = find_mark_defs(res["text"])
     for mk, (meaning, pg) in SCAN_IMAGE_MARKS.get(year, {}).items():
         # the legend as seen on the page image replaces whatever the OCR layer gave
@@ -1547,6 +2162,8 @@ def scan_validate(cells, marks, disease, year=None, all_errors=False):
     def interpret(text, prefix):
         """-> (cases, flag) or None when the text is not a number or a defined mark."""
         text = text.strip()
+        # a footnote mark printed in front of the number ("*873") goes behind it
+        text = re.sub(r"^([%s]+)(\d.*)$" % FOOT, r"\2\1", text)
         if re.fullmatch(r"[.…·]{3,}", text):     # "..." = data not available (1960-1974)
             return ("", prefix + "...") if "..." in marks else None
         if "---" in marks:
@@ -2064,7 +2681,7 @@ def main():
                                      'Table 2 footnote: "%s"' % sentence[:300]])
                 sumcheck.append([year, d, 0, 0, "fn0", 0, "OK (footnote: no cases in US)", "", "", fname])
 
-    # ---- scanned annual summaries (measles, pertussis and mumps)
+    # ---- scanned annual summaries (measles, pertussis, mumps and hepatitis A)
     for year in sorted(SCAN_ISSUES):
         sc = parse_scan_pdf(year)
         if sc is None:
@@ -2076,6 +2693,11 @@ def main():
         # before 1968 (mumps not yet notifiable) only pertussis is read
         wanted = ("pertussis",) if year < 1968 else \
             ("measles", "measles_indigenous", "measles_imported", "pertussis", "mumps")
+        if year >= 1966:     # the first year infectious hepatitis has its own column
+            wanted += ("hepatitis_a",)
+        if year <= 1967:     # measles from the first scanned year (Tycho has no New York row for 1964-1967)
+            wanted += ("measles",)
+        wanted += ("polio_paralytic",)     # every scanned year, 1956-1992
         heads = {d: v for d, v in heads.items() if d in wanted}
         for d in wanted:
             if d not in heads:
@@ -2083,7 +2705,7 @@ def main():
             results[d] = scan_validate(sc["cells"], sc["marks"], d, year)
         split = "measles_indigenous" in heads or "measles_imported" in heads
         accept = set()
-        for d in ("pertussis", "mumps"):
+        for d in ("pertussis", "mumps", "hepatitis_a", "polio_paralytic"):
             if d in results and results[d][0]:
                 accept.add(d)
         if split:

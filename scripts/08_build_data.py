@@ -22,11 +22,19 @@ DISEASES = [
     {"k": "mumps", "name": "Mumps", "color": "#eda100", "vax": "mmr"},
     {"k": "polio", "name": "Polio", "color": "#4a3aa7", "vax": "polio"},
 ]
+# Chart titles name the vaccine only. The lines on one chart do not all count the same
+# number of doses, so VAXNOTE says what each line measures.
 VACCINES = {
-    "mmr": "MMR vaccine, 1+ dose",
-    "dtap": "DTaP vaccine, 4+ doses",
-    "polio": "Polio vaccine, 3+ doses",
-    "hepa": "Hepatitis A vaccine, 2+ doses",
+    "mmr": "Measles vaccine (MMR)",
+    "dtap": "Whooping cough vaccine (DTP, DTaP)",
+    "polio": "Polio vaccine",
+    "hepa": "Hepatitis A vaccine",
+}
+VAXNOTE = {
+    "mmr": "Toddlers: 1 or more doses. Kindergartners: the doses their state requires, 2 in most states. Before 1995: any measles vaccine.",
+    "dtap": "Toddlers: 4 or more doses. Kindergartners: the doses their state requires. Before 1995: 3 or more doses.",
+    "polio": "Toddlers: 3 or more doses. Kindergartners: the doses their state requires. Before 1995: 3 or more doses.",
+    "hepa": "Toddlers: 2 or more doses. No kindergarten or pre-2008 figures.",
 }
 SRC = {"tycho_weekly": "w", "tycho_cumulative": "c", "cdc_annual": "a", "cdc_annual_part": "n", "cdc_weekly": "r"}
 
@@ -86,7 +94,7 @@ def county():
         K.setdefault(r.fips, {})[int(r.year)] = int(r.cases)
     meta = pd.read_csv(DATA / "county_mmr_states.csv").fillna("")
     T = {r.st: {"years": r.years, "unit": r.unit.strip(), "age": r.age, "origin": r.origin, "n": int(r.county_rows)} for r in meta.itertuples()}
-    return M, K, T
+    return M, K, T, mmr
 
 
 def kpis(years):
@@ -227,11 +235,20 @@ def main():
         seen.add(key)
     ms.sort(key=lambda m: m["date"])
 
-    cmmr, cmeasles, cmeta = county()
+    cmmr, cmeasles, cmeta, mmr_rows = county()
     kpi, party = kpis(years)
+    shp = shapes()
+    # county figures the map cannot draw: the file has a value but no shape carries that code
+    # (Connecticut's planning regions, used from 2024-25, are not in the county shapes)
+    known = {f for s in shp.values() for f in s.get("c", {})}
+    lost = mmr_rows[~mmr_rows.fips.isin(known)]
+    for (st_, year), g in lost.groupby(["st", "year"]):
+        cmeta[st_].setdefault("unmapped", {})[int(year)] = [int(len(g)), float(g.pct.min()), float(g.pct.max())]
+    if len(lost):
+        print(len(lost), "county MMR rows have no shape:", lost.groupby(["st", "year"]).size().to_dict())
     out = {
-        "kpis": kpi, "party": party, "shapes": shapes(), "cmmr": cmmr, "cmeasles": cmeasles, "cmeta": cmeta,
-        "y0": Y0, "y1": Y1, "unit": UNIT, "diseases": DISEASES, "vaccines": VACCINES,
+        "kpis": kpi, "party": party, "shapes": shp, "cmmr": cmmr, "cmeasles": cmeasles, "cmeta": cmeta,
+        "y0": Y0, "y1": Y1, "unit": UNIT, "diseases": DISEASES, "vaccines": VACCINES, "vaxnote": VAXNOTE,
         "states": [{"k": s, "n": STATES[s], "c": GRID[s][0], "r": GRID[s][1]} for s in sorted(STATES)],
         "pop": P, "income": INC, "cases": C, "src": S, "weeks": W, "vax": V, "licensed": L, "milestones": ms,
     }

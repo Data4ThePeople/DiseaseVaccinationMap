@@ -1,100 +1,176 @@
 year,source,disease,page_or_table,printed_column_header,us_total_cell
+1956,scan pdf,polio_paralytic,8,"POLIOMYELITIS, Paralytic 080.0, 080.1","7,911"
+1956,scan pdf,measles,8,Measles AREA 085,"611,936"
 1956,scan pdf,pertussis,10,Whooping cough (pertussis) 056,"31,732"
+1957,scan pdf,polio_paralytic,8,"POLIOMYELITIS, Paralytic 080.0, 080.1","2,499"
+1957,scan pdf,measles,8,Measles AREA 085,"486,799"
 1957,scan pdf,pertussis,10,Whooping cough (pertussis) 056,"28,295"
+1958,scan pdf,polio_paralytic,8,"Paralytic 080.0, 080.1","3,697"
+1958,scan pdf,measles,8,Measles AREA 085,"763,094"
 1958,scan pdf,pertussis,10,Whooping cough (pertussis) 056,"32,148"
+1959,scan pdf,polio_paralytic,9,"POLIOMYELITIS Paralytic 080.0, 080.1","6,289"
+1959,scan pdf,measles,9,Measles AREA 085,"406,162"
 1959,scan pdf,pertussis,11,Whooping cough (pertussis) 056,"40,005"
 1960,scan pdf,pertussis,9,PERTUSSIS (whooping cough) [read from page image],"14,809"
+1960,scan pdf,measles,9,MEASLES [read from page image],"441,703"
+1960,scan pdf,polio_paralytic,10,POLIOMYELITIS Paralytic [read from page image],"2,525"
+1961,scan pdf,polio_paralytic,9,Paralytic,988
+1961,scan pdf,measles,9,MEASLES,"423,919"
 1961,scan pdf,pertussis,10,PERTUSSIS (whooping AREA cough),"11,468"
+1962,scan pdf,measles,9,MEASLES,"481,530"
 1962,scan pdf,pertussis,10,REPORTED CASES PERTUSSIS (Whooping Cough),"17,749"
+1962,scan pdf,polio_paralytic,10,POLIOMYELITIS Paralytic [read from page image],762
+1963,scan pdf,measles,9,MEASLES,"385,156"
 1963,scan pdf,pertussis,10,PERTUSSIS (Whooping Cough),"17,135"
+1963,scan pdf,polio_paralytic,10,Paralytic,396
+1964,scan pdf,measles,11,MEASLES,"458,083"
 1964,scan pdf,pertussis,12,PERTUSSIS AREA (Whooping Cough),"13,005"
+1964,scan pdf,polio_paralytic,12,POLIOMYELITIS Paralytic,106
 1965,scan pdf,pertussis,10,PERTUSSIS (Whooping Cough,6.799
+1965,scan pdf,measles,10,MEASLES.,"261,904"
+1965,scan pdf,polio_paralytic,11,POLIOMYELITIS Paralytic [read from page image],61
+1966,scan pdf,hepatitis_a,9,HEPATITIS INFECTIOUS,"32,859"
 1966,scan pdf,pertussis,10,PERTUSSIS,"7,717"
+1966,scan pdf,measles,10,AREA MEASLES,"204,136"
+1966,scan pdf,polio_paralytic,8,POLIOMYELITIS Paralytic [read from page image],106
+1967,scan pdf,hepatitis_a,9,HEPATITIS INFECTIOUS [read from page image],"38,909"
 1967,scan pdf,pertussis,10,PERTUSSIS,"9,718"
+1967,scan pdf,measles,10,AREA MEASLES,"62,705"
+1967,scan pdf,polio_paralytic,8,POLIOMYELITIS Paralytic [read from page image],40
+1968,scan pdf,hepatitis_a,9,Infectious,"45,893"
 1968,scan pdf,mumps,10,MUMPS,"152,209"
 1968,scan pdf,pertussis,10,PERTUSSIS,"4,810"
 1968,scan pdf,measles,10,AREA MEASLES,"22,231"
+1968,scan pdf,polio_paralytic,8,POLIOMYELITIS Paralytic [read from page image],53
+1969,scan pdf,hepatitis_a,9,HEPATITIS Infectious,"48,416"
 1969,scan pdf,mumps,10,MUMPS,"90,918"
 1969,scan pdf,pertussis,10,PERTUSSIS,"3,285"
 1969,scan pdf,measles,10,AREA MEASLES,"25,826"
+1969,scan pdf,polio_paralytic,8,POLIOMYELITIS Paralytic [read from page image],18
+1970,scan pdf,hepatitis_a,9,HEPATITIS Infectious,"56,797"
 1970,scan pdf,mumps,10,MUMPS,"104,953"
 1970,scan pdf,measles,10,AREA MEASLES,"47,351"
+1970,scan pdf,polio_paralytic,8,POLIOMYELITIS Paralytic [read from page image],31
+1971,scan pdf,hepatitis_a,9,HEPATITIS Infectious,"59,606"
 1971,scan pdf,mumps,10,MUMPS,"124,939"
 1971,scan pdf,pertussis,10,PERTUSSIS,"3,036"
 1971,scan pdf,measles,10,MEASLES AREA,"75,290"
+1971,scan pdf,polio_paralytic,8,POLIOMYELITIS Paralytic [read from page image],17
+1972,scan pdf,hepatitis_a,9,HEPATITIS Infectious (A),"54,074"
 1972,scan pdf,mumps,10,MUMPS,"74,215"
 1972,scan pdf,pertussis,10,PERTUSSIS,"3,287"
 1972,scan pdf,measles,10,AREA MEASLES,"32,275"
+1972,scan pdf,polio_paralytic,8,POLIOMYELITIS Paralytic [read from page image],29
+1973,scan pdf,hepatitis_a,9,A,"50,749"
 1973,scan pdf,mumps,10,MUMPS,"69,612"
 1973,scan pdf,pertussis,10,PERTUSSIS,"1,759"
 1973,scan pdf,measles,10,MEASLES,"26,690"
+1973,scan pdf,polio_paralytic,12,POLIOMYELITIS Paralytic [read from page image],7
+1974,scan pdf,hepatitis_a,9,A,"40,358"
 1974,scan pdf,mumps,10,MUMPS,"59,128"
 1974,scan pdf,pertussis,10,PERTUSSIS,"2,402"
 1974,scan pdf,measles,10,MEASLES,"22,094"
+1974,scan pdf,polio_paralytic,12,POLIOMYELITIS Paralytic [read from page image],7
+1975,scan pdf,hepatitis_a,9,A,"35,855"
 1975,scan pdf,mumps,10,MUMPS,"59,647"
 1975,scan pdf,pertussis,10,PERTUSSIS,"1,738"
 1975,scan pdf,measles,10,MEASLES,"24,374"
+1975,scan pdf,polio_paralytic,12,POLIOMYELITIS Paralytic [read from page image],8
+1976,scan pdf,hepatitis_a,10,A,"33,288"
 1976,scan pdf,mumps,11,MUMPS,"38,492"
 1976,scan pdf,pertussis,11,PERTUSSIS,"1,010"
 1976,scan pdf,measles,11,MEASLES,"41,126"
+1976,scan pdf,polio_paralytic,13,POLIOMYELITIS Paralytic [read from page image],12
+1977,scan pdf,hepatitis_a,11,VIRAL HEPATITIS A [read from page image],"31,153"
 1977,scan pdf,mumps,12,MUMPS,"21,436"
 1977,scan pdf,pertussis,12,PERTUSSIS,"2,177"
 1977,scan pdf,measles,12,MEASLES,"57,345"
+1977,scan pdf,polio_paralytic,14,POLIOMYELITIS Paralytic [read from page image],17
+1978,scan pdf,hepatitis_a,20,NOTIFIABLE DISEASES HepatitisA,"29,500"
 1978,scan pdf,mumps,21,Mumps,"16,817"
 1978,scan pdf,pertussis,21,Pertussis,"2,063"
 1978,scan pdf,measles,21,Measles,"26,871"
+1978,scan pdf,polio_paralytic,21,POLIOMYELITIS Paralytic [read from page image],9
+1979,scan pdf,hepatitis_a,12,NOTIFIABLE DISEASES HepatitisA,"30,407"
 1979,scan pdf,mumps,13,Mumps,"14,225"
 1979,scan pdf,pertussis,13,Pertussis,"1,623"
 1979,scan pdf,measles,13,Measles,13.5972
+1979,scan pdf,polio_paralytic,13,POLIOMYELITIS Paralytic [read from page image],26
+1980,scan pdf,hepatitis_a,18,NOTIFIABLE DISEASES HepatitisA,"29,087"
 1980,scan pdf,mumps,19,Mumps,"8,576"
 1980,scan pdf,pertussis,19,Pertussis,"1,730"
 1980,scan pdf,measles,19,Measles,13.5062
+1980,scan pdf,polio_paralytic,19,POLIOMYELITIS Paralytic [read from page image],8
+1981,scan pdf,hepatitis_a,21,Hepatitis A,"25,802"
 1981,scan pdf,measles,70,Measles (Rubeola) Total [header read from page image],"3,124"
 1981,scan pdf,mumps,79,MUMPS Total,"4,941"
 1981,scan pdf,pertussis,81,PERTUSSIS Total,"1,248"
+1981,scan pdf,polio_paralytic,22,POLIOMYELITIS Paralytic [read from page image],6
+1982,scan pdf,hepatitis_a,15,HepatitisA,"23,403"
 1982,scan pdf,mumps,16,Mumps,"5,270"
 1982,scan pdf,pertussis,16,Pertussis,"1,895"
 1982,scan pdf,measles,16,Measles,"1,714"
+1982,scan pdf,polio_paralytic,16,POLIOMYELITIS Paralytic [read from page image],8
+1983,scan pdf,hepatitis_a,20,NOTIFIABLE DISEASES HepatitisA,"21,532"
 1983,scan pdf,measles_indigenous,21,Indigenous,"1,163"
 1983,scan pdf,measles_imported,21,Measles Imported,334*
 1983,scan pdf,mumps,21,Mumps,"3,355"
 1983,scan pdf,pertussis,21,Pertussis,"2,463"
+1983,scan pdf,polio_paralytic,21,POLIOMYELITIS Paralytic [read from page image],15
+1984,scan pdf,hepatitis_a,15,NOTIFIABLE DISEASES NOTIFIABLE HepatitisA,"22,040"
 1984,scan pdf,measles_indigenous,16,Indigenous,"2,272"
 1984,scan pdf,measles_imported,16,Imported,315*
 1984,scan pdf,mumps,16,Mumps,"3,021"
 1984,scan pdf,pertussis,16,Pertussis,2.276
+1984,scan pdf,polio_paralytic,16,POLIOMYELITIS Paralytic [read from page image],8†
+1985,scan pdf,hepatitis_a,11,HepatitisA,"23,210*"
 1985,scan pdf,measles_indigenous,12,Indigenous,"2,410"
 1985,scan pdf,measles_imported,12,Measles Imported,412*
 1985,scan pdf,mumps,12,Mumps,"2,982"
 1985,scan pdf,pertussis,12,Pertussis,"3,589"
+1985,scan pdf,polio_paralytic,12,POLIOMYELITIS Paralytic [read from page image],7†
+1986,scan pdf,hepatitis_a,11,Hepatitis A [header read from page image],"23,430"
 1986,scan pdf,measles_indigenous,12,Measles Indigenous [header read from page image],"5,955"
 1986,scan pdf,measles_imported,12,Measles Imported [header read from page image],327*
 1986,scan pdf,mumps,12,Mumps,"7,790"
 1986,scan pdf,pertussis,12,bygeographicdivision Pertussis,"4,195"
+1986,scan pdf,polio_paralytic,12,POLIOMYELITIS Paralytic [read from page image],3†
+1987,scan pdf,hepatitis_a,11,HepatitisA,"25,280"
 1987,scan pdf,measles_indigenous,12,Meaelee Indigenous,"3,240"
 1987,scan pdf,measles_imported,12,Imported,415*
 1987,scan pdf,mumps,12,Mumps,"12,848"
 1987,scan pdf,pertussis,12,Pertussis,"2,823"
+1987,scan pdf,polio_paralytic,12,POLIOMYELITIS Paralytic [read from page image],-†
+1988,scan pdf,hepatitis_a,14,HepatitisA,"28,507"
 1988,scan pdf,measles_indigenous,15,Measles Indigenous,"3,058"
 1988,scan pdf,measles_imported,15,Imported,338*
 1988,scan pdf,mumps,15,Mumps,"4,866"
 1988,scan pdf,pertussis,15,Pertussis,"3,450"
+1988,scan pdf,polio_paralytic,15,POLIOMYELITIS Paralytic [read from page image],9†
+1989,scan pdf,hepatitis_a,12,HepatitisA,"35,821"
 1989,scan pdf,measles_indigenous,13,Measles Indigenous,"17,351"
 1989,scan pdf,measles_imported,13,Imported,842*
 1989,scan pdf,mumps,13,Mumps,"5,712"
 1989,scan pdf,pertussis,13,Pertussis,"4,157"
+1989,scan pdf,polio_paralytic,13,POLIOMYELITIS Paralytic [read from page image],5†
+1990,scan pdf,hepatitis_a,18,HepatitisA,"31,441"
 1990,scan pdf,measles_indigenous,19,Measles Indigenous,"26,527"
 1990,scan pdf,measles_imported,19,Imported,"1,259*"
 1990,scan pdf,mumps,19,Mumps,"5,292"
 1990,scan pdf,pertussis,19,Pertussis,"4,570"
+1990,scan pdf,polio_paralytic,19,POLIOMYELITIS Paralytic [read from page image],7†
+1991,scan pdf,hepatitis_a,20,Hepatitis A [header read from page image],"24,378"
 1991,scan pdf,measles_indigenous,21,Measles Indigenous,"9,411"
 1991,scan pdf,measles_imported,21,Imported,232*
 1991,scan pdf,mumps,21,Mumps,"4,264"
 1991,scan pdf,pertussis,21,Pertussis,"2,719"
+1991,scan pdf,polio_paralytic,21,"Polio­ myelitis, paralytic",6*
+1992,scan pdf,hepatitis_a,22,HepatitisA,"23,112"
 1992,scan pdf,measles_indigenous,23,Measles Indigenous,"2,084"
 1992,scan pdf,measles_imported,23,Imported,153*
 1992,scan pdf,mumps,23,Mumps,"2,572"
 1992,scan pdf,pertussis,23,Pertussis,"4,083"
+1992,scan pdf,polio_paralytic,23,POLIOMYELITIS Paralytic [read from page image],4†
 1993,pdf,diphtheria,24,Diphtheria,-
 1993,pdf,hepatitis_a,25,Hepatitis A,"24,238"
 1993,pdf,measles_indigenous,26,Measles Indigenous,237

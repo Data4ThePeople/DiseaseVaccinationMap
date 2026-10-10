@@ -44,7 +44,10 @@ if __name__ == "__main__":
     c = pd.read_csv(RAW / "jhu" / "measles_county_all_updates.csv", dtype=str)
     assert set(c.outcome_type) == {"case_lab-confirmed"} and set(c.location_type) == {"county"}
     c["year"] = c.date.str[:4].astype(int)
-    c["fips"] = c.location_id.str.zfill(5)
+    c["fips"] = c.location_id.fillna("00000").str.zfill(5)   # a row with no id is kept with the unknown-county rows, not dropped
+    c["location_name"] = c.location_name.fillna("unknown")
+    # the tracker files Oklahoma's "Unknown County" cases under a real county code; they are not that county's
+    c.loc[c.location_name.str.startswith("Unknown County") & ~c.fips.str.startswith("00"), "fips"] = "00000"
     c["cases"] = c.value.astype(int)
     out = c.groupby(["fips", "location_name", "year"], as_index=False).cases.sum()
     out.to_csv(DATA / "county_measles.csv", index=False)

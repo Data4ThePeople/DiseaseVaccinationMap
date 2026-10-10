@@ -1,98 +1,174 @@
 year,disease,used,result_of_strict_check,pdf_page,column_header_as_read,us_total_as_read,source_file
 1956,pertussis,yes,all nine division sums and the US sum equal the printed rows,10,Whooping cough (pertussis) 056,"31,732",stacks_10893_DS1.pdf
+1956,measles,yes,all nine division sums and the US sum equal the printed rows,8,Measles AREA 085,"611,936",stacks_10893_DS1.pdf
+1956,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,8,"POLIOMYELITIS, Paralytic 080.0, 080.1","7,911",stacks_10893_DS1.pdf
 1957,pertussis,yes,all nine division sums and the US sum equal the printed rows,10,Whooping cough (pertussis) 056,"28,295",stacks_1035_DS1.pdf
+1957,measles,yes,all nine division sums and the US sum equal the printed rows,8,Measles AREA 085,"486,799",stacks_1035_DS1.pdf
+1957,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,8,"POLIOMYELITIS, Paralytic 080.0, 080.1","2,499",stacks_1035_DS1.pdf
 1958,pertussis,yes,all nine division sums and the US sum equal the printed rows,10,Whooping cough (pertussis) 056,"32,148",stacks_1162_DS1.pdf
+1958,measles,yes,all nine division sums and the US sum equal the printed rows,8,Measles AREA 085,"763,094",stacks_1162_DS1.pdf
+1958,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,8,"Paralytic 080.0, 080.1","3,697",stacks_1162_DS1.pdf
 1959,pertussis,yes,all nine division sums and the US sum equal the printed rows,11,Whooping cough (pertussis) 056,"40,005",stacks_1302_DS1.pdf
+1959,measles,yes,all nine division sums and the US sum equal the printed rows,9,Measles AREA 085,"406,162",stacks_1302_DS1.pdf
+1959,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,9,"POLIOMYELITIS Paralytic 080.0, 080.1","6,289",stacks_1302_DS1.pdf
 1960,pertussis,yes,all nine division sums and the US sum equal the printed rows,9,PERTUSSIS (whooping cough) [read from page image],"14,809",stacks_1360_DS1.pdf
+1960,measles,yes,all nine division sums and the US sum equal the printed rows,9,MEASLES [read from page image],"441,703",stacks_1360_DS1.pdf
+1960,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,10,POLIOMYELITIS Paralytic [read from page image],"2,525",stacks_1360_DS1.pdf
 1961,pertussis,yes,all nine division sums and the US sum equal the printed rows,10,PERTUSSIS (whooping AREA cough),"11,468",stacks_1427_DS1.pdf
+1961,measles,yes,all nine division sums and the US sum equal the printed rows,9,MEASLES,"423,919",stacks_1427_DS1.pdf
+1961,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,9,Paralytic,988,stacks_1427_DS1.pdf
 1962,pertussis,yes,all nine division sums and the US sum equal the printed rows,10,REPORTED CASES PERTUSSIS (Whooping Cough),"17,749",stacks_380_DS1.pdf
+1962,measles,yes,all nine division sums and the US sum equal the printed rows,9,MEASLES,"481,530",stacks_380_DS1.pdf
+1962,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,10,POLIOMYELITIS Paralytic [read from page image],762,stacks_380_DS1.pdf
 1963,pertussis,yes,all nine division sums and the US sum equal the printed rows,10,PERTUSSIS (Whooping Cough),"17,135",stacks_491_DS1.pdf
+1963,measles,yes,all nine division sums and the US sum equal the printed rows,9,MEASLES,"385,156",stacks_491_DS1.pdf
+1963,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,10,Paralytic,396,stacks_491_DS1.pdf
 1964,pertussis,yes,all nine division sums and the US sum equal the printed rows,12,PERTUSSIS AREA (Whooping Cough),"13,005",stacks_698_DS1.pdf
+1964,measles,yes,all nine division sums and the US sum equal the printed rows,11,MEASLES,"458,083",stacks_698_DS1.pdf
+1964,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,12,POLIOMYELITIS Paralytic,106,stacks_698_DS1.pdf
 1965,pertussis,yes,all nine division sums and the US sum equal the printed rows,10,PERTUSSIS (Whooping Cough,6.799,stacks_740_DS1.pdf
+1965,measles,yes,all nine division sums and the US sum equal the printed rows,10,MEASLES.,"261,904",stacks_740_DS1.pdf
+1965,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,11,POLIOMYELITIS Paralytic [read from page image],61,stacks_740_DS1.pdf
 1966,pertussis,yes,all nine division sums and the US sum equal the printed rows,10,PERTUSSIS,"7,717",stacks_615_DS1.pdf
+1966,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,9,HEPATITIS INFECTIOUS,"32,859",stacks_615_DS1.pdf
+1966,measles,yes,all nine division sums and the US sum equal the printed rows,10,AREA MEASLES,"204,136",stacks_615_DS1.pdf
+1966,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,8,POLIOMYELITIS Paralytic [read from page image],106,stacks_615_DS1.pdf
 1967,pertussis,yes,all nine division sums and the US sum equal the printed rows,10,PERTUSSIS,"9,718",stacks_1555_DS1.pdf
+1967,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,9,HEPATITIS INFECTIOUS [read from page image],"38,909",stacks_1555_DS1.pdf
+1967,measles,yes,all nine division sums and the US sum equal the printed rows,10,AREA MEASLES,"62,705",stacks_1555_DS1.pdf
+1967,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,8,POLIOMYELITIS Paralytic [read from page image],40,stacks_1555_DS1.pdf
 1968,measles,yes,all nine division sums and the US sum equal the printed rows,10,AREA MEASLES,"22,231",stacks_1717_DS1.pdf
 1968,pertussis,yes,all nine division sums and the US sum equal the printed rows,10,PERTUSSIS,"4,810",stacks_1717_DS1.pdf
 1968,mumps,yes,all nine division sums and the US sum equal the printed rows,10,MUMPS,"152,209",stacks_1717_DS1.pdf
+1968,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,9,Infectious,"45,893",stacks_1717_DS1.pdf
+1968,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,8,POLIOMYELITIS Paralytic [read from page image],53,stacks_1717_DS1.pdf
 1969,measles,yes,all nine division sums and the US sum equal the printed rows,10,AREA MEASLES,"25,826",stacks_838_DS1.pdf
 1969,pertussis,yes,all nine division sums and the US sum equal the printed rows,10,PERTUSSIS,"3,285",stacks_838_DS1.pdf
 1969,mumps,yes,all nine division sums and the US sum equal the printed rows,10,MUMPS,"90,918",stacks_838_DS1.pdf
+1969,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,9,HEPATITIS Infectious,"48,416",stacks_838_DS1.pdf
+1969,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,8,POLIOMYELITIS Paralytic [read from page image],18,stacks_838_DS1.pdf
 1970,measles,yes,all nine division sums and the US sum equal the printed rows,10,AREA MEASLES,"47,351",stacks_951_DS1.pdf
 1970,pertussis,no,"2 cells not readable in the OCR layer: New York City='163-', Virginia=""163'""",10,PERTUSSIS,"4,249",stacks_951_DS1.pdf
 1970,mumps,yes,all nine division sums and the US sum equal the printed rows,10,MUMPS,"104,953",stacks_951_DS1.pdf
+1970,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,9,HEPATITIS Infectious,"56,797",stacks_951_DS1.pdf
+1970,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,8,POLIOMYELITIS Paralytic [read from page image],31,stacks_951_DS1.pdf
 1971,measles,yes,all nine division sums and the US sum equal the printed rows,10,MEASLES AREA,"75,290",stacks_1829_DS1.pdf
 1971,pertussis,yes,all nine division sums and the US sum equal the printed rows,10,PERTUSSIS,"3,036",stacks_1829_DS1.pdf
 1971,mumps,yes,all nine division sums and the US sum equal the printed rows,10,MUMPS,"124,939",stacks_1829_DS1.pdf
+1971,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,9,HEPATITIS Infectious,"59,606",stacks_1829_DS1.pdf
+1971,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,8,POLIOMYELITIS Paralytic [read from page image],17,stacks_1829_DS1.pdf
 1972,measles,yes,all nine division sums and the US sum equal the printed rows,10,AREA MEASLES,"32,275",stacks_1895_DS1.pdf
 1972,pertussis,yes,all nine division sums and the US sum equal the printed rows,10,PERTUSSIS,"3,287",stacks_1895_DS1.pdf
 1972,mumps,yes,all nine division sums and the US sum equal the printed rows,10,MUMPS,"74,215",stacks_1895_DS1.pdf
+1972,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,9,HEPATITIS Infectious (A),"54,074",stacks_1895_DS1.pdf
+1972,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,8,POLIOMYELITIS Paralytic [read from page image],29,stacks_1895_DS1.pdf
 1973,measles,yes,all nine division sums and the US sum equal the printed rows,10,MEASLES,"26,690",stacks_1849_DS1.pdf
 1973,pertussis,yes,all nine division sums and the US sum equal the printed rows,10,PERTUSSIS,"1,759",stacks_1849_DS1.pdf
 1973,mumps,yes,all nine division sums and the US sum equal the printed rows,10,MUMPS,"69,612",stacks_1849_DS1.pdf
+1973,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,9,A,"50,749",stacks_1849_DS1.pdf
+1973,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,12,POLIOMYELITIS Paralytic [read from page image],7,stacks_1849_DS1.pdf
 1974,measles,yes,all nine division sums and the US sum equal the printed rows,10,MEASLES,"22,094",stacks_1743_DS1.pdf
 1974,pertussis,yes,all nine division sums and the US sum equal the printed rows,10,PERTUSSIS,"2,402",stacks_1743_DS1.pdf
 1974,mumps,yes,all nine division sums and the US sum equal the printed rows,10,MUMPS,"59,128",stacks_1743_DS1.pdf
+1974,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,9,A,"40,358",stacks_1743_DS1.pdf
+1974,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,12,POLIOMYELITIS Paralytic [read from page image],7,stacks_1743_DS1.pdf
 1975,measles,yes,all nine division sums and the US sum equal the printed rows,10,MEASLES,"24,374",stacks_1041_DS1.pdf
 1975,pertussis,yes,all nine division sums and the US sum equal the printed rows,10,PERTUSSIS,"1,738",stacks_1041_DS1.pdf
 1975,mumps,yes,all nine division sums and the US sum equal the printed rows,10,MUMPS,"59,647",stacks_1041_DS1.pdf
+1975,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,9,A,"35,855",stacks_1041_DS1.pdf
+1975,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,12,POLIOMYELITIS Paralytic [read from page image],8,stacks_1041_DS1.pdf
 1976,measles,yes,all nine division sums and the US sum equal the printed rows,11,MEASLES,"41,126",stacks_1130_DS1.pdf
 1976,pertussis,yes,all nine division sums and the US sum equal the printed rows,11,PERTUSSIS,"1,010",stacks_1130_DS1.pdf
 1976,mumps,yes,all nine division sums and the US sum equal the printed rows,11,MUMPS,"38,492",stacks_1130_DS1.pdf
+1976,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,10,A,"33,288",stacks_1130_DS1.pdf
+1976,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,13,POLIOMYELITIS Paralytic [read from page image],12,stacks_1130_DS1.pdf
 1977,measles,yes,all nine division sums and the US sum equal the printed rows,12,MEASLES,"57,345",stacks_10894_DS1.pdf
 1977,pertussis,yes,all nine division sums and the US sum equal the printed rows,12,PERTUSSIS,"2,177",stacks_10894_DS1.pdf
 1977,mumps,yes,all nine division sums and the US sum equal the printed rows,12,MUMPS,"21,436",stacks_10894_DS1.pdf
+1977,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,11,VIRAL HEPATITIS A [read from page image],"31,153",stacks_10894_DS1.pdf
+1977,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,14,POLIOMYELITIS Paralytic [read from page image],17,stacks_10894_DS1.pdf
 1978,measles,yes,all nine division sums and the US sum equal the printed rows,21,Measles,"26,871",stacks_10895_DS1.pdf
 1978,pertussis,yes,all nine division sums and the US sum equal the printed rows,21,Pertussis,"2,063",stacks_10895_DS1.pdf
 1978,mumps,yes,all nine division sums and the US sum equal the printed rows,21,Mumps,"16,817",stacks_10895_DS1.pdf
+1978,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,20,NOTIFIABLE DISEASES HepatitisA,"29,500",stacks_10895_DS1.pdf
+1978,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,21,POLIOMYELITIS Paralytic [read from page image],9,stacks_10895_DS1.pdf
 1979,measles,yes,all nine division sums and the US sum equal the printed rows,13,Measles,13.5972,stacks_1577_DS1.pdf
 1979,pertussis,yes,all nine division sums and the US sum equal the printed rows,13,Pertussis,"1,623",stacks_1577_DS1.pdf
 1979,mumps,yes,all nine division sums and the US sum equal the printed rows,13,Mumps,"14,225",stacks_1577_DS1.pdf
+1979,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,12,NOTIFIABLE DISEASES HepatitisA,"30,407",stacks_1577_DS1.pdf
+1979,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,13,POLIOMYELITIS Paralytic [read from page image],26,stacks_1577_DS1.pdf
 1980,measles,yes,all nine division sums and the US sum equal the printed rows,19,Measles,13.5062,stacks_1484_DS1.pdf
 1980,pertussis,yes,all nine division sums and the US sum equal the printed rows,19,Pertussis,"1,730",stacks_1484_DS1.pdf
 1980,mumps,yes,all nine division sums and the US sum equal the printed rows,19,Mumps,"8,576",stacks_1484_DS1.pdf
+1980,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,18,NOTIFIABLE DISEASES HepatitisA,"29,087",stacks_1484_DS1.pdf
+1980,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,19,POLIOMYELITIS Paralytic [read from page image],8,stacks_1484_DS1.pdf
 1981,measles,yes,all nine division sums and the US sum equal the printed rows,70,Measles (Rubeola) Total [header read from page image],"3,124",stacks_1307_DS1.pdf
 1981,pertussis,yes,all nine division sums and the US sum equal the printed rows,81,PERTUSSIS Total,"1,248",stacks_1307_DS1.pdf
 1981,mumps,yes,all nine division sums and the US sum equal the printed rows,79,MUMPS Total,"4,941",stacks_1307_DS1.pdf
+1981,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,21,Hepatitis A,"25,802",stacks_1307_DS1.pdf
+1981,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,22,POLIOMYELITIS Paralytic [read from page image],6,stacks_1307_DS1.pdf
 1982,measles,yes,all nine division sums and the US sum equal the printed rows,16,Measles,"1,714",stacks_35066_DS1.pdf
 1982,pertussis,yes,all nine division sums and the US sum equal the printed rows,16,Pertussis,"1,895",stacks_35066_DS1.pdf
 1982,mumps,yes,all nine division sums and the US sum equal the printed rows,16,Mumps,"5,270",stacks_35066_DS1.pdf
+1982,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,15,HepatitisA,"23,403",stacks_35066_DS1.pdf
+1982,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,16,POLIOMYELITIS Paralytic [read from page image],8,stacks_35066_DS1.pdf
 1983,measles_indigenous,yes,all nine division sums and the US sum equal the printed rows,21,Indigenous,"1,163",stacks_35188_DS1.pdf
 1983,measles_imported,yes,all nine division sums and the US sum equal the printed rows,21,Measles Imported,334*,stacks_35188_DS1.pdf
 1983,pertussis,yes,all nine division sums and the US sum equal the printed rows,21,Pertussis,"2,463",stacks_35188_DS1.pdf
 1983,mumps,yes,all nine division sums and the US sum equal the printed rows,21,Mumps,"3,355",stacks_35188_DS1.pdf
+1983,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,20,NOTIFIABLE DISEASES HepatitisA,"21,532",stacks_35188_DS1.pdf
+1983,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,21,POLIOMYELITIS Paralytic [read from page image],15,stacks_35188_DS1.pdf
 1984,measles_indigenous,yes,all nine division sums and the US sum equal the printed rows,16,Indigenous,"2,272",stacks_35267_DS1.pdf
 1984,measles_imported,yes,all nine division sums and the US sum equal the printed rows,16,Imported,315*,stacks_35267_DS1.pdf
 1984,pertussis,yes,all nine division sums and the US sum equal the printed rows,16,Pertussis,2.276,stacks_35267_DS1.pdf
 1984,mumps,yes,all nine division sums and the US sum equal the printed rows,16,Mumps,"3,021",stacks_35267_DS1.pdf
+1984,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,15,NOTIFIABLE DISEASES NOTIFIABLE HepatitisA,"22,040",stacks_35267_DS1.pdf
+1984,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,16,POLIOMYELITIS Paralytic [read from page image],8†,stacks_35267_DS1.pdf
 1985,measles_indigenous,yes,all nine division sums and the US sum equal the printed rows,12,Indigenous,"2,410",stacks_35429_DS1.pdf
 1985,measles_imported,yes,all nine division sums and the US sum equal the printed rows,12,Measles Imported,412*,stacks_35429_DS1.pdf
 1985,pertussis,yes,all nine division sums and the US sum equal the printed rows,12,Pertussis,"3,589",stacks_35429_DS1.pdf
 1985,mumps,yes,all nine division sums and the US sum equal the printed rows,12,Mumps,"2,982",stacks_35429_DS1.pdf
+1985,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,11,HepatitisA,"23,210*",stacks_35429_DS1.pdf
+1985,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,12,POLIOMYELITIS Paralytic [read from page image],7†,stacks_35429_DS1.pdf
 1986,measles_indigenous,yes,all nine division sums and the US sum equal the printed rows,12,Measles Indigenous [header read from page image],"5,955",stacks_35496_DS1.pdf
 1986,measles_imported,yes,all nine division sums and the US sum equal the printed rows,12,Measles Imported [header read from page image],327*,stacks_35496_DS1.pdf
 1986,pertussis,yes,all nine division sums and the US sum equal the printed rows,12,bygeographicdivision Pertussis,"4,195",stacks_35496_DS1.pdf
 1986,mumps,yes,all nine division sums and the US sum equal the printed rows,12,Mumps,"7,790",stacks_35496_DS1.pdf
+1986,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,11,Hepatitis A [header read from page image],"23,430",stacks_35496_DS1.pdf
+1986,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,12,POLIOMYELITIS Paralytic [read from page image],3†,stacks_35496_DS1.pdf
 1987,measles_indigenous,yes,all nine division sums and the US sum equal the printed rows,12,Meaelee Indigenous,"3,240",stacks_35629_DS1.pdf
 1987,measles_imported,yes,all nine division sums and the US sum equal the printed rows,12,Imported,415*,stacks_35629_DS1.pdf
 1987,pertussis,yes,all nine division sums and the US sum equal the printed rows,12,Pertussis,"2,823",stacks_35629_DS1.pdf
 1987,mumps,yes,all nine division sums and the US sum equal the printed rows,12,Mumps,"12,848",stacks_35629_DS1.pdf
+1987,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,11,HepatitisA,"25,280",stacks_35629_DS1.pdf
+1987,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,12,POLIOMYELITIS Paralytic [read from page image],-†,stacks_35629_DS1.pdf
 1988,measles_indigenous,yes,all nine division sums and the US sum equal the printed rows,15,Measles Indigenous,"3,058",stacks_35958_DS1.pdf
 1988,measles_imported,yes,all nine division sums and the US sum equal the printed rows,15,Imported,338*,stacks_35958_DS1.pdf
 1988,pertussis,yes,all nine division sums and the US sum equal the printed rows,15,Pertussis,"3,450",stacks_35958_DS1.pdf
 1988,mumps,yes,all nine division sums and the US sum equal the printed rows,15,Mumps,"4,866",stacks_35958_DS1.pdf
+1988,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,14,HepatitisA,"28,507",stacks_35958_DS1.pdf
+1988,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,15,POLIOMYELITIS Paralytic [read from page image],9†,stacks_35958_DS1.pdf
 1989,measles_indigenous,yes,all nine division sums and the US sum equal the printed rows,13,Measles Indigenous,"17,351",stacks_35853_DS1.pdf
 1989,measles_imported,yes,all nine division sums and the US sum equal the printed rows,13,Imported,842*,stacks_35853_DS1.pdf
 1989,pertussis,yes,all nine division sums and the US sum equal the printed rows,13,Pertussis,"4,157",stacks_35853_DS1.pdf
 1989,mumps,yes,all nine division sums and the US sum equal the printed rows,13,Mumps,"5,712",stacks_35853_DS1.pdf
+1989,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,12,HepatitisA,"35,821",stacks_35853_DS1.pdf
+1989,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,13,POLIOMYELITIS Paralytic [read from page image],5†,stacks_35853_DS1.pdf
 1990,measles_indigenous,yes,all nine division sums and the US sum equal the printed rows,19,Measles Indigenous,"26,527",stacks_35905_DS1.pdf
 1990,measles_imported,yes,all nine division sums and the US sum equal the printed rows,19,Imported,"1,259*",stacks_35905_DS1.pdf
 1990,pertussis,yes,all nine division sums and the US sum equal the printed rows,19,Pertussis,"4,570",stacks_35905_DS1.pdf
 1990,mumps,yes,all nine division sums and the US sum equal the printed rows,19,Mumps,"5,292",stacks_35905_DS1.pdf
+1990,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,18,HepatitisA,"31,441",stacks_35905_DS1.pdf
+1990,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,19,POLIOMYELITIS Paralytic [read from page image],7†,stacks_35905_DS1.pdf
 1991,measles_indigenous,yes,all nine division sums and the US sum equal the printed rows,21,Measles Indigenous,"9,411",stacks_36010_DS1.pdf
 1991,measles_imported,yes,all nine division sums and the US sum equal the printed rows,21,Imported,232*,stacks_36010_DS1.pdf
 1991,pertussis,yes,all nine division sums and the US sum equal the printed rows,21,Pertussis,"2,719",stacks_36010_DS1.pdf
 1991,mumps,yes,all nine division sums and the US sum equal the printed rows,21,Mumps,"4,264",stacks_36010_DS1.pdf
+1991,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,20,Hepatitis A [header read from page image],"24,378",stacks_36010_DS1.pdf
+1991,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,21,"Polio­ myelitis, paralytic",6*,stacks_36010_DS1.pdf
 1992,measles_indigenous,yes,all nine division sums and the US sum equal the printed rows,23,Measles Indigenous,"2,084",stacks_36063_DS1.pdf
 1992,measles_imported,yes,all nine division sums and the US sum equal the printed rows,23,Imported,153*,stacks_36063_DS1.pdf
 1992,pertussis,yes,all nine division sums and the US sum equal the printed rows,23,Pertussis,"4,083",stacks_36063_DS1.pdf
 1992,mumps,yes,all nine division sums and the US sum equal the printed rows,23,Mumps,"2,572",stacks_36063_DS1.pdf
+1992,hepatitis_a,yes,all nine division sums and the US sum equal the printed rows,22,HepatitisA,"23,112",stacks_36063_DS1.pdf
+1992,polio_paralytic,yes,all nine division sums and the US sum equal the printed rows,23,POLIOMYELITIS Paralytic [read from page image],4†,stacks_36063_DS1.pdf

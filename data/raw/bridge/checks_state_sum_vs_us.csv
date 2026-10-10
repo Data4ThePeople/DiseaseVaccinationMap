@@ -1,110 +1,186 @@
 year,disease,sum_of_states,us_total_row,us_flag,us_minus_states,result,states_missing,states_with_non_numeric_mark,source_file
+1956,measles,611936,611936,,0,OK,,Alaska=not in the table (not yet a state);Hawaii=not in the table (not yet a state),stacks_10893_DS1.pdf
 1956,pertussis,31732,31732,,0,OK,,Alaska=not in the table (not yet a state);Hawaii=not in the table (not yet a state),stacks_10893_DS1.pdf
+1956,polio_paralytic,7911,7911,,0,OK,,Alaska=not in the table (not yet a state);Hawaii=not in the table (not yet a state),stacks_10893_DS1.pdf
+1957,measles,486799,486799,,0,OK,,Alaska=not in the table (not yet a state);Hawaii=not in the table (not yet a state);Kansas=read from page image: *,stacks_1035_DS1.pdf
 1957,pertussis,28295,28295,,0,OK,,Alaska=not in the table (not yet a state);Hawaii=not in the table (not yet a state),stacks_1035_DS1.pdf
+1957,polio_paralytic,2499,2499,,0,OK,,Alaska=not in the table (not yet a state);Hawaii=not in the table (not yet a state),stacks_1035_DS1.pdf
+1958,measles,763094,763094,,0,OK,,Alaska=not in the table (not yet a state);Hawaii=not in the table (not yet a state);Kansas=*,stacks_1162_DS1.pdf
 1958,pertussis,32148,32148,,0,OK,,Alaska=not in the table (not yet a state);Hawaii=not in the table (not yet a state),stacks_1162_DS1.pdf
+1958,polio_paralytic,3697,3697,,0,OK,,Alaska=not in the table (not yet a state);Hawaii=not in the table (not yet a state),stacks_1162_DS1.pdf
+1959,measles,406162,406162,,0,OK,,Hawaii=not in the table (not yet a state);Kansas=*,stacks_1302_DS1.pdf
 1959,pertussis,40005,40005,,0,OK,,Hawaii=not in the table (not yet a state);Kansas=*,stacks_1302_DS1.pdf
+1959,polio_paralytic,6289,6289,,0,OK,,Hawaii=not in the table (not yet a state),stacks_1302_DS1.pdf
+1960,measles,441703,441703,read from page image,0,OK,,Kansas=read from page image: NN,stacks_1360_DS1.pdf
 1960,pertussis,14809,14809,read from page image,0,OK,,,stacks_1360_DS1.pdf
+1960,polio_paralytic,2525,2525,read from page image,0,OK,,,stacks_1360_DS1.pdf
+1961,measles,423919,423919,,0,OK,,Kansas=NN,stacks_1427_DS1.pdf
 1961,pertussis,11468,11468,,0,OK,,,stacks_1427_DS1.pdf
+1961,polio_paralytic,988,988,,0,OK,,,stacks_1427_DS1.pdf
+1962,measles,481530,481530,,0,OK,,Kansas=NN,stacks_380_DS1.pdf
 1962,pertussis,17749,17749,,0,OK,,Kansas=NN,stacks_380_DS1.pdf
+1962,polio_paralytic,762,762,read from page image,0,OK,,,stacks_380_DS1.pdf
+1963,measles,385156,385156,,0,OK,,Kansas=NN,stacks_491_DS1.pdf
 1963,pertussis,17135,17135,,0,OK,,Kansas=NN,stacks_491_DS1.pdf
+1963,polio_paralytic,396,396,,0,OK,,,stacks_491_DS1.pdf
+1964,measles,458083,458083,,0,OK,,Kansas=NN,stacks_698_DS1.pdf
 1964,pertussis,13005,13005,,0,OK,,,stacks_698_DS1.pdf
+1964,polio_paralytic,106,106,,0,OK,,,stacks_698_DS1.pdf
+1965,measles,261904,261904,,0,OK,,Kansas=NN,stacks_740_DS1.pdf
 1965,pertussis,6799,6799,read from page image,0,OK,,Kansas=NN,stacks_740_DS1.pdf
+1965,polio_paralytic,61,61,read from page image,0,OK,,,stacks_740_DS1.pdf
+1966,measles,204136,204136,,0,OK,,Kansas=NN,stacks_615_DS1.pdf
 1966,pertussis,7717,7717,,0,OK,,Kansas=NN,stacks_615_DS1.pdf
+1966,hepatitis_a,32859,32859,,0,OK,,,stacks_615_DS1.pdf
+1966,polio_paralytic,106,106,read from page image,0,OK,,,stacks_615_DS1.pdf
+1967,measles,62705,62705,,0,OK,,,stacks_1555_DS1.pdf
 1967,pertussis,9718,9718,,0,OK,,,stacks_1555_DS1.pdf
+1967,hepatitis_a,38909,38909,read from page image,0,OK,,,stacks_1555_DS1.pdf
+1967,polio_paralytic,40,40,read from page image,0,OK,,,stacks_1555_DS1.pdf
 1968,measles,22231,22231,,0,OK,,,stacks_1717_DS1.pdf
 1968,pertussis,4810,4810,,0,OK,,,stacks_1717_DS1.pdf
 1968,mumps,148319,152209,,3890,OK (difference = New York City cases; the New York row is blank because upstate New York is marked NN),,New York=upstate:NN;other part=3890;North Carolina=NN;Pennsylvania=NN,stacks_1717_DS1.pdf
+1968,hepatitis_a,45893,45893,,0,OK,,,stacks_1717_DS1.pdf
+1968,polio_paralytic,53,53,read from page image,0,OK,,,stacks_1717_DS1.pdf
 1969,measles,25826,25826,,0,OK,,,stacks_838_DS1.pdf
 1969,pertussis,3285,3285,,0,OK,,,stacks_838_DS1.pdf
 1969,mumps,86940,90918,,3978,OK (difference = New York City cases; the New York row is blank because upstate New York is marked NN),,New York=upstate:NN;other part=3978;North Carolina=NN,stacks_838_DS1.pdf
+1969,hepatitis_a,48416,48416,,0,OK,,,stacks_838_DS1.pdf
+1969,polio_paralytic,18,18,read from page image,0,OK,,,stacks_838_DS1.pdf
 1970,measles,47351,47351,,0,OK,,,stacks_951_DS1.pdf
 1970,mumps,101729,104953,,3224,OK (difference = New York City cases; the New York row is blank because upstate New York is marked NN),,New York=upstate:NN;other part=3224;North Carolina=NN,stacks_951_DS1.pdf
+1970,hepatitis_a,56797,56797,,0,OK,,,stacks_951_DS1.pdf
+1970,polio_paralytic,31,31,read from page image,0,OK,,,stacks_951_DS1.pdf
 1971,measles,75290,75290,,0,OK,,,stacks_1829_DS1.pdf
 1971,pertussis,3036,3036,,0,OK,,,stacks_1829_DS1.pdf
 1971,mumps,122858,124939,,2081,OK (difference = New York City cases; the New York row is blank because upstate New York is marked NN),,New York=upstate:NN;other part=2081;North Carolina=NN,stacks_1829_DS1.pdf
+1971,hepatitis_a,59606,59606,,0,OK,,,stacks_1829_DS1.pdf
+1971,polio_paralytic,17,17,read from page image,0,OK,,,stacks_1829_DS1.pdf
 1972,measles,32275,32275,,0,OK,,,stacks_1895_DS1.pdf
 1972,pertussis,3287,3287,,0,OK,,,stacks_1895_DS1.pdf
 1972,mumps,71658,74215,,2557,OK (difference = New York City cases; the New York row is blank because upstate New York is marked NN),,New York=upstate:NN;other part=2557,stacks_1895_DS1.pdf
+1972,hepatitis_a,54074,54074,,0,OK,,,stacks_1895_DS1.pdf
+1972,polio_paralytic,29,29,read from page image,0,OK,,,stacks_1895_DS1.pdf
 1973,measles,26690,26690,,0,OK,,,stacks_1849_DS1.pdf
 1973,pertussis,1759,1759,,0,OK,,Arizona=NN,stacks_1849_DS1.pdf
 1973,mumps,64695,69612,,4917,OK (difference = New York City cases; the New York row is blank because upstate New York is marked NN),,Arizona=NN;New York=upstate:NN;other part=4917;North Carolina=NN,stacks_1849_DS1.pdf
+1973,hepatitis_a,50749,50749,,0,OK,,,stacks_1849_DS1.pdf
+1973,polio_paralytic,7,7,read from page image,0,OK,,,stacks_1849_DS1.pdf
 1974,measles,22094,22094,,0,OK,,,stacks_1743_DS1.pdf
 1974,pertussis,2402,2402,,0,OK,,Arizona=NN,stacks_1743_DS1.pdf
 1974,mumps,59128,59128,,0,OK,,Arizona=NN;North Carolina=NR,stacks_1743_DS1.pdf
+1974,hepatitis_a,40358,40358,,0,OK,,Georgia=NA,stacks_1743_DS1.pdf
+1974,polio_paralytic,7,7,read from page image,0,OK,,,stacks_1743_DS1.pdf
 1975,measles,24374,24374,,0,OK,,,stacks_1041_DS1.pdf
 1975,pertussis,1738,1738,,0,OK,,,stacks_1041_DS1.pdf
 1975,mumps,59647,59647,,0,OK,,,stacks_1041_DS1.pdf
+1975,hepatitis_a,35855,35855,,0,OK,,,stacks_1041_DS1.pdf
+1975,polio_paralytic,8,8,read from page image,0,OK,,,stacks_1041_DS1.pdf
 1976,measles,41126,41126,,0,OK,,,stacks_1130_DS1.pdf
 1976,pertussis,1010,1010,,0,OK,,,stacks_1130_DS1.pdf
 1976,mumps,38492,38492,,0,OK,,,stacks_1130_DS1.pdf
+1976,hepatitis_a,33288,33288,,0,OK,,,stacks_1130_DS1.pdf
+1976,polio_paralytic,12,12,read from page image,0,OK,,,stacks_1130_DS1.pdf
 1977,measles,57345,57345,,0,OK,,,stacks_10894_DS1.pdf
 1977,pertussis,2177,2177,,0,OK,,Arizona=NN,stacks_10894_DS1.pdf
 1977,mumps,21436,21436,,0,OK,,Arizona=NN,stacks_10894_DS1.pdf
+1977,hepatitis_a,31153,31153,read from page image,0,OK,,,stacks_10894_DS1.pdf
+1977,polio_paralytic,17,17,read from page image,0,OK,,,stacks_10894_DS1.pdf
 1978,measles,26871,26871,,0,OK,,,stacks_10895_DS1.pdf
 1978,pertussis,2063,2063,,0,OK,,,stacks_10895_DS1.pdf
 1978,mumps,16817,16817,,0,OK,,Oklahoma=NN,stacks_10895_DS1.pdf
+1978,hepatitis_a,29500,29500,,0,OK,,,stacks_10895_DS1.pdf
+1978,polio_paralytic,9,9,read from page image,0,OK,,,stacks_10895_DS1.pdf
 1979,measles,13597,13597,read from page image,0,OK,,,stacks_1577_DS1.pdf
 1979,pertussis,1623,1623,,0,OK,,,stacks_1577_DS1.pdf
 1979,mumps,14225,14225,,0,OK,,Oklahoma=NN,stacks_1577_DS1.pdf
+1979,hepatitis_a,30407,30407,,0,OK,,,stacks_1577_DS1.pdf
+1979,polio_paralytic,26,26,read from page image,0,OK,,,stacks_1577_DS1.pdf
 1980,measles,13506,13506,read from page image,0,OK,,,stacks_1484_DS1.pdf
 1980,pertussis,1730,1730,,0,OK,,,stacks_1484_DS1.pdf
 1980,mumps,8576,8576,,0,OK,,New Mexico=NN;Oklahoma=NN,stacks_1484_DS1.pdf
+1980,hepatitis_a,29087,29087,,0,OK,,,stacks_1484_DS1.pdf
+1980,polio_paralytic,8,8,read from page image,0,OK,,,stacks_1484_DS1.pdf
 1981,measles,3124,3124,,0,OK,,,stacks_1307_DS1.pdf
 1981,pertussis,1248,1248,,0,OK,,,stacks_1307_DS1.pdf
 1981,mumps,4941,4941,,0,OK,,New Mexico=read from page image: NN;Oklahoma=read from page image: NN,stacks_1307_DS1.pdf
+1981,hepatitis_a,25802,25802,,0,OK,,,stacks_1307_DS1.pdf
+1981,polio_paralytic,6,6,read from page image,0,OK,,,stacks_1307_DS1.pdf
 1982,measles,1714,1714,,0,OK,,,stacks_35066_DS1.pdf
 1982,pertussis,1895,1895,,0,OK,,,stacks_35066_DS1.pdf
 1982,mumps,5270,5270,,0,OK,,Florida=NN;New Mexico=NN;Oklahoma=NN;Oregon=NN,stacks_35066_DS1.pdf
+1982,hepatitis_a,23403,23403,,0,OK,,,stacks_35066_DS1.pdf
+1982,polio_paralytic,8,8,read from page image,0,OK,,,stacks_35066_DS1.pdf
 1983,measles,1497,1497,sum,0,OK,,,stacks_35188_DS1.pdf
 1983,measles_indigenous,1163,1163,,0,OK,,,stacks_35188_DS1.pdf
 1983,measles_imported,334,334,*,0,OK,,,stacks_35188_DS1.pdf
 1983,pertussis,2463,2463,,0,OK,,,stacks_35188_DS1.pdf
 1983,mumps,3355,3355,,0,OK,,Florida=NN;New Mexico=read from page image: NN;Oklahoma=NN;Oregon=NN,stacks_35188_DS1.pdf
+1983,hepatitis_a,21532,21532,,0,OK,,,stacks_35188_DS1.pdf
+1983,polio_paralytic,15,15,read from page image,0,OK,,,stacks_35188_DS1.pdf
 1984,measles,2587,2587,sum,0,OK,,,stacks_35267_DS1.pdf
 1984,measles_indigenous,2272,2272,,0,OK,,,stacks_35267_DS1.pdf
 1984,measles_imported,315,315,*,0,OK,,,stacks_35267_DS1.pdf
 1984,pertussis,2276,2276,read from page image,0,OK,,,stacks_35267_DS1.pdf
 1984,mumps,3021,3021,,0,OK,,New Mexico=NN;Oklahoma=NN;Oregon=NN,stacks_35267_DS1.pdf
+1984,hepatitis_a,22040,22040,,0,OK,,,stacks_35267_DS1.pdf
+1984,polio_paralytic,8,8,read from page image; †,0,OK,,,stacks_35267_DS1.pdf
 1985,measles,2822,2822,sum,0,OK,,,stacks_35429_DS1.pdf
 1985,measles_indigenous,2410,2410,,0,OK,,,stacks_35429_DS1.pdf
 1985,measles_imported,412,412,*,0,OK,,,stacks_35429_DS1.pdf
 1985,pertussis,3589,3589,,0,OK,,,stacks_35429_DS1.pdf
 1985,mumps,2982,2982,,0,OK,,Mississippi=NN;New Mexico=NN;Oklahoma=NN;Oregon=NN,stacks_35429_DS1.pdf
+1985,hepatitis_a,22592,23210,*,618,OK (difference = New York City cases; the New York row is blank because upstate New York is marked NN),,New York=NYC:NA;other part=618,stacks_35429_DS1.pdf
+1985,polio_paralytic,7,7,read from page image; †,0,OK,,,stacks_35429_DS1.pdf
 1986,measles,6282,6282,sum,0,OK,,,stacks_35496_DS1.pdf
 1986,measles_indigenous,5955,5955,,0,OK,,,stacks_35496_DS1.pdf
 1986,measles_imported,327,327,read from page image; *,0,OK,,,stacks_35496_DS1.pdf
 1986,pertussis,4195,4195,,0,OK,,,stacks_35496_DS1.pdf
 1986,mumps,7790,7790,,0,OK,,Mississippi=read from page image: NN;New Mexico=NN;Oklahoma=NN;Oregon=read from page image: NN,stacks_35496_DS1.pdf
+1986,hepatitis_a,22910,23430,,520,OK (difference = New York City cases; the New York row is blank because upstate New York is marked NN),,New York=NYC:read from page image: NA;other part=520,stacks_35496_DS1.pdf
+1986,polio_paralytic,3,3,read from page image; †,0,OK,,,stacks_35496_DS1.pdf
 1987,measles,3655,3655,sum,0,OK,,,stacks_35629_DS1.pdf
 1987,measles_indigenous,3240,3240,,0,OK,,,stacks_35629_DS1.pdf
 1987,measles_imported,415,415,*,0,OK,,,stacks_35629_DS1.pdf
 1987,pertussis,2823,2823,,0,OK,,,stacks_35629_DS1.pdf
 1987,mumps,12848,12848,,0,OK,,Mississippi=NN;New Mexico=read from page image: NN;Oregon=NN,stacks_35629_DS1.pdf
+1987,hepatitis_a,25280,25280,,0,OK,,,stacks_35629_DS1.pdf
+1987,polio_paralytic,0,0,read from page image: -,0,OK,,,stacks_35629_DS1.pdf
 1988,measles,3396,3396,sum,0,OK,,,stacks_35958_DS1.pdf
 1988,measles_indigenous,3058,3058,,0,OK,,,stacks_35958_DS1.pdf
 1988,measles_imported,338,338,*,0,OK,,,stacks_35958_DS1.pdf
 1988,pertussis,3450,3450,,0,OK,,,stacks_35958_DS1.pdf
 1988,mumps,4866,4866,,0,OK,,Mississippi=NN;New Mexico=NN;Oregon=NN;Rhode Island=NN,stacks_35958_DS1.pdf
+1988,hepatitis_a,28507,28507,,0,OK,,,stacks_35958_DS1.pdf
+1988,polio_paralytic,9,9,read from page image; †,0,OK,,,stacks_35958_DS1.pdf
 1989,measles,18193,18193,sum,0,OK,,,stacks_35853_DS1.pdf
 1989,measles_indigenous,17351,17351,,0,OK,,,stacks_35853_DS1.pdf
 1989,measles_imported,842,842,*,0,OK,,,stacks_35853_DS1.pdf
 1989,pertussis,4157,4157,,0,OK,,,stacks_35853_DS1.pdf
 1989,mumps,5712,5712,,0,OK,,New Mexico=NN;Oregon=NN,stacks_35853_DS1.pdf
+1989,hepatitis_a,35821,35821,,0,OK,,,stacks_35853_DS1.pdf
+1989,polio_paralytic,5,5,read from page image; †,0,OK,,,stacks_35853_DS1.pdf
 1990,measles,27786,27786,sum,0,OK,,,stacks_35905_DS1.pdf
 1990,measles_indigenous,26527,26527,,0,OK,,,stacks_35905_DS1.pdf
 1990,measles_imported,1259,1259,*,0,OK,,,stacks_35905_DS1.pdf
 1990,pertussis,4570,4570,,0,OK,,,stacks_35905_DS1.pdf
 1990,mumps,5292,5292,,0,OK,,New Mexico=NN;Oregon=NN,stacks_35905_DS1.pdf
+1990,hepatitis_a,31441,31441,,0,OK,,,stacks_35905_DS1.pdf
+1990,polio_paralytic,7,7,read from page image; †,0,OK,,,stacks_35905_DS1.pdf
 1991,measles,9643,9643,sum,0,OK,,,stacks_36010_DS1.pdf
 1991,measles_indigenous,9411,9411,,0,OK,,,stacks_36010_DS1.pdf
 1991,measles_imported,232,232,*,0,OK,,,stacks_36010_DS1.pdf
 1991,pertussis,2719,2719,,0,OK,,,stacks_36010_DS1.pdf
 1991,mumps,4264,4264,,0,OK,,New Mexico=NN;Oregon=NN,stacks_36010_DS1.pdf
+1991,hepatitis_a,24378,24378,,0,OK,,,stacks_36010_DS1.pdf
+1991,polio_paralytic,6,6,*,0,OK,,,stacks_36010_DS1.pdf
 1992,measles,2237,2237,sum,0,OK,,,stacks_36063_DS1.pdf
 1992,measles_indigenous,2084,2084,,0,OK,,,stacks_36063_DS1.pdf
 1992,measles_imported,153,153,*,0,OK,,,stacks_36063_DS1.pdf
 1992,pertussis,4083,4083,,0,OK,,,stacks_36063_DS1.pdf
 1992,mumps,2572,2572,,0,OK,,New Mexico=NN;Oregon=NN,stacks_36063_DS1.pdf
+1992,hepatitis_a,23112,23112,,0,OK,,,stacks_36063_DS1.pdf
+1992,polio_paralytic,4,4,read from page image; †,0,OK,,,stacks_36063_DS1.pdf
 1993,measles,312,312,sum,0,OK,,,mm4253.pdf
 1993,measles_indigenous,237,237,,0,OK,,,mm4253.pdf
 1993,measles_imported,75,75,*,0,OK,,,mm4253.pdf

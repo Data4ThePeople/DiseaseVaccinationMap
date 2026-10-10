@@ -5,7 +5,7 @@ Built by `scripts/12_tieout.py`. Every line below was recomputed from a raw file
 
 ## A. Packed data against the case table
 
-18,722 state-years in the table, 18,722 filled cells on the page, 0 differ.
+20,131 state-years in the table, 20,131 filled cells on the page, 0 differ.
 
 ## B. National sum on the page against the U.S. row CDC printed
 
@@ -14,14 +14,25 @@ Only years where every state on the page comes from the final annual table. The 
 | disease, year | CDC printed | page sum | |
 |---|---|---|---|
 | pertussis 1960 | 14809 | 14809 | ok |
+| polio 1960 | 2525 | 2525 | ok |
+| polio 1965 | 61 | 61 | ok |
+| hepatitis_a 1970 | 56797 | 56797 | ok |
 | measles 1970 | 47351 | 47351 | ok |
+| polio 1970 | 31 | 31 | ok |
+| hepatitis_a 1975 | 35855 | 35855 | ok |
 | measles 1975 | 24374 | 24374 | ok |
 | mumps 1975 | 59647 | 59647 | ok |
 | pertussis 1975 | 1738 | 1738 | ok |
+| polio 1975 | 8 | 8 | ok |
+| hepatitis_a 1980 | 29087 | 29087 | ok |
 | measles 1980 | 13506 | 13506 | ok |
 | pertussis 1980 | 1730 | 1730 | ok |
+| polio 1980 | 8 | 8 | ok |
 | pertussis 1985 | 3589 | 3589 | ok |
+| polio 1985 | 7 | 7 | ok |
+| hepatitis_a 1990 | 31441 | 31441 | ok |
 | pertussis 1990 | 4570 | 4570 | ok |
+| polio 1990 | 7 | 7 | ok |
 | hepatitis_a 1995 | 31582 | 31582 | ok |
 | pertussis 1995 | 5137 | 5137 | ok |
 | polio 1995 | 2 | 2 | ok |
@@ -53,7 +64,7 @@ Only years where every state on the page comes from the final annual table. The 
 | pertussis 2023 | 7063 | 7063 | ok |
 | polio 2023 | 0 | 0 | ok |
 
-150 disease-years compared in all; the table lists every fifth year, 2019, 2023 and any mismatch.
+208 disease-years compared in all; the table lists every fifth year, 2019, 2023 and any mismatch.
 
 Years where the table gives one or more states no figure (NN, not notifiable there), which show as no data, or where New York shows New York City only (mumps, 1968 to 1973, when upstate New York did not report). The page sum must equal the printed U.S. total, plus any printed part the map does not show:
 
@@ -63,9 +74,16 @@ Years where the table gives one or more states no figure (NN, not notifiable the
 | pertussis 1957 | 28295 | 28295 | 0 | ok |
 | pertussis 1958 | 32148 | 32148 | 0 | ok |
 | pertussis 1959 | 40005 | 40005 | 0 | ok |
+| measles 1960 | 441703 | 441703 | 0 | ok |
+| measles 1961 | 423919 | 423919 | 0 | ok |
+| measles 1962 | 481530 | 481530 | 0 | ok |
 | pertussis 1962 | 17749 | 17749 | 0 | ok |
+| measles 1963 | 385156 | 385156 | 0 | ok |
 | pertussis 1963 | 17135 | 17135 | 0 | ok |
+| measles 1964 | 458083 | 458083 | 0 | ok |
+| measles 1965 | 261904 | 261904 | 0 | ok |
 | pertussis 1965 | 6799 | 6799 | 0 | ok |
+| measles 1966 | 204136 | 204136 | 0 | ok |
 | pertussis 1966 | 7717 | 7717 | 0 | ok |
 | mumps 1968 | 152209 | 152209 | 0 | ok |
 | mumps 1969 | 90918 | 90918 | 0 | ok |
@@ -74,6 +92,7 @@ Years where the table gives one or more states no figure (NN, not notifiable the
 | mumps 1972 | 74215 | 74215 | 0 | ok |
 | mumps 1973 | 69612 | 69612 | 0 | ok |
 | pertussis 1973 | 1759 | 1759 | 0 | ok |
+| hepatitis_a 1974 | 40358 | 40358 | 0 | ok |
 | mumps 1974 | 59128 | 59128 | 0 | ok |
 | pertussis 1974 | 2402 | 2402 | 0 | ok |
 | mumps 1977 | 21436 | 21436 | 0 | ok |
@@ -85,7 +104,9 @@ Years where the table gives one or more states no figure (NN, not notifiable the
 | mumps 1982 | 5270 | 5270 | 0 | ok |
 | mumps 1983 | 3355 | 3355 | 0 | ok |
 | mumps 1984 | 3021 | 3021 | 0 | ok |
+| hepatitis_a 1985 | 23210 | 22592 | 618 | ok |
 | mumps 1985 | 2982 | 2982 | 0 | ok |
+| hepatitis_a 1986 | 23430 | 22910 | 520 | ok |
 | mumps 1986 | 7790 | 7790 | 0 | ok |
 | mumps 1987 | 12848 | 12848 | 0 | ok |
 | mumps 1988 | 4866 | 4866 | 0 | ok |
@@ -117,12 +138,12 @@ Years where the table gives one or more states no figure (NN, not notifiable the
 | disease, state, year | from zip | page | |
 |---|---|---|---|
 | measles OH 1941 | 81859 | 81859 | ok |
-| measles CA 1958 | 35074 | 35074 | ok |
+| measles CA 1948 | 49335 | 49335 | ok |
 | measles TX 1934 | 29699 | 29699 | ok |
 | polio NY 1952 | 2637 | 2637 | ok |
 | polio MN 1946 | 2569 | 2569 | ok |
 | pertussis PA 1947 | 9589 | 9589 | ok |
-| hepatitis_a CA 1971 | 9623 | 9623 | ok |
+| measles IL 1950 | 18528 | 18528 | ok |
 | pertussis OH 1950 | 7334 | 7334 | ok |
 
 ## D. CDC weekly years, re-read from the weekly file

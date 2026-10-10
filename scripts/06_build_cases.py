@@ -53,11 +53,16 @@ def cdc_annual():
     b = b[b.st.notna()]
     # New York 1968-1973: upstate did not report mumps, the table prints New York City. Show the City's
     # count, marked as City only (editor decision, October 6, 2026).
-    part = b.cases.isna() & b.flag.fillna("").str.contains("other part=")
+    # Only when the missing part is upstate: where the City is the missing part (hepatitis A, 1985 and
+    # 1986) New York has no figure.
+    part = b.cases.isna() & b.flag.fillna("").str.contains("other part=") & b.flag.fillna("").str.startswith("upstate:")
     b.loc[part, "cases"] = b.loc[part, "flag"].str.extract(r"other part=(\d+)")[0].astype(float)
     b["part"] = part
     # A final table that marks a state (NN not notifiable, N, U, NR, ...) is the last word for that year:
     # these rows block the provisional layers below and then drop out, so the page shows "no data".
+    # Alaska and Hawaii before statehood are simply absent from the annual table. That is not a mark, so it
+    # does not block the weekly reports the territories did file.
+    b = b[~(b.cases.isna() & b.flag.fillna("").str.contains("not yet a state"))]
     global BLOCKED
     BLOCKED = set(zip(b[b.cases.isna()].disease, b[b.cases.isna()].st, b[b.cases.isna()].year.astype(int)))
     b = b[b.cases.notna()]

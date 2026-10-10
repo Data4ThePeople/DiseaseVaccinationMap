@@ -34,9 +34,13 @@ say(nonmed.loc[["US", "ID", "UT", "AZ", "OR", "WI"], [2010, 2015, 2020, 2025, 20
 say("\n== 1b. Kindergarten MMR coverage, selected states")
 say(mmr.loc[["US", "ID", "UT", "AZ", "WI"], [2010, 2015, 2020, 2025, 2026]].round(1).to_string())
 
-say("\n== 2. State MMR change 2019-20 to 2024-25 against 2025 measles rate (rank correlation, 47 states with both years)")
-t = pd.DataFrame({"mmr_chg": mmr[2025] - mmr[2020], "measles25": rate("measles")[2025]}).dropna().drop("US", errors="ignore")
+say("\n== 2. State MMR change 2019-20 to 2024-25 against 2025 measles rate (rank correlation, states with both years)")
+t_all = pd.DataFrame({"mmr_chg": mmr[2025] - mmr[2020], "measles25": rate("measles")[2025]}).drop("US", errors="ignore")
+t = t_all.dropna()
 say(len(t), "states; Spearman", round(t.corr(method="spearman").iloc[0, 1], 2))
+say("left out, no kindergarten MMR figure in one of the two years:", ", ".join(sorted(set(t_all.index) - set(t.index))))
+loo = [t.drop(s).corr(method="spearman").iloc[0, 1] for s in t.index]
+say("leaving out one state at a time, the correlation runs from", round(min(loo), 2), "to", round(max(loo), 2))
 
 say("\n== 3. Whooping cough 2024 against each state's 2015-2019 average, with DTaP kindergarten change 2019-20 to 2023-24")
 p = rate("pertussis")

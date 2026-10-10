@@ -1,4 +1,8 @@
 year,disease,area,pdf_page,ocr_text_layer_had,read_from_page_image,source_file
+1956,measles,Nebraska,8,"32,289","2,289",stacks_10893_DS1.pdf
+1956,measles,Rhode Island,8,,254,stacks_10893_DS1.pdf
+1956,measles,Pacific,8,,"48,125",stacks_10893_DS1.pdf
+1956,measles,Washington,8,,"12,862",stacks_10893_DS1.pdf
 1956,pertussis,Arizona,10,•780,780,stacks_10893_DS1.pdf
 1956,pertussis,New York,10,,"2,248",stacks_10893_DS1.pdf
 1956,pertussis,Illinois,10,,569,stacks_10893_DS1.pdf
@@ -7,9 +11,110 @@ year,disease,area,pdf_page,ocr_text_layer_had,read_from_page_image,source_file
 1956,pertussis,Minnesota,10,,123,stacks_10893_DS1.pdf
 1956,pertussis,Maryland,10,,179,stacks_10893_DS1.pdf
 1956,pertussis,West Virginia,10,,297,stacks_10893_DS1.pdf
+1956,polio_paralytic,Kansas,8,-,-,stacks_10893_DS1.pdf
+1956,polio_paralytic,Delaware,8,,11,stacks_10893_DS1.pdf
+1956,polio_paralytic,Oklahoma,8,,93,stacks_10893_DS1.pdf
+1956,polio_paralytic,New Mexico,8,,37,stacks_10893_DS1.pdf
+1956,polio_paralytic,Rhode Island,8,,2,stacks_10893_DS1.pdf
+1956,polio_paralytic,Pacific,8,,"1,532",stacks_10893_DS1.pdf
+1956,polio_paralytic,Washington,8,,98,stacks_10893_DS1.pdf
+1957,measles,Nebraska,8,3322,322,stacks_1035_DS1.pdf
+1957,measles,Kansas,8,*,*,stacks_1035_DS1.pdf
+1957,measles,Mississippi,8,"sl,290","1,290",stacks_1035_DS1.pdf
+1957,measles,Ohio,8,,"8,627",stacks_1035_DS1.pdf
+1957,measles,Montana,8,,"3,746",stacks_1035_DS1.pdf
 1957,pertussis,East South Central,10,,"1,921",stacks_1035_DS1.pdf
+1957,polio_paralytic,Rhode Island,8,-,-,stacks_1035_DS1.pdf
+1957,polio_paralytic,Ohio,8,,122,stacks_1035_DS1.pdf
+1957,polio_paralytic,Montana,8,,5,stacks_1035_DS1.pdf
+1958,measles,Nebraska,8,"al,519","1,519",stacks_1162_DS1.pdf
+1958,measles,New Hampshire,8,,"4,711",stacks_1162_DS1.pdf
+1958,measles,Ohio,8,,"31,444",stacks_1162_DS1.pdf
+1958,measles,Mississippi,8,,"1,549",stacks_1162_DS1.pdf
+1958,measles,Oklahoma,8,,"7,500",stacks_1162_DS1.pdf
 1958,pertussis,Pacific,10,"f,393","5,393",stacks_1162_DS1.pdf
+1958,polio_paralytic,New Hampshire,8,,1,stacks_1162_DS1.pdf
+1958,polio_paralytic,Ohio,8,,276,stacks_1162_DS1.pdf
+1958,polio_paralytic,Mississippi,8,,42,stacks_1162_DS1.pdf
+1958,polio_paralytic,Oklahoma,8,,26,stacks_1162_DS1.pdf
+1959,measles,Kentucky,9,"-7,037","7,037",stacks_1302_DS1.pdf
+1959,measles,Pennsylvania,9,,"32,195",stacks_1302_DS1.pdf
+1959,measles,Indiana,9,,"5,279",stacks_1302_DS1.pdf
+1959,measles,Wisconsin,9,,"16,559",stacks_1302_DS1.pdf
+1959,measles,Minnesota,9,,"2,844",stacks_1302_DS1.pdf
+1959,measles,Mississippi,9,,"1,952",stacks_1302_DS1.pdf
+1959,measles,Arkansas,9,,898,stacks_1302_DS1.pdf
+1959,measles,New Mexico,9,,"4,735",stacks_1302_DS1.pdf
 1959,pertussis,Alaska,11,-,-,stacks_1302_DS1.pdf
+1959,polio_paralytic,New England,9,,353,stacks_1302_DS1.pdf
+1959,polio_paralytic,Pennsylvania,9,,165,stacks_1302_DS1.pdf
+1959,polio_paralytic,Indiana,9,,109,stacks_1302_DS1.pdf
+1959,polio_paralytic,Wisconsin,9,,43,stacks_1302_DS1.pdf
+1959,polio_paralytic,Minnesota,9,,200,stacks_1302_DS1.pdf
+1959,polio_paralytic,Mississippi,9,,81,stacks_1302_DS1.pdf
+1959,polio_paralytic,Arkansas,9,,231,stacks_1302_DS1.pdf
+1959,polio_paralytic,New Mexico,9,,24,stacks_1302_DS1.pdf
+1960,measles,United States,9,,"441,703",stacks_1360_DS1.pdf
+1960,measles,New England,9,,"44,355",stacks_1360_DS1.pdf
+1960,measles,Maine,9,,"3,538",stacks_1360_DS1.pdf
+1960,measles,New Hampshire,9,,"1,929",stacks_1360_DS1.pdf
+1960,measles,Vermont,9,,"3,266",stacks_1360_DS1.pdf
+1960,measles,Massachusetts,9,,"22,403",stacks_1360_DS1.pdf
+1960,measles,Rhode Island,9,,"1,892",stacks_1360_DS1.pdf
+1960,measles,Connecticut,9,,"11,327",stacks_1360_DS1.pdf
+1960,measles,Middle Atlantic,9,,"64,347",stacks_1360_DS1.pdf
+1960,measles,New York,9,,"46,443",stacks_1360_DS1.pdf
+1960,measles,New Jersey,9,,"10,559",stacks_1360_DS1.pdf
+1960,measles,Pennsylvania,9,,"7,345",stacks_1360_DS1.pdf
+1960,measles,East North Central,9,,"131,527",stacks_1360_DS1.pdf
+1960,measles,Ohio,9,,"18,170",stacks_1360_DS1.pdf
+1960,measles,Indiana,9,,"10,225",stacks_1360_DS1.pdf
+1960,measles,Illinois,9,,"22,448",stacks_1360_DS1.pdf
+1960,measles,Michigan,9,,"36,161",stacks_1360_DS1.pdf
+1960,measles,Wisconsin,9,,"44,523",stacks_1360_DS1.pdf
+1960,measles,West North Central,9,,"9,862",stacks_1360_DS1.pdf
+1960,measles,Minnesota,9,,"4,203",stacks_1360_DS1.pdf
+1960,measles,Iowa,9,,"1,790",stacks_1360_DS1.pdf
+1960,measles,Missouri,9,,799,stacks_1360_DS1.pdf
+1960,measles,North Dakota,9,,"2,774",stacks_1360_DS1.pdf
+1960,measles,South Dakota,9,,79,stacks_1360_DS1.pdf
+1960,measles,Nebraska,9,,217,stacks_1360_DS1.pdf
+1960,measles,Kansas,9,,NN,stacks_1360_DS1.pdf
+1960,measles,South Atlantic,9,,"24,007",stacks_1360_DS1.pdf
+1960,measles,Delaware,9,,656,stacks_1360_DS1.pdf
+1960,measles,Maryland,9,,"3,202",stacks_1360_DS1.pdf
+1960,measles,District of Columbia,9,,"1,197",stacks_1360_DS1.pdf
+1960,measles,Virginia,9,,"7,595",stacks_1360_DS1.pdf
+1960,measles,West Virginia,9,,"3,812",stacks_1360_DS1.pdf
+1960,measles,North Carolina,9,,"1,417",stacks_1360_DS1.pdf
+1960,measles,South Carolina,9,,"1,799",stacks_1360_DS1.pdf
+1960,measles,Georgia,9,,236,stacks_1360_DS1.pdf
+1960,measles,Florida,9,,"4,093",stacks_1360_DS1.pdf
+1960,measles,East South Central,9,,"34,719",stacks_1360_DS1.pdf
+1960,measles,Kentucky,9,,"11,367",stacks_1360_DS1.pdf
+1960,measles,Tennessee,9,,"19,202",stacks_1360_DS1.pdf
+1960,measles,Alabama,9,,"2,069",stacks_1360_DS1.pdf
+1960,measles,Mississippi,9,,"2,081",stacks_1360_DS1.pdf
+1960,measles,West South Central,9,,"53,582",stacks_1360_DS1.pdf
+1960,measles,Arkansas,9,,"1,410",stacks_1360_DS1.pdf
+1960,measles,Louisiana,9,,266,stacks_1360_DS1.pdf
+1960,measles,Oklahoma,9,,"1,232",stacks_1360_DS1.pdf
+1960,measles,Texas,9,,"50,674",stacks_1360_DS1.pdf
+1960,measles,Mountain,9,,"25,604",stacks_1360_DS1.pdf
+1960,measles,Montana,9,,"2,438",stacks_1360_DS1.pdf
+1960,measles,Idaho,9,,"3,227",stacks_1360_DS1.pdf
+1960,measles,Wyoming,9,,716,stacks_1360_DS1.pdf
+1960,measles,Colorado,9,,"6,794",stacks_1360_DS1.pdf
+1960,measles,New Mexico,9,,"1,901",stacks_1360_DS1.pdf
+1960,measles,Arizona,9,,"4,863",stacks_1360_DS1.pdf
+1960,measles,Utah,9,,"4,908",stacks_1360_DS1.pdf
+1960,measles,Nevada,9,,757,stacks_1360_DS1.pdf
+1960,measles,Pacific,9,,"53,700",stacks_1360_DS1.pdf
+1960,measles,Washington,9,,"13,678",stacks_1360_DS1.pdf
+1960,measles,Oregon,9,,"11,104",stacks_1360_DS1.pdf
+1960,measles,California,9,,"22,684",stacks_1360_DS1.pdf
+1960,measles,Alaska,9,,"1,260",stacks_1360_DS1.pdf
+1960,measles,Hawaii,9,,"4,974",stacks_1360_DS1.pdf
 1960,pertussis,United States,9,,"14,809",stacks_1360_DS1.pdf
 1960,pertussis,New England,9,,821,stacks_1360_DS1.pdf
 1960,pertussis,Maine,9,,173,stacks_1360_DS1.pdf
@@ -71,6 +176,78 @@ year,disease,area,pdf_page,ocr_text_layer_had,read_from_page_image,source_file
 1960,pertussis,California,9,,"1,957",stacks_1360_DS1.pdf
 1960,pertussis,Alaska,9,,4,stacks_1360_DS1.pdf
 1960,pertussis,Hawaii,9,,-,stacks_1360_DS1.pdf
+1960,polio_paralytic,United States,10,,"2,525",stacks_1360_DS1.pdf
+1960,polio_paralytic,New England,10,,195,stacks_1360_DS1.pdf
+1960,polio_paralytic,Middle Atlantic,10,,409,stacks_1360_DS1.pdf
+1960,polio_paralytic,East North Central,10,,395,stacks_1360_DS1.pdf
+1960,polio_paralytic,West North Central,10,,109,stacks_1360_DS1.pdf
+1960,polio_paralytic,South Atlantic,10,,488,stacks_1360_DS1.pdf
+1960,polio_paralytic,East South Central,10,,249,stacks_1360_DS1.pdf
+1960,polio_paralytic,West South Central,10,,191,stacks_1360_DS1.pdf
+1960,polio_paralytic,Mountain,10,,77,stacks_1360_DS1.pdf
+1960,polio_paralytic,Pacific,10,,412,stacks_1360_DS1.pdf
+1960,polio_paralytic,Alabama,10,,24,stacks_1360_DS1.pdf
+1960,polio_paralytic,Alaska,10,,1,stacks_1360_DS1.pdf
+1960,polio_paralytic,Arizona,10,,4,stacks_1360_DS1.pdf
+1960,polio_paralytic,Arkansas,10,,27,stacks_1360_DS1.pdf
+1960,polio_paralytic,California,10,,340,stacks_1360_DS1.pdf
+1960,polio_paralytic,Colorado,10,,21,stacks_1360_DS1.pdf
+1960,polio_paralytic,Connecticut,10,,27,stacks_1360_DS1.pdf
+1960,polio_paralytic,Delaware,10,,-,stacks_1360_DS1.pdf
+1960,polio_paralytic,District of Columbia,10,,5,stacks_1360_DS1.pdf
+1960,polio_paralytic,Florida,10,,47,stacks_1360_DS1.pdf
+1960,polio_paralytic,Georgia,10,,27,stacks_1360_DS1.pdf
+1960,polio_paralytic,Hawaii,10,,8,stacks_1360_DS1.pdf
+1960,polio_paralytic,Idaho,10,,10,stacks_1360_DS1.pdf
+1960,polio_paralytic,Illinois,10,,112,stacks_1360_DS1.pdf
+1960,polio_paralytic,Indiana,10,,117,stacks_1360_DS1.pdf
+1960,polio_paralytic,Iowa,10,,6,stacks_1360_DS1.pdf
+1960,polio_paralytic,Kansas,10,,9,stacks_1360_DS1.pdf
+1960,polio_paralytic,Kentucky,10,,127,stacks_1360_DS1.pdf
+1960,polio_paralytic,Louisiana,10,,32,stacks_1360_DS1.pdf
+1960,polio_paralytic,Maine,10,,49,stacks_1360_DS1.pdf
+1960,polio_paralytic,Maryland,10,,147,stacks_1360_DS1.pdf
+1960,polio_paralytic,Massachusetts,10,,29,stacks_1360_DS1.pdf
+1960,polio_paralytic,Michigan,10,,56,stacks_1360_DS1.pdf
+1960,polio_paralytic,Minnesota,10,,37,stacks_1360_DS1.pdf
+1960,polio_paralytic,Mississippi,10,,57,stacks_1360_DS1.pdf
+1960,polio_paralytic,Missouri,10,,38,stacks_1360_DS1.pdf
+1960,polio_paralytic,Montana,10,,15,stacks_1360_DS1.pdf
+1960,polio_paralytic,Nebraska,10,,11,stacks_1360_DS1.pdf
+1960,polio_paralytic,Nevada,10,,-,stacks_1360_DS1.pdf
+1960,polio_paralytic,New Hampshire,10,,1,stacks_1360_DS1.pdf
+1960,polio_paralytic,New Jersey,10,,64,stacks_1360_DS1.pdf
+1960,polio_paralytic,New Mexico,10,,4,stacks_1360_DS1.pdf
+1960,polio_paralytic,North Carolina,10,,64,stacks_1360_DS1.pdf
+1960,polio_paralytic,North Dakota,10,,6,stacks_1360_DS1.pdf
+1960,polio_paralytic,Ohio,10,,89,stacks_1360_DS1.pdf
+1960,polio_paralytic,Oklahoma,10,,14,stacks_1360_DS1.pdf
+1960,polio_paralytic,Oregon,10,,17,stacks_1360_DS1.pdf
+1960,polio_paralytic,Pennsylvania,10,,132,stacks_1360_DS1.pdf
+1960,polio_paralytic,Rhode Island,10,,79,stacks_1360_DS1.pdf
+1960,polio_paralytic,South Carolina,10,,92,stacks_1360_DS1.pdf
+1960,polio_paralytic,South Dakota,10,,2,stacks_1360_DS1.pdf
+1960,polio_paralytic,Tennessee,10,,41,stacks_1360_DS1.pdf
+1960,polio_paralytic,Texas,10,,118,stacks_1360_DS1.pdf
+1960,polio_paralytic,Utah,10,,5,stacks_1360_DS1.pdf
+1960,polio_paralytic,Vermont,10,,10,stacks_1360_DS1.pdf
+1960,polio_paralytic,Virginia,10,,55,stacks_1360_DS1.pdf
+1960,polio_paralytic,Washington,10,,46,stacks_1360_DS1.pdf
+1960,polio_paralytic,West Virginia,10,,51,stacks_1360_DS1.pdf
+1960,polio_paralytic,Wisconsin,10,,21,stacks_1360_DS1.pdf
+1960,polio_paralytic,Wyoming,10,,18,stacks_1360_DS1.pdf
+1960,polio_paralytic,New York,10,,213,stacks_1360_DS1.pdf
+1961,measles,Utah,9,,"1,711",stacks_1427_DS1.pdf
+1961,measles,Louisiana,9,,48,stacks_1427_DS1.pdf
+1961,measles,Texas,9,,"16,697",stacks_1427_DS1.pdf
+1961,measles,Montana,9,,"2,484",stacks_1427_DS1.pdf
+1961,measles,Idaho,9,,"2,051",stacks_1427_DS1.pdf
+1961,measles,Wyoming,9,,493,stacks_1427_DS1.pdf
+1961,measles,Colorado,9,,"4,046",stacks_1427_DS1.pdf
+1961,measles,New Mexico,9,,914,stacks_1427_DS1.pdf
+1961,measles,Arizona,9,,"8,570",stacks_1427_DS1.pdf
+1961,measles,Nevada,9,,685,stacks_1427_DS1.pdf
+1961,measles,Oregon,9,,"5,939",stacks_1427_DS1.pdf
 1961,pertussis,New Jersey,10,.337,337,stacks_1427_DS1.pdf
 1961,pertussis,Oklahoma,10,,16,stacks_1427_DS1.pdf
 1961,pertussis,Texas,10,,"1,365",stacks_1427_DS1.pdf
@@ -80,13 +257,154 @@ year,disease,area,pdf_page,ocr_text_layer_had,read_from_page_image,source_file
 1961,pertussis,Kansas,10,,-,stacks_1427_DS1.pdf
 1961,pertussis,Alabama,10,,64,stacks_1427_DS1.pdf
 1961,pertussis,Arkansas,10,,33,stacks_1427_DS1.pdf
+1961,polio_paralytic,Maine,9,,7,stacks_1427_DS1.pdf
+1961,polio_paralytic,North Dakota,9,,1,stacks_1427_DS1.pdf
+1961,polio_paralytic,Virginia,9,,14,stacks_1427_DS1.pdf
+1961,polio_paralytic,Utah,9,,4,stacks_1427_DS1.pdf
+1961,polio_paralytic,Louisiana,9,,44,stacks_1427_DS1.pdf
+1961,polio_paralytic,Texas,9,,37,stacks_1427_DS1.pdf
+1961,polio_paralytic,Montana,9,,1,stacks_1427_DS1.pdf
+1961,polio_paralytic,Idaho,9,,13,stacks_1427_DS1.pdf
+1961,polio_paralytic,Wyoming,9,,1,stacks_1427_DS1.pdf
+1961,polio_paralytic,Colorado,9,,11,stacks_1427_DS1.pdf
+1961,polio_paralytic,New Mexico,9,,2,stacks_1427_DS1.pdf
+1961,polio_paralytic,Arizona,9,,6,stacks_1427_DS1.pdf
+1961,polio_paralytic,Nevada,9,,-,stacks_1427_DS1.pdf
+1961,polio_paralytic,Oregon,9,,9,stacks_1427_DS1.pdf
+1962,measles,Minnesota,9,,"1,675",stacks_380_DS1.pdf
+1962,measles,West Virginia,9,,"10,007",stacks_380_DS1.pdf
+1962,measles,South Carolina,9,,930,stacks_380_DS1.pdf
+1962,measles,Alabama,9,"'2,423","2,423",stacks_380_DS1.pdf
+1962,measles,Mississippi,9,,"2,757",stacks_380_DS1.pdf
+1962,measles,Louisiana,9,,252,stacks_380_DS1.pdf
+1962,measles,Oklahoma,9,,"2,095",stacks_380_DS1.pdf
+1962,measles,Texas,9,,"66,915",stacks_380_DS1.pdf
+1962,measles,Mountain,9,,"32,340",stacks_380_DS1.pdf
+1962,measles,Idaho,9,,"1,688",stacks_380_DS1.pdf
+1962,measles,Wyoming,9,,491,stacks_380_DS1.pdf
+1962,measles,New Mexico,9,,"1,451",stacks_380_DS1.pdf
+1962,measles,Utah,9,,"4,067",stacks_380_DS1.pdf
+1962,measles,Pacific,9,,"69,074",stacks_380_DS1.pdf
+1962,measles,Washington,9,,"22,060",stacks_380_DS1.pdf
+1962,measles,Oregon,9,,"13,868",stacks_380_DS1.pdf
+1962,measles,Alaska,9,,"1,386",stacks_380_DS1.pdf
+1962,measles,Hawaii,9,,"3,175",stacks_380_DS1.pdf
+1962,measles,Maine,9,,"7,135",stacks_380_DS1.pdf
+1962,measles,Vermont,9,,"2,040",stacks_380_DS1.pdf
+1962,measles,Montana,9,,"8,662",stacks_380_DS1.pdf
+1962,measles,Colorado,9,,"9,001",stacks_380_DS1.pdf
+1962,measles,Arizona,9,,"6,305",stacks_380_DS1.pdf
+1962,measles,Nevada,9,,675,stacks_380_DS1.pdf
+1962,measles,California,9,,"28,585",stacks_380_DS1.pdf
 1962,pertussis,Montana,10,,70,stacks_380_DS1.pdf
+1962,polio_paralytic,United States,10,,762,stacks_380_DS1.pdf
+1962,polio_paralytic,New England,10,,13,stacks_380_DS1.pdf
+1962,polio_paralytic,Middle Atlantic,10,,79,stacks_380_DS1.pdf
+1962,polio_paralytic,East North Central,10,,124,stacks_380_DS1.pdf
+1962,polio_paralytic,West North Central,10,,35,stacks_380_DS1.pdf
+1962,polio_paralytic,South Atlantic,10,,77,stacks_380_DS1.pdf
+1962,polio_paralytic,East South Central,10,,72,stacks_380_DS1.pdf
+1962,polio_paralytic,West South Central,10,,267,stacks_380_DS1.pdf
+1962,polio_paralytic,Mountain,10,,13,stacks_380_DS1.pdf
+1962,polio_paralytic,Pacific,10,,82,stacks_380_DS1.pdf
+1962,polio_paralytic,Alabama,10,,21,stacks_380_DS1.pdf
+1962,polio_paralytic,Alaska,10,,-,stacks_380_DS1.pdf
+1962,polio_paralytic,Arizona,10,,3,stacks_380_DS1.pdf
+1962,polio_paralytic,Arkansas,10,,21,stacks_380_DS1.pdf
+1962,polio_paralytic,California,10,,72,stacks_380_DS1.pdf
+1962,polio_paralytic,Colorado,10,,4,stacks_380_DS1.pdf
+1962,polio_paralytic,Connecticut,10,,2,stacks_380_DS1.pdf
+1962,polio_paralytic,Delaware,10,,-,stacks_380_DS1.pdf
+1962,polio_paralytic,District of Columbia,10,,1,stacks_380_DS1.pdf
+1962,polio_paralytic,Florida,10,,10,stacks_380_DS1.pdf
+1962,polio_paralytic,Georgia,10,,18,stacks_380_DS1.pdf
+1962,polio_paralytic,Hawaii,10,,-,stacks_380_DS1.pdf
+1962,polio_paralytic,Idaho,10,,1,stacks_380_DS1.pdf
+1962,polio_paralytic,Illinois,10,,54,stacks_380_DS1.pdf
+1962,polio_paralytic,Indiana,10,,24,stacks_380_DS1.pdf
+1962,polio_paralytic,Iowa,10,,4,stacks_380_DS1.pdf
+1962,polio_paralytic,Kansas,10,,-,stacks_380_DS1.pdf
+1962,polio_paralytic,Kentucky,10,,20,stacks_380_DS1.pdf
+1962,polio_paralytic,Louisiana,10,,31,stacks_380_DS1.pdf
+1962,polio_paralytic,Maine,10,,-,stacks_380_DS1.pdf
+1962,polio_paralytic,Maryland,10,,2,stacks_380_DS1.pdf
+1962,polio_paralytic,Massachusetts,10,,7,stacks_380_DS1.pdf
+1962,polio_paralytic,Michigan,10,,19,stacks_380_DS1.pdf
+1962,polio_paralytic,Minnesota,10,,7,stacks_380_DS1.pdf
+1962,polio_paralytic,Mississippi,10,,23,stacks_380_DS1.pdf
+1962,polio_paralytic,Missouri,10,,10,stacks_380_DS1.pdf
+1962,polio_paralytic,Montana,10,,1,stacks_380_DS1.pdf
+1962,polio_paralytic,Nebraska,10,,9,stacks_380_DS1.pdf
+1962,polio_paralytic,Nevada,10,,-,stacks_380_DS1.pdf
+1962,polio_paralytic,New Hampshire,10,,3,stacks_380_DS1.pdf
+1962,polio_paralytic,New Jersey,10,,7,stacks_380_DS1.pdf
+1962,polio_paralytic,New Mexico,10,,2,stacks_380_DS1.pdf
+1962,polio_paralytic,North Carolina,10,,13,stacks_380_DS1.pdf
+1962,polio_paralytic,North Dakota,10,,3,stacks_380_DS1.pdf
+1962,polio_paralytic,Ohio,10,,18,stacks_380_DS1.pdf
+1962,polio_paralytic,Oklahoma,10,,29,stacks_380_DS1.pdf
+1962,polio_paralytic,Oregon,10,,4,stacks_380_DS1.pdf
+1962,polio_paralytic,Pennsylvania,10,,19,stacks_380_DS1.pdf
+1962,polio_paralytic,Rhode Island,10,,-,stacks_380_DS1.pdf
+1962,polio_paralytic,South Carolina,10,,7,stacks_380_DS1.pdf
+1962,polio_paralytic,South Dakota,10,,2,stacks_380_DS1.pdf
+1962,polio_paralytic,Tennessee,10,,8,stacks_380_DS1.pdf
+1962,polio_paralytic,Texas,10,,186,stacks_380_DS1.pdf
+1962,polio_paralytic,Utah,10,,1,stacks_380_DS1.pdf
+1962,polio_paralytic,Vermont,10,,1,stacks_380_DS1.pdf
+1962,polio_paralytic,Virginia,10,,8,stacks_380_DS1.pdf
+1962,polio_paralytic,Washington,10,,6,stacks_380_DS1.pdf
+1962,polio_paralytic,West Virginia,10,,18,stacks_380_DS1.pdf
+1962,polio_paralytic,Wisconsin,10,,9,stacks_380_DS1.pdf
+1962,polio_paralytic,Wyoming,10,,1,stacks_380_DS1.pdf
+1962,polio_paralytic,New York,10,,53,stacks_380_DS1.pdf
+1963,measles,Vermont,9,,"1,928",stacks_491_DS1.pdf
+1963,measles,Massachusetts,9,,"4,978",stacks_491_DS1.pdf
+1963,measles,Minnesota,9,,"3,368",stacks_491_DS1.pdf
+1963,measles,Maryland,9,,"2,274",stacks_491_DS1.pdf
+1963,measles,West Virginia,9,,"14,273",stacks_491_DS1.pdf
+1963,measles,North Carolina,9,,"1,607",stacks_491_DS1.pdf
+1963,measles,Georgia,9,,226,stacks_491_DS1.pdf
+1963,measles,Tennessee,9,,"7,880",stacks_491_DS1.pdf
+1963,measles,Alabama,9,,"1,336",stacks_491_DS1.pdf
+1963,measles,Wyoming,9,,824,stacks_491_DS1.pdf
+1963,measles,Colorado,9,,"7,137",stacks_491_DS1.pdf
+1963,measles,New Mexico,9,,815,stacks_491_DS1.pdf
+1963,measles,Utah,9,,"3,400",stacks_491_DS1.pdf
+1963,measles,Pacific,9,,"41,870",stacks_491_DS1.pdf
+1963,measles,Hawaii,9,3.623,"3,623",stacks_491_DS1.pdf
 1963,pertussis,New Jersey,10,,-,stacks_491_DS1.pdf
 1963,pertussis,Tennessee,10,,865,stacks_491_DS1.pdf
 1963,pertussis,Alabama,10,,142,stacks_491_DS1.pdf
 1963,pertussis,Alaska,10,,17,stacks_491_DS1.pdf
 1963,pertussis,Iowa,10,,149,stacks_491_DS1.pdf
+1963,polio_paralytic,New Hampshire,10,,-,stacks_491_DS1.pdf
+1963,polio_paralytic,Rhode Island,10,,-,stacks_491_DS1.pdf
+1963,polio_paralytic,North Dakota,10,,-,stacks_491_DS1.pdf
+1963,polio_paralytic,Kansas,10,,-,stacks_491_DS1.pdf
+1963,polio_paralytic,Delaware,10,l,1,stacks_491_DS1.pdf
+1963,polio_paralytic,District of Columbia,10,l,1,stacks_491_DS1.pdf
+1963,polio_paralytic,Kentucky,10,,-,stacks_491_DS1.pdf
+1963,polio_paralytic,Alabama,10,,49,stacks_491_DS1.pdf
+1963,polio_paralytic,Mississippi,10,,15,stacks_491_DS1.pdf
+1963,polio_paralytic,Montana,10,,-,stacks_491_DS1.pdf
+1963,polio_paralytic,Wyoming,10,,-,stacks_491_DS1.pdf
+1963,polio_paralytic,New Mexico,10,,-,stacks_491_DS1.pdf
+1963,polio_paralytic,California,10,,15,stacks_491_DS1.pdf
+1963,polio_paralytic,Alaska,10,,-,stacks_491_DS1.pdf
+1963,polio_paralytic,Hawaii,10,,-,stacks_491_DS1.pdf
+1963,polio_paralytic,Iowa,10,,-,stacks_491_DS1.pdf
+1964,measles,New York (excluding New York City),11,"13,124","13,124",stacks_698_DS1.pdf
+1964,measles,South Carolina,11,"4,269+","4,269†",stacks_698_DS1.pdf
+1964,measles,New Mexico,11,,"1,181",stacks_698_DS1.pdf
+1964,measles,Arizona,11,6^767,"6,767",stacks_698_DS1.pdf
+1964,measles,Utah,11,,"2,435",stacks_698_DS1.pdf
 1964,pertussis,New Mexico,12,,49,stacks_698_DS1.pdf
+1964,polio_paralytic,Montana,12,.,-,stacks_698_DS1.pdf
+1964,polio_paralytic,Washington,12,.,-,stacks_698_DS1.pdf
+1964,polio_paralytic,Hawaii,12,,-,stacks_698_DS1.pdf
+1964,polio_paralytic,New Mexico,12,,-,stacks_698_DS1.pdf
+1965,measles,Rhode Island,10,"3,9/3","3,973",stacks_740_DS1.pdf
 1965,pertussis,United States,10,6.799,"6,799",stacks_740_DS1.pdf
 1965,pertussis,Kentucky,10,•68,68,stacks_740_DS1.pdf
 1965,pertussis,Alabama,10,,57,stacks_740_DS1.pdf
@@ -96,17 +414,471 @@ year,disease,area,pdf_page,ocr_text_layer_had,read_from_page_image,source_file
 1965,pertussis,New Mexico,10,,6,stacks_740_DS1.pdf
 1965,pertussis,Utah,10,,51,stacks_740_DS1.pdf
 1965,pertussis,Alaska,10,,9,stacks_740_DS1.pdf
+1965,polio_paralytic,United States,11,,61,stacks_740_DS1.pdf
+1965,polio_paralytic,New England,11,,1,stacks_740_DS1.pdf
+1965,polio_paralytic,Middle Atlantic,11,,4,stacks_740_DS1.pdf
+1965,polio_paralytic,East North Central,11,,5,stacks_740_DS1.pdf
+1965,polio_paralytic,West North Central,11,,10,stacks_740_DS1.pdf
+1965,polio_paralytic,South Atlantic,11,,3,stacks_740_DS1.pdf
+1965,polio_paralytic,East South Central,11,,2,stacks_740_DS1.pdf
+1965,polio_paralytic,West South Central,11,,24,stacks_740_DS1.pdf
+1965,polio_paralytic,Mountain,11,,3,stacks_740_DS1.pdf
+1965,polio_paralytic,Pacific,11,,9,stacks_740_DS1.pdf
+1965,polio_paralytic,Alabama,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,Alaska,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,Arizona,11,,2,stacks_740_DS1.pdf
+1965,polio_paralytic,Arkansas,11,,2,stacks_740_DS1.pdf
+1965,polio_paralytic,California,11,,5,stacks_740_DS1.pdf
+1965,polio_paralytic,Colorado,11,,1,stacks_740_DS1.pdf
+1965,polio_paralytic,Connecticut,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,Delaware,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,District of Columbia,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,Florida,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,Georgia,11,,1,stacks_740_DS1.pdf
+1965,polio_paralytic,Hawaii,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,Idaho,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,Illinois,11,,4,stacks_740_DS1.pdf
+1965,polio_paralytic,Indiana,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,Iowa,11,,3,stacks_740_DS1.pdf
+1965,polio_paralytic,Kansas,11,,1,stacks_740_DS1.pdf
+1965,polio_paralytic,Kentucky,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,Louisiana,11,,1,stacks_740_DS1.pdf
+1965,polio_paralytic,Maine,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,Maryland,11,,1,stacks_740_DS1.pdf
+1965,polio_paralytic,Massachusetts,11,,1,stacks_740_DS1.pdf
+1965,polio_paralytic,Michigan,11,,1,stacks_740_DS1.pdf
+1965,polio_paralytic,Minnesota,11,,1,stacks_740_DS1.pdf
+1965,polio_paralytic,Mississippi,11,,1,stacks_740_DS1.pdf
+1965,polio_paralytic,Missouri,11,,1,stacks_740_DS1.pdf
+1965,polio_paralytic,Montana,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,Nebraska,11,,4,stacks_740_DS1.pdf
+1965,polio_paralytic,Nevada,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,New Hampshire,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,New Jersey,11,,3,stacks_740_DS1.pdf
+1965,polio_paralytic,New Mexico,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,North Carolina,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,North Dakota,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,Ohio,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,Oklahoma,11,,2,stacks_740_DS1.pdf
+1965,polio_paralytic,Oregon,11,,1,stacks_740_DS1.pdf
+1965,polio_paralytic,Pennsylvania,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,Rhode Island,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,South Carolina,11,,1,stacks_740_DS1.pdf
+1965,polio_paralytic,South Dakota,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,Tennessee,11,,1,stacks_740_DS1.pdf
+1965,polio_paralytic,Texas,11,,19,stacks_740_DS1.pdf
+1965,polio_paralytic,Utah,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,Vermont,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,Virginia,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,Washington,11,,3,stacks_740_DS1.pdf
+1965,polio_paralytic,West Virginia,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,Wisconsin,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,Wyoming,11,,-,stacks_740_DS1.pdf
+1965,polio_paralytic,New York (excluding New York City),11,,1,stacks_740_DS1.pdf
+1965,polio_paralytic,New York City,11,,-,stacks_740_DS1.pdf
+1966,hepatitis_a,Ohio,9,,"1,344",stacks_615_DS1.pdf
+1966,measles,Hawaii,10,,168,stacks_615_DS1.pdf
 1966,pertussis,Alaska,10,.,-,stacks_615_DS1.pdf
+1966,polio_paralytic,United States,8,,106,stacks_615_DS1.pdf
+1966,polio_paralytic,New England,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Middle Atlantic,8,,1,stacks_615_DS1.pdf
+1966,polio_paralytic,East North Central,8,,7,stacks_615_DS1.pdf
+1966,polio_paralytic,West North Central,8,,1,stacks_615_DS1.pdf
+1966,polio_paralytic,South Atlantic,8,,4,stacks_615_DS1.pdf
+1966,polio_paralytic,East South Central,8,,4,stacks_615_DS1.pdf
+1966,polio_paralytic,West South Central,8,,75,stacks_615_DS1.pdf
+1966,polio_paralytic,Mountain,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Pacific,8,,14,stacks_615_DS1.pdf
+1966,polio_paralytic,Alabama,8,,1,stacks_615_DS1.pdf
+1966,polio_paralytic,Alaska,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Arizona,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Arkansas,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,California,8,,9,stacks_615_DS1.pdf
+1966,polio_paralytic,Colorado,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Connecticut,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Delaware,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,District of Columbia,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Florida,8,,1,stacks_615_DS1.pdf
+1966,polio_paralytic,Georgia,8,,1,stacks_615_DS1.pdf
+1966,polio_paralytic,Hawaii,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Idaho,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Illinois,8,,2,stacks_615_DS1.pdf
+1966,polio_paralytic,Indiana,8,,2,stacks_615_DS1.pdf
+1966,polio_paralytic,Iowa,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Kansas,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Kentucky,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Louisiana,8,,1,stacks_615_DS1.pdf
+1966,polio_paralytic,Maine,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Maryland,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Massachusetts,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Michigan,8,,1,stacks_615_DS1.pdf
+1966,polio_paralytic,Minnesota,8,,1,stacks_615_DS1.pdf
+1966,polio_paralytic,Mississippi,8,,3,stacks_615_DS1.pdf
+1966,polio_paralytic,Missouri,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Montana,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Nebraska,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Nevada,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,New Hampshire,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,New Jersey,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,New Mexico,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,North Carolina,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,North Dakota,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Ohio,8,,2,stacks_615_DS1.pdf
+1966,polio_paralytic,Oklahoma,8,,1,stacks_615_DS1.pdf
+1966,polio_paralytic,Oregon,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Pennsylvania,8,,1,stacks_615_DS1.pdf
+1966,polio_paralytic,Rhode Island,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,South Carolina,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,South Dakota,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Tennessee,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Texas,8,,73,stacks_615_DS1.pdf
+1966,polio_paralytic,Utah,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Vermont,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Virginia,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Washington,8,,5,stacks_615_DS1.pdf
+1966,polio_paralytic,West Virginia,8,,2,stacks_615_DS1.pdf
+1966,polio_paralytic,Wisconsin,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,Wyoming,8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,New York (excluding New York City),8,,-,stacks_615_DS1.pdf
+1966,polio_paralytic,New York City,8,,-,stacks_615_DS1.pdf
+1967,hepatitis_a,United States,9,,"38,909",stacks_1555_DS1.pdf
+1967,hepatitis_a,New England,9,,"1,750",stacks_1555_DS1.pdf
+1967,hepatitis_a,Maine,9,,171,stacks_1555_DS1.pdf
+1967,hepatitis_a,New Hampshire,9,,44,stacks_1555_DS1.pdf
+1967,hepatitis_a,Vermont,9,,16,stacks_1555_DS1.pdf
+1967,hepatitis_a,Massachusetts,9,,716,stacks_1555_DS1.pdf
+1967,hepatitis_a,Rhode Island,9,,195,stacks_1555_DS1.pdf
+1967,hepatitis_a,Connecticut,9,,608,stacks_1555_DS1.pdf
+1967,hepatitis_a,Middle Atlantic,9,,"6,154",stacks_1555_DS1.pdf
+1967,hepatitis_a,New York City,9,,"1,965",stacks_1555_DS1.pdf
+1967,hepatitis_a,New York (excluding New York City),9,,"1,444",stacks_1555_DS1.pdf
+1967,hepatitis_a,New Jersey,9,,"1,260",stacks_1555_DS1.pdf
+1967,hepatitis_a,Pennsylvania,9,,"1,485",stacks_1555_DS1.pdf
+1967,hepatitis_a,East North Central,9,,"6,161",stacks_1555_DS1.pdf
+1967,hepatitis_a,Ohio,9,,"1,422",stacks_1555_DS1.pdf
+1967,hepatitis_a,Indiana,9,,618,stacks_1555_DS1.pdf
+1967,hepatitis_a,Illinois,9,,"1,763",stacks_1555_DS1.pdf
+1967,hepatitis_a,Michigan,9,,"1,882",stacks_1555_DS1.pdf
+1967,hepatitis_a,Wisconsin,9,,476,stacks_1555_DS1.pdf
+1967,hepatitis_a,West North Central,9,,"2,549",stacks_1555_DS1.pdf
+1967,hepatitis_a,Minnesota,9,,511,stacks_1555_DS1.pdf
+1967,hepatitis_a,Iowa,9,,350,stacks_1555_DS1.pdf
+1967,hepatitis_a,Missouri,9,,"1,307",stacks_1555_DS1.pdf
+1967,hepatitis_a,North Dakota,9,,77,stacks_1555_DS1.pdf
+1967,hepatitis_a,South Dakota,9,,14,stacks_1555_DS1.pdf
+1967,hepatitis_a,Nebraska,9,,72,stacks_1555_DS1.pdf
+1967,hepatitis_a,Kansas,9,,218,stacks_1555_DS1.pdf
+1967,hepatitis_a,South Atlantic,9,,"4,231",stacks_1555_DS1.pdf
+1967,hepatitis_a,Delaware,9,,176,stacks_1555_DS1.pdf
+1967,hepatitis_a,Maryland,9,,879,stacks_1555_DS1.pdf
+1967,hepatitis_a,District of Columbia,9,,45,stacks_1555_DS1.pdf
+1967,hepatitis_a,Virginia,9,,744,stacks_1555_DS1.pdf
+1967,hepatitis_a,West Virginia,9,,383,stacks_1555_DS1.pdf
+1967,hepatitis_a,North Carolina,9,,338,stacks_1555_DS1.pdf
+1967,hepatitis_a,South Carolina,9,,111,stacks_1555_DS1.pdf
+1967,hepatitis_a,Georgia,9,,916,stacks_1555_DS1.pdf
+1967,hepatitis_a,Florida,9,,639,stacks_1555_DS1.pdf
+1967,hepatitis_a,East South Central,9,,"2,746",stacks_1555_DS1.pdf
+1967,hepatitis_a,Kentucky,9,,"1,135",stacks_1555_DS1.pdf
+1967,hepatitis_a,Tennessee,9,,835,stacks_1555_DS1.pdf
+1967,hepatitis_a,Alabama,9,,293,stacks_1555_DS1.pdf
+1967,hepatitis_a,Mississippi,9,,483,stacks_1555_DS1.pdf
+1967,hepatitis_a,West South Central,9,,"4,083",stacks_1555_DS1.pdf
+1967,hepatitis_a,Arkansas,9,,285,stacks_1555_DS1.pdf
+1967,hepatitis_a,Louisiana,9,,652*,stacks_1555_DS1.pdf
+1967,hepatitis_a,Oklahoma,9,,345,stacks_1555_DS1.pdf
+1967,hepatitis_a,Texas,9,,"2,801",stacks_1555_DS1.pdf
+1967,hepatitis_a,Mountain,9,,"1,794",stacks_1555_DS1.pdf
+1967,hepatitis_a,Montana,9,,185,stacks_1555_DS1.pdf
+1967,hepatitis_a,Idaho,9,,131,stacks_1555_DS1.pdf
+1967,hepatitis_a,Wyoming,9,,70,stacks_1555_DS1.pdf
+1967,hepatitis_a,Colorado,9,,328,stacks_1555_DS1.pdf
+1967,hepatitis_a,New Mexico,9,,446,stacks_1555_DS1.pdf
+1967,hepatitis_a,Arizona,9,,416,stacks_1555_DS1.pdf
+1967,hepatitis_a,Utah,9,,169,stacks_1555_DS1.pdf
+1967,hepatitis_a,Nevada,9,,49,stacks_1555_DS1.pdf
+1967,hepatitis_a,Pacific,9,,"9,441",stacks_1555_DS1.pdf
+1967,hepatitis_a,Washington,9,,983,stacks_1555_DS1.pdf
+1967,hepatitis_a,Oregon,9,,864,stacks_1555_DS1.pdf
+1967,hepatitis_a,California,9,,"7,499",stacks_1555_DS1.pdf
+1967,hepatitis_a,Alaska,9,,41,stacks_1555_DS1.pdf
+1967,hepatitis_a,Hawaii,9,,54,stacks_1555_DS1.pdf
+1967,measles,Maine,10,,278,stacks_1555_DS1.pdf
+1967,measles,Texas,10,,"13,411",stacks_1555_DS1.pdf
+1967,measles,Montana,10,,340,stacks_1555_DS1.pdf
 1967,pertussis,Maine,10,,265,stacks_1555_DS1.pdf
 1967,pertussis,Texas,10,,846,stacks_1555_DS1.pdf
 1967,pertussis,Montana,10,,199,stacks_1555_DS1.pdf
+1967,polio_paralytic,United States,8,,40,stacks_1555_DS1.pdf
+1967,polio_paralytic,New England,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Middle Atlantic,8,,5,stacks_1555_DS1.pdf
+1967,polio_paralytic,East North Central,8,,7,stacks_1555_DS1.pdf
+1967,polio_paralytic,West North Central,8,,4,stacks_1555_DS1.pdf
+1967,polio_paralytic,South Atlantic,8,,2,stacks_1555_DS1.pdf
+1967,polio_paralytic,East South Central,8,,2,stacks_1555_DS1.pdf
+1967,polio_paralytic,West South Central,8,,14,stacks_1555_DS1.pdf
+1967,polio_paralytic,Mountain,8,,1,stacks_1555_DS1.pdf
+1967,polio_paralytic,Pacific,8,,5,stacks_1555_DS1.pdf
+1967,polio_paralytic,Alabama,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Alaska,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Arizona,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Arkansas,8,,1,stacks_1555_DS1.pdf
+1967,polio_paralytic,California,8,,5*,stacks_1555_DS1.pdf
+1967,polio_paralytic,Colorado,8,,1,stacks_1555_DS1.pdf
+1967,polio_paralytic,Connecticut,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Delaware,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,District of Columbia,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Florida,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Georgia,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Hawaii,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Idaho,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Illinois,8,,1,stacks_1555_DS1.pdf
+1967,polio_paralytic,Indiana,8,,3,stacks_1555_DS1.pdf
+1967,polio_paralytic,Iowa,8,,1,stacks_1555_DS1.pdf
+1967,polio_paralytic,Kansas,8,,2,stacks_1555_DS1.pdf
+1967,polio_paralytic,Kentucky,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Louisiana,8,,1,stacks_1555_DS1.pdf
+1967,polio_paralytic,Maine,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Maryland,8,,1,stacks_1555_DS1.pdf
+1967,polio_paralytic,Massachusetts,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Michigan,8,,3,stacks_1555_DS1.pdf
+1967,polio_paralytic,Minnesota,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Mississippi,8,,2,stacks_1555_DS1.pdf
+1967,polio_paralytic,Missouri,8,,1,stacks_1555_DS1.pdf
+1967,polio_paralytic,Montana,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Nebraska,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Nevada,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,New Hampshire,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,New Jersey,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,New Mexico,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,North Carolina,8,,1,stacks_1555_DS1.pdf
+1967,polio_paralytic,North Dakota,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Ohio,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Oklahoma,8,,2,stacks_1555_DS1.pdf
+1967,polio_paralytic,Oregon,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Pennsylvania,8,,3,stacks_1555_DS1.pdf
+1967,polio_paralytic,Rhode Island,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,South Carolina,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,South Dakota,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Tennessee,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Texas,8,,10,stacks_1555_DS1.pdf
+1967,polio_paralytic,Utah,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Vermont,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Virginia,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Washington,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,West Virginia,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Wisconsin,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,Wyoming,8,,-,stacks_1555_DS1.pdf
+1967,polio_paralytic,New York (excluding New York City),8,,1,stacks_1555_DS1.pdf
+1967,polio_paralytic,New York City,8,,1,stacks_1555_DS1.pdf
+1968,hepatitis_a,Pennsylvania,9,",1,831","1,831",stacks_1717_DS1.pdf
+1968,hepatitis_a,Louisiana,9,*751,*751,stacks_1717_DS1.pdf
+1968,hepatitis_a,North Carolina,9,,375,stacks_1717_DS1.pdf
+1968,hepatitis_a,Kentucky,9,,"1,152",stacks_1717_DS1.pdf
 1968,measles,New Hampshire,10,ISO,150,stacks_1717_DS1.pdf
 1968,measles,Mississippi,10,*248,248*,stacks_1717_DS1.pdf
 1968,measles,Alaska,10,,11,stacks_1717_DS1.pdf
 1968,mumps,Alaska,10,,705,stacks_1717_DS1.pdf
 1968,pertussis,Alaska,10,,3,stacks_1717_DS1.pdf
+1968,polio_paralytic,United States,8,,53,stacks_1717_DS1.pdf
+1968,polio_paralytic,New England,8,,2,stacks_1717_DS1.pdf
+1968,polio_paralytic,Middle Atlantic,8,,2,stacks_1717_DS1.pdf
+1968,polio_paralytic,East North Central,8,,11,stacks_1717_DS1.pdf
+1968,polio_paralytic,West North Central,8,,3,stacks_1717_DS1.pdf
+1968,polio_paralytic,South Atlantic,8,,3,stacks_1717_DS1.pdf
+1968,polio_paralytic,East South Central,8,,1,stacks_1717_DS1.pdf
+1968,polio_paralytic,West South Central,8,,24,stacks_1717_DS1.pdf
+1968,polio_paralytic,Mountain,8,,4,stacks_1717_DS1.pdf
+1968,polio_paralytic,Pacific,8,,3,stacks_1717_DS1.pdf
+1968,polio_paralytic,Alabama,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,Alaska,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,Arizona,8,,1,stacks_1717_DS1.pdf
+1968,polio_paralytic,Arkansas,8,,1,stacks_1717_DS1.pdf
+1968,polio_paralytic,California,8,,2**,stacks_1717_DS1.pdf
+1968,polio_paralytic,Colorado,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,Connecticut,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,Delaware,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,District of Columbia,8,,1,stacks_1717_DS1.pdf
+1968,polio_paralytic,Florida,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,Georgia,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,Hawaii,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,Idaho,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,Illinois,8,,3,stacks_1717_DS1.pdf
+1968,polio_paralytic,Indiana,8,,3,stacks_1717_DS1.pdf
+1968,polio_paralytic,Iowa,8,,1,stacks_1717_DS1.pdf
+1968,polio_paralytic,Kansas,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,Kentucky,8,,1,stacks_1717_DS1.pdf
+1968,polio_paralytic,Louisiana,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,Maine,8,,1,stacks_1717_DS1.pdf
+1968,polio_paralytic,Maryland,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,Massachusetts,8,,1,stacks_1717_DS1.pdf
+1968,polio_paralytic,Michigan,8,,3,stacks_1717_DS1.pdf
+1968,polio_paralytic,Minnesota,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,Mississippi,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,Missouri,8,,2,stacks_1717_DS1.pdf
+1968,polio_paralytic,Montana,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,Nebraska,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,Nevada,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,New Hampshire,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,New Jersey,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,New Mexico,8,,3*,stacks_1717_DS1.pdf
+1968,polio_paralytic,North Carolina,8,,1,stacks_1717_DS1.pdf
+1968,polio_paralytic,North Dakota,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,Ohio,8,,2,stacks_1717_DS1.pdf
+1968,polio_paralytic,Oklahoma,8,,1,stacks_1717_DS1.pdf
+1968,polio_paralytic,Oregon,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,Pennsylvania,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,Rhode Island,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,South Carolina,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,South Dakota,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,Tennessee,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,Texas,8,,22,stacks_1717_DS1.pdf
+1968,polio_paralytic,Utah,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,Vermont,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,Virginia,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,Washington,8,,1,stacks_1717_DS1.pdf
+1968,polio_paralytic,West Virginia,8,,1,stacks_1717_DS1.pdf
+1968,polio_paralytic,Wisconsin,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,Wyoming,8,,-,stacks_1717_DS1.pdf
+1968,polio_paralytic,New York (excluding New York City),8,,1,stacks_1717_DS1.pdf
+1968,polio_paralytic,New York City,8,,1,stacks_1717_DS1.pdf
+1969,hepatitis_a,Louisiana,9,*873,*873,stacks_838_DS1.pdf
 1969,measles,Mississippi,10,*221,221*,stacks_838_DS1.pdf
+1969,polio_paralytic,United States,8,,18,stacks_838_DS1.pdf
+1969,polio_paralytic,New England,8,,2,stacks_838_DS1.pdf
+1969,polio_paralytic,Middle Atlantic,8,,2,stacks_838_DS1.pdf
+1969,polio_paralytic,East North Central,8,,2,stacks_838_DS1.pdf
+1969,polio_paralytic,West North Central,8,,1,stacks_838_DS1.pdf
+1969,polio_paralytic,South Atlantic,8,,1,stacks_838_DS1.pdf
+1969,polio_paralytic,East South Central,8,,1,stacks_838_DS1.pdf
+1969,polio_paralytic,West South Central,8,,7,stacks_838_DS1.pdf
+1969,polio_paralytic,Mountain,8,,1,stacks_838_DS1.pdf
+1969,polio_paralytic,Pacific,8,,1,stacks_838_DS1.pdf
+1969,polio_paralytic,Alabama,8,,1,stacks_838_DS1.pdf
+1969,polio_paralytic,Alaska,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Arizona,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Arkansas,8,,1,stacks_838_DS1.pdf
+1969,polio_paralytic,California,8,,1,stacks_838_DS1.pdf
+1969,polio_paralytic,Colorado,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Connecticut,8,,1,stacks_838_DS1.pdf
+1969,polio_paralytic,Delaware,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,District of Columbia,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Florida,8,,1,stacks_838_DS1.pdf
+1969,polio_paralytic,Georgia,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Hawaii,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Idaho,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Illinois,8,,1,stacks_838_DS1.pdf
+1969,polio_paralytic,Indiana,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Iowa,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Kansas,8,,1,stacks_838_DS1.pdf
+1969,polio_paralytic,Kentucky,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Louisiana,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Maine,8,,1,stacks_838_DS1.pdf
+1969,polio_paralytic,Maryland,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Massachusetts,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Michigan,8,,1,stacks_838_DS1.pdf
+1969,polio_paralytic,Minnesota,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Mississippi,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Missouri,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Montana,8,,1,stacks_838_DS1.pdf
+1969,polio_paralytic,Nebraska,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Nevada,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,New Hampshire,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,New Jersey,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,New Mexico,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,North Carolina,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,North Dakota,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Ohio,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Oklahoma,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Oregon,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Pennsylvania,8,,1,stacks_838_DS1.pdf
+1969,polio_paralytic,Rhode Island,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,South Carolina,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,South Dakota,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Tennessee,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Texas,8,,6,stacks_838_DS1.pdf
+1969,polio_paralytic,Utah,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Vermont,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Virginia,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Washington,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,West Virginia,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Wisconsin,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,Wyoming,8,,-,stacks_838_DS1.pdf
+1969,polio_paralytic,New York (excluding New York City),8,,1,stacks_838_DS1.pdf
+1969,polio_paralytic,New York City,8,,-,stacks_838_DS1.pdf
+1970,hepatitis_a,Ohio,9,"2,280-.","2,280",stacks_951_DS1.pdf
+1970,hepatitis_a,Nevada,9,192',192,stacks_951_DS1.pdf
+1970,hepatitis_a,South Atlantic,9,,"6,751",stacks_951_DS1.pdf
+1970,hepatitis_a,South Carolina,9,,358,stacks_951_DS1.pdf
+1970,hepatitis_a,East South Central,9,,"3,229",stacks_951_DS1.pdf
+1970,hepatitis_a,West South Central,9,,"4,206",stacks_951_DS1.pdf
+1970,hepatitis_a,Mountain,9,,"3,217",stacks_951_DS1.pdf
+1970,hepatitis_a,Pacific,9,,"12,781",stacks_951_DS1.pdf
+1970,hepatitis_a,Oregon,9,,"1,033",stacks_951_DS1.pdf
+1970,hepatitis_a,Hawaii,9,,233,stacks_951_DS1.pdf
 1970,mumps,Oklahoma,10,,"2,683",stacks_951_DS1.pdf
+1970,polio_paralytic,United States,8,,31,stacks_951_DS1.pdf
+1970,polio_paralytic,New England,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Middle Atlantic,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,East North Central,8,,3,stacks_951_DS1.pdf
+1970,polio_paralytic,West North Central,8,,1,stacks_951_DS1.pdf
+1970,polio_paralytic,South Atlantic,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,East South Central,8,,1,stacks_951_DS1.pdf
+1970,polio_paralytic,West South Central,8,,22,stacks_951_DS1.pdf
+1970,polio_paralytic,Mountain,8,,1,stacks_951_DS1.pdf
+1970,polio_paralytic,Pacific,8,,3,stacks_951_DS1.pdf
+1970,polio_paralytic,Alabama,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Alaska,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Arizona,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Arkansas,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,California,8,,2,stacks_951_DS1.pdf
+1970,polio_paralytic,Colorado,8,,1,stacks_951_DS1.pdf
+1970,polio_paralytic,Connecticut,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Delaware,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,District of Columbia,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Florida,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Georgia,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Hawaii,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Idaho,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Illinois,8,,1,stacks_951_DS1.pdf
+1970,polio_paralytic,Indiana,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Iowa,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Kansas,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Kentucky,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Louisiana,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Maine,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Maryland,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Massachusetts,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Michigan,8,,2,stacks_951_DS1.pdf
+1970,polio_paralytic,Minnesota,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Mississippi,8,,1,stacks_951_DS1.pdf
+1970,polio_paralytic,Missouri,8,,1,stacks_951_DS1.pdf
+1970,polio_paralytic,Montana,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Nebraska,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Nevada,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,New Hampshire,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,New Jersey,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,New Mexico,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,North Carolina,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,North Dakota,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Ohio,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Oklahoma,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Oregon,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Pennsylvania,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Rhode Island,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,South Carolina,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,South Dakota,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Tennessee,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Texas,8,,22,stacks_951_DS1.pdf
+1970,polio_paralytic,Utah,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Vermont,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Virginia,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Washington,8,,1,stacks_951_DS1.pdf
+1970,polio_paralytic,West Virginia,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Wisconsin,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,Wyoming,8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,New York (excluding New York City),8,,-,stacks_951_DS1.pdf
+1970,polio_paralytic,New York City,8,,-,stacks_951_DS1.pdf
 1971,measles,Arkansas,10,,819,stacks_1829_DS1.pdf
 1971,measles,Georgia,10,,390,stacks_1829_DS1.pdf
 1971,measles,New Jersey,10,,"1,260",stacks_1829_DS1.pdf
@@ -128,11 +900,604 @@ year,disease,area,pdf_page,ocr_text_layer_had,read_from_page_image,source_file
 1971,pertussis,New Jersey,10,,7,stacks_1829_DS1.pdf
 1971,pertussis,Oregon,10,,108,stacks_1829_DS1.pdf
 1971,pertussis,Virginia,10,,61,stacks_1829_DS1.pdf
+1971,polio_paralytic,United States,8,,17,stacks_1829_DS1.pdf
+1971,polio_paralytic,New England,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Middle Atlantic,8,,1,stacks_1829_DS1.pdf
+1971,polio_paralytic,East North Central,8,,2,stacks_1829_DS1.pdf
+1971,polio_paralytic,West North Central,8,,1,stacks_1829_DS1.pdf
+1971,polio_paralytic,South Atlantic,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,East South Central,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,West South Central,8,,4,stacks_1829_DS1.pdf
+1971,polio_paralytic,Mountain,8,,3,stacks_1829_DS1.pdf
+1971,polio_paralytic,Pacific,8,,6,stacks_1829_DS1.pdf
+1971,polio_paralytic,Alabama,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Alaska,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Arizona,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Arkansas,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,California,8,,4,stacks_1829_DS1.pdf
+1971,polio_paralytic,Colorado,8,,1,stacks_1829_DS1.pdf
+1971,polio_paralytic,Connecticut,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Delaware,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,District of Columbia,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Florida,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Georgia,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Hawaii,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Idaho,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Illinois,8,,1,stacks_1829_DS1.pdf
+1971,polio_paralytic,Indiana,8,,1,stacks_1829_DS1.pdf
+1971,polio_paralytic,Iowa,8,,1,stacks_1829_DS1.pdf
+1971,polio_paralytic,Kansas,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Kentucky,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Louisiana,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Maine,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Maryland,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Massachusetts,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Michigan,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Minnesota,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Mississippi,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Missouri,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Montana,8,,1,stacks_1829_DS1.pdf
+1971,polio_paralytic,Nebraska,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Nevada,8,,1,stacks_1829_DS1.pdf
+1971,polio_paralytic,New Hampshire,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,New Jersey,8,,1,stacks_1829_DS1.pdf
+1971,polio_paralytic,New Mexico,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,North Carolina,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,North Dakota,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Ohio,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Oklahoma,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Oregon,8,,1,stacks_1829_DS1.pdf
+1971,polio_paralytic,Pennsylvania,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Rhode Island,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,South Carolina,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,South Dakota,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Tennessee,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Texas,8,,4,stacks_1829_DS1.pdf
+1971,polio_paralytic,Utah,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Vermont,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Virginia,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Washington,8,,1,stacks_1829_DS1.pdf
+1971,polio_paralytic,West Virginia,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Wisconsin,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,Wyoming,8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,New York (excluding New York City),8,,-,stacks_1829_DS1.pdf
+1971,polio_paralytic,New York City,8,,-,stacks_1829_DS1.pdf
+1972,hepatitis_a,Maine,9,,464,stacks_1895_DS1.pdf
+1972,hepatitis_a,Florida,9,,"2,459",stacks_1895_DS1.pdf
+1972,hepatitis_a,Tennessee,9,,"1,435",stacks_1895_DS1.pdf
+1972,hepatitis_a,Alabama,9,,382,stacks_1895_DS1.pdf
+1972,hepatitis_a,Mississippi,9,,237,stacks_1895_DS1.pdf
+1972,hepatitis_a,Arkansas,9,,340,stacks_1895_DS1.pdf
+1972,hepatitis_a,Louisiana,9,,630,stacks_1895_DS1.pdf
+1972,hepatitis_a,Texas,9,,"3,905",stacks_1895_DS1.pdf
+1972,hepatitis_a,Montana,9,,258,stacks_1895_DS1.pdf
+1972,hepatitis_a,Idaho,9,,383,stacks_1895_DS1.pdf
+1972,hepatitis_a,Wyoming,9,,49,stacks_1895_DS1.pdf
+1972,hepatitis_a,Arizona,9,,750,stacks_1895_DS1.pdf
+1972,hepatitis_a,Nevada,9,,98,stacks_1895_DS1.pdf
+1972,hepatitis_a,Alaska,9,,247,stacks_1895_DS1.pdf
 1972,mumps,East South Central,10,3y859,"3,859",stacks_1895_DS1.pdf
+1972,polio_paralytic,United States,8,,29,stacks_1895_DS1.pdf
+1972,polio_paralytic,New England,8,,12,stacks_1895_DS1.pdf
+1972,polio_paralytic,Middle Atlantic,8,,5,stacks_1895_DS1.pdf
+1972,polio_paralytic,East North Central,8,,3,stacks_1895_DS1.pdf
+1972,polio_paralytic,West North Central,8,,1,stacks_1895_DS1.pdf
+1972,polio_paralytic,South Atlantic,8,,2,stacks_1895_DS1.pdf
+1972,polio_paralytic,East South Central,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,West South Central,8,,4,stacks_1895_DS1.pdf
+1972,polio_paralytic,Mountain,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Pacific,8,,2,stacks_1895_DS1.pdf
+1972,polio_paralytic,Alabama,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Alaska,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Arizona,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Arkansas,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,California,8,,2,stacks_1895_DS1.pdf
+1972,polio_paralytic,Colorado,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Connecticut,8,,11,stacks_1895_DS1.pdf
+1972,polio_paralytic,Delaware,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,District of Columbia,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Florida,8,,1,stacks_1895_DS1.pdf
+1972,polio_paralytic,Georgia,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Hawaii,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Idaho,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Illinois,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Indiana,8,,1,stacks_1895_DS1.pdf
+1972,polio_paralytic,Iowa,8,,1,stacks_1895_DS1.pdf
+1972,polio_paralytic,Kansas,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Kentucky,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Louisiana,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Maine,8,,1,stacks_1895_DS1.pdf
+1972,polio_paralytic,Maryland,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Massachusetts,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Michigan,8,,1,stacks_1895_DS1.pdf
+1972,polio_paralytic,Minnesota,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Mississippi,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Missouri,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Montana,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Nebraska,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Nevada,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,New Hampshire,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,New Jersey,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,New Mexico,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,North Carolina,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,North Dakota,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Ohio,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Oklahoma,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Oregon,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Pennsylvania,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Rhode Island,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,South Carolina,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,South Dakota,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Tennessee,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Texas,8,,4,stacks_1895_DS1.pdf
+1972,polio_paralytic,Utah,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Vermont,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Virginia,8,,1,stacks_1895_DS1.pdf
+1972,polio_paralytic,Washington,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,West Virginia,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,Wisconsin,8,,1,stacks_1895_DS1.pdf
+1972,polio_paralytic,Wyoming,8,,-,stacks_1895_DS1.pdf
+1972,polio_paralytic,New York (excluding New York City),8,,4,stacks_1895_DS1.pdf
+1972,polio_paralytic,New York City,8,,1,stacks_1895_DS1.pdf
+1973,hepatitis_a,Middle Atlantic,9,,"5,929",stacks_1849_DS1.pdf
+1973,hepatitis_a,West North Central,9,,"2,047",stacks_1849_DS1.pdf
+1973,hepatitis_a,West South Central,9,,"7,075",stacks_1849_DS1.pdf
+1973,hepatitis_a,Mountain,9,,"2,628",stacks_1849_DS1.pdf
+1973,hepatitis_a,Pacific,9,,"9,960",stacks_1849_DS1.pdf
+1973,polio_paralytic,United States,12,,7,stacks_1849_DS1.pdf
+1973,polio_paralytic,New England,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Middle Atlantic,12,,1,stacks_1849_DS1.pdf
+1973,polio_paralytic,East North Central,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,West North Central,12,,1,stacks_1849_DS1.pdf
+1973,polio_paralytic,South Atlantic,12,,2,stacks_1849_DS1.pdf
+1973,polio_paralytic,East South Central,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,West South Central,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Mountain,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Pacific,12,,3,stacks_1849_DS1.pdf
+1973,polio_paralytic,Alabama,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Alaska,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Arizona,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Arkansas,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,California,12,,2,stacks_1849_DS1.pdf
+1973,polio_paralytic,Colorado,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Connecticut,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Delaware,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,District of Columbia,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Florida,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Georgia,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Hawaii,12,,1,stacks_1849_DS1.pdf
+1973,polio_paralytic,Idaho,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Illinois,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Indiana,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Iowa,12,,1,stacks_1849_DS1.pdf
+1973,polio_paralytic,Kansas,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Kentucky,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Louisiana,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Maine,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Maryland,12,,1,stacks_1849_DS1.pdf
+1973,polio_paralytic,Massachusetts,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Michigan,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Minnesota,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Mississippi,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Missouri,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Montana,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Nebraska,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Nevada,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,New Hampshire,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,New Jersey,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,New Mexico,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,North Carolina,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,North Dakota,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Ohio,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Oklahoma,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Oregon,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Pennsylvania,12,,1,stacks_1849_DS1.pdf
+1973,polio_paralytic,Rhode Island,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,South Carolina,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,South Dakota,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Tennessee,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Texas,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Utah,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Vermont,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Virginia,12,,1,stacks_1849_DS1.pdf
+1973,polio_paralytic,Washington,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,West Virginia,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Wisconsin,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,Wyoming,12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,New York (excluding New York City),12,,-,stacks_1849_DS1.pdf
+1973,polio_paralytic,New York City,12,,-,stacks_1849_DS1.pdf
+1974,hepatitis_a,District of Columbia,9,,44,stacks_1743_DS1.pdf
 1974,measles,California,10,"1,1IS","1,115",stacks_1743_DS1.pdf
+1974,polio_paralytic,United States,12,,7,stacks_1743_DS1.pdf
+1974,polio_paralytic,New England,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Middle Atlantic,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,East North Central,12,,3,stacks_1743_DS1.pdf
+1974,polio_paralytic,West North Central,12,,2,stacks_1743_DS1.pdf
+1974,polio_paralytic,South Atlantic,12,,1,stacks_1743_DS1.pdf
+1974,polio_paralytic,East South Central,12,,1,stacks_1743_DS1.pdf
+1974,polio_paralytic,West South Central,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Mountain,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Pacific,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Alabama,12,,1,stacks_1743_DS1.pdf
+1974,polio_paralytic,Alaska,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Arizona,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Arkansas,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,California,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Colorado,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Connecticut,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Delaware,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,District of Columbia,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Florida,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Georgia,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Hawaii,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Idaho,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Illinois,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Indiana,12,,1,stacks_1743_DS1.pdf
+1974,polio_paralytic,Iowa,12,,2,stacks_1743_DS1.pdf
+1974,polio_paralytic,Kansas,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Kentucky,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Louisiana,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Maine,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Maryland,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Massachusetts,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Michigan,12,,2,stacks_1743_DS1.pdf
+1974,polio_paralytic,Minnesota,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Mississippi,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Missouri,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Montana,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Nebraska,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Nevada,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,New Hampshire,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,New Jersey,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,New Mexico,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,North Carolina,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,North Dakota,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Ohio,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Oklahoma,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Oregon,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Pennsylvania,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Rhode Island,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,South Carolina,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,South Dakota,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Tennessee,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Texas,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Utah,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Vermont,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Virginia,12,,1,stacks_1743_DS1.pdf
+1974,polio_paralytic,Washington,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,West Virginia,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Wisconsin,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,Wyoming,12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,New York (excluding New York City),12,,-,stacks_1743_DS1.pdf
+1974,polio_paralytic,New York City,12,,-,stacks_1743_DS1.pdf
+1975,hepatitis_a,Ohio,9,,"1,648",stacks_1041_DS1.pdf
+1975,hepatitis_a,Missouri,9,,542,stacks_1041_DS1.pdf
+1975,hepatitis_a,Virginia,9,,420,stacks_1041_DS1.pdf
+1975,hepatitis_a,West Virginia,9,,160,stacks_1041_DS1.pdf
+1975,hepatitis_a,South Carolina,9,,340,stacks_1041_DS1.pdf
+1975,hepatitis_a,Wyoming,9,,30,stacks_1041_DS1.pdf
+1975,hepatitis_a,New England,9,,"1,196",stacks_1041_DS1.pdf
+1975,hepatitis_a,Florida,9,,"2,967",stacks_1041_DS1.pdf
+1975,hepatitis_a,West South Central,9,,"4,215",stacks_1041_DS1.pdf
+1975,hepatitis_a,Mountain,9,,"1,988",stacks_1041_DS1.pdf
+1975,hepatitis_a,Pacific,9,,"7,326",stacks_1041_DS1.pdf
 1975,measles,Connecticut,10,I29,129,stacks_1041_DS1.pdf
 1975,measles,West South Central,10,•635,635,stacks_1041_DS1.pdf
+1975,polio_paralytic,United States,12,,8,stacks_1041_DS1.pdf
+1975,polio_paralytic,New England,12,,1,stacks_1041_DS1.pdf
+1975,polio_paralytic,Middle Atlantic,12,,1,stacks_1041_DS1.pdf
+1975,polio_paralytic,East North Central,12,,1,stacks_1041_DS1.pdf
+1975,polio_paralytic,West North Central,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,South Atlantic,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,East South Central,12,,1,stacks_1041_DS1.pdf
+1975,polio_paralytic,West South Central,12,,2,stacks_1041_DS1.pdf
+1975,polio_paralytic,Mountain,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Pacific,12,,2,stacks_1041_DS1.pdf
+1975,polio_paralytic,Alabama,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Alaska,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Arizona,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Arkansas,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,California,12,,2,stacks_1041_DS1.pdf
+1975,polio_paralytic,Colorado,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Connecticut,12,,1,stacks_1041_DS1.pdf
+1975,polio_paralytic,Delaware,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,District of Columbia,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Florida,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Georgia,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Hawaii,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Idaho,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Illinois,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Indiana,12,,1,stacks_1041_DS1.pdf
+1975,polio_paralytic,Iowa,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Kansas,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Kentucky,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Louisiana,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Maine,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Maryland,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Massachusetts,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Michigan,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Minnesota,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Mississippi,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Missouri,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Montana,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Nebraska,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Nevada,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,New Hampshire,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,New Jersey,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,New Mexico,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,North Carolina,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,North Dakota,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Ohio,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Oklahoma,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Oregon,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Pennsylvania,12,,1,stacks_1041_DS1.pdf
+1975,polio_paralytic,Rhode Island,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,South Carolina,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,South Dakota,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Tennessee,12,,1,stacks_1041_DS1.pdf
+1975,polio_paralytic,Texas,12,,2,stacks_1041_DS1.pdf
+1975,polio_paralytic,Utah,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Vermont,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Virginia,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Washington,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,West Virginia,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Wisconsin,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,Wyoming,12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,New York (excluding New York City),12,,-,stacks_1041_DS1.pdf
+1975,polio_paralytic,New York City,12,,-,stacks_1041_DS1.pdf
 1976,measles,Idaho,11,"*2,024","2,024",stacks_1130_DS1.pdf
+1976,polio_paralytic,United States,13,,12,stacks_1130_DS1.pdf
+1976,polio_paralytic,New England,13,,2,stacks_1130_DS1.pdf
+1976,polio_paralytic,Middle Atlantic,13,,1,stacks_1130_DS1.pdf
+1976,polio_paralytic,East North Central,13,,2,stacks_1130_DS1.pdf
+1976,polio_paralytic,West North Central,13,,1,stacks_1130_DS1.pdf
+1976,polio_paralytic,South Atlantic,13,,1,stacks_1130_DS1.pdf
+1976,polio_paralytic,East South Central,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,West South Central,13,,1,stacks_1130_DS1.pdf
+1976,polio_paralytic,Mountain,13,,1,stacks_1130_DS1.pdf
+1976,polio_paralytic,Pacific,13,,3,stacks_1130_DS1.pdf
+1976,polio_paralytic,Alabama,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Alaska,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Arizona,13,,1,stacks_1130_DS1.pdf
+1976,polio_paralytic,Arkansas,13,,1,stacks_1130_DS1.pdf
+1976,polio_paralytic,California,13,,2,stacks_1130_DS1.pdf
+1976,polio_paralytic,Colorado,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Connecticut,13,,1,stacks_1130_DS1.pdf
+1976,polio_paralytic,Delaware,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,District of Columbia,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Florida,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Georgia,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Hawaii,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Idaho,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Illinois,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Indiana,13,,1,stacks_1130_DS1.pdf
+1976,polio_paralytic,Iowa,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Kansas,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Kentucky,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Louisiana,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Maine,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Maryland,13,,1,stacks_1130_DS1.pdf
+1976,polio_paralytic,Massachusetts,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Michigan,13,,1,stacks_1130_DS1.pdf
+1976,polio_paralytic,Minnesota,13,,1,stacks_1130_DS1.pdf
+1976,polio_paralytic,Mississippi,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Missouri,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Montana,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Nebraska,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Nevada,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,New Hampshire,13,,1,stacks_1130_DS1.pdf
+1976,polio_paralytic,New Jersey,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,New Mexico,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,North Carolina,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,North Dakota,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Ohio,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Oklahoma,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Oregon,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Pennsylvania,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Rhode Island,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,South Carolina,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,South Dakota,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Tennessee,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Texas,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Utah,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Vermont,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Virginia,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Washington,13,,1,stacks_1130_DS1.pdf
+1976,polio_paralytic,West Virginia,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Wisconsin,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,Wyoming,13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,New York (excluding New York City),13,,-,stacks_1130_DS1.pdf
+1976,polio_paralytic,New York City,13,,1,stacks_1130_DS1.pdf
+1977,hepatitis_a,United States,11,,"31,153",stacks_10894_DS1.pdf
+1977,hepatitis_a,New England,11,,667,stacks_10894_DS1.pdf
+1977,hepatitis_a,Maine,11,,26,stacks_10894_DS1.pdf
+1977,hepatitis_a,New Hampshire,11,,65,stacks_10894_DS1.pdf
+1977,hepatitis_a,Vermont,11,,43,stacks_10894_DS1.pdf
+1977,hepatitis_a,Massachusetts,11,,145,stacks_10894_DS1.pdf
+1977,hepatitis_a,Rhode Island,11,,114,stacks_10894_DS1.pdf
+1977,hepatitis_a,Connecticut,11,,274,stacks_10894_DS1.pdf
+1977,hepatitis_a,Middle Atlantic,11,,"3,169",stacks_10894_DS1.pdf
+1977,hepatitis_a,New York (excluding New York City),11,,734,stacks_10894_DS1.pdf
+1977,hepatitis_a,New York City,11,,566,stacks_10894_DS1.pdf
+1977,hepatitis_a,New Jersey,11,,844,stacks_10894_DS1.pdf
+1977,hepatitis_a,Pennsylvania,11,,"1,025",stacks_10894_DS1.pdf
+1977,hepatitis_a,East North Central,11,,"5,076",stacks_10894_DS1.pdf
+1977,hepatitis_a,Ohio,11,,"1,428",stacks_10894_DS1.pdf
+1977,hepatitis_a,Indiana,11,,253,stacks_10894_DS1.pdf
+1977,hepatitis_a,Illinois,11,,"1,424",stacks_10894_DS1.pdf
+1977,hepatitis_a,Michigan,11,,"1,602",stacks_10894_DS1.pdf
+1977,hepatitis_a,Wisconsin,11,,369,stacks_10894_DS1.pdf
+1977,hepatitis_a,West North Central,11,,"1,661",stacks_10894_DS1.pdf
+1977,hepatitis_a,Minnesota,11,,440,stacks_10894_DS1.pdf
+1977,hepatitis_a,Iowa,11,,118,stacks_10894_DS1.pdf
+1977,hepatitis_a,Missouri,11,,504,stacks_10894_DS1.pdf
+1977,hepatitis_a,North Dakota,11,,67,stacks_10894_DS1.pdf
+1977,hepatitis_a,South Dakota,11,,34,stacks_10894_DS1.pdf
+1977,hepatitis_a,Nebraska,11,,164,stacks_10894_DS1.pdf
+1977,hepatitis_a,Kansas,11,,334,stacks_10894_DS1.pdf
+1977,hepatitis_a,South Atlantic,11,,"4,319",stacks_10894_DS1.pdf
+1977,hepatitis_a,Delaware,11,,47,stacks_10894_DS1.pdf
+1977,hepatitis_a,Maryland,11,,425,stacks_10894_DS1.pdf
+1977,hepatitis_a,District of Columbia,11,,37,stacks_10894_DS1.pdf
+1977,hepatitis_a,Virginia,11,,345,stacks_10894_DS1.pdf
+1977,hepatitis_a,West Virginia,11,,303,stacks_10894_DS1.pdf
+1977,hepatitis_a,North Carolina,11,,442,stacks_10894_DS1.pdf
+1977,hepatitis_a,South Carolina,11,,180,stacks_10894_DS1.pdf
+1977,hepatitis_a,Georgia,11,,"1,165",stacks_10894_DS1.pdf
+1977,hepatitis_a,Florida,11,,"1,375",stacks_10894_DS1.pdf
+1977,hepatitis_a,East South Central,11,,"2,363",stacks_10894_DS1.pdf
+1977,hepatitis_a,Kentucky,11,,526,stacks_10894_DS1.pdf
+1977,hepatitis_a,Tennessee,11,,"1,054",stacks_10894_DS1.pdf
+1977,hepatitis_a,Alabama,11,,212,stacks_10894_DS1.pdf
+1977,hepatitis_a,Mississippi,11,,571,stacks_10894_DS1.pdf
+1977,hepatitis_a,West South Central,11,,"3,535",stacks_10894_DS1.pdf
+1977,hepatitis_a,Arkansas,11,,485,stacks_10894_DS1.pdf
+1977,hepatitis_a,Louisiana,11,,517,stacks_10894_DS1.pdf
+1977,hepatitis_a,Oklahoma,11,,447,stacks_10894_DS1.pdf
+1977,hepatitis_a,Texas,11,,"2,086",stacks_10894_DS1.pdf
+1977,hepatitis_a,Mountain,11,,"2,860",stacks_10894_DS1.pdf
+1977,hepatitis_a,Montana,11,,250,stacks_10894_DS1.pdf
+1977,hepatitis_a,Idaho,11,,142,stacks_10894_DS1.pdf
+1977,hepatitis_a,Wyoming,11,,23,stacks_10894_DS1.pdf
+1977,hepatitis_a,Colorado,11,,534,stacks_10894_DS1.pdf
+1977,hepatitis_a,New Mexico,11,,547,stacks_10894_DS1.pdf
+1977,hepatitis_a,Arizona,11,,"1,087",stacks_10894_DS1.pdf
+1977,hepatitis_a,Utah,11,,223,stacks_10894_DS1.pdf
+1977,hepatitis_a,Nevada,11,,54,stacks_10894_DS1.pdf
+1977,hepatitis_a,Pacific,11,,"7,503",stacks_10894_DS1.pdf
+1977,hepatitis_a,Washington,11,,626,stacks_10894_DS1.pdf
+1977,hepatitis_a,Oregon,11,,767,stacks_10894_DS1.pdf
+1977,hepatitis_a,California,11,,"5,400",stacks_10894_DS1.pdf
+1977,hepatitis_a,Alaska,11,,568,stacks_10894_DS1.pdf
+1977,hepatitis_a,Hawaii,11,,142,stacks_10894_DS1.pdf
+1977,polio_paralytic,United States,14,,17,stacks_10894_DS1.pdf
+1977,polio_paralytic,New England,14,,2,stacks_10894_DS1.pdf
+1977,polio_paralytic,Middle Atlantic,14,,1,stacks_10894_DS1.pdf
+1977,polio_paralytic,East North Central,14,,1,stacks_10894_DS1.pdf
+1977,polio_paralytic,West North Central,14,,5,stacks_10894_DS1.pdf
+1977,polio_paralytic,South Atlantic,14,,2,stacks_10894_DS1.pdf
+1977,polio_paralytic,East South Central,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,West South Central,14,,3,stacks_10894_DS1.pdf
+1977,polio_paralytic,Mountain,14,,1,stacks_10894_DS1.pdf
+1977,polio_paralytic,Pacific,14,,2,stacks_10894_DS1.pdf
+1977,polio_paralytic,Alabama,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Alaska,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Arizona,14,,1,stacks_10894_DS1.pdf
+1977,polio_paralytic,Arkansas,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,California,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Colorado,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Connecticut,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Delaware,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,District of Columbia,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Florida,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Georgia,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Hawaii,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Idaho,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Illinois,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Indiana,14,,1,stacks_10894_DS1.pdf
+1977,polio_paralytic,Iowa,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Kansas,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Kentucky,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Louisiana,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Maine,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Maryland,14,,1,stacks_10894_DS1.pdf
+1977,polio_paralytic,Massachusetts,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Michigan,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Minnesota,14,,4,stacks_10894_DS1.pdf
+1977,polio_paralytic,Mississippi,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Missouri,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Montana,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Nebraska,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Nevada,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,New Hampshire,14,,2,stacks_10894_DS1.pdf
+1977,polio_paralytic,New Jersey,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,New Mexico,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,North Carolina,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,North Dakota,14,,1,stacks_10894_DS1.pdf
+1977,polio_paralytic,Ohio,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Oklahoma,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Oregon,14,,1,stacks_10894_DS1.pdf
+1977,polio_paralytic,Pennsylvania,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Rhode Island,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,South Carolina,14,,1,stacks_10894_DS1.pdf
+1977,polio_paralytic,South Dakota,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Tennessee,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Texas,14,,3,stacks_10894_DS1.pdf
+1977,polio_paralytic,Utah,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Vermont,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Virginia,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Washington,14,,1,stacks_10894_DS1.pdf
+1977,polio_paralytic,West Virginia,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Wisconsin,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,Wyoming,14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,New York (excluding New York City),14,,-,stacks_10894_DS1.pdf
+1977,polio_paralytic,New York City,14,,1,stacks_10894_DS1.pdf
+1978,hepatitis_a,New England,20,,817,stacks_10895_DS1.pdf
+1978,hepatitis_a,New York City,20,4993,499,stacks_10895_DS1.pdf
+1978,hepatitis_a,East North Central,20,4.171,"4,171",stacks_10895_DS1.pdf
+1978,polio_paralytic,United States,21,,9,stacks_10895_DS1.pdf
+1978,polio_paralytic,New England,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Middle Atlantic,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,East North Central,21,,2,stacks_10895_DS1.pdf
+1978,polio_paralytic,West North Central,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,South Atlantic,21,,3,stacks_10895_DS1.pdf
+1978,polio_paralytic,East South Central,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,West South Central,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Mountain,21,,1,stacks_10895_DS1.pdf
+1978,polio_paralytic,Pacific,21,,3,stacks_10895_DS1.pdf
+1978,polio_paralytic,Alabama,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Alaska,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Arizona,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Arkansas,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,California,21,,1,stacks_10895_DS1.pdf
+1978,polio_paralytic,Colorado,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Connecticut,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Delaware,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,District of Columbia,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Florida,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Georgia,21,,1,stacks_10895_DS1.pdf
+1978,polio_paralytic,Hawaii,21,,1,stacks_10895_DS1.pdf
+1978,polio_paralytic,Idaho,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Illinois,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Indiana,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Iowa,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Kansas,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Kentucky,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Louisiana,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Maine,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Maryland,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Massachusetts,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Michigan,21,,1,stacks_10895_DS1.pdf
+1978,polio_paralytic,Minnesota,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Mississippi,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Missouri,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Montana,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Nebraska,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Nevada,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,New Hampshire,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,New Jersey,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,New Mexico,21,,1,stacks_10895_DS1.pdf
+1978,polio_paralytic,North Carolina,21,,1,stacks_10895_DS1.pdf
+1978,polio_paralytic,North Dakota,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Ohio,21,,1,stacks_10895_DS1.pdf
+1978,polio_paralytic,Oklahoma,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Oregon,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Pennsylvania,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Rhode Island,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,South Carolina,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,South Dakota,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Tennessee,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Texas,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Utah,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Vermont,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Virginia,21,,1,stacks_10895_DS1.pdf
+1978,polio_paralytic,Washington,21,,1,stacks_10895_DS1.pdf
+1978,polio_paralytic,West Virginia,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Wisconsin,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,Wyoming,21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,New York (excluding New York City),21,,-,stacks_10895_DS1.pdf
+1978,polio_paralytic,New York City,21,,-,stacks_10895_DS1.pdf
+1979,hepatitis_a,New York City,12,3862,386,stacks_1577_DS1.pdf
 1979,measles,United States,13,13.5972,"13,597",stacks_1577_DS1.pdf
 1979,measles,District of Columbia,13,,-,stacks_1577_DS1.pdf
 1979,measles,Virginia,13,,288,stacks_1577_DS1.pdf
@@ -189,6 +1554,71 @@ year,disease,area,pdf_page,ocr_text_layer_had,read_from_page_image,source_file
 1979,pertussis,Arizona,13,,30,stacks_1577_DS1.pdf
 1979,pertussis,Pacific,13,,166,stacks_1577_DS1.pdf
 1979,pertussis,Oregon,13,,11,stacks_1577_DS1.pdf
+1979,polio_paralytic,United States,13,,26,stacks_1577_DS1.pdf
+1979,polio_paralytic,New England,13,,1,stacks_1577_DS1.pdf
+1979,polio_paralytic,Middle Atlantic,13,,9,stacks_1577_DS1.pdf
+1979,polio_paralytic,East North Central,13,,4,stacks_1577_DS1.pdf
+1979,polio_paralytic,West North Central,13,,6,stacks_1577_DS1.pdf
+1979,polio_paralytic,South Atlantic,13,,1,stacks_1577_DS1.pdf
+1979,polio_paralytic,East South Central,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,West South Central,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Mountain,13,,1,stacks_1577_DS1.pdf
+1979,polio_paralytic,Pacific,13,,4,stacks_1577_DS1.pdf
+1979,polio_paralytic,Alabama,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Alaska,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Arizona,13,,1,stacks_1577_DS1.pdf
+1979,polio_paralytic,Arkansas,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,California,13,,3,stacks_1577_DS1.pdf
+1979,polio_paralytic,Colorado,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Connecticut,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Delaware,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,District of Columbia,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Florida,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Georgia,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Hawaii,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Idaho,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Illinois,13,,1,stacks_1577_DS1.pdf
+1979,polio_paralytic,Indiana,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Iowa,13,,3,stacks_1577_DS1.pdf
+1979,polio_paralytic,Kansas,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Kentucky,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Louisiana,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Maine,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Maryland,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Massachusetts,13,,1,stacks_1577_DS1.pdf
+1979,polio_paralytic,Michigan,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Minnesota,13,,1,stacks_1577_DS1.pdf
+1979,polio_paralytic,Mississippi,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Missouri,13,,1,stacks_1577_DS1.pdf
+1979,polio_paralytic,Montana,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Nebraska,13,,1,stacks_1577_DS1.pdf
+1979,polio_paralytic,Nevada,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,New Hampshire,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,New Jersey,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,New Mexico,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,North Carolina,13,,1,stacks_1577_DS1.pdf
+1979,polio_paralytic,North Dakota,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Ohio,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Oklahoma,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Oregon,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Pennsylvania,13,,8,stacks_1577_DS1.pdf
+1979,polio_paralytic,Rhode Island,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,South Carolina,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,South Dakota,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Tennessee,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Texas,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Utah,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Vermont,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Virginia,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Washington,13,,1,stacks_1577_DS1.pdf
+1979,polio_paralytic,West Virginia,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,Wisconsin,13,,3,stacks_1577_DS1.pdf
+1979,polio_paralytic,Wyoming,13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,New York (excluding New York City),13,,-,stacks_1577_DS1.pdf
+1979,polio_paralytic,New York City,13,,1,stacks_1577_DS1.pdf
+1980,hepatitis_a,New York City,18,3643,364,stacks_1484_DS1.pdf
+1980,hepatitis_a,North Dakota,18,,57,stacks_1484_DS1.pdf
+1980,hepatitis_a,South Dakota,18,,72,stacks_1484_DS1.pdf
 1980,measles,United States,19,13.5062,"13,506",stacks_1484_DS1.pdf
 1980,measles,New England,19,,677,stacks_1484_DS1.pdf
 1980,measles,Middle Atlantic,19,,"3,940",stacks_1484_DS1.pdf
@@ -208,6 +1638,68 @@ year,disease,area,pdf_page,ocr_text_layer_had,read_from_page_image,source_file
 1980,pertussis,East North Central,19,,474,stacks_1484_DS1.pdf
 1980,pertussis,North Dakota,19,,7,stacks_1484_DS1.pdf
 1980,pertussis,South Dakota,19,,3,stacks_1484_DS1.pdf
+1980,polio_paralytic,United States,19,,8,stacks_1484_DS1.pdf
+1980,polio_paralytic,New England,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Middle Atlantic,19,,1,stacks_1484_DS1.pdf
+1980,polio_paralytic,East North Central,19,,1,stacks_1484_DS1.pdf
+1980,polio_paralytic,West North Central,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,South Atlantic,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,East South Central,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,West South Central,19,,1,stacks_1484_DS1.pdf
+1980,polio_paralytic,Mountain,19,,1,stacks_1484_DS1.pdf
+1980,polio_paralytic,Pacific,19,,4,stacks_1484_DS1.pdf
+1980,polio_paralytic,Alabama,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Alaska,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Arizona,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Arkansas,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,California,19,,2,stacks_1484_DS1.pdf
+1980,polio_paralytic,Colorado,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Connecticut,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Delaware,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,District of Columbia,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Florida,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Georgia,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Hawaii,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Idaho,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Illinois,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Indiana,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Iowa,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Kansas,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Kentucky,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Louisiana,19,,1,stacks_1484_DS1.pdf
+1980,polio_paralytic,Maine,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Maryland,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Massachusetts,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Michigan,19,,1,stacks_1484_DS1.pdf
+1980,polio_paralytic,Minnesota,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Mississippi,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Missouri,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Montana,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Nebraska,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Nevada,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,New Hampshire,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,New Jersey,19,,1,stacks_1484_DS1.pdf
+1980,polio_paralytic,New Mexico,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,North Carolina,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,North Dakota,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Ohio,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Oklahoma,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Oregon,19,,1,stacks_1484_DS1.pdf
+1980,polio_paralytic,Pennsylvania,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Rhode Island,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,South Carolina,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,South Dakota,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Tennessee,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Texas,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Utah,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Vermont,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Virginia,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Washington,19,,1,stacks_1484_DS1.pdf
+1980,polio_paralytic,West Virginia,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Wisconsin,19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,Wyoming,19,,1,stacks_1484_DS1.pdf
+1980,polio_paralytic,New York (excluding New York City),19,,-,stacks_1484_DS1.pdf
+1980,polio_paralytic,New York City,19,,-,stacks_1484_DS1.pdf
 1981,measles,Maine,70,5,5,stacks_1307_DS1.pdf
 1981,measles,New Hampshire,70,9,9,stacks_1307_DS1.pdf
 1981,measles,Vermont,70,3,3,stacks_1307_DS1.pdf
@@ -345,6 +1837,75 @@ year,disease,area,pdf_page,ocr_text_layer_had,read_from_page_image,source_file
 1981,pertussis,Alaska,81,1851,1,stacks_1307_DS1.pdf
 1981,pertussis,Hawaii,81,3,3,stacks_1307_DS1.pdf
 1981,pertussis,South Atlantic,81,,177,stacks_1307_DS1.pdf
+1981,polio_paralytic,United States,22,,6,stacks_1307_DS1.pdf
+1981,polio_paralytic,New England,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Middle Atlantic,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,East North Central,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,West North Central,22,,3,stacks_1307_DS1.pdf
+1981,polio_paralytic,South Atlantic,22,,2,stacks_1307_DS1.pdf
+1981,polio_paralytic,East South Central,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,West South Central,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Mountain,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Pacific,22,,1,stacks_1307_DS1.pdf
+1981,polio_paralytic,Alabama,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Alaska,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Arizona,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Arkansas,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,California,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Colorado,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Connecticut,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Delaware,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,District of Columbia,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Florida,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Georgia,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Hawaii,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Idaho,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Illinois,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Indiana,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Iowa,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Kansas,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Kentucky,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Louisiana,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Maine,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Maryland,22,,1,stacks_1307_DS1.pdf
+1981,polio_paralytic,Massachusetts,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Michigan,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Minnesota,22,,1,stacks_1307_DS1.pdf
+1981,polio_paralytic,Mississippi,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Missouri,22,,1,stacks_1307_DS1.pdf
+1981,polio_paralytic,Montana,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Nebraska,22,,1,stacks_1307_DS1.pdf
+1981,polio_paralytic,Nevada,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,New Hampshire,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,New Jersey,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,New Mexico,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,North Carolina,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,North Dakota,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Ohio,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Oklahoma,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Oregon,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Pennsylvania,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Rhode Island,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,South Carolina,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,South Dakota,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Tennessee,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Texas,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Utah,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Vermont,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Virginia,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Washington,22,,1,stacks_1307_DS1.pdf
+1981,polio_paralytic,West Virginia,22,,1,stacks_1307_DS1.pdf
+1981,polio_paralytic,Wisconsin,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,Wyoming,22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,New York (excluding New York City),22,,-,stacks_1307_DS1.pdf
+1981,polio_paralytic,New York City,22,,-,stacks_1307_DS1.pdf
+1982,hepatitis_a,New York City,15,689z,689,stacks_35066_DS1.pdf
+1982,hepatitis_a,Missouri,15,,204,stacks_35066_DS1.pdf
+1982,hepatitis_a,District of Columbia,15,,17,stacks_35066_DS1.pdf
+1982,hepatitis_a,West Virginia,15,,91,stacks_35066_DS1.pdf
+1982,hepatitis_a,South Carolina,15,,316,stacks_35066_DS1.pdf
+1982,hepatitis_a,Kentucky,15,,336,stacks_35066_DS1.pdf
+1982,hepatitis_a,Tennessee,15,,346,stacks_35066_DS1.pdf
 1982,measles,Maine,16,,-,stacks_35066_DS1.pdf
 1982,measles,Vermont,16,,2,stacks_35066_DS1.pdf
 1982,measles,Rhode Island,16,,-,stacks_35066_DS1.pdf
@@ -384,6 +1945,70 @@ year,disease,area,pdf_page,ocr_text_layer_had,read_from_page_image,source_file
 1982,pertussis,Mississippi,16,,16,stacks_35066_DS1.pdf
 1982,pertussis,Nevada,16,,-,stacks_35066_DS1.pdf
 1982,pertussis,Alaska,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,United States,16,,8,stacks_35066_DS1.pdf
+1982,polio_paralytic,New England,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Middle Atlantic,16,,1,stacks_35066_DS1.pdf
+1982,polio_paralytic,East North Central,16,,2,stacks_35066_DS1.pdf
+1982,polio_paralytic,West North Central,16,,1,stacks_35066_DS1.pdf
+1982,polio_paralytic,South Atlantic,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,East South Central,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,West South Central,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Mountain,16,,1,stacks_35066_DS1.pdf
+1982,polio_paralytic,Pacific,16,,3,stacks_35066_DS1.pdf
+1982,polio_paralytic,Alabama,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Alaska,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Arizona,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Arkansas,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,California,16,,2,stacks_35066_DS1.pdf
+1982,polio_paralytic,Colorado,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Connecticut,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Delaware,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,District of Columbia,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Florida,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Georgia,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Hawaii,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Idaho,16,,1,stacks_35066_DS1.pdf
+1982,polio_paralytic,Illinois,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Indiana,16,,2,stacks_35066_DS1.pdf
+1982,polio_paralytic,Iowa,16,,1,stacks_35066_DS1.pdf
+1982,polio_paralytic,Kansas,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Kentucky,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Louisiana,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Maine,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Maryland,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Massachusetts,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Michigan,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Minnesota,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Mississippi,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Missouri,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Montana,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Nebraska,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Nevada,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,New Hampshire,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,New Jersey,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,New Mexico,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,North Carolina,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,North Dakota,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Ohio,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Oklahoma,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Oregon,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Pennsylvania,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Rhode Island,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,South Carolina,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,South Dakota,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Tennessee,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Texas,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Utah,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Vermont,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Virginia,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Washington,16,,1,stacks_35066_DS1.pdf
+1982,polio_paralytic,West Virginia,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Wisconsin,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,Wyoming,16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,New York (excluding New York City),16,,-,stacks_35066_DS1.pdf
+1982,polio_paralytic,New York City,16,,1,stacks_35066_DS1.pdf
+1983,hepatitis_a,New York (excluding New York City),20,344f,344,stacks_35188_DS1.pdf
+1983,hepatitis_a,New York City,20,507f,507,stacks_35188_DS1.pdf
 1983,measles_imported,Minnesota,21,,-,stacks_35188_DS1.pdf
 1983,measles_imported,Arkansas,21,,8,stacks_35188_DS1.pdf
 1983,measles_imported,Montana,21,,4,stacks_35188_DS1.pdf
@@ -423,9 +2048,227 @@ year,disease,area,pdf_page,ocr_text_layer_had,read_from_page_image,source_file
 1983,pertussis,Wyoming,21,,6,stacks_35188_DS1.pdf
 1983,pertussis,Colorado,21,,138,stacks_35188_DS1.pdf
 1983,pertussis,New Mexico,21,,13,stacks_35188_DS1.pdf
+1983,polio_paralytic,United States,21,,15,stacks_35188_DS1.pdf
+1983,polio_paralytic,New England,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Middle Atlantic,21,,2,stacks_35188_DS1.pdf
+1983,polio_paralytic,East North Central,21,,5,stacks_35188_DS1.pdf
+1983,polio_paralytic,West North Central,21,,2,stacks_35188_DS1.pdf
+1983,polio_paralytic,South Atlantic,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,East South Central,21,,1,stacks_35188_DS1.pdf
+1983,polio_paralytic,West South Central,21,,2,stacks_35188_DS1.pdf
+1983,polio_paralytic,Mountain,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Pacific,21,,3,stacks_35188_DS1.pdf
+1983,polio_paralytic,Alabama,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Alaska,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Arizona,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Arkansas,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,California,21,,1,stacks_35188_DS1.pdf
+1983,polio_paralytic,Colorado,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Connecticut,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Delaware,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,District of Columbia,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Florida,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Georgia,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Hawaii,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Idaho,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Illinois,21,,1,stacks_35188_DS1.pdf
+1983,polio_paralytic,Indiana,21,,3,stacks_35188_DS1.pdf
+1983,polio_paralytic,Iowa,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Kansas,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Kentucky,21,,1,stacks_35188_DS1.pdf
+1983,polio_paralytic,Louisiana,21,,1,stacks_35188_DS1.pdf
+1983,polio_paralytic,Maine,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Maryland,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Massachusetts,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Michigan,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Minnesota,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Mississippi,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Missouri,21,,2,stacks_35188_DS1.pdf
+1983,polio_paralytic,Montana,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Nebraska,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Nevada,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,New Hampshire,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,New Jersey,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,New Mexico,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,North Carolina,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,North Dakota,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Ohio,21,,1,stacks_35188_DS1.pdf
+1983,polio_paralytic,Oklahoma,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Oregon,21,,1,stacks_35188_DS1.pdf
+1983,polio_paralytic,Pennsylvania,21,,1,stacks_35188_DS1.pdf
+1983,polio_paralytic,Rhode Island,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,South Carolina,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,South Dakota,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Tennessee,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Texas,21,,1,stacks_35188_DS1.pdf
+1983,polio_paralytic,Utah,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Vermont,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Virginia,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Washington,21,,1,stacks_35188_DS1.pdf
+1983,polio_paralytic,West Virginia,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Wisconsin,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,Wyoming,21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,New York (excluding New York City),21,,-,stacks_35188_DS1.pdf
+1983,polio_paralytic,New York City,21,,1,stacks_35188_DS1.pdf
+1984,hepatitis_a,Delaware,15,,44,stacks_35267_DS1.pdf
+1984,hepatitis_a,Maryland,15,,60,stacks_35267_DS1.pdf
+1984,hepatitis_a,District of Columbia,15,,13,stacks_35267_DS1.pdf
+1984,hepatitis_a,Tennessee,15,,110,stacks_35267_DS1.pdf
+1984,hepatitis_a,New York City,15,,560,stacks_35267_DS1.pdf
+1984,hepatitis_a,New Jersey,15,,656,stacks_35267_DS1.pdf
+1984,hepatitis_a,Indiana,15,,120,stacks_35267_DS1.pdf
+1984,hepatitis_a,Illinois,15,,462,stacks_35267_DS1.pdf
+1984,hepatitis_a,Michigan,15,,423,stacks_35267_DS1.pdf
+1984,hepatitis_a,Wisconsin,15,,232,stacks_35267_DS1.pdf
+1984,hepatitis_a,Minnesota,15,,130,stacks_35267_DS1.pdf
+1984,hepatitis_a,Iowa,15,,60,stacks_35267_DS1.pdf
+1984,hepatitis_a,Kentucky,15,,316,stacks_35267_DS1.pdf
+1984,hepatitis_a,Louisiana,15,,316,stacks_35267_DS1.pdf
+1984,hepatitis_a,Texas,15,,"2,605",stacks_35267_DS1.pdf
 1984,mumps,East North Central,16,1.172,"1,172",stacks_35267_DS1.pdf
 1984,pertussis,United States,16,2.276,"2,276",stacks_35267_DS1.pdf
+1984,polio_paralytic,United States,16,,8†,stacks_35267_DS1.pdf
+1984,polio_paralytic,New England,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Middle Atlantic,16,,2,stacks_35267_DS1.pdf
+1984,polio_paralytic,East North Central,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,West North Central,16,,1,stacks_35267_DS1.pdf
+1984,polio_paralytic,South Atlantic,16,,1,stacks_35267_DS1.pdf
+1984,polio_paralytic,East South Central,16,,1,stacks_35267_DS1.pdf
+1984,polio_paralytic,West South Central,16,,2,stacks_35267_DS1.pdf
+1984,polio_paralytic,Mountain,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Pacific,16,,1,stacks_35267_DS1.pdf
+1984,polio_paralytic,Alabama,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Alaska,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Arizona,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Arkansas,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,California,16,,1,stacks_35267_DS1.pdf
+1984,polio_paralytic,Colorado,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Connecticut,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Delaware,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,District of Columbia,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Florida,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Georgia,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Hawaii,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Idaho,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Illinois,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Indiana,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Iowa,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Kansas,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Kentucky,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Louisiana,16,,1,stacks_35267_DS1.pdf
+1984,polio_paralytic,Maine,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Maryland,16,,1,stacks_35267_DS1.pdf
+1984,polio_paralytic,Massachusetts,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Michigan,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Minnesota,16,,1,stacks_35267_DS1.pdf
+1984,polio_paralytic,Mississippi,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Missouri,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Montana,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Nebraska,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Nevada,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,New Hampshire,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,New Jersey,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,New Mexico,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,North Carolina,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,North Dakota,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Ohio,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Oklahoma,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Oregon,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Pennsylvania,16,,2,stacks_35267_DS1.pdf
+1984,polio_paralytic,Rhode Island,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,South Carolina,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,South Dakota,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Tennessee,16,,1,stacks_35267_DS1.pdf
+1984,polio_paralytic,Texas,16,,1,stacks_35267_DS1.pdf
+1984,polio_paralytic,Utah,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Vermont,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Virginia,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Washington,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,West Virginia,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Wisconsin,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,Wyoming,16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,New York (excluding New York City),16,,-,stacks_35267_DS1.pdf
+1984,polio_paralytic,New York City,16,,-,stacks_35267_DS1.pdf
+1985,hepatitis_a,Pacific,11,10.114,"10,114",stacks_35429_DS1.pdf
+1985,hepatitis_a,Indiana,11,,123,stacks_35429_DS1.pdf
 1985,measles_indigenous,East South Central,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,United States,12,,7†,stacks_35429_DS1.pdf
+1985,polio_paralytic,New England,12,,1,stacks_35429_DS1.pdf
+1985,polio_paralytic,Middle Atlantic,12,,1,stacks_35429_DS1.pdf
+1985,polio_paralytic,East North Central,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,West North Central,12,,1,stacks_35429_DS1.pdf
+1985,polio_paralytic,South Atlantic,12,,1,stacks_35429_DS1.pdf
+1985,polio_paralytic,East South Central,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,West South Central,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Mountain,12,,1,stacks_35429_DS1.pdf
+1985,polio_paralytic,Pacific,12,,2,stacks_35429_DS1.pdf
+1985,polio_paralytic,Alabama,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Alaska,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Arizona,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Arkansas,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,California,12,,2,stacks_35429_DS1.pdf
+1985,polio_paralytic,Colorado,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Connecticut,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Delaware,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,District of Columbia,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Florida,12,,1,stacks_35429_DS1.pdf
+1985,polio_paralytic,Georgia,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Hawaii,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Idaho,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Illinois,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Indiana,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Iowa,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Kansas,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Kentucky,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Louisiana,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Maine,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Maryland,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Massachusetts,12,,1,stacks_35429_DS1.pdf
+1985,polio_paralytic,Michigan,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Minnesota,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Mississippi,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Missouri,12,,1,stacks_35429_DS1.pdf
+1985,polio_paralytic,Montana,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Nebraska,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Nevada,12,,1,stacks_35429_DS1.pdf
+1985,polio_paralytic,New Hampshire,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,New Jersey,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,New Mexico,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,North Carolina,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,North Dakota,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Ohio,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Oklahoma,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Oregon,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Pennsylvania,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Rhode Island,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,South Carolina,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,South Dakota,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Tennessee,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Texas,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Utah,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Vermont,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Virginia,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Washington,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,West Virginia,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Wisconsin,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,Wyoming,12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,New York (excluding New York City),12,,-,stacks_35429_DS1.pdf
+1985,polio_paralytic,New York City,12,,1,stacks_35429_DS1.pdf
+1986,hepatitis_a,New York City,11,NA1,NA¶,stacks_35496_DS1.pdf
+1986,hepatitis_a,New Jersey,11,,383,stacks_35496_DS1.pdf
+1986,hepatitis_a,Michigan,11,,289,stacks_35496_DS1.pdf
+1986,hepatitis_a,Kansas,11,,137,stacks_35496_DS1.pdf
+1986,hepatitis_a,Tennessee,11,,77,stacks_35496_DS1.pdf
+1986,hepatitis_a,Colorado,11,,210,stacks_35496_DS1.pdf
+1986,hepatitis_a,New Mexico,11,,567,stacks_35496_DS1.pdf
+1986,hepatitis_a,Arizona,11,,"1,427",stacks_35496_DS1.pdf
+1986,hepatitis_a,Utah,11,,161,stacks_35496_DS1.pdf
+1986,hepatitis_a,Oregon,11,"1,896","1,898",stacks_35496_DS1.pdf
+1986,hepatitis_a,Alaska,11,106,108,stacks_35496_DS1.pdf
+1986,hepatitis_a,Vermont,11,,22,stacks_35496_DS1.pdf
+1986,hepatitis_a,Illinois,11,,342,stacks_35496_DS1.pdf
+1986,hepatitis_a,South Dakota,11,,171,stacks_35496_DS1.pdf
+1986,hepatitis_a,Hawaii,11,,14,stacks_35496_DS1.pdf
 1986,measles_imported,United States,12,,327*,stacks_35496_DS1.pdf
 1986,measles_imported,New Hampshire,12,,-,stacks_35496_DS1.pdf
 1986,measles_imported,Vermont,12,,-,stacks_35496_DS1.pdf
@@ -512,6 +2355,71 @@ year,disease,area,pdf_page,ocr_text_layer_had,read_from_page_image,source_file
 1986,pertussis,New York (excluding New York City),12,,153,stacks_35496_DS1.pdf
 1986,pertussis,Mississippi,12,,1,stacks_35496_DS1.pdf
 1986,pertussis,Alaska,12,,5,stacks_35496_DS1.pdf
+1986,polio_paralytic,United States,12,,3†,stacks_35496_DS1.pdf
+1986,polio_paralytic,New England,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Middle Atlantic,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,East North Central,12,,1,stacks_35496_DS1.pdf
+1986,polio_paralytic,West North Central,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,South Atlantic,12,,1,stacks_35496_DS1.pdf
+1986,polio_paralytic,East South Central,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,West South Central,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Mountain,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Pacific,12,,1,stacks_35496_DS1.pdf
+1986,polio_paralytic,Alabama,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Alaska,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Arizona,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Arkansas,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,California,12,,1§,stacks_35496_DS1.pdf
+1986,polio_paralytic,Colorado,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Connecticut,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Delaware,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,District of Columbia,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Florida,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Georgia,12,,1,stacks_35496_DS1.pdf
+1986,polio_paralytic,Hawaii,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Idaho,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Illinois,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Indiana,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Iowa,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Kansas,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Kentucky,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Louisiana,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Maine,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Maryland,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Massachusetts,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Michigan,12,,1,stacks_35496_DS1.pdf
+1986,polio_paralytic,Minnesota,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Mississippi,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Missouri,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Montana,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Nebraska,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Nevada,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,New Hampshire,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,New Jersey,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,New Mexico,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,North Carolina,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,North Dakota,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Ohio,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Oklahoma,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Oregon,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Pennsylvania,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Rhode Island,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,South Carolina,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,South Dakota,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Tennessee,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Texas,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Utah,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Vermont,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Virginia,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Washington,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,West Virginia,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Wisconsin,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,Wyoming,12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,New York (excluding New York City),12,,-,stacks_35496_DS1.pdf
+1986,polio_paralytic,New York City,12,,-,stacks_35496_DS1.pdf
+1987,hepatitis_a,Vermont,11,,14,stacks_35629_DS1.pdf
+1987,hepatitis_a,Massachusetts,11,,342,stacks_35629_DS1.pdf
+1987,hepatitis_a,New York (excluding New York City),11,,808,stacks_35629_DS1.pdf
 1987,measles_imported,Massachusetts,12,,39,stacks_35629_DS1.pdf
 1987,measles_imported,Connecticut,12,,6,stacks_35629_DS1.pdf
 1987,measles_imported,Middle Atlantic,12,,53,stacks_35629_DS1.pdf
@@ -562,10 +2470,135 @@ year,disease,area,pdf_page,ocr_text_layer_had,read_from_page_image,source_file
 1987,pertussis,Washington,12,,110,stacks_35629_DS1.pdf
 1987,pertussis,California,12,,217,stacks_35629_DS1.pdf
 1987,pertussis,Hawaii,12,,245,stacks_35629_DS1.pdf
+1987,polio_paralytic,United States,12,,-†,stacks_35629_DS1.pdf
+1987,polio_paralytic,New England,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Middle Atlantic,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,East North Central,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,West North Central,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,South Atlantic,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,East South Central,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,West South Central,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Mountain,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Pacific,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Alabama,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Alaska,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Arizona,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Arkansas,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,California,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Colorado,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Connecticut,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Delaware,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,District of Columbia,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Florida,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Georgia,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Hawaii,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Idaho,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Illinois,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Indiana,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Iowa,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Kansas,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Kentucky,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Louisiana,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Maine,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Maryland,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Massachusetts,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Michigan,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Minnesota,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Mississippi,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Missouri,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Montana,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Nebraska,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Nevada,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,New Hampshire,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,New Jersey,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,New Mexico,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,North Carolina,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,North Dakota,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Ohio,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Oklahoma,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Oregon,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Pennsylvania,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Rhode Island,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,South Carolina,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,South Dakota,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Tennessee,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Texas,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Utah,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Vermont,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Virginia,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Washington,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,West Virginia,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Wisconsin,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,Wyoming,12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,New York (excluding New York City),12,,-,stacks_35629_DS1.pdf
+1987,polio_paralytic,New York City,12,,-,stacks_35629_DS1.pdf
 1988,pertussis,Nevada,15,,2,stacks_35958_DS1.pdf
 1988,pertussis,Oregon,15,,53,stacks_35958_DS1.pdf
 1988,pertussis,California,15,,270,stacks_35958_DS1.pdf
 1988,pertussis,Hawaii,15,,50,stacks_35958_DS1.pdf
+1988,polio_paralytic,United States,15,,9†,stacks_35958_DS1.pdf
+1988,polio_paralytic,New England,15,,1,stacks_35958_DS1.pdf
+1988,polio_paralytic,Middle Atlantic,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,East North Central,15,,2,stacks_35958_DS1.pdf
+1988,polio_paralytic,West North Central,15,,1,stacks_35958_DS1.pdf
+1988,polio_paralytic,South Atlantic,15,,1,stacks_35958_DS1.pdf
+1988,polio_paralytic,East South Central,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,West South Central,15,,2,stacks_35958_DS1.pdf
+1988,polio_paralytic,Mountain,15,,1,stacks_35958_DS1.pdf
+1988,polio_paralytic,Pacific,15,,1,stacks_35958_DS1.pdf
+1988,polio_paralytic,Alabama,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Alaska,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Arizona,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Arkansas,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,California,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Colorado,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Connecticut,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Delaware,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,District of Columbia,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Florida,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Georgia,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Hawaii,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Idaho,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Illinois,15,,1,stacks_35958_DS1.pdf
+1988,polio_paralytic,Indiana,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Iowa,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Kansas,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Kentucky,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Louisiana,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Maine,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Maryland,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Massachusetts,15,,1,stacks_35958_DS1.pdf
+1988,polio_paralytic,Michigan,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Minnesota,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Mississippi,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Missouri,15,,1,stacks_35958_DS1.pdf
+1988,polio_paralytic,Montana,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Nebraska,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Nevada,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,New Hampshire,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,New Jersey,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,New Mexico,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,North Carolina,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,North Dakota,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Ohio,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Oklahoma,15,,1,stacks_35958_DS1.pdf
+1988,polio_paralytic,Oregon,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Pennsylvania,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Rhode Island,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,South Carolina,15,,1,stacks_35958_DS1.pdf
+1988,polio_paralytic,South Dakota,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Tennessee,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Texas,15,,1,stacks_35958_DS1.pdf
+1988,polio_paralytic,Utah,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Vermont,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Virginia,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Washington,15,,1,stacks_35958_DS1.pdf
+1988,polio_paralytic,West Virginia,15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,Wisconsin,15,,1,stacks_35958_DS1.pdf
+1988,polio_paralytic,Wyoming,15,,1,stacks_35958_DS1.pdf
+1988,polio_paralytic,New York (excluding New York City),15,,-,stacks_35958_DS1.pdf
+1988,polio_paralytic,New York City,15,,-,stacks_35958_DS1.pdf
+1989,hepatitis_a,Colorado,12,,540,stacks_35853_DS1.pdf
 1989,measles_imported,Oklahoma,13,,-,stacks_35853_DS1.pdf
 1989,measles_imported,Wyoming,13,,-,stacks_35853_DS1.pdf
 1989,measles_indigenous,Maine,13,,-,stacks_35853_DS1.pdf
@@ -577,3 +2610,195 @@ year,disease,area,pdf_page,ocr_text_layer_had,read_from_page_image,source_file
 1989,mumps,North Dakota,13,,-,stacks_35853_DS1.pdf
 1989,mumps,South Dakota,13,,-,stacks_35853_DS1.pdf
 1989,pertussis,Wyoming,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,United States,13,,5†,stacks_35853_DS1.pdf
+1989,polio_paralytic,New England,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Middle Atlantic,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,East North Central,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,West North Central,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,South Atlantic,13,,3,stacks_35853_DS1.pdf
+1989,polio_paralytic,East South Central,13,,1,stacks_35853_DS1.pdf
+1989,polio_paralytic,West South Central,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Mountain,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Pacific,13,,1,stacks_35853_DS1.pdf
+1989,polio_paralytic,Alabama,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Alaska,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Arizona,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Arkansas,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,California,13,,1,stacks_35853_DS1.pdf
+1989,polio_paralytic,Colorado,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Connecticut,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Delaware,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,District of Columbia,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Florida,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Georgia,13,,1,stacks_35853_DS1.pdf
+1989,polio_paralytic,Hawaii,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Idaho,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Illinois,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Indiana,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Iowa,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Kansas,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Kentucky,13,,1,stacks_35853_DS1.pdf
+1989,polio_paralytic,Louisiana,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Maine,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Maryland,13,,1,stacks_35853_DS1.pdf
+1989,polio_paralytic,Massachusetts,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Michigan,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Minnesota,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Mississippi,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Missouri,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Montana,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Nebraska,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Nevada,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,New Hampshire,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,New Jersey,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,New Mexico,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,North Carolina,13,,1,stacks_35853_DS1.pdf
+1989,polio_paralytic,North Dakota,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Ohio,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Oklahoma,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Oregon,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Pennsylvania,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Rhode Island,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,South Carolina,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,South Dakota,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Tennessee,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Texas,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Utah,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Vermont,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Virginia,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Washington,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,West Virginia,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Wisconsin,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,Wyoming,13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,New York (excluding New York City),13,,-,stacks_35853_DS1.pdf
+1989,polio_paralytic,New York City,13,,-,stacks_35853_DS1.pdf
+1990,hepatitis_a,New Jersey,18,,437,stacks_35905_DS1.pdf
+1990,hepatitis_a,Nebraska,18,,104,stacks_35905_DS1.pdf
+1990,hepatitis_a,District of Columbia,18,,39,stacks_35905_DS1.pdf
+1990,hepatitis_a,North Carolina,18,,649,stacks_35905_DS1.pdf
+1990,polio_paralytic,United States,19,,7†,stacks_35905_DS1.pdf
+1990,polio_paralytic,New England,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Middle Atlantic,19,,3,stacks_35905_DS1.pdf
+1990,polio_paralytic,East North Central,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,West North Central,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,South Atlantic,19,,1,stacks_35905_DS1.pdf
+1990,polio_paralytic,East South Central,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,West South Central,19,,2,stacks_35905_DS1.pdf
+1990,polio_paralytic,Mountain,19,,1,stacks_35905_DS1.pdf
+1990,polio_paralytic,Pacific,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Alabama,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Alaska,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Arizona,19,,1,stacks_35905_DS1.pdf
+1990,polio_paralytic,Arkansas,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,California,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Colorado,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Connecticut,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Delaware,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,District of Columbia,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Florida,19,,1,stacks_35905_DS1.pdf
+1990,polio_paralytic,Georgia,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Hawaii,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Idaho,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Illinois,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Indiana,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Iowa,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Kansas,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Kentucky,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Louisiana,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Maine,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Maryland,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Massachusetts,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Michigan,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Minnesota,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Mississippi,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Missouri,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Montana,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Nebraska,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Nevada,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,New Hampshire,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,New Jersey,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,New Mexico,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,North Carolina,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,North Dakota,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Ohio,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Oklahoma,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Oregon,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Pennsylvania,19,,1,stacks_35905_DS1.pdf
+1990,polio_paralytic,Rhode Island,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,South Carolina,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,South Dakota,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Tennessee,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Texas,19,,2,stacks_35905_DS1.pdf
+1990,polio_paralytic,Utah,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Vermont,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Virginia,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Washington,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,West Virginia,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Wisconsin,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,Wyoming,19,,-,stacks_35905_DS1.pdf
+1990,polio_paralytic,New York (excluding New York City),19,,2,stacks_35905_DS1.pdf
+1990,polio_paralytic,New York City,19,,-,stacks_35905_DS1.pdf
+1991,hepatitis_a,Connecticut,20,,122,stacks_36010_DS1.pdf
+1992,hepatitis_a,Hawaii,22,,171,stacks_36063_DS1.pdf
+1992,polio_paralytic,United States,23,,4†,stacks_36063_DS1.pdf
+1992,polio_paralytic,New England,23,,1,stacks_36063_DS1.pdf
+1992,polio_paralytic,Middle Atlantic,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,East North Central,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,West North Central,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,South Atlantic,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,East South Central,23,,1,stacks_36063_DS1.pdf
+1992,polio_paralytic,West South Central,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Mountain,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Pacific,23,,2,stacks_36063_DS1.pdf
+1992,polio_paralytic,Alabama,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Alaska,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Arizona,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Arkansas,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,California,23,,1,stacks_36063_DS1.pdf
+1992,polio_paralytic,Colorado,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Connecticut,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Delaware,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,District of Columbia,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Florida,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Georgia,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Hawaii,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Idaho,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Illinois,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Indiana,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Iowa,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Kansas,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Kentucky,23,,1,stacks_36063_DS1.pdf
+1992,polio_paralytic,Louisiana,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Maine,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Maryland,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Massachusetts,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Michigan,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Minnesota,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Mississippi,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Missouri,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Montana,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Nebraska,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Nevada,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,New Hampshire,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,New Jersey,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,New Mexico,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,North Carolina,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,North Dakota,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Ohio,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Oklahoma,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Oregon,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Pennsylvania,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Rhode Island,23,,1,stacks_36063_DS1.pdf
+1992,polio_paralytic,South Carolina,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,South Dakota,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Tennessee,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Texas,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Utah,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Vermont,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Virginia,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Washington,23,,1,stacks_36063_DS1.pdf
+1992,polio_paralytic,West Virginia,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Wisconsin,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,Wyoming,23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,New York (excluding New York City),23,,-,stacks_36063_DS1.pdf
+1992,polio_paralytic,New York City,23,,-,stacks_36063_DS1.pdf

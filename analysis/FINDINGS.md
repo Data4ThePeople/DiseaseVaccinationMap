@@ -113,9 +113,16 @@ fallen back to 90.6%.
 
 ### 7. What the state-level data does not show
 
-- **Measles, 2025.** Across 46 states, a larger drop in kindergarten MMR
+- **Measles, 2025.** Across 46 states (Alaska, Delaware, the District of
+  Columbia, Montana and West Virginia have no kindergarten figure in one of the
+  two years and are left out), a larger drop in kindergarten MMR
   coverage from 2019-20 to 2024-25 goes with a higher 2025 measles rate, but
-  only moderately (rank correlation -0.45). Most states had few or no cases;
+  only moderately (rank correlation -0.45; leaving out any one state moves it
+  between -0.42 and -0.52). The measles counts are provisional, and 17 states
+  changed how they count kindergartners between the two years. Wisconsin is the
+  clearest case: it went from a sample of about 3% of students (92.8% in
+  2019-20) to a count of nearly all of them (84.8% in 2024-25), so its drop is
+  partly a change in method. Most states had few or no cases;
   the 2025 total (2,026, provisional) sits mostly in a handful of counties.
 - **Whooping cough, 2024.** Cases rose from 7,063 in 2023 to 43,321 in 2024
   across the country. States with large DTaP drops (Idaho, Wisconsin) rose

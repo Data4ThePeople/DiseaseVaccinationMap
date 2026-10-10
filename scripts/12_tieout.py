@@ -86,9 +86,9 @@ def tycho_weekly_sum(code, iso, year):
 
 
 lines += ["## C. Project Tycho years, re-read from the zip", "", "| disease, state, year | from zip | page | |", "|---|---|---|---|"]
-for d, code, st, y in [("measles", "US.14189004", "OH", 1941), ("measles", "US.14189004", "CA", 1958), ("measles", "US.14189004", "TX", 1934),
+for d, code, st, y in [("measles", "US.14189004", "OH", 1941), ("measles", "US.14189004", "CA", 1948), ("measles", "US.14189004", "TX", 1934),
                        ("polio", "US.398102009", "NY", 1952), ("polio", "US.398102009", "MN", 1946), ("pertussis", "US.27836007", "PA", 1947),
-                       ("hepatitis_a", "US.40468003", "CA", 1971), ("pertussis", "US.27836007", "OH", 1950)]:
+                       ("measles", "US.14189004", "IL", 1950), ("pertussis", "US.27836007", "OH", 1950)]:
     assert D["src"][d][st][y - Y0].lower() == "w", (d, st, y)
     check(f"{d} {st} {y}", page(d, st, y), tycho_weekly_sum(code, f"US-{st}", y))
 lines.append("")

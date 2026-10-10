@@ -49,7 +49,7 @@ All counts are direct copies of what was reported. Tycho fills nothing in. The
 gaps are real gaps: **a week with no report is simply absent from the file**,
 while a reported zero is present as a zero. So a yearly sum of weekly rows
 undercounts whenever weeks are missing, and the number of weeks present has to
-be carried next to every yearly figure. The coverage check (`10_coverage.py`)
+be carried next to every yearly figure. The coverage check (`11_coverage.py`)
 measures this by disease, state and year.
 
 **Changes over time.**
@@ -77,6 +77,10 @@ weekly reports did not list the disease by state, so Tycho has nothing:
 - Whooping cough: no state rows 1956 to 1973, and few before 1938. (Filled from
   CDC's scanned annual summaries, except 1970; see the annual tables section.)
 - Measles: state rows thin out after 1991 and stop in 2002.
+- Hepatitis A: Tycho has no New York State row at all for 1966 to 1992, and its
+  weekly rows add to 6% to 38% less than CDC's printed national total in every
+  one of those years. (Replaced by CDC's scanned annual summaries on October
+  10, 2026; Tycho hepatitis A is no longer used on the page.)
 - Mumps: no state rows 2003 to 2010. Rubella: none 2003 to 2014.
 - Polio: stops in 1971. Diphtheria: thin after 1960, stops in 1981.
 - In the low-count years (roughly 1975 on) the weekly rows cover only a
@@ -87,11 +91,40 @@ weekly reports did not list the disease by state, so Tycho has nothing:
 states it runs about 5% to 35% under the final national counts CDC printed
 later (checked by eye against well-known national totals for a dozen years;
 those totals are not used anywhere in the build). For measles in the 1980s and
-1990s the running totals are erratic in both directions: 194 measles
-state-years fail our consistency check (the running total fell during the
-year, or the weekly rows add to more than the running total). The build marks
-these rows (`check = 1`), the page says so on hover, and CDC's final annual
-tables replace Tycho wherever we have them.
+1990s the running totals are erratic in both directions (the running total
+fell during the year, or the weekly rows add to more than the running total).
+The build marks such rows (`check = 1`) and the page says so on hover. CDC's
+final annual tables now replace Tycho for those measles years, so none of the
+flagged measles rows is on the page; among the five diseases shown, 5 polio
+state-years carry the flag.
+
+**A sum of weekly reports is treated as the year's count, and it is usually
+low.** Most Tycho state-years have fewer than 52 weekly reports. Against CDC's
+own printed national totals (from the ten-year tables in the annual summaries),
+the page's weekly sums run from 0.7% over to 17.8% under for measles 1944 to
+1964, up to 13% under for whooping cough 1944 to 1955, and from 9.4% over to
+52% under for polio 1944 to 1971 (independent audit, October 10, 2026). The
+years still built this way are measles, whooping cough and polio before 1956. On the page a state-year with fewer than 48 weekly
+reports is drawn faded, the hover says how many of 52 weeks are missing, and the
+United States figure is faded and marked "incomplete" when the reporting states
+hold under 90% of residents or most of them are short of weeks.
+
+**New York has no state row in Tycho in some years.** Polio 1964 to 1971,
+hepatitis A 1966 to 1992 and measles 1964 to 1967. All three are now replaced by
+the scanned final tables, so the gap no longer reaches the page. Tycho also had
+fewer and fewer states with any polio row after 1961 (49 in 1961, 7 in 1971);
+the final tables print a dash (no reported cases) for those states, so they now
+show as zero and not as no data.
+
+**Polio is two different measures.** Tycho's "acute poliomyelitis" is all
+reported polio, paralytic and non-paralytic (1955: 28,985 in all, of which
+13,850 paralytic in CDC's table). By Eric's decision of October 10, 2026 the
+page uses paralytic polio wherever the annual tables print it, which is from
+1956: the Tycho all-polio series is now used only before 1956. The step from
+1955 to 1956 on the page is therefore partly a change of measure. The paralytic
+counts are as first printed each year (1993 to 1995: 3, 0 and 2 nationally;
+CDC's later historical table gives 4, 8 and 7, with no state breakdown of the
+revision). The hover and the page footer say all of this.
 
 **Suppressed, censored or masked values.** None. Counts are as published.
 
@@ -203,12 +236,13 @@ the text layer of the issue PDF on cdc.gov. 2016 and 2018 to 2022: tab-delimited
 annual tables on CDC Stacks. 2023: PDF on Stacks. **2017: the Stacks records
 redirect to 2018 and their files return 404, so the 2017 tables come from
 Internet Archive captures of CDC's own files** (the rows match the first
-captures from December 2018). 1984 to 1992: scanned summaries on Stacks, using
-the OCR text already in the PDF.
+captures from December 2018). 1956 to 1992: scanned summaries on Stacks, using
+the OCR text already in the PDF and, where it is damaged, the page image.
 
 **Coverage.** All seven diseases for every year 1993 to 2023, all 51 areas.
-Before 1993 the scanned annual summaries are used, read for measles and mumps
-from 1968 and for whooping cough from 1956 (October 6, 2026). Every scan year
+Before 1993 the scanned annual summaries are used, read for mumps from 1968,
+for whooping cough from 1956 (October 6, 2026), for hepatitis A from 1966 and
+for measles from 1956 (October 10, 2026). Every scan year
 kept passes a strict test: every state cell readable, the states add to each
 printed division row, and the divisions add to the printed U.S. row. Where the
 scan's text layer is damaged, cells were read from the page image and are
@@ -227,10 +261,72 @@ show as no data, and the build no longer fills them from Tycho. In 1968 to 1973
 upstate New York is NN while New York City is printed; by Eric's decision New
 York shows the City's count, labeled "New York City only" on the page.
 
-**Checks run.** State sum against the printed U.S. row: 322 disease-years, no
+**Hepatitis A 1966 to 1992 (added October 10, 2026).** Read from the scanned
+summaries for every year 1966 to 1992, with the same three-level sum test, in
+place of the Project Tycho weekly rows used before. The national sum on the page
+now equals CDC's printed U.S. total in each of those years, except 1985 and 1986
+(see below). 229 cells (192 state rows) were read from the page image and are
+listed in `checks_image_cells.csv`; two whole columns were read this way (1967
+and 1977), because the scan's text layer has no usable United States row on
+those pages. Things a reader of these years should know:
+- **The column changes name and meaning.** It is "Hepatitis, infectious" from
+  1966 to 1971, "Infectious (A)" in 1972 and "Hepatitis A" from 1973. The 1973
+  issue says its hepatitis A figures include viral hepatitis of unspecified
+  type, and that A, B and unspecified have been reported separately since
+  January 1, 1974. Part of the fall from 50,749 cases in 1973 to 40,358 in 1974
+  is that change in what was counted. Before 1966 the tables print infectious
+  and serum hepatitis as one figure, so the record starts in 1966.
+- **New York has no figure for 1985 and 1986.** New York City is printed "NA" in
+  both years. The 1985 issue says 4,636 suspect hepatitis cases were reported in
+  the City but "were not confirmed or distributed by type". The rest of the
+  state reported 618 cases in 1985 and 520 in 1986; those are in the printed
+  U.S. totals (23,210 and 23,430) but not on the page, which shows New York as
+  no data (Eric's decision, October 10, 2026: an upstate-only figure is not
+  shown).
+- **Georgia 1974 is printed "NA"** (data not available) and shows as no data.
+- **Footnoted cells kept as printed:** Louisiana 1967, 1968 and 1969 "includes
+  serum hepatitis"; Tennessee 1977 "includes hepatitis, unspecified"; New York
+  City 1977 to 1984 carries a note that its cases were classified by a blood
+  test for hepatitis B.
+
+**Measles 1964 to 1967 (added October 10, 2026).** Read from the scanned
+summaries with the same sum test, in place of Project Tycho, which has no New
+York State row for these four years and adds to less than CDC's printed total
+(1964: 403,660 against 458,083). The page sum now equals the printed U.S. total
+in all four years: 458,083, 261,904, 204,136 and 62,705. Ten cells were read
+from the page image. Kansas is printed NN (not notifiable) for 1964, 1965 and
+1966 and shows as no data, as it did before (Tycho has no Kansas measles rows
+for those years either).
+
+**Measles 1956 to 1963 (added October 10, 2026).** Read from the scanned
+summaries the same way, replacing Tycho weekly sums that ran up to 14% under
+CDC's printed totals in these years (1963: 332,057 against 385,156). All eight
+years pass the sum test; the printed U.S. totals are 611,936; 486,799; 763,094;
+406,162; 441,703; 423,919; 481,530; 385,156. 134 cells were read from the page
+image, including the whole 1960 column. Kansas is printed as not notifiable from
+1957 to 1963 and shows as no data; that drops two small Tycho figures (13 cases
+in 1957, 71 in 1958). Alaska before 1959 and Hawaii before 1960 are not in the
+annual table (not yet states), so their weekly territorial reports are kept from
+Tycho; the page sum for 1956 to 1959 is therefore the printed U.S. total plus
+those territories. One cell is misprinted: Hawaii 1963 is printed "3.623" and
+read as 3,623, the only value that fits the Pacific and U.S. sums; Eric accepted
+that reading on October 10, 2026, and the flag records it.
+
+**Paralytic polio 1956 to 1992 (added October 10, 2026).** Read from the
+"Paralytic" column of the scanned summaries for all 37 years, each passing the
+sum test. Printed U.S. totals run from 7,911 (1956) and 2,525 (1960) down to 106
+(1964), 31 (1970), 8 (1980) and 4 (1992). From 1965 to 1977 the column is in the
+table of low-frequency diseases, and in most later years it is nearly all dashes
+that the scan's text layer drops, so for 29 years the whole column was read from
+the page image (1,852 cells in all, the great majority of them dashes). Alaska
+before 1959 and Hawaii before 1960 are not in the table and keep their Tycho
+all-polio counts. Measles before 1956 still comes from Tycho
+weekly sums.
+
+**Checks run.** State sum against the printed U.S. row: 461 disease-years, no
 mismatch. PDF against the separately parsed HTML edition, 2007 to 2015: 66
 disease-years, no cell differs. Measles against Our World in Data's hand
-transcription: 763 of 766 state-years identical; in the 3 that differ our value
+transcription: 871 of 874 state-years identical (the comparison has only one or two states a year before 1978, so it says little about 1968 to 1977); in the 3 that differ our value
 is what the CDC table prints and it adds to the printed total.
 
 **Changes over time.**
@@ -244,7 +340,8 @@ is what the CDC table prints and it adds to the printed total.
 
 **Suppressed, censored or masked values.** A dash is defined in every table as
 "No reported cases" and is a zero. `N` (not reportable), `NN`, `U` and blank
-cells (31 in all) are not numbers and show as "no data".
+cells are not numbers and show as "no data" (108 state cells in the extract, 102 of them among the five diseases shown: mumps 74, whooping cough 15,
+hepatitis A 7, measles 4, polio 2; the count includes the New York rows where only one part of the state is printed).
 
 **Reporting areas.** New York City is printed apart from the rest of New York.
 The extract adds the two.
@@ -290,7 +387,9 @@ report).
 **Uncertainty.** A state's sample is a few hundred children a year. Ohio's
 single-year MMR samples are 207 to 292, with intervals about 6 points either
 side. A one-year move of 3 or 4 points in one state is inside the noise. The
-viz shows the interval on hover and prefers the two-year pooled estimates.
+viz uses the single birth years (the pooled two-year groups are not used), draws
+the survey's 95% range as a band around the toddler line of the state in view,
+and gives the range and sample size on hover.
 
 **License and attribution.** Public domain. Credit CDC, National Immunization
 Survey-Child (ChildVaxView).
@@ -382,6 +481,16 @@ states. Counties with a figure grow from 982 (18 states) in 2017-18 to 2,712
 (44 states) in 2024-25, so an early year's map is mostly empty and that is a
 fact about publication, not about vaccination. Alaska reports by health region
 (7 rows, not mappable to counties, left out). Five states have no county figure.
+Connecticut switched from its 8 counties to 9 planning regions in 2024-25; the
+county shapes do not carry the regions, so the 2025 map of Connecticut is blank
+and the page says so and gives the range of the nine regional figures.
+272 values in the Johns Hopkins file carry an asterisk (Utah 2017-18, Missouri
+2019-20, Louisiana 2020-21 and 2021-22). The file's notes say an asterisk marks
+a figure "not comparable to later 2-dose MMR data due to the differing
+methodology", so those values are left out on purpose and show as no figure.
+Wisconsin's county figures are capped at 95% by the state, and its source
+changed from the registry to a school survey, which is the likely reason for
+the jumps noted in `analysis/FINDINGS.md`.
 
 **Changes over time and known quirks.** Not one survey. 40 states report
 kindergartners, 4 report K-12, 1 pre-K to 12, 1 a registry of 5 to 6 year
@@ -420,8 +529,10 @@ unfinished).
 
 **Known quirks.** Dates are report dates, not illness dates. Kansas withholds
 counts under five by county, Oklahoma gives no county, Tennessee reports by
-region; those cases sit in "unknown county" rows and do not appear on a county
-map. The 2025 county sum (2,285) is close to but not the same as CDC's
+region and Utah reports by health district; those cases sit in "unknown county"
+rows and do not appear on a county map. In 2025 that is 262 of 2,286 cases (the tracker files Oklahoma's 17 unknown-county cases under Oklahoma County's code; the build moves them to the unknown rows), and
+Utah's Southwest district (155) is the largest. Rows with no location id (3
+rows) are kept with the unknown-county rows. The 2025 county sum (2,286) is close to but not the same as CDC's
 provisional state sum for 2025 (2,026 in our weekly extract); the two are
 different compilations and neither is final.
 
