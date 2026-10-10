@@ -288,6 +288,12 @@ those pages. Things a reader of these years should know:
   serum hepatitis"; Tennessee 1977 "includes hepatitis, unspecified"; New York
   City 1977 to 1984 carries a note that its cases were classified by a blood
   test for hepatitis B.
+- **Georgia 1976** prints hepatitis B and unspecified hepatitis as "NA" with no
+  footnote, so its hepatitis A figure (1,382) may include cases other states
+  split out.
+- **Re-read.** Two fresh agents re-read all 27 years of this column from the
+  page images, state by state, on October 10, 2026 (1,377 state cells). No cell
+  differed from the table.
 
 **Measles 1964 to 1967 (added October 10, 2026).** Read from the scanned
 summaries with the same sum test, in place of Project Tycho, which has no New

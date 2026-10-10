@@ -98,3 +98,7 @@ None.
   items it raised. Rest of the chain rebuilt with 0 differences. Not re-read
   cell by cell: 13 hepatitis A scan years and most older mumps, measles and
   whooping cough columns.
+- 2026-10-10 Remaining 13 hepatitis A scan years re-read by a fresh agent from
+  the page images (663 state cells): no differences. With the earlier 14 years,
+  every hepatitis A scan year 1966 to 1992 has now been read twice
+  independently. Tie-out fix pushed (0cac19c).
