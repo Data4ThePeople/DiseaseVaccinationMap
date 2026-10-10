@@ -102,3 +102,9 @@ None.
   the page images (663 state cells): no differences. With the earlier 14 years,
   every hepatitis A scan year 1966 to 1992 has now been read twice
   independently. Tie-out fix pushed (0cac19c).
+- 2026-10-10 Older scan columns re-read by four fresh agents from the page
+  images: whooping cough 1956 to 1992, mumps and measles 1968 to 1992 (about
+  4,400 state cells). No value differed. New York notes made clearer (which
+  part printed a dash; summed values labeled as sums); no value changed. The
+  second reader also reads the two marked 1970 whooping cough cells as 163 and
+  the column adds; still held for Eric's decision.

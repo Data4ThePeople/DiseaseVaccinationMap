@@ -250,6 +250,33 @@ listed in `checks_image_cells.csv` (35 whole columns were read this way:
 whooping cough 1960 and 1981, measles 1960 and 1981, hepatitis A 1967 and 1977, and 29 years of paralytic polio). The only year not recovered is
 1970 whooping cough, held for an editor's decision on two misprinted cells.
 
+**Second reading of the older columns (October 10, 2026).** Four fresh readers,
+who had not seen the first reading, read these columns again by eye from the
+page images before opening the table: whooping cough 1956 to 1992, and mumps
+and measles 1968 to 1992 (measles 1983 to 1992 as its two printed columns,
+indigenous and imported). That is 86 columns and about 4,400 state cells. No
+state value differed from the table, and every column adds to its printed
+division and U.S. totals. What the readers could not settle by eye:
+
+- **Arkansas whooping cough 1958:** the last digit is damaged (5 or 6). The
+  division total needs 156, which is the value used.
+- **Measles 1981:** the page curves at the left edge, so states were matched to
+  numbers by their order inside each division. A swap of two states in one
+  division cannot be ruled out from the page; both readings agree.
+- **Arizona mumps and whooping cough 1975 and 1976** print a dash (shown as
+  zero) between years printed "NN" (1973, 1974, 1977). The dash may mean not
+  reported; the page does not say.
+- **Kansas whooping cough 1959** prints an asterisk whose footnote is not on
+  the page; it shows as no data.
+- **1970 whooping cough (still held):** the second reader also reads New York
+  City and Virginia as 163, each followed by a stray mark, and with those
+  readings the column adds to every division total and to the U.S. total of
+  4,249.
+
+Where New York is printed as two rows and one of them is a dash, the table's
+note now says which ("(NYC -)" or "(upstate -)"), and a summed New York value
+that used a page-image reading says it is the sum of both rows.
+
 **Mumps 1968 to 1992 (added October 6, 2026).** Read from the scanned summaries
 for every year 1968 to 1992, with the same three-level sum test. Where the scan's
 text layer was damaged, 112 cells (91 state rows) were read from the page

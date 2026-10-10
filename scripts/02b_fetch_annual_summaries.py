@@ -2519,11 +2519,14 @@ def combine_ny(up, city):
         img = "read from page image"
         if img in f1 or img in f2:
             parts = [("upstate" if img in f1 else ""), ("NYC" if img in f2 else "")]
-            return c1 + c2, "%s (%s part)" % (img, " and ".join(p for p in parts if p))
+            return c1 + c2, "%s (%s part); sum of upstate and NYC" % (img, " and ".join(p for p in parts if p))
         flag = "sum" if (f1.startswith("sum") or f2.startswith("sum")) else ""
         r1, r2 = f1.replace("sum", ""), f2.replace("sum", "")
         if r1.startswith("-") and r2.startswith("-"):
             flag += "-"
+        elif r1.startswith("-") or r2.startswith("-"):
+            # one part printed a dash: the value is the other part alone
+            flag += "(%s -)" % ("upstate" if r1.startswith("-") else "NYC")
         flag += "".join(sorted(set((r1 + r2).replace("-", ""))))
         return c1 + c2, flag
     parts = []
