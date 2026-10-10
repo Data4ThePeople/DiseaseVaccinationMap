@@ -245,30 +245,36 @@ function cell(dk, st, y) {
   const code = D.src[dk][st][i];
   // "n" = the count covers New York City only: shown as a count, with no rate and no figures
   const part = code.toLowerCase() === "n";
-  return { cases: c, pop: p, rate: p && !part ? c / p * 1e5 : null, code, part, weeks: (D.weeks[dk][st] || [])[i] || 0 };
+  return { cases: c, pop: p, rate: p && !part ? c / p * 1e5 : null, code, part, _y: y, weeks: (D.weeks[dk][st] || [])[i] || 0 };
 }
 /* national figure = sum of the states that reported, over the population of those states */
 function usCell(dk, y) {
-  let cases = 0, pop = 0, n = 0, popAll = 0, nThin = 0, prov = false;
+  let cases = 0, full = 0, pop = 0, n = 0, popAll = 0, nThin = 0, prov = false;
   for (const s of D.states) {
     popAll += D.pop[s.k][yi(y)] || 0;
     const c = cell(dk, s.k, y);
-    if (c && c.pop) { cases += c.cases; pop += c.pop; n++; if (thin(c)) nThin++; if (c.code.toLowerCase() === "p") prov = true; }
+    if (c && c.pop) {
+      cases += c.cases;
+      // a state counted in part (New York City only) adds its cases to the count, as CDC's total does,
+      // but is left out of the rate and of the number of reporting states
+      if (!c.part) { full += c.cases; pop += c.pop; n++; }
+      if (thin(c)) nThin++; if (c.code.toLowerCase() === "p") prov = true;
+    }
   }
   if (!n) return null;
   // incomplete: reporting states hold under 90% of residents, or most of them are short of weeks
   const share = popAll ? pop / popAll : 1, incomplete = !prov && (share < 0.9 || nThin > n / 2);
-  return { cases, pop, rate: cases / pop * 1e5, n, share, incomplete, prov };
+  return { cases, pop, rate: pop ? full / pop * 1e5 : null, n, share, incomplete, prov };
 }
 const FULL_YEAR = 52, THIN_WEEKS = 48;   // weekly reports in a full year; fewer than THIN_WEEKS draws faded
 function sourceNote(c, dk) {
   const k = c.code.toLowerCase();
   let t = k === "w" ? `Sum of ${c.weeks} weekly reports (Project Tycho)` + (c.weeks < FULL_YEAR ? `; ${FULL_YEAR - c.weeks} of ${FULL_YEAR} weeks have no report, so this is likely an undercount` : "")
     : k === "c" ? "Year-end running total from weekly reports, provisional (Project Tycho)"
-    : k === "a" ? "Final annual count (CDC)"
+    : k === "a" ? (dk === "polio" && c._y < 2000 ? "Annual count as first printed (CDC); some yearly totals were later revised" : "Final annual count (CDC)")
     : k === "n" ? "Final annual count (CDC) for New York City only; the rest of the state did not report mumps this year, so no rate is shown"
     : k === "r" ? "CDC weekly tables, as counted one year later"
-    : "CDC weekly tables, provisional; final counts are usually higher" + (dk === "pertussis" ? " (whooping cough counts rose 22% to 30% after year-end in 2022 to 2024)" : "");
+    : "CDC weekly tables, provisional; final counts are usually higher" + (dk === "pertussis" ? " (whooping cough counts rose 22% to 28% after year-end in 2022 to 2024)" : "");
   if (dk === "polio") t += k === "w" || k === "c" ? ". Counts all reported polio, paralytic and not" : ". Counts paralytic polio only";
   if (c.code !== k) t += ". The weekly reports for this year disagree with each other; treat with care";
   return t + ".";
@@ -723,7 +729,7 @@ function init() {
     setPlaying(false); msIndex = (Math.min(msIndex, n - 1) + step + n) % n; renderCard();
   });
   document.addEventListener("keydown", e => { if (e.key === "Escape" && S.sel) closeState(); });
-  $("foot").innerHTML = `Reported cases, not infections; many cases were never reported, and reporting rules changed over the century. A ring marks a disease that other states counted that year but this state did not, which is not zero; a dot marks a count too small to draw a figure. The diseases were not all counted from the same year (mumps from 1968, hepatitis A from 1966), so a jump in a state's total can come from a disease entering the record. Faded figures mark an incomplete count: a year with fewer than ${THIN_WEEKS} of ${FULL_YEAR} weekly reports, a national figure where states holding more than 10% of residents did not report or most states were short of weeks, or the provisional year 2025. Where a count is a sum of weekly reports (all three diseases shown before 1956) it can differ from CDC's own yearly total and usually runs lower, by up to 18% for measles and 13% for whooping cough. Polio counts all reported polio before 1956 and paralytic polio only from 1956, so the 1955 to 1956 change is partly a change in what was counted; the paralytic counts are as first printed, and CDC later revised some yearly totals. Hepatitis A before 1974 includes hepatitis of unspecified type. Sources: CDC final annual tables of notifiable diseases (whooping cough, measles and paralytic polio from 1956, hepatitis A from 1966, mumps from 1968, all five diseases from 1993, through 2023); CDC weekly tables (2024 and 2025, provisional for 2025); Project Tycho, University of Pittsburgh, CC BY 4.0, from the weekly federal notifiable disease reports (earlier years). Vaccination: CDC National Immunization Survey and SchoolVaxView; U.S. Immunization Survey and National Health Interview Survey before 1995. County figures: Johns Hopkins University. State indicators: Census Bureau and Bureau of Economic Analysis. Party control: Klarner, State Partisan Balance Data (through 2011), and Ballotpedia (2012 on).`;
+  $("foot").innerHTML = `Reported cases, not infections; many cases were never reported, and reporting rules changed over the century. A ring marks a disease that other states counted that year but this state did not, which is not zero; a dot marks a count too small to draw a figure. The diseases were not all counted from the same year (mumps from 1968, hepatitis A from 1966), so a jump in a state's total can come from a disease entering the record. Faded figures mark an incomplete count: a year with fewer than ${THIN_WEEKS} of ${FULL_YEAR} weekly reports, a national figure where states holding more than 10% of residents did not report or most states were short of weeks, or the provisional year 2025. Where a count is a sum of weekly reports (all three diseases shown before 1956) it can differ from CDC's own yearly total and usually runs lower, by up to 18% for measles and 13% for whooping cough. Polio counts all reported polio before 1956 and paralytic polio only from 1956 (Alaska and Hawaii before statehood stay on the all-polio count), so the 1955 to 1956 change is partly a change in what was counted; the paralytic counts are as first printed, and CDC later revised some yearly totals up or down. Hepatitis A before 1974 includes hepatitis of unspecified type. Sources: CDC final annual tables of notifiable diseases (whooping cough, measles and paralytic polio from 1956, hepatitis A from 1966, mumps from 1968, all five diseases from 1993, through 2023); CDC weekly tables (2024 and 2025, provisional for 2025); Project Tycho, University of Pittsburgh, CC BY 4.0, from the weekly federal notifiable disease reports (earlier years). Vaccination: CDC National Immunization Survey and SchoolVaxView; U.S. Immunization Survey and National Health Interview Survey before 1995. County figures: Johns Hopkins University. State indicators: Census Bureau and Bureau of Economic Analysis. Party control: Klarner, State Partisan Balance Data (through 2011), and Ballotpedia (2012 on).`;
   const h = new URLSearchParams(location.hash.slice(1));   // #st=OH&y=1958 opens a state and year
   if (+h.get("y") >= D.y0 && +h.get("y") <= D.y1) { S.year = +h.get("y"); yr.value = S.year; }
   setPlaying(false); layoutMap(); buildTicks(); render();

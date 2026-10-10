@@ -1792,7 +1792,7 @@ _PP_COLUMNS = {
           "West South Central 2: Louisiana 1, Texas 1; Pacific 1: California 1",
     1985: "12 | 7† | New England 1: Massachusetts 1; Middle Atlantic 1: NY_CITY 1; West North Central 1: Missouri 1; South Atlantic 1: Florida 1; "
           "Mountain 1: Nevada 1; Pacific 2: California 2",
-    1986: "12 | 3† | East North Central 1: Michigan 1; South Atlantic 1: Georgia 1; Pacific 1: California 1§",
+    1986: "12 | 3† | East North Central 1: Michigan 1; South Atlantic 1: Florida 1; Pacific 1: California 1§",
     1987: "12 | -† | ",
     1988: "15 | 9† | New England 1: Massachusetts 1; East North Central 2: Illinois 1, Wisconsin 1; West North Central 1: Missouri 1; South Atlantic 1: South Carolina 1; "
           "West South Central 2: Oklahoma 1, Texas 1; Mountain 1: Wyoming 1; Pacific 1: Washington 1",

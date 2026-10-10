@@ -91,3 +91,10 @@ None.
   29 whole columns read from the page image). Tycho all-polio now only before
   1956. Tie-out passes. Committed and pushed. The research notes, `reports/` and
   `analysis/ANTIVAX_HISTORY.*` are kept out of the public repo for now.
+- 2026-10-10 Second independent tie-out on commit 8c20ff6 by a fresh agent: it
+  re-read 3,709 scan cells by eye (all 37 polio columns, 14 hepatitis A years,
+  16 measles years) and found one error, paralytic polio 1986 entered under
+  Georgia instead of Florida. Fixed, with the small page and documentation
+  items it raised. Rest of the chain rebuilt with 0 differences. Not re-read
+  cell by cell: 13 hepatitis A scan years and most older mumps, measles and
+  whooping cough columns.

@@ -47,7 +47,7 @@ indigenous/imported split).
 
 ## Results of the checks
 
-- State sum against the printed United States row: 385 disease-years checked,
+- State sum against the printed United States row: 461 disease-years checked,
   all pass. 25 of those are trivial (diseases with no US cases, taken from a
   footnote, see below). For mumps in 1968 to 1973 the 51
   state rows fall short of the US row by exactly the New York City count:
@@ -56,7 +56,7 @@ indigenous/imported split).
   cases. Every scanned year kept also passes the stricter division test
   described under "Scanned years".
 - HTML against PDF, 2007 to 2015: 66 disease-years, no cell differs.
-- Our World in Data, measles: 870 state-years compared (1968 to 2015), 867 the
+- Our World in Data, measles: 874 state-years compared (1956 to 2015), 871 the
   same, 3 different. The 104 added comparisons (1968 to 1983) all agree. In all three the number here is what the CDC table prints
   and it is consistent with the printed US total:
   - 1994 New York: 43 here (rest of state 28, New York City 15), OWID 87.
@@ -286,8 +286,12 @@ sum test.
   Washington have one case each.
 - A superscript footnote number on a count is left off (Texas 1977, New Mexico
   1978, California 1979); printed symbols are kept in the flag.
-- These are first-printed counts. CDC's later historical tables give higher
-  national totals for some years.
+- These are first-printed counts. CDC's later historical tables differ in 24
+  of the years 1975 to 1999, higher in most and lower in 1976, 1978, 1979, 1983
+  and 1990.
+- 1986 South Atlantic: the one case is Florida's. It was first entered under
+  Georgia (the page is skewed by nearly a row) and corrected after the
+  independent tie-out of October 10, 2026, which re-read all 37 polio columns.
 
 ### Measles from the scans, 1956 to 1963
 
@@ -452,7 +456,7 @@ eye from the page rendered with PyMuPDF (300 dpi; 600 to 800 dpi for single
 cells), flag `read from page image`, listed in `checks_image_cells.csv`.
 
 Cells read from the image (rows in `checks_image_cells.csv`, division and US
-rows included): measles 208, pertussis 258. 389 of the 4,131 measles and
+rows included): measles 208, pertussis 258. 437 of the 3,723 measles and
 pertussis state rows before 1993 carry the flag. By year:
 - measles: 1968 3, 1969 1, 1971 5, 1974 1, 1975 2, 1976 1, 1979 18, 1980 7,
   1981 61, 1982 19, 1983 7, 1985 1, 1986 56, 1987 20, 1989 6.
@@ -484,8 +488,8 @@ Things that differ from the later tables:
   1959, Hawaii in 1960. Missing years carry the flag `not in the table (not
   yet a state)` with `cases` blank, and the Pacific division is Washington,
   Oregon and California in those years.
-- **New York** is one row through 1964; the split into New York City and
-  upstate starts in 1965.
+- **New York** is one row through 1963; the split into New York City and
+  upstate starts in 1964.
 - **Measles split.** 1968 to 1982 print measles as one column. Indigenous and
   imported start in 1983 (1981 total only, from the separate measles table).
 - **Mississippi measles 1968 and 1969** is printed with an asterisk: "Includes

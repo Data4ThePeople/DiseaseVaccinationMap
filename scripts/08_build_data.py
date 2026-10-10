@@ -91,7 +91,7 @@ def county():
     cm = cm[cm.year.between(Y0, Y1)]
     K = {}
     for r in cm.itertuples():
-        K.setdefault(r.fips, {})[int(r.year)] = int(r.cases)
+        K.setdefault(r.fips, {})[int(r.year)] = K.get(r.fips, {}).get(int(r.year), 0) + int(r.cases)   # placeholder codes repeat
     meta = pd.read_csv(DATA / "county_mmr_states.csv").fillna("")
     T = {r.st: {"years": r.years, "unit": r.unit.strip(), "age": r.age, "origin": r.origin, "n": int(r.county_rows)} for r in meta.itertuples()}
     return M, K, T, mmr

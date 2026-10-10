@@ -95,15 +95,14 @@ those totals are not used anywhere in the build). For measles in the 1980s and
 fell during the year, or the weekly rows add to more than the running total).
 The build marks such rows (`check = 1`) and the page says so on hover. CDC's
 final annual tables now replace Tycho for those measles years, so none of the
-flagged measles rows is on the page; among the five diseases shown, 5 polio
-state-years carry the flag.
+flagged rows is on the page for the five diseases shown.
 
 **A sum of weekly reports is treated as the year's count, and it is usually
 low.** Most Tycho state-years have fewer than 52 weekly reports. Against CDC's
 own printed national totals (from the ten-year tables in the annual summaries),
-the page's weekly sums run from 0.7% over to 17.8% under for measles 1944 to
-1964, up to 13% under for whooping cough 1944 to 1955, and from 9.4% over to
-52% under for polio 1944 to 1971 (independent audit, October 10, 2026). The
+the page's weekly sums for 1944 to 1955 run from 0.6% over to 17.8% under for
+measles, from 0.2% over to 13.0% under for whooping cough, and from 2.3% over
+to 9.1% under for all polio (independent tie-out, October 10, 2026). The
 years still built this way are measles, whooping cough and polio before 1956. On the page a state-year with fewer than 48 weekly
 reports is drawn faded, the hover says how many of 52 weeks are missing, and the
 United States figure is faded and marked "incomplete" when the reporting states
@@ -124,7 +123,8 @@ page uses paralytic polio wherever the annual tables print it, which is from
 1955 to 1956 on the page is therefore partly a change of measure. The paralytic
 counts are as first printed each year (1993 to 1995: 3, 0 and 2 nationally;
 CDC's later historical table gives 4, 8 and 7, with no state breakdown of the
-revision). The hover and the page footer say all of this.
+revision; across 1975 to 1999 the later table differs in 24 years and is lower
+in five of them). The hover and the page footer say all of this.
 
 **Suppressed, censored or masked values.** None. Counts are as published.
 
@@ -246,8 +246,8 @@ for measles from 1956 (October 10, 2026). Every scan year
 kept passes a strict test: every state cell readable, the states add to each
 printed division row, and the divisions add to the printed U.S. row. Where the
 scan's text layer is damaged, cells were read from the page image and are
-listed in `checks_image_cells.csv` (three whole columns were read this way:
-1960 and 1981 whooping cough, 1981 measles). The only year not recovered is
+listed in `checks_image_cells.csv` (35 whole columns were read this way:
+whooping cough 1960 and 1981, measles 1960 and 1981, hepatitis A 1967 and 1977, and 29 years of paralytic polio). The only year not recovered is
 1970 whooping cough, held for an editor's decision on two misprinted cells.
 
 **Mumps 1968 to 1992 (added October 6, 2026).** Read from the scanned summaries
@@ -340,8 +340,8 @@ is what the CDC table prints and it adds to the printed total.
 
 **Suppressed, censored or masked values.** A dash is defined in every table as
 "No reported cases" and is a zero. `N` (not reportable), `NN`, `U` and blank
-cells are not numbers and show as "no data" (108 state cells in the extract, 102 of them among the five diseases shown: mumps 74, whooping cough 15,
-hepatitis A 7, measles 4, polio 2; the count includes the New York rows where only one part of the state is printed).
+cells are not numbers and show as "no data" (108 state cells in the extract, 102 of them among the five diseases shown: mumps 74, measles 11, whooping cough 8,
+hepatitis A 7, polio 2, not counting Alaska and Hawaii before statehood; the count includes the New York rows where only one part of the state is printed).
 
 **Reporting areas.** New York City is printed apart from the rest of New York.
 The extract adds the two.
@@ -531,8 +531,8 @@ unfinished).
 counts under five by county, Oklahoma gives no county, Tennessee reports by
 region and Utah reports by health district; those cases sit in "unknown county"
 rows and do not appear on a county map. In 2025 that is 262 of 2,286 cases (the tracker files Oklahoma's 17 unknown-county cases under Oklahoma County's code; the build moves them to the unknown rows), and
-Utah's Southwest district (155) is the largest. Rows with no location id (3
-rows) are kept with the unknown-county rows. The 2025 county sum (2,286) is close to but not the same as CDC's
+Utah's Southwest district (155) is the largest. Rows with no location id (6
+rows, 1 of them in 2025) are kept with the unknown-county rows. The 2025 county sum (2,286) is close to but not the same as CDC's
 provisional state sum for 2025 (2,026 in our weekly extract); the two are
 different compilations and neither is final.
 
