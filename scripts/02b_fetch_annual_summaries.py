@@ -582,6 +582,8 @@ SCAN_EDITOR_READINGS = {
     (1971, "mumps", "District of Columbia"): 'printed "-99", read as 99 by editor decision 2026-10-06',
     (1971, "mumps", "Ohio"): 'printed "8.784", read as 8,784 by editor decision 2026-10-06',
     (1963, "measles", "Hawaii"): 'printed "3.623", read as 3,623 by editor decision 2026-10-10',
+    (1970, "pertussis", "New York City"): 'printed "163" with a stray mark, read as 163 by editor decision 2026-10-12',
+    (1970, "pertussis", "Virginia"): 'printed "163" with a stray mark, read as 163 by editor decision 2026-10-12',
 }
 
 # Cells read by eye from a rendered page image (PyMuPDF, 400 dpi crop of the
@@ -1115,8 +1117,10 @@ _MP_IMAGE = """
 1969 | measles | Mississippi | 221* | 10
 # 1970 pertussis, p.10. New York City and Virginia are both printed "163"
 # followed by a small unexplained stroke; there is no footnote on the page.
-# They are NOT entered here (awaiting an editor decision), so 1970 pertussis
-# stays out. With both read as 163 the year passes the division test.
+# Eric accepted 163 for both on October 12, 2026 (see SCAN_EDITOR_READINGS);
+# a second independent reader also read 163, and the year passes the sum test.
+1970 | pertussis | New York City | 163 | 10
+1970 | pertussis | Virginia | 163 | 10
 1970 | pertussis | New Jersey | - | 10
 1970 | pertussis | Kansas | - | 10
 1970 | pertussis | Oklahoma | 45 | 10

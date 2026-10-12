@@ -5,7 +5,7 @@ Built by `scripts/12_tieout.py`. Every line below was recomputed from a raw file
 
 ## A. Packed data against the case table
 
-20,131 state-years in the table, 20,131 filled cells on the page, 0 differ.
+20,182 state-years in the table, 20,182 filled cells on the page, 0 differ.
 
 ## B. National sum on the page against the U.S. row CDC printed
 
@@ -18,6 +18,7 @@ Only years where every state on the page comes from the final annual table. The 
 | polio 1965 | 61 | 61 | ok |
 | hepatitis_a 1970 | 56797 | 56797 | ok |
 | measles 1970 | 47351 | 47351 | ok |
+| pertussis 1970 | 4249 | 4249 | ok |
 | polio 1970 | 31 | 31 | ok |
 | hepatitis_a 1975 | 35855 | 35855 | ok |
 | measles 1975 | 24374 | 24374 | ok |
@@ -64,7 +65,7 @@ Only years where every state on the page comes from the final annual table. The 
 | pertussis 2023 | 7063 | 7063 | ok |
 | polio 2023 | 0 | 0 | ok |
 
-208 disease-years compared in all; the table lists every fifth year, 2019, 2023 and any mismatch.
+209 disease-years compared in all; the table lists every fifth year, 2019, 2023 and any mismatch.
 
 Years where the table gives one or more states no figure (NN, not notifiable there), which show as no data, or where New York shows New York City only (mumps, 1968 to 1973, when upstate New York did not report). The page sum must equal the printed U.S. total, plus any printed part the map does not show:
 

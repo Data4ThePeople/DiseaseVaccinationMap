@@ -817,6 +817,13 @@ year,disease,area,pdf_page,ocr_text_layer_had,read_from_page_image,source_file
 1970,hepatitis_a,Oregon,9,,"1,033",stacks_951_DS1.pdf
 1970,hepatitis_a,Hawaii,9,,233,stacks_951_DS1.pdf
 1970,mumps,Oklahoma,10,,"2,683",stacks_951_DS1.pdf
+1970,pertussis,New York City,10,163-,163,stacks_951_DS1.pdf
+1970,pertussis,New Jersey,10,—,-,stacks_951_DS1.pdf
+1970,pertussis,Kansas,10,-,-,stacks_951_DS1.pdf
+1970,pertussis,Virginia,10,163',163,stacks_951_DS1.pdf
+1970,pertussis,Oklahoma,10,,45,stacks_951_DS1.pdf
+1970,pertussis,Wyoming,10,-,-,stacks_951_DS1.pdf
+1970,pertussis,Nevada,10,-,-,stacks_951_DS1.pdf
 1970,polio_paralytic,United States,8,,31,stacks_951_DS1.pdf
 1970,polio_paralytic,New England,8,,-,stacks_951_DS1.pdf
 1970,polio_paralytic,Middle Atlantic,8,,-,stacks_951_DS1.pdf

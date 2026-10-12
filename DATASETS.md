@@ -75,7 +75,7 @@ measures this by disease, state and year.
 rebuilt by `scripts/11_coverage.py`). These are whole runs of years where the
 weekly reports did not list the disease by state, so Tycho has nothing:
 - Whooping cough: no state rows 1956 to 1973, and few before 1938. (Filled from
-  CDC's scanned annual summaries, except 1970; see the annual tables section.)
+  CDC's scanned annual summaries; see the annual tables section.)
 - Measles: state rows thin out after 1991 and stop in 2002.
 - Hepatitis A: Tycho has no New York State row at all for 1966 to 1992, and its
   weekly rows add to 6% to 38% less than CDC's printed national total in every
@@ -247,14 +247,17 @@ kept passes a strict test: every state cell readable, the states add to each
 printed division row, and the divisions add to the printed U.S. row. Where the
 scan's text layer is damaged, cells were read from the page image and are
 listed in `checks_image_cells.csv` (35 whole columns were read this way:
-whooping cough 1960 and 1981, measles 1960 and 1981, hepatitis A 1967 and 1977, and 29 years of paralytic polio). The only year not recovered is
-1970 whooping cough, held for an editor's decision on two misprinted cells.
+whooping cough 1960 and 1981, measles 1960 and 1981, hepatitis A 1967 and 1977, and 29 years of paralytic polio). The last year filled was
+1970 whooping cough: New York City and Virginia are each printed "163" followed
+by a stray mark with no footnote. Two independent readers read 163 for both,
+the column then adds to every division total and to the U.S. total of 4,249,
+and Eric accepted the reading on October 12, 2026.
 
 **Second reading of the older columns (October 10, 2026).** Four fresh readers,
 who had not seen the first reading, read these columns again by eye from the
 page images before opening the table: whooping cough 1956 to 1992, and mumps
 and measles 1968 to 1992 (measles 1983 to 1992 as its two printed columns,
-indigenous and imported). That is 86 columns and about 4,400 state cells. No
+indigenous and imported). That is 87 columns and about 4,400 state cells. No
 state value differed from the table, and every column adds to its printed
 division and U.S. totals. What the readers could not settle by eye:
 
@@ -268,10 +271,10 @@ division and U.S. totals. What the readers could not settle by eye:
   reported; the page does not say.
 - **Kansas whooping cough 1959** prints an asterisk whose footnote is not on
   the page; it shows as no data.
-- **1970 whooping cough (still held):** the second reader also reads New York
-  City and Virginia as 163, each followed by a stray mark, and with those
-  readings the column adds to every division total and to the U.S. total of
-  4,249.
+- **1970 whooping cough:** the second reader also reads New York City and
+  Virginia as 163, each followed by a stray mark, and with those readings the
+  column adds to every division total and to the U.S. total of 4,249. Accepted
+  by Eric on October 12, 2026 and filled.
 
 Where New York is printed as two rows and one of them is a dash, the table's
 note now says which ("(NYC -)" or "(upstate -)"), and a summed New York value

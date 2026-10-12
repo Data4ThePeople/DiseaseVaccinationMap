@@ -48,6 +48,7 @@ year,disease,sum_of_states,us_total_row,us_flag,us_minus_states,result,states_mi
 1969,hepatitis_a,48416,48416,,0,OK,,,stacks_838_DS1.pdf
 1969,polio_paralytic,18,18,read from page image,0,OK,,,stacks_838_DS1.pdf
 1970,measles,47351,47351,,0,OK,,,stacks_951_DS1.pdf
+1970,pertussis,4249,4249,,0,OK,,,stacks_951_DS1.pdf
 1970,mumps,101729,104953,,3224,OK (difference = New York City cases; the New York row is blank because upstate New York is marked NN),,New York=upstate:NN;other part=3224;North Carolina=NN,stacks_951_DS1.pdf
 1970,hepatitis_a,56797,56797,,0,OK,,,stacks_951_DS1.pdf
 1970,polio_paralytic,31,31,read from page image,0,OK,,,stacks_951_DS1.pdf

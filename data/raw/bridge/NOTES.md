@@ -38,8 +38,8 @@ Rebuild without downloading: `.venv/bin/python scripts/02b_fetch_annual_summarie
 | 1993 to 2015 | all seven diseases | MMWR Summary of Notifiable Diseases, Table 2, issue PDF |
 | 2016 to 2023 | all seven diseases | NNDSS Annual Tables, Table 2 parts |
 
-Not obtained: pertussis 1970 (two misprinted cells awaiting an editor decision,
-see "Measles and pertussis from the scans"). Rubella and diphtheria
+Pertussis 1970 was filled on October 12, 2026 (two marked cells read as 163 by
+editor decision, see "Measles and pertussis from the scans"). Rubella and diphtheria
 were not attempted before 1993; hepatitis A before 1966 (the tables
 print infectious and serum hepatitis as one figure); measles before 1956; pertussis
 before 1956. The 1968 to 1982 measles tables print a total only (no
@@ -176,7 +176,7 @@ is `stacks_<record>_DS1.pdf`; URL `https://stacks.cdc.gov/view/cdc/<record>`.
 |---|---|---|---|---|
 | 1968 | 1717 | 10 | measles, pertussis, mumps | Table 6, notifiable diseases by division and state |
 | 1969 | 838 | 10 | measles, pertussis, mumps | Table 6 |
-| 1970 | 951 | 10 | measles, mumps (pertussis awaiting a decision) | Table 6 |
+| 1970 | 951 | 10 | measles, mumps, pertussis | Table 6 |
 | 1971 | 1829 | 10 | measles, pertussis, mumps | Table 6 (mumps kept by editor decision, see below) |
 | 1972 | 1895 | 10 | measles, pertussis, mumps | Table 6 |
 | 1973 | 1849 | 10 | measles, pertussis, mumps | Table 5 |
@@ -510,7 +510,7 @@ listed so they can be checked):
 - 1958 pertussis Pacific total: first digit faintly printed; at 800 dpi it is
   a 5 ("5,393").
 
-**Awaiting an editor decision (not applied, year left out):**
+**Editor decision applied October 12, 2026 (Eric accepted 163 for both cells):**
 - **1970 pertussis**, p.10 (record 951). New York City is printed "163" with a
   small stroke after it (OCR "163-") and Virginia "163" with a small slanted
   stroke after it (OCR "163'"). There is no footnote on the page. Read as 163

@@ -49,6 +49,7 @@ year,source,disease,page_or_table,printed_column_header,us_total_cell
 1969,scan pdf,polio_paralytic,8,POLIOMYELITIS Paralytic [read from page image],18
 1970,scan pdf,hepatitis_a,9,HEPATITIS Infectious,"56,797"
 1970,scan pdf,mumps,10,MUMPS,"104,953"
+1970,scan pdf,pertussis,10,PERTUSSIS,"4,249"
 1970,scan pdf,measles,10,AREA MEASLES,"47,351"
 1970,scan pdf,polio_paralytic,8,POLIOMYELITIS Paralytic [read from page image],31
 1971,scan pdf,hepatitis_a,9,HEPATITIS Infectious,"59,606"

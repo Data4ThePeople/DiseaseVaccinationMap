@@ -23,7 +23,7 @@ Years with no state figure at all: none.
 
 ## pertussis
 
-Years with no state figure at all: 1929 to 1931, 1933 to 1934, 1936, 1970.
+Years with no state figure at all: 1929 to 1931, 1933 to 1934, 1936.
 
 | decade | possible | final | weekly, counted a year later | provisional | year-end running total | weekly sum, 50+ weeks | weekly sum, 40-49 weeks | weekly sum, under 40 weeks | no figure | flagged | avg pop share % |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -32,7 +32,7 @@ Years with no state figure at all: 1929 to 1931, 1933 to 1934, 1936, 1970.
 | 1940s | 510 | 0 | 0 | 0 | 0 | 412 | 42 | 32 | 24 | 0 | 99 |
 | 1950s | 510 | 196 | 0 | 0 | 0 | 91 | 143 | 66 | 14 | 0 | 100 |
 | 1960s | 510 | 506 | 0 | 0 | 0 | 0 | 0 | 0 | 4 | 0 | 100 |
-| 1970s | 510 | 456 | 0 | 0 | 0 | 0 | 0 | 0 | 54 | 0 | 90 |
+| 1970s | 510 | 507 | 0 | 0 | 0 | 0 | 0 | 0 | 3 | 0 | 100 |
 | 1980s | 510 | 510 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 100 |
 | 1990s | 510 | 510 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 100 |
 | 2000s | 510 | 510 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 100 |

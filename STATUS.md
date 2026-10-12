@@ -108,3 +108,6 @@ None.
   part printed a dash; summed values labeled as sums); no value changed. The
   second reader also reads the two marked 1970 whooping cough cells as 163 and
   the column adds; still held for Eric's decision.
+- 2026-10-12 Eric: accept 163 for New York City and Virginia, whooping cough
+  1970. The year is filled from the scanned summary (U.S. 4,249); whooping
+  cough now has every year from 1956 from CDC's final tables. Tie-out passes.
