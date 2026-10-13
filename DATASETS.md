@@ -538,6 +538,23 @@ and percent surveyed on hover.
 
 ---
 
+**On the page (added October 13, 2026): measles vaccination against the 95% level, and ranked states.**
+"Color states by measles vaccination" shades each state tile by its
+kindergarten MMR estimate for the school year ending in the selected year, in
+three steps: 95% or more, 90% to under 95%, under 90%. The 95% level is the
+national Healthy People 2030 target for kindergarten MMR coverage. A bar chart
+counts the states below 95% and below 90% in each school year from 2009-10.
+The number of states with a figure changes by year (43 to 51), so the chart
+gives counts, and the line under it says how many states reported. For
+2024-25, 39 of 49 states with a figure were below 95% and 15 were below 90%
+(Montana and West Virginia have no figure); for 2019-20 it was 28 of 48 and 3.
+This is coverage in one age group as states reported it, by a count of all
+schools in some states and a sample in others. It is not a measure of immunity
+in the whole population. The "States ranked" panel under the map orders the
+states, highest or lowest first, by kindergarten coverage for the MMR, DTaP or
+polio vaccine, or by reported cases per 100,000 for any of the five diseases,
+for the selected year.
+
 ## State population and personal income, table SAINC1 (Bureau of Economic Analysis)
 
 Status: file and footnotes read. BEA's regional methodology paper still to read.

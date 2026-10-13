@@ -30,6 +30,16 @@ h1{font-family:var(--serif);font-weight:700;font-size:22px;line-height:1.15;marg
 .controls label{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;cursor:pointer;user-select:none;white-space:nowrap}
 .controls input{width:15px;height:15px;margin:0;accent-color:var(--c)}
 .controls svg{flex:none}
+.controls label.covt{padding-left:14px;border-left:1px solid var(--rule);--c:#256abf}
+.covbar{display:flex;flex-wrap:wrap;align-items:center;gap:3px 14px;padding:5px 0;border-bottom:1px solid var(--rule);font-size:12px;color:var(--ink2);flex:none}
+.covbar b{color:var(--ink);font-weight:700}
+.covbar span{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.covbar i{width:12px;height:12px;border-radius:2px;display:inline-block}
+.covchart{margin:0 0 8px}
+.covchart h3{font-size:12px;font-weight:700;margin:0}
+.covchart svg{display:block;width:100%;overflow:visible}
+.covchart rect[data-y]{cursor:pointer}
+.covchart .read{font-size:11.5px;color:var(--ink2);line-height:1.3;margin:1px 0 0}
 .unit{margin-left:auto;font-size:12px;color:var(--ink2);display:inline-flex;align-items:center;gap:4px 6px;flex-wrap:wrap}
 .unit .mk{display:inline-flex;align-items:center;gap:4px;margin-left:8px;white-space:nowrap}
 .player{display:grid;grid-template-columns:auto auto minmax(0,1fr);gap:12px;align-items:center;padding:6px 0 2px;flex:none}
@@ -85,6 +95,24 @@ h1{font-family:var(--serif);font-weight:700;font-size:22px;line-height:1.15;marg
 #tip td.n{text-align:right;font-variant-numeric:tabular-nums;padding-left:10px;white-space:nowrap}
 #tip .q{color:var(--ink2);font-size:11.5px;margin-top:5px}
 #tip .q div{margin-top:2px}
+.rank{margin-top:10px;border-top:1px solid var(--ink);padding:8px 0 4px}
+.rank .rhead{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin-bottom:6px}
+.rank h2{font-family:var(--serif);font-size:17px;margin:0 6px 0 0}
+.rank select,.rank button.ord{font:inherit;font-size:13px;padding:3px 8px;border:1px solid var(--ink);border-radius:3px;background:#fff;color:var(--ink);cursor:pointer}
+.rank button.ord:hover,.rank select:hover{background:var(--tile)}
+.rank .rnote{font-size:12px;color:var(--ink2);margin:0 0 6px}
+.rlist{columns:3 300px;column-gap:28px;font-size:12.5px;font-variant-numeric:tabular-nums}
+.rlist button{display:grid;grid-template-columns:22px 108px minmax(40px,1fr) 62px;align-items:center;gap:6px;width:100%;padding:2px 0;border:0;border-bottom:1px solid var(--rule);background:none;font:inherit;color:inherit;text-align:left;cursor:pointer;break-inside:avoid}
+.rlist button:hover{background:var(--tile)}
+.rlist .rk{color:var(--ink3);text-align:right}
+.rlist .nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rlist .val{text-align:right;font-weight:700}
+.rlist .na .val{font-weight:400;color:var(--ink3)}
+.rlist .tr{position:relative;height:10px}
+.rlist .tr i{position:absolute;top:0;bottom:0;left:0;border-radius:1px}
+.rlist .tr u{position:absolute;top:-2px;bottom:-2px;width:1px;background:var(--ink)}
+.rlist .tr b{position:absolute;top:0;width:10px;height:10px;border-radius:50%;margin-left:-5px}
+.rlist .tr s{position:absolute;top:4.5px;left:0;right:0;height:1px;background:var(--rule)}
 details.tbl{margin-top:4px;border-top:1px solid var(--rule);padding-top:8px;font-size:13px}
 details.tbl summary{cursor:pointer;color:var(--ink2)}
 .tblwrap{max-height:340px;overflow:auto;margin-top:8px}
@@ -143,6 +171,8 @@ footer p{margin:0;max-width:980px}
   </div>
 
   <div class="controls" id="controls" role="group" aria-label="Diseases shown"></div>
+
+  <div class="covbar" id="covbar" hidden></div>
 
   <div class="player">
     <button id="play" type="button" aria-label="Play"></button>
@@ -208,6 +238,16 @@ footer p{margin:0;max-width:980px}
   <div class="card" id="card" aria-live="polite"></div>
  </div>
 
+  <section class="rank" id="rank" aria-label="States ranked">
+    <div class="rhead">
+      <h2 id="rankh"></h2>
+      <label>Rank by <select id="rankby"></select></label>
+      <button type="button" class="ord" id="rankord"></button>
+    </div>
+    <p class="rnote" id="ranknote"></p>
+    <div class="rlist" id="ranklist"></div>
+  </section>
+
   <details class="tbl" id="tbl">
     <summary>Show the numbers for this year as a table</summary>
     <div class="tblwrap" id="tblwrap"></div>
@@ -235,7 +275,7 @@ const short = n => n >= 1e6 ? (n / 1e6).toFixed(n >= 1e7 ? 0 : 1) + "M" : n >= 1
 const $ = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
-const S = { year: 1941, on: new Set(DIS.map(d => d.k)), hover: null, sel: null, playing: false };
+const S = { year: 1941, on: new Set(DIS.map(d => d.k)), hover: null, sel: null, playing: false, cov: false, rankBy: null, rankDesc: true };
 
 /* cases, rate and source for one disease, state and year. null = no data, which is not zero */
 function cell(dk, st, y) {
@@ -357,17 +397,60 @@ function setupCanvas(cv, cssW, cssH) {
 function buildControls() {
   const el = $("controls");
   el.innerHTML = DIS.map(d => `<label style="--c:${d.color}"><input type="checkbox" data-k="${d.k}" checked>${personSvg(d.color, 8)}${esc(d.name)}</label>`).join("")
+    + `<label class="covt"><input type="checkbox" id="cov">Color states by measles vaccination</label>`
     + `<span class="unit">${personSvg("#55534e", 8)}<span>1 figure = 1 reported case per ${fmt(1e5 / D.unit)} residents in a year</span>`
     + `<span class="mk"><svg width="8" height="8" aria-hidden="true"><circle cx="4" cy="4" r="2.6" fill="#55534e"/></svg>cases, under ${D.unit * SMALL} per 100,000</span>`
     + `<span class="mk"><svg width="8" height="8" aria-hidden="true"><circle cx="4" cy="4" r="2.6" fill="none" stroke="#55534e" stroke-width="1.2"/></svg>no data</span>`
     + `<span class="mk"><span style="opacity:.5">${personSvg("#55534e", 8)}</span>incomplete or provisional</span></span>`;
   el.addEventListener("change", e => {
+    if (e.target.id === "cov") { setCov(e.target.checked); return; }
     const k = e.target.dataset.k; if (!k) return;
     e.target.checked ? S.on.add(k) : S.on.delete(k);
     render();
   });
 }
 const shown = () => DIS.filter(d => S.on.has(d.k));
+
+/* ---------- measles vaccination against the 95% level ----------
+   Kindergarten MMR coverage by state and school year (CDC SchoolVaxView), in three steps. This is coverage in one
+   age group, not immunity in the whole population, so the wording stays "below the 95% level". */
+const COV_LEVEL = 95;
+const COV_STEPS = [[95, "#c6daf4", "#256abf", "95% or more"], [90, "#fbe0b8", "#e9a23b", "90% to under 95%"], [0, "#f4b272", "#c96a12", "under 90%"]];
+const covStep = v => COV_STEPS.find(b => v >= b[0]);
+const covPoint = (st, y) => vaxPoint("kinder", "mmr", st, y);
+const schoolYear = y => `${y - 1}-${String(y).slice(2)}`;
+const COV_YEARS = (() => { const ys = new Set(); const m = (D.vax.kinder || {}).mmr || {}; for (const st in m) if (ST[st]) for (const y in m[st]) if (+y <= D.y1) ys.add(+y); return [...ys].sort((a, b) => a - b); })();
+const covCount = y => { let n = 0, below = 0, low = 0; for (const s of D.states) { const p = covPoint(s.k, y); if (!p) continue; n++; if (p[0] < COV_LEVEL) below++; if (p[0] < 90) low++; } return { n, below, low }; };
+function setCov(on) {
+  S.cov = on; $("cov").checked = on;
+  if (on && !S.on.has("measles")) { S.on.add("measles"); document.querySelector('#controls input[data-k="measles"]').checked = true; }
+  if (on && COV_YEARS.length && !COV_YEARS.includes(S.year)) { setPlaying(false); S.year = COV_YEARS[COV_YEARS.length - 1]; $("year").value = S.year; }
+  renderCovBar(); if (!S.sel) layoutMap(); render();
+}
+function renderCovBar() {
+  const el = $("covbar"); el.hidden = !S.cov; if (!S.cov) return;
+  const c = covCount(S.year);
+  el.innerHTML = `<b>Kindergartners with the measles vaccine (MMR)${c.n ? ", " + schoolYear(S.year) + " school year" : ""}</b>`
+    + COV_STEPS.map(b => `<span><i style="background:${b[1]}"></i>${b[3]}</span>`).join("")
+    + `<span><i style="background:#f5f5f3;outline:1px solid #e3e2dd"></i>no figure</span>`
+    + (c.n ? `<span>${c.below} of ${c.n} states below the ${COV_LEVEL}% national target</span>`
+           : `<span>State kindergarten figures run from ${schoolYear(COV_YEARS[0])} to ${schoolYear(COV_YEARS[COV_YEARS.length - 1])}; move the year there to color the map</span>`);
+}
+function covChart(width) {
+  const W = Math.max(160, width), H = 74, ml = 22, mb = 13, mt = 4, ys = COV_YEARS, bw = (W - ml) / ys.length;
+  const y = v => mt + (1 - v / 51) * (H - mt - mb);
+  let g = [0, 25, 51].map(v => `<line x1="${ml}" x2="${W}" y1="${y(v)}" y2="${y(v)}" stroke="#e3e2dd"/><text x="${ml - 4}" y="${y(v) + 3}" text-anchor="end" font-size="9" fill="#8a8780">${v}</text>`).join("");
+  for (let i = 0; i < ys.length; i++) {
+    const c = covCount(ys[i]), x = ml + i * bw + 1, w = Math.max(2, bw - 2), cur = ys[i] === S.year;
+    g += `<rect x="${x}" y="${y(c.below)}" width="${w}" height="${y(c.low) - y(c.below)}" fill="${COV_STEPS[1][2]}"/>`
+      + `<rect x="${x}" y="${y(c.low)}" width="${w}" height="${y(0) - y(c.low)}" fill="${COV_STEPS[2][2]}"/>`
+      + `<rect data-y="${ys[i]}" x="${x - 1}" y="${mt}" width="${bw}" height="${H - mt - mb}" fill="transparent"${cur ? ' stroke="#121212" stroke-width="1"' : ""}><title>${schoolYear(ys[i])}: ${c.below} of ${c.n} states below ${COV_LEVEL}%, ${c.low} below 90%</title></rect>`;
+    if (i === 0 || i === ys.length - 1 || ys[i] % 5 === 0) g += `<text x="${x + w / 2}" y="${H - 2}" text-anchor="middle" font-size="9" fill="#8a8780">${ys[i]}</text>`;
+  }
+  const c = covCount(S.year);
+  return `<div class="covchart"><h3>States below ${COV_LEVEL}% kindergarten MMR coverage</h3><svg viewBox="0 0 ${W} ${H}" height="${H}" role="img" aria-label="Number of states below ${COV_LEVEL} percent kindergarten MMR coverage, by school year">${g}</svg>`
+    + `<p class="read">${c.n ? `${schoolYear(S.year)}: <b>${c.below} of ${c.n}</b> states below ${COV_LEVEL}%, ${c.low} below 90%.` : `No state kindergarten figures for ${S.year}.`} Darker bars are states under 90%. Year is the spring of the school year.</p></div>`;
+}
 
 /* ---------- national map ---------- */
 let GEO = null;
@@ -407,7 +490,8 @@ function drawMap() {
   const counted = Object.fromEntries(dz.map(d => [d.k, D.states.some(s => cell(d.k, s.k, S.year))]));
   for (const s of D.states) {
     const x = s.c * (tw + gap), y = s.r * (th + gap);
-    ctx.fillStyle = S.hover === s.k ? "#ebebe7" : "#f5f5f3";
+    const cv = S.cov ? covPoint(s.k, S.year) : null;
+    ctx.fillStyle = cv ? covStep(cv[0])[1] : S.hover === s.k ? "#ebebe7" : "#f5f5f3";
     ctx.beginPath(); ctx.roundRect(x, y, tw, th, 4); ctx.fill();
     if (S.hover === s.k) { ctx.strokeStyle = "#121212"; ctx.lineWidth = 1; ctx.stroke(); }
     // marks: a ring for a checked disease with no figure this year (no data is not zero),
@@ -424,8 +508,9 @@ function drawMap() {
     ctx.font = `700 ${fs}px Helvetica Neue,Helvetica,Arial,sans-serif`; ctx.textBaseline = "top";
     ctx.fillStyle = "#55534e"; ctx.textAlign = "left"; ctx.fillText(s.k, x + pad, y + pad);
     ctx.font = `${fs}px Helvetica Neue,Helvetica,Arial,sans-serif`; ctx.textAlign = "right";
-    if (!any) { ctx.fillStyle = "#a9a6a0"; ctx.fillText(!dz.length ? "" : tw < 56 ? "\u2013" : "no data", x + tw - pad, y + pad); continue; }
-    ctx.fillStyle = "#121212"; ctx.fillText(short(total), x + tw - pad, y + pad);
+    if (cv) { ctx.fillStyle = "#121212"; ctx.fillText(tw < 56 ? Math.round(cv[0]) : cv[0].toFixed(1) + "%", x + tw - pad, y + pad); if (!any) continue; }
+    else if (!any) { ctx.fillStyle = "#a9a6a0"; ctx.fillText(!dz.length ? "" : tw < 56 ? "\u2013" : "no data", x + tw - pad, y + pad); continue; }
+    else { ctx.fillStyle = "#121212"; ctx.fillText(short(total), x + tw - pad, y + pad); }
     let top = y + pad + fs + 3;
     if (marks.length) {
       const r = Math.max(1.5, Math.min(2.6, tw * 0.035)), step = r * 2 + 2;
@@ -559,7 +644,8 @@ function renderRail() {
   $("railwho").textContent = focus === "US" ? "United States" : ST[focus].n;
   $("railkey").innerHTML = KEYLINE(focus !== "US");
   const fitW = $("viz").classList.contains("fit"), w = fitW ? $("railcharts").clientWidth : ($("railcharts").clientWidth - 16) / 2;
-  $("railcharts").innerHTML = vaxKeys().map(vk => vaxChart(vk, focus, w)).join("") || `<p class="note">Check a disease to see its vaccine.</p>`;
+  $("railcharts").innerHTML = (S.cov ? covChart($("railcharts").clientWidth) : "") + (vaxKeys().map(vk => vaxChart(vk, focus, w)).join("") || `<p class="note">Check a disease to see its vaccine.</p>`);
+  $("railnote").hidden = S.cov;
   $("railnote").textContent = `State figures start in ${vaxFirstYear()}. Before that only national surveys exist, and they relied on parents' recall. A gap in a line means no measurement that year, or that the state moved between a sample of schools and a count of all kindergartners, so the two sides should not be compared. Triangles mark when a vaccine was licensed. Hover a state for its lines and the survey details.`;
 }
 
@@ -614,7 +700,7 @@ function renderState() {
   $("scharts").innerHTML = vaxKeys().map(vk => vaxChart(vk, st, ($("scharts").clientWidth - 16) / 2)).join("");
 }
 /* county map: kindergarten MMR coverage where the state publishes it by county */
-const MMR_BINS = [[95, "#104281", "95% or more"], [90, "#256abf", "90 to 94.9%"], [85, "#5598e7", "85 to 89.9%"], [0, "#86b6ef", "under 85%"]];
+const MMR_BINS = [[95, "#5b93d6", "95% or more"], [90, "#fbe0b8", "90 to 94.9%"], [85, "#f0a55a", "85 to 89.9%"], [0, "#c96a12", "under 85%"]];
 const mmrBin = v => MMR_BINS.find(b => v >= b[0]);
 function stateSvg(st) {
   const sh = D.shapes[st], sw = sh.box[2] / 260, y = S.year, meta = D.cmeta[st] || { n: 0 };
@@ -697,6 +783,52 @@ function schedule() {
 }
 function setYear(y) { S.year = Math.max(D.y0, Math.min(D.y1, y)); msIndex = 0; $("year").value = S.year; render(); }
 
+/* ---------- ranked states ---------- */
+const KVAX = ["mmr", "dtap", "polio"].filter(vk => ((D.vax.kinder || {})[vk]));
+const KVAX_NAME = { mmr: "measles vaccine (MMR)", dtap: "whooping cough vaccine (DTaP)", polio: "polio vaccine" };
+function rankOptions() {
+  return KVAX.map(vk => ({ k: "v:" + vk, label: `Kindergartners with the ${KVAX_NAME[vk]}`, vax: vk }))
+    .concat(DIS.map(d => ({ k: "d:" + d.k, label: `${d.name} cases per 100,000 residents`, dis: d })));
+}
+function rankValue(o, st, y) {
+  if (o.vax) { const p = vaxPoint("kinder", o.vax, st, y); return p ? { v: p[0] } : null; }
+  const c = cell(o.dis.k, st, y); return c && c.rate != null ? { v: c.rate, cases: c.cases, soft: thin(c) } : null;
+}
+function renderRank() {
+  const opts = rankOptions(), sel = $("rankby");
+  if (!sel.options.length) {
+    sel.innerHTML = opts.map(o => `<option value="${o.k}">${esc(o.label)}</option>`).join("");
+    sel.addEventListener("change", () => { S.rankBy = sel.value; renderRank(); });
+    $("rankord").addEventListener("click", () => { S.rankDesc = !S.rankDesc; renderRank(); });
+    $("ranklist").addEventListener("click", e => { const b = e.target.closest("button"); if (b) { openState(b.dataset.st); $("stage").scrollIntoView({ block: "start" }); } });
+  }
+  // until the reader picks a measure: coverage when the year has it, measles cases otherwise
+  const o = opts.find(x => x.k === S.rankBy) || (COV_YEARS.includes(S.year) ? opts[0] : opts.find(x => x.k === "d:measles"));
+  sel.value = o.k;
+  $("rankord").textContent = S.rankDesc ? "Highest first \u2193" : "Lowest first \u2191";
+  $("rankord").setAttribute("aria-label", `Sort order: ${S.rankDesc ? "highest first" : "lowest first"}. Press to reverse.`);
+  $("rankh").textContent = `States ranked, ${o.vax ? schoolYear(S.year) + " school year" : S.year}`;
+  const rows = D.states.map(s => ({ s, r: rankValue(o, s.k, S.year) }));
+  const have = rows.filter(x => x.r).sort((a, b) => (S.rankDesc ? b.r.v - a.r.v : a.r.v - b.r.v) || a.s.n.localeCompare(b.s.n));
+  const none = rows.filter(x => !x.r).sort((a, b) => a.s.n.localeCompare(b.s.n));
+  const max = Math.max(0, ...have.map(x => x.r.v)), min = Math.min(100, ...have.map(x => x.r.v));
+  const lo = o.vax ? Math.min(75, Math.floor(min / 5) * 5) : 0, pos = v => (v - lo) / (100 - lo) * 100;
+  let rank = 0, prev = null;
+  const html = have.map((x, i) => {
+    if (x.r.v !== prev) { rank = i + 1; prev = x.r.v; }
+    const track = o.vax
+      ? `<span class="tr"><s></s><u style="left:${pos(COV_LEVEL)}%"></u><b style="left:${pos(x.r.v)}%;background:${covStep(x.r.v)[2]}"></b></span>`
+      : `<span class="tr"><i style="width:${max ? Math.max(0.5, x.r.v / max * 100) : 0}%;background:${o.dis.color};opacity:${x.r.soft ? 0.5 : 1}"></i></span>`;
+    const val = o.vax ? x.r.v.toFixed(1) + "%" : fmt1(x.r.v);
+    return `<button type="button" data-st="${x.s.k}" title="${esc(x.s.n)}${o.dis ? ": " + fmt(x.r.cases) + " cases" : ""}"><span class="rk">${rank}</span><span class="nm">${esc(x.s.n)}</span>${track}<span class="val">${val}</span></button>`;
+  }).join("") + none.map(x => `<button type="button" class="na" data-st="${x.s.k}"><span class="rk"></span><span class="nm">${esc(x.s.n)}</span><span class="tr"></span><span class="val">no figure</span></button>`).join("");
+  $("ranklist").innerHTML = html || "";
+  $("ranknote").textContent = !have.length
+    ? (o.vax ? `No state kindergarten figures for ${S.year}. They run from ${schoolYear(COV_YEARS[0])} to ${schoolYear(COV_YEARS[COV_YEARS.length - 1])}; move the year there.` : `No state counts of ${o.dis.name.toLowerCase()} for ${S.year}.`)
+    : o.vax ? `Share of kindergartners with the doses their state requires, as states reported to CDC. Dots sit on a scale from ${lo}% to 100%; the line marks ${COV_LEVEL}%${o.vax === "mmr" ? ", the national target for the measles vaccine" : ", shown for reference"}. States measure this in different ways (a count of all schools or a sample), so close ranks are not firm. Click a state to open it.`
+    : `Reported cases per 100,000 residents in ${S.year}. Faded bars are incomplete or provisional counts. Click a state to open it.`;
+}
+
 /* ---------- table view ---------- */
 function renderTable() {
   if (!$("tbl").open) return;
@@ -709,9 +841,9 @@ function renderTable() {
 
 /* ---------- render ---------- */
 function render() {
-  $("bigyear").textContent = S.year;
+  $("bigyear").textContent = S.year; renderCovBar();
   if (S.sel) renderState(); else { drawMap(); renderRail(); renderUS(); if (S.hover) $("tip").innerHTML = tipHtml(S.hover); }
-  renderCard(); renderTable();
+  renderCard(); renderRank(); renderTable();
 }
 function init() {
   if (window.self !== window.top) document.documentElement.dataset.framed = "1";
@@ -724,16 +856,19 @@ function init() {
   $("smap").addEventListener("pointermove", e => countyTip(e.target.dataset && e.target.dataset.f, e));
   $("smap").addEventListener("pointerleave", () => countyTip(null));
   $("tbl").addEventListener("toggle", renderTable);
+  $("railcharts").addEventListener("click", e => { const y = +(e.target.dataset && e.target.dataset.y); if (y) { setPlaying(false); setYear(y); } });
   $("card").addEventListener("click", e => {
     const step = +(e.target.dataset && e.target.dataset.step); if (!step) return;
     const n = msInScope().filter(m => msYear(m) === S.year).length;
     setPlaying(false); msIndex = (Math.min(msIndex, n - 1) + step + n) % n; renderCard();
   });
   document.addEventListener("keydown", e => { if (e.key === "Escape" && S.sel) closeState(); });
-  $("foot").innerHTML = `Reported cases, not infections; many cases were never reported, and reporting rules changed over the century. A ring marks a disease that other states counted that year but this state did not, which is not zero; a dot marks a count too small to draw a figure. The diseases were not all counted from the same year (mumps from 1968, hepatitis A from 1966), so a jump in a state's total can come from a disease entering the record. Faded figures mark an incomplete count: a year with fewer than ${THIN_WEEKS} of ${FULL_YEAR} weekly reports, a national figure where states holding more than 10% of residents did not report or most states were short of weeks, or the provisional year 2025. Measles, whooping cough and polio before 1956 come from the yearly tables of the U.S. Public Health Service; in the 1920s some states were not yet reporting every disease, and the tables print a dash, which their key defines as zero. Where a count is a sum of weekly reports (Alaska and Hawaii before statehood, and polio in 1932) it usually runs lower than the yearly total. Polio counts all reported polio before 1956 and paralytic polio only from 1956, so the 1955 to 1956 change is partly a change in what was counted; the paralytic counts are as first printed, and CDC later revised some yearly totals up or down. Hepatitis A before 1974 includes hepatitis of unspecified type. Sources: U.S. Public Health Service, National Office of Vital Statistics, yearly tables of notifiable diseases (measles and polio from 1920, whooping cough from 1922, through 1955); CDC final annual tables of notifiable diseases (whooping cough, measles and paralytic polio from 1956, hepatitis A from 1966, mumps from 1968, all five diseases from 1993, through 2023); CDC weekly tables (2024 and 2025, provisional for 2025); Project Tycho, University of Pittsburgh, CC BY 4.0, from the weekly federal notifiable disease reports (Alaska and Hawaii before 1956, polio 1932). Vaccination: CDC National Immunization Survey and SchoolVaxView; U.S. Immunization Survey and National Health Interview Survey before 1995. County figures: Johns Hopkins University. State indicators: Census Bureau and Bureau of Economic Analysis. Party control: Klarner, State Partisan Balance Data (through 2011), and Ballotpedia (2012 on).`;
+  $("foot").innerHTML = `Reported cases, not infections; many cases were never reported, and reporting rules changed over the century. A ring marks a disease that other states counted that year but this state did not, which is not zero; a dot marks a count too small to draw a figure. The diseases were not all counted from the same year (mumps from 1968, hepatitis A from 1966), so a jump in a state's total can come from a disease entering the record. Faded figures mark an incomplete count: a year with fewer than ${THIN_WEEKS} of ${FULL_YEAR} weekly reports, a national figure where states holding more than 10% of residents did not report or most states were short of weeks, or the provisional year 2025. Measles, whooping cough and polio before 1956 come from the yearly tables of the U.S. Public Health Service; in the 1920s some states were not yet reporting every disease, and the tables print a dash, which their key defines as zero. Where a count is a sum of weekly reports (Alaska and Hawaii before statehood, and polio in 1932) it usually runs lower than the yearly total. Polio counts all reported polio before 1956 and paralytic polio only from 1956, so the 1955 to 1956 change is partly a change in what was counted; the paralytic counts are as first printed, and CDC later revised some yearly totals up or down. Hepatitis A before 1974 includes hepatitis of unspecified type. "Color states by measles vaccination" shades each state by the share of kindergartners with the measles vaccine (MMR) that school year, as states reported to CDC, against 95%, the national Healthy People 2030 target; it measures one age group, not immunity in the whole population, and state figures start with the 2009-10 school year. Sources: U.S. Public Health Service, National Office of Vital Statistics, yearly tables of notifiable diseases (measles and polio from 1920, whooping cough from 1922, through 1955); CDC final annual tables of notifiable diseases (whooping cough, measles and paralytic polio from 1956, hepatitis A from 1966, mumps from 1968, all five diseases from 1993, through 2023); CDC weekly tables (2024 and 2025, provisional for 2025); Project Tycho, University of Pittsburgh, CC BY 4.0, from the weekly federal notifiable disease reports (Alaska and Hawaii before 1956, polio 1932). Vaccination: CDC National Immunization Survey and SchoolVaxView; U.S. Immunization Survey and National Health Interview Survey before 1995. County figures: Johns Hopkins University. State indicators: Census Bureau and Bureau of Economic Analysis. Party control: Klarner, State Partisan Balance Data (through 2011), and Ballotpedia (2012 on).`;
   const h = new URLSearchParams(location.hash.slice(1));   // #st=OH&y=1958 opens a state and year
   if (+h.get("y") >= D.y0 && +h.get("y") <= D.y1) { S.year = +h.get("y"); yr.value = S.year; }
   setPlaying(false); layoutMap(); buildTicks(); render();
+  if (h.get("cov") === "1") setCov(true);
+  if (+h.get("y") >= D.y0 && +h.get("y") <= D.y1 && S.year !== +h.get("y")) setYear(+h.get("y"));
   if (ST[h.get("st")]) openState(h.get("st"));
   let lastW = 0, lastH = 0;   // only re-lay-out when the box really changes, never on our own redraws
   new ResizeObserver(() => {

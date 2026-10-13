@@ -120,3 +120,9 @@ None.
   agreed to a measles-first version: state tiles colored in three steps by
   kindergarten MMR coverage against 95% (blue to orange), county view, and a
   count of states below 95% by year. Not built yet.
+- 2026-10-13 Built the measles coverage view (toggle "Color states by measles
+  vaccination": three steps against 95%, bar chart of states below 95% by
+  school year, county map recolored blue to orange) and, on the reviewer's
+  second request, a "States ranked" panel under the map with a highest/lowest
+  button. Open with the reviewer: mumps listed twice in his levels, and a
+  source for each level, before adding other diseases.
