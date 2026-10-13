@@ -5,7 +5,8 @@ The year is the spring of the school year (2017 = 2016-17). `first` is the first
 rule applied to entering kindergartners. Rule dates and sources are in RULES below.
 
 Output: analysis/charts/exemption_rules_mmr.svg and exemption_rules_numbers.txt (the PNG is a
-screenshot of the SVG).
+screenshot of the SVG), and exemption_rules_panels.html, one small chart per state, which
+analysis/02_findings_page.py places on the findings page.
 """
 from pathlib import Path
 
@@ -34,6 +35,44 @@ RULES = [  # state, name, first school year under the new rule (spring year), wh
 BLUE, ORANGE, INK, INK2, INK3, RULE = "#256abf", "#c96a12", "#121212", "#55534e", "#8a8780", "#e3e2dd"
 Y0, Y1, V0, V1 = 2010, 2026, 88.0, 100.0
 sy = lambda y: "%d-%02d" % (y - 1, y % 100)  # noqa: E731
+
+
+def panel(k, rule):
+    """One state as a small chart for the findings page (styled by the page's own classes)."""
+    st, name, first, what, _, _ = rule
+    d = k[(k.st == st) & k.year.between(Y0, Y1)].sort_values("year")
+    col = ORANGE if st == "MS" else BLUE
+    W, H, ml, mr, mt, mb = 300, 190, 34, 12, 10, 22
+    X = lambda y: ml + (y - Y0) / (Y1 - Y0) * (W - ml - mr)  # noqa: E731
+    Y = lambda val: mt + (V1 - val) / (V1 - V0) * (H - mt - mb)  # noqa: E731
+    g = [f'<rect x="{X(first - 0.5):.1f}" y="{mt}" width="{W - mr + 6 - X(first - 0.5):.1f}" height="{H - mt - mb}" fill="{col}" opacity="0.09"/>']
+    for val in (90, 95, 100):
+        dash = ' stroke-dasharray="4 3"' if val == 95 else ""
+        g.append(f'<line x1="{ml}" x2="{W - mr + 6}" y1="{Y(val):.1f}" y2="{Y(val):.1f}" stroke="{INK2 if val == 95 else RULE}"{dash}/>'
+                 f'<text x="{ml - 6}" y="{Y(val) + 3.5:.1f}" class="tick" text-anchor="end">{val}%</text>')
+    for yy in (2010, 2015, 2020, 2025):
+        g.append(f'<text x="{X(yy):.1f}" y="{H - 6}" class="tick" text-anchor="middle">{yy}</text>')
+    g.append(f'<line x1="{X(first - 0.5):.1f}" x2="{X(first - 0.5):.1f}" y1="{mt}" y2="{H - mb}" stroke="{col}" stroke-width="1.2"/>')
+    seg, prev = [], None
+    for r in d.itertuples():
+        if prev is not None and r.year - prev > 1:
+            g.append(f'<polyline points="{" ".join(seg)}" fill="none" stroke="{col}" stroke-width="2"/>')
+            seg = []
+        seg.append(f"{X(r.year):.1f},{Y(r.estimate):.1f}")
+        prev = r.year
+    g.append(f'<polyline points="{" ".join(seg)}" fill="none" stroke="{col}" stroke-width="2"/>')
+    for r in d.itertuples():
+        census = str(r.method).strip().lower() == "census"
+        g.append(f'<circle cx="{X(r.year):.1f}" cy="{Y(r.estimate):.1f}" r="2.8" fill="{col if census else "#fff"}" stroke="{col}" stroke-width="1.3"/>')
+    before, last = d[d.year == first - 1].iloc[0], d.iloc[-1]
+    up = last.estimate >= before.estimate
+    g.append(f'<text x="{X(first - 1) - 5:.1f}" y="{Y(before.estimate) + 17:.1f}" class="val" text-anchor="end">{before.estimate:.1f}%</text>')
+    g.append(f'<text x="{W - mr + 4}" y="{Y(last.estimate) + (-9 if up else 17):.1f}" class="val" text-anchor="end">{last.estimate:.1f}%</text>')
+    label = (f"Kindergarten MMR coverage in {name}, {sy(Y0)} to {sy(int(last.year))}: {before.estimate:.1f}% in {sy(first - 1)}, "
+             f"the last school year before the rule change, and {last.estimate:.1f}% in {sy(int(last.year))}")
+    return (f'<figure class="county"><figcaption><span class="cname">{name}</span>'
+            f'<span class="ccases" style="color:{col};font-weight:700">{what}, {sy(first)}</span></figcaption>'
+            f'<svg viewBox="0 0 {W} {H}" role="img" aria-label="{label}">{"".join(g)}</svg></figure>')
 
 
 def main():
@@ -87,6 +126,7 @@ def main():
         notfull = [sy(int(r.year)) for r in d.itertuples() if str(r.method).strip().lower() != "census"]
         lines.append(f"  school years not a count of all schools: {', '.join(notfull) if notfull else 'none'}")
         lines.append("")
+    (OUT / "exemption_rules_panels.html").write_text("\n".join(panel(k, r) for r in RULES))
     fy = mt + ph + 40
     notes = ["Labels give the last school year before the change and 2025-26. Years run by the spring of the school year; 2010-11 has no state figures. Hollow dots are years a state",
              "did not count every school (a voluntary or partial response). Other things changed in these years too, including the 2019 measles outbreaks and the pandemic, so the",

@@ -41,6 +41,7 @@ FULL = [
     ("scripts/11_coverage.py", "Source coverage check"),
     ("scripts/12_tieout.py", "Tie-out against the raw files"),
     ("analysis/01_vaccination_and_outbreaks.py", "Findings numbers"),
+    ("analysis/03_exemption_rules_chart.py", "Chart: coverage before and after exemption rule changes"),
     ("analysis/02_findings_page.py", "Write dist/findings.html"),
 ]
 QUICK = [

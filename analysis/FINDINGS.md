@@ -106,6 +106,24 @@ documented; whether the laws were the reason is not something this data shows.
 | New York | Signed June 13, 2019, during a year with 911 measles cases | all exemptions 1.3% (2018-19) | all exemptions 0.1% (2019-20) |
 | Connecticut | Public Act 21-6, April 28, 2021 | 95.3% (2020-21) | 98.6% (2025-26) |
 
+**Chart (added October 13, 2026).** `analysis/03_exemption_rules_chart.py` draws
+kindergarten MMR coverage for these four states and Mississippi, 2009-10 to
+2025-26, with the first school year under each new rule marked
+(`analysis/charts/exemption_rules_mmr.png`, and as five small charts on the
+findings page). Last school year before the rule, then 2025-26: California
+94.5% (2015-16) to 95.7%; New York 97.2% (2018-19) to 97.7%; Maine 94.3%
+(2020-21) to 98.0%; Connecticut 95.7% (2021-22) to 98.6%. California was
+already rising the year after its law was signed, before the rule applied.
+
+**Mississippi is the reverse of the reverse.** It allowed only medical
+exemptions from 1979 (Brown v. Stone) until a federal court ordered a religious
+exemption in April 2023 (Bosarge v. Edney), offered from July 15, 2023.
+Kindergarten MMR coverage was 99.1% to 99.9% from 2009-10 to 2019-20, the
+highest in the country, 98.4% in 2022-23 and 97.0% in 2025-26. It was already
+slipping slowly before the order. Source for the order: Mississippi State
+Department of Health notice, https://msdh.ms.gov/Page/resources/19957.pdf
+(found by search; not yet read line by line).
+
 All four laws are in the verified milestone files with their URLs. Washington
 removed the personal exemption for MMR in May 2019 after the Clark County
 outbreak; state coverage rose to 94.4% the next school year and has since

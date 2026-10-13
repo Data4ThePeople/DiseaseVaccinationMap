@@ -135,3 +135,5 @@ None.
   `analysis/03_exemption_rules_chart.py`, output in `analysis/charts/`. Rule
   dates checked by search against the bill text, Maine CDC and Mississippi
   health department pages; not yet read on the original pages line by line.
+- 2026-10-13 The exemption rules chart is on the findings page, in "The
+  reverse sequence", as five small charts with Mississippi added.

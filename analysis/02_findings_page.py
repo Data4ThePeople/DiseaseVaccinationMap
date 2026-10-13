@@ -72,7 +72,9 @@ mg.append(f'<line x1="{mx(1967):.1f}" x2="{mx(1967):.1f}" y1="{mMT}" y2="{MH - m
 mumps_svg = f'<svg viewBox="0 0 {MW} {MH}" role="img" aria-label="Reported mumps cases in the United States, 1968 to 2025">{"".join(mg)}</svg>'
 
 tpl = (ROOT / "analysis" / "findings_template.html").read_text()
-page = tpl.replace("<!--COUNTY_CARDS-->", "\n".join(cards)).replace("<!--MUMPS_SVG-->", mumps_svg)
+# five small charts written by analysis/03_exemption_rules_chart.py
+rules = (ROOT / "analysis" / "charts" / "exemption_rules_panels.html").read_text()
+page = tpl.replace("<!--COUNTY_CARDS-->", "\n".join(cards)).replace("<!--MUMPS_SVG-->", mumps_svg).replace("<!--EXEMPTION_RULES-->", rules)
 head, body = page.split("<main", 1)   # template = title, font links and style, then the page body
 doc = ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
        '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
