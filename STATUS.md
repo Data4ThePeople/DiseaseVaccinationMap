@@ -126,3 +126,6 @@ None.
   second request, a "States ranked" panel under the map with a highest/lowest
   button. Open with the reviewer: mumps listed twice in his levels, and a
   source for each level, before adding other diseases.
+- 2026-10-13 Eric: accept 334 for New York polio 1932. All 106 early
+  disease-years now come from the yearly tables; weekly sums remain only for
+  Alaska and Hawaii before statehood. Tie-out passes.

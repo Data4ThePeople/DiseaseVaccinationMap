@@ -103,7 +103,7 @@ own printed national totals (from the ten-year tables in the annual summaries),
 the page's weekly sums for 1944 to 1955 run from 0.6% over to 17.8% under for
 measles, from 0.2% over to 13.0% under for whooping cough, and from 2.3% over
 to 9.1% under for all polio (independent tie-out, October 10, 2026). The
-years built this way were measles, whooping cough and polio before 1956; since October 13, 2026 those come from the Public Health Service annual tables (see that section), and weekly sums remain only for Alaska and Hawaii before statehood and polio in 1932. On the page a state-year with fewer than 48 weekly
+years built this way were measles, whooping cough and polio before 1956; since October 13, 2026 those come from the Public Health Service annual tables (see that section), and weekly sums remain only for Alaska and Hawaii before statehood. On the page a state-year with fewer than 48 weekly
 reports is drawn faded, the hover says how many of 52 weeks are missing, and the
 United States figure is faded and marked "incomplete" when the reporting states
 hold under 90% of residents or most of them are short of weeks.
@@ -418,7 +418,7 @@ cell as printed, with its PDF page, is in `data/raw/bridge/early_readings.csv`
 disease-years). `scripts/02d_early_annual_tables.py` checks that the states add
 to each printed division row and the divisions to the printed U.S. row, and
 writes `annual_state_cases_early.csv`. The result per disease-year is in
-`checks_early_sums.csv`. 105 of 106 disease-years add exactly and are used.
+`checks_early_sums.csv`. All 106 disease-years add exactly and are used (polio 1932 with the editor reading below).
 
 **Two readings.**
 - 1920 to 1950: a reader typed each table by eye. Separately, the scan's text
@@ -431,10 +431,11 @@ writes `annual_state_cases_early.csv`. The result per disease-year is in
 - 1951 to 1955: two readers typed the three columns by eye, independently.
   All 885 cells agree.
 
-**Held: polio 1932.** New York is printed "534", but the Middle Atlantic row
-(1,806) and the U.S. row (3,820) add only if it is 334; the weekly reports for
-New York that year sum to 356. The year waits for an editor's decision and the
-page shows the weekly sums for it.
+**Editor reading: polio 1932, New York.** The cell is printed "534", but the
+Middle Atlantic row (1,806) and the U.S. row (3,820) add only if it is 334, and
+the weekly reports for New York that year sum to 356. Eric accepted 334 on
+October 13, 2026. `early_readings.csv` keeps the cell as printed; the script
+applies the reading and the row's flag says so.
 
 **Cells where the page is damaged (kept, flagged in the table).** Measles:
 Missouri 1930 (hundreds digit blotted), North Carolina 1928 (last digit

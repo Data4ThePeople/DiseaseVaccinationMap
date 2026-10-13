@@ -81,7 +81,7 @@ year,disease,us_printed,sum_of_states,states_with_a_count,result,why
 1929,polio,2882,2882,49,kept,
 1930,polio,9220,9220,49,kept,
 1931,polio,15872,15872,49,kept,
-1932,polio,3820,4020,49,held for an editor decision,"New York is printed ""534"" but the Middle Atlantic row (1,806) and the U.S. row need 334; Middle Atlantic off by -200"
+1932,polio,3820,3820,49,kept,
 1933,polio,5043,5043,49,kept,
 1934,polio,7510,7510,49,kept,
 1935,polio,10839,10839,49,kept,

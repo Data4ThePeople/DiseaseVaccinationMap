@@ -23208,7 +23208,7 @@ polio,AL,1928,61,phs_annual,"annual table, Public Health Service",,0,2640000,2.3
 polio,AL,1929,58,phs_annual,"annual table, Public Health Service",,0,2644000,2.19
 polio,AL,1930,68,phs_annual,"annual table, Public Health Service",,0,2647000,2.57
 polio,AL,1931,57,phs_annual,"annual table, Public Health Service",,0,2649000,2.15
-polio,AL,1932,35,tycho_weekly,sum of 51 weekly reports,51.0,0,2653000,1.32
+polio,AL,1932,35,phs_annual,"annual table, Public Health Service",,0,2653000,1.32
 polio,AL,1933,28,phs_annual,"annual table, Public Health Service",,0,2661000,1.05
 polio,AL,1934,50,phs_annual,"annual table, Public Health Service",,0,2685000,1.86
 polio,AL,1935,61,phs_annual,"annual table, Public Health Service",,0,2719000,2.24
@@ -23314,7 +23314,7 @@ polio,AR,1928,10,phs_annual,"annual table, Public Health Service",,0,1847000,0.5
 polio,AR,1929,4,phs_annual,"annual table, Public Health Service",,0,1852000,0.22
 polio,AR,1930,80,phs_annual,"annual table, Public Health Service",,0,1859000,4.3
 polio,AR,1931,17,phs_annual,"annual table, Public Health Service",,0,1848000,0.92
-polio,AR,1932,14,tycho_weekly,sum of 51 weekly reports,51.0,0,1836000,0.76
+polio,AR,1932,14,phs_annual,"annual table, Public Health Service",,0,1836000,0.76
 polio,AR,1933,13,phs_annual,"annual table, Public Health Service",,0,1854000,0.7
 polio,AR,1934,13,phs_annual,"annual table, Public Health Service",,0,1878000,0.69
 polio,AR,1935,28,phs_annual,"annual table, Public Health Service",,0,1890000,1.48
@@ -23420,7 +23420,7 @@ polio,AZ,1928,12,phs_annual,"annual table, Public Health Service",,0,422000,2.84
 polio,AZ,1929,9,phs_annual,"annual table, Public Health Service",,0,430000,2.09
 polio,AZ,1930,29,phs_annual,"annual table, Public Health Service",,0,434000,6.68
 polio,AZ,1931,12,phs_annual,"annual table, Public Health Service",,0,429000,2.8
-polio,AZ,1932,7,tycho_weekly,sum of 51 weekly reports,51.0,0,426000,1.64
+polio,AZ,1932,11,phs_annual,"annual table, Public Health Service",,0,426000,2.58
 polio,AZ,1933,31,phs_annual,"annual table, Public Health Service",,0,426000,7.28
 polio,AZ,1934,131,phs_annual,"annual table, Public Health Service",,0,428000,30.61
 polio,AZ,1935,25,phs_annual,"annual table, Public Health Service",,0,434000,5.76
@@ -23526,7 +23526,7 @@ polio,CA,1928,298,phs_annual,"annual table, Public Health Service",,0,5344000,5.
 polio,CA,1929,172,phs_annual,"annual table, Public Health Service",,0,5531000,3.11
 polio,CA,1930,1835,phs_annual,"annual table, Public Health Service",,0,5711000,32.13
 polio,CA,1931,292,phs_annual,"annual table, Public Health Service",,0,5824000,5.01
-polio,CA,1932,170,tycho_weekly,sum of 51 weekly reports,51.0,0,5894000,2.88
+polio,CA,1932,191,phs_annual,"annual table, Public Health Service",,0,5894000,3.24
 polio,CA,1933,170,phs_annual,"annual table, Public Health Service",,0,5963000,2.85
 polio,CA,1934,3338,phs_annual,"annual table, Public Health Service",,0,6060000,55.08
 polio,CA,1935,829,phs_annual,"annual table, Public Health Service",,0,6175000,13.43
@@ -23632,7 +23632,7 @@ polio,CO,1928,76,phs_annual,"annual table, Public Health Service",,0,1014000,7.5
 polio,CO,1929,13,phs_annual,"annual table, Public Health Service",,0,1008000,1.29
 polio,CO,1930,76,phs_annual,"annual table, Public Health Service",,0,1040000,7.31
 polio,CO,1931,7,phs_annual,"annual table, Public Health Service",,0,1056000,0.66
-polio,CO,1932,8,tycho_weekly,sum of 51 weekly reports,51.0,0,1066000,0.75
+polio,CO,1932,9,phs_annual,"annual table, Public Health Service",,0,1066000,0.84
 polio,CO,1933,7,phs_annual,"annual table, Public Health Service",,0,1071000,0.65
 polio,CO,1934,20,phs_annual,"annual table, Public Health Service",,0,1075000,1.86
 polio,CO,1935,22,phs_annual,"annual table, Public Health Service",,0,1078000,2.04
@@ -23738,7 +23738,7 @@ polio,CT,1928,70,phs_annual,"annual table, Public Health Service",,0,1577000,4.4
 polio,CT,1929,18,phs_annual,"annual table, Public Health Service",,0,1594000,1.13
 polio,CT,1930,71,phs_annual,"annual table, Public Health Service",,0,1613000,4.4
 polio,CT,1931,1133,phs_annual,"annual table, Public Health Service",,0,1628000,69.59
-polio,CT,1932,32,tycho_weekly,sum of 52 weekly reports,52.0,0,1637000,1.95
+polio,CT,1932,29,phs_annual,"annual table, Public Health Service",,0,1637000,1.77
 polio,CT,1933,78,phs_annual,"annual table, Public Health Service",,0,1642000,4.75
 polio,CT,1934,14,phs_annual,"annual table, Public Health Service",,0,1650000,0.85
 polio,CT,1935,402,phs_annual,"annual table, Public Health Service",,0,1666000,24.13
@@ -23844,7 +23844,7 @@ polio,DC,1928,36,phs_annual,"annual table, Public Health Service",,0,479000,7.52
 polio,DC,1929,6,phs_annual,"annual table, Public Health Service",,0,483000,1.24
 polio,DC,1930,11,phs_annual,"annual table, Public Health Service",,0,488000,2.25
 polio,DC,1931,17,phs_annual,"annual table, Public Health Service",,0,504000,3.37
-polio,DC,1932,34,tycho_weekly,sum of 52 weekly reports,52.0,0,513000,6.63
+polio,DC,1932,39,phs_annual,"annual table, Public Health Service",,0,513000,7.6
 polio,DC,1933,12,phs_annual,"annual table, Public Health Service",,0,529000,2.27
 polio,DC,1934,10,phs_annual,"annual table, Public Health Service",,0,568000,1.76
 polio,DC,1935,85,phs_annual,"annual table, Public Health Service",,0,608000,13.98
@@ -23950,7 +23950,7 @@ polio,DE,1928,10,phs_annual,"annual table, Public Health Service",,0,233000,4.29
 polio,DE,1929,8,phs_annual,"annual table, Public Health Service",,0,236000,3.39
 polio,DE,1930,6,phs_annual,"annual table, Public Health Service",,0,239000,2.51
 polio,DE,1931,6,phs_annual,"annual table, Public Health Service",,0,242000,2.48
-polio,DE,1932,11,tycho_weekly,sum of 52 weekly reports,52.0,0,245000,4.49
+polio,DE,1932,11,phs_annual,"annual table, Public Health Service",,0,245000,4.49
 polio,DE,1933,7,phs_annual,"annual table, Public Health Service",,0,248000,2.82
 polio,DE,1934,3,phs_annual,"annual table, Public Health Service",,0,250000,1.2
 polio,DE,1935,6,phs_annual,"annual table, Public Health Service",,0,252000,2.38
@@ -24056,7 +24056,7 @@ polio,FL,1928,23,phs_annual,"annual table, Public Health Service",,0,1433000,1.6
 polio,FL,1929,33,phs_annual,"annual table, Public Health Service",,0,1445000,2.28
 polio,FL,1930,11,phs_annual,"annual table, Public Health Service",,0,1471000,0.75
 polio,FL,1931,17,phs_annual,"annual table, Public Health Service",,0,1493000,1.14
-polio,FL,1932,8,tycho_weekly,sum of 52 weekly reports,52.0,0,1521000,0.53
+polio,FL,1932,8,phs_annual,"annual table, Public Health Service",,0,1521000,0.53
 polio,FL,1933,7,phs_annual,"annual table, Public Health Service",,0,1552000,0.45
 polio,FL,1934,16,phs_annual,"annual table, Public Health Service",,0,1585000,1.01
 polio,FL,1935,16,phs_annual,"annual table, Public Health Service",,0,1613000,0.99
@@ -24162,7 +24162,7 @@ polio,GA,1928,12,phs_annual,"annual table, Public Health Service",,0,2903000,0.4
 polio,GA,1929,24,phs_annual,"annual table, Public Health Service",,0,2903000,0.83
 polio,GA,1930,21,phs_annual,"annual table, Public Health Service",,0,2910000,0.72
 polio,GA,1931,32,phs_annual,"annual table, Public Health Service",,0,2924000,1.09
-polio,GA,1932,17,tycho_weekly,sum of 52 weekly reports,52.0,0,2935000,0.58
+polio,GA,1932,42,phs_annual,"annual table, Public Health Service",,0,2935000,1.43
 polio,GA,1933,41,phs_annual,"annual table, Public Health Service",,0,2950000,1.39
 polio,GA,1934,48,phs_annual,"annual table, Public Health Service",,0,2964000,1.62
 polio,GA,1935,36,phs_annual,"annual table, Public Health Service",,0,2955000,1.22
@@ -24342,7 +24342,7 @@ polio,IA,1928,37,phs_annual,"annual table, Public Health Service",,0,2450000,1.5
 polio,IA,1929,76,phs_annual,"annual table, Public Health Service",,0,2460000,3.09
 polio,IA,1930,222,phs_annual,"annual table, Public Health Service",,0,2475000,8.97
 polio,IA,1931,167,phs_annual,"annual table, Public Health Service",,0,2482000,6.73
-polio,IA,1932,48,tycho_weekly,sum of 52 weekly reports,52.0,0,2489000,1.93
+polio,IA,1932,51,phs_annual,"annual table, Public Health Service",,0,2489000,2.05
 polio,IA,1933,45,phs_annual,"annual table, Public Health Service",,0,2495000,1.8
 polio,IA,1934,37,phs_annual,"annual table, Public Health Service",,0,2510000,1.47
 polio,IA,1935,65,phs_annual,"annual table, Public Health Service",,0,2524000,2.58
@@ -24448,7 +24448,7 @@ polio,ID,1928,47,phs_annual,"annual table, Public Health Service",,0,449000,10.4
 polio,ID,1929,15,phs_annual,"annual table, Public Health Service",,0,447000,3.36
 polio,ID,1930,18,phs_annual,"annual table, Public Health Service",,0,447000,4.03
 polio,ID,1931,15,phs_annual,"annual table, Public Health Service",,0,454000,3.3
-polio,ID,1932,5,tycho_weekly,sum of 51 weekly reports,51.0,0,459000,1.09
+polio,ID,1932,9,phs_annual,"annual table, Public Health Service",,0,459000,1.96
 polio,ID,1933,9,phs_annual,"annual table, Public Health Service",,0,464000,1.94
 polio,ID,1934,156,phs_annual,"annual table, Public Health Service",,0,473000,32.98
 polio,ID,1935,6,phs_annual,"annual table, Public Health Service",,0,481000,1.25
@@ -24554,7 +24554,7 @@ polio,IL,1928,106,phs_annual,"annual table, Public Health Service",,0,7576000,1.
 polio,IL,1929,82,phs_annual,"annual table, Public Health Service",,0,7606000,1.08
 polio,IL,1930,402,phs_annual,"annual table, Public Health Service",,0,7644000,5.26
 polio,IL,1931,700,phs_annual,"annual table, Public Health Service",,0,7687000,9.11
-polio,IL,1932,211,tycho_weekly,sum of 52 weekly reports,52.0,0,7736000,2.73
+polio,IL,1932,203,phs_annual,"annual table, Public Health Service",,0,7736000,2.62
 polio,IL,1933,207,phs_annual,"annual table, Public Health Service",,0,7768000,2.66
 polio,IL,1934,214,phs_annual,"annual table, Public Health Service",,0,7772000,2.75
 polio,IL,1935,244,phs_annual,"annual table, Public Health Service",,0,7797000,3.13
@@ -24660,7 +24660,7 @@ polio,IN,1928,34,phs_annual,"annual table, Public Health Service",,0,3212000,1.0
 polio,IN,1929,25,phs_annual,"annual table, Public Health Service",,0,3226000,0.77
 polio,IN,1930,165,phs_annual,"annual table, Public Health Service",,0,3242000,5.09
 polio,IN,1931,60,phs_annual,"annual table, Public Health Service",,0,3257000,1.84
-polio,IN,1932,25,tycho_weekly,sum of 52 weekly reports,52.0,0,3281000,0.76
+polio,IN,1932,29,phs_annual,"annual table, Public Health Service",,0,3281000,0.88
 polio,IN,1933,46,phs_annual,"annual table, Public Health Service",,0,3304000,1.39
 polio,IN,1934,74,phs_annual,"annual table, Public Health Service",,0,3319000,2.23
 polio,IN,1935,49,phs_annual,"annual table, Public Health Service",,0,3332000,1.47
@@ -24766,7 +24766,7 @@ polio,KS,1928,40,phs_annual,"annual table, Public Health Service",,0,1850000,2.1
 polio,KS,1929,26,phs_annual,"annual table, Public Health Service",,0,1867000,1.39
 polio,KS,1930,694,phs_annual,"annual table, Public Health Service",,0,1883000,36.86
 polio,KS,1931,32,phs_annual,"annual table, Public Health Service",,0,1881000,1.7
-polio,KS,1932,42,tycho_weekly,sum of 52 weekly reports,52.0,0,1883000,2.23
+polio,KS,1932,41,phs_annual,"annual table, Public Health Service",,0,1883000,2.18
 polio,KS,1933,55,phs_annual,"annual table, Public Health Service",,0,1877000,2.93
 polio,KS,1934,79,phs_annual,"annual table, Public Health Service",,0,1868000,4.23
 polio,KS,1935,35,phs_annual,"annual table, Public Health Service",,0,1872000,1.87
@@ -24872,7 +24872,7 @@ polio,KY,1928,59,phs_annual,"annual table, Public Health Service",,0,2567000,2.3
 polio,KY,1929,0,phs_annual,"annual table, Public Health Service",,0,2606000,0.0
 polio,KY,1930,0,phs_annual,"annual table, Public Health Service",,0,2623000,0.0
 polio,KY,1931,0,phs_annual,"annual table, Public Health Service",,0,2652000,0.0
-polio,KY,1932,51,tycho_weekly,sum of 51 weekly reports,51.0,0,2676000,1.91
+polio,KY,1932,52,phs_annual,"annual table, Public Health Service",,0,2676000,1.94
 polio,KY,1933,44,phs_annual,"annual table, Public Health Service",,0,2698000,1.63
 polio,KY,1934,118,phs_annual,"annual table, Public Health Service",,0,2722000,4.34
 polio,KY,1935,333,phs_annual,"annual table, Public Health Service",,0,2748000,12.12
@@ -24978,7 +24978,7 @@ polio,LA,1928,21,phs_annual,"annual table, Public Health Service",,0,2064000,1.0
 polio,LA,1929,11,phs_annual,"annual table, Public Health Service",,0,2086000,0.53
 polio,LA,1930,310,phs_annual,"annual table, Public Health Service",,0,2105000,14.73
 polio,LA,1931,33,phs_annual,"annual table, Public Health Service",,0,2124000,1.55
-polio,LA,1932,39,tycho_weekly,sum of 51 weekly reports,51.0,0,2155000,1.81
+polio,LA,1932,43,phs_annual,"annual table, Public Health Service",,0,2155000,2.0
 polio,LA,1933,31,phs_annual,"annual table, Public Health Service",,0,2178000,1.42
 polio,LA,1934,27,phs_annual,"annual table, Public Health Service",,0,2202000,1.23
 polio,LA,1935,104,phs_annual,"annual table, Public Health Service",,0,2228000,4.67
@@ -25084,7 +25084,7 @@ polio,MA,1928,434,phs_annual,"annual table, Public Health Service",,0,4217000,10
 polio,MA,1929,119,phs_annual,"annual table, Public Health Service",,0,4229000,2.81
 polio,MA,1930,503,phs_annual,"annual table, Public Health Service",,0,4250000,11.84
 polio,MA,1931,1428,phs_annual,"annual table, Public Health Service",,0,4248000,33.62
-polio,MA,1932,62,tycho_weekly,sum of 52 weekly reports,52.0,0,4259000,1.46
+polio,MA,1932,61,phs_annual,"annual table, Public Health Service",,0,4259000,1.43
 polio,MA,1933,353,phs_annual,"annual table, Public Health Service",,0,4282000,8.24
 polio,MA,1934,76,phs_annual,"annual table, Public Health Service",,0,4305000,1.77
 polio,MA,1935,1390,phs_annual,"annual table, Public Health Service",,0,4343000,32.01
@@ -25190,7 +25190,7 @@ polio,MD,1928,289,phs_annual,"annual table, Public Health Service",,0,1610000,17
 polio,MD,1929,21,phs_annual,"annual table, Public Health Service",,0,1621000,1.3
 polio,MD,1930,43,phs_annual,"annual table, Public Health Service",,0,1636000,2.63
 polio,MD,1931,50,phs_annual,"annual table, Public Health Service",,0,1657000,3.02
-polio,MD,1932,39,tycho_weekly,sum of 52 weekly reports,52.0,0,1678000,2.32
+polio,MD,1932,35,phs_annual,"annual table, Public Health Service",,0,1678000,2.09
 polio,MD,1933,44,phs_annual,"annual table, Public Health Service",,0,1694000,2.6
 polio,MD,1934,28,phs_annual,"annual table, Public Health Service",,0,1710000,1.64
 polio,MD,1935,107,phs_annual,"annual table, Public Health Service",,0,1729000,6.19
@@ -25296,7 +25296,7 @@ polio,ME,1928,49,phs_annual,"annual table, Public Health Service",,0,797000,6.15
 polio,ME,1929,12,phs_annual,"annual table, Public Health Service",,0,797000,1.51
 polio,ME,1930,162,phs_annual,"annual table, Public Health Service",,0,800000,20.25
 polio,ME,1931,121,phs_annual,"annual table, Public Health Service",,0,807000,14.99
-polio,ME,1932,61,tycho_weekly,sum of 52 weekly reports,52.0,0,815000,7.48
+polio,ME,1932,62,phs_annual,"annual table, Public Health Service",,0,815000,7.61
 polio,ME,1933,67,phs_annual,"annual table, Public Health Service",,0,821000,8.16
 polio,ME,1934,25,phs_annual,"annual table, Public Health Service",,0,829000,3.02
 polio,ME,1935,160,phs_annual,"annual table, Public Health Service",,0,836000,19.14
@@ -25402,7 +25402,7 @@ polio,MI,1928,77,phs_annual,"annual table, Public Health Service",,0,4665000,1.6
 polio,MI,1929,180,phs_annual,"annual table, Public Health Service",,0,4795000,3.75
 polio,MI,1930,208,phs_annual,"annual table, Public Health Service",,0,4834000,4.3
 polio,MI,1931,1137,phs_annual,"annual table, Public Health Service",,0,4798000,23.7
-polio,MI,1932,113,tycho_weekly,sum of 52 weekly reports,52.0,0,4780000,2.36
+polio,MI,1932,112,phs_annual,"annual table, Public Health Service",,0,4780000,2.34
 polio,MI,1933,93,phs_annual,"annual table, Public Health Service",,0,4780000,1.95
 polio,MI,1934,230,phs_annual,"annual table, Public Health Service",,0,4798000,4.79
 polio,MI,1935,614,phs_annual,"annual table, Public Health Service",,0,4838000,12.69
@@ -25508,7 +25508,7 @@ polio,MN,1928,224,phs_annual,"annual table, Public Health Service",,0,2592000,8.
 polio,MN,1929,33,phs_annual,"annual table, Public Health Service",,0,2572000,1.28
 polio,MN,1930,473,phs_annual,"annual table, Public Health Service",,0,2576000,18.36
 polio,MN,1931,822,phs_annual,"annual table, Public Health Service",,0,2614000,31.45
-polio,MN,1932,110,tycho_weekly,sum of 52 weekly reports,52.0,0,2646000,4.16
+polio,MN,1932,123,phs_annual,"annual table, Public Health Service",,0,2646000,4.65
 polio,MN,1933,377,phs_annual,"annual table, Public Health Service",,0,2673000,14.1
 polio,MN,1934,113,phs_annual,"annual table, Public Health Service",,0,2695000,4.19
 polio,MN,1935,99,phs_annual,"annual table, Public Health Service",,0,2717000,3.64
@@ -25614,7 +25614,7 @@ polio,MO,1928,33,phs_annual,"annual table, Public Health Service",,0,3601000,0.9
 polio,MO,1929,19,phs_annual,"annual table, Public Health Service",,0,3622000,0.52
 polio,MO,1930,259,phs_annual,"annual table, Public Health Service",,0,3646000,7.1
 polio,MO,1931,83,phs_annual,"annual table, Public Health Service",,0,3711000,2.24
-polio,MO,1932,9,tycho_weekly,sum of 52 weekly reports,52.0,0,3746000,0.24
+polio,MO,1932,20,phs_annual,"annual table, Public Health Service",,0,3746000,0.53
 polio,MO,1933,40,phs_annual,"annual table, Public Health Service",,0,3773000,1.06
 polio,MO,1934,37,phs_annual,"annual table, Public Health Service",,0,3784000,0.98
 polio,MO,1935,52,phs_annual,"annual table, Public Health Service",,0,3798000,1.37
@@ -25720,7 +25720,7 @@ polio,MS,1928,59,phs_annual,"annual table, Public Health Service",,0,1981000,2.9
 polio,MS,1929,28,phs_annual,"annual table, Public Health Service",,0,1998000,1.4
 polio,MS,1930,46,phs_annual,"annual table, Public Health Service",,0,2006000,2.29
 polio,MS,1931,54,phs_annual,"annual table, Public Health Service",,0,1994000,2.71
-polio,MS,1932,25,tycho_weekly,sum of 51 weekly reports,51.0,0,2004000,1.25
+polio,MS,1932,33,phs_annual,"annual table, Public Health Service",,0,2004000,1.65
 polio,MS,1933,14,phs_annual,"annual table, Public Health Service",,0,2031000,0.69
 polio,MS,1934,35,phs_annual,"annual table, Public Health Service",,0,2050000,1.71
 polio,MS,1935,16,phs_annual,"annual table, Public Health Service",,0,2061000,0.78
@@ -25826,7 +25826,7 @@ polio,MT,1928,65,phs_annual,"annual table, Public Health Service",,0,541000,12.0
 polio,MT,1929,7,phs_annual,"annual table, Public Health Service",,0,524000,1.34
 polio,MT,1930,20,phs_annual,"annual table, Public Health Service",,0,539000,3.71
 polio,MT,1931,58,phs_annual,"annual table, Public Health Service",,0,540000,10.74
-polio,MT,1932,6,tycho_weekly,sum of 51 weekly reports,51.0,0,540000,1.11
+polio,MT,1932,9,phs_annual,"annual table, Public Health Service",,0,540000,1.67
 polio,MT,1933,13,phs_annual,"annual table, Public Health Service",,0,541000,2.4
 polio,MT,1934,322,phs_annual,"annual table, Public Health Service",,0,545000,59.08
 polio,MT,1935,7,phs_annual,"annual table, Public Health Service",,0,550000,1.27
@@ -25932,7 +25932,7 @@ polio,NC,1928,51,phs_annual,"annual table, Public Health Service",,0,3082000,1.6
 polio,NC,1929,133,phs_annual,"annual table, Public Health Service",,0,3133000,4.25
 polio,NC,1930,96,phs_annual,"annual table, Public Health Service",,0,3167000,3.03
 polio,NC,1931,104,phs_annual,"annual table, Public Health Service",,0,3184000,3.27
-polio,NC,1932,54,tycho_weekly,sum of 52 weekly reports,52.0,0,3227000,1.67
+polio,NC,1932,54,phs_annual,"annual table, Public Health Service",,0,3227000,1.67
 polio,NC,1933,30,phs_annual,"annual table, Public Health Service",,0,3268000,0.92
 polio,NC,1934,45,phs_annual,"annual table, Public Health Service",,0,3304000,1.36
 polio,NC,1935,675,phs_annual,"annual table, Public Health Service",,0,3323000,20.31
@@ -26038,7 +26038,7 @@ polio,ND,1928,138,phs_annual,"annual table, Public Health Service",,0,665000,20.
 polio,ND,1929,19,phs_annual,"annual table, Public Health Service",,0,674000,2.82
 polio,ND,1930,44,phs_annual,"annual table, Public Health Service",,0,682000,6.45
 polio,ND,1931,43,phs_annual,"annual table, Public Health Service",,0,680000,6.32
-polio,ND,1932,34,tycho_weekly,sum of 52 weekly reports,52.0,0,676000,5.03
+polio,ND,1932,30,phs_annual,"annual table, Public Health Service",,0,676000,4.44
 polio,ND,1933,82,phs_annual,"annual table, Public Health Service",,0,674000,12.17
 polio,ND,1934,11,phs_annual,"annual table, Public Health Service",,0,672000,1.64
 polio,ND,1935,12,phs_annual,"annual table, Public Health Service",,0,670000,1.79
@@ -26144,7 +26144,7 @@ polio,NE,1928,41,phs_annual,"annual table, Public Health Service",,0,1371000,2.9
 polio,NE,1929,9,phs_annual,"annual table, Public Health Service",,0,1375000,0.65
 polio,NE,1930,287,phs_annual,"annual table, Public Health Service",,0,1380000,20.8
 polio,NE,1931,38,phs_annual,"annual table, Public Health Service",,0,1384000,2.75
-polio,NE,1932,30,tycho_weekly,sum of 52 weekly reports,52.0,0,1386000,2.16
+polio,NE,1932,31,phs_annual,"annual table, Public Health Service",,0,1386000,2.24
 polio,NE,1933,26,phs_annual,"annual table, Public Health Service",,0,1385000,1.88
 polio,NE,1934,23,phs_annual,"annual table, Public Health Service",,0,1382000,1.66
 polio,NE,1935,16,phs_annual,"annual table, Public Health Service",,0,1375000,1.16
@@ -26250,7 +26250,7 @@ polio,NH,1928,21,phs_annual,"annual table, Public Health Service",,0,468000,4.49
 polio,NH,1929,8,phs_annual,"annual table, Public Health Service",,0,467000,1.71
 polio,NH,1930,26,phs_annual,"annual table, Public Health Service",,0,466000,5.58
 polio,NH,1931,73,phs_annual,"annual table, Public Health Service",,0,470000,15.53
-polio,NH,1932,5,tycho_weekly,sum of 52 weekly reports,52.0,0,474000,1.05
+polio,NH,1932,7,phs_annual,"annual table, Public Health Service",,0,474000,1.48
 polio,NH,1933,14,phs_annual,"annual table, Public Health Service",,0,477000,2.94
 polio,NH,1934,7,phs_annual,"annual table, Public Health Service",,0,480000,1.46
 polio,NH,1935,67,phs_annual,"annual table, Public Health Service",,0,481000,13.93
@@ -26356,7 +26356,7 @@ polio,NJ,1928,82,phs_annual,"annual table, Public Health Service",,0,3968000,2.0
 polio,NJ,1929,59,phs_annual,"annual table, Public Health Service",,0,3989000,1.48
 polio,NJ,1930,59,phs_annual,"annual table, Public Health Service",,0,4068000,1.45
 polio,NJ,1931,975,phs_annual,"annual table, Public Health Service",,0,4120000,23.67
-polio,NJ,1932,371,tycho_weekly,sum of 52 weekly reports,52.0,0,4120000,9.0
+polio,NJ,1932,361,phs_annual,"annual table, Public Health Service",,0,4120000,8.76
 polio,NJ,1933,234,phs_annual,"annual table, Public Health Service",,0,4107000,5.7
 polio,NJ,1934,62,phs_annual,"annual table, Public Health Service",,0,4089000,1.52
 polio,NJ,1935,512,phs_annual,"annual table, Public Health Service",,0,4085000,12.53
@@ -26462,7 +26462,7 @@ polio,NM,1928,19,phs_annual,"annual table, Public Health Service",,0,416000,4.57
 polio,NM,1929,9,phs_annual,"annual table, Public Health Service",,0,420000,2.14
 polio,NM,1930,37,phs_annual,"annual table, Public Health Service",,0,427000,8.67
 polio,NM,1931,16,phs_annual,"annual table, Public Health Service",,0,436000,3.67
-polio,NM,1932,10,tycho_weekly,sum of 51 weekly reports,51.0,0,441000,2.27
+polio,NM,1932,10,phs_annual,"annual table, Public Health Service",,0,441000,2.27
 polio,NM,1933,9,phs_annual,"annual table, Public Health Service",,0,449000,2.0
 polio,NM,1934,17,phs_annual,"annual table, Public Health Service",,0,461000,3.69
 polio,NM,1935,10,phs_annual,"annual table, Public Health Service",,0,475000,2.11
@@ -26568,6 +26568,7 @@ polio,NV,1928,9,phs_annual,"annual table, Public Health Service",,0,89000,10.11
 polio,NV,1929,6,phs_annual,"annual table, Public Health Service",,0,90000,6.67
 polio,NV,1930,5,phs_annual,"annual table, Public Health Service",,0,92000,5.43
 polio,NV,1931,1,phs_annual,"annual table, Public Health Service",,0,94000,1.06
+polio,NV,1932,1,phs_annual,"annual table, Public Health Service",,0,96000,1.04
 polio,NV,1933,2,phs_annual,"annual table, Public Health Service",,0,96000,2.08
 polio,NV,1934,16,phs_annual,"annual table, Public Health Service",,0,98000,16.33
 polio,NV,1935,4,phs_annual,"annual table, Public Health Service",,0,100000,4.0
@@ -26673,7 +26674,7 @@ polio,NY,1928,1021,phs_annual,"annual table, Public Health Service",,0,11599000,
 polio,NY,1929,495,phs_annual,"annual table, Public Health Service",,0,12171000,4.07
 polio,NY,1930,738,phs_annual,"annual table, Public Health Service",,0,12647000,5.84
 polio,NY,1931,6189,phs_annual,"annual table, Public Health Service",,0,12848000,48.17
-polio,NY,1932,356,tycho_weekly,sum of 52 weekly reports,52.0,0,13001000,2.74
+polio,NY,1932,334,phs_annual,"annual table, Public Health Service",,0,13001000,2.57
 polio,NY,1933,1386,phs_annual,"annual table, Public Health Service",,0,13126000,10.56
 polio,NY,1934,222,phs_annual,"annual table, Public Health Service",,0,13253000,1.68
 polio,NY,1935,2866,phs_annual,"annual table, Public Health Service",,0,13375000,21.43
@@ -26779,7 +26780,7 @@ polio,OH,1928,291,phs_annual,"annual table, Public Health Service",,0,6608000,4.
 polio,OH,1929,180,phs_annual,"annual table, Public Health Service",,0,6626000,2.72
 polio,OH,1930,920,phs_annual,"annual table, Public Health Service",,0,6662000,13.81
 polio,OH,1931,227,phs_annual,"annual table, Public Health Service",,0,6694000,3.39
-polio,OH,1932,84,tycho_weekly,sum of 52 weekly reports,52.0,0,6717000,1.25
+polio,OH,1932,81,phs_annual,"annual table, Public Health Service",,0,6717000,1.21
 polio,OH,1933,358,phs_annual,"annual table, Public Health Service",,0,6740000,5.31
 polio,OH,1934,286,phs_annual,"annual table, Public Health Service",,0,6751000,4.24
 polio,OH,1935,89,phs_annual,"annual table, Public Health Service",,0,6787000,1.31
@@ -26885,7 +26886,7 @@ polio,OK,1928,38,phs_annual,"annual table, Public Health Service",,0,2344000,1.6
 polio,OK,1929,17,phs_annual,"annual table, Public Health Service",,0,2372000,0.72
 polio,OK,1930,158,phs_annual,"annual table, Public Health Service",,0,2401000,6.58
 polio,OK,1931,0,phs_annual,"annual table, Public Health Service",,0,2403000,0.0
-polio,OK,1932,28,tycho_weekly,sum of 51 weekly reports,51.0,0,2394000,1.17
+polio,OK,1932,24,phs_annual,"annual table, Public Health Service",,0,2394000,1.0
 polio,OK,1933,0,phs_annual,"annual table, Public Health Service",,0,2392000,0.0
 polio,OK,1934,16,phs_annual,"annual table, Public Health Service",,0,2391000,0.67
 polio,OK,1935,12,phs_annual,"annual table, Public Health Service",,0,2386000,0.5
@@ -26991,7 +26992,7 @@ polio,OR,1928,84,phs_annual,"annual table, Public Health Service",,0,936000,8.97
 polio,OR,1929,36,phs_annual,"annual table, Public Health Service",,0,947000,3.8
 polio,OR,1930,28,phs_annual,"annual table, Public Health Service",,0,956000,2.93
 polio,OR,1931,16,phs_annual,"annual table, Public Health Service",,0,966000,1.66
-polio,OR,1932,19,tycho_weekly,sum of 51 weekly reports,51.0,0,972000,1.95
+polio,OR,1932,21,phs_annual,"annual table, Public Health Service",,0,972000,2.16
 polio,OR,1933,36,phs_annual,"annual table, Public Health Service",,0,978000,3.68
 polio,OR,1934,80,phs_annual,"annual table, Public Health Service",,0,985000,8.12
 polio,OR,1935,50,phs_annual,"annual table, Public Health Service",,0,1001000,5.0
@@ -27097,7 +27098,7 @@ polio,PA,1928,218,phs_annual,"annual table, Public Health Service",,0,9802000,2.
 polio,PA,1929,197,phs_annual,"annual table, Public Health Service",,0,9723000,2.03
 polio,PA,1930,177,phs_annual,"annual table, Public Health Service",,0,9649000,1.83
 polio,PA,1931,411,phs_annual,"annual table, Public Health Service",,0,9707000,4.23
-polio,PA,1932,1219,tycho_weekly,sum of 52 weekly reports,52.0,0,9764000,12.48
+polio,PA,1932,1111,phs_annual,"annual table, Public Health Service",,0,9764000,11.38
 polio,PA,1933,407,phs_annual,"annual table, Public Health Service",,0,9784000,4.16
 polio,PA,1934,135,phs_annual,"annual table, Public Health Service",,0,9795000,1.38
 polio,PA,1935,224,phs_annual,"annual table, Public Health Service",,0,9774000,2.29
@@ -27203,7 +27204,7 @@ polio,RI,1928,15,phs_annual,"annual table, Public Health Service",,0,678000,2.21
 polio,RI,1929,11,phs_annual,"annual table, Public Health Service",,0,684000,1.61
 polio,RI,1930,23,phs_annual,"annual table, Public Health Service",,0,686000,3.35
 polio,RI,1931,169,phs_annual,"annual table, Public Health Service",,0,681000,24.82
-polio,RI,1932,8,tycho_weekly,sum of 52 weekly reports,52.0,0,677000,1.18
+polio,RI,1932,10,phs_annual,"annual table, Public Health Service",,0,677000,1.48
 polio,RI,1933,20,phs_annual,"annual table, Public Health Service",,0,675000,2.96
 polio,RI,1934,2,phs_annual,"annual table, Public Health Service",,0,675000,0.3
 polio,RI,1935,359,phs_annual,"annual table, Public Health Service",,0,678000,52.95
@@ -27309,7 +27310,7 @@ polio,SC,1928,68,phs_annual,"annual table, Public Health Service",,0,1739000,3.9
 polio,SC,1929,78,phs_annual,"annual table, Public Health Service",,0,1739000,4.49
 polio,SC,1930,59,phs_annual,"annual table, Public Health Service",,0,1745000,3.38
 polio,SC,1931,51,phs_annual,"annual table, Public Health Service",,0,1753000,2.91
-polio,SC,1932,43,tycho_weekly,sum of 52 weekly reports,52.0,0,1748000,2.46
+polio,SC,1932,41,phs_annual,"annual table, Public Health Service",,0,1748000,2.35
 polio,SC,1933,29,phs_annual,"annual table, Public Health Service",,0,1752000,1.66
 polio,SC,1934,36,phs_annual,"annual table, Public Health Service",,0,1760000,2.05
 polio,SC,1935,39,phs_annual,"annual table, Public Health Service",,0,1769000,2.2
@@ -27415,7 +27416,7 @@ polio,SD,1928,49,phs_annual,"annual table, Public Health Service",,0,685000,7.15
 polio,SD,1929,4,phs_annual,"annual table, Public Health Service",,0,690000,0.58
 polio,SD,1930,147,phs_annual,"annual table, Public Health Service",,0,693000,21.21
 polio,SD,1931,36,phs_annual,"annual table, Public Health Service",,0,694000,5.19
-polio,SD,1932,15,tycho_weekly,sum of 52 weekly reports,52.0,0,692000,2.17
+polio,SD,1932,15,phs_annual,"annual table, Public Health Service",,0,692000,2.17
 polio,SD,1933,37,phs_annual,"annual table, Public Health Service",,0,690000,5.36
 polio,SD,1934,45,phs_annual,"annual table, Public Health Service",,0,682000,6.6
 polio,SD,1935,16,phs_annual,"annual table, Public Health Service",,0,674000,2.37
@@ -27521,7 +27522,7 @@ polio,TN,1928,46,phs_annual,"annual table, Public Health Service",,0,2624000,1.7
 polio,TN,1929,123,phs_annual,"annual table, Public Health Service",,0,2604000,4.72
 polio,TN,1930,70,phs_annual,"annual table, Public Health Service",,0,2619000,2.67
 polio,TN,1931,53,phs_annual,"annual table, Public Health Service",,0,2657000,1.99
-polio,TN,1932,54,tycho_weekly,sum of 51 weekly reports,51.0,0,2711000,1.99
+polio,TN,1932,56,phs_annual,"annual table, Public Health Service",,0,2711000,2.07
 polio,TN,1933,118,phs_annual,"annual table, Public Health Service",,0,2747000,4.3
 polio,TN,1934,61,phs_annual,"annual table, Public Health Service",,0,2784000,2.19
 polio,TN,1935,91,phs_annual,"annual table, Public Health Service",,0,2798000,3.25
@@ -27627,7 +27628,7 @@ polio,TX,1928,34,phs_annual,"annual table, Public Health Service",,0,5675000,0.6
 polio,TX,1929,0,phs_annual,"annual table, Public Health Service",,0,5762000,0.0
 polio,TX,1930,134,phs_annual,"annual table, Public Health Service",,0,5844000,2.29
 polio,TX,1931,33,phs_annual,"annual table, Public Health Service",,0,5907000,0.56
-polio,TX,1932,72,tycho_weekly,sum of 51 weekly reports,51.0,0,5961000,1.21
+polio,TX,1932,72,phs_annual,"annual table, Public Health Service",,0,5961000,1.21
 polio,TX,1933,53,phs_annual,"annual table, Public Health Service",,0,6014000,0.88
 polio,TX,1934,152,phs_annual,"annual table, Public Health Service",,0,6053000,2.51
 polio,TX,1935,79,phs_annual,"annual table, Public Health Service",,0,6123000,1.29
@@ -27733,7 +27734,7 @@ polio,UT,1928,23,phs_annual,"annual table, Public Health Service",,0,504000,4.56
 polio,UT,1929,8,phs_annual,"annual table, Public Health Service",,0,508000,1.57
 polio,UT,1930,6,phs_annual,"annual table, Public Health Service",,0,509000,1.18
 polio,UT,1931,10,phs_annual,"annual table, Public Health Service",,0,513000,1.95
-polio,UT,1932,3,tycho_weekly,sum of 51 weekly reports,51.0,0,517000,0.58
+polio,UT,1932,11,phs_annual,"annual table, Public Health Service",,0,517000,2.13
 polio,UT,1933,23,phs_annual,"annual table, Public Health Service",,0,520000,4.42
 polio,UT,1934,15,phs_annual,"annual table, Public Health Service",,0,522000,2.87
 polio,UT,1935,11,phs_annual,"annual table, Public Health Service",,0,526000,2.09
@@ -27839,7 +27840,7 @@ polio,VA,1928,97,phs_annual,"annual table, Public Health Service",,0,2435000,3.9
 polio,VA,1929,325,phs_annual,"annual table, Public Health Service",,0,2425000,13.4
 polio,VA,1930,119,phs_annual,"annual table, Public Health Service",,0,2427000,4.9
 polio,VA,1931,68,phs_annual,"annual table, Public Health Service",,0,2445000,2.78
-polio,VA,1932,54,tycho_weekly,sum of 37 weekly reports,37.0,0,2452000,2.2
+polio,VA,1932,63,phs_annual,"annual table, Public Health Service",,0,2452000,2.57
 polio,VA,1933,38,phs_annual,"annual table, Public Health Service",,0,2460000,1.54
 polio,VA,1934,83,phs_annual,"annual table, Public Health Service",,0,2485000,3.34
 polio,VA,1935,688,phs_annual,"annual table, Public Health Service",,0,2520000,27.3
@@ -27945,7 +27946,7 @@ polio,VT,1928,49,phs_annual,"annual table, Public Health Service",,0,358000,13.6
 polio,VT,1929,38,phs_annual,"annual table, Public Health Service",,0,359000,10.58
 polio,VT,1930,18,phs_annual,"annual table, Public Health Service",,0,360000,5.0
 polio,VT,1931,111,phs_annual,"annual table, Public Health Service",,0,359000,30.92
-polio,VT,1932,2,tycho_weekly,sum of 52 weekly reports,52.0,0,358000,0.56
+polio,VT,1932,23,phs_annual,"annual table, Public Health Service",,0,358000,6.42
 polio,VT,1933,51,phs_annual,"annual table, Public Health Service",,0,357000,14.29
 polio,VT,1934,10,phs_annual,"annual table, Public Health Service",,0,357000,2.8
 polio,VT,1935,73,phs_annual,"annual table, Public Health Service",,0,357000,20.45
@@ -28051,7 +28052,7 @@ polio,WA,1928,343,phs_annual,"annual table, Public Health Service",,0,1551000,22
 polio,WA,1929,31,phs_annual,"annual table, Public Health Service",,0,1555000,1.99
 polio,WA,1930,51,phs_annual,"annual table, Public Health Service",,0,1568000,3.25
 polio,WA,1931,86,phs_annual,"annual table, Public Health Service",,0,1581000,5.44
-polio,WA,1932,73,tycho_weekly,sum of 51 weekly reports,51.0,0,1584000,4.61
+polio,WA,1932,84,phs_annual,"annual table, Public Health Service",,0,1584000,5.3
 polio,WA,1933,90,phs_annual,"annual table, Public Health Service",,0,1592000,5.65
 polio,WA,1934,741,phs_annual,"annual table, Public Health Service",,0,1610000,46.02
 polio,WA,1935,46,phs_annual,"annual table, Public Health Service",,0,1629000,2.82
@@ -28157,7 +28158,7 @@ polio,WI,1928,55,phs_annual,"annual table, Public Health Service",,0,2923000,1.8
 polio,WI,1929,22,phs_annual,"annual table, Public Health Service",,0,2934000,0.75
 polio,WI,1930,178,phs_annual,"annual table, Public Health Service",,0,2950000,6.03
 polio,WI,1931,722,phs_annual,"annual table, Public Health Service",,0,2990000,24.15
-polio,WI,1932,57,tycho_weekly,sum of 52 weekly reports,52.0,0,3021000,1.89
+polio,WI,1932,55,phs_annual,"annual table, Public Health Service",,0,3021000,1.82
 polio,WI,1933,64,phs_annual,"annual table, Public Health Service",,0,3040000,2.11
 polio,WI,1934,137,phs_annual,"annual table, Public Health Service",,0,3054000,4.49
 polio,WI,1935,66,phs_annual,"annual table, Public Health Service",,0,3070000,2.15
@@ -28261,7 +28262,7 @@ polio,WV,1928,190,phs_annual,"annual table, Public Health Service",,0,1696000,11
 polio,WV,1929,71,phs_annual,"annual table, Public Health Service",,0,1717000,4.14
 polio,WV,1930,47,phs_annual,"annual table, Public Health Service",,0,1733000,2.71
 polio,WV,1931,81,phs_annual,"annual table, Public Health Service",,0,1740000,4.66
-polio,WV,1932,43,tycho_weekly,sum of 52 weekly reports,52.0,0,1747000,2.46
+polio,WV,1932,42,phs_annual,"annual table, Public Health Service",,0,1747000,2.4
 polio,WV,1933,93,phs_annual,"annual table, Public Health Service",,0,1752000,5.31
 polio,WV,1934,85,phs_annual,"annual table, Public Health Service",,0,1771000,4.8
 polio,WV,1935,41,phs_annual,"annual table, Public Health Service",,0,1794000,2.29
@@ -28367,7 +28368,7 @@ polio,WY,1928,5,phs_annual,"annual table, Public Health Service",,0,220000,2.27
 polio,WY,1929,4,phs_annual,"annual table, Public Health Service",,0,223000,1.79
 polio,WY,1930,60,phs_annual,"annual table, Public Health Service",,0,226000,26.55
 polio,WY,1931,9,phs_annual,"annual table, Public Health Service",,0,229000,3.93
-polio,WY,1932,6,tycho_weekly,sum of 50 weekly reports,50.0,0,230000,2.61
+polio,WY,1932,11,phs_annual,"annual table, Public Health Service",,0,230000,4.78
 polio,WY,1933,11,phs_annual,"annual table, Public Health Service",,0,230000,4.78
 polio,WY,1934,9,phs_annual,"annual table, Public Health Service",,0,233000,3.86
 polio,WY,1935,2,phs_annual,"annual table, Public Health Service",,0,237000,0.84

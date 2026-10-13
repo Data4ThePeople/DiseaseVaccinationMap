@@ -58,10 +58,16 @@ STATES = [s for d in DIVISIONS.values() for s in d]
 # total minus the sum of its printed parts. The cells are kept exactly as printed.
 PRINTED_GAPS = {}
 
-# Years left out on purpose, waiting for an editor's decision. Anything else that fails stops the build.
-HELD = {
-    (1932, "polio"): 'New York is printed "534" but the Middle Atlantic row (1,806) and the U.S. row need 334',
+# Misprinted cells whose reading is an editor's decision rather than a plain read of the page.
+# early_readings.csv keeps the cell as printed; the reading here is what is used, and the flag says so.
+# Key: (year, disease, area) -> (printed, used, why)
+EDITOR_READINGS = {
+    (1932, "polio", "New York"): ("534", "334", 'printed "534", read as 334 by editor decision 2026-10-13: the Middle Atlantic '
+                                  'row (1,806) and the U.S. row (3,820) add only with 334, and the weekly reports sum to 356'),
 }
+
+# Years left out on purpose, waiting for an editor's decision. Anything else that fails stops the build.
+HELD = {}
 
 
 def parse(printed):
@@ -90,7 +96,14 @@ def main():
         page = dict(zip(g.area, g.page))
         need = ["United States"] + list(DIVISIONS) + STATES
         missing = [a for a in need if a not in cell or "?" in cell[a]]
+        for (y_, d_, a_), (printed, used, _) in EDITOR_READINGS.items():
+            if (y_, d_) == (year, dis):
+                assert cell[a_] == printed, "the printed cell changed: %s" % cell[a_]
+                cell[a_] = used
         val = {a: parse(cell[a]) for a in cell}
+        for (y_, d_, a_), (_, _, why) in EDITOR_READINGS.items():
+            if (y_, d_) == (year, dis):
+                val[a_] = (val[a_][0], why)
         for a, n in zip(g.area, g.note):   # a reading that needed the arithmetic says so in its flag
             if n:
                 val[a] = (val[a][0], "; ".join(x for x in (val[a][1], n) if x))

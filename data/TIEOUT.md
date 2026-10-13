@@ -5,7 +5,7 @@ Built by `scripts/12_tieout.py`. Every line below was recomputed from a raw file
 
 ## A. Packed data against the case table
 
-21,839 state-years in the table, 21,839 filled cells on the page, 0 differ.
+21,840 state-years in the table, 21,840 filled cells on the page, 0 differ.
 
 ## B. National sum on the page against the U.S. row CDC printed
 
@@ -148,7 +148,6 @@ From `early_readings.csv` (typed from the Public Health Service tables). Alaska 
 | measles 1930 | 419465 | 419465 | ok |
 | pertussis 1930 | 166914 | 166914 | ok |
 | polio 1930 | 9220 | 9220 | ok |
-| polio 1932 | 3820 | not compared: the year is held, the page uses weekly reports | |
 | measles 1935 | 743856 | 743856 | ok |
 | pertussis 1935 | 180518 | 180518 | ok |
 | polio 1935 | 10839 | 10839 | ok |
@@ -165,15 +164,15 @@ From `early_readings.csv` (typed from the Public Health Service tables). Alaska 
 | pertussis 1955 | 62786 | 62786 | ok |
 | polio 1955 | 28983 | 28983 | ok |
 
-105 disease-years compared in all; the table lists every fifth year and any mismatch.
+106 disease-years compared in all; the table lists every fifth year and any mismatch.
 
 ## C. Project Tycho years, re-read from the zip
 
 | disease, state, year | from zip | page | |
 |---|---|---|---|
-| polio NY 1932 | 356 | 356 | ok |
-| polio PA 1932 | 1219 | 1219 | ok |
-| polio CA 1932 | 170 | 170 | ok |
+| polio AK 1954 | 333 | 333 | ok |
+| polio HI 1955 | 173 | 173 | ok |
+| pertussis AK 1950 | 86 | 86 | ok |
 | measles HI 1951 | 4910 | 4910 | ok |
 | measles AK 1954 | 1487 | 1487 | ok |
 | pertussis HI 1954 | 114 | 114 | ok |

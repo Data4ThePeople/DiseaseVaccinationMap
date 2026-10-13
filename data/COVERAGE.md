@@ -82,7 +82,7 @@ Years with no state figure at all: none.
 | decade | possible | final | weekly, counted a year later | provisional | year-end running total | weekly sum, 50+ weeks | weekly sum, 40-49 weeks | weekly sum, under 40 weeks | no figure | flagged | avg pop share % |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | 1920s | 510 | 490 | 0 | 0 | 0 | 0 | 0 | 0 | 20 | 0 | 100 |
-| 1930s | 510 | 441 | 0 | 0 | 0 | 47 | 0 | 1 | 21 | 0 | 100 |
+| 1930s | 510 | 490 | 0 | 0 | 0 | 0 | 0 | 0 | 20 | 0 | 100 |
 | 1940s | 510 | 490 | 0 | 0 | 0 | 0 | 0 | 0 | 20 | 0 | 100 |
 | 1950s | 510 | 491 | 0 | 0 | 7 | 0 | 2 | 6 | 4 | 0 | 100 |
 | 1960s | 510 | 510 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 100 |
