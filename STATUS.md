@@ -137,3 +137,7 @@ None.
   health department pages; not yet read on the original pages line by line.
 - 2026-10-13 The exemption rules chart is on the findings page, in "The
   reverse sequence", as five small charts with Mississippi added.
+- 2026-10-13 Reviewer requests built: each state page has a chart of
+  kindergarten MMR coverage by school year from 2009-10 with measles cases
+  under each year; the numbers table can be ranked by any column and carries
+  kindergarten coverage columns beside the diseases.

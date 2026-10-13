@@ -554,7 +554,13 @@ schools in some states and a sample in others. It is not a measure of immunity
 in the whole population. The "States ranked" panel under the map orders the
 states, highest or lowest first, by kindergarten coverage for the MMR, DTaP or
 polio vaccine, or by reported cases per 100,000 for any of the five diseases,
-for the selected year.
+for the selected year. The table under the map ("Show the numbers for this year
+as a table") can be ranked the same way by clicking a column heading, and for
+2009-10 on it carries a kindergarten coverage column beside each disease whose
+vaccine has one (MMR beside measles, DTaP beside whooping cough, polio). Each
+state page has a chart of that state's kindergarten MMR coverage for every
+school year from 2009-10, against 95% and the U.S. figure CDC reports, with the
+state's reported measles cases under each year.
 
 ## State population and personal income, table SAINC1 (Bureau of Economic Analysis)
 

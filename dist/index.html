@@ -119,7 +119,19 @@ details.tbl summary{cursor:pointer;color:var(--ink2)}
 details.tbl table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
 details.tbl th,details.tbl td{padding:3px 8px;border-bottom:1px solid var(--rule);text-align:right;white-space:nowrap}
 details.tbl th:first-child,details.tbl td:first-child{text-align:left}
-details.tbl thead th{position:sticky;top:0;background:#fff;font-size:12px}
+details.tbl thead th{position:sticky;top:0;background:#fff;font-size:12px;vertical-align:bottom}
+details.tbl thead th button{font:inherit;font-weight:700;color:inherit;background:none;border:0;padding:0;margin:0;cursor:pointer;text-align:inherit}
+details.tbl thead th button:hover{text-decoration:underline}
+details.tbl thead th button:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+details.tbl thead th .ar{color:var(--ink3);font-weight:400}
+details.tbl thead th[aria-sort] .ar{color:var(--ink)}
+details.tbl .tnote{font-size:12px;color:var(--ink2);margin:6px 0}
+.fit .stage.sel{height:auto;max-height:none;overflow:visible}
+.scov{margin:6px 0 8px}
+.scov h3{font-size:12px;font-weight:700;margin:0}
+.scov svg{display:block;width:100%;overflow:visible}
+.scov rect[data-y]{cursor:pointer}
+.scov .read{font-size:11.5px;color:var(--ink2);line-height:1.35;margin:2px 0 0}
 footer{margin:10px 0 14px;border-top:1px solid var(--rule);padding-top:8px;font-size:11.5px;line-height:1.45;color:var(--ink3)}
 footer p{margin:0;max-width:980px}
 /* state view */
@@ -144,7 +156,7 @@ footer p{margin:0;max-width:980px}
 .kpi .v{font-family:var(--serif);font-size:17px;font-weight:700;line-height:1.1;font-variant-numeric:tabular-nums}
 .kpi .v.na{color:var(--ink3);font-weight:400;font-size:14px}
 .kpi .k{font-size:11px;color:var(--ink2);line-height:1.2}
-.vgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+.vgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 16px}
 /* narrow: let it flow and scroll */
 .viz:not(.fit) .main{flex-direction:column;height:auto}
 .viz:not(.fit) .mapcol{width:100%}
@@ -229,6 +241,7 @@ footer p{margin:0;max-width:980px}
       </div>
       <div class="panel">
         <h2>Vaccination coverage</h2>
+        <div class="scov" id="scov"></div>
         <div class="keyline" id="skey" style="margin-top:4px"></div>
         <div class="vgrid" id="scharts"></div>
       </div>
@@ -275,7 +288,7 @@ const short = n => n >= 1e6 ? (n / 1e6).toFixed(n >= 1e7 ? 0 : 1) + "M" : n >= 1
 const $ = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
-const S = { year: 1941, on: new Set(DIS.map(d => d.k)), hover: null, sel: null, playing: false, cov: false, rankBy: null, rankDesc: true };
+const S = { year: 1941, on: new Set(DIS.map(d => d.k)), hover: null, sel: null, playing: false, cov: false, rankBy: null, rankDesc: true, tblSort: null, tblDesc: true };
 
 /* cases, rate and source for one disease, state and year. null = no data, which is not zero */
 function cell(dk, st, y) {
@@ -667,13 +680,14 @@ function renderUS() {
 /* ---------- state view ---------- */
 function openState(st) {
   S.sel = st; setHover(null);
-  $("national").hidden = true; $("stateview").hidden = false;
+  $("national").hidden = true; $("stateview").hidden = false; $("stage").classList.add("sel");
   buildTicks(); render();
+  requestAnimationFrame(() => { if (S.sel) render(); });   // widths are only known once the state view is laid out
   $("back").focus({ preventScroll: true });
 }
 function closeState() {
   const st = S.sel; S.sel = null;
-  $("stateview").hidden = true; $("national").hidden = false;
+  $("stateview").hidden = true; $("national").hidden = false; $("stage").classList.remove("sel");
   layoutMap(); buildTicks(); render();
   const b = document.querySelector(`#tiles button[data-st="${st}"]`); if (b) b.focus({ preventScroll: true });
 }
@@ -696,8 +710,42 @@ function renderState() {
   $("smap").style.display = D.shapes && D.shapes[st] ? "" : "none";
   $("kpih").textContent = `${s.n} in ${S.year}`;
   $("kpis").innerHTML = kpiHtml(st);
+  $("scov").innerHTML = stateCovChart(st, $("scov").clientWidth);
   $("skey").innerHTML = KEYLINE(true);
   $("scharts").innerHTML = vaxKeys().map(vk => vaxChart(vk, st, ($("scharts").clientWidth - 16) / 2)).join("");
+}
+/* kindergarten MMR coverage in one state, every school year with a figure, against 95% and the U.S. figure,
+   with the state's measles cases under each year */
+function stateCovChart(st, width) {
+  const ys = COV_YEARS; if (!ys.length) return "";
+  const pts = ys.map(y => ({ y, p: covPoint(st, y), us: vaxPoint("kinder", "mmr", "US", y), c: cell("measles", st, y) }));
+  const have = pts.filter(q => q.p);
+  const name = esc(ST[st].n), span = `${schoolYear(ys[0])} to ${schoolYear(ys[ys.length - 1])}`;
+  if (!have.length) return `<h3>Kindergartners with the measles vaccine (MMR), ${span}</h3><p class="read">${name} has no state kindergarten figure in these years.</p>`;
+  const W = Math.max(260, width), H = 132, ml = 34, mr = 10, mt = 8, mb = 34;
+  const lo = Math.min(85, Math.floor(Math.min(...have.map(q => q.p[0])) / 5) * 5);
+  const X = y => ml + (y - ys[0] + 0.5) / (ys[ys.length - 1] - ys[0] + 1) * (W - ml - mr), Y = v => mt + (100 - v) / (100 - lo) * (H - mt - mb);
+  const bw = (W - ml - mr) / (ys[ys.length - 1] - ys[0] + 1);
+  let g = "";
+  for (let v = lo; v <= 100; v += (100 - lo) > 20 ? 10 : 5) g += `<line x1="${ml}" x2="${W - mr}" y1="${Y(v)}" y2="${Y(v)}" stroke="#e3e2dd"/><text x="${ml - 5}" y="${Y(v) + 3}" text-anchor="end" font-size="9.5" fill="#8a8780">${v}%</text>`;
+  g += `<line x1="${ml}" x2="${W - mr}" y1="${Y(COV_LEVEL)}" y2="${Y(COV_LEVEL)}" stroke="#55534e" stroke-dasharray="4 3"/>`;
+  const path = (key, f) => { let d = "", prev = null; for (const q of pts) { const v = f(q); if (v == null) { prev = null; continue; } d += `${prev != null && q.y - prev === 1 ? "L" : "M"}${X(q.y).toFixed(1)},${Y(Math.max(lo, v)).toFixed(1)}`; prev = q.y; } return d; };
+  g += `<path d="${path("us", q => q.us && q.us[0])}" fill="none" stroke="#a9a6a0" stroke-width="1.5"/>`;
+  g += `<path d="${path("st", q => q.p && q.p[0])}" fill="none" stroke="#121212" stroke-width="1.6"/>`;
+  for (const q of pts) {
+    const cur = q.y === S.year;
+    if (q.p) g += `<circle cx="${X(q.y)}" cy="${Y(q.p[0])}" r="${cur ? 4.5 : 3.4}" fill="${covStep(q.p[0])[2]}" stroke="${cur ? "#121212" : "#fff"}" stroke-width="${cur ? 1.5 : 1}"/>`;
+    if (q.y % 5 === 0 || q.y === ys[0] || q.y === ys[ys.length - 1]) g += `<text x="${X(q.y)}" y="${H - mb + 12}" text-anchor="middle" font-size="9.5" fill="#8a8780">${q.y}</text>`;
+    g += `<text x="${X(q.y)}" y="${H - 4}" text-anchor="middle" font-size="${bw < 26 ? 8.5 : 9.5}" fill="${q.c && q.c.cases ? DKEY.measles.color : "#a9a6a0"}" font-weight="${q.c && q.c.cases ? 700 : 400}">${q.c ? short(q.c.cases) : "\u2013"}</text>`;
+    g += `<rect data-y="${q.y}" x="${X(q.y) - bw / 2}" y="${mt}" width="${bw}" height="${H - mt}" fill="transparent"><title>${schoolYear(q.y)}: ${q.p ? q.p[0].toFixed(1) + "%" : "no figure"}${q.us ? "; United States " + q.us[0].toFixed(1) + "%" : ""}. Measles cases in ${q.y}: ${q.c ? fmt(q.c.cases) : "no data"}</title></rect>`;
+  }
+  g += `<text x="${ml - 5}" y="${H - 4}" text-anchor="end" font-size="9.5" fill="#8a8780">cases</text>`;
+  const now = pts.find(q => q.y === S.year), first = have[0], last = have[have.length - 1];
+  const read = now && now.p ? `${schoolYear(S.year)}: <b>${now.p[0].toFixed(1)}%</b>${now.us ? `, United States ${now.us[0].toFixed(1)}%` : ""}${now.c ? `; ${fmt(now.c.cases)} measles cases reported in ${S.year}` : ""}.`
+    : `${schoolYear(first.y)}: ${first.p[0].toFixed(1)}%. ${schoolYear(last.y)}: <b>${last.p[0].toFixed(1)}%</b>.`;
+  return `<h3>Kindergartners with the measles vaccine (MMR) in ${name}, ${span}</h3>`
+    + `<svg viewBox="0 0 ${W} ${H}" height="${H}" role="img" aria-label="Kindergarten MMR coverage in ${name} by school year, with measles cases each year">${g}</svg>`
+    + `<p class="read">${read} Dots: <span style="color:${COV_STEPS[0][2]}">\u25cf</span> 95% or more <span style="color:${COV_STEPS[1][2]}">\u25cf</span> 90% to under 95% <span style="color:${COV_STEPS[2][2]}">\u25cf</span> under 90%. Gray line: United States. Dashed line: ${COV_LEVEL}%, the national target. The row under the chart is ${name}'s reported measles cases each year. A gap means no figure that school year. Click a year to move there.</p>`;
 }
 /* county map: kindergarten MMR coverage where the state publishes it by county */
 const MMR_BINS = [[95, "#5b93d6", "95% or more"], [90, "#fbe0b8", "90 to 94.9%"], [85, "#f0a55a", "85 to 89.9%"], [0, "#c96a12", "under 85%"]];
@@ -832,11 +880,42 @@ function renderRank() {
 /* ---------- table view ---------- */
 function renderTable() {
   if (!$("tbl").open) return;
-  const dz = shown();
-  const head = `<tr><th>${S.year}</th>${dz.map(d => `<th>${esc(d.name)}<br>cases</th><th>per 100k</th>`).join("")}</tr>`;
-  const row = (name, f) => `<tr><td>${esc(name)}</td>${dz.map(d => { const c = f(d.k); return c ? `<td>${fmt(c.cases)}${c.incomplete || (c.code && thin(c) && c.code.toLowerCase() !== "p") ? " (incomplete)" : c.prov || (c.code && c.code.toLowerCase() === "p") ? " (provisional)" : ""}</td><td>${c.rate == null ? (c.part ? "New York City only" : "") : fmt1(c.rate)}</td>` : `<td colspan="2" style="color:#8a8780">no data</td>`; }).join("")}</tr>`;
-  const list = S.sel ? [ST[S.sel]] : D.states.slice().sort((a, b) => a.n.localeCompare(b.n));
-  $("tblwrap").innerHTML = `<table><thead>${head}</thead><tbody>${row("United States (states reporting)", k => usCell(k, S.year))}${list.map(s => row(s.n, k => cell(k, s.k, S.year))).join("")}</tbody></table>`;
+  const dz = shown(), y = S.year;
+  // columns: for each disease shown, cases and rate; then kindergarten coverage for each of their vaccines, when the year has it
+  // each vaccine's column sits right after the first disease it covers, so the two can be read side by side
+  const cols = [], KSHORT = { mmr: "MMR", dtap: "DTaP", polio: "polio vaccine" }, placed = new Set();
+  for (const d of dz) {
+    cols.push({ k: "c:" + d.k, label: `${esc(d.name)}<br>cases`, get: c => c.dis[d.k] ? c.dis[d.k].cases : null, d, kind: "cases" });
+    cols.push({ k: "r:" + d.k, label: "per 100k", get: c => c.dis[d.k] && c.dis[d.k].rate != null ? c.dis[d.k].rate : null, d, kind: "rate" });
+    const vk = d.vax;
+    if (KVAX.includes(vk) && !placed.has(vk) && D.states.some(s => vaxPoint("kinder", vk, s.k, y))) {
+      placed.add(vk);
+      cols.push({ k: "v:" + vk, label: `Kindergartners<br>with ${KSHORT[vk]}`, get: c => c.vax[vk], vk, kind: "vax" });
+    }
+  }
+  const rowOf = (name, st) => ({ name, st, dis: Object.fromEntries(dz.map(d => [d.k, st === "US" ? usCell(d.k, y) : cell(d.k, st, y)])),
+    vax: Object.fromEntries(KVAX.map(vk => { const p = vaxPoint("kinder", vk, st, y); return [vk, p ? p[0] : null]; })) });
+  let list = (S.sel ? [ST[S.sel]] : D.states.slice().sort((a, b) => a.n.localeCompare(b.n))).map(s => rowOf(s.n, s.k));
+  const sc = cols.find(c => c.k === S.tblSort);
+  if (sc) {   // states with no figure in the sorted column go last, in either direction
+    const a = list.filter(r => sc.get(r) != null).sort((p, q) => (S.tblDesc ? sc.get(q) - sc.get(p) : sc.get(p) - sc.get(q)) || p.name.localeCompare(q.name));
+    list = a.concat(list.filter(r => sc.get(r) == null));
+  }
+  const arrow = c => !sc || sc.k !== c.k ? "\u2195" : S.tblDesc ? "\u2193" : "\u2191";
+  const th = c => `<th${sc && sc.k === c.k ? ` aria-sort="${S.tblDesc ? "descending" : "ascending"}"` : ""}><button type="button" data-sort="${c.k}" title="Rank the states by this column">${c.label} <span class="ar">${arrow(c)}</span></button></th>`;
+  const head = `<tr><th${!sc ? ' aria-sort="ascending"' : ""}><button type="button" data-sort="" title="Put the states in A to Z order">${y} <span class="ar">${sc ? "A\u2013Z" : "A\u2013Z \u2193"}</span></button></th>${cols.map(th).join("")}</tr>`;
+  const cellHtml = (r, c) => {
+    if (c.kind === "vax") { const v = c.get(r); return v == null ? `<td style="color:#8a8780">no figure</td>` : `<td>${v.toFixed(1)}%</td>`; }
+    const x = r.dis[c.d.k];
+    if (!x) return c.kind === "cases" ? `<td colspan="2" style="color:#8a8780">no data</td>` : "";
+    if (c.kind === "cases") return `<td>${fmt(x.cases)}${x.incomplete || (x.code && thin(x) && x.code.toLowerCase() !== "p") ? " (incomplete)" : x.prov || (x.code && x.code.toLowerCase() === "p") ? " (provisional)" : ""}</td>`;
+    return `<td>${x.rate == null ? (x.part ? "New York City only" : "") : fmt1(x.rate)}</td>`;
+  };
+  const tr = r => `<tr><td>${esc(r.name)}</td>${cols.map(c => cellHtml(r, c)).join("")}</tr>`;
+  const us = rowOf("United States (states reporting)", "US");
+  const hasVax = cols.some(c => c.kind === "vax");
+  $("tblwrap").innerHTML = `<p class="tnote">Click a column heading to rank the states by it, highest first; click again for lowest first. ${hasVax ? `Kindergarten figures are for the ${schoolYear(y)} school year, as states reported to CDC.` : `Kindergarten vaccination columns appear for ${schoolYear(COV_YEARS[0])} to ${schoolYear(COV_YEARS[COV_YEARS.length - 1])}.`}</p>`
+    + `<table><thead>${head}</thead><tbody>${tr(us)}${list.map(tr).join("")}</tbody></table>`;
 }
 
 /* ---------- render ---------- */
@@ -856,7 +935,15 @@ function init() {
   $("smap").addEventListener("pointermove", e => countyTip(e.target.dataset && e.target.dataset.f, e));
   $("smap").addEventListener("pointerleave", () => countyTip(null));
   $("tbl").addEventListener("toggle", renderTable);
-  $("railcharts").addEventListener("click", e => { const y = +(e.target.dataset && e.target.dataset.y); if (y) { setPlaying(false); setYear(y); } });
+  $("tblwrap").addEventListener("click", e => {
+    const b = e.target.closest("button[data-sort]"); if (!b) return;
+    const k = b.dataset.sort || null;
+    if (k && S.tblSort === k) S.tblDesc = !S.tblDesc; else { S.tblSort = k; S.tblDesc = true; }
+    renderTable();
+    const again = document.querySelector(`#tblwrap button[data-sort="${k || ""}"]`); if (again) again.focus({ preventScroll: true });
+  });
+  if (new URLSearchParams(location.hash.slice(1)).get("tbl")) { $("tbl").open = true; S.tblSort = new URLSearchParams(location.hash.slice(1)).get("tbl"); }
+  for (const id of ["railcharts", "scov"]) $(id).addEventListener("click", e => { const y = +(e.target.dataset && e.target.dataset.y); if (y) { setPlaying(false); setYear(y); } });
   $("card").addEventListener("click", e => {
     const step = +(e.target.dataset && e.target.dataset.step); if (!step) return;
     const n = msInScope().filter(m => msYear(m) === S.year).length;
