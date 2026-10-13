@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1324 398" width="1324" height="398" font-family="Helvetica Neue,Helvetica,Arial,sans-serif">
+<rect width="1324" height="398" fill="#fff"/>
+<text x="14" y="30" font-family="Georgia,serif" font-weight="700" font-size="21" fill="#121212">Measles vaccination among kindergartners, before and after five states changed their exemption rules</text>
+<text x="14" y="52" font-size="13.5" fill="#55534e">Share of kindergartners with the MMR vaccine, school years 2009-10 to 2025-26. The shaded years are under the new rule. The dashed line is 95%, the national target.</text>
+<text x="44.0" y="82" font-family="Georgia,serif" font-weight="700" font-size="16" fill="#121212">California</text>
+<text x="44.0" y="99" font-size="12" fill="#256abf" font-weight="700">Ended personal belief exemptions, 2016-17</text>
+<rect x="138.25" y="112" width="143.75" height="190" fill="#256abf" opacity="0.09"/>
+<line x1="44.0" x2="282.0" y1="270.33333333333337" y2="270.33333333333337" stroke="#e3e2dd" stroke-width="1"/>
+<text x="38.0" y="274.33333333333337" text-anchor="end" font-size="11" fill="#8a8780">90%</text>
+<line x1="44.0" x2="282.0" y1="191.16666666666669" y2="191.16666666666669" stroke="#55534e" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="38.0" y="195.16666666666669" text-anchor="end" font-size="11" fill="#8a8780">95%</text>
+<line x1="44.0" x2="282.0" y1="112.0" y2="112.0" stroke="#e3e2dd" stroke-width="1"/>
+<text x="38.0" y="116.0" text-anchor="end" font-size="11" fill="#8a8780">100%</text>
+<line x1="138.25" x2="138.25" y1="112" y2="302" stroke="#256abf" stroke-width="1.2"/>
+<text x="44.0" y="317" text-anchor="middle" font-size="10.5" fill="#8a8780">2010</text>
+<text x="116.5" y="317" text-anchor="middle" font-size="10.5" fill="#8a8780">2015</text>
+<text x="189.0" y="317" text-anchor="middle" font-size="10.5" fill="#8a8780">2020</text>
+<text x="261.5" y="317" text-anchor="middle" font-size="10.5" fill="#8a8780">2025</text>
+<polyline points="44.0,213.3" fill="none" stroke="#256abf" stroke-width="2"/>
+<polyline points="73.0,219.7 87.5,227.6 102.0,233.9 116.5,229.2 131.0,199.1 145.5,154.8 160.0,161.1 174.5,167.4 189.0,167.4 203.5,189.6 218.0,170.6 232.5,167.4 247.0,172.2 261.5,173.8 276.0,180.1" fill="none" stroke="#256abf" stroke-width="2"/>
+<circle cx="44.0" cy="213.3" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="73.0" cy="219.7" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="87.5" cy="227.6" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="102.0" cy="233.9" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="116.5" cy="229.2" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="131.0" cy="199.1" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="145.5" cy="154.8" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="160.0" cy="161.1" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="174.5" cy="167.4" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="189.0" cy="167.4" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="203.5" cy="189.6" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="218.0" cy="170.6" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="232.5" cy="167.4" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="247.0" cy="172.2" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="261.5" cy="173.8" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="276.0" cy="180.1" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<text x="126.0" y="216.08333333333331" text-anchor="end" font-size="12" font-weight="700" fill="#121212">94.5%</text>
+<text x="280.0" y="171.0833333333333" text-anchor="end" font-size="12" font-weight="700" fill="#121212">95.7%</text>
+<text x="302.0" y="82" font-family="Georgia,serif" font-weight="700" font-size="16" fill="#121212">New York</text>
+<text x="302.0" y="99" font-size="12" fill="#256abf" font-weight="700">Ended its religious exemption, 2019-20</text>
+<rect x="439.75" y="112" width="100.25" height="190" fill="#256abf" opacity="0.09"/>
+<line x1="302.0" x2="540.0" y1="270.33333333333337" y2="270.33333333333337" stroke="#e3e2dd" stroke-width="1"/>
+<line x1="302.0" x2="540.0" y1="191.16666666666669" y2="191.16666666666669" stroke="#55534e" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="302.0" x2="540.0" y1="112.0" y2="112.0" stroke="#e3e2dd" stroke-width="1"/>
+<line x1="439.75" x2="439.75" y1="112" y2="302" stroke="#256abf" stroke-width="1.2"/>
+<text x="302.0" y="317" text-anchor="middle" font-size="10.5" fill="#8a8780">2010</text>
+<text x="374.5" y="317" text-anchor="middle" font-size="10.5" fill="#8a8780">2015</text>
+<text x="447.0" y="317" text-anchor="middle" font-size="10.5" fill="#8a8780">2020</text>
+<text x="519.5" y="317" text-anchor="middle" font-size="10.5" fill="#8a8780">2025</text>
+<polyline points="302.0,150.0" fill="none" stroke="#256abf" stroke-width="2"/>
+<polyline points="331.0,161.1 345.5,165.8 360.0,162.7 374.5,140.5 389.0,181.7 403.5,154.8 418.0,156.3 432.5,156.3 447.0,134.2 461.5,138.9 476.0,143.7 490.5,145.2 505.0,148.4 519.5,146.8 534.0,148.4" fill="none" stroke="#256abf" stroke-width="2"/>
+<circle cx="302.0" cy="150.0" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="331.0" cy="161.1" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="345.5" cy="165.8" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="360.0" cy="162.7" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="374.5" cy="140.5" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="389.0" cy="181.7" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="403.5" cy="154.8" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="418.0" cy="156.3" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="432.5" cy="156.3" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="447.0" cy="134.2" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="461.5" cy="138.9" r="2.8" fill="#fff" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="476.0" cy="143.7" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="490.5" cy="145.2" r="2.8" fill="#fff" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="505.0" cy="148.4" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="519.5" cy="146.8" r="2.8" fill="#fff" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="534.0" cy="148.4" r="2.8" fill="#fff" stroke="#256abf" stroke-width="1.3"/>
+<text x="427.5" y="173.3333333333333" text-anchor="end" font-size="12" font-weight="700" fill="#121212">97.2%</text>
+<text x="538.0" y="139.41666666666663" text-anchor="end" font-size="12" font-weight="700" fill="#121212">97.7%</text>
+<text x="560.0" y="82" font-family="Georgia,serif" font-weight="700" font-size="16" fill="#121212">Maine</text>
+<text x="560.0" y="99" font-size="12" fill="#256abf" font-weight="700">Ended non-medical exemptions, 2021-22</text>
+<rect x="726.75" y="112" width="71.25" height="190" fill="#256abf" opacity="0.09"/>
+<line x1="560.0" x2="798.0" y1="270.33333333333337" y2="270.33333333333337" stroke="#e3e2dd" stroke-width="1"/>
+<line x1="560.0" x2="798.0" y1="191.16666666666669" y2="191.16666666666669" stroke="#55534e" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="560.0" x2="798.0" y1="112.0" y2="112.0" stroke="#e3e2dd" stroke-width="1"/>
+<line x1="726.75" x2="726.75" y1="112" y2="302" stroke="#256abf" stroke-width="1.2"/>
+<text x="560.0" y="317" text-anchor="middle" font-size="10.5" fill="#8a8780">2010</text>
+<text x="632.5" y="317" text-anchor="middle" font-size="10.5" fill="#8a8780">2015</text>
+<text x="705.0" y="317" text-anchor="middle" font-size="10.5" fill="#8a8780">2020</text>
+<text x="777.5" y="317" text-anchor="middle" font-size="10.5" fill="#8a8780">2025</text>
+<polyline points="560.0,183.2" fill="none" stroke="#256abf" stroke-width="2"/>
+<polyline points="589.0,222.8 603.5,249.8 618.0,271.9 632.5,237.1 647.0,189.6 661.5,192.7 676.0,202.3 690.5,210.2 705.0,205.4 719.5,202.3 734.0,164.2 748.5,162.7 763.0,151.6 777.5,150.0 792.0,143.7" fill="none" stroke="#256abf" stroke-width="2"/>
+<circle cx="560.0" cy="183.2" r="2.8" fill="#fff" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="589.0" cy="222.8" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="603.5" cy="249.8" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="618.0" cy="271.9" r="2.8" fill="#fff" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="632.5" cy="237.1" r="2.8" fill="#fff" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="647.0" cy="189.6" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="661.5" cy="192.7" r="2.8" fill="#fff" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="676.0" cy="202.3" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="690.5" cy="210.2" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="705.0" cy="205.4" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="719.5" cy="202.3" r="2.8" fill="#fff" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="734.0" cy="164.2" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="748.5" cy="162.7" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="763.0" cy="151.6" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="777.5" cy="150.0" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="792.0" cy="143.7" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<text x="714.5" y="219.25000000000006" text-anchor="end" font-size="12" font-weight="700" fill="#121212">94.3%</text>
+<text x="796.0" y="134.66666666666666" text-anchor="end" font-size="12" font-weight="700" fill="#121212">98.0%</text>
+<text x="818.0" y="82" font-family="Georgia,serif" font-weight="700" font-size="16" fill="#121212">Connecticut</text>
+<text x="818.0" y="99" font-size="12" fill="#256abf" font-weight="700">Ended its religious exemption, 2022-23</text>
+<rect x="999.25" y="112" width="56.75" height="190" fill="#256abf" opacity="0.09"/>
+<line x1="818.0" x2="1056.0" y1="270.33333333333337" y2="270.33333333333337" stroke="#e3e2dd" stroke-width="1"/>
+<line x1="818.0" x2="1056.0" y1="191.16666666666669" y2="191.16666666666669" stroke="#55534e" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="818.0" x2="1056.0" y1="112.0" y2="112.0" stroke="#e3e2dd" stroke-width="1"/>
+<line x1="999.25" x2="999.25" y1="112" y2="302" stroke="#256abf" stroke-width="1.2"/>
+<text x="818.0" y="317" text-anchor="middle" font-size="10.5" fill="#8a8780">2010</text>
+<text x="890.5" y="317" text-anchor="middle" font-size="10.5" fill="#8a8780">2015</text>
+<text x="963.0" y="317" text-anchor="middle" font-size="10.5" fill="#8a8780">2020</text>
+<text x="1035.5" y="317" text-anchor="middle" font-size="10.5" fill="#8a8780">2025</text>
+<polyline points="818.0,135.8" fill="none" stroke="#256abf" stroke-width="2"/>
+<polyline points="847.0,153.2 861.5,157.9 876.0,161.1 890.5,159.5 905.0,159.5 919.5,164.2 934.0,167.4 948.5,176.9 963.0,172.2 977.5,186.4 992.0,180.1 1006.5,154.8 1021.0,148.4 1035.5,140.5 1050.0,134.2" fill="none" stroke="#256abf" stroke-width="2"/>
+<circle cx="818.0" cy="135.8" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="847.0" cy="153.2" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="861.5" cy="157.9" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="876.0" cy="161.1" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="890.5" cy="159.5" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="905.0" cy="159.5" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="919.5" cy="164.2" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="934.0" cy="167.4" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="948.5" cy="176.9" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="963.0" cy="172.2" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="977.5" cy="186.4" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="992.0" cy="180.1" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="1006.5" cy="154.8" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="1021.0" cy="148.4" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="1035.5" cy="140.5" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<circle cx="1050.0" cy="134.2" r="2.8" fill="#256abf" stroke="#256abf" stroke-width="1.3"/>
+<text x="987.0" y="197.0833333333333" text-anchor="end" font-size="12" font-weight="700" fill="#121212">95.7%</text>
+<text x="1054.0" y="125.16666666666674" text-anchor="end" font-size="12" font-weight="700" fill="#121212">98.6%</text>
+<text x="1076.0" y="82" font-family="Georgia,serif" font-weight="700" font-size="16" fill="#121212">Mississippi</text>
+<text x="1076.0" y="99" font-size="12" fill="#c96a12" font-weight="700">Added a religious exemption, 2023-24</text>
+<rect x="1271.75" y="112" width="42.25" height="190" fill="#c96a12" opacity="0.09"/>
+<line x1="1076.0" x2="1314.0" y1="270.33333333333337" y2="270.33333333333337" stroke="#e3e2dd" stroke-width="1"/>
+<line x1="1076.0" x2="1314.0" y1="191.16666666666669" y2="191.16666666666669" stroke="#55534e" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="1076.0" x2="1314.0" y1="112.0" y2="112.0" stroke="#e3e2dd" stroke-width="1"/>
+<line x1="1271.75" x2="1271.75" y1="112" y2="302" stroke="#c96a12" stroke-width="1.2"/>
+<text x="1076.0" y="317" text-anchor="middle" font-size="10.5" fill="#8a8780">2010</text>
+<text x="1148.5" y="317" text-anchor="middle" font-size="10.5" fill="#8a8780">2015</text>
+<text x="1221.0" y="317" text-anchor="middle" font-size="10.5" fill="#8a8780">2020</text>
+<text x="1293.5" y="317" text-anchor="middle" font-size="10.5" fill="#8a8780">2025</text>
+<polyline points="1076.0,116.7" fill="none" stroke="#c96a12" stroke-width="2"/>
+<polyline points="1105.0,124.7 1119.5,113.6 1134.0,116.7 1148.5,124.7 1163.0,121.5 1177.5,121.5 1192.0,121.5 1206.5,124.7 1221.0,126.3 1235.5,129.4 1250.0,134.2 1264.5,137.3 1279.0,151.6 1293.5,150.0 1308.0,159.5" fill="none" stroke="#c96a12" stroke-width="2"/>
+<circle cx="1076.0" cy="116.7" r="2.8" fill="#c96a12" stroke="#c96a12" stroke-width="1.3"/>
+<circle cx="1105.0" cy="124.7" r="2.8" fill="#c96a12" stroke="#c96a12" stroke-width="1.3"/>
+<circle cx="1119.5" cy="113.6" r="2.8" fill="#c96a12" stroke="#c96a12" stroke-width="1.3"/>
+<circle cx="1134.0" cy="116.7" r="2.8" fill="#c96a12" stroke="#c96a12" stroke-width="1.3"/>
+<circle cx="1148.5" cy="124.7" r="2.8" fill="#c96a12" stroke="#c96a12" stroke-width="1.3"/>
+<circle cx="1163.0" cy="121.5" r="2.8" fill="#c96a12" stroke="#c96a12" stroke-width="1.3"/>
+<circle cx="1177.5" cy="121.5" r="2.8" fill="#c96a12" stroke="#c96a12" stroke-width="1.3"/>
+<circle cx="1192.0" cy="121.5" r="2.8" fill="#c96a12" stroke="#c96a12" stroke-width="1.3"/>
+<circle cx="1206.5" cy="124.7" r="2.8" fill="#c96a12" stroke="#c96a12" stroke-width="1.3"/>
+<circle cx="1221.0" cy="126.3" r="2.8" fill="#c96a12" stroke="#c96a12" stroke-width="1.3"/>
+<circle cx="1235.5" cy="129.4" r="2.8" fill="#c96a12" stroke="#c96a12" stroke-width="1.3"/>
+<circle cx="1250.0" cy="134.2" r="2.8" fill="#c96a12" stroke="#c96a12" stroke-width="1.3"/>
+<circle cx="1264.5" cy="137.3" r="2.8" fill="#c96a12" stroke="#c96a12" stroke-width="1.3"/>
+<circle cx="1279.0" cy="151.6" r="2.8" fill="#c96a12" stroke="#c96a12" stroke-width="1.3"/>
+<circle cx="1293.5" cy="150.0" r="2.8" fill="#c96a12" stroke="#c96a12" stroke-width="1.3"/>
+<circle cx="1308.0" cy="159.5" r="2.8" fill="#c96a12" stroke="#c96a12" stroke-width="1.3"/>
+<text x="1259.5" y="154.33333333333326" text-anchor="end" font-size="12" font-weight="700" fill="#121212">98.4%</text>
+<text x="1312.0" y="176.5" text-anchor="end" font-size="12" font-weight="700" fill="#121212">97.0%</text>
+<text x="14" y="342" font-size="11.5" fill="#55534e">Labels give the last school year before the change and 2025-26. Years run by the spring of the school year; 2010-11 has no state figures. Hollow dots are years a state</text>
+<text x="14" y="357" font-size="11.5" fill="#55534e">did not count every school (a voluntary or partial response). Other things changed in these years too, including the 2019 measles outbreaks and the pandemic, so the</text>
+<text x="14" y="372" font-size="11.5" fill="#55534e">chart shows what followed each rule, not what caused the change. Maine ended religious and philosophical exemptions. Connecticut let students who already had a religious exemption keep it.</text>
+<text x="14" y="387" font-size="11.5" fill="#55534e">Source: CDC SchoolVaxView, kindergarten coverage as reported by states. Chart: Data 4 The People.</text>
+</svg>

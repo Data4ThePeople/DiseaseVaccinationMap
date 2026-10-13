@@ -129,3 +129,9 @@ None.
 - 2026-10-13 Eric: accept 334 for New York polio 1932. All 106 early
   disease-years now come from the yearly tables; weekly sums remain only for
   Alaska and Hawaii before statehood. Tie-out passes.
+- 2026-10-13 Chart built: kindergarten MMR coverage before and after five
+  states changed exemption rules (California, New York, Maine, Connecticut
+  ended non-medical exemptions; Mississippi added one by court order).
+  `analysis/03_exemption_rules_chart.py`, output in `analysis/charts/`. Rule
+  dates checked by search against the bill text, Maine CDC and Mississippi
+  health department pages; not yet read on the original pages line by line.
