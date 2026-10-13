@@ -1,7 +1,9 @@
-"""One row per disease, state and year, 1929 on, with the source of each number.
+"""One row per disease, state and year, 1920 on, with the source of each number.
 
 Order of preference for a disease-state-year:
-  1. CDC final annual table (data/raw/bridge/annual_state_cases.csv), when present
+  1. Final annual table: CDC, 1956 on (data/raw/bridge/annual_state_cases.csv), and the Public Health
+     Service tables for measles, whooping cough and all polio, 1920 to 1955
+     (data/raw/bridge/annual_state_cases_early.csv), when present
   2. CDC weekly file, 2021 on (data/cdc_recent_state_year.csv)
   3. Project Tycho year-end running total, when it reaches week 50 or later
   4. Project Tycho sum of weekly reports, with the number of weeks reported
@@ -46,6 +48,10 @@ def cdc_annual():
     if not p.exists():
         return None
     b = pd.read_csv(p, dtype=str)
+    b["early"] = False
+    e = RAW / "bridge" / "annual_state_cases_early.csv"   # 1920-1955, typed from the Public Health Service tables
+    if e.exists():
+        b = pd.concat([b, pd.read_csv(e, dtype=str).assign(early=True)], ignore_index=True)
     b["disease"] = b.disease.replace({"polio_paralytic": "polio"})
     b = b[b.disease.isin(DISEASES)].copy()
     b["st"] = b.state.str.upper().map(NAME_TO_ABBR)
@@ -70,6 +76,8 @@ def cdc_annual():
     assert not b.duplicated(["disease", "st", "year"]).any(), "duplicate rows in the annual table extract"
     b["source"] = b.part.map({True: "cdc_annual_part", False: "cdc_annual"})
     b["basis"] = b.part.map({True: "final annual table, New York City only", False: "final annual table"})
+    b.loc[b.early, "source"] = "phs_annual"
+    b.loc[b.early, "basis"] = "annual table, Public Health Service"
     b["weeks"], b["check"] = pd.NA, 0
     return b[["disease", "st", "year", "cases", "source", "basis", "weeks", "check"]]
 
@@ -90,6 +98,6 @@ if __name__ == "__main__":
     out.to_csv(DATA / "cases_state_year.csv", index=False)
     print(len(out), "rows")
     print(out.groupby(["disease", "source"]).agg(first=("year", "min"), last=("year", "max"), rows=("cases", "size"), cases=("cases", "sum")).to_string())
-    print("\nreported cases 1929 on, all sources:")
+    print("\nreported cases, all sources:")
     print(out.groupby("disease").cases.sum().sort_values(ascending=False).to_string())
     print("\nflagged for a look:", int(out.check.sum()))

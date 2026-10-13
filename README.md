@@ -1,7 +1,7 @@
 # DiseaseVaccinationMap
 
 An interactive map of reported infectious disease cases and vaccination coverage
-in every U.S. state, 1929 to 2025, built by Data 4 The People.
+in every U.S. state, 1920 to 2025, built by Data 4 The People.
 
 **See it:** https://data4thepeople.github.io/DiseaseVaccinationMap/
 

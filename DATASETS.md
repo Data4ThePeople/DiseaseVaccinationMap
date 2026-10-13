@@ -103,7 +103,7 @@ own printed national totals (from the ten-year tables in the annual summaries),
 the page's weekly sums for 1944 to 1955 run from 0.6% over to 17.8% under for
 measles, from 0.2% over to 13.0% under for whooping cough, and from 2.3% over
 to 9.1% under for all polio (independent tie-out, October 10, 2026). The
-years still built this way are measles, whooping cough and polio before 1956. On the page a state-year with fewer than 48 weekly
+years built this way were measles, whooping cough and polio before 1956; since October 13, 2026 those come from the Public Health Service annual tables (see that section), and weekly sums remain only for Alaska and Hawaii before statehood and polio in 1932. On the page a state-year with fewer than 48 weekly
 reports is drawn faded, the hover says how many of 52 weeks are missing, and the
 United States figure is faded and marked "incomplete" when the reporting states
 hold under 90% of residents or most of them are short of weeks.
@@ -391,6 +391,83 @@ The extract adds the two.
 Diseases Surveillance System.
 
 ---
+
+## Public Health Service annual tables, 1920 to 1955 (measles, whooping cough, polio)
+
+Added October 13, 2026. Before this, these three diseases before 1956 were sums
+of Project Tycho's weekly reports, which ran under the yearly totals.
+
+**Sources (scans on CDC Stacks, saved in `data/raw/bridge/src/`).**
+
+| Years | Publication | Record |
+|---|---|---|
+| 1920 to 1950 | Vital Statistics-Special Reports, Vol. 37, No. 9 (June 15, 1953), "Reported Incidence of Selected Notifiable Diseases: United States, Each Division and State, 1920-50". Table 15 acute poliomyelitis, Table 17 measles, Table 32 whooping cough (from 1922) | https://stacks.cdc.gov/view/cdc/84017 |
+| 1951 | Annual supplement, "Reported Incidence of Notifiable Diseases in the United States, 1951", Table 3 | https://stacks.cdc.gov/view/cdc/51624 |
+| 1952 | Morbidity and Mortality Weekly Report, Vol. 1, No. 54, annual supplement, Table 3 | https://stacks.cdc.gov/view/cdc/10892 |
+| 1953 | Vol. 2, No. 53, annual supplement, Table 3 | https://stacks.cdc.gov/view/cdc/527 |
+| 1954 | Vol. 3, No. 53, annual supplement, Table 3 | https://stacks.cdc.gov/view/cdc/671 |
+| 1955 | Vol. 4, No. 53, annual supplement, Table 3 | https://stacks.cdc.gov/view/cdc/799 |
+
+The publisher is the National Office of Vital Statistics, U.S. Public Health
+Service. The tables cover the 48 states and the District of Columbia; Alaska
+and Hawaii are not in them and stay on the weekly reports (1950 on).
+
+**How the numbers were taken.** Typed from the page images, not parsed. Every
+cell as printed, with its PDF page, is in `data/raw/bridge/early_readings.csv`
+(6,254 cells: the U.S. row, nine division rows and 49 state rows for 106
+disease-years). `scripts/02d_early_annual_tables.py` checks that the states add
+to each printed division row and the divisions to the printed U.S. row, and
+writes `annual_state_cases_early.csv`. The result per disease-year is in
+`checks_early_sums.csv`. 105 of 106 disease-years add exactly and are used.
+
+**Two readings.**
+- 1920 to 1950: a reader typed each table by eye. Separately, the scan's text
+  layer was parsed by position into a machine reading. The two agree on 4,345
+  of 4,459 state cells. In the other 114 the machine reading is missing or
+  garbled (a column rule read as a digit 1, 8 read as B or S); in each the eye
+  reading is the one that makes its division add. Where two or more of those
+  fell in the same division and year (20 cases) the cells were looked at again
+  on the page image.
+- 1951 to 1955: two readers typed the three columns by eye, independently.
+  All 885 cells agree.
+
+**Held: polio 1932.** New York is printed "534", but the Middle Atlantic row
+(1,806) and the U.S. row (3,820) add only if it is 334; the weekly reports for
+New York that year sum to 356. The year waits for an editor's decision and the
+page shows the weekly sums for it.
+
+**Cells where the page is damaged (kept, flagged in the table).** Measles:
+Missouri 1930 (hundreds digit blotted), North Carolina 1928 (last digit
+overstruck), Florida 1927 (hundreds digit under an ink blot), and the Pacific
+division row for 1925. Whooping cough: Missouri 1923 (last digit overstruck).
+In each, one digit was settled by the division total.
+
+**Marks.** The 1920-50 report's key: an asterisk is "disease stated not
+notifiable", three dashes "data not available", one dash "quantity is zero".
+Only single dashes appear in these three tables, 57 state cells in all (polio
+41, measles 8, whooping cough 8), nearly all before 1931. They are shown as
+zero, as the key says. Some look more like a state that was not yet reporting
+the disease (Missouri polio 1920 to 1922, Kentucky polio in six years), so a
+zero in the 1920s should be read with care. Nebraska measles 1955 carries a
+footnote, "Includes cases of rubella".
+
+**Polio is all reported polio before 1956.** The 1920-50 table has no
+paralytic column. The 1951 to 1955 supplements split paralytic, non-paralytic
+and unspecified, but many states put all cases under unspecified (23,808 of
+57,879 in 1952), so the "Total" column is used. From 1956 the page shows
+paralytic polio.
+
+**Against the weekly sums they replace (1929 to 1955, same states).** By year,
+the weekly sums ran from 17.8% under to 0.3% over the tables for measles
+(median 5.4% under) and from 13.5% under to 0.8% over for polio (median 3.3%
+under); for whooping cough the median was 5.3% under, and in the earliest years
+the weekly reports had almost nothing. 432 state-years have a figure now where
+the weekly reports had none.
+
+**Population for rates, 1920 to 1928.** Census Bureau intercensal state
+estimates, July 1, in thousands (`st2029ts.txt`, released February 1996,
+https://www2.census.gov/programs-surveys/popest/tables/1980-1990/state/asrh/st2029ts.txt),
+added by `scripts/04_fetch_population_income.py`. BEA's series starts in 1929.
 
 ## Vaccination coverage among young children, National Immunization Survey-Child (CDC, `fhky-rtsk`)
 

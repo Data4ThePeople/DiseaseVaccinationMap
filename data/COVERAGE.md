@@ -9,10 +9,10 @@ Years with no state figure at all: none.
 
 | decade | possible | final | weekly, counted a year later | provisional | year-end running total | weekly sum, 50+ weeks | weekly sum, 40-49 weeks | weekly sum, under 40 weeks | no figure | flagged | avg pop share % |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1920s | 51 | 0 | 0 | 0 | 0 | 27 | 14 | 5 | 5 | 0 | 96 |
-| 1930s | 510 | 0 | 0 | 0 | 0 | 216 | 212 | 42 | 40 | 0 | 98 |
-| 1940s | 510 | 0 | 0 | 0 | 0 | 142 | 325 | 20 | 23 | 0 | 100 |
-| 1950s | 510 | 194 | 0 | 0 | 0 | 69 | 216 | 22 | 9 | 0 | 100 |
+| 1920s | 510 | 490 | 0 | 0 | 0 | 0 | 0 | 0 | 20 | 0 | 100 |
+| 1930s | 510 | 490 | 0 | 0 | 0 | 0 | 0 | 0 | 20 | 0 | 100 |
+| 1940s | 510 | 490 | 0 | 0 | 0 | 0 | 0 | 0 | 20 | 0 | 100 |
+| 1950s | 510 | 488 | 0 | 0 | 0 | 3 | 9 | 1 | 9 | 0 | 100 |
 | 1960s | 510 | 503 | 0 | 0 | 0 | 0 | 0 | 0 | 7 | 0 | 99 |
 | 1970s | 510 | 510 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 100 |
 | 1980s | 510 | 510 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 100 |
@@ -23,14 +23,14 @@ Years with no state figure at all: none.
 
 ## pertussis
 
-Years with no state figure at all: 1929 to 1931, 1933 to 1934, 1936.
+Years with no state figure at all: 1920 to 1921.
 
 | decade | possible | final | weekly, counted a year later | provisional | year-end running total | weekly sum, 50+ weeks | weekly sum, 40-49 weeks | weekly sum, under 40 weeks | no figure | flagged | avg pop share % |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1920s | 51 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 51 | 0 | 0 |
-| 1930s | 510 | 0 | 0 | 0 | 0 | 70 | 6 | 71 | 363 | 0 | 31 |
-| 1940s | 510 | 0 | 0 | 0 | 0 | 412 | 42 | 32 | 24 | 0 | 99 |
-| 1950s | 510 | 196 | 0 | 0 | 0 | 91 | 143 | 66 | 14 | 0 | 100 |
+| 1920s | 510 | 392 | 0 | 0 | 0 | 0 | 0 | 0 | 118 | 0 | 80 |
+| 1930s | 510 | 490 | 0 | 0 | 0 | 0 | 0 | 0 | 20 | 0 | 100 |
+| 1940s | 510 | 490 | 0 | 0 | 0 | 0 | 0 | 0 | 20 | 0 | 100 |
+| 1950s | 510 | 490 | 0 | 0 | 0 | 0 | 0 | 7 | 13 | 0 | 100 |
 | 1960s | 510 | 506 | 0 | 0 | 0 | 0 | 0 | 0 | 4 | 0 | 100 |
 | 1970s | 510 | 507 | 0 | 0 | 0 | 0 | 0 | 0 | 3 | 0 | 100 |
 | 1980s | 510 | 510 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 100 |
@@ -41,11 +41,11 @@ Years with no state figure at all: 1929 to 1931, 1933 to 1934, 1936.
 
 ## hepatitis_a
 
-Years with no state figure at all: 1929 to 1965.
+Years with no state figure at all: 1920 to 1965.
 
 | decade | possible | final | weekly, counted a year later | provisional | year-end running total | weekly sum, 50+ weeks | weekly sum, 40-49 weeks | weekly sum, under 40 weeks | no figure | flagged | avg pop share % |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1920s | 51 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 51 | 0 | 0 |
+| 1920s | 510 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 510 | 0 | 0 |
 | 1930s | 510 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 510 | 0 | 0 |
 | 1940s | 510 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 510 | 0 | 0 |
 | 1950s | 510 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 510 | 0 | 0 |
@@ -59,16 +59,16 @@ Years with no state figure at all: 1929 to 1965.
 
 ## mumps
 
-Years with no state figure at all: 1929 to 1967.
+Years with no state figure at all: 1920 to 1967.
 
 | decade | possible | final | weekly, counted a year later | provisional | year-end running total | weekly sum, 50+ weeks | weekly sum, 40-49 weeks | weekly sum, under 40 weeks | no figure | flagged | avg pop share % |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1920s | 51 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 51 | 0 | 0 |
+| 1920s | 510 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 510 | 0 | 0 |
 | 1930s | 510 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 510 | 0 | 0 |
 | 1940s | 510 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 510 | 0 | 0 |
 | 1950s | 510 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 510 | 0 | 0 |
-| 1960s | 510 | 97 | 0 | 0 | 0 | 0 | 0 | 2 | 411 | 0 | 19 |
-| 1970s | 510 | 497 | 0 | 0 | 0 | 0 | 0 | 4 | 9 | 0 | 98 |
+| 1960s | 510 | 99 | 0 | 0 | 0 | 0 | 0 | 0 | 411 | 0 | 19 |
+| 1970s | 510 | 501 | 0 | 0 | 0 | 0 | 0 | 0 | 9 | 0 | 98 |
 | 1980s | 510 | 478 | 0 | 0 | 0 | 0 | 0 | 0 | 32 | 0 | 96 |
 | 1990s | 510 | 490 | 0 | 0 | 0 | 0 | 0 | 0 | 20 | 0 | 98 |
 | 2000s | 510 | 506 | 0 | 0 | 0 | 0 | 0 | 0 | 4 | 0 | 100 |
@@ -81,10 +81,10 @@ Years with no state figure at all: none.
 
 | decade | possible | final | weekly, counted a year later | provisional | year-end running total | weekly sum, 50+ weeks | weekly sum, 40-49 weeks | weekly sum, under 40 weeks | no figure | flagged | avg pop share % |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1920s | 51 | 0 | 0 | 0 | 0 | 47 | 0 | 1 | 3 | 0 | 100 |
-| 1930s | 510 | 0 | 0 | 0 | 0 | 426 | 51 | 4 | 29 | 0 | 100 |
-| 1940s | 510 | 0 | 0 | 0 | 0 | 150 | 307 | 33 | 20 | 0 | 100 |
-| 1950s | 510 | 197 | 0 | 0 | 7 | 9 | 160 | 133 | 4 | 0 | 100 |
+| 1920s | 510 | 490 | 0 | 0 | 0 | 0 | 0 | 0 | 20 | 0 | 100 |
+| 1930s | 510 | 441 | 0 | 0 | 0 | 47 | 0 | 1 | 21 | 0 | 100 |
+| 1940s | 510 | 490 | 0 | 0 | 0 | 0 | 0 | 0 | 20 | 0 | 100 |
+| 1950s | 510 | 491 | 0 | 0 | 7 | 0 | 2 | 6 | 4 | 0 | 100 |
 | 1960s | 510 | 510 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 100 |
 | 1970s | 510 | 510 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 100 |
 | 1980s | 510 | 510 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 100 |
@@ -95,11 +95,11 @@ Years with no state figure at all: none.
 
 ## diphtheria (built, not shown)
 
-Years with no state figure at all: 1982 to 1992, 2024 to 2025.
+Years with no state figure at all: 1920 to 1928, 1982 to 1992, 2024 to 2025.
 
 | decade | possible | final | weekly, counted a year later | provisional | year-end running total | weekly sum, 50+ weeks | weekly sum, 40-49 weeks | weekly sum, under 40 weeks | no figure | flagged | avg pop share % |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1920s | 51 | 0 | 0 | 0 | 0 | 36 | 5 | 6 | 4 | 0 | 98 |
+| 1920s | 510 | 0 | 0 | 0 | 0 | 36 | 5 | 6 | 463 | 0 | 10 |
 | 1930s | 510 | 0 | 0 | 0 | 0 | 277 | 72 | 129 | 32 | 0 | 100 |
 | 1940s | 510 | 0 | 0 | 0 | 0 | 420 | 27 | 43 | 20 | 0 | 100 |
 | 1950s | 510 | 0 | 0 | 0 | 174 | 6 | 42 | 230 | 58 | 10 | 97 |
@@ -113,11 +113,11 @@ Years with no state figure at all: 1982 to 1992, 2024 to 2025.
 
 ## rubella (built, not shown)
 
-Years with no state figure at all: 1929 to 1965.
+Years with no state figure at all: 1920 to 1965.
 
 | decade | possible | final | weekly, counted a year later | provisional | year-end running total | weekly sum, 50+ weeks | weekly sum, 40-49 weeks | weekly sum, under 40 weeks | no figure | flagged | avg pop share % |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1920s | 51 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 51 | 0 | 0 |
+| 1920s | 510 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 510 | 0 | 0 |
 | 1930s | 510 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 510 | 0 | 0 |
 | 1940s | 510 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 510 | 0 | 0 |
 | 1950s | 510 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 510 | 0 | 0 |
@@ -131,11 +131,11 @@ Years with no state figure at all: 1929 to 1965.
 
 ## hepatitis_b (built, not shown)
 
-Years with no state figure at all: 1929 to 1951, 1954, 2018 to 2025.
+Years with no state figure at all: 1920 to 1951, 1954, 2018 to 2025.
 
 | decade | possible | final | weekly, counted a year later | provisional | year-end running total | weekly sum, 50+ weeks | weekly sum, 40-49 weeks | weekly sum, under 40 weeks | no figure | flagged | avg pop share % |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1920s | 51 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 51 | 0 | 0 |
+| 1920s | 510 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 510 | 0 | 0 |
 | 1930s | 510 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 510 | 0 | 0 |
 | 1940s | 510 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 510 | 0 | 0 |
 | 1950s | 510 | 0 | 0 | 0 | 51 | 0 | 16 | 275 | 168 | 2 | 69 |

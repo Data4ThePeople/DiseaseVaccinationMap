@@ -2,6 +2,8 @@
 
   A. Every case count in viz/data.json equals data/cases_state_year.csv (the packing step lost nothing).
   B. For CDC final-annual years, the page's national sum equals the U.S. row CDC printed in the same table.
+  B2. For 1920 to 1955 (Public Health Service tables), the same: the 48 states and DC on the page add to the
+      printed U.S. row, re-read here from the typed readings file.
   C. For Project Tycho years, a sample of state-years is re-read straight from the zip with separate code.
   D. For CDC weekly years, a sample is re-read straight from the weekly file.
   E. Rates: recomputed from the BEA population file for a sample.
@@ -74,6 +76,25 @@ lines += ["", f"{nb} disease-years compared in all; the table lists every fifth 
           "The page sum must equal the printed U.S. total, plus any printed part the map does not show:", "",
           "| disease, year | CDC printed | page sum | part not mapped | |", "|---|---|---|---|---|"] + gaps + [""]
 
+# B2
+er = pd.read_csv(RAW / "bridge" / "early_readings.csv", dtype=str, keep_default_na=False)
+lines += ["## B2. 1920 to 1955: page sum of the 48 states and DC against the printed U.S. row", "",
+          "From `early_readings.csv` (typed from the Public Health Service tables). Alaska and Hawaii are not in these "
+          "tables and are left out of the sum.", "", "| disease, year | printed | page sum | |", "|---|---|---|---|"]
+nb2 = 0
+for r in er[er.area == "United States"].itertuples():
+    y = int(r.year)
+    sts = [s for s in STATES if s not in ("AK", "HI")]
+    codes = {D["src"][r.disease][s][y - Y0].lower() for s in sts}
+    if codes - {"h"}:
+        lines.append(f"| {r.disease} {y} | {r.printed} | not compared: the year is held, the page uses weekly reports | |")
+        continue
+    nb2 += 1
+    total = sum(v for s in sts if (v := page(r.disease, s, y)) is not None)
+    if total != int(r.printed) or y % 5 == 0:
+        check(f"{r.disease} {y}", total, int(r.printed))
+lines += ["", f"{nb2} disease-years compared in all; the table lists every fifth year and any mismatch.", ""]
+
 
 # C
 def tycho_weekly_sum(code, iso, year):
@@ -86,9 +107,10 @@ def tycho_weekly_sum(code, iso, year):
 
 
 lines += ["## C. Project Tycho years, re-read from the zip", "", "| disease, state, year | from zip | page | |", "|---|---|---|---|"]
-for d, code, st, y in [("measles", "US.14189004", "OH", 1941), ("measles", "US.14189004", "CA", 1948), ("measles", "US.14189004", "TX", 1934),
-                       ("polio", "US.398102009", "NY", 1952), ("polio", "US.398102009", "MN", 1946), ("pertussis", "US.27836007", "PA", 1947),
-                       ("measles", "US.14189004", "IL", 1950), ("pertussis", "US.27836007", "OH", 1950)]:
+# since October 2026 the weekly sums are shown only for Alaska and Hawaii before statehood and for the held year, polio 1932
+for d, code, st, y in [("polio", "US.398102009", "NY", 1932), ("polio", "US.398102009", "PA", 1932), ("polio", "US.398102009", "CA", 1932),
+                       ("measles", "US.14189004", "HI", 1951), ("measles", "US.14189004", "AK", 1954), ("pertussis", "US.27836007", "HI", 1954),
+                       ("polio", "US.398102009", "HI", 1954), ("measles", "US.14189004", "HI", 1955)]:
     assert D["src"][d][st][y - Y0].lower() == "w", (d, st, y)
     check(f"{d} {st} {y}", page(d, st, y), tycho_weekly_sum(code, f"US-{st}", y))
 lines.append("")

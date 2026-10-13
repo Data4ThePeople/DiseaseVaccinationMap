@@ -13,7 +13,7 @@ OTHERS = ["diphtheria", "rubella", "hepatitis_b"]
 
 
 def kind(r):
-    if r.source == "cdc_annual":
+    if r.source in ("cdc_annual", "phs_annual", "cdc_annual_part"):
         return "final"
     if r.source == "cdc_weekly":
         return "provisional" if "provisional" in r.basis else "weekly, counted a year later"

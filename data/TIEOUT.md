@@ -5,7 +5,7 @@ Built by `scripts/12_tieout.py`. Every line below was recomputed from a raw file
 
 ## A. Packed data against the case table
 
-20,182 state-years in the table, 20,182 filled cells on the page, 0 differ.
+21,839 state-years in the table, 21,839 filled cells on the page, 0 differ.
 
 ## B. National sum on the page against the U.S. row CDC printed
 
@@ -134,18 +134,51 @@ Years where the table gives one or more states no figure (NN, not notifiable the
 | hepatitis_a 2014 | 1239 | 1239 | 0 | ok |
 | hepatitis_a 2015 | 1390 | 1390 | 0 | ok |
 
+## B2. 1920 to 1955: page sum of the 48 states and DC against the printed U.S. row
+
+From `early_readings.csv` (typed from the Public Health Service tables). Alaska and Hawaii are not in these tables and are left out of the sum.
+
+| disease, year | printed | page sum | |
+|---|---|---|---|
+| measles 1920 | 469924 | 469924 | ok |
+| polio 1920 | 2338 | 2338 | ok |
+| measles 1925 | 225027 | 225027 | ok |
+| pertussis 1925 | 152003 | 152003 | ok |
+| polio 1925 | 6104 | 6104 | ok |
+| measles 1930 | 419465 | 419465 | ok |
+| pertussis 1930 | 166914 | 166914 | ok |
+| polio 1930 | 9220 | 9220 | ok |
+| polio 1932 | 3820 | not compared: the year is held, the page uses weekly reports | |
+| measles 1935 | 743856 | 743856 | ok |
+| pertussis 1935 | 180518 | 180518 | ok |
+| polio 1935 | 10839 | 10839 | ok |
+| measles 1940 | 291162 | 291162 | ok |
+| pertussis 1940 | 183866 | 183866 | ok |
+| polio 1940 | 9804 | 9804 | ok |
+| measles 1945 | 146013 | 146013 | ok |
+| pertussis 1945 | 133792 | 133792 | ok |
+| polio 1945 | 13624 | 13624 | ok |
+| measles 1950 | 319124 | 319124 | ok |
+| pertussis 1950 | 120718 | 120718 | ok |
+| polio 1950 | 33300 | 33300 | ok |
+| measles 1955 | 555156 | 555156 | ok |
+| pertussis 1955 | 62786 | 62786 | ok |
+| polio 1955 | 28983 | 28983 | ok |
+
+105 disease-years compared in all; the table lists every fifth year and any mismatch.
+
 ## C. Project Tycho years, re-read from the zip
 
 | disease, state, year | from zip | page | |
 |---|---|---|---|
-| measles OH 1941 | 81859 | 81859 | ok |
-| measles CA 1948 | 49335 | 49335 | ok |
-| measles TX 1934 | 29699 | 29699 | ok |
-| polio NY 1952 | 2637 | 2637 | ok |
-| polio MN 1946 | 2569 | 2569 | ok |
-| pertussis PA 1947 | 9589 | 9589 | ok |
-| measles IL 1950 | 18528 | 18528 | ok |
-| pertussis OH 1950 | 7334 | 7334 | ok |
+| polio NY 1932 | 356 | 356 | ok |
+| polio PA 1932 | 1219 | 1219 | ok |
+| polio CA 1932 | 170 | 170 | ok |
+| measles HI 1951 | 4910 | 4910 | ok |
+| measles AK 1954 | 1487 | 1487 | ok |
+| pertussis HI 1954 | 114 | 114 | ok |
+| polio HI 1954 | 234 | 234 | ok |
+| measles HI 1955 | 6395 | 6395 | ok |
 
 ## D. CDC weekly years, re-read from the weekly file
 

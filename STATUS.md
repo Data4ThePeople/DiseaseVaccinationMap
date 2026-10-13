@@ -111,3 +111,12 @@ None.
 - 2026-10-12 Eric: accept 163 for New York City and Virginia, whooping cough
   1970. The year is filled from the scanned summary (U.S. 4,249); whooping
   cough now has every year from 1956 from CDC's final tables. Tie-out passes.
+- 2026-10-13 Measles and polio 1920 to 1955 and whooping cough 1922 to 1955
+  now come from the Public Health Service yearly tables (six scans on CDC
+  Stacks), typed from the page images and read twice. 105 of 106 disease-years
+  add to their printed totals. The page starts in 1920 (Census population for
+  1920 to 1928). Held for Eric: polio 1932 (New York printed "534", totals
+  need 334). Tie-out passes. Reviewer asked for a herd immunity graphic; Eric
+  agreed to a measles-first version: state tiles colored in three steps by
+  kindergarten MMR coverage against 95% (blue to orange), county view, and a
+  count of states below 95% by year. Not built yet.

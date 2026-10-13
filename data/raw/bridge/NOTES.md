@@ -27,6 +27,10 @@ Rebuild without downloading: `.venv/bin/python scripts/02b_fetch_annual_summarie
 
 ## Coverage
 
+1920 to 1955 (measles, whooping cough, all polio) is a separate extract: `early_readings.csv` (typed cells),
+`annual_state_cases_early.csv` and `checks_early_sums.csv`, built by `scripts/02d_early_annual_tables.py`.
+See DATASETS.md, "Public Health Service annual tables, 1920 to 1955".
+
 | Years | Diseases | Source |
 |---|---|---|
 | 1956 to 1969, 1971 to 1992 | pertussis | scanned annual summaries, CDC Stacks |

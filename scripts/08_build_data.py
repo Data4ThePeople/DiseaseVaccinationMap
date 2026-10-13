@@ -11,7 +11,7 @@ import pandas as pd
 from common import DATA, RAW, STATES
 from project import geometry_paths, state_paths  # Albers USA, reused from the BirthRate project
 
-Y0, Y1 = 1929, 2025
+Y0, Y1 = 1920, 2025
 UNIT = 50  # one figure = this many reported cases per 100,000 residents in a year
 
 # The five shown. Order is fixed: it sets the color and the drawing order of every tile.
@@ -36,7 +36,7 @@ VAXNOTE = {
     "polio": "Toddlers: 3 or more doses. Kindergartners: the doses their state requires. Before 1995: 3 or more doses.",
     "hepa": "Toddlers: 2 or more doses. No kindergarten or pre-2008 figures.",
 }
-SRC = {"tycho_weekly": "w", "tycho_cumulative": "c", "cdc_annual": "a", "cdc_annual_part": "n", "cdc_weekly": "r"}
+SRC = {"tycho_weekly": "w", "tycho_cumulative": "c", "cdc_annual": "a", "phs_annual": "h", "cdc_annual_part": "n", "cdc_weekly": "r"}
 
 # Tile-grid position of each state: column, row.
 GRID = {

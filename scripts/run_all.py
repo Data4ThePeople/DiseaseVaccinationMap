@@ -26,6 +26,7 @@ FULL = [
     ("scripts/01_fetch_tycho.py", "Project Tycho weekly case files (Zenodo)"),
     ("scripts/02_fetch_cdc.py", "CDC weekly cases and vaccination files (data.cdc.gov)"),
     ("scripts/02b_fetch_annual_summaries.py", "CDC final annual tables and scanned summaries, 1956-2023"),
+    ("scripts/02d_early_annual_tables.py", "Measles, whooping cough and polio by state, 1920-1955, from the typed readings"),
     ("scripts/02c_fetch_geo.py", "State and county shapes"),
     ("scripts/03_build_tycho_annual.py", "Tycho weekly rows to yearly state figures"),
     ("scripts/04_fetch_population_income.py", "BEA population and income"),
