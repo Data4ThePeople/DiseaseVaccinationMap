@@ -547,7 +547,8 @@ and percent surveyed on hover.
 ---
 
 **On the page (added October 13, 2026): measles vaccination against the 95% level, and ranked states.**
-"Color states by measles vaccination" shades each state tile by its
+The map shades each state tile, by default and from 2010 on (the checkbox
+"Color states by measles vaccination" turns it off), by its
 kindergarten MMR estimate for the school year ending in the selected year, in
 three steps: 95% or more, 90% to under 95%, under 90%. The 95% level is the
 national Healthy People 2030 target for kindergarten MMR coverage. A bar chart

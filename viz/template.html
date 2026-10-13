@@ -288,7 +288,7 @@ const short = n => n >= 1e6 ? (n / 1e6).toFixed(n >= 1e7 ? 0 : 1) + "M" : n >= 1
 const $ = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
-const S = { year: 1941, on: new Set(DIS.map(d => d.k)), hover: null, sel: null, playing: false, cov: false, rankBy: null, rankDesc: true, tblSort: null, tblDesc: true };
+const S = { year: 1941, on: new Set(DIS.map(d => d.k)), hover: null, sel: null, playing: false, cov: true, rankBy: null, rankDesc: true, tblSort: null, tblDesc: true };
 
 /* cases, rate and source for one disease, state and year. null = no data, which is not zero */
 function cell(dk, st, y) {
@@ -410,7 +410,7 @@ function setupCanvas(cv, cssW, cssH) {
 function buildControls() {
   const el = $("controls");
   el.innerHTML = DIS.map(d => `<label style="--c:${d.color}"><input type="checkbox" data-k="${d.k}" checked>${personSvg(d.color, 8)}${esc(d.name)}</label>`).join("")
-    + `<label class="covt"><input type="checkbox" id="cov">Color states by measles vaccination</label>`
+    + `<label class="covt"><input type="checkbox" id="cov" checked>Color states by measles vaccination (2010 on)</label>`
     + `<span class="unit">${personSvg("#55534e", 8)}<span>1 figure = 1 reported case per ${fmt(1e5 / D.unit)} residents in a year</span>`
     + `<span class="mk"><svg width="8" height="8" aria-hidden="true"><circle cx="4" cy="4" r="2.6" fill="#55534e"/></svg>cases, under ${D.unit * SMALL} per 100,000</span>`
     + `<span class="mk"><svg width="8" height="8" aria-hidden="true"><circle cx="4" cy="4" r="2.6" fill="none" stroke="#55534e" stroke-width="1.2"/></svg>no data</span>`
@@ -444,8 +444,11 @@ function setCov(on) {
   renderCovBar(); if (!S.sel) layoutMap(); render();
 }
 function renderCovBar() {
-  const el = $("covbar"); el.hidden = !S.cov; if (!S.cov) return;
-  const c = covCount(S.year);
+  const el = $("covbar"), c = covCount(S.year);
+  const was = el.hidden;
+  el.hidden = !(S.cov && c.n);   // nothing to explain in a year with no state figures
+  if (was !== el.hidden && !S.sel && GEO) layoutMap();   // the bar takes a row, so the map is sized again
+  if (el.hidden) return;
   el.innerHTML = `<b>Kindergartners with the measles vaccine (MMR)${c.n ? ", " + schoolYear(S.year) + " school year" : ""}</b>`
     + COV_STEPS.map(b => `<span><i style="background:${b[1]}"></i>${b[3]}</span>`).join("")
     + `<span><i style="background:#f5f5f3;outline:1px solid #e3e2dd"></i>no figure</span>`
@@ -660,8 +663,8 @@ function renderRail() {
   $("railwho").textContent = focus === "US" ? "United States" : ST[focus].n;
   $("railkey").innerHTML = KEYLINE(focus !== "US");
   const fitW = $("viz").classList.contains("fit"), w = fitW ? $("railcharts").clientWidth : ($("railcharts").clientWidth - 16) / 2;
-  $("railcharts").innerHTML = (S.cov ? covChart($("railcharts").clientWidth) : "") + (vaxKeys().map(vk => vaxChart(vk, focus, w)).join("") || `<p class="note">Check a disease to see its vaccine.</p>`);
-  $("railnote").hidden = S.cov;
+  $("railcharts").innerHTML = (S.cov && COV_YEARS.includes(S.year) ? covChart($("railcharts").clientWidth) : "") + (vaxKeys().map(vk => vaxChart(vk, focus, w)).join("") || `<p class="note">Check a disease to see its vaccine.</p>`);
+  $("railnote").hidden = S.cov && COV_YEARS.includes(S.year);
   $("railnote").textContent = `State figures start in ${vaxFirstYear()}. Before that only national surveys exist, and they relied on parents' recall. A gap in a line means no measurement that year, or that the state moved between a sample of schools and a count of all kindergartners, so the two sides should not be compared. Triangles mark when a vaccine was licensed. Hover a state for its lines and the survey details.`;
 }
 
@@ -954,11 +957,11 @@ function init() {
     setPlaying(false); msIndex = (Math.min(msIndex, n - 1) + step + n) % n; renderCard();
   });
   document.addEventListener("keydown", e => { if (e.key === "Escape" && S.sel) closeState(); });
-  $("foot").innerHTML = `Reported cases, not infections; many cases were never reported, and reporting rules changed over the century. A ring marks a disease that other states counted that year but this state did not, which is not zero; a dot marks a count too small to draw a figure. The diseases were not all counted from the same year (mumps from 1968, hepatitis A from 1966), so a jump in a state's total can come from a disease entering the record. Faded figures mark an incomplete count: a year with fewer than ${THIN_WEEKS} of ${FULL_YEAR} weekly reports, a national figure where states holding more than 10% of residents did not report or most states were short of weeks, or the provisional year 2025. Measles, whooping cough and polio before 1956 come from the yearly tables of the U.S. Public Health Service; in the 1920s some states were not yet reporting every disease, and the tables print a dash, which their key defines as zero. Where a count is a sum of weekly reports (Alaska and Hawaii before statehood) it usually runs lower than the yearly total. Polio counts all reported polio before 1956 and paralytic polio only from 1956, so the 1955 to 1956 change is partly a change in what was counted; the paralytic counts are as first printed, and CDC later revised some yearly totals up or down. Hepatitis A before 1974 includes hepatitis of unspecified type. "Color states by measles vaccination" shades each state by the share of kindergartners with the measles vaccine (MMR) that school year, as states reported to CDC, against 95%, the national Healthy People 2030 target; it measures one age group, not immunity in the whole population. State figures start with the 2009-10 school year and there are none for 2010-11. From 2020-21 CDC flags some states' figures as lower bounds (shown with \u2265, or "at least"): those states' true share may be higher, so a state marked this way may not be below the level it appears under. Sources: U.S. Public Health Service, National Office of Vital Statistics, yearly tables of notifiable diseases (measles and polio from 1920, whooping cough from 1922, through 1955); CDC final annual tables of notifiable diseases (whooping cough, measles and paralytic polio from 1956, hepatitis A from 1966, mumps from 1968, all five diseases from 1993, through 2023); CDC weekly tables (2024 and 2025, provisional for 2025); Project Tycho, University of Pittsburgh, CC BY 4.0, from the weekly federal notifiable disease reports (Alaska and Hawaii before 1956). Vaccination: CDC National Immunization Survey and SchoolVaxView; U.S. Immunization Survey and National Health Interview Survey before 1995. County figures: Johns Hopkins University. State indicators: Census Bureau and Bureau of Economic Analysis. Party control: Klarner, State Partisan Balance Data (through 2011), and Ballotpedia (2012 on).`;
+  $("foot").innerHTML = `Reported cases, not infections; many cases were never reported, and reporting rules changed over the century. A ring marks a disease that other states counted that year but this state did not, which is not zero; a dot marks a count too small to draw a figure. The diseases were not all counted from the same year (mumps from 1968, hepatitis A from 1966), so a jump in a state's total can come from a disease entering the record. Faded figures mark an incomplete count: a year with fewer than ${THIN_WEEKS} of ${FULL_YEAR} weekly reports, a national figure where states holding more than 10% of residents did not report or most states were short of weeks, or the provisional year 2025. Measles, whooping cough and polio before 1956 come from the yearly tables of the U.S. Public Health Service; in the 1920s some states were not yet reporting every disease, and the tables print a dash, which their key defines as zero. Where a count is a sum of weekly reports (Alaska and Hawaii before statehood) it usually runs lower than the yearly total. Polio counts all reported polio before 1956 and paralytic polio only from 1956, so the 1955 to 1956 change is partly a change in what was counted; the paralytic counts are as first printed, and CDC later revised some yearly totals up or down. Hepatitis A before 1974 includes hepatitis of unspecified type. The map shades each state from 2010 on (the checkbox "Color states by measles vaccination" turns this off) by the share of kindergartners with the measles vaccine (MMR) that school year, as states reported to CDC, against 95%, the national Healthy People 2030 target; it measures one age group, not immunity in the whole population. State figures start with the 2009-10 school year and there are none for 2010-11. From 2020-21 CDC flags some states' figures as lower bounds (shown with \u2265, or "at least"): those states' true share may be higher, so a state marked this way may not be below the level it appears under. Sources: U.S. Public Health Service, National Office of Vital Statistics, yearly tables of notifiable diseases (measles and polio from 1920, whooping cough from 1922, through 1955); CDC final annual tables of notifiable diseases (whooping cough, measles and paralytic polio from 1956, hepatitis A from 1966, mumps from 1968, all five diseases from 1993, through 2023); CDC weekly tables (2024 and 2025, provisional for 2025); Project Tycho, University of Pittsburgh, CC BY 4.0, from the weekly federal notifiable disease reports (Alaska and Hawaii before 1956). Vaccination: CDC National Immunization Survey and SchoolVaxView; U.S. Immunization Survey and National Health Interview Survey before 1995. County figures: Johns Hopkins University. State indicators: Census Bureau and Bureau of Economic Analysis. Party control: Klarner, State Partisan Balance Data (through 2011), and Ballotpedia (2012 on).`;
   const h = new URLSearchParams(location.hash.slice(1));   // #st=OH&y=1958 opens a state and year
   if (+h.get("y") >= D.y0 && +h.get("y") <= D.y1) { S.year = +h.get("y"); yr.value = S.year; }
   setPlaying(false); layoutMap(); buildTicks(); render();
-  if (h.get("cov") === "1") setCov(true);
+  if (h.get("cov") === "0") setCov(false);   // on unless the link turns it off
   if (+h.get("y") >= D.y0 && +h.get("y") <= D.y1 && S.year !== +h.get("y")) setYear(+h.get("y"));
   if (ST[h.get("st")]) openState(h.get("st"));
   let lastW = 0, lastH = 0;   // only re-lay-out when the box really changes, never on our own redraws

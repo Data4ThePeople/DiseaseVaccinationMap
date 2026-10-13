@@ -149,3 +149,5 @@ None.
   reads "534" on the scan and that only 334 fits the totals. It found CDC marks
   some kindergarten estimates as lower bounds (">="); the page now shows that.
   Not re-read by eye: 85 of the 106 early disease-years (sum-checked only).
+- 2026-10-13 Eric: the map coloring by kindergarten MMR coverage is on by
+  default (it shades from 2010 on; the checkbox turns it off).
