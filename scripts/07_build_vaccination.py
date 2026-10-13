@@ -59,7 +59,9 @@ def kinder():
         "label": k["School Year"] + " school year", "estimate": est, "lo": pd.NA, "hi": pd.NA,
         "n": pd.to_numeric(k["Population Size"], errors="coerce"), "method": k["Survey Type"].str.strip(),
         "pct_surveyed": pd.to_numeric(k["Percent Surveyed"], errors="coerce"),
-        "flag": k["Estimate (%)"].where(est.isna(), ""),
+        # CDC marks some estimates ">=" in the Footnotes column: the state's figure is a lower bound
+        # ("at least"), so the true share may be higher. Kept as a flag so the page can say so.
+        "flag": k["Estimate (%)"].where(est.isna(), k.Footnotes.str.contains(">=").map({True: ">=", False: ""})),
     })
 
 

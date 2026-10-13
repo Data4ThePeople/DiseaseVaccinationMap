@@ -448,9 +448,16 @@ notifiable", three dashes "data not available", one dash "quantity is zero".
 Only single dashes appear in these three tables, 57 state cells in all (polio
 41, measles 8, whooping cough 8), nearly all before 1931. They are shown as
 zero, as the key says. Some look more like a state that was not yet reporting
-the disease (Missouri polio 1920 to 1922, Kentucky polio in six years), so a
+the disease (Missouri polio 1920 to 1922, Kentucky polio in seven years from 1921 to 1931), so a
 zero in the 1920s should be read with care. Nebraska measles 1955 carries a
 footnote, "Includes cases of rubella".
+
+**One printed total disagrees.** Table 1 of the 1951 supplement prints the 1950
+U.S. measles total as 319,214. The 1920-50 report and Table 1 of the 1952 to
+1955 supplements all print 319,124, which is also what the states add to, and
+is the figure used. Found by the independent tie-out of October 13, 2026, which
+compared 150 U.S. totals for 1942 to 1955 across the five supplements; the
+other 149 agree.
 
 **Polio is all reported polio before 1956.** The 1920-50 table has no
 paralytic column. The 1951 to 1955 supplements split paralytic, non-paralytic
@@ -549,6 +556,15 @@ The number of states with a figure changes by year (43 to 51), so the chart
 gives counts, and the line under it says how many states reported. For
 2024-25, 39 of 49 states with a figure were below 95% and 15 were below 90%
 (Montana and West Virginia have no figure); for 2019-20 it was 28 of 48 and 3.
+There are no state figures for 2010-11. From 2020-21, CDC's file marks some
+states' estimates ">=" in its Footnotes column (six states for MMR in 2024-25:
+Florida, Georgia, Iowa, Mississippi, New Hampshire and New Jersey). The page
+treats that as a lower bound, shows the figure with a "≥" or "at least", and
+says how many of the states below each level carry the mark (2024-25: 5 of the
+39 below 95%, and 4 of the 15 below 90%). The dataset's own notes do not define
+the mark; CDC's yearly kindergarten reports describe such figures as lower
+bounds because the state reported children up to date on all required vaccines
+at once. That reading still needs checking against CDC's current table notes.
 This is coverage in one age group as states reported it, by a count of all
 schools in some states and a sample in others. It is not a measure of immunity
 in the whole population. The "States ranked" panel under the map orders the

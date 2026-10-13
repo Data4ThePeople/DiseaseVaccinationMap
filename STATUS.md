@@ -141,3 +141,11 @@ None.
   kindergarten MMR coverage by school year from 2009-10 with measles cases
   under each year; the numbers table can be ranked by any column and carries
   kindergarten coverage columns beside the diseases.
+- 2026-10-13 Third independent tie-out (fresh agent, 1920 to 1955 data,
+  1920s population, coverage counts, rebuild): 1,239 cells re-read by eye with
+  0 differences from the readings file; 149 of 150 U.S. totals agree with a
+  second printed source (the 1951 supplement misprints measles 1950); rates,
+  population and the rebuild match exactly. It confirmed New York polio 1932
+  reads "534" on the scan and that only 334 fits the totals. It found CDC marks
+  some kindergarten estimates as lower bounds (">="); the page now shows that.
+  Not re-read by eye: 85 of the 106 early disease-years (sum-checked only).

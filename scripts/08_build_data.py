@@ -200,6 +200,8 @@ def main():
             pass
         else:
             row += [None if pd.isna(r.pct_surveyed) else r.pct_surveyed, r.method if isinstance(r.method, str) else ""]
+            if r.flag == ">=":
+                row.append(1)   # CDC marks the estimate as a lower bound ("at least")
         V.setdefault(r.series, {}).setdefault(r.vaccine, {}).setdefault(r.st, {})[int(r.year)] = row
 
     # first licensure of each vaccine, as marks on the vaccination charts
