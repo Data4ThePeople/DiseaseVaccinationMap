@@ -120,7 +120,10 @@ exemptions from 1979 (Brown v. Stone) until a federal court ordered a religious
 exemption in April 2023 (Bosarge v. Edney), offered from July 15, 2023.
 Kindergarten MMR coverage was 99.1% to 99.9% from 2009-10 to 2019-20, the
 highest in the country, 98.4% in 2022-23 and 97.0% in 2025-26. It was already
-slipping slowly before the order. Source for the order: Mississippi State
+slipping slowly before the order. Caution: CDC marks Mississippi's figures from
+2020-21 on as lower bounds (">="), so the true share in those years may be
+higher, and part of the slip from 99.1% (2019-20) to 98.9% (2020-21) may be a
+change in how the figure was reported. Source for the order: Mississippi State
 Department of Health notice, https://msdh.ms.gov/Page/resources/19957.pdf
 (found by search; not yet read line by line).
 

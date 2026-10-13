@@ -79,7 +79,7 @@ def main():
     v = pd.read_csv(ROOT / "data" / "vaccination.csv")
     k = v[(v.series == "kinder") & (v.vaccine == "mmr") & v.estimate.notna()]
     pw, ph, gap, ml, mt = 232, 190, 26, 44, 112
-    W, H = ml + len(RULES) * pw + (len(RULES) - 1) * gap + 16, mt + ph + 96
+    W, H = ml + len(RULES) * pw + (len(RULES) - 1) * gap + 16, mt + ph + 111
     X = lambda i, y: ml + i * (pw + gap) + (y - Y0) / (Y1 - Y0) * pw  # noqa: E731
     Y = lambda val: mt + (V1 - val) / (V1 - V0) * ph  # noqa: E731
     s = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" font-family="Helvetica Neue,Helvetica,Arial,sans-serif">',
@@ -131,6 +131,7 @@ def main():
     notes = ["Labels give the last school year before the change and 2025-26. Years run by the spring of the school year; 2010-11 has no state figures. Hollow dots are years a state",
              "did not count every school (a voluntary or partial response). Other things changed in these years too, including the 2019 measles outbreaks and the pandemic, so the",
              "chart shows what followed each rule, not what caused the change. Maine ended religious and philosophical exemptions. Connecticut let students who already had a religious exemption keep it.",
+             "Mississippi's figures from 2020-21 on are ones CDC marks as lower bounds (\"at least\"), so its true share in those years may be higher than drawn.",
              "Source: CDC SchoolVaxView, kindergarten coverage as reported by states. Chart: Data 4 The People."]
     for j, t in enumerate(notes):
         s.append(f'<text x="{ml - 30}" y="{fy + j * 15}" font-size="11.5" fill="{INK2}">{t}</text>')

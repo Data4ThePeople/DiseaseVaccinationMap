@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1324 398" width="1324" height="398" font-family="Helvetica Neue,Helvetica,Arial,sans-serif">
-<rect width="1324" height="398" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1324 413" width="1324" height="413" font-family="Helvetica Neue,Helvetica,Arial,sans-serif">
+<rect width="1324" height="413" fill="#fff"/>
 <text x="14" y="30" font-family="Georgia,serif" font-weight="700" font-size="21" fill="#121212">Measles vaccination among kindergartners, before and after five states changed their exemption rules</text>
 <text x="14" y="52" font-size="13.5" fill="#55534e">Share of kindergartners with the MMR vaccine, school years 2009-10 to 2025-26. The shaded years are under the new rule. The dashed line is 95%, the national target.</text>
 <text x="44.0" y="82" font-family="Georgia,serif" font-weight="700" font-size="16" fill="#121212">California</text>
@@ -163,5 +163,6 @@
 <text x="14" y="342" font-size="11.5" fill="#55534e">Labels give the last school year before the change and 2025-26. Years run by the spring of the school year; 2010-11 has no state figures. Hollow dots are years a state</text>
 <text x="14" y="357" font-size="11.5" fill="#55534e">did not count every school (a voluntary or partial response). Other things changed in these years too, including the 2019 measles outbreaks and the pandemic, so the</text>
 <text x="14" y="372" font-size="11.5" fill="#55534e">chart shows what followed each rule, not what caused the change. Maine ended religious and philosophical exemptions. Connecticut let students who already had a religious exemption keep it.</text>
-<text x="14" y="387" font-size="11.5" fill="#55534e">Source: CDC SchoolVaxView, kindergarten coverage as reported by states. Chart: Data 4 The People.</text>
+<text x="14" y="387" font-size="11.5" fill="#55534e">Mississippi's figures from 2020-21 on are ones CDC marks as lower bounds ("at least"), so its true share in those years may be higher than drawn.</text>
+<text x="14" y="402" font-size="11.5" fill="#55534e">Source: CDC SchoolVaxView, kindergarten coverage as reported by states. Chart: Data 4 The People.</text>
 </svg>
