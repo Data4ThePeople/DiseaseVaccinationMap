@@ -177,3 +177,9 @@ None.
   apart): lighter means higher coverage on the map tiles, legend, bar chart,
   state chart dots, ranking and county map. "No figure" is white with a gray
   outline so it can't be read as 95% or more. Tie-out passes.
+- 2026-10-14 Phone check of the gray scale. Fixed: disease dots overlapped the
+  coverage rate on small tiles (small tiles with coverage on are now a little
+  taller, so the dots get their own line, or sit in the bottom right corner);
+  the four vaccine charts on a state page were drawn at half width and
+  stretched on phones; the "states below 95%" line in the legend was cut off
+  at the right edge. No sideways scroll at 390, 500 or 700px. Tie-out passes.

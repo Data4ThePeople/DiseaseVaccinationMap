@@ -35,6 +35,7 @@ h1{font-family:var(--serif);font-weight:700;font-size:22px;line-height:1.15;marg
 .covbar b{color:var(--ink);font-weight:700}
 .covbar span{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
 .covbar i{width:12px;height:12px;border-radius:2px;display:inline-block}
+.covbar span.cnt{white-space:normal}   /* the count sentence can wrap on a phone */
 .covchart{margin:0 0 8px;grid-column:1/-1}
 .covchart h3{font-size:12px;font-weight:700;margin:0}
 .covchart svg{display:block;width:100%;overflow:visible}
@@ -457,8 +458,8 @@ function renderCovBar() {
   el.innerHTML = `<b title="On each state, the top number is reported cases and the percentage under it is this rate">Kindergartners with the measles vaccine (MMR)${c.n ? ", " + schoolYear(S.year) + " school year" : ""}</b>`
     + COV_STEPS.map(b => `<span><i style="background:${b[1]}"></i>${b[3]}</span>`).join("")
     + `<span><i style="background:${NOFIG};outline:1px solid ${NOFIG_LINE}"></i>no figure</span>`
-    + (c.n ? `<span>${c.below} of ${c.n} states below the ${COV_LEVEL}% national target${lbNote(c.belowLb)}</span>`
-           : `<span>State kindergarten figures run from ${schoolYear(COV_YEARS[0])} to ${schoolYear(COV_YEARS[COV_YEARS.length - 1])}; move the year there to color the map</span>`);
+    + (c.n ? `<span class="cnt">${c.below} of ${c.n} states below the ${COV_LEVEL}% national target${lbNote(c.belowLb)}</span>`
+           : `<span class="cnt">State kindergarten figures run from ${schoolYear(COV_YEARS[0])} to ${schoolYear(COV_YEARS[COV_YEARS.length - 1])}; move the year there to color the map</span>`);
 }
 function covChart(width) {
   const W = Math.max(160, width), H = 74, ml = 22, mb = 13, mt = 4, ys = COV_YEARS, bw = (W - ml) / ys.length;
@@ -488,7 +489,8 @@ function layoutMap() {
     const byW = (main.clientWidth - 280 - 20 - gap * (cols - 1)) / cols;
     tw = Math.max(34, Math.min(byH, byW));
   } else { col.style.width = ""; tw = (main.clientWidth - gap * (cols - 1)) / cols; }
-  const th = tw * RATIO, W = cols * tw + (cols - 1) * gap, H = rows * th + (rows - 1) * gap;
+  // small tiles with coverage on get taller, so the disease dots have a line of their own under the rate
+  const th = tw * (S.cov && tw < 56 ? 1.08 : RATIO), W = cols * tw + (cols - 1) * gap, H = rows * th + (rows - 1) * gap;
   if (fit) col.style.width = W + "px";
   $("map").style.width = W + "px";
   GEO = { W, H, tw, th, gap };
@@ -541,26 +543,32 @@ function drawMap() {
     let tf = fs;
     while (tot && tf > 6 && codeW + ctx.measureText(tot).width + 3 > tw - pad * 2) { tf -= 0.5; ctx.font = `${tf}px Helvetica Neue,Helvetica,Arial,sans-serif`; }
     ctx.fillStyle = !any ? (cv ? "#8a8780" : "#a9a6a0") : "#121212"; ctx.fillText(tot, x + tw - pad, y + pad + (fs - tf) * 0.8);
-    let top = y + pad + fs + 3;
+    let top = y + pad + fs + 3, cvLine = false;
     if (cv) {
       const cf = Math.max(7.5, fs - 1);
       ctx.font = `700 ${cf}px Helvetica Neue,Helvetica,Arial,sans-serif`; ctx.fillStyle = covStep(cv[0])[4];
       // small tiles drop the % sign but keep one decimal, so the number never disagrees with the color
-      ctx.fillText(tw < 56 ? (cv[4] ? "\u2265" : "") + cv[0].toFixed(1) : pct(cv), x + tw - pad, top - 1);
-      if (!marks.length) top += cf + 1;
+      const rt = tw < 56 ? (cv[4] ? "\u2265" : "") + cv[0].toFixed(1) : pct(cv);
+      ctx.fillText(rt, x + tw - pad, top - 1);
+      // the dots share the rate's line only when both fit; otherwise they move to the bottom right corner
+      const mw = marks.length * (Math.max(1.5, Math.min(2.6, tw * 0.035)) * 2 + 2);
+      if (!marks.length || mw + ctx.measureText(rt).width + 2 > tw - pad * 2) { top += cf + 1; cvLine = true; }
     }
     if (!any) continue;
+    let figW = tw - pad * 2;
     if (marks.length) {
-      const r = Math.max(1.5, Math.min(2.6, tw * 0.035)), step = r * 2 + 2;
+      const r = Math.max(1.5, Math.min(2.6, tw * 0.035)), step = r * 2 + 2, corner = cvLine;
+      const mx = corner ? x + tw - pad - marks.length * step + 2 : x + pad, my = corner ? y + th - pad - r * 2 : top;
+      if (corner) figW -= marks.length * step + 1;
       marks.forEach((m, i) => {
-        ctx.beginPath(); ctx.arc(x + pad + r + i * step, top + r, r - (m.ring ? 0.5 : 0), 0, Math.PI * 2);
+        ctx.beginPath(); ctx.arc(mx + r + i * step, my + r, r - (m.ring ? 0.5 : 0), 0, Math.PI * 2);
         ctx.globalAlpha = m.alpha || 1;
         if (m.ring) { ctx.strokeStyle = m.color; ctx.lineWidth = 1; ctx.stroke(); } else { ctx.fillStyle = m.color; ctx.fill(); }
         ctx.globalAlpha = 1;
       });
-      top += Math.max(r * 2 + 2, cv ? Math.max(7.5, fs - 1) + 1 : 0);
+      if (!corner) top += Math.max(r * 2 + 2, cv ? Math.max(7.5, fs - 1) + 1 : 0);
     }
-    drawFigures(ctx, figures(items), x + pad, top, tw - pad * 2, y + th - pad - top, Math.max(3.2, tw * 0.1), "bottom");
+    drawFigures(ctx, figures(items), x + pad, top, figW, y + th - pad - top, Math.max(3.2, tw * 0.1), "bottom");
   }
 }
 
@@ -739,7 +747,9 @@ function renderState() {
   $("kpis").innerHTML = kpiHtml(st);
   $("scov").innerHTML = stateCovChart(st, $("scov").clientWidth);
   $("skey").innerHTML = KEYLINE(true);
-  $("scharts").innerHTML = vaxKeys().map(vk => vaxChart(vk, st, ($("scharts").clientWidth - 16) / 2)).join("");
+  // drawn at the width of its grid column: two side by side, one on phones
+  const sc = $("scharts"), scols = getComputedStyle(sc).gridTemplateColumns.split(" ").filter(Boolean).length || 1;
+  sc.innerHTML = vaxKeys().map(vk => vaxChart(vk, st, (sc.clientWidth - 16 * (scols - 1)) / scols)).join("");
 }
 /* kindergarten MMR coverage in one state, every school year with a figure, against 95% and the U.S. figure,
    with the state's measles cases under each year */
