@@ -111,6 +111,15 @@ October 14, 2026 from earlier "before" years such as 2013-14):
 | Connecticut | Public Act 21-6, in effect April 28, 2021; preschoolers with an exemption had until September 1, 2022, so 2022-23 is the first kindergarten class fully under it | 95.7% (2021-22) | 97.3% (2022-23) | 98.6% |
 | Mississippi | Religious exemption added by court order, April 2023 | >=98.4% (2022-23) | >=97.5% (2023-24) | >=97.0% |
 
+Disneyland timing, checked October 14, 2026 against the original sources: the
+outbreak's exposures were at the Disney parks December 17-20, 2014, and the
+California Department of Public Health was notified January 5, 2015 (CDC, MMWR
+64(06), "Measles Outbreak — California, December 2014–February 2015",
+https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6406a5.htm). SB 277 was introduced
+February 19, 2015, while the outbreak was being reported
+(https://www.leginfo.ca.gov/pub/15-16/bill/sen/sb_0251-0300/sb_277_bill_20150219_introduced.htm),
+and signed June 30, 2015, about six months after the exposures.
+
 \* Not a count of every school that year. New York's share of kindergartners
 with any exemption fell from 1.3% (2018-19) to 0.1% (2019-20).
 

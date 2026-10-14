@@ -167,3 +167,7 @@ None.
   under it), and the phone layout (rail charts hidden or overflowing, tile
   labels colliding, rates rounded against their color). The meaning of the
   mark is confirmed in CDC's MMWR table notes.
+- 2026-10-14 Disneyland timing checked against the original sources (CDC
+  MMWR 64(06); SB 277 as introduced): exposures December 17-20, 2014; bill
+  introduced February 19, 2015; signed June 30, 2015. "Months after the
+  Disneyland outbreak" holds. All five rule claims are now checked at source.
