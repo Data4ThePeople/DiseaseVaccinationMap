@@ -18,16 +18,16 @@ OUT = ROOT / "analysis" / "charts"
 RULES = [  # state, name, first school year under the new rule (spring year), what changed, source
     ("CA", "California", 2017, "Ended personal belief exemptions",
      "SB 277, signed June 30, 2015; applied to school entry from July 1, 2016",
-     "https://www.leginfo.ca.gov/pub/15-16/bill/sen/sb_0251-0300/sb_277_bill_20150618_amended_asm_v93.htm"),
+     "https://www.leginfo.ca.gov/pub/15-16/bill/sen/sb_0251-0300/sb_277_bill_20150630_chaptered.htm"),
     ("NY", "New York", 2020, "Ended its religious exemption",
      "Signed June 13, 2019, in effect at once",
-     "https://bsk.com/news-insights/a-repeal-of-the-religious-exemption-to-vaccinationsnbsp"),
+     "https://www.nysenate.gov/legislation/bills/2019/S2994"),
     ("ME", "Maine", 2022, "Ended non-medical exemptions",
      "Public Law 2019, ch. 154 (LD 798); upheld by voters in March 2020; in effect September 1, 2021",
-     "https://www1.maine.gov/dhhs/mecdc/infectious-disease/immunization/maine-vaccine-exemption-law-changes.shtml"),
+     "https://legislature.maine.gov/legis/bills/bills_129th/chapters/PUBLIC154.asp"),
     ("CT", "Connecticut", 2023, "Ended its religious exemption",
-     "Signed April 2021; in effect with the 2022-23 school year; students who already had one kept it",
-     "https://www.foxnews.com/us/connecticut-ends-religious-vaccine-exemption"),
+     "Public Act 21-6, signed and in effect April 28, 2021; K-12 students who already had one kept it; preschoolers who had one had until September 1, 2022, so 2022-23 is the first kindergarten class fully under the rule",
+     "https://www.cga.ct.gov/2021/ACT/PA/PDF/2021PA-00006-R00HB-06423-PA.PDF"),
     ("MS", "Mississippi", 2024, "Added a religious exemption",
      "Federal court order, April 2023 (Bosarge v. Edney); exemption offered from July 15, 2023",
      "https://msdh.ms.gov/Page/resources/19957.pdf"),
@@ -79,7 +79,7 @@ def main():
     v = pd.read_csv(ROOT / "data" / "vaccination.csv")
     k = v[(v.series == "kinder") & (v.vaccine == "mmr") & v.estimate.notna()]
     pw, ph, gap, ml, mt = 232, 190, 26, 44, 112
-    W, H = ml + len(RULES) * pw + (len(RULES) - 1) * gap + 16, mt + ph + 111
+    W, H = ml + len(RULES) * pw + (len(RULES) - 1) * gap + 16, mt + ph + 126
     X = lambda i, y: ml + i * (pw + gap) + (y - Y0) / (Y1 - Y0) * pw  # noqa: E731
     Y = lambda val: mt + (V1 - val) / (V1 - V0) * ph  # noqa: E731
     s = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" font-family="Helvetica Neue,Helvetica,Arial,sans-serif">',
@@ -130,8 +130,9 @@ def main():
     fy = mt + ph + 40
     notes = ["Labels give the last school year before the change and 2025-26. Years run by the spring of the school year; 2010-11 has no state figures. Hollow dots are years a state",
              "did not count every school (a voluntary or partial response). Other things changed in these years too, including the 2019 measles outbreaks and the pandemic, so the",
-             "chart shows what followed each rule, not what caused the change. Maine ended religious and philosophical exemptions. Connecticut let students who already had a religious exemption keep it.",
-             "Mississippi's figures from 2020-21 on are ones CDC marks as lower bounds (\"at least\"), so its true share in those years may be higher than drawn.",
+             "chart shows what followed each rule, not what caused the change. Maine ended religious and philosophical exemptions. Connecticut's law took effect April 28, 2021, but",
+             "students who already had a religious exemption kept it, and preschoolers who had one had until September 1, 2022, so 2022-23 is its first kindergarten class fully under the rule.",
+             "CDC marks every Mississippi figure as a lower bound (\"at least\"): the state counted a child only if up to date on every required vaccine, so its true share may be higher than drawn.",
              "Source: CDC SchoolVaxView, kindergarten coverage as reported by states. Chart: Data 4 The People."]
     for j, t in enumerate(notes):
         s.append(f'<text x="{ml - 30}" y="{fy + j * 15}" font-size="11.5" fill="{INK2}">{t}</text>')

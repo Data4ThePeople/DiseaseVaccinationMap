@@ -59,9 +59,10 @@ def kinder():
         "label": k["School Year"] + " school year", "estimate": est, "lo": pd.NA, "hi": pd.NA,
         "n": pd.to_numeric(k["Population Size"], errors="coerce"), "method": k["Survey Type"].str.strip(),
         "pct_surveyed": pd.to_numeric(k["Percent Surveyed"], errors="coerce"),
-        # CDC marks some estimates ">=" in the Footnotes column: the state's figure is a lower bound
-        # ("at least"), so the true share may be higher. Kept as a flag so the page can say so.
-        "flag": k["Estimate (%)"].where(est.isna(), k.Footnotes.str.contains(">=").map({True: ">=", False: ""})),
+        # CDC marks some estimates in the Footnotes column, as "≥" for 2009-10 to 2019-20 and ">=" from
+        # 2020-21: the state counted a child only if up to date on all required vaccines, so the figure
+        # is a lower bound ("at least") and the true share may be higher. Kept as a flag so the page can say so.
+        "flag": k["Estimate (%)"].where(est.isna(), k.Footnotes.str.contains(">=|\u2265").map({True: ">=", False: ""})),
     })
 
 

@@ -1,18 +1,18 @@
 Kindergarten MMR coverage, last school year before the rule change and after
 
-California: ended personal belief exemptions, first school year 2016-17. SB 277, signed June 30, 2015; applied to school entry from July 1, 2016. Source: https://www.leginfo.ca.gov/pub/15-16/bill/sen/sb_0251-0300/sb_277_bill_20150618_amended_asm_v93.htm
+California: ended personal belief exemptions, first school year 2016-17. SB 277, signed June 30, 2015; applied to school entry from July 1, 2016. Source: https://www.leginfo.ca.gov/pub/15-16/bill/sen/sb_0251-0300/sb_277_bill_20150630_chaptered.htm
   2015-16 (last year before): 94.5%   2016-17: 97.3%   2025-26 (latest): 95.7%   change, last year before to latest: +1.2 points
   school years not a count of all schools: none
 
-New York: ended its religious exemption, first school year 2019-20. Signed June 13, 2019, in effect at once. Source: https://bsk.com/news-insights/a-repeal-of-the-religious-exemption-to-vaccinationsnbsp
+New York: ended its religious exemption, first school year 2019-20. Signed June 13, 2019, in effect at once. Source: https://www.nysenate.gov/legislation/bills/2019/S2994
   2018-19 (last year before): 97.2%   2019-20: 98.6%   2025-26 (latest): 97.7%   change, last year before to latest: +0.5 points
   school years not a count of all schools: 2020-21, 2022-23, 2024-25, 2025-26
 
-Maine: ended non-medical exemptions, first school year 2021-22. Public Law 2019, ch. 154 (LD 798); upheld by voters in March 2020; in effect September 1, 2021. Source: https://www1.maine.gov/dhhs/mecdc/infectious-disease/immunization/maine-vaccine-exemption-law-changes.shtml
+Maine: ended non-medical exemptions, first school year 2021-22. Public Law 2019, ch. 154 (LD 798); upheld by voters in March 2020; in effect September 1, 2021. Source: https://legislature.maine.gov/legis/bills/bills_129th/chapters/PUBLIC154.asp
   2020-21 (last year before): 94.3%   2021-22: 96.7%   2025-26 (latest): 98.0%   change, last year before to latest: +3.7 points
   school years not a count of all schools: 2009-10, 2013-14, 2014-15, 2016-17, 2020-21
 
-Connecticut: ended its religious exemption, first school year 2022-23. Signed April 2021; in effect with the 2022-23 school year; students who already had one kept it. Source: https://www.foxnews.com/us/connecticut-ends-religious-vaccine-exemption
+Connecticut: ended its religious exemption, first school year 2022-23. Public Act 21-6, signed and in effect April 28, 2021; K-12 students who already had one kept it; preschoolers who had one had until September 1, 2022, so 2022-23 is the first kindergarten class fully under the rule. Source: https://www.cga.ct.gov/2021/ACT/PA/PDF/2021PA-00006-R00HB-06423-PA.PDF
   2021-22 (last year before): 95.7%   2022-23: 97.3%   2025-26 (latest): 98.6%   change, last year before to latest: +2.9 points
   school years not a count of all schools: none
 

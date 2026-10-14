@@ -557,15 +557,20 @@ The number of states with a figure changes by year (43 to 51), so the chart
 gives counts, and the line under it says how many states reported. For
 2024-25, 39 of 49 states with a figure were below 95% and 15 were below 90%
 (Montana and West Virginia have no figure); for 2019-20 it was 28 of 48 and 3.
-There are no state figures for 2010-11. From 2020-21, CDC's file marks some
-states' estimates ">=" in its Footnotes column (six states for MMR in 2024-25:
+There are no state figures for 2010-11. CDC's file marks some
+states' estimates in its Footnotes column, as "≥" for 2009-10 to 2019-20 and
+">=" from 2020-21 (six states for MMR in 2024-25:
 Florida, Georgia, Iowa, Mississippi, New Hampshire and New Jersey). The page
 treats that as a lower bound, shows the figure with a "≥" or "at least", and
 says how many of the states below each level carry the mark (2024-25: 5 of the
 39 below 95%, and 4 of the 15 below 90%). The dataset's own notes do not define
 the mark; CDC's yearly kindergarten reports describe such figures as lower
 bounds because the state reported children up to date on all required vaccines
-at once. That reading still needs checking against CDC's current table notes.
+at once. The MMWR table notes confirm it: "Estimates based on a completed
+vaccination series (i.e., not vaccine specific) use the '≥' symbol"
+(https://www.cdc.gov/mmwr/volumes/70/wr/mm7003a2.htm, checked by the October 14,
+2026 tie-out). Each state page's chart runs to the latest school year in CDC's
+file (2025-26), one year past the map's last year of case counts.
 This is coverage in one age group as states reported it, by a count of all
 schools in some states and a sample in others. It is not a measure of immunity
 in the whole population. The "States ranked" panel under the map orders the

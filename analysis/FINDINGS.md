@@ -108,7 +108,7 @@ October 14, 2026 from earlier "before" years such as 2013-14):
 | California | SB 277, June 30, 2015, after the Disneyland outbreak; applied July 1, 2016 | 94.5% (2015-16) | 97.3% (2016-17) | 95.7% |
 | New York | Signed June 13, 2019, during a year with 911 measles cases | 97.2% (2018-19) | 98.6% (2019-20) | 97.7%* |
 | Maine | Public Law 2019, ch. 154, in effect September 1, 2021 | 94.3%* (2020-21) | 96.7% (2021-22) | 98.0% |
-| Connecticut | Public Act 21-6, April 28, 2021, in effect 2022-23 | 95.7% (2021-22) | 97.3% (2022-23) | 98.6% |
+| Connecticut | Public Act 21-6, in effect April 28, 2021; preschoolers with an exemption had until September 1, 2022, so 2022-23 is the first kindergarten class fully under it | 95.7% (2021-22) | 97.3% (2022-23) | 98.6% |
 | Mississippi | Religious exemption added by court order, April 2023 | >=98.4% (2022-23) | >=97.5% (2023-24) | >=97.0% |
 
 \* Not a count of every school that year. New York's share of kindergartners
@@ -128,12 +128,16 @@ exemptions from 1979 (Brown v. Stone) until a federal court ordered a religious
 exemption in April 2023 (Bosarge v. Edney), offered from July 15, 2023.
 Kindergarten MMR coverage was 99.1% to 99.9% from 2009-10 to 2019-20, the
 highest in the country, 98.4% in 2022-23 and 97.0% in 2025-26. It was already
-slipping slowly before the order. Caution: CDC marks Mississippi's figures from
-2020-21 on as lower bounds (">="), so the true share in those years may be
-higher, and part of the slip from 99.1% (2019-20) to 98.9% (2020-21) may be a
-change in how the figure was reported. Source for the order: Mississippi State
-Department of Health notice, https://msdh.ms.gov/Page/resources/19957.pdf
-(found by search; not yet read line by line).
+slipping slowly before the order. Caution: CDC marks every Mississippi figure
+from 2009-10 on as a lower bound ("≥" to 2019-20, ">=" from 2020-21), because
+the state counted a child only if up to date on every required vaccine (MMWR
+kindergarten reports, for example
+https://www.cdc.gov/mmwr/volumes/70/wr/mm7003a2.htm), so the true share may be
+higher in every year. (Corrected October 14, 2026; this note earlier said the
+mark began in 2020-21.) Source for the order: Mississippi State Department of
+Health notice, https://msdh.ms.gov/Page/resources/19957.pdf, and the court's
+order of April 18, 2023 (Bosarge v. Edney, S.D. Miss. No. 1:22-cv-00233, Doc.
+77), both read by the October 14 tie-out.
 
 All four laws are in the verified milestone files with their URLs. Washington
 removed the personal exemption for MMR in May 2019 after the Clark County

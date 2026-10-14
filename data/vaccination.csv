@@ -14,17 +14,17 @@ kinder,dtap,AK,2023,2022-23 school year,83.8,,,9650.0,"Vol. response (pub.), not
 kinder,dtap,AK,2024,2023-24 school year,83.8,,,8644.0,"Census (pub.), not conducted (prv.)",88.9,
 kinder,dtap,AK,2025,2024-25 school year,82.2,,,7338.0,"Census (pub.), not conducted (prv.)",99.8,
 kinder,dtap,AK,2026,2025-26 school year,89.7,,,8253.0,"Vol. response (public), not conducted (private)",60.9,
-kinder,dtap,AL,2010,2009-10 school year,94.0,,,75358.0,Census,100.0,
+kinder,dtap,AL,2010,2009-10 school year,94.0,,,75358.0,Census,100.0,>=
 kinder,dtap,AL,2011,2010-11 school year,,,,,,,
-kinder,dtap,AL,2012,2011-12 school year,93.6,,,73190.0,Census,100.0,
-kinder,dtap,AL,2013,2012-13 school year,92.8,,,72929.0,Census,100.0,
-kinder,dtap,AL,2014,2013-14 school year,92.0,,,76927.0,Census,100.0,
-kinder,dtap,AL,2015,2014-15 school year,93.5,,,59660.0,Census,100.0,
-kinder,dtap,AL,2016,2015-16 school year,93.1,,,60392.0,Census,100.0,
-kinder,dtap,AL,2017,2016-17 school year,93.8,,,58394.0,Census,100.0,
-kinder,dtap,AL,2018,2017-18 school year,92.7,,,57245.0,Census,100.0,
-kinder,dtap,AL,2019,2018-19 school year,90.6,,,77739.0,Census,100.0,
-kinder,dtap,AL,2020,2019-20 school year,86.6,,,59477.0,Census,94.9,
+kinder,dtap,AL,2012,2011-12 school year,93.6,,,73190.0,Census,100.0,>=
+kinder,dtap,AL,2013,2012-13 school year,92.8,,,72929.0,Census,100.0,>=
+kinder,dtap,AL,2014,2013-14 school year,92.0,,,76927.0,Census,100.0,>=
+kinder,dtap,AL,2015,2014-15 school year,93.5,,,59660.0,Census,100.0,>=
+kinder,dtap,AL,2016,2015-16 school year,93.1,,,60392.0,Census,100.0,>=
+kinder,dtap,AL,2017,2016-17 school year,93.8,,,58394.0,Census,100.0,>=
+kinder,dtap,AL,2018,2017-18 school year,92.7,,,57245.0,Census,100.0,>=
+kinder,dtap,AL,2019,2018-19 school year,90.6,,,77739.0,Census,100.0,>=
+kinder,dtap,AL,2020,2019-20 school year,86.6,,,59477.0,Census,94.9,>=
 kinder,dtap,AL,2021,2020-21 school year,94.7,,,56974.0,Census,100.0,>=
 kinder,dtap,AL,2022,2021-22 school year,94.9,,,60332.0,Census,100.0,>=
 kinder,dtap,AL,2023,2022-23 school year,93.9,,,59113.0,Census,100.0,>=
@@ -132,9 +132,9 @@ kinder,dtap,DC,2025,2024-25 school year,90.3,,,7997.0,Census,100.0,
 kinder,dtap,DC,2026,2025-26 school year,93.6,,,7871.0,Census,100.0,
 kinder,dtap,DE,2010,2009-10 school year,89.6,,,11327.0,Random sample,9.2,
 kinder,dtap,DE,2011,2010-11 school year,,,,,,,
-kinder,dtap,DE,2012,2011-12 school year,96.9,,,11327.0,2-stage Cluster Sample,7.4,
-kinder,dtap,DE,2013,2012-13 school year,95.7,,,11997.0,2-stage Cluster Sample,7.8,
-kinder,dtap,DE,2014,2013-14 school year,96.4,,,11997.0,Stratified  2-stage cluster sample,12.2,
+kinder,dtap,DE,2012,2011-12 school year,96.9,,,11327.0,2-stage Cluster Sample,7.4,>=
+kinder,dtap,DE,2013,2012-13 school year,95.7,,,11997.0,2-stage Cluster Sample,7.8,>=
+kinder,dtap,DE,2014,2013-14 school year,96.4,,,11997.0,Stratified  2-stage cluster sample,12.2,>=
 kinder,dtap,DE,2015,2014-15 school year,97.7,,,11476.0,Stratified 2-stage cluster sample,7.9,
 kinder,dtap,DE,2016,2015-16 school year,98.0,,,11589.0,Stratified 2-stage cluster sample,9.5,
 kinder,dtap,DE,2017,2016-17 school year,98.7,,,11490.0,Stratified 2-stage cluster sample,9.3,
@@ -147,17 +147,17 @@ kinder,dtap,DE,2023,2022-23 school year,93.8,,,10674.0,Stratified 2-stage cluste
 kinder,dtap,DE,2024,2023-24 school year,93.8,,,11043.0,Stratified 2-stage cluster sample,12.1,>=
 kinder,dtap,DE,2025,2024-25 school year,94.8,,,10393.0,"2-stage cluster sample (pub.), nonrandom 2-stage cluster sample (prv.)",14.2,
 kinder,dtap,DE,2026,2025-26 school year,95.2,,,10729.0,"2-stage cluster sample (pub.), nonrandom 2-stage cluster sample (prv.)",12.9,
-kinder,dtap,FL,2010,2009-10 school year,91.3,,,218630.0,Census,100.0,
+kinder,dtap,FL,2010,2009-10 school year,91.3,,,218630.0,Census,100.0,>=
 kinder,dtap,FL,2011,2010-11 school year,,,,,,,
-kinder,dtap,FL,2012,2011-12 school year,92.6,,,225532.0,Census,100.0,
-kinder,dtap,FL,2013,2012-13 school year,92.1,,,234628.0,Census,100.0,
-kinder,dtap,FL,2014,2013-14 school year,93.2,,,233797.0,Census,100.0,
-kinder,dtap,FL,2015,2014-15 school year,93.3,,,228982.0,Census,100.0,
-kinder,dtap,FL,2016,2015-16 school year,93.7,,,224430.0,Census,100.0,
-kinder,dtap,FL,2017,2016-17 school year,94.1,,,224463.0,Census,100.0,
-kinder,dtap,FL,2018,2017-18 school year,93.7,,,222397.0,Census,100.0,
-kinder,dtap,FL,2019,2018-19 school year,93.8,,,224641.0,Census,100.0,
-kinder,dtap,FL,2020,2019-20 school year,93.5,,,228298.0,Census,100.0,
+kinder,dtap,FL,2012,2011-12 school year,92.6,,,225532.0,Census,100.0,>=
+kinder,dtap,FL,2013,2012-13 school year,92.1,,,234628.0,Census,100.0,>=
+kinder,dtap,FL,2014,2013-14 school year,93.2,,,233797.0,Census,100.0,>=
+kinder,dtap,FL,2015,2014-15 school year,93.3,,,228982.0,Census,100.0,>=
+kinder,dtap,FL,2016,2015-16 school year,93.7,,,224430.0,Census,100.0,>=
+kinder,dtap,FL,2017,2016-17 school year,94.1,,,224463.0,Census,100.0,>=
+kinder,dtap,FL,2018,2017-18 school year,93.7,,,222397.0,Census,100.0,>=
+kinder,dtap,FL,2019,2018-19 school year,93.8,,,224641.0,Census,100.0,>=
+kinder,dtap,FL,2020,2019-20 school year,93.5,,,228298.0,Census,100.0,>=
 kinder,dtap,FL,2021,2020-21 school year,93.3,,,207026.0,Census,100.0,>=
 kinder,dtap,FL,2022,2021-22 school year,91.7,,,229432.0,Census,97.8,>=
 kinder,dtap,FL,2023,2022-23 school year,90.6,,,230309.0,Census,97.7,>=
@@ -167,14 +167,14 @@ kinder,dtap,FL,2026,2025-26 school year,88.9,,,213535.0,Census,100.0,>=
 kinder,dtap,GA,2010,2009-10 school year,99.9,,,141949.0,Random sample,1.2,
 kinder,dtap,GA,2011,2010-11 school year,,,,,,,
 kinder,dtap,GA,2012,2011-12 school year,96.7,,,143065.0,2-stage Cluster Sample,1.9,
-kinder,dtap,GA,2013,2012-13 school year,95.1,,,142732.0,2-stage Cluster Sample,2.4,
-kinder,dtap,GA,2014,2013-14 school year,94.0,,,143988.0,Census,100.0,
-kinder,dtap,GA,2015,2014-15 school year,94.0,,,139471.0,Census,100.0,
-kinder,dtap,GA,2016,2015-16 school year,94.6,,,131403.0,Census,100.0,
-kinder,dtap,GA,2017,2016-17 school year,93.3,,,136165.0,Census,100.0,
-kinder,dtap,GA,2018,2017-18 school year,93.4,,,131459.0,Census,100.0,
-kinder,dtap,GA,2019,2018-19 school year,93.6,,,131275.0,Census,100.0,
-kinder,dtap,GA,2020,2019-20 school year,93.1,,,130102.0,Census,100.0,
+kinder,dtap,GA,2013,2012-13 school year,95.1,,,142732.0,2-stage Cluster Sample,2.4,>=
+kinder,dtap,GA,2014,2013-14 school year,94.0,,,143988.0,Census,100.0,>=
+kinder,dtap,GA,2015,2014-15 school year,94.0,,,139471.0,Census,100.0,>=
+kinder,dtap,GA,2016,2015-16 school year,94.6,,,131403.0,Census,100.0,>=
+kinder,dtap,GA,2017,2016-17 school year,93.3,,,136165.0,Census,100.0,>=
+kinder,dtap,GA,2018,2017-18 school year,93.4,,,131459.0,Census,100.0,>=
+kinder,dtap,GA,2019,2018-19 school year,93.6,,,131275.0,Census,100.0,>=
+kinder,dtap,GA,2020,2019-20 school year,93.1,,,130102.0,Census,100.0,>=
 kinder,dtap,GA,2021,2020-21 school year,88.5,,,83191.0,Census,100.0,>=
 kinder,dtap,GA,2022,2021-22 school year,83.2,,,118742.0,Census,100.0,>=
 kinder,dtap,GA,2023,2022-23 school year,88.1,,,123771.0,Census,100.0,>=
@@ -198,17 +198,17 @@ kinder,dtap,HI,2023,2022-23 school year,87.0,,,13195.0,Stratified 2-stage cluste
 kinder,dtap,HI,2024,2023-24 school year,89.4,,,13995.0,Stratified 2-stage cluster sample,8.2,
 kinder,dtap,HI,2025,2024-25 school year,92.0,,,13804.0,Stratified 2-stage cluster sample,10.5,
 kinder,dtap,HI,2026,2025-26 school year,88.8,,,13791.0,Stratified 2-stage cluster sample,11.7,
-kinder,dtap,IA,2010,2009-10 school year,84.5,,,42698.0,Census,100.0,
+kinder,dtap,IA,2010,2009-10 school year,84.5,,,42698.0,Census,100.0,>=
 kinder,dtap,IA,2011,2010-11 school year,,,,,,,
-kinder,dtap,IA,2012,2011-12 school year,91.1,,,40978.0,Census,100.0,
-kinder,dtap,IA,2013,2012-13 school year,90.5,,,41701.0,Census,99.9,
-kinder,dtap,IA,2014,2013-14 school year,91.0,,,43728.0,Census,94.6,
-kinder,dtap,IA,2015,2014-15 school year,91.9,,,43239.0,Census,96.3,
-kinder,dtap,IA,2016,2015-16 school year,91.8,,,41215.0,Census,100.0,
-kinder,dtap,IA,2017,2016-17 school year,92.6,,,39587.0,Census,100.0,
-kinder,dtap,IA,2018,2017-18 school year,93.0,,,39632.0,Census,100.0,
-kinder,dtap,IA,2019,2018-19 school year,93.3,,,40624.0,Census,100.0,
-kinder,dtap,IA,2020,2019-20 school year,93.2,,,40812.0,Census,100.0,
+kinder,dtap,IA,2012,2011-12 school year,91.1,,,40978.0,Census,100.0,>=
+kinder,dtap,IA,2013,2012-13 school year,90.5,,,41701.0,Census,99.9,>=
+kinder,dtap,IA,2014,2013-14 school year,91.0,,,43728.0,Census,94.6,>=
+kinder,dtap,IA,2015,2014-15 school year,91.9,,,43239.0,Census,96.3,>=
+kinder,dtap,IA,2016,2015-16 school year,91.8,,,41215.0,Census,100.0,>=
+kinder,dtap,IA,2017,2016-17 school year,92.6,,,39587.0,Census,100.0,>=
+kinder,dtap,IA,2018,2017-18 school year,93.0,,,39632.0,Census,100.0,>=
+kinder,dtap,IA,2019,2018-19 school year,93.3,,,40624.0,Census,100.0,>=
+kinder,dtap,IA,2020,2019-20 school year,93.2,,,40812.0,Census,100.0,>=
 kinder,dtap,IA,2021,2020-21 school year,93.4,,,39141.0,Census,100.0,>=
 kinder,dtap,IA,2022,2021-22 school year,90.6,,,40111.0,Census,100.0,>=
 kinder,dtap,IA,2023,2022-23 school year,89.9,,,39178.0,Census,100.0,>=
@@ -419,17 +419,17 @@ kinder,dtap,MO,2023,2022-23 school year,91.1,,,69126.0,Census,100.0,
 kinder,dtap,MO,2024,2023-24 school year,90.5,,,69014.0,Census,100.0,
 kinder,dtap,MO,2025,2024-25 school year,90.0,,,68163.0,Census,100.0,
 kinder,dtap,MO,2026,2025-26 school year,88.8,,,66610.0,Census,100.0,
-kinder,dtap,MS,2010,2009-10 school year,99.7,,,46922.0,Census,100.0,
+kinder,dtap,MS,2010,2009-10 school year,99.7,,,46922.0,Census,100.0,>=
 kinder,dtap,MS,2011,2010-11 school year,,,,,,,
-kinder,dtap,MS,2012,2011-12 school year,99.2,,,44912.0,Census,100.0,
-kinder,dtap,MS,2013,2012-13 school year,99.9,,,46595.0,Census,100.0,
-kinder,dtap,MS,2014,2013-14 school year,99.7,,,45719.0,Census,100.0,
-kinder,dtap,MS,2015,2014-15 school year,99.2,,,44129.0,Census,100.0,
-kinder,dtap,MS,2016,2015-16 school year,99.4,,,41042.0,Census,100.0,
-kinder,dtap,MS,2017,2016-17 school year,99.4,,,40509.0,Census,100.0,
-kinder,dtap,MS,2018,2017-18 school year,99.4,,,39284.0,Census,100.0,
-kinder,dtap,MS,2019,2018-19 school year,99.2,,,37775.0,Census,100.0,
-kinder,dtap,MS,2020,2019-20 school year,99.1,,,37870.0,Census,100.0,
+kinder,dtap,MS,2012,2011-12 school year,99.2,,,44912.0,Census,100.0,>=
+kinder,dtap,MS,2013,2012-13 school year,99.9,,,46595.0,Census,100.0,>=
+kinder,dtap,MS,2014,2013-14 school year,99.7,,,45719.0,Census,100.0,>=
+kinder,dtap,MS,2015,2014-15 school year,99.2,,,44129.0,Census,100.0,>=
+kinder,dtap,MS,2016,2015-16 school year,99.4,,,41042.0,Census,100.0,>=
+kinder,dtap,MS,2017,2016-17 school year,99.4,,,40509.0,Census,100.0,>=
+kinder,dtap,MS,2018,2017-18 school year,99.4,,,39284.0,Census,100.0,>=
+kinder,dtap,MS,2019,2018-19 school year,99.2,,,37775.0,Census,100.0,>=
+kinder,dtap,MS,2020,2019-20 school year,99.1,,,37870.0,Census,100.0,>=
 kinder,dtap,MS,2021,2020-21 school year,98.9,,,34028.0,Census,100.0,>=
 kinder,dtap,MS,2022,2021-22 school year,98.6,,,36524.0,Census,100.0,>=
 kinder,dtap,MS,2023,2022-23 school year,98.4,,,36048.0,Census,100.0,>=
@@ -503,13 +503,13 @@ kinder,dtap,NH,2010,2009-10 school year,,,,,Not conducted,,
 kinder,dtap,NH,2011,2010-11 school year,,,,,,,
 kinder,dtap,NH,2012,2011-12 school year,,,,13022.0,Census,100.0,
 kinder,dtap,NH,2013,2012-13 school year,,,,12943.0,Census,99.2,
-kinder,dtap,NH,2014,2013-14 school year,94.7,,,13240.0,Census,100.0,
-kinder,dtap,NH,2015,2014-15 school year,91.4,,,12422.0,Census (public); Voluntary response (private),98.9,
-kinder,dtap,NH,2016,2015-16 school year,91.9,,,11852.0,Census,99.8,
-kinder,dtap,NH,2017,2016-17 school year,91.5,,,12145.0,Census,100.0,
-kinder,dtap,NH,2018,2017-18 school year,92.4,,,12165.0,Census,100.0,
-kinder,dtap,NH,2019,2018-19 school year,91.8,,,12421.0,Census,100.0,
-kinder,dtap,NH,2020,2019-20 school year,91.5,,,12447.0,Census,100.0,
+kinder,dtap,NH,2014,2013-14 school year,94.7,,,13240.0,Census,100.0,>=
+kinder,dtap,NH,2015,2014-15 school year,91.4,,,12422.0,Census (public); Voluntary response (private),98.9,>=
+kinder,dtap,NH,2016,2015-16 school year,91.9,,,11852.0,Census,99.8,>=
+kinder,dtap,NH,2017,2016-17 school year,91.5,,,12145.0,Census,100.0,>=
+kinder,dtap,NH,2018,2017-18 school year,92.4,,,12165.0,Census,100.0,>=
+kinder,dtap,NH,2019,2018-19 school year,91.8,,,12421.0,Census,100.0,>=
+kinder,dtap,NH,2020,2019-20 school year,91.5,,,12447.0,Census,100.0,>=
 kinder,dtap,NH,2021,2020-21 school year,90.8,,,10242.0,Voluntary response,57.0,>=
 kinder,dtap,NH,2022,2021-22 school year,88.7,,,12157.0,Census,100.0,>=
 kinder,dtap,NH,2023,2022-23 school year,89.4,,,11332.0,Census,100.0,>=
@@ -519,14 +519,14 @@ kinder,dtap,NH,2026,2025-26 school year,88.2,,,11544.0,Census,100.0,>=
 kinder,dtap,NJ,2010,2009-10 school year,,,,118347.0,Census,95.1,
 kinder,dtap,NJ,2011,2010-11 school year,,,,,,,
 kinder,dtap,NJ,2012,2011-12 school year,,,,118669.0,Census,96.6,
-kinder,dtap,NJ,2013,2012-13 school year,97.0,,,122516.0,Census,96.7,
-kinder,dtap,NJ,2014,2013-14 school year,96.8,,,123085.0,Census,95.4,
-kinder,dtap,NJ,2015,2014-15 school year,92.3,,,120471.0,Census (public); Voluntary response (private),93.9,
-kinder,dtap,NJ,2016,2015-16 school year,96.3,,,110116.0,Census,100.0,
-kinder,dtap,NJ,2017,2016-17 school year,96.5,,,109577.0,Census,100.0,
-kinder,dtap,NJ,2018,2017-18 school year,96.1,,,107630.0,Census,100.0,
-kinder,dtap,NJ,2019,2018-19 school year,95.0,,,109161.0,Census,100.0,
-kinder,dtap,NJ,2020,2019-20 school year,95.9,,,107900.0,Census,100.0,
+kinder,dtap,NJ,2013,2012-13 school year,97.0,,,122516.0,Census,96.7,>=
+kinder,dtap,NJ,2014,2013-14 school year,96.8,,,123085.0,Census,95.4,>=
+kinder,dtap,NJ,2015,2014-15 school year,92.3,,,120471.0,Census (public); Voluntary response (private),93.9,>=
+kinder,dtap,NJ,2016,2015-16 school year,96.3,,,110116.0,Census,100.0,>=
+kinder,dtap,NJ,2017,2016-17 school year,96.5,,,109577.0,Census,100.0,>=
+kinder,dtap,NJ,2018,2017-18 school year,96.1,,,107630.0,Census,100.0,>=
+kinder,dtap,NJ,2019,2018-19 school year,95.0,,,109161.0,Census,100.0,>=
+kinder,dtap,NJ,2020,2019-20 school year,95.9,,,107900.0,Census,100.0,>=
 kinder,dtap,NJ,2021,2020-21 school year,94.3,,,100144.0,Census,100.0,>=
 kinder,dtap,NJ,2022,2021-22 school year,94.1,,,104240.0,Census,100.0,>=
 kinder,dtap,NJ,2023,2022-23 school year,94.3,,,104468.0,Census,100.0,>=
@@ -672,7 +672,7 @@ kinder,dtap,RI,2026,2025-26 school year,96.4,,,10123.0,Census,97.1,
 kinder,dtap,SC,2010,2009-10 school year,86.7,,,53725.0,Random sample,10.2,
 kinder,dtap,SC,2011,2010-11 school year,,,,,,,
 kinder,dtap,SC,2012,2011-12 school year,96.5,,,59307.0,1-stage Cluster Sample,10.7,
-kinder,dtap,SC,2013,2012-13 school year,90.9,,,61799.0,1-Stage Cluster Sample,17.9,
+kinder,dtap,SC,2013,2012-13 school year,90.9,,,61799.0,1-Stage Cluster Sample,17.9,>=
 kinder,dtap,SC,2014,2013-14 school year,97.3,,,61661.0,1-stage stratified sample,11.0,
 kinder,dtap,SC,2015,2014-15 school year,97.2,,,62864.0,Stratified 1-stage cluster sample,12.2,
 kinder,dtap,SC,2016,2015-16 school year,97.0,,,59240.0,Stratified 1-stage cluster sample,8.9,
@@ -703,12 +703,12 @@ kinder,dtap,SD,2023,2022-23 school year,92.2,,,12081.0,Census,100.0,
 kinder,dtap,SD,2024,2023-24 school year,90.6,,,11744.0,Census,99.8,
 kinder,dtap,SD,2025,2024-25 school year,89.6,,,11367.0,Census,99.3,
 kinder,dtap,SD,2026,2025-26 school year,88.6,,,11009.0,Census,100.0,
-kinder,dtap,TN,2010,2009-10 school year,97.4,,,90811.0,Voluntary response,88.1,
+kinder,dtap,TN,2010,2009-10 school year,97.4,,,90811.0,Voluntary response,88.1,>=
 kinder,dtap,TN,2011,2010-11 school year,,,,,,,
-kinder,dtap,TN,2012,2011-12 school year,97.3,,,83950.0,Census,99.9,
-kinder,dtap,TN,2013,2012-13 school year,94.5,,,85801.0,Census,97.0,
-kinder,dtap,TN,2014,2013-14 school year,94.9,,,80212.0,Census,99.8,
-kinder,dtap,TN,2015,2014-15 school year,95.1,,,78276.0,Census,100.0,
+kinder,dtap,TN,2012,2011-12 school year,97.3,,,83950.0,Census,99.9,>=
+kinder,dtap,TN,2013,2012-13 school year,94.5,,,85801.0,Census,97.0,>=
+kinder,dtap,TN,2014,2013-14 school year,94.9,,,80212.0,Census,99.8,>=
+kinder,dtap,TN,2015,2014-15 school year,95.1,,,78276.0,Census,100.0,>=
 kinder,dtap,TN,2016,2015-16 school year,93.5,,,79233.0,Census,100.0,
 kinder,dtap,TN,2017,2016-17 school year,96.8,,,78169.0,Census,100.0,
 kinder,dtap,TN,2018,2017-18 school year,96.7,,,78743.0,Census,100.0,
@@ -1003,9 +1003,9 @@ kinder,hepb,DC,2025,2024-25 school year,94.1,,,7997.0,Census,100.0,
 kinder,hepb,DC,2026,2025-26 school year,95.7,,,7871.0,Census,100.0,
 kinder,hepb,DE,2010,2009-10 school year,88.9,,,11327.0,Random sample,9.2,
 kinder,hepb,DE,2011,2010-11 school year,,,,,,,
-kinder,hepb,DE,2012,2011-12 school year,96.9,,,11327.0,2-stage Cluster Sample,7.4,
-kinder,hepb,DE,2013,2012-13 school year,95.7,,,11997.0,2-stage Cluster Sample,7.8,
-kinder,hepb,DE,2014,2013-14 school year,96.4,,,11997.0,Stratified  2-stage cluster sample,12.2,
+kinder,hepb,DE,2012,2011-12 school year,96.9,,,11327.0,2-stage Cluster Sample,7.4,>=
+kinder,hepb,DE,2013,2012-13 school year,95.7,,,11997.0,2-stage Cluster Sample,7.8,>=
+kinder,hepb,DE,2014,2013-14 school year,96.4,,,11997.0,Stratified  2-stage cluster sample,12.2,>=
 kinder,hepb,DE,2015,2014-15 school year,97.5,,,11476.0,Stratified 2-stage cluster sample,7.9,
 kinder,hepb,DE,2016,2015-16 school year,99.0,,,11589.0,Stratified 2-stage cluster sample,9.5,
 kinder,hepb,DE,2017,2016-17 school year,98.9,,,11490.0,Stratified 2-stage cluster sample,9.3,
@@ -1018,17 +1018,17 @@ kinder,hepb,DE,2023,2022-23 school year,95.6,,,10674.0,Stratified 2-stage cluste
 kinder,hepb,DE,2024,2023-24 school year,93.8,,,11043.0,Stratified 2-stage cluster sample,12.1,>=
 kinder,hepb,DE,2025,2024-25 school year,95.7,,,10393.0,"2-stage cluster sample (pub.), nonrandom 2-stage cluster sample (prv.)",14.2,
 kinder,hepb,DE,2026,2025-26 school year,96.8,,,10729.0,"2-stage cluster sample (pub.), nonrandom 2-stage cluster sample (prv.)",12.9,
-kinder,hepb,FL,2010,2009-10 school year,91.3,,,218630.0,Census,100.0,
+kinder,hepb,FL,2010,2009-10 school year,91.3,,,218630.0,Census,100.0,>=
 kinder,hepb,FL,2011,2010-11 school year,,,,,,,
-kinder,hepb,FL,2012,2011-12 school year,92.6,,,225532.0,Census,100.0,
-kinder,hepb,FL,2013,2012-13 school year,92.1,,,234628.0,Census,100.0,
-kinder,hepb,FL,2014,2013-14 school year,93.2,,,233797.0,Census,100.0,
-kinder,hepb,FL,2015,2014-15 school year,93.3,,,228982.0,Census,100.0,
-kinder,hepb,FL,2016,2015-16 school year,93.7,,,224430.0,Census,100.0,
-kinder,hepb,FL,2017,2016-17 school year,94.1,,,224463.0,Census,100.0,
-kinder,hepb,FL,2018,2017-18 school year,93.7,,,222397.0,Census,100.0,
-kinder,hepb,FL,2019,2018-19 school year,93.8,,,224641.0,Census,100.0,
-kinder,hepb,FL,2020,2019-20 school year,93.5,,,228298.0,Census,100.0,
+kinder,hepb,FL,2012,2011-12 school year,92.6,,,225532.0,Census,100.0,>=
+kinder,hepb,FL,2013,2012-13 school year,92.1,,,234628.0,Census,100.0,>=
+kinder,hepb,FL,2014,2013-14 school year,93.2,,,233797.0,Census,100.0,>=
+kinder,hepb,FL,2015,2014-15 school year,93.3,,,228982.0,Census,100.0,>=
+kinder,hepb,FL,2016,2015-16 school year,93.7,,,224430.0,Census,100.0,>=
+kinder,hepb,FL,2017,2016-17 school year,94.1,,,224463.0,Census,100.0,>=
+kinder,hepb,FL,2018,2017-18 school year,93.7,,,222397.0,Census,100.0,>=
+kinder,hepb,FL,2019,2018-19 school year,93.8,,,224641.0,Census,100.0,>=
+kinder,hepb,FL,2020,2019-20 school year,93.5,,,228298.0,Census,100.0,>=
 kinder,hepb,FL,2021,2020-21 school year,93.3,,,207026.0,Census,100.0,>=
 kinder,hepb,FL,2022,2021-22 school year,91.7,,,229432.0,Census,97.8,>=
 kinder,hepb,FL,2023,2022-23 school year,90.6,,,230309.0,Census,97.7,>=
@@ -1038,14 +1038,14 @@ kinder,hepb,FL,2026,2025-26 school year,88.9,,,213535.0,Census,100.0,>=
 kinder,hepb,GA,2010,2009-10 school year,100.0,,,141949.0,Random sample,1.2,
 kinder,hepb,GA,2011,2010-11 school year,,,,,,,
 kinder,hepb,GA,2012,2011-12 school year,96.7,,,143065.0,2-stage Cluster Sample,1.9,
-kinder,hepb,GA,2013,2012-13 school year,95.1,,,142732.0,2-stage Cluster Sample,2.4,
-kinder,hepb,GA,2014,2013-14 school year,94.0,,,143988.0,Census,100.0,
-kinder,hepb,GA,2015,2014-15 school year,94.0,,,139471.0,Census,100.0,
-kinder,hepb,GA,2016,2015-16 school year,94.6,,,131403.0,Census,100.0,
-kinder,hepb,GA,2017,2016-17 school year,93.3,,,136165.0,Census,100.0,
-kinder,hepb,GA,2018,2017-18 school year,93.4,,,131459.0,Census,100.0,
-kinder,hepb,GA,2019,2018-19 school year,93.6,,,131275.0,Census,100.0,
-kinder,hepb,GA,2020,2019-20 school year,93.1,,,130102.0,Census,100.0,
+kinder,hepb,GA,2013,2012-13 school year,95.1,,,142732.0,2-stage Cluster Sample,2.4,>=
+kinder,hepb,GA,2014,2013-14 school year,94.0,,,143988.0,Census,100.0,>=
+kinder,hepb,GA,2015,2014-15 school year,94.0,,,139471.0,Census,100.0,>=
+kinder,hepb,GA,2016,2015-16 school year,94.6,,,131403.0,Census,100.0,>=
+kinder,hepb,GA,2017,2016-17 school year,93.3,,,136165.0,Census,100.0,>=
+kinder,hepb,GA,2018,2017-18 school year,93.4,,,131459.0,Census,100.0,>=
+kinder,hepb,GA,2019,2018-19 school year,93.6,,,131275.0,Census,100.0,>=
+kinder,hepb,GA,2020,2019-20 school year,93.1,,,130102.0,Census,100.0,>=
 kinder,hepb,GA,2021,2020-21 school year,88.5,,,83191.0,Census,100.0,>=
 kinder,hepb,GA,2022,2021-22 school year,83.2,,,118742.0,Census,100.0,>=
 kinder,hepb,GA,2023,2022-23 school year,88.1,,,123771.0,Census,100.0,>=
@@ -1069,17 +1069,17 @@ kinder,hepb,HI,2023,2022-23 school year,88.7,,,13195.0,Stratified 2-stage cluste
 kinder,hepb,HI,2024,2023-24 school year,91.1,,,13995.0,Stratified 2-stage cluster sample,8.2,
 kinder,hepb,HI,2025,2024-25 school year,92.8,,,13804.0,Stratified 2-stage cluster sample,10.5,
 kinder,hepb,HI,2026,2025-26 school year,90.3,,,13791.0,Stratified 2-stage cluster sample,11.7,
-kinder,hepb,IA,2010,2009-10 school year,84.5,,,42698.0,Census,100.0,
+kinder,hepb,IA,2010,2009-10 school year,84.5,,,42698.0,Census,100.0,>=
 kinder,hepb,IA,2011,2010-11 school year,,,,,,,
-kinder,hepb,IA,2012,2011-12 school year,91.1,,,40978.0,Census,100.0,
-kinder,hepb,IA,2013,2012-13 school year,90.5,,,41701.0,Census,99.9,
-kinder,hepb,IA,2014,2013-14 school year,91.0,,,43728.0,Census,94.6,
-kinder,hepb,IA,2015,2014-15 school year,91.9,,,43239.0,Census,96.3,
-kinder,hepb,IA,2016,2015-16 school year,91.8,,,41215.0,Census,100.0,
-kinder,hepb,IA,2017,2016-17 school year,92.6,,,39587.0,Census,100.0,
-kinder,hepb,IA,2018,2017-18 school year,93.0,,,39632.0,Census,100.0,
-kinder,hepb,IA,2019,2018-19 school year,93.3,,,40624.0,Census,100.0,
-kinder,hepb,IA,2020,2019-20 school year,93.2,,,40812.0,Census,100.0,
+kinder,hepb,IA,2012,2011-12 school year,91.1,,,40978.0,Census,100.0,>=
+kinder,hepb,IA,2013,2012-13 school year,90.5,,,41701.0,Census,99.9,>=
+kinder,hepb,IA,2014,2013-14 school year,91.0,,,43728.0,Census,94.6,>=
+kinder,hepb,IA,2015,2014-15 school year,91.9,,,43239.0,Census,96.3,>=
+kinder,hepb,IA,2016,2015-16 school year,91.8,,,41215.0,Census,100.0,>=
+kinder,hepb,IA,2017,2016-17 school year,92.6,,,39587.0,Census,100.0,>=
+kinder,hepb,IA,2018,2017-18 school year,93.0,,,39632.0,Census,100.0,>=
+kinder,hepb,IA,2019,2018-19 school year,93.3,,,40624.0,Census,100.0,>=
+kinder,hepb,IA,2020,2019-20 school year,93.2,,,40812.0,Census,100.0,>=
 kinder,hepb,IA,2021,2020-21 school year,93.4,,,39141.0,Census,100.0,>=
 kinder,hepb,IA,2022,2021-22 school year,90.6,,,40111.0,Census,100.0,>=
 kinder,hepb,IA,2023,2022-23 school year,89.9,,,39178.0,Census,100.0,>=
@@ -1284,17 +1284,17 @@ kinder,hepb,MO,2023,2022-23 school year,93.7,,,69126.0,Census,100.0,
 kinder,hepb,MO,2024,2023-24 school year,93.3,,,69014.0,Census,100.0,
 kinder,hepb,MO,2025,2024-25 school year,92.7,,,68163.0,Census,100.0,
 kinder,hepb,MO,2026,2025-26 school year,92.1,,,66610.0,Census,100.0,
-kinder,hepb,MS,2010,2009-10 school year,99.7,,,46922.0,Census,100.0,
+kinder,hepb,MS,2010,2009-10 school year,99.7,,,46922.0,Census,100.0,>=
 kinder,hepb,MS,2011,2010-11 school year,,,,,,,
-kinder,hepb,MS,2012,2011-12 school year,99.2,,,44912.0,Census,100.0,
-kinder,hepb,MS,2013,2012-13 school year,99.9,,,46595.0,Census,100.0,
-kinder,hepb,MS,2014,2013-14 school year,99.7,,,45719.0,Census,100.0,
-kinder,hepb,MS,2015,2014-15 school year,99.2,,,44129.0,Census,100.0,
-kinder,hepb,MS,2016,2015-16 school year,99.4,,,41042.0,Census,100.0,
-kinder,hepb,MS,2017,2016-17 school year,99.4,,,40509.0,Census,100.0,
-kinder,hepb,MS,2018,2017-18 school year,99.4,,,39284.0,Census,100.0,
-kinder,hepb,MS,2019,2018-19 school year,99.2,,,37775.0,Census,100.0,
-kinder,hepb,MS,2020,2019-20 school year,99.1,,,37870.0,Census,100.0,
+kinder,hepb,MS,2012,2011-12 school year,99.2,,,44912.0,Census,100.0,>=
+kinder,hepb,MS,2013,2012-13 school year,99.9,,,46595.0,Census,100.0,>=
+kinder,hepb,MS,2014,2013-14 school year,99.7,,,45719.0,Census,100.0,>=
+kinder,hepb,MS,2015,2014-15 school year,99.2,,,44129.0,Census,100.0,>=
+kinder,hepb,MS,2016,2015-16 school year,99.4,,,41042.0,Census,100.0,>=
+kinder,hepb,MS,2017,2016-17 school year,99.4,,,40509.0,Census,100.0,>=
+kinder,hepb,MS,2018,2017-18 school year,99.4,,,39284.0,Census,100.0,>=
+kinder,hepb,MS,2019,2018-19 school year,99.2,,,37775.0,Census,100.0,>=
+kinder,hepb,MS,2020,2019-20 school year,99.1,,,37870.0,Census,100.0,>=
 kinder,hepb,MS,2021,2020-21 school year,98.9,,,34028.0,Census,100.0,>=
 kinder,hepb,MS,2022,2021-22 school year,98.6,,,36524.0,Census,100.0,>=
 kinder,hepb,MS,2023,2022-23 school year,98.4,,,36048.0,Census,100.0,>=
@@ -1367,13 +1367,13 @@ kinder,hepb,NH,2010,2009-10 school year,,,,,Not conducted,,
 kinder,hepb,NH,2011,2010-11 school year,,,,,,,
 kinder,hepb,NH,2012,2011-12 school year,,,,13022.0,Census,100.0,
 kinder,hepb,NH,2013,2012-13 school year,,,,12943.0,Census,99.2,
-kinder,hepb,NH,2014,2013-14 school year,94.7,,,13240.0,Census,100.0,
-kinder,hepb,NH,2015,2014-15 school year,91.4,,,12422.0,Census (public); Voluntary response (private),98.9,
-kinder,hepb,NH,2016,2015-16 school year,91.9,,,11852.0,Census,99.8,
-kinder,hepb,NH,2017,2016-17 school year,91.5,,,12145.0,Census,100.0,
-kinder,hepb,NH,2018,2017-18 school year,92.4,,,12165.0,Census,100.0,
-kinder,hepb,NH,2019,2018-19 school year,91.8,,,12421.0,Census,100.0,
-kinder,hepb,NH,2020,2019-20 school year,91.5,,,12447.0,Census,100.0,
+kinder,hepb,NH,2014,2013-14 school year,94.7,,,13240.0,Census,100.0,>=
+kinder,hepb,NH,2015,2014-15 school year,91.4,,,12422.0,Census (public); Voluntary response (private),98.9,>=
+kinder,hepb,NH,2016,2015-16 school year,91.9,,,11852.0,Census,99.8,>=
+kinder,hepb,NH,2017,2016-17 school year,91.5,,,12145.0,Census,100.0,>=
+kinder,hepb,NH,2018,2017-18 school year,92.4,,,12165.0,Census,100.0,>=
+kinder,hepb,NH,2019,2018-19 school year,91.8,,,12421.0,Census,100.0,>=
+kinder,hepb,NH,2020,2019-20 school year,91.5,,,12447.0,Census,100.0,>=
 kinder,hepb,NH,2021,2020-21 school year,90.8,,,10242.0,Voluntary response,57.0,>=
 kinder,hepb,NH,2022,2021-22 school year,88.7,,,12157.0,Census,100.0,>=
 kinder,hepb,NH,2023,2022-23 school year,89.4,,,11332.0,Census,100.0,>=
@@ -1383,14 +1383,14 @@ kinder,hepb,NH,2026,2025-26 school year,88.2,,,11544.0,Census,100.0,>=
 kinder,hepb,NJ,2010,2009-10 school year,,,,118347.0,Census,95.1,
 kinder,hepb,NJ,2011,2010-11 school year,,,,,,,
 kinder,hepb,NJ,2012,2011-12 school year,,,,118669.0,Census,96.6,
-kinder,hepb,NJ,2013,2012-13 school year,97.0,,,122516.0,Census,96.7,
-kinder,hepb,NJ,2014,2013-14 school year,96.8,,,123085.0,Census,95.4,
-kinder,hepb,NJ,2015,2014-15 school year,92.3,,,120471.0,Census (public); Voluntary response (private),93.9,
-kinder,hepb,NJ,2016,2015-16 school year,96.3,,,110116.0,Census,100.0,
-kinder,hepb,NJ,2017,2016-17 school year,96.5,,,109577.0,Census,100.0,
-kinder,hepb,NJ,2018,2017-18 school year,96.1,,,107630.0,Census,100.0,
-kinder,hepb,NJ,2019,2018-19 school year,95.0,,,109161.0,Census,100.0,
-kinder,hepb,NJ,2020,2019-20 school year,95.9,,,107900.0,Census,100.0,
+kinder,hepb,NJ,2013,2012-13 school year,97.0,,,122516.0,Census,96.7,>=
+kinder,hepb,NJ,2014,2013-14 school year,96.8,,,123085.0,Census,95.4,>=
+kinder,hepb,NJ,2015,2014-15 school year,92.3,,,120471.0,Census (public); Voluntary response (private),93.9,>=
+kinder,hepb,NJ,2016,2015-16 school year,96.3,,,110116.0,Census,100.0,>=
+kinder,hepb,NJ,2017,2016-17 school year,96.5,,,109577.0,Census,100.0,>=
+kinder,hepb,NJ,2018,2017-18 school year,96.1,,,107630.0,Census,100.0,>=
+kinder,hepb,NJ,2019,2018-19 school year,95.0,,,109161.0,Census,100.0,>=
+kinder,hepb,NJ,2020,2019-20 school year,95.9,,,107900.0,Census,100.0,>=
 kinder,hepb,NJ,2021,2020-21 school year,94.3,,,100144.0,Census,100.0,>=
 kinder,hepb,NJ,2022,2021-22 school year,94.1,,,104240.0,Census,100.0,>=
 kinder,hepb,NJ,2023,2022-23 school year,94.3,,,104468.0,Census,100.0,>=
@@ -1536,7 +1536,7 @@ kinder,hepb,RI,2026,2025-26 school year,97.8,,,10123.0,Census,97.1,
 kinder,hepb,SC,2010,2009-10 school year,87.6,,,53725.0,Random sample,10.2,
 kinder,hepb,SC,2011,2010-11 school year,,,,,,,
 kinder,hepb,SC,2012,2011-12 school year,96.6,,,59307.0,1-stage Cluster Sample,10.7,
-kinder,hepb,SC,2013,2012-13 school year,90.9,,,61799.0,1-Stage Cluster Sample,17.9,
+kinder,hepb,SC,2013,2012-13 school year,90.9,,,61799.0,1-Stage Cluster Sample,17.9,>=
 kinder,hepb,SC,2014,2013-14 school year,96.5,,,61661.0,1-stage stratified sample,11.0,
 kinder,hepb,SC,2015,2014-15 school year,97.7,,,62864.0,Stratified 1-stage cluster sample,12.2,
 kinder,hepb,SC,2016,2015-16 school year,97.2,,,59240.0,Stratified 1-stage cluster sample,8.9,
@@ -1567,12 +1567,12 @@ kinder,hepb,SD,2023,2022-23 school year,94.5,,,12081.0,Census,100.0,
 kinder,hepb,SD,2024,2023-24 school year,94.1,,,11744.0,Census,99.8,
 kinder,hepb,SD,2025,2024-25 school year,,,,11367.0,Census,99.3,NReq
 kinder,hepb,SD,2026,2025-26 school year,,,,11009.0,Census,100.0,NReq
-kinder,hepb,TN,2010,2009-10 school year,97.4,,,90811.0,Voluntary response,88.1,
+kinder,hepb,TN,2010,2009-10 school year,97.4,,,90811.0,Voluntary response,88.1,>=
 kinder,hepb,TN,2011,2010-11 school year,,,,,,,
-kinder,hepb,TN,2012,2011-12 school year,97.3,,,83950.0,Census,99.9,
-kinder,hepb,TN,2013,2012-13 school year,94.5,,,85801.0,Census,97.0,
-kinder,hepb,TN,2014,2013-14 school year,94.9,,,80212.0,Census,99.8,
-kinder,hepb,TN,2015,2014-15 school year,95.1,,,78276.0,Census,100.0,
+kinder,hepb,TN,2012,2011-12 school year,97.3,,,83950.0,Census,99.9,>=
+kinder,hepb,TN,2013,2012-13 school year,94.5,,,85801.0,Census,97.0,>=
+kinder,hepb,TN,2014,2013-14 school year,94.9,,,80212.0,Census,99.8,>=
+kinder,hepb,TN,2015,2014-15 school year,95.1,,,78276.0,Census,100.0,>=
 kinder,hepb,TN,2016,2015-16 school year,94.1,,,79233.0,Census,100.0,
 kinder,hepb,TN,2017,2016-17 school year,97.3,,,78169.0,Census,100.0,
 kinder,hepb,TN,2018,2017-18 school year,97.1,,,78743.0,Census,100.0,
@@ -1751,17 +1751,17 @@ kinder,mmr,AK,2023,2022-23 school year,83.6,,,9650.0,"Vol. response (pub.), not 
 kinder,mmr,AK,2024,2023-24 school year,84.3,,,8644.0,"Census (pub.), not conducted (prv.)",88.9,
 kinder,mmr,AK,2025,2024-25 school year,81.2,,,7338.0,"Census (pub.), not conducted (prv.)",99.8,
 kinder,mmr,AK,2026,2025-26 school year,89.9,,,8253.0,"Vol. response (public), not conducted (private)",60.9,
-kinder,mmr,AL,2010,2009-10 school year,94.0,,,75358.0,Census,100.0,
+kinder,mmr,AL,2010,2009-10 school year,94.0,,,75358.0,Census,100.0,>=
 kinder,mmr,AL,2011,2010-11 school year,,,,,,,
-kinder,mmr,AL,2012,2011-12 school year,93.6,,,73190.0,Census,100.0,
-kinder,mmr,AL,2013,2012-13 school year,92.8,,,72929.0,Census,100.0,
-kinder,mmr,AL,2014,2013-14 school year,92.0,,,76927.0,Census,100.0,
-kinder,mmr,AL,2015,2014-15 school year,93.5,,,59660.0,Census,100.0,
-kinder,mmr,AL,2016,2015-16 school year,93.1,,,60392.0,Census,100.0,
-kinder,mmr,AL,2017,2016-17 school year,93.8,,,58394.0,Census,100.0,
-kinder,mmr,AL,2018,2017-18 school year,92.7,,,57245.0,Census,100.0,
-kinder,mmr,AL,2019,2018-19 school year,90.6,,,77739.0,Census,100.0,
-kinder,mmr,AL,2020,2019-20 school year,86.6,,,59477.0,Census,94.9,
+kinder,mmr,AL,2012,2011-12 school year,93.6,,,73190.0,Census,100.0,>=
+kinder,mmr,AL,2013,2012-13 school year,92.8,,,72929.0,Census,100.0,>=
+kinder,mmr,AL,2014,2013-14 school year,92.0,,,76927.0,Census,100.0,>=
+kinder,mmr,AL,2015,2014-15 school year,93.5,,,59660.0,Census,100.0,>=
+kinder,mmr,AL,2016,2015-16 school year,93.1,,,60392.0,Census,100.0,>=
+kinder,mmr,AL,2017,2016-17 school year,93.8,,,58394.0,Census,100.0,>=
+kinder,mmr,AL,2018,2017-18 school year,92.7,,,57245.0,Census,100.0,>=
+kinder,mmr,AL,2019,2018-19 school year,90.6,,,77739.0,Census,100.0,>=
+kinder,mmr,AL,2020,2019-20 school year,86.6,,,59477.0,Census,94.9,>=
 kinder,mmr,AL,2021,2020-21 school year,94.7,,,56974.0,Census,100.0,>=
 kinder,mmr,AL,2022,2021-22 school year,94.9,,,60332.0,Census,100.0,>=
 kinder,mmr,AL,2023,2022-23 school year,93.9,,,59113.0,Census,100.0,>=
@@ -1869,9 +1869,9 @@ kinder,mmr,DC,2025,2024-25 school year,92.7,,,7997.0,Census,100.0,
 kinder,mmr,DC,2026,2025-26 school year,94.4,,,7871.0,Census,100.0,
 kinder,mmr,DE,2010,2009-10 school year,89.7,,,11327.0,Random sample,9.2,
 kinder,mmr,DE,2011,2010-11 school year,,,,,,,
-kinder,mmr,DE,2012,2011-12 school year,96.9,,,11327.0,2-stage Cluster Sample,7.4,
-kinder,mmr,DE,2013,2012-13 school year,95.7,,,11997.0,2-stage Cluster Sample,7.8,
-kinder,mmr,DE,2014,2013-14 school year,96.4,,,11997.0,Stratified  2-stage cluster sample,12.2,
+kinder,mmr,DE,2012,2011-12 school year,96.9,,,11327.0,2-stage Cluster Sample,7.4,>=
+kinder,mmr,DE,2013,2012-13 school year,95.7,,,11997.0,2-stage Cluster Sample,7.8,>=
+kinder,mmr,DE,2014,2013-14 school year,96.4,,,11997.0,Stratified  2-stage cluster sample,12.2,>=
 kinder,mmr,DE,2015,2014-15 school year,97.8,,,11476.0,Stratified 2-stage cluster sample,7.9,
 kinder,mmr,DE,2016,2015-16 school year,97.6,,,11589.0,Stratified 2-stage cluster sample,9.5,
 kinder,mmr,DE,2017,2016-17 school year,98.5,,,11490.0,Stratified 2-stage cluster sample,9.3,
@@ -1884,17 +1884,17 @@ kinder,mmr,DE,2023,2022-23 school year,95.1,,,10674.0,Stratified 2-stage cluster
 kinder,mmr,DE,2024,2023-24 school year,93.8,,,11043.0,Stratified 2-stage cluster sample,12.1,>=
 kinder,mmr,DE,2025,2024-25 school year,94.1,,,10393.0,"2-stage cluster sample (pub.), nonrandom 2-stage cluster sample (prv.)",14.2,
 kinder,mmr,DE,2026,2025-26 school year,93.5,,,10729.0,"2-stage cluster sample (pub.), nonrandom 2-stage cluster sample (prv.)",12.9,
-kinder,mmr,FL,2010,2009-10 school year,91.3,,,218630.0,Census,100.0,
+kinder,mmr,FL,2010,2009-10 school year,91.3,,,218630.0,Census,100.0,>=
 kinder,mmr,FL,2011,2010-11 school year,,,,,,,
-kinder,mmr,FL,2012,2011-12 school year,92.6,,,225532.0,Census,100.0,
-kinder,mmr,FL,2013,2012-13 school year,92.1,,,234628.0,Census,100.0,
-kinder,mmr,FL,2014,2013-14 school year,93.2,,,233797.0,Census,100.0,
-kinder,mmr,FL,2015,2014-15 school year,93.3,,,228982.0,Census,100.0,
-kinder,mmr,FL,2016,2015-16 school year,93.7,,,224430.0,Census,100.0,
-kinder,mmr,FL,2017,2016-17 school year,94.1,,,224463.0,Census,100.0,
-kinder,mmr,FL,2018,2017-18 school year,93.7,,,222397.0,Census,100.0,
-kinder,mmr,FL,2019,2018-19 school year,93.8,,,224641.0,Census,100.0,
-kinder,mmr,FL,2020,2019-20 school year,93.5,,,228298.0,Census,100.0,
+kinder,mmr,FL,2012,2011-12 school year,92.6,,,225532.0,Census,100.0,>=
+kinder,mmr,FL,2013,2012-13 school year,92.1,,,234628.0,Census,100.0,>=
+kinder,mmr,FL,2014,2013-14 school year,93.2,,,233797.0,Census,100.0,>=
+kinder,mmr,FL,2015,2014-15 school year,93.3,,,228982.0,Census,100.0,>=
+kinder,mmr,FL,2016,2015-16 school year,93.7,,,224430.0,Census,100.0,>=
+kinder,mmr,FL,2017,2016-17 school year,94.1,,,224463.0,Census,100.0,>=
+kinder,mmr,FL,2018,2017-18 school year,93.7,,,222397.0,Census,100.0,>=
+kinder,mmr,FL,2019,2018-19 school year,93.8,,,224641.0,Census,100.0,>=
+kinder,mmr,FL,2020,2019-20 school year,93.5,,,228298.0,Census,100.0,>=
 kinder,mmr,FL,2021,2020-21 school year,93.3,,,207026.0,Census,100.0,>=
 kinder,mmr,FL,2022,2021-22 school year,91.7,,,229432.0,Census,97.8,>=
 kinder,mmr,FL,2023,2022-23 school year,90.6,,,230309.0,Census,97.7,>=
@@ -1904,14 +1904,14 @@ kinder,mmr,FL,2026,2025-26 school year,88.9,,,213535.0,Census,100.0,>=
 kinder,mmr,GA,2010,2009-10 school year,99.6,,,141949.0,Random sample,1.2,
 kinder,mmr,GA,2011,2010-11 school year,,,,,,,
 kinder,mmr,GA,2012,2011-12 school year,96.6,,,143065.0,2-stage Cluster Sample,1.9,
-kinder,mmr,GA,2013,2012-13 school year,95.1,,,142732.0,2-stage Cluster Sample,2.4,
-kinder,mmr,GA,2014,2013-14 school year,94.0,,,143988.0,Census,100.0,
-kinder,mmr,GA,2015,2014-15 school year,94.0,,,139471.0,Census,100.0,
-kinder,mmr,GA,2016,2015-16 school year,94.6,,,131403.0,Census,100.0,
-kinder,mmr,GA,2017,2016-17 school year,93.3,,,136165.0,Census,100.0,
-kinder,mmr,GA,2018,2017-18 school year,93.4,,,131459.0,Census,100.0,
-kinder,mmr,GA,2019,2018-19 school year,93.6,,,131275.0,Census,100.0,
-kinder,mmr,GA,2020,2019-20 school year,93.1,,,130102.0,Census,100.0,
+kinder,mmr,GA,2013,2012-13 school year,95.1,,,142732.0,2-stage Cluster Sample,2.4,>=
+kinder,mmr,GA,2014,2013-14 school year,94.0,,,143988.0,Census,100.0,>=
+kinder,mmr,GA,2015,2014-15 school year,94.0,,,139471.0,Census,100.0,>=
+kinder,mmr,GA,2016,2015-16 school year,94.6,,,131403.0,Census,100.0,>=
+kinder,mmr,GA,2017,2016-17 school year,93.3,,,136165.0,Census,100.0,>=
+kinder,mmr,GA,2018,2017-18 school year,93.4,,,131459.0,Census,100.0,>=
+kinder,mmr,GA,2019,2018-19 school year,93.6,,,131275.0,Census,100.0,>=
+kinder,mmr,GA,2020,2019-20 school year,93.1,,,130102.0,Census,100.0,>=
 kinder,mmr,GA,2021,2020-21 school year,88.5,,,83191.0,Census,100.0,>=
 kinder,mmr,GA,2022,2021-22 school year,83.2,,,118742.0,Census,100.0,>=
 kinder,mmr,GA,2023,2022-23 school year,88.1,,,123771.0,Census,100.0,>=
@@ -1935,17 +1935,17 @@ kinder,mmr,HI,2023,2022-23 school year,86.4,,,13195.0,Stratified 2-stage cluster
 kinder,mmr,HI,2024,2023-24 school year,89.8,,,13995.0,Stratified 2-stage cluster sample,8.2,
 kinder,mmr,HI,2025,2024-25 school year,90.1,,,13804.0,Stratified 2-stage cluster sample,10.5,
 kinder,mmr,HI,2026,2025-26 school year,89.3,,,13791.0,Stratified 2-stage cluster sample,11.7,
-kinder,mmr,IA,2010,2009-10 school year,84.5,,,42698.0,Census,100.0,
+kinder,mmr,IA,2010,2009-10 school year,84.5,,,42698.0,Census,100.0,>=
 kinder,mmr,IA,2011,2010-11 school year,,,,,,,
-kinder,mmr,IA,2012,2011-12 school year,91.1,,,40978.0,Census,100.0,
-kinder,mmr,IA,2013,2012-13 school year,90.5,,,41701.0,Census,99.9,
-kinder,mmr,IA,2014,2013-14 school year,91.0,,,43728.0,Census,94.6,
-kinder,mmr,IA,2015,2014-15 school year,91.9,,,43239.0,Census,96.3,
-kinder,mmr,IA,2016,2015-16 school year,91.8,,,41215.0,Census,100.0,
-kinder,mmr,IA,2017,2016-17 school year,92.6,,,39587.0,Census,100.0,
-kinder,mmr,IA,2018,2017-18 school year,93.0,,,39632.0,Census,100.0,
-kinder,mmr,IA,2019,2018-19 school year,93.3,,,40624.0,Census,100.0,
-kinder,mmr,IA,2020,2019-20 school year,93.2,,,40812.0,Census,100.0,
+kinder,mmr,IA,2012,2011-12 school year,91.1,,,40978.0,Census,100.0,>=
+kinder,mmr,IA,2013,2012-13 school year,90.5,,,41701.0,Census,99.9,>=
+kinder,mmr,IA,2014,2013-14 school year,91.0,,,43728.0,Census,94.6,>=
+kinder,mmr,IA,2015,2014-15 school year,91.9,,,43239.0,Census,96.3,>=
+kinder,mmr,IA,2016,2015-16 school year,91.8,,,41215.0,Census,100.0,>=
+kinder,mmr,IA,2017,2016-17 school year,92.6,,,39587.0,Census,100.0,>=
+kinder,mmr,IA,2018,2017-18 school year,93.0,,,39632.0,Census,100.0,>=
+kinder,mmr,IA,2019,2018-19 school year,93.3,,,40624.0,Census,100.0,>=
+kinder,mmr,IA,2020,2019-20 school year,93.2,,,40812.0,Census,100.0,>=
 kinder,mmr,IA,2021,2020-21 school year,93.4,,,39141.0,Census,100.0,>=
 kinder,mmr,IA,2022,2021-22 school year,90.6,,,40111.0,Census,100.0,>=
 kinder,mmr,IA,2023,2022-23 school year,89.9,,,39178.0,Census,100.0,>=
@@ -2156,17 +2156,17 @@ kinder,mmr,MO,2023,2022-23 school year,91.3,,,69126.0,Census,100.0,
 kinder,mmr,MO,2024,2023-24 school year,90.4,,,69014.0,Census,100.0,
 kinder,mmr,MO,2025,2024-25 school year,90.0,,,68163.0,Census,100.0,
 kinder,mmr,MO,2026,2025-26 school year,89.5,,,66610.0,Census,100.0,
-kinder,mmr,MS,2010,2009-10 school year,99.7,,,46922.0,Census,100.0,
+kinder,mmr,MS,2010,2009-10 school year,99.7,,,46922.0,Census,100.0,>=
 kinder,mmr,MS,2011,2010-11 school year,,,,,,,
-kinder,mmr,MS,2012,2011-12 school year,99.2,,,44912.0,Census,100.0,
-kinder,mmr,MS,2013,2012-13 school year,99.9,,,46595.0,Census,100.0,
-kinder,mmr,MS,2014,2013-14 school year,99.7,,,45719.0,Census,100.0,
-kinder,mmr,MS,2015,2014-15 school year,99.2,,,44129.0,Census,100.0,
-kinder,mmr,MS,2016,2015-16 school year,99.4,,,41042.0,Census,100.0,
-kinder,mmr,MS,2017,2016-17 school year,99.4,,,40509.0,Census,100.0,
-kinder,mmr,MS,2018,2017-18 school year,99.4,,,39284.0,Census,100.0,
-kinder,mmr,MS,2019,2018-19 school year,99.2,,,37775.0,Census,100.0,
-kinder,mmr,MS,2020,2019-20 school year,99.1,,,37870.0,Census,100.0,
+kinder,mmr,MS,2012,2011-12 school year,99.2,,,44912.0,Census,100.0,>=
+kinder,mmr,MS,2013,2012-13 school year,99.9,,,46595.0,Census,100.0,>=
+kinder,mmr,MS,2014,2013-14 school year,99.7,,,45719.0,Census,100.0,>=
+kinder,mmr,MS,2015,2014-15 school year,99.2,,,44129.0,Census,100.0,>=
+kinder,mmr,MS,2016,2015-16 school year,99.4,,,41042.0,Census,100.0,>=
+kinder,mmr,MS,2017,2016-17 school year,99.4,,,40509.0,Census,100.0,>=
+kinder,mmr,MS,2018,2017-18 school year,99.4,,,39284.0,Census,100.0,>=
+kinder,mmr,MS,2019,2018-19 school year,99.2,,,37775.0,Census,100.0,>=
+kinder,mmr,MS,2020,2019-20 school year,99.1,,,37870.0,Census,100.0,>=
 kinder,mmr,MS,2021,2020-21 school year,98.9,,,34028.0,Census,100.0,>=
 kinder,mmr,MS,2022,2021-22 school year,98.6,,,36524.0,Census,100.0,>=
 kinder,mmr,MS,2023,2022-23 school year,98.4,,,36048.0,Census,100.0,>=
@@ -2240,13 +2240,13 @@ kinder,mmr,NH,2010,2009-10 school year,,,,,Not conducted,,
 kinder,mmr,NH,2011,2010-11 school year,,,,,,,
 kinder,mmr,NH,2012,2011-12 school year,,,,13022.0,Census,100.0,
 kinder,mmr,NH,2013,2012-13 school year,,,,12943.0,Census,99.2,
-kinder,mmr,NH,2014,2013-14 school year,94.7,,,13240.0,Census,100.0,
-kinder,mmr,NH,2015,2014-15 school year,91.4,,,12422.0,Census (public); Voluntary response (private),98.9,
-kinder,mmr,NH,2016,2015-16 school year,91.9,,,11852.0,Census,99.8,
-kinder,mmr,NH,2017,2016-17 school year,91.5,,,12145.0,Census,100.0,
-kinder,mmr,NH,2018,2017-18 school year,92.4,,,12165.0,Census,100.0,
-kinder,mmr,NH,2019,2018-19 school year,91.8,,,12421.0,Census,100.0,
-kinder,mmr,NH,2020,2019-20 school year,91.5,,,12447.0,Census,100.0,
+kinder,mmr,NH,2014,2013-14 school year,94.7,,,13240.0,Census,100.0,>=
+kinder,mmr,NH,2015,2014-15 school year,91.4,,,12422.0,Census (public); Voluntary response (private),98.9,>=
+kinder,mmr,NH,2016,2015-16 school year,91.9,,,11852.0,Census,99.8,>=
+kinder,mmr,NH,2017,2016-17 school year,91.5,,,12145.0,Census,100.0,>=
+kinder,mmr,NH,2018,2017-18 school year,92.4,,,12165.0,Census,100.0,>=
+kinder,mmr,NH,2019,2018-19 school year,91.8,,,12421.0,Census,100.0,>=
+kinder,mmr,NH,2020,2019-20 school year,91.5,,,12447.0,Census,100.0,>=
 kinder,mmr,NH,2021,2020-21 school year,90.8,,,10242.0,Voluntary response,57.0,>=
 kinder,mmr,NH,2022,2021-22 school year,88.7,,,12157.0,Census,100.0,>=
 kinder,mmr,NH,2023,2022-23 school year,89.4,,,11332.0,Census,100.0,>=
@@ -2256,14 +2256,14 @@ kinder,mmr,NH,2026,2025-26 school year,88.2,,,11544.0,Census,100.0,>=
 kinder,mmr,NJ,2010,2009-10 school year,,,,118347.0,Census,95.1,
 kinder,mmr,NJ,2011,2010-11 school year,,,,,,,
 kinder,mmr,NJ,2012,2011-12 school year,,,,118669.0,Census,96.6,
-kinder,mmr,NJ,2013,2012-13 school year,97.0,,,122516.0,Census,96.7,
-kinder,mmr,NJ,2014,2013-14 school year,96.8,,,123085.0,Census,95.4,
-kinder,mmr,NJ,2015,2014-15 school year,92.3,,,120471.0,Census (public); Voluntary response (private),93.9,
-kinder,mmr,NJ,2016,2015-16 school year,96.3,,,110116.0,Census,100.0,
-kinder,mmr,NJ,2017,2016-17 school year,96.5,,,109577.0,Census,100.0,
-kinder,mmr,NJ,2018,2017-18 school year,96.1,,,107630.0,Census,100.0,
-kinder,mmr,NJ,2019,2018-19 school year,95.0,,,109161.0,Census,100.0,
-kinder,mmr,NJ,2020,2019-20 school year,95.9,,,107900.0,Census,100.0,
+kinder,mmr,NJ,2013,2012-13 school year,97.0,,,122516.0,Census,96.7,>=
+kinder,mmr,NJ,2014,2013-14 school year,96.8,,,123085.0,Census,95.4,>=
+kinder,mmr,NJ,2015,2014-15 school year,92.3,,,120471.0,Census (public); Voluntary response (private),93.9,>=
+kinder,mmr,NJ,2016,2015-16 school year,96.3,,,110116.0,Census,100.0,>=
+kinder,mmr,NJ,2017,2016-17 school year,96.5,,,109577.0,Census,100.0,>=
+kinder,mmr,NJ,2018,2017-18 school year,96.1,,,107630.0,Census,100.0,>=
+kinder,mmr,NJ,2019,2018-19 school year,95.0,,,109161.0,Census,100.0,>=
+kinder,mmr,NJ,2020,2019-20 school year,95.9,,,107900.0,Census,100.0,>=
 kinder,mmr,NJ,2021,2020-21 school year,94.3,,,100144.0,Census,100.0,>=
 kinder,mmr,NJ,2022,2021-22 school year,94.1,,,104240.0,Census,100.0,>=
 kinder,mmr,NJ,2023,2022-23 school year,94.3,,,104468.0,Census,100.0,>=
@@ -2409,7 +2409,7 @@ kinder,mmr,RI,2026,2025-26 school year,96.7,,,10123.0,Census,97.1,
 kinder,mmr,SC,2010,2009-10 school year,87.2,,,53725.0,Random sample,10.2,
 kinder,mmr,SC,2011,2010-11 school year,,,,,,,
 kinder,mmr,SC,2012,2011-12 school year,94.5,,,59307.0,1-stage Cluster Sample,10.7,
-kinder,mmr,SC,2013,2012-13 school year,90.9,,,61799.0,1-Stage Cluster Sample,17.9,
+kinder,mmr,SC,2013,2012-13 school year,90.9,,,61799.0,1-Stage Cluster Sample,17.9,>=
 kinder,mmr,SC,2014,2013-14 school year,96.8,,,61661.0,1-stage stratified sample,11.0,
 kinder,mmr,SC,2015,2014-15 school year,96.5,,,62864.0,Stratified 1-stage cluster sample,12.2,
 kinder,mmr,SC,2016,2015-16 school year,96.5,,,59240.0,Stratified 1-stage cluster sample,8.9,
@@ -2440,12 +2440,12 @@ kinder,mmr,SD,2023,2022-23 school year,92.5,,,12081.0,Census,100.0,
 kinder,mmr,SD,2024,2023-24 school year,90.8,,,11744.0,Census,99.8,
 kinder,mmr,SD,2025,2024-25 school year,90.0,,,11367.0,Census,99.3,
 kinder,mmr,SD,2026,2025-26 school year,89.3,,,11009.0,Census,100.0,
-kinder,mmr,TN,2010,2009-10 school year,97.4,,,90811.0,Voluntary response,88.1,
+kinder,mmr,TN,2010,2009-10 school year,97.4,,,90811.0,Voluntary response,88.1,>=
 kinder,mmr,TN,2011,2010-11 school year,,,,,,,
-kinder,mmr,TN,2012,2011-12 school year,97.3,,,83950.0,Census,99.9,
-kinder,mmr,TN,2013,2012-13 school year,94.5,,,85801.0,Census,97.0,
-kinder,mmr,TN,2014,2013-14 school year,94.9,,,80212.0,Census,99.8,
-kinder,mmr,TN,2015,2014-15 school year,95.1,,,78276.0,Census,100.0,
+kinder,mmr,TN,2012,2011-12 school year,97.3,,,83950.0,Census,99.9,>=
+kinder,mmr,TN,2013,2012-13 school year,94.5,,,85801.0,Census,97.0,>=
+kinder,mmr,TN,2014,2013-14 school year,94.9,,,80212.0,Census,99.8,>=
+kinder,mmr,TN,2015,2014-15 school year,95.1,,,78276.0,Census,100.0,>=
 kinder,mmr,TN,2016,2015-16 school year,93.5,,,79233.0,Census,100.0,
 kinder,mmr,TN,2017,2016-17 school year,96.9,,,78169.0,Census,100.0,
 kinder,mmr,TN,2018,2017-18 school year,96.9,,,78743.0,Census,100.0,
@@ -2624,17 +2624,17 @@ kinder,polio,AK,2023,2022-23 school year,84.4,,,9650.0,"Vol. response (pub.), no
 kinder,polio,AK,2024,2023-24 school year,84.4,,,8644.0,"Census (pub.), not conducted (prv.)",88.9,
 kinder,polio,AK,2025,2024-25 school year,81.5,,,7338.0,"Census (pub.), not conducted (prv.)",99.8,
 kinder,polio,AK,2026,2025-26 school year,90.0,,,8253.0,"Vol. response (public), not conducted (private)",60.9,
-kinder,polio,AL,2010,2009-10 school year,94.0,,,75358.0,Census,100.0,
+kinder,polio,AL,2010,2009-10 school year,94.0,,,75358.0,Census,100.0,>=
 kinder,polio,AL,2011,2010-11 school year,,,,,,,
-kinder,polio,AL,2012,2011-12 school year,93.6,,,73190.0,Census,100.0,
-kinder,polio,AL,2013,2012-13 school year,92.8,,,72929.0,Census,100.0,
-kinder,polio,AL,2014,2013-14 school year,92.0,,,76927.0,Census,100.0,
-kinder,polio,AL,2015,2014-15 school year,93.5,,,59660.0,Census,100.0,
-kinder,polio,AL,2016,2015-16 school year,93.1,,,60392.0,Census,100.0,
-kinder,polio,AL,2017,2016-17 school year,93.8,,,58394.0,Census,100.0,
-kinder,polio,AL,2018,2017-18 school year,92.7,,,57245.0,Census,100.0,
-kinder,polio,AL,2019,2018-19 school year,90.6,,,77739.0,Census,100.0,
-kinder,polio,AL,2020,2019-20 school year,86.6,,,59477.0,Census,94.9,
+kinder,polio,AL,2012,2011-12 school year,93.6,,,73190.0,Census,100.0,>=
+kinder,polio,AL,2013,2012-13 school year,92.8,,,72929.0,Census,100.0,>=
+kinder,polio,AL,2014,2013-14 school year,92.0,,,76927.0,Census,100.0,>=
+kinder,polio,AL,2015,2014-15 school year,93.5,,,59660.0,Census,100.0,>=
+kinder,polio,AL,2016,2015-16 school year,93.1,,,60392.0,Census,100.0,>=
+kinder,polio,AL,2017,2016-17 school year,93.8,,,58394.0,Census,100.0,>=
+kinder,polio,AL,2018,2017-18 school year,92.7,,,57245.0,Census,100.0,>=
+kinder,polio,AL,2019,2018-19 school year,90.6,,,77739.0,Census,100.0,>=
+kinder,polio,AL,2020,2019-20 school year,86.6,,,59477.0,Census,94.9,>=
 kinder,polio,AL,2021,2020-21 school year,94.7,,,56974.0,Census,100.0,>=
 kinder,polio,AL,2022,2021-22 school year,94.9,,,60332.0,Census,100.0,>=
 kinder,polio,AL,2023,2022-23 school year,93.9,,,59113.0,Census,100.0,>=
@@ -2742,9 +2742,9 @@ kinder,polio,DC,2025,2024-25 school year,92.3,,,7997.0,Census,100.0,
 kinder,polio,DC,2026,2025-26 school year,94.5,,,7871.0,Census,100.0,
 kinder,polio,DE,2010,2009-10 school year,89.4,,,11327.0,Random sample,9.2,
 kinder,polio,DE,2011,2010-11 school year,,,,,,,
-kinder,polio,DE,2012,2011-12 school year,96.9,,,11327.0,2-stage Cluster Sample,7.4,
-kinder,polio,DE,2013,2012-13 school year,95.7,,,11997.0,2-stage Cluster Sample,7.8,
-kinder,polio,DE,2014,2013-14 school year,96.4,,,11997.0,Stratified  2-stage cluster sample,12.2,
+kinder,polio,DE,2012,2011-12 school year,96.9,,,11327.0,2-stage Cluster Sample,7.4,>=
+kinder,polio,DE,2013,2012-13 school year,95.7,,,11997.0,2-stage Cluster Sample,7.8,>=
+kinder,polio,DE,2014,2013-14 school year,96.4,,,11997.0,Stratified  2-stage cluster sample,12.2,>=
 kinder,polio,DE,2015,2014-15 school year,98.2,,,11476.0,Stratified 2-stage cluster sample,7.9,
 kinder,polio,DE,2016,2015-16 school year,98.2,,,11589.0,Stratified 2-stage cluster sample,9.5,
 kinder,polio,DE,2017,2016-17 school year,99.4,,,11490.0,Stratified 2-stage cluster sample,9.3,
@@ -2757,17 +2757,17 @@ kinder,polio,DE,2023,2022-23 school year,94.0,,,10674.0,Stratified 2-stage clust
 kinder,polio,DE,2024,2023-24 school year,93.8,,,11043.0,Stratified 2-stage cluster sample,12.1,>=
 kinder,polio,DE,2025,2024-25 school year,94.9,,,10393.0,"2-stage cluster sample (pub.), nonrandom 2-stage cluster sample (prv.)",14.2,
 kinder,polio,DE,2026,2025-26 school year,96.5,,,10729.0,"2-stage cluster sample (pub.), nonrandom 2-stage cluster sample (prv.)",12.9,
-kinder,polio,FL,2010,2009-10 school year,91.3,,,218630.0,Census,100.0,
+kinder,polio,FL,2010,2009-10 school year,91.3,,,218630.0,Census,100.0,>=
 kinder,polio,FL,2011,2010-11 school year,,,,,,,
-kinder,polio,FL,2012,2011-12 school year,92.6,,,225532.0,Census,100.0,
-kinder,polio,FL,2013,2012-13 school year,92.1,,,234628.0,Census,100.0,
-kinder,polio,FL,2014,2013-14 school year,93.2,,,233797.0,Census,100.0,
-kinder,polio,FL,2015,2014-15 school year,93.3,,,228982.0,Census,100.0,
-kinder,polio,FL,2016,2015-16 school year,93.7,,,224430.0,Census,100.0,
-kinder,polio,FL,2017,2016-17 school year,94.1,,,224463.0,Census,100.0,
-kinder,polio,FL,2018,2017-18 school year,93.7,,,222397.0,Census,100.0,
-kinder,polio,FL,2019,2018-19 school year,93.8,,,224641.0,Census,100.0,
-kinder,polio,FL,2020,2019-20 school year,93.5,,,228298.0,Census,100.0,
+kinder,polio,FL,2012,2011-12 school year,92.6,,,225532.0,Census,100.0,>=
+kinder,polio,FL,2013,2012-13 school year,92.1,,,234628.0,Census,100.0,>=
+kinder,polio,FL,2014,2013-14 school year,93.2,,,233797.0,Census,100.0,>=
+kinder,polio,FL,2015,2014-15 school year,93.3,,,228982.0,Census,100.0,>=
+kinder,polio,FL,2016,2015-16 school year,93.7,,,224430.0,Census,100.0,>=
+kinder,polio,FL,2017,2016-17 school year,94.1,,,224463.0,Census,100.0,>=
+kinder,polio,FL,2018,2017-18 school year,93.7,,,222397.0,Census,100.0,>=
+kinder,polio,FL,2019,2018-19 school year,93.8,,,224641.0,Census,100.0,>=
+kinder,polio,FL,2020,2019-20 school year,93.5,,,228298.0,Census,100.0,>=
 kinder,polio,FL,2021,2020-21 school year,93.3,,,207026.0,Census,100.0,>=
 kinder,polio,FL,2022,2021-22 school year,91.7,,,229432.0,Census,97.8,>=
 kinder,polio,FL,2023,2022-23 school year,90.6,,,230309.0,Census,97.7,>=
@@ -2777,14 +2777,14 @@ kinder,polio,FL,2026,2025-26 school year,88.9,,,213535.0,Census,100.0,>=
 kinder,polio,GA,2010,2009-10 school year,100.0,,,141949.0,Random sample,1.2,
 kinder,polio,GA,2011,2010-11 school year,,,,,,,
 kinder,polio,GA,2012,2011-12 school year,96.7,,,143065.0,2-stage Cluster Sample,1.9,
-kinder,polio,GA,2013,2012-13 school year,95.1,,,142732.0,2-stage Cluster Sample,2.4,
-kinder,polio,GA,2014,2013-14 school year,94.0,,,143988.0,Census,100.0,
-kinder,polio,GA,2015,2014-15 school year,94.0,,,139471.0,Census,100.0,
-kinder,polio,GA,2016,2015-16 school year,94.6,,,131403.0,Census,100.0,
-kinder,polio,GA,2017,2016-17 school year,93.3,,,136165.0,Census,100.0,
-kinder,polio,GA,2018,2017-18 school year,93.4,,,131459.0,Census,100.0,
-kinder,polio,GA,2019,2018-19 school year,93.6,,,131275.0,Census,100.0,
-kinder,polio,GA,2020,2019-20 school year,93.1,,,130102.0,Census,100.0,
+kinder,polio,GA,2013,2012-13 school year,95.1,,,142732.0,2-stage Cluster Sample,2.4,>=
+kinder,polio,GA,2014,2013-14 school year,94.0,,,143988.0,Census,100.0,>=
+kinder,polio,GA,2015,2014-15 school year,94.0,,,139471.0,Census,100.0,>=
+kinder,polio,GA,2016,2015-16 school year,94.6,,,131403.0,Census,100.0,>=
+kinder,polio,GA,2017,2016-17 school year,93.3,,,136165.0,Census,100.0,>=
+kinder,polio,GA,2018,2017-18 school year,93.4,,,131459.0,Census,100.0,>=
+kinder,polio,GA,2019,2018-19 school year,93.6,,,131275.0,Census,100.0,>=
+kinder,polio,GA,2020,2019-20 school year,93.1,,,130102.0,Census,100.0,>=
 kinder,polio,GA,2021,2020-21 school year,88.5,,,83191.0,Census,100.0,>=
 kinder,polio,GA,2022,2021-22 school year,83.2,,,118742.0,Census,100.0,>=
 kinder,polio,GA,2023,2022-23 school year,88.1,,,123771.0,Census,100.0,>=
@@ -2808,17 +2808,17 @@ kinder,polio,HI,2023,2022-23 school year,87.0,,,13195.0,Stratified 2-stage clust
 kinder,polio,HI,2024,2023-24 school year,90.2,,,13995.0,Stratified 2-stage cluster sample,8.2,
 kinder,polio,HI,2025,2024-25 school year,92.5,,,13804.0,Stratified 2-stage cluster sample,10.5,
 kinder,polio,HI,2026,2025-26 school year,89.5,,,13791.0,Stratified 2-stage cluster sample,11.7,
-kinder,polio,IA,2010,2009-10 school year,84.5,,,42698.0,Census,100.0,
+kinder,polio,IA,2010,2009-10 school year,84.5,,,42698.0,Census,100.0,>=
 kinder,polio,IA,2011,2010-11 school year,,,,,,,
-kinder,polio,IA,2012,2011-12 school year,91.1,,,40978.0,Census,100.0,
-kinder,polio,IA,2013,2012-13 school year,90.5,,,41701.0,Census,99.9,
-kinder,polio,IA,2014,2013-14 school year,91.0,,,43728.0,Census,94.6,
-kinder,polio,IA,2015,2014-15 school year,91.9,,,43239.0,Census,96.3,
-kinder,polio,IA,2016,2015-16 school year,91.8,,,41215.0,Census,100.0,
-kinder,polio,IA,2017,2016-17 school year,92.6,,,39587.0,Census,100.0,
-kinder,polio,IA,2018,2017-18 school year,93.0,,,39632.0,Census,100.0,
-kinder,polio,IA,2019,2018-19 school year,93.3,,,40624.0,Census,100.0,
-kinder,polio,IA,2020,2019-20 school year,93.2,,,40812.0,Census,100.0,
+kinder,polio,IA,2012,2011-12 school year,91.1,,,40978.0,Census,100.0,>=
+kinder,polio,IA,2013,2012-13 school year,90.5,,,41701.0,Census,99.9,>=
+kinder,polio,IA,2014,2013-14 school year,91.0,,,43728.0,Census,94.6,>=
+kinder,polio,IA,2015,2014-15 school year,91.9,,,43239.0,Census,96.3,>=
+kinder,polio,IA,2016,2015-16 school year,91.8,,,41215.0,Census,100.0,>=
+kinder,polio,IA,2017,2016-17 school year,92.6,,,39587.0,Census,100.0,>=
+kinder,polio,IA,2018,2017-18 school year,93.0,,,39632.0,Census,100.0,>=
+kinder,polio,IA,2019,2018-19 school year,93.3,,,40624.0,Census,100.0,>=
+kinder,polio,IA,2020,2019-20 school year,93.2,,,40812.0,Census,100.0,>=
 kinder,polio,IA,2021,2020-21 school year,93.4,,,39141.0,Census,100.0,>=
 kinder,polio,IA,2022,2021-22 school year,90.6,,,40111.0,Census,100.0,>=
 kinder,polio,IA,2023,2022-23 school year,89.9,,,39178.0,Census,100.0,>=
@@ -3029,17 +3029,17 @@ kinder,polio,MO,2023,2022-23 school year,91.5,,,69126.0,Census,100.0,
 kinder,polio,MO,2024,2023-24 school year,91.0,,,69014.0,Census,100.0,
 kinder,polio,MO,2025,2024-25 school year,90.7,,,68163.0,Census,100.0,
 kinder,polio,MO,2026,2025-26 school year,89.6,,,66610.0,Census,100.0,
-kinder,polio,MS,2010,2009-10 school year,99.7,,,46922.0,Census,100.0,
+kinder,polio,MS,2010,2009-10 school year,99.7,,,46922.0,Census,100.0,>=
 kinder,polio,MS,2011,2010-11 school year,,,,,,,
-kinder,polio,MS,2012,2011-12 school year,99.2,,,44912.0,Census,100.0,
-kinder,polio,MS,2013,2012-13 school year,99.9,,,46595.0,Census,100.0,
-kinder,polio,MS,2014,2013-14 school year,99.7,,,45719.0,Census,100.0,
-kinder,polio,MS,2015,2014-15 school year,99.2,,,44129.0,Census,100.0,
-kinder,polio,MS,2016,2015-16 school year,99.4,,,41042.0,Census,100.0,
-kinder,polio,MS,2017,2016-17 school year,99.4,,,40509.0,Census,100.0,
-kinder,polio,MS,2018,2017-18 school year,99.4,,,39284.0,Census,100.0,
-kinder,polio,MS,2019,2018-19 school year,99.2,,,37775.0,Census,100.0,
-kinder,polio,MS,2020,2019-20 school year,99.1,,,37870.0,Census,100.0,
+kinder,polio,MS,2012,2011-12 school year,99.2,,,44912.0,Census,100.0,>=
+kinder,polio,MS,2013,2012-13 school year,99.9,,,46595.0,Census,100.0,>=
+kinder,polio,MS,2014,2013-14 school year,99.7,,,45719.0,Census,100.0,>=
+kinder,polio,MS,2015,2014-15 school year,99.2,,,44129.0,Census,100.0,>=
+kinder,polio,MS,2016,2015-16 school year,99.4,,,41042.0,Census,100.0,>=
+kinder,polio,MS,2017,2016-17 school year,99.4,,,40509.0,Census,100.0,>=
+kinder,polio,MS,2018,2017-18 school year,99.4,,,39284.0,Census,100.0,>=
+kinder,polio,MS,2019,2018-19 school year,99.2,,,37775.0,Census,100.0,>=
+kinder,polio,MS,2020,2019-20 school year,99.1,,,37870.0,Census,100.0,>=
 kinder,polio,MS,2021,2020-21 school year,98.9,,,34028.0,Census,100.0,>=
 kinder,polio,MS,2022,2021-22 school year,98.6,,,36524.0,Census,100.0,>=
 kinder,polio,MS,2023,2022-23 school year,98.4,,,36048.0,Census,100.0,>=
@@ -3113,13 +3113,13 @@ kinder,polio,NH,2010,2009-10 school year,,,,,Not conducted,,
 kinder,polio,NH,2011,2010-11 school year,,,,,,,
 kinder,polio,NH,2012,2011-12 school year,,,,13022.0,Census,100.0,
 kinder,polio,NH,2013,2012-13 school year,,,,12943.0,Census,99.2,
-kinder,polio,NH,2014,2013-14 school year,94.7,,,13240.0,Census,100.0,
-kinder,polio,NH,2015,2014-15 school year,91.4,,,12422.0,Census (public); Voluntary response (private),98.9,
-kinder,polio,NH,2016,2015-16 school year,91.9,,,11852.0,Census,99.8,
-kinder,polio,NH,2017,2016-17 school year,91.5,,,12145.0,Census,100.0,
-kinder,polio,NH,2018,2017-18 school year,92.4,,,12165.0,Census,100.0,
-kinder,polio,NH,2019,2018-19 school year,91.8,,,12421.0,Census,100.0,
-kinder,polio,NH,2020,2019-20 school year,91.5,,,12447.0,Census,100.0,
+kinder,polio,NH,2014,2013-14 school year,94.7,,,13240.0,Census,100.0,>=
+kinder,polio,NH,2015,2014-15 school year,91.4,,,12422.0,Census (public); Voluntary response (private),98.9,>=
+kinder,polio,NH,2016,2015-16 school year,91.9,,,11852.0,Census,99.8,>=
+kinder,polio,NH,2017,2016-17 school year,91.5,,,12145.0,Census,100.0,>=
+kinder,polio,NH,2018,2017-18 school year,92.4,,,12165.0,Census,100.0,>=
+kinder,polio,NH,2019,2018-19 school year,91.8,,,12421.0,Census,100.0,>=
+kinder,polio,NH,2020,2019-20 school year,91.5,,,12447.0,Census,100.0,>=
 kinder,polio,NH,2021,2020-21 school year,90.8,,,10242.0,Voluntary response,57.0,>=
 kinder,polio,NH,2022,2021-22 school year,88.7,,,12157.0,Census,100.0,>=
 kinder,polio,NH,2023,2022-23 school year,89.4,,,11332.0,Census,100.0,>=
@@ -3129,14 +3129,14 @@ kinder,polio,NH,2026,2025-26 school year,88.2,,,11544.0,Census,100.0,>=
 kinder,polio,NJ,2010,2009-10 school year,,,,118347.0,Census,95.1,
 kinder,polio,NJ,2011,2010-11 school year,,,,,,,
 kinder,polio,NJ,2012,2011-12 school year,,,,118669.0,Census,96.6,
-kinder,polio,NJ,2013,2012-13 school year,97.0,,,122516.0,Census,96.7,
-kinder,polio,NJ,2014,2013-14 school year,96.8,,,123085.0,Census,95.4,
-kinder,polio,NJ,2015,2014-15 school year,92.3,,,120471.0,Census (public); Voluntary response (private),93.9,
-kinder,polio,NJ,2016,2015-16 school year,96.3,,,110116.0,Census,100.0,
-kinder,polio,NJ,2017,2016-17 school year,96.5,,,109577.0,Census,100.0,
-kinder,polio,NJ,2018,2017-18 school year,96.1,,,107630.0,Census,100.0,
-kinder,polio,NJ,2019,2018-19 school year,95.0,,,109161.0,Census,100.0,
-kinder,polio,NJ,2020,2019-20 school year,95.9,,,107900.0,Census,100.0,
+kinder,polio,NJ,2013,2012-13 school year,97.0,,,122516.0,Census,96.7,>=
+kinder,polio,NJ,2014,2013-14 school year,96.8,,,123085.0,Census,95.4,>=
+kinder,polio,NJ,2015,2014-15 school year,92.3,,,120471.0,Census (public); Voluntary response (private),93.9,>=
+kinder,polio,NJ,2016,2015-16 school year,96.3,,,110116.0,Census,100.0,>=
+kinder,polio,NJ,2017,2016-17 school year,96.5,,,109577.0,Census,100.0,>=
+kinder,polio,NJ,2018,2017-18 school year,96.1,,,107630.0,Census,100.0,>=
+kinder,polio,NJ,2019,2018-19 school year,95.0,,,109161.0,Census,100.0,>=
+kinder,polio,NJ,2020,2019-20 school year,95.9,,,107900.0,Census,100.0,>=
 kinder,polio,NJ,2021,2020-21 school year,94.3,,,100144.0,Census,100.0,>=
 kinder,polio,NJ,2022,2021-22 school year,94.1,,,104240.0,Census,100.0,>=
 kinder,polio,NJ,2023,2022-23 school year,94.3,,,104468.0,Census,100.0,>=
@@ -3282,7 +3282,7 @@ kinder,polio,RI,2026,2025-26 school year,96.5,,,10123.0,Census,97.1,
 kinder,polio,SC,2010,2009-10 school year,87.7,,,53725.0,Random sample,10.2,
 kinder,polio,SC,2011,2010-11 school year,,,,,,,
 kinder,polio,SC,2012,2011-12 school year,96.7,,,59307.0,1-stage Cluster Sample,10.7,
-kinder,polio,SC,2013,2012-13 school year,90.9,,,61799.0,1-Stage Cluster Sample,17.9,
+kinder,polio,SC,2013,2012-13 school year,90.9,,,61799.0,1-Stage Cluster Sample,17.9,>=
 kinder,polio,SC,2014,2013-14 school year,97.6,,,61661.0,1-stage stratified sample,11.0,
 kinder,polio,SC,2015,2014-15 school year,97.7,,,62864.0,Stratified 1-stage cluster sample,12.2,
 kinder,polio,SC,2016,2015-16 school year,97.5,,,59240.0,Stratified 1-stage cluster sample,8.9,
@@ -3313,12 +3313,12 @@ kinder,polio,SD,2023,2022-23 school year,92.3,,,12081.0,Census,100.0,
 kinder,polio,SD,2024,2023-24 school year,91.0,,,11744.0,Census,99.8,
 kinder,polio,SD,2025,2024-25 school year,89.9,,,11367.0,Census,99.3,
 kinder,polio,SD,2026,2025-26 school year,88.6,,,11009.0,Census,100.0,
-kinder,polio,TN,2010,2009-10 school year,97.4,,,90811.0,Voluntary response,88.1,
+kinder,polio,TN,2010,2009-10 school year,97.4,,,90811.0,Voluntary response,88.1,>=
 kinder,polio,TN,2011,2010-11 school year,,,,,,,
-kinder,polio,TN,2012,2011-12 school year,97.3,,,83950.0,Census,99.9,
-kinder,polio,TN,2013,2012-13 school year,94.5,,,85801.0,Census,97.0,
-kinder,polio,TN,2014,2013-14 school year,94.9,,,80212.0,Census,99.8,
-kinder,polio,TN,2015,2014-15 school year,95.1,,,78276.0,Census,100.0,
+kinder,polio,TN,2012,2011-12 school year,97.3,,,83950.0,Census,99.9,>=
+kinder,polio,TN,2013,2012-13 school year,94.5,,,85801.0,Census,97.0,>=
+kinder,polio,TN,2014,2013-14 school year,94.9,,,80212.0,Census,99.8,>=
+kinder,polio,TN,2015,2014-15 school year,95.1,,,78276.0,Census,100.0,>=
 kinder,polio,TN,2016,2015-16 school year,93.6,,,79233.0,Census,100.0,
 kinder,polio,TN,2017,2016-17 school year,96.8,,,78169.0,Census,100.0,
 kinder,polio,TN,2018,2017-18 school year,96.7,,,78743.0,Census,100.0,

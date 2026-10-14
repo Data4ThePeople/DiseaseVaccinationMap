@@ -155,3 +155,15 @@ None.
   same years as the charts (last school year before each rule, first year
   under it, 2025-26), with Mississippi added and New York shown as MMR
   coverage; New York's exemption share moved to the note under the table.
+- 2026-10-14 Fourth independent tie-out (fresh agent) of the newer page
+  features: every value it recomputed from CDC's file matched (816 tiles, 15
+  years of state counts, 64 rankings, 87 table sorts, 14 state charts, the
+  findings charts and table), and it read the five rule dates on the original
+  legislature, court and health department pages. It found that CDC's
+  lower-bound mark is spelled "≥" before 2020-21, which the build missed (72
+  MMR state-years); fixed, with the text that said the mark began in 2020-21.
+  Also fixed: state charts now run to 2025-26, Connecticut's rule wording
+  (in effect April 28, 2021; 2022-23 is the first kindergarten class fully
+  under it), and the phone layout (rail charts hidden or overflowing, tile
+  labels colliding, rates rounded against their color). The meaning of the
+  mark is confirmed in CDC's MMWR table notes.
