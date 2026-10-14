@@ -86,7 +86,8 @@ h1{font-family:var(--serif);font-weight:700;font-size:22px;line-height:1.15;marg
 .card a{font-family:var(--serif);font-size:16px;line-height:1.25;font-weight:700;color:var(--ink);text-decoration:none;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .card a:hover{text-decoration:underline}
 .card p{font-family:var(--serif);font-size:13px;line-height:1.3;color:var(--ink2);margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.card .more{font-family:var(--sans);font-size:11px;color:var(--ink3);text-transform:none;letter-spacing:0;font-weight:400}
+.card .src>span:first-child{min-width:0;overflow:hidden;text-overflow:ellipsis}   /* a long source name shortens; the headline buttons stay in view */
+.card .more{flex:none;font-family:var(--sans);font-size:11px;color:var(--ink3);text-transform:none;letter-spacing:0;font-weight:400}
 .card .more button{font:inherit;font-size:13px;line-height:1;background:var(--bg);border:1px solid var(--rule);border-radius:3px;padding:0 6px 2px;cursor:pointer;color:var(--ink)}
 .card .more button:hover{border-color:var(--ink)}
 #tip{position:fixed;z-index:10;pointer-events:none;background:#fff;border:1px solid var(--ink);box-shadow:0 2px 10px rgba(0,0,0,.12);padding:9px 11px;font-size:12.5px;line-height:1.35;max-width:300px;display:none}
@@ -353,7 +354,7 @@ function gapNote(dk, y) {
 const SMALL = 0.04;   // under this share of one figure nothing is drawn; a dot marks it instead
 
 /* ---------- the figure ---------- */
-function person(ctx, x, y, w, color, frac, alpha) {
+function person(ctx, x, y, w, color, frac, alpha, back) {
   const h = w * 1.9, r = w * 0.24;
   const shape = () => {
     ctx.beginPath();
@@ -366,6 +367,8 @@ function person(ctx, x, y, w, color, frac, alpha) {
     ctx.closePath();
   };
   ctx.save();
+  // on a gray coverage tile each figure sits on a white silhouette, so light and faded colors stay visible
+  if (back) { ctx.fillStyle = "#fff"; ctx.strokeStyle = "#fff"; ctx.lineWidth = Math.max(1, w * 0.18); shape(); ctx.fill(); ctx.stroke(); }
   if (frac < 1) {           // a part of a figure: faint whole, solid share from the feet up
     ctx.globalAlpha = 0.16 * alpha; ctx.fillStyle = color; shape(); ctx.fill();
     ctx.beginPath(); ctx.rect(x - 1, y + h * (1 - frac), w + 2, h * frac + 1); ctx.clip();
@@ -388,7 +391,7 @@ function figures(items) {
   return out;
 }
 /* draw figures into a box, shrinking them until they fit; returns nothing */
-function drawFigures(ctx, figs, x, y, w, h, maxW, align) {
+function drawFigures(ctx, figs, x, y, w, h, maxW, align, back) {
   if (!figs.length) return;
   let fw = maxW, cols, rows;
   for (; fw >= 1.6; fw -= 0.25) {
@@ -398,7 +401,7 @@ function drawFigures(ctx, figs, x, y, w, h, maxW, align) {
   }
   const gx = fw * 1.22, gy = fw * 2.15, usedRows = Math.ceil(figs.length / cols);
   const y0 = align === "bottom" ? y + h - usedRows * gy + fw * 0.25 : y;
-  figs.forEach((f, i) => person(ctx, x + (i % cols) * gx, y0 + Math.floor(i / cols) * gy, fw, f.color, f.frac, f.alpha));
+  figs.forEach((f, i) => person(ctx, x + (i % cols) * gx, y0 + Math.floor(i / cols) * gy, fw, f.color, f.frac, f.alpha, back));
 }
 function setupCanvas(cv, cssW, cssH) {
   const dpr = Math.min(window.devicePixelRatio || 1, 3);
@@ -441,6 +444,8 @@ const schoolYear = y => `${y - 1}-${String(y).slice(2)}`;
 /* every school year in CDC's kindergarten file, including any later than the map's last year of cases */
 const KINDER_YEARS = (() => { const ys = new Set(); const m = (D.vax.kinder || {}).mmr || {}; for (const st in m) if (ST[st]) for (const y in m[st]) ys.add(+y); return [...ys].sort((a, b) => a - b); })();
 const COV_YEARS = (() => { const ys = new Set(); const m = (D.vax.kinder || {}).mmr || {}; for (const st in m) if (ST[st]) for (const y in m[st]) if (+y <= D.y1) ys.add(+y); return [...ys].sort((a, b) => a - b); })();
+/* a year between the first and last school year with figures, including one where no state reported */
+const inCovSpan = y => COV_YEARS.length > 0 && y >= COV_YEARS[0] && y <= COV_YEARS[COV_YEARS.length - 1];
 const covCount = y => { let n = 0, below = 0, low = 0, belowLb = 0, lowLb = 0; for (const s of D.states) { const p = covPoint(s.k, y); if (!p) continue; n++; if (p[0] < COV_LEVEL) { below++; if (p[4]) belowLb++; } if (p[0] < 90) { low++; if (p[4]) lowLb++; } } return { n, below, low, belowLb, lowLb }; };
 const lbNote = k => k ? ` (${k} reported as \u201cat least\u201d)` : "";
 function setCov(on) {
@@ -452,21 +457,24 @@ function setCov(on) {
 function renderCovBar() {
   const el = $("covbar"), c = covCount(S.year);
   const was = el.hidden;
-  el.hidden = !(S.cov && c.n);   // nothing to explain in a year with no state figures
+  el.hidden = !S.cov || !!S.sel;   // a state page has its own county key
   if (was !== el.hidden && !S.sel && GEO) layoutMap();   // the bar takes a row, so the map is sized again
   if (el.hidden) return;
   el.innerHTML = `<b title="On each state, the top number is reported cases and the percentage under it is this rate">Kindergartners with the measles vaccine (MMR)${c.n ? ", " + schoolYear(S.year) + " school year" : ""}</b>`
-    + COV_STEPS.map(b => `<span><i style="background:${b[1]}"></i>${b[3]}</span>`).join("")
-    + `<span><i style="background:${NOFIG};outline:1px solid ${NOFIG_LINE}"></i>no figure</span>`
+    + (inCovSpan(S.year) ? COV_STEPS.map(b => `<span><i style="background:${b[1]}"></i>${b[3]}</span>`).join("")
+      + `<span><i style="background:${NOFIG};outline:1px solid ${NOFIG_LINE}"></i>no figure</span>` : "")
     + (c.n ? `<span class="cnt">${c.below} of ${c.n} states below the ${COV_LEVEL}% national target${lbNote(c.belowLb)}</span>`
+           : inCovSpan(S.year) ? `<span class="cnt">No state reported a kindergarten figure for the ${schoolYear(S.year)} school year</span>`
            : `<span class="cnt">State kindergarten figures run from ${schoolYear(COV_YEARS[0])} to ${schoolYear(COV_YEARS[COV_YEARS.length - 1])}; move the year there to color the map</span>`);
 }
 function covChart(width) {
-  const W = Math.max(160, width), H = 74, ml = 22, mb = 13, mt = 4, ys = COV_YEARS, bw = (W - ml) / ys.length;
+  const ys = []; for (let v = COV_YEARS[0]; v <= COV_YEARS[COV_YEARS.length - 1]; v++) ys.push(v);   // one slot per school year, empty where no state reported
+  const W = Math.max(160, width), H = 74, ml = 22, mb = 13, mt = 4, bw = (W - ml) / ys.length;
   const y = v => mt + (1 - v / 51) * (H - mt - mb);
   let g = [0, 25, 51].map(v => `<line x1="${ml}" x2="${W}" y1="${y(v)}" y2="${y(v)}" stroke="#e3e2dd"/><text x="${ml - 4}" y="${y(v) + 3}" text-anchor="end" font-size="9" fill="#8a8780">${v}</text>`).join("");
   for (let i = 0; i < ys.length; i++) {
     const c = covCount(ys[i]), x = ml + i * bw + 1, w = Math.max(2, bw - 2), cur = ys[i] === S.year;
+    if (!c.n) { g += `<line x1="${x}" x2="${x + w}" y1="${y(0) - 0.5}" y2="${y(0) - 0.5}" stroke="#8a8780" stroke-dasharray="1 2"/><rect data-y="${ys[i]}" x="${x - 1}" y="${mt}" width="${bw}" height="${H - mt - mb}" fill="transparent"${cur ? ' stroke="#121212" stroke-width="1"' : ""}><title>${schoolYear(ys[i])}: no state figures</title></rect>`; if (i === 0 || i === ys.length - 1 || ys[i] % 5 === 0) g += `<text x="${x + w / 2}" y="${H - 2}" text-anchor="middle" font-size="9" fill="#8a8780">${ys[i]}</text>`; continue; }
     g += `<rect x="${x}" y="${y(c.below)}" width="${w}" height="${y(c.low) - y(c.below)}" fill="${COV_STEPS[1][2]}"/>`
       + `<rect x="${x}" y="${y(c.low)}" width="${w}" height="${y(0) - y(c.low)}" fill="${COV_STEPS[2][2]}"/>`
       + `<rect data-y="${ys[i]}" x="${x - 1}" y="${mt}" width="${bw}" height="${H - mt - mb}" fill="transparent"${cur ? ' stroke="#121212" stroke-width="1"' : ""}><title>${schoolYear(ys[i])}: ${c.below} of ${c.n} states below ${COV_LEVEL}%${lbNote(c.belowLb)}, ${c.low} below 90%${lbNote(c.lowLb)}</title></rect>`;
@@ -474,7 +482,7 @@ function covChart(width) {
   }
   const c = covCount(S.year);
   return `<div class="covchart"><h3>States below ${COV_LEVEL}% kindergarten MMR coverage</h3><svg viewBox="0 0 ${W} ${H}" height="${H}" role="img" aria-label="Number of states below ${COV_LEVEL} percent kindergarten MMR coverage, by school year">${g}</svg>`
-    + `<p class="read">${c.n ? `${schoolYear(S.year)}: <b>${c.below} of ${c.n}</b> states below ${COV_LEVEL}%${lbNote(c.belowLb)}, ${c.low} below 90%${lbNote(c.lowLb)}.` : `No state kindergarten figures for ${S.year}.`} Darker bars are states under 90%. Year is the spring of the school year.</p></div>`;
+    + `<p class="read">${c.n ? `${schoolYear(S.year)}: <b>${c.below} of ${c.n}</b> states below ${COV_LEVEL}%${lbNote(c.belowLb)}, ${c.low} below 90%${lbNote(c.lowLb)}.` : `No state reported a kindergarten figure for ${schoolYear(S.year)}.`} Darker bars are states under 90%.${c.n && ys.some(v => !covCount(v).n) ? ` A dotted slot means no state reported that year (${ys.filter(v => !covCount(v).n).map(schoolYear).join(", ")}).` : ""} Year is the spring of the school year.</p></div>`;
 }
 
 /* ---------- national map ---------- */
@@ -517,7 +525,7 @@ function drawMap() {
   for (const s of D.states) {
     const x = s.c * (tw + gap), y = s.r * (th + gap);
     const cv = S.cov ? covPoint(s.k, S.year) : null;
-    const nofig = S.cov && !cv && COV_YEARS.includes(S.year);
+    const nofig = S.cov && !cv && inCovSpan(S.year);
     ctx.fillStyle = cv ? covStep(cv[0])[1] : nofig ? NOFIG : S.hover === s.k ? "#ebebe7" : "#f5f5f3";
     ctx.beginPath(); ctx.roundRect(x + 0.5, y + 0.5, tw - 1, th - 1, 4); ctx.fill();
     if (S.hover === s.k) { ctx.strokeStyle = "#121212"; ctx.lineWidth = 1; ctx.stroke(); }
@@ -533,16 +541,18 @@ function drawMap() {
       if (c.cases > 0 && c.rate / D.unit < SMALL) { marks.push({ color: d.color, ring: false, alpha: thin(c) ? 0.5 : 1 }); continue; }
       items.push({ rate: c.rate, color: d.color, alpha: thin(c) ? 0.5 : 1 });
     }
-    ctx.font = `700 ${fs}px Helvetica Neue,Helvetica,Arial,sans-serif`; ctx.textBaseline = "top";
-    ctx.fillStyle = cv && cv[0] < 90 ? "#121212" : "#55534e"; ctx.textAlign = "left"; ctx.fillText(s.k, x + pad, y + pad);
-    const codeW = ctx.measureText(s.k).width;
-    ctx.font = `${fs}px Helvetica Neue,Helvetica,Arial,sans-serif`; ctx.textAlign = "right";
-    // top right: the case total; under it, when the state is shaded, its coverage rate.
-    // On small tiles the total's type shrinks until it clears the state code.
+    // top left the state code, top right the case total; under it, when the state is shaded, its coverage rate.
+    // On small tiles the total's type shrinks, then the code's, until there is a clear gap between them.
     const tot = !any ? (!dz.length ? "" : tw < 56 ? "\u2013" : "no data") : short(total);
-    let tf = fs;
-    while (tot && tf > 6 && codeW + ctx.measureText(tot).width + 3 > tw - pad * 2) { tf -= 0.5; ctx.font = `${tf}px Helvetica Neue,Helvetica,Arial,sans-serif`; }
-    ctx.fillStyle = !any ? (cv ? "#8a8780" : "#a9a6a0") : "#121212"; ctx.fillText(tot, x + tw - pad, y + pad + (fs - tf) * 0.8);
+    const kfont = k => `700 ${k}px Helvetica Neue,Helvetica,Arial,sans-serif`, tfont = t => `${t}px Helvetica Neue,Helvetica,Arial,sans-serif`;
+    const gapMin = Math.max(3, tw * 0.1);
+    let kf = fs, tf = fs;
+    const room = () => { ctx.font = kfont(kf); const a = ctx.measureText(s.k).width; ctx.font = tfont(tf); return tw - pad * 2 - a - (tot ? ctx.measureText(tot).width : 0); };
+    while (tot && room() < gapMin) { if (tf > 6) tf -= 0.5; else if (kf > 6.5) kf -= 0.5; else break; }
+    ctx.textBaseline = "top"; ctx.font = kfont(kf);
+    ctx.fillStyle = cv && cv[0] < 90 ? "#121212" : "#55534e"; ctx.textAlign = "left"; ctx.fillText(s.k, x + pad, y + pad + (fs - kf) * 0.8);
+    ctx.font = tfont(tf); ctx.textAlign = "right";
+    ctx.fillStyle = !any ? (cv ? (cv[0] < 90 ? "#2b2a27" : "#55534e") : "#a9a6a0") : "#121212"; ctx.fillText(tot, x + tw - pad, y + pad + (fs - tf) * 0.8);
     let top = y + pad + fs + 3, cvLine = false;
     if (cv) {
       const cf = Math.max(7.5, fs - 1);
@@ -563,12 +573,13 @@ function drawMap() {
       marks.forEach((m, i) => {
         ctx.beginPath(); ctx.arc(mx + r + i * step, my + r, r - (m.ring ? 0.5 : 0), 0, Math.PI * 2);
         ctx.globalAlpha = m.alpha || 1;
+        if (cv) { ctx.save(); ctx.globalAlpha = 1; ctx.fillStyle = "#fff"; ctx.beginPath(); ctx.arc(mx + r + i * step, my + r, r + 0.8, 0, Math.PI * 2); ctx.fill(); ctx.restore(); ctx.beginPath(); ctx.arc(mx + r + i * step, my + r, r - (m.ring ? 0.5 : 0), 0, Math.PI * 2); }
         if (m.ring) { ctx.strokeStyle = m.color; ctx.lineWidth = 1; ctx.stroke(); } else { ctx.fillStyle = m.color; ctx.fill(); }
         ctx.globalAlpha = 1;
       });
       if (!corner) top += Math.max(r * 2 + 2, cv ? Math.max(7.5, fs - 1) + 1 : 0);
     }
-    drawFigures(ctx, figures(items), x + pad, top, figW, y + th - pad - top, Math.max(3.2, tw * 0.1), "bottom");
+    drawFigures(ctx, figures(items), x + pad, top, figW, y + th - pad - top, Math.max(3.2, tw * 0.1), "bottom", !!cv);
   }
 }
 
@@ -692,8 +703,8 @@ function renderRail() {
   // draw each chart at the width of its grid column: one column on the wide layout and on phones, two in between
   const rc = $("railcharts"), cols = $("viz").classList.contains("fit") ? 1 : getComputedStyle(rc).gridTemplateColumns.split(" ").filter(Boolean).length || 1;
   const w = (rc.clientWidth - 16 * (cols - 1)) / cols;
-  $("railcharts").innerHTML = (S.cov && COV_YEARS.includes(S.year) ? covChart($("railcharts").clientWidth) : "") + (vaxKeys().map(vk => vaxChart(vk, focus, w)).join("") || `<p class="note">Check a disease to see its vaccine.</p>`);
-  $("railnote").hidden = S.cov && COV_YEARS.includes(S.year);
+  $("railcharts").innerHTML = (S.cov && inCovSpan(S.year) ? covChart($("railcharts").clientWidth) : "") + (vaxKeys().map(vk => vaxChart(vk, focus, w)).join("") || `<p class="note">Check a disease to see its vaccine.</p>`);
+  $("railnote").hidden = S.cov && inCovSpan(S.year);
   $("railnote").textContent = `State figures start in ${vaxFirstYear()}. Before that only national surveys exist, and they relied on parents' recall. A gap in a line means no measurement that year, or that the state moved between a sample of schools and a count of all kindergartners, so the two sides should not be compared. Triangles mark when a vaccine was licensed. Hover a state for its lines and the survey details.`;
 }
 
@@ -769,6 +780,8 @@ function stateCovChart(st, width) {
   g += `<line x1="${ml}" x2="${W - mr}" y1="${Y(COV_LEVEL)}" y2="${Y(COV_LEVEL)}" stroke="#55534e" stroke-dasharray="4 3"/>`;
   const path = (key, f) => { let d = "", prev = null; for (const q of pts) { const v = f(q); if (v == null) { prev = null; continue; } d += `${prev != null && q.y - prev === 1 ? "L" : "M"}${X(q.y).toFixed(1)},${Y(Math.max(lo, v)).toFixed(1)}`; prev = q.y; } return d; };
   g += `<path d="${path("us", q => q.us && q.us[0])}" fill="none" stroke="#a9a6a0" stroke-width="1.5"/>`;
+  // a U.S. figure with no year on either side has no line to sit on, so it is drawn as a dot
+  pts.forEach((q, i) => { if (q.us && !(pts[i - 1] || {}).us && !(pts[i + 1] || {}).us) g += `<circle cx="${X(q.y)}" cy="${Y(Math.max(lo, q.us[0]))}" r="2.2" fill="#a9a6a0"/>`; });
   g += `<path d="${path("st", q => q.p && q.p[0])}" fill="none" stroke="#121212" stroke-width="1.6"/>`;
   for (const q of pts) {
     const cur = q.y === S.year;
@@ -780,7 +793,7 @@ function stateCovChart(st, width) {
   g += `<text x="${ml - 5}" y="${H - 4}" text-anchor="end" font-size="9.5" fill="#8a8780">cases</text>`;
   const now = pts.find(q => q.y === S.year), first = have[0], last = have[have.length - 1];
   const read = now && now.p ? `${schoolYear(S.year)}: <b>${now.p[4] ? "at least " : ""}${now.p[0].toFixed(1)}%</b>${now.us ? `, United States ${now.us[0].toFixed(1)}%` : ""}${now.c ? `; ${fmt(now.c.cases)} measles ${now.c.cases === 1 ? "case" : "cases"} reported in ${S.year}` : ""}.`
-    : `${schoolYear(first.y)}: ${pct(first.p)}. ${schoolYear(last.y)}: <b>${pct(last.p)}</b>.`;
+    : `${now && S.year >= ys[0] ? `${schoolYear(S.year)}: no figure. ` : ""}${schoolYear(first.y)}: ${pct(first.p)}. ${schoolYear(last.y)}: <b>${pct(last.p)}</b>.`;
   return `<h3>Kindergartners with the measles vaccine (MMR) in ${name}, ${span}</h3>`
     + `<svg viewBox="0 0 ${W} ${H}" height="${H}" role="img" aria-label="Kindergarten MMR coverage in ${name} by school year, with measles cases each year">${g}</svg>`
     + `<p class="read">${read} Dots: <span style="color:${COV_STEPS[0][2]}">\u25cf</span> 95% or more <span style="color:${COV_STEPS[1][2]}">\u25cf</span> 90% to under 95% <span style="color:${COV_STEPS[2][2]}">\u25cf</span> under 90%. Gray line: United States. Dashed line: ${COV_LEVEL}%, the national target. The row under the chart is ${name}'s reported measles cases each year. A gap means no figure that school year.${ys[ys.length - 1] > D.y1 ? ` Case counts on this map end with ${D.y1}, so ${schoolYear(ys[ys.length - 1])} has coverage but no case figure.` : ""}${have.some(q => q.p[4]) ? " In some years CDC flags this state\u2019s figure as a lower bound (\u201cat least\u201d); the true share may be higher." : ""} Click a year to move there.</p>`;
@@ -788,6 +801,8 @@ function stateCovChart(st, width) {
 /* county map: kindergarten MMR coverage where the state publishes it by county */
 const MMR_BINS = [[95, "#ebe9e3", "95% or more"], [90, "#cdc9c0", "90 to 94.9%"], [85, "#aaa59b", "85 to 89.9%"], [0, "#77736a", "under 85%"]];
 const mmrBin = v => MMR_BINS.find(b => v >= b[0]);
+/* one decimal, or two where one decimal would round a county into the next step (94.95 shows as 94.95, not 95.0) */
+const cpct = v => mmrBin(+v.toFixed(1)) === mmrBin(v) ? v.toFixed(1) : v.toFixed(2);
 function stateSvg(st) {
   const sh = D.shapes[st], sw = sh.box[2] / 260, y = S.year, meta = D.cmeta[st] || { n: 0 };
   let paths = "", dots = "";
@@ -816,7 +831,7 @@ function countyTip(f, e) {
   if (!f) { tip.style.display = "none"; return; }
   const v = (D.cmmr[f] || {})[y], n = (D.cmeasles[f] || {})[y], meta = D.cmeta[st] || {};
   tip.innerHTML = `<h4>${esc(sh.c[f][0])}, ${esc(ST[st].n)}</h4>`
-    + (v != null ? `<div>2 MMR doses, ${y - 1}-${String(y).slice(2)}: <b>${v.toFixed(1)}%</b></div><div class="q">${esc(meta.age || "")}${meta.origin ? ", " + esc(meta.origin.toLowerCase()) : ""}. Compiled by Johns Hopkins from state reports.</div>` : `<div style="color:#8a8780">No county vaccination figure for ${y}.</div>`)
+    + (v != null ? `<div>2 MMR doses, ${y - 1}-${String(y).slice(2)}: <b>${cpct(v)}%</b></div><div class="q">${esc(meta.age || "")}${meta.origin ? ", " + esc(meta.origin.toLowerCase()) : ""}. Compiled by Johns Hopkins from state reports.</div>` : `<div style="color:#8a8780">No county vaccination figure for ${y}.</div>`)
     + (n ? `<div class="q">Confirmed measles cases reported in ${y}: <b>${fmt(n)}</b></div>` : "");
   tip.style.display = "block"; placeTip(e.clientX, e.clientY);
 }

@@ -183,3 +183,18 @@ None.
   the four vaccine charts on a state page were drawn at half width and
   stretched on phones; the "states below 95%" line in the legend was cut off
   at the right edge. No sideways scroll at 390, 500 or 700px. Tie-out passes.
+- 2026-10-14 Fifth independent tie-out (fresh agent) of the gray scale and the
+  phone layout: all 867 state-years (2009-10 to 2025-26) match CDC's file on
+  value, step and the "at least" mark; every tile's drawn shade, the legend and
+  bar chart counts for all 16 school years, and the county values match. Fixed
+  from its findings: the U.S. 2009-10 figure now shows as a dot on state charts;
+  the bar chart leaves a dotted slot for 2010-11 (no state figures); the 2011
+  map shows every tile as "no figure" with a line saying so; the national key
+  is hidden on state pages, where the county key differs; county steps are
+  picked from two decimals (33 county-years had been one step too high); the
+  headline buttons no longer run off a phone screen; the state code and case
+  total keep a gap on small tiles; disease figures and dots sit on a white
+  backing on gray tiles; Montana's chart says it has no 2024-25 figure. Its
+  polio axis finding was checked and is not a fault (lowest value 53.2%).
+  Not checked: what the unreadable mark in 22 of CDC's 2025-26 footnotes
+  stands for; every county map by eye; a real phone.
