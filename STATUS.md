@@ -151,3 +151,7 @@ None.
   Not re-read by eye: 85 of the 106 early disease-years (sum-checked only).
 - 2026-10-13 Eric: the map coloring by kindergarten MMR coverage is on by
   default (it shades from 2010 on; the checkbox turns it off).
+- 2026-10-14 Eric: the findings page table on exemption rules now uses the
+  same years as the charts (last school year before each rule, first year
+  under it, 2025-26), with Mississippi added and New York shown as MMR
+  coverage; New York's exemption share moved to the note under the table.

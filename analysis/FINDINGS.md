@@ -99,12 +99,20 @@ Four states ended non-medical exemptions after outbreaks or rising exemption
 rates, and their kindergarten MMR coverage went up afterward. The timing is
 documented; whether the laws were the reason is not something this data shows.
 
-| State | Law | MMR before | MMR after |
-|---|---|---|---|
-| California | SB 277, June 30, 2015, after the Disneyland outbreak | 92.3% (2013-14) | 97.3% (2016-17) |
-| Maine | Public Law 2019, ch. 154, in effect September 2021 | 89.9% (2013-14) | 98.0% (2025-26) |
-| New York | Signed June 13, 2019, during a year with 911 measles cases | all exemptions 1.3% (2018-19) | all exemptions 0.1% (2019-20) |
-| Connecticut | Public Act 21-6, April 28, 2021 | 95.3% (2020-21) | 98.6% (2025-26) |
+Kindergarten MMR coverage, last school year before the rule, first school
+year under it, and 2025-26 (the same years the charts label; changed
+October 14, 2026 from earlier "before" years such as 2013-14):
+
+| State | Rule change | Last year before | First year under rule | 2025-26 |
+|---|---|---|---|---|
+| California | SB 277, June 30, 2015, after the Disneyland outbreak; applied July 1, 2016 | 94.5% (2015-16) | 97.3% (2016-17) | 95.7% |
+| New York | Signed June 13, 2019, during a year with 911 measles cases | 97.2% (2018-19) | 98.6% (2019-20) | 97.7%* |
+| Maine | Public Law 2019, ch. 154, in effect September 1, 2021 | 94.3%* (2020-21) | 96.7% (2021-22) | 98.0% |
+| Connecticut | Public Act 21-6, April 28, 2021, in effect 2022-23 | 95.7% (2021-22) | 97.3% (2022-23) | 98.6% |
+| Mississippi | Religious exemption added by court order, April 2023 | >=98.4% (2022-23) | >=97.5% (2023-24) | >=97.0% |
+
+\* Not a count of every school that year. New York's share of kindergartners
+with any exemption fell from 1.3% (2018-19) to 0.1% (2019-20).
 
 **Chart (added October 13, 2026).** `analysis/03_exemption_rules_chart.py` draws
 kindergarten MMR coverage for these four states and Mississippi, 2009-10 to
