@@ -171,3 +171,9 @@ None.
   MMWR 64(06); SB 277 as introduced): exposures December 17-20, 2014; bill
   introduced February 19, 2015; signed June 30, 2015. "Months after the
   Disneyland outbreak" holds. All five rule claims are now checked at source.
+- 2026-10-14 Mike Kinch suggested red, yellow and green for coverage, since the
+  oranges looked like mumps. Eric chose grays instead (red, green and yellow are
+  disease colors on the tiles, and red/green is hard for many readers to tell
+  apart): lighter means higher coverage on the map tiles, legend, bar chart,
+  state chart dots, ranking and county map. "No figure" is white with a gray
+  outline so it can't be read as 95% or more. Tie-out passes.
