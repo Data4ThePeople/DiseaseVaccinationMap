@@ -224,3 +224,19 @@ None.
   "the District of Columbia". Still open: on short desktop windows the U.S.
   row under the map shows only its first two disease lines (older than this
   work). Not checked: a real phone, tapping, fonts on other systems.
+- 2026-10-15 Eighth independent tie-out (fresh agent, of 9a6c8af): all seven
+  fixes hold; populations (5,346), kindergarten coverage (2,354), U.S. rows
+  (11 years x 5 diseases), about 50 case counts across CDC files and scans,
+  all 16,380 county values and 73 county hovers match; 12_tieout.py 0 fails.
+  Fixed from its findings: the U.S. row under the map is now as tall as its
+  longest year at the current width, so every disease line shows at every
+  window size (the map is smaller on short windows: 38.6px tiles at
+  1366x657); tile totals round half up (7,350 is "7.4k", was "7.3k"); 999,500
+  and up read "1.0M", not "1000k"; a rate under 0.005 with cases reads "under
+  0.01 per 100k", not "0.00"; the printed rubella footnotes on Mississippi
+  measles 1968 and Nebraska measles 1955 now show in the hover and state
+  notes; DATASETS.md says which year a Tycho week counts in (its middle day).
+  Phone tiles under the 3px code-to-total gap fell from 49 to 2 (Ohio 1941
+  2.4px, California 1942 3.0px; codes in those years are 6px). Not checked:
+  a real phone, tapping, fonts on other systems, survey-year state values
+  1995 to 2014 and national figures before 1995 against CDC's archived files.

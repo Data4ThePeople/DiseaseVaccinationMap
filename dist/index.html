@@ -166,6 +166,7 @@ footer p{margin:0;max-width:980px}
 .viz:not(.fit) .rail{flex:none;overflow:visible}
 .viz:not(.fit) .rail .charts{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 16px}
 .viz:not(.fit) .usrow{height:auto}
+.viz.fit .usrow{align-items:start}   /* the row is sized to its longest year; shorter years sit at its top, under the map */
 .viz:not(.fit) .sgrid,.viz:not(.fit) .sgrid2{grid-template-columns:minmax(0,1fr)}
 .viz:not(.fit) .card{height:auto;min-height:64px}
 .viz:not(.fit) .card a{white-space:normal}
@@ -207,7 +208,7 @@ footer p{margin:0;max-width:980px}
           <canvas id="map" aria-hidden="true"></canvas>
           <div id="tiles"></div>
         </div>
-        <div class="usrow">
+        <div class="usrow" id="usrow">
           <div class="lbl">United<br>States</div>
           <div>
             <canvas id="usfig" aria-hidden="true"></canvas>
@@ -287,11 +288,14 @@ const DIS = D.diseases, DKEY = Object.fromEntries(DIS.map(d => [d.k, d]));
 const ST = Object.fromEntries(D.states.map(s => [s.k, s]));
 const nf = new Intl.NumberFormat("en-US");
 const fmt = n => nf.format(Math.round(n));
-const fmt1 = n => n === 0 ? "0" : n >= 100 ? fmt(n) : n >= 10 ? n.toFixed(1) : n.toFixed(2);
-/* 9,950 to 9,999 round to "10k", not "10.0k" */
-const short = n => n >= 1e6 ? (n / 1e6).toFixed(n >= 9.95e6 ? 0 : 1) + "M" : n >= 9950 ? Math.round(n / 1e3) + "k" : n >= 1e3 ? (n / 1e3).toFixed(1) + "k" : String(n);
+/* rounded half up (7,350 is 7.4k); toFixed alone rounds some halves down because of how decimals are stored */
+const rnd = (v, d) => (Math.round(v * 10 ** d + 1e-9) / 10 ** d).toFixed(d);
+/* a rate that rounds to 0.00 but has cases says "under 0.01", so it never reads as zero */
+const fmt1 = n => n === 0 ? "0" : n >= 100 ? fmt(n) : n >= 10 ? rnd(n, 1) : rnd(n, 2) === "0.00" ? "under 0.01" : rnd(n, 2);
+/* 9,950 to 9,999 round to "10k", not "10.0k"; 999,500 and up to "1.0M", not "1000k" */
+const short = n => n >= 999500 ? rnd(n / 1e6, n >= 9.95e6 ? 0 : 1) + "M" : n >= 9950 ? rnd(n / 1e3, 0) + "k" : n >= 1e3 ? rnd(n / 1e3, 1) + "k" : String(n);
 /* the smallest tiles (phones) drop the decimal on thousands; the exact count is in the hover box and the table */
-const shortTight = n => n >= 1e6 ? short(n) : n >= 1e3 ? Math.round(n / 1e3) + "k" : String(n);
+const shortTight = n => n >= 999500 ? short(n) : n >= 1e3 ? rnd(n / 1e3, 0) + "k" : String(n);
 const $ = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
@@ -305,7 +309,7 @@ function cell(dk, st, y) {
   const code = D.src[dk][st][i];
   // "n" = the count covers New York City only: shown as a count, with no rate and no figures
   const part = code.toLowerCase() === "n";
-  return { cases: c, pop: p, rate: p && !part ? c / p * 1e5 : null, code, part, _y: y, weeks: (D.weeks[dk][st] || [])[i] || 0 };
+  return { cases: c, pop: p, rate: p && !part ? c / p * 1e5 : null, code, part, _y: y, _st: st, weeks: (D.weeks[dk][st] || [])[i] || 0 };
 }
 /* national figure = sum of the states that reported, over the population of those states */
 function usCell(dk, y) {
@@ -327,6 +331,11 @@ function usCell(dk, y) {
   return { cases, pop, rate: pop ? full / pop * 1e5 : null, n, share, incomplete, prov };
 }
 const FULL_YEAR = 52, THIN_WEEKS = 48;   // weekly reports in a full year; fewer than THIN_WEEKS draws faded
+/* footnotes printed beside single cells in the source tables */
+const CELL_NOTE = {
+  "measles|NE|1955": "The table's footnote says this count includes cases of rubella",
+  "measles|MS|1968": "The table's footnote says this count includes rubella",
+};
 function sourceNote(c, dk) {
   const k = c.code.toLowerCase();
   let t = k === "w" ? `Sum of ${c.weeks} weekly reports (Project Tycho)` + (c.weeks < FULL_YEAR ? `; ${FULL_YEAR - c.weeks} of ${FULL_YEAR} weeks have no report, so this is likely an undercount` : "")
@@ -338,6 +347,8 @@ function sourceNote(c, dk) {
     : "CDC weekly tables, provisional; final counts are usually higher" + (dk === "pertussis" ? " (whooping cough counts rose 22% to 28% after year-end in 2022 to 2024)" : "");
   if (dk === "polio") t += k === "w" || k === "c" || k === "h" ? ". Counts all reported polio, paralytic and not" : ". Counts paralytic polio only";
   if (c.code !== k) t += ". The weekly reports for this year disagree with each other; treat with care";
+  const cn = CELL_NOTE[`${dk}|${c._st}|${c._y}`];
+  if (cn) t += ". " + cn;
   return t + ".";
 }
 /* drawn faded: a year short of weekly reports, or a provisional count */
@@ -428,6 +439,7 @@ function buildControls() {
     if (e.target.id === "cov") { setCov(e.target.checked); return; }
     const k = e.target.dataset.k; if (!k) return;
     e.target.checked ? S.on.add(k) : S.on.delete(k);
+    if (!S.sel) layoutMap();   // the U.S. row may need more or fewer lines
     render();
   });
 }
@@ -497,11 +509,21 @@ function layoutMap() {
   viz.classList.toggle("fit", fit);
   const main = $("main"), col = $("mapcol");
   let tw;
-  if (fit) {   // as large as both the height left over and the width beside the rail allow
-    const byH = r => (main.clientHeight - 74 - gap * (rows - 1)) / rows / r;
+  if (fit) {   // as large as both the height left over (after the U.S. row) and the width beside the rail allow
     const byW = (main.clientWidth - 280 - 20 - gap * (cols - 1)) / cols;
-    tw = Math.max(34, Math.min(byH(RATIO), byW));
-  } else { col.style.width = ""; tw = (main.clientWidth - gap * (cols - 1)) / cols; }
+    const twFor = usH => Math.max(34, Math.min((main.clientHeight - usH - 8 - gap * (rows - 1)) / rows / RATIO, byW));
+    // a narrower map can wrap the U.S. lines once more, so settle the two together
+    let usH = 66;
+    for (let i = 0; i < 4; i++) {
+      tw = twFor(usH);
+      col.style.width = cols * tw + (cols - 1) * gap + "px";
+      const h = usRowHeight(cols * tw + (cols - 1) * gap);
+      if (h <= usH) break;
+      usH = h;
+    }
+    tw = twFor(usH);
+    $("usrow").style.height = usH + "px";
+  } else { col.style.width = ""; $("usrow").style.height = ""; tw = (main.clientWidth - gap * (cols - 1)) / cols; }
   // on narrow screens, small tiles with coverage on get taller, so the disease dots have a line of their own under
   // the rate (the page scrolls there); the wide layout must fit the window, so its tiles keep their shape
   const th = tw * (!fit && S.cov && tw < 56 ? TALL : RATIO), W = cols * tw + (cols - 1) * gap, H = rows * th + (rows - 1) * gap;
@@ -535,7 +557,7 @@ function drawMap() {
   const gapMin = Math.max(3, tw * 0.1);
   const room = (code, k, tot, t) => { ctx.font = kfont(k); const a = ctx.measureText(code).width; ctx.font = tfont(t); return tw - pad * 2 - a - (tot ? ctx.measureText(tot).width : 0); };
   let kf = fs;
-  for (const s of D.states) { const tot = totOf(s); while (tot && kf > 6.5 && room(s.k, kf, tot, 6) < gapMin) kf -= 0.5; }
+  for (const s of D.states) { const tot = totOf(s); while (tot && kf > 6 && room(s.k, kf, tot, 5) < gapMin) kf -= 0.5; }
   for (const s of D.states) {
     const x = s.c * (tw + gap), y = s.r * (th + gap);
     const cv = S.cov ? covPoint(s.k, S.year) : null;
@@ -559,7 +581,7 @@ function drawMap() {
     // On small tiles the total's type shrinks, then the code's, until there is a clear gap between them.
     const tot = totOf(s);
     let tf = fs;
-    while (tot && room(s.k, kf, tot, tf) < gapMin && tf > 6) tf -= 0.5;
+    while (tot && room(s.k, kf, tot, tf) < gapMin && tf > 5) tf -= 0.5;
     ctx.textBaseline = "top"; ctx.font = kfont(kf);
     ctx.fillStyle = cv && cv[0] < 90 ? "#121212" : "#55534e"; ctx.textAlign = "left"; ctx.fillText(s.k, x + pad, y + pad + (fs - kf) * 0.8);
     ctx.font = tfont(tf); ctx.textAlign = "right";
@@ -720,18 +742,38 @@ function renderRail() {
 }
 
 /* ---------- U.S. row ---------- */
+function usStats(y) {
+  return shown().map(d => {
+    const u = usCell(d.k, y);
+    if (!u) return `<span>${personSvg(d.color, 6)} ${esc(d.name)} <b style="font-weight:400;color:#8a8780">${gapNote(d.k, y)}</b></span>`;
+    return `<span>${personSvg(d.color, 6)} ${esc(d.name)} <b>${fmt(u.cases)}</b> ${fmt1(u.rate)} per 100k${u.n < 51 ? ` · ${u.n} of 51 states` : ""}${u.prov ? " · provisional" : u.incomplete ? " · incomplete" : ""}</span>`;
+  }).join("");
+}
+/* on the wide layout the U.S. row is as tall as its longest year at this width, so every disease line shows
+   and the map keeps one size as the year moves */
+let usFit = { key: "", h: 66 };
+function usRowHeight(W) {
+  const key = `${Math.round(W)}|${shown().map(d => d.k).join()}`;
+  if (key === usFit.key) return usFit.h;
+  const row = $("usrow"), st = $("usstats"), keep = st.innerHTML;
+  row.style.height = "auto";
+  let h = 0;
+  for (let y = D.y0; y <= D.y1; y++) { st.innerHTML = usStats(y); h = Math.max(h, row.offsetHeight); }
+  st.innerHTML = keep;
+  usFit = { key, h: Math.max(66, Math.ceil(h)) };
+  return usFit.h;
+}
 function renderUS() {
   const cv = $("usfig"), W = cv.parentElement.clientWidth, ctx = setupCanvas(cv, W, 24);
-  const items = [], stats = [];
+  const items = [];
   for (const d of shown()) {
     const u = usCell(d.k, S.year);
-    if (!u) { stats.push(`<span>${personSvg(d.color, 6)} ${esc(d.name)} <b style="font-weight:400;color:#8a8780">${gapNote(d.k, S.year)}</b></span>`); continue; }
+    if (!u) continue;
     const soft = u.incomplete || u.prov;   // faded like an incomplete state year
     items.push({ rate: u.rate, color: d.color, alpha: soft ? 0.5 : 1 });
-    stats.push(`<span>${personSvg(d.color, 6)} ${esc(d.name)} <b>${fmt(u.cases)}</b> ${fmt1(u.rate)} per 100k${u.n < 51 ? ` · ${u.n} of 51 states` : ""}${u.prov ? " · provisional" : u.incomplete ? " · incomplete" : ""}</span>`);
   }
   drawFigures(ctx, figures(items), 0, 1, W, 22, 10.5, "top");
-  $("usstats").innerHTML = stats.join("");
+  $("usstats").innerHTML = usStats(S.year);
 }
 
 /* ---------- state view ---------- */
@@ -815,7 +857,6 @@ const MMR_BINS = [[95, "#ebe9e3", "95% or more"], [90, "#cdc9c0", "90 to 94.9%"]
 const mmrBin = v => MMR_BINS.find(b => v >= b[0]);
 /* rounded once, half up, from the stored share: one decimal, or more where one decimal would put a county
    in the next step (94.96 shows as 94.96, not 95.0) */
-const rnd = (v, d) => (Math.round(v * 10 ** d + 1e-9) / 10 ** d).toFixed(d);
 const cpct = v => { for (let d = 1; d < 4; d++) { const t = rnd(v, d); if (mmrBin(+t) === mmrBin(v)) return t; } return rnd(v, 4); };
 function stateSvg(st) {
   const sh = D.shapes[st], sw = sh.box[2] / 260, y = S.year, meta = D.cmeta[st] || { n: 0 };

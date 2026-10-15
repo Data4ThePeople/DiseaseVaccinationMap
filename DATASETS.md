@@ -52,6 +52,13 @@ undercounts whenever weeks are missing, and the number of weeks present has to
 be carried next to every yearly figure. The coverage check (`11_coverage.py`)
 measures this by disease, state and year.
 
+**Which year a week counts in.** Each weekly row is counted in the year that
+holds the middle day of its week (start date plus three days), which is how
+CDC's MMWR weeks are assigned to years. A running-total series is dated a week
+after its start, because an MMWR year can begin in the last days of December.
+Dating weeks by start date instead would move some of them: Alaska measles 1958
+is 1,259 cases over 46 weeks as built, and would be 1,231 over 45 weeks.
+
 **Changes over time.**
 - Two kinds of series are mixed in one file. `PartOfCumulativeCountSeries = 0`
   is a count for that week alone. `= 1` is a running total from the start of
@@ -275,6 +282,9 @@ division and U.S. totals. What the readers could not settle by eye:
   Virginia as 163, each followed by a stray mark, and with those readings the
   column adds to every division total and to the U.S. total of 4,249. Accepted
   by Eric on October 12, 2026 and filled.
+- **Mississippi measles 1968** is printed "*248" with the
+  footnote "Includes rubella" (found by the independent tie-out of October 15,
+  2026). The page shows 248, and its hover and state notes repeat the footnote.
 
 Where New York is printed as two rows and one of them is a dash, the table's
 note now says which ("(NYC -)" or "(upstate -)"), and a summed New York value
@@ -450,7 +460,7 @@ Only single dashes appear in these three tables, 57 state cells in all (polio
 zero, as the key says. Some look more like a state that was not yet reporting
 the disease (Missouri polio 1920 to 1922, Kentucky polio in seven years from 1921 to 1931), so a
 zero in the 1920s should be read with care. Nebraska measles 1955 carries a
-footnote, "Includes cases of rubella".
+footnote, "Includes cases of rubella"; the page's hover and state notes repeat it.
 
 **One printed total disagrees.** Table 1 of the 1951 supplement prints the 1950
 U.S. measles total as 319,214. The 1920-50 report and Table 1 of the 1952 to
