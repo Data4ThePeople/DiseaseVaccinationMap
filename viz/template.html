@@ -288,7 +288,10 @@ const ST = Object.fromEntries(D.states.map(s => [s.k, s]));
 const nf = new Intl.NumberFormat("en-US");
 const fmt = n => nf.format(Math.round(n));
 const fmt1 = n => n === 0 ? "0" : n >= 100 ? fmt(n) : n >= 10 ? n.toFixed(1) : n.toFixed(2);
-const short = n => n >= 1e6 ? (n / 1e6).toFixed(n >= 1e7 ? 0 : 1) + "M" : n >= 1e4 ? Math.round(n / 1e3) + "k" : n >= 1e3 ? (n / 1e3).toFixed(1) + "k" : String(n);
+/* 9,950 to 9,999 round to "10k", not "10.0k" */
+const short = n => n >= 1e6 ? (n / 1e6).toFixed(n >= 9.95e6 ? 0 : 1) + "M" : n >= 9950 ? Math.round(n / 1e3) + "k" : n >= 1e3 ? (n / 1e3).toFixed(1) + "k" : String(n);
+/* the smallest tiles (phones) drop the decimal on thousands; the exact count is in the hover box and the table */
+const shortTight = n => n >= 1e6 ? short(n) : n >= 1e3 ? Math.round(n / 1e3) + "k" : String(n);
 const $ = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
@@ -457,7 +460,7 @@ function setCov(on) {
 }
 function renderCovBar() {
   const el = $("covbar"), c = covCount(S.year);
-  const was = el.hidden;
+  const was = el.hidden, h0 = el.offsetHeight;
   el.hidden = !S.cov || !!S.sel;   // a state page has its own county key
   if (was !== el.hidden && !S.sel && GEO) layoutMap();   // the bar takes a row, so the map is sized again
   if (el.hidden) return;
@@ -467,6 +470,7 @@ function renderCovBar() {
     + (c.n ? `<span class="cnt">${c.below} of ${c.n} states below the ${COV_LEVEL}% national target${lbNote(c.belowLb)}</span>`
            : inCovSpan(S.year) ? `<span class="cnt">No state reported a kindergarten figure for the ${schoolYear(S.year)} school year</span>`
            : `<span class="cnt">State kindergarten figures run from ${schoolYear(COV_YEARS[0])} to ${schoolYear(COV_YEARS[COV_YEARS.length - 1])}; move the year there to color the map</span>`);
+  if (!S.sel && GEO && el.offsetHeight !== h0) layoutMap();   // the bar wraps to more or fewer lines in some years; render() draws the map next
 }
 function covChart(width) {
   const ys = []; for (let v = COV_YEARS[0]; v <= COV_YEARS[COV_YEARS.length - 1]; v++) ys.push(v);   // one slot per school year, empty where no state reported
@@ -489,17 +493,18 @@ function covChart(width) {
 /* ---------- national map ---------- */
 let GEO = null;
 function layoutMap() {
-  const viz = $("viz"), fit = viz.clientWidth >= 900, cols = 11, rows = 8, gap = 3, RATIO = 0.78;
+  const viz = $("viz"), fit = viz.clientWidth >= 900, cols = 11, rows = 8, gap = 3, RATIO = 0.78, TALL = 1.08;
   viz.classList.toggle("fit", fit);
   const main = $("main"), col = $("mapcol");
   let tw;
   if (fit) {   // as large as both the height left over and the width beside the rail allow
-    const byH = (main.clientHeight - 74 - gap * (rows - 1)) / rows / RATIO;
+    const byH = r => (main.clientHeight - 74 - gap * (rows - 1)) / rows / r;
     const byW = (main.clientWidth - 280 - 20 - gap * (cols - 1)) / cols;
-    tw = Math.max(34, Math.min(byH, byW));
+    tw = Math.max(34, Math.min(byH(RATIO), byW));
   } else { col.style.width = ""; tw = (main.clientWidth - gap * (cols - 1)) / cols; }
-  // small tiles with coverage on get taller, so the disease dots have a line of their own under the rate
-  const th = tw * (S.cov && tw < 56 ? 1.08 : RATIO), W = cols * tw + (cols - 1) * gap, H = rows * th + (rows - 1) * gap;
+  // on narrow screens, small tiles with coverage on get taller, so the disease dots have a line of their own under
+  // the rate (the page scrolls there); the wide layout must fit the window, so its tiles keep their shape
+  const th = tw * (!fit && S.cov && tw < 56 ? TALL : RATIO), W = cols * tw + (cols - 1) * gap, H = rows * th + (rows - 1) * gap;
   if (fit) col.style.width = W + "px";
   $("map").style.width = W + "px";
   GEO = { W, H, tw, th, gap };
@@ -525,7 +530,7 @@ function drawMap() {
   const counted = Object.fromEntries(dz.map(d => [d.k, D.states.some(s => cell(d.k, s.k, S.year))]));
   // the case total in a tile's top right; on small tiles its type shrinks to keep a gap from the state code,
   // and if a total still doesn't fit, the state code shrinks on every tile alike so codes stay one size
-  const totOf = s => { let total = 0, any = false; for (const d of dz) { const c = cell(d.k, s.k, S.year); if (c) { any = true; total += c.cases; } } return !any ? (!dz.length ? "" : tw < 56 ? "\u2013" : "no data") : short(total); };
+  const totOf = s => { let total = 0, any = false; for (const d of dz) { const c = cell(d.k, s.k, S.year); if (c) { any = true; total += c.cases; } } return !any ? (!dz.length ? "" : tw < 56 ? "\u2013" : "no data") : tw < 32 ? shortTight(total) : short(total); };
   const kfont = k => `700 ${k}px Helvetica Neue,Helvetica,Arial,sans-serif`, tfont = t => `${t}px Helvetica Neue,Helvetica,Arial,sans-serif`;
   const gapMin = Math.max(3, tw * 0.1);
   const room = (code, k, tot, t) => { ctx.font = kfont(k); const a = ctx.measureText(code).width; ctx.font = tfont(t); return tw - pad * 2 - a - (tot ? ctx.measureText(tot).width : 0); };
@@ -626,7 +631,7 @@ const vaxPoint = (series, vk, st, y) => ((D.vax[series] || {})[vk] || {})[st]?.[
 function vaxText(series, p) {
   if (series === "national") return `U.S. only, ${esc(p[1])}: <b>${p[0].toFixed(1)}%</b>`;
   if (series === "toddler" || series === "survey") return `toddlers, ${p[1]}: <b>${p[0].toFixed(1)}%</b>` + (p[2] != null ? ` (95% range ${p[2].toFixed(0)} to ${p[3].toFixed(0)}${p[4] ? ", " + fmt(p[4]) + " children surveyed" : ""})` : "");
-  return `kindergartners, ${p[1]}: <b>${p[4] ? "at least " : ""}${p[0].toFixed(1)}%</b>` + (p[3] ? ` (${esc(p[3].toLowerCase())}${p[2] != null ? ", " + p[2] + "% of students covered" : ""})` : "");
+  return `kindergartners, ${p[1]}: <b>${p[4] ? "at least " : ""}${p[0].toFixed(1)}%</b>` + (p[3] ? ` (${esc(p[3].toLowerCase())}${p[2] != null ? ", based on " + p[2] + "% of kindergartners surveyed" : ""})` : "");
 }
 function vaxLines(st, y) {
   const out = [];
@@ -805,10 +810,13 @@ function stateCovChart(st, width) {
     + `<p class="read">${read} Dots: <span style="color:${COV_STEPS[0][2]}">\u25cf</span> 95% or more <span style="color:${COV_STEPS[1][2]}">\u25cf</span> 90% to under 95% <span style="color:${COV_STEPS[2][2]}">\u25cf</span> under 90%. Gray line: United States. Dashed line: ${COV_LEVEL}%, the national target. The row under the chart is ${name}'s reported measles cases each year. A gap means no figure that school year.${ys[ys.length - 1] > D.y1 ? ` Case counts on this map end with ${D.y1}, so ${schoolYear(ys[ys.length - 1])} has coverage but no case figure.` : ""}${have.some(q => q.p[4]) ? " In some years CDC flags this state\u2019s figure as a lower bound (\u201cat least\u201d); the true share may be higher." : ""} Click a year to move there.</p>`;
 }
 /* county map: kindergarten MMR coverage where the state publishes it by county */
+const inName = st => st === "DC" ? "the District of Columbia" : ST[st].n;   // "for the District of Columbia"
 const MMR_BINS = [[95, "#ebe9e3", "95% or more"], [90, "#cdc9c0", "90 to 94.9%"], [85, "#aaa59b", "85 to 89.9%"], [0, "#77736a", "under 85%"]];
 const mmrBin = v => MMR_BINS.find(b => v >= b[0]);
-/* one decimal, or two where one decimal would round a county into the next step (94.95 shows as 94.95, not 95.0) */
-const cpct = v => mmrBin(+v.toFixed(1)) === mmrBin(v) ? v.toFixed(1) : v.toFixed(2);
+/* rounded once, half up, from the stored share: one decimal, or more where one decimal would put a county
+   in the next step (94.96 shows as 94.96, not 95.0) */
+const rnd = (v, d) => (Math.round(v * 10 ** d + 1e-9) / 10 ** d).toFixed(d);
+const cpct = v => { for (let d = 1; d < 4; d++) { const t = rnd(v, d); if (mmrBin(+t) === mmrBin(v)) return t; } return rnd(v, 4); };
 function stateSvg(st) {
   const sh = D.shapes[st], sw = sh.box[2] / 260, y = S.year, meta = D.cmeta[st] || { n: 0 };
   let paths = "", dots = "";
@@ -828,12 +836,12 @@ function stateSvg(st) {
   let cap;
   if (any) cap = `<div class="mapkey"><b>Kindergartners with 2 MMR doses, ${y - 1}-${String(y).slice(2)} school year, by county</b><div>${MMR_BINS.slice().reverse().map(b => `<span><i style="background:${b[1]}"></i>${b[2]}</span>`).join("")}<span><i style="background:${NOFIG};outline:1px solid ${NOFIG_LINE}"></i>no figure</span></div>${dots ? `<div><span>${personSvg(DKEY.measles.color, 6)} Circles: confirmed measles cases in ${y}</span></div>` : ""}</div>`;
   else if (meta.unmapped && meta.unmapped[y]) cap = `<p class="note">${esc(ST[st].n)} reported ${y - 1}-${String(y).slice(2)} by ${meta.unmapped[y][0]} planning regions, not by county, so the map cannot draw them. The regions ranged from ${meta.unmapped[y][1].toFixed(1)}% to ${meta.unmapped[y][2].toFixed(1)}%.</p>`;
-  else if (!meta.n) cap = `<p class="note">No county vaccination figures are available for ${esc(ST[st].n)}.</p>`;
+  else if (!meta.n) cap = `<p class="note">No county vaccination figures are available for ${esc(inName(st))}.</p>`;
   else {   // the years the map can actually draw, taken from the county figures themselves
     const ys = [...new Set(Object.keys(sh.c).flatMap(f => Object.keys(D.cmmr[f] || {}).map(Number)))].sort((a, b) => a - b), runs = [];
-    if (!ys.length) return svg + `<p class="note">No county vaccination figures are available for ${esc(ST[st].n)}.</p>`;
+    if (!ys.length) return svg + `<p class="note">No county vaccination figures are available for ${esc(inName(st))}.</p>`;
     for (const v of ys) { const r = runs[runs.length - 1]; if (r && v === r[1] + 1) r[1] = v; else runs.push([v, v]); }
-    cap = `<p class="note">County vaccination figures for ${esc(ST[st].n)} cover school ${runs.length === 1 && runs[0][0] === runs[0][1] ? "year" : "years"} ${runs.map(r => r[0] === r[1] ? schoolYear(r[0]) : schoolYear(r[0]) + " to " + schoolYear(r[1])).join(", ")}${meta.unmapped ? `; ${Object.keys(meta.unmapped).map(v => schoolYear(+v)).join(", ")} was reported by planning region, which the map cannot draw` : ""}. Move the year there to color the map.</p>`;
+    cap = `<p class="note">County vaccination figures for ${esc(inName(st))} cover school ${runs.length === 1 && runs[0][0] === runs[0][1] ? "year" : "years"} ${runs.map(r => r[0] === r[1] ? schoolYear(r[0]) : schoolYear(r[0]) + " to " + schoolYear(r[1])).join(", ")}${meta.unmapped ? `; ${Object.keys(meta.unmapped).map(v => schoolYear(+v)).join(", ")} was reported by planning region, which the map cannot draw` : ""}. Move the year there to color the map.</p>`;
   }
   return svg + cap;
 }

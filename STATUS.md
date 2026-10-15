@@ -210,3 +210,17 @@ None.
   are one size on every tile. Not checked: a real phone, hover boxes on screen,
   state-page headline cards at phone width, the unreadable mark in CDC's
   2025-26 footnotes.
+- 2026-10-15 Seventh independent tie-out (fresh agent, real mouse hovers and a
+  true 390px viewport): 771 state figures, 16,380 county values, 293 county
+  notes, 1,734 tiles, 16 tile and 10 county hovers and 775 state headline cards
+  at 390px match or pass. Fixed from its findings: on short desktop windows the
+  map ran over the headline card (the taller phone tile shape was also used on
+  desktop; now phones only); the map is fitted again whenever the legend bar
+  changes height; the smallest tiles show thousands without a decimal ("2k")
+  and 9,950 to 9,999 read "10k", not "10.0k", so the code and total never
+  touch; county shares are kept to six decimals and rounded once, half up (316
+  hover values had been 0.1 off; 33 show two decimals, and DATASETS.md says
+  33); tooltips say "based on 97.3% of kindergartners surveyed"; notes say
+  "the District of Columbia". Still open: on short desktop windows the U.S.
+  row under the map shows only its first two disease lines (older than this
+  work). Not checked: a real phone, tapping, fonts on other systems.

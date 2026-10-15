@@ -26,7 +26,7 @@ if __name__ == "__main__":
     long = long[long.v.notna()]
     assert long.v.between(0, 1.0001).all(), "MMR rates expected as shares between 0 and 1"
     long["year"] = long.sy.str[2:6].astype(int) + 1
-    long["pct"] = (long.v * 100).round(2)   # two decimals, so 94.95 stays under 95 when the map picks its step
+    long["pct"] = (long.v * 100).round(6)   # kept near full precision: the map picks its step and the page rounds once, from this
     regions = long[long.FIPS.isna()]
     long = long[long.FIPS.notna()].copy()
     long["fips"] = long.FIPS.str.replace(r"\.0$", "", regex=True).str.zfill(5)

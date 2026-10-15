@@ -658,11 +658,11 @@ counties. One state's requirement and counting rule differs from the next.
 Compare a county with itself over time or with its own state, not across
 state lines.
 
-**Units and rounding.** Percent, kept to two decimals so the map's steps are
-picked from the unrounded share: a county at 94.95% is under 95%. The page
-shows one decimal, or two where one decimal would round a county into the next
-step (37 county-years; 33 of them had been drawn one step too high before the
-two-decimal fix).
+**Units and rounding.** Percent, kept to six decimals, so the map's steps are
+picked from the share as published (a county at 94.96% is under 95%) and the
+page rounds only once, half up. It shows one decimal, or two where one decimal
+would put a county in the next step (33 county-years; before October 14, 2026
+these 33 were drawn one step too high because the share was rounded first).
 
 **Suppressed values.** Small counties are withheld by some states; these are
 simply absent.
