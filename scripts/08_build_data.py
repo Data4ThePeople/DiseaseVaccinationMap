@@ -34,7 +34,7 @@ VAXNOTE = {
     "mmr": "Toddlers: 1 or more doses. Kindergartners: the doses their state requires, 2 in most states. Before 1995: any measles vaccine.",
     "dtap": "Toddlers: 4 or more doses. Kindergartners: the doses their state requires. Before 1995: 3 or more doses.",
     "polio": "Toddlers: 3 or more doses. Kindergartners: the doses their state requires. Before 1995: 3 or more doses.",
-    "hepa": "Toddlers: 2 or more doses. No kindergarten or pre-2008 figures.",
+    "hepa": "Toddlers: 2 or more doses, by age 35 months. No kindergarten or pre-2008 figures.",
 }
 SRC = {"tycho_weekly": "w", "tycho_cumulative": "c", "cdc_annual": "a", "phs_annual": "h", "cdc_annual_part": "n", "cdc_weekly": "r"}
 
@@ -200,8 +200,11 @@ def main():
             pass
         else:
             row += [None if pd.isna(r.pct_surveyed) else r.pct_surveyed, r.method if isinstance(r.method, str) else ""]
-            if r.flag == ">=":
-                row.append(1)   # CDC marks the estimate as a lower bound ("at least")
+            notes = r.notes if isinstance(r.notes, str) else ""
+            if r.flag == ">=" or notes:
+                row.append(1 if r.flag == ">=" else 0)   # CDC marks the estimate as a lower bound ("at least")
+            if notes:
+                row.append(notes)   # CDC's other footnote marks, as letters (see 07_build_vaccination.py)
         V.setdefault(r.series, {}).setdefault(r.vaccine, {}).setdefault(r.st, {})[int(r.year)] = row
 
     # first licensure of each vaccine, as marks on the vaccination charts

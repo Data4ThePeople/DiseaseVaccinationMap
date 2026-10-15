@@ -37,6 +37,8 @@ h1{font-family:var(--serif);font-weight:700;font-size:22px;line-height:1.15;marg
 .covbar span{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
 .covbar i{width:12px;height:12px;border-radius:2px;display:inline-block}
 .covbar span.cnt{white-space:normal}   /* the count sentence can wrap on a phone */
+.rank label{max-width:100%;min-width:0}
+.rank select{max-width:100%}   /* a long option name never widens the page on a phone */
 .covchart{margin:0 0 8px;grid-column:1/-1}
 .covchart h3{font-size:12px;font-weight:700;margin:0}
 .covchart svg{display:block;width:100%;overflow:visible}
@@ -137,6 +139,12 @@ details.tbl .tnote{font-size:12px;color:var(--ink2);margin:6px 0}
 .scov .read{font-size:11.5px;color:var(--ink2);line-height:1.35;margin:2px 0 0}
 footer{margin:10px 0 14px;border-top:1px solid var(--rule);padding-top:8px;font-size:11.5px;line-height:1.45;color:var(--ink3)}
 footer p{margin:0;max-width:980px}
+.about{border-top:1px solid var(--rule);margin:0 0 18px;padding-top:8px;font-size:12.5px;line-height:1.5;color:var(--ink2);max-width:980px}
+.about h2{font-family:var(--serif);font-size:18px;color:var(--ink);margin:0 0 4px}
+.about h3{font-size:12.5px;color:var(--ink);margin:12px 0 2px}
+.about ul{margin:0;padding-left:18px}
+.about li{margin:2px 0}
+.about p{margin:0 0 4px}
 /* state view */
 #stateview[hidden],#national[hidden]{display:none}
 #stateview{overflow-y:auto}
@@ -154,6 +162,7 @@ footer p{margin:0;max-width:980px}
 .mapkey i{width:10px;height:10px;display:inline-block}
 .sfig canvas{display:block;width:100%;height:48px}
 .sfig .note{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.viz:not(.fit) .sfig .note{display:block;-webkit-line-clamp:unset;overflow:visible}   /* phones scroll, so every note shows */
 .sgrid2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:20px;margin-top:6px;border-top:1px solid var(--rule);padding-top:6px}
 .kpis{display:grid;grid-template-columns:1fr 1fr;gap:5px 16px}
 .kpi .v{font-family:var(--serif);font-size:17px;font-weight:700;line-height:1.1;font-variant-numeric:tabular-nums}
@@ -173,7 +182,10 @@ footer p{margin:0;max-width:980px}
 .viz:not(.fit) .unit{margin-left:0}
 @container (max-width: 560px){
   .viz:not(.fit) .rail .charts,.vgrid{grid-template-columns:minmax(0,1fr)}
-  .usrow{grid-template-columns:1fr}
+  .usrow{grid-template-columns:minmax(0,1fr)}
+  /* the smallest phones: long lines wrap instead of widening the page */
+  .controls label.covt,.stats span{white-space:normal}
+  .stats span{display:inline}
 }
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
 </style>
@@ -274,6 +286,41 @@ footer p{margin:0;max-width:980px}
   <footer>
     <p id="foot"></p>
   </footer>
+  <section class="about" id="about" aria-labelledby="abouth">
+    <h2 id="abouth">About this data</h2>
+    <p>This map brings together more than 100 years of public records. Here is how we checked it, and what to know before using the numbers. The full method, source by source, is in <a href="https://github.com/Data4ThePeople/DiseaseVaccinationMap/blob/main/DATASETS.md" target="_blank" rel="noopener">DATASETS.md</a>.</p>
+    <h3>How we checked</h3>
+    <ul>
+      <li>Every figure is built from the original tables and files listed under Sources above, by code that is in the project repository.</li>
+      <li>Before publishing, an independent check rebuilt the numbers from those files without using ours. On October 15, 2026 it recomputed about 12,000 state-year case counts, every state population and every vaccination figure, and reread 177 numbers by eye from scanned government reports. None differed from the map.</li>
+      <li>That check did not cover the state facts on each state's page (income, poverty, schooling, health insurance, jobs and party control) or the headlines above the timeline.</li>
+    </ul>
+    <h3>Case counts</h3>
+    <ul>
+      <li>Reported cases are not all cases. Many people who got sick were never counted, and the rules for what to report changed many times.</li>
+      <li>Before 1993 the counts come from scanned government reports. A few printed numbers could not be read with certainty: the 1981 measles page curves at its edge, so two neighboring states in one region could be swapped; one digit in Arkansas's 1958 whooping cough count is damaged (we use 156, the value that makes the regional total add up); and Arizona's 1975 and 1976 mumps and whooping cough print a dash, shown as zero, between years marked as not reportable.</li>
+      <li>In the 1920s the yearly tables print a dash for some states. The tables define a dash as zero, so the map shows zero, but some of these states may not have been reporting the disease yet. For example, Virginia whooping cough is 0 in 1922 and 1923, then 17,710 in 1924.</li>
+      <li>Some printed counts include other diseases, and the table says so in a footnote: rubella in some measles counts (Nebraska 1955 to 1958, Mississippi 1957 and 1967 to 1969, South Carolina 1964), and other types of hepatitis in some hepatitis A counts (Louisiana 1966 to 1969, Georgia 1976, Tennessee 1977, New York 1977 to 1984). The hover box for each one says so.</li>
+      <li>Hepatitis A before 1974 includes hepatitis of unspecified type. CDC revised the hepatitis A case definition in January 2019, and from 2024 its weekly tables count confirmed cases only, which is a narrower count.</li>
+      <li>Polio counts all reported polio before 1956 and paralytic polio only from 1956.</li>
+      <li>2025 counts are provisional. Final counts are usually higher.</li>
+      <li>Alaska (through 1958) and Hawaii (through 1959) come from sums of weekly reports, which usually run lower than a full year's count. In those years the United States row adds them in, so it runs above CDC's printed national totals (measles in 1956 by 7,665 cases). For polio from 1956 to 1959, it adds their counts of all polio to a national count of paralytic polio.</li>
+      <li>New York City and the rest of New York were printed separately in some years. Where only New York City was printed, New York shows no data for hepatitis A in 1985 and 1986, and the United States row leaves those cases out. Mumps from 1968 to 1973 is New York City only, shown with no rate.</li>
+    </ul>
+    <h3>Vaccination</h3>
+    <ul>
+      <li>Each state reports kindergarten vaccination in its own way, and some changed their method over time: 9 of the 46 states with figures in both years counted differently in 2024-25 than in 2019-20. Comparisons between states should be made with care.</li>
+      <li>CDC marks some states' figures as lower bounds, shown here as “at least.” It marks others as counting doses given at any age or spacing, which may make them higher than the share with valid doses (12 states in 2024-25). The hover box lists CDC's notes for each state and year.</li>
+      <li>The toddler survey changed how it reached families: landline phones only through 2010, landline and cell phones from 2011, and cell phones only from 2018. CDC says figures from 2012 on are not directly comparable with earlier years. In 2019 CDC also changed from reporting by survey year to reporting by birth year, and the charts leave a gap between the two.</li>
+      <li>National figures before 1995 come from surveys that took parents' word without checking records. The survey's authors say this understated coverage, by as much as 23%. A “don't know” answer added in 1976 breaks the series there. The survey and age group changed in 1991 (children 1 to 4 before 1986, toddlers from 1991), and there is no national figure for 1986 to 1990. For 1959 to 1969 and 1977 to 1982 we found only one source. For polio in 1970, two sources give 65.9% and a third gives 77.5%; the map uses 65.9%.</li>
+    </ul>
+    <h3>County view</h3>
+    <ul>
+      <li>County vaccination figures were compiled by Johns Hopkins University from state reports. Most states count kindergartners, but some count other grades, so compare a county with its own state rather than across state lines.</li>
+      <li>Wisconsin caps its county figures at 95% and changed its source over these years. Figures Johns Hopkins marks as not comparable (Utah 2017-18, Missouri 2019-20, Louisiana 2020-21 and 2021-22) are left out.</li>
+      <li>County measles cases come from the Johns Hopkins measles tracker, which counts from different reports than CDC, so its 2025 total is not the same as CDC's.</li>
+    </ul>
+  </section>
 </div>
 <div id="tip" role="status"></div>
 
@@ -335,6 +382,20 @@ const FULL_YEAR = 52, THIN_WEEKS = 48;   // weekly reports in a full year; fewer
 const CELL_NOTE = {
   "measles|NE|1955": "The table's footnote says this count includes cases of rubella",
   "measles|MS|1968": "The table's footnote says this count includes rubella",
+  "measles|NE|1956": "The table's footnote says this count includes rubella",
+  "measles|NE|1957": "The table's footnote says this count includes rubella",
+  "measles|NE|1958": "The table's footnote says this count includes rubella",
+  "measles|MS|1957": "The table's footnote says this count includes rubella",
+  "measles|MS|1967": "The table's footnote says this count includes rubella",
+  "measles|MS|1969": "The table's footnote says this count includes rubella",
+  "measles|SC|1964": "The table's footnote says this count includes rubella",
+  "hepatitis_a|LA|1966": "The table's footnote says this count includes serum hepatitis",
+  "hepatitis_a|LA|1967": "The table's footnote says this count includes serum hepatitis",
+  "hepatitis_a|LA|1968": "The table's footnote says this count includes serum hepatitis",
+  "hepatitis_a|LA|1969": "The table's footnote says this count includes serum hepatitis",
+  "hepatitis_a|TN|1977": "The table's footnote says this count includes hepatitis of unspecified type",
+  "hepatitis_a|GA|1976": "The table prints Georgia's other hepatitis types as not available, so this count may include them",
+  ...Object.fromEntries([1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984].map(y => [`hepatitis_a|NY|${y}`, "The table notes that New York City's cases were sorted by type using a blood test for hepatitis B"])),
 };
 function sourceNote(c, dk) {
   const k = c.code.toLowerCase();
@@ -455,6 +516,11 @@ const NOFIG = "#ffffff", NOFIG_LINE = "#b5b1a8";   // white with an outline, so 
 const covStep = v => COV_STEPS.find(b => v >= b[0]);
 const covPoint = (st, y) => vaxPoint("kinder", "mmr", st, y);
 /* CDC marks some state figures as a lower bound ("at least"): the true share may be higher */
+/* CDC's footnote marks on a kindergarten figure (letters set in 07_build_vaccination.py), in CDC's own terms */
+const KNOTE = { d: "doses were counted at any age or spacing, so the figure may be higher than the share with valid doses", s: "some special types of schools are left out",
+  p: "public schools only", m: "coverage is from a sample of kindergartners", k: "covers kindergarten and 1st grade", e: "may include preschool and pre-kindergarten",
+  a: "the share surveyed may be under the 100% shown", u: "one of CDC's footnote marks for this figure is unreadable in its file" };
+const doseMarked = y => D.states.filter(s => { const q = covPoint(s.k, y); return q && q[5] && q[5].includes("d"); }).length;
 const pct = p => (p[4] ? "\u2265" : "") + p[0].toFixed(1) + "%";
 const schoolYear = y => `${y - 1}-${String(y).slice(2)}`;
 /* every school year in CDC's kindergarten file, including any later than the map's last year of cases */
@@ -470,18 +536,35 @@ function setCov(on) {
   if (on && COV_YEARS.length && !COV_YEARS.includes(S.year)) { setPlaying(false); S.year = COV_YEARS[COV_YEARS.length - 1]; $("year").value = S.year; }
   renderCovBar(); if (!S.sel) layoutMap(); render();
 }
+function covBarHtml(y) {
+  const c = covCount(y);
+  return `<b title="On each state, the top number is reported cases and the percentage under it is this rate">Kindergartners with the measles vaccine (MMR)${c.n ? ", " + schoolYear(y) + " school year" : ""}</b>`
+    + (inCovSpan(y) ? COV_STEPS.map(b => `<span><i style="background:${b[1]}"></i>${b[3]}</span>`).join("")
+      + `<span><i style="background:${NOFIG};outline:1px solid ${NOFIG_LINE}"></i>no figure</span>` : "")
+    + (c.n ? `<span class="cnt">${c.below} of ${c.n} states below the ${COV_LEVEL}% national target${lbNote(c.belowLb)}</span>`
+           : inCovSpan(y) ? `<span class="cnt">No state reported a kindergarten figure for the ${schoolYear(y)} school year</span>`
+           : `<span class="cnt">State kindergarten figures run from ${schoolYear(COV_YEARS[0])} to ${schoolYear(COV_YEARS[COV_YEARS.length - 1])}; move the year there to color the map</span>`);
+}
+/* on the wide layout the bar is as tall as its tallest year at this width, so the map keeps one size as the year moves */
+let covFit = { key: "", h: 0 };
+function covBarMin() {
+  const el = $("covbar"), key = String(el.clientWidth);
+  if (key === covFit.key) return covFit.h;
+  const keep = el.innerHTML, mh = el.style.minHeight;
+  el.style.minHeight = "";
+  let h = 0;
+  for (let y = D.y0; y <= D.y1; y++) { el.innerHTML = covBarHtml(y); h = Math.max(h, el.offsetHeight); }
+  el.innerHTML = keep; el.style.minHeight = mh;
+  covFit = { key, h };
+  return h;
+}
 function renderCovBar() {
-  const el = $("covbar"), c = covCount(S.year);
+  const el = $("covbar");
   const was = el.hidden, h0 = el.offsetHeight;
   el.hidden = !S.cov || !!S.sel;   // a state page has its own county key
   if (was !== el.hidden && !S.sel && GEO) layoutMap();   // the bar takes a row, so the map is sized again
   if (el.hidden) return;
-  el.innerHTML = `<b title="On each state, the top number is reported cases and the percentage under it is this rate">Kindergartners with the measles vaccine (MMR)${c.n ? ", " + schoolYear(S.year) + " school year" : ""}</b>`
-    + (inCovSpan(S.year) ? COV_STEPS.map(b => `<span><i style="background:${b[1]}"></i>${b[3]}</span>`).join("")
-      + `<span><i style="background:${NOFIG};outline:1px solid ${NOFIG_LINE}"></i>no figure</span>` : "")
-    + (c.n ? `<span class="cnt">${c.below} of ${c.n} states below the ${COV_LEVEL}% national target${lbNote(c.belowLb)}</span>`
-           : inCovSpan(S.year) ? `<span class="cnt">No state reported a kindergarten figure for the ${schoolYear(S.year)} school year</span>`
-           : `<span class="cnt">State kindergarten figures run from ${schoolYear(COV_YEARS[0])} to ${schoolYear(COV_YEARS[COV_YEARS.length - 1])}; move the year there to color the map</span>`);
+  el.innerHTML = covBarHtml(S.year);
   if (!S.sel && GEO && el.offsetHeight !== h0) layoutMap();   // the bar wraps to more or fewer lines in some years; render() draws the map next
 }
 function covChart(width) {
@@ -499,7 +582,7 @@ function covChart(width) {
   }
   const c = covCount(S.year);
   return `<div class="covchart"><h3>States below ${COV_LEVEL}% kindergarten MMR coverage</h3><svg viewBox="0 0 ${W} ${H}" height="${H}" role="img" aria-label="Number of states below ${COV_LEVEL} percent kindergarten MMR coverage, by school year">${g}</svg>`
-    + `<p class="read">${c.n ? `${schoolYear(S.year)}: <b>${c.below} of ${c.n}</b> states below ${COV_LEVEL}%${lbNote(c.belowLb)}, ${c.low} below 90%${lbNote(c.lowLb)}.` : `No state reported a kindergarten figure for ${schoolYear(S.year)}.`} Darker bars are states under 90%.${c.n && ys.some(v => !covCount(v).n) ? ` A dotted slot means no state reported that year (${ys.filter(v => !covCount(v).n).map(schoolYear).join(", ")}).` : ""} Year is the spring of the school year.</p></div>`;
+    + `<p class="read">${c.n ? `${schoolYear(S.year)}: <b>${c.below} of ${c.n}</b> states below ${COV_LEVEL}%${lbNote(c.belowLb)}, ${c.low} below 90%${lbNote(c.lowLb)}.` : `No state reported a kindergarten figure for ${schoolYear(S.year)}.`}${doseMarked(S.year) ? ` CDC notes that ${doseMarked(S.year)} of these states counted doses at any age or spacing, so their figures may be higher.` : ""} Darker bars are states under 90%.${c.n && ys.some(v => !covCount(v).n) ? ` A dotted slot means no state reported that year (${ys.filter(v => !covCount(v).n).map(schoolYear).join(", ")}).` : ""} Year is the spring of the school year.</p></div>`;
 }
 
 /* ---------- national map ---------- */
@@ -507,6 +590,8 @@ let GEO = null;
 function layoutMap() {
   const viz = $("viz"), fit = viz.clientWidth >= 900, cols = 11, rows = 8, gap = 3, RATIO = 0.78, TALL = 1.08;
   viz.classList.toggle("fit", fit);
+  const cb = $("covbar");
+  cb.style.minHeight = fit && !cb.hidden ? covBarMin() + "px" : "";
   const main = $("main"), col = $("mapcol");
   let tw;
   if (fit) {   // as large as both the height left over (after the U.S. row) and the width beside the rail allow
@@ -579,9 +664,9 @@ function drawMap() {
     }
     // top left the state code, top right the case total; under it, when the state is shaded, its coverage rate.
     // On small tiles the total's type shrinks, then the code's, until there is a clear gap between them.
-    const tot = totOf(s);
-    let tf = fs;
+    let tot = totOf(s), tf = fs;
     while (tot && room(s.k, kf, tot, tf) < gapMin && tf > 5) tf -= 0.5;
+    if (tot && room(s.k, kf, tot, tf) < 2) tot = "";   // too narrow for its total: left out rather than touching the code
     ctx.textBaseline = "top"; ctx.font = kfont(kf);
     ctx.fillStyle = cv && cv[0] < 90 ? "#121212" : "#55534e"; ctx.textAlign = "left"; ctx.fillText(s.k, x + pad, y + pad + (fs - kf) * 0.8);
     ctx.font = tfont(tf); ctx.textAlign = "right";
@@ -653,7 +738,8 @@ const vaxPoint = (series, vk, st, y) => ((D.vax[series] || {})[vk] || {})[st]?.[
 function vaxText(series, p) {
   if (series === "national") return `U.S. only, ${esc(p[1])}: <b>${p[0].toFixed(1)}%</b>`;
   if (series === "toddler" || series === "survey") return `toddlers, ${p[1]}: <b>${p[0].toFixed(1)}%</b>` + (p[2] != null ? ` (95% range ${p[2].toFixed(0)} to ${p[3].toFixed(0)}${p[4] ? ", " + fmt(p[4]) + " children surveyed" : ""})` : "");
-  return `kindergartners, ${p[1]}: <b>${p[4] ? "at least " : ""}${p[0].toFixed(1)}%</b>` + (p[3] ? ` (${esc(p[3].toLowerCase())}${p[2] != null ? ", based on " + p[2] + "% of kindergartners surveyed" : ""})` : "");
+  return `kindergartners, ${p[1]}: <b>${p[4] ? "at least " : ""}${p[0].toFixed(1)}%</b>` + (p[3] ? ` (${esc(p[3].toLowerCase())}${p[2] != null ? ", based on " + p[2] + "% of kindergartners surveyed" : ""})` : "")
+    + (p[5] ? ". CDC notes: " + [...p[5]].map(m => KNOTE[m]).filter(Boolean).join("; ") : "");
 }
 function vaxLines(st, y) {
   const out = [];
@@ -760,7 +846,7 @@ function usRowHeight(W) {
   let h = 0;
   for (let y = D.y0; y <= D.y1; y++) { st.innerHTML = usStats(y); h = Math.max(h, row.offsetHeight); }
   st.innerHTML = keep;
-  usFit = { key, h: Math.max(66, Math.ceil(h)) };
+  usFit = { key, h: Math.max(66, Math.ceil(h) + 1) };
   return usFit.h;
 }
 function renderUS() {
@@ -849,7 +935,7 @@ function stateCovChart(st, width) {
     : `${now && S.year >= ys[0] ? `${schoolYear(S.year)}: no figure. ` : ""}${schoolYear(first.y)}: ${pct(first.p)}. ${schoolYear(last.y)}: <b>${pct(last.p)}</b>.`;
   return `<h3>Kindergartners with the measles vaccine (MMR) in ${name}, ${span}</h3>`
     + `<svg viewBox="0 0 ${W} ${H}" height="${H}" role="img" aria-label="Kindergarten MMR coverage in ${name} by school year, with measles cases each year">${g}</svg>`
-    + `<p class="read">${read} Dots: <span style="color:${COV_STEPS[0][2]}">\u25cf</span> 95% or more <span style="color:${COV_STEPS[1][2]}">\u25cf</span> 90% to under 95% <span style="color:${COV_STEPS[2][2]}">\u25cf</span> under 90%. Gray line: United States. Dashed line: ${COV_LEVEL}%, the national target. The row under the chart is ${name}'s reported measles cases each year. A gap means no figure that school year.${ys[ys.length - 1] > D.y1 ? ` Case counts on this map end with ${D.y1}, so ${schoolYear(ys[ys.length - 1])} has coverage but no case figure.` : ""}${have.some(q => q.p[4]) ? " In some years CDC flags this state\u2019s figure as a lower bound (\u201cat least\u201d); the true share may be higher." : ""} Click a year to move there.</p>`;
+    + `<p class="read">${read} Dots: <span style="color:${COV_STEPS[0][2]}">\u25cf</span> 95% or more <span style="color:${COV_STEPS[1][2]}">\u25cf</span> 90% to under 95% <span style="color:${COV_STEPS[2][2]}">\u25cf</span> under 90%. Gray line: United States. Dashed line: ${COV_LEVEL}%, the national target. The row under the chart is ${name}'s reported measles cases each year. A gap means no figure that school year.${ys[ys.length - 1] > D.y1 ? ` Case counts on this map end with ${D.y1}, so ${schoolYear(ys[ys.length - 1])} has coverage but no case figure.` : ""}${have.some(q => q.p[4]) ? " In some years CDC flags this state\u2019s figure as a lower bound (\u201cat least\u201d); the true share may be higher." : ""}${have.some(q => q.p[5] && q.p[5].includes("d")) ? " In some years CDC notes that this state counted doses at any age or spacing, so the figure may be higher." : ""} Click a year to move there.</p>`;
 }
 /* county map: kindergarten MMR coverage where the state publishes it by county */
 const inName = st => st === "DC" ? "the District of Columbia" : ST[st].n;   // "for the District of Columbia"
@@ -1066,7 +1152,7 @@ function init() {
     setPlaying(false); msIndex = (Math.min(msIndex, n - 1) + step + n) % n; renderCard();
   });
   document.addEventListener("keydown", e => { if (e.key === "Escape" && S.sel) closeState(); });
-  $("foot").innerHTML = `Reported cases, not infections; many cases were never reported, and reporting rules changed over the century. A ring marks a disease that other states counted that year but this state did not, which is not zero; a dot marks a count too small to draw a figure. The diseases were not all counted from the same year (mumps from 1968, hepatitis A from 1966), so a jump in a state's total can come from a disease entering the record. Faded figures mark an incomplete count: a year with fewer than ${THIN_WEEKS} of ${FULL_YEAR} weekly reports, a national figure where states holding more than 10% of residents did not report or most states were short of weeks, or the provisional year 2025. Measles, whooping cough and polio before 1956 come from the yearly tables of the U.S. Public Health Service; in the 1920s some states were not yet reporting every disease, and the tables print a dash, which their key defines as zero. Where a count is a sum of weekly reports (Alaska and Hawaii before statehood) it usually runs lower than the yearly total. Polio counts all reported polio before 1956 and paralytic polio only from 1956, so the 1955 to 1956 change is partly a change in what was counted; the paralytic counts are as first printed, and CDC later revised some yearly totals up or down. Hepatitis A before 1974 includes hepatitis of unspecified type. On each state the top number is the cases shown, and from 2010 on the percentage under it is the kindergarten measles vaccination rate. The map shades each state from 2010 on (the checkbox "Color states by measles vaccination" turns this off) by the share of kindergartners with the measles vaccine (MMR) that school year, as states reported to CDC, against 95%, the national Healthy People 2030 target; it measures one age group, not immunity in the whole population. State figures start with the 2009-10 school year and there are none for 2010-11. CDC flags some states' figures as lower bounds (shown with \u2265, or "at least"), because those states counted a child only if up to date on every required vaccine: those states' true share may be higher, so a state marked this way may not be below the level it appears under. Sources: U.S. Public Health Service, National Office of Vital Statistics, yearly tables of notifiable diseases (measles and polio from 1920, whooping cough from 1922, through 1955); CDC final annual tables of notifiable diseases (whooping cough, measles and paralytic polio from 1956, hepatitis A from 1966, mumps from 1968, all five diseases from 1993, through 2023); CDC weekly tables (2024 and 2025, provisional for 2025); Project Tycho, University of Pittsburgh, CC BY 4.0, from the weekly federal notifiable disease reports (Alaska and Hawaii before 1956). Vaccination: CDC National Immunization Survey and SchoolVaxView; U.S. Immunization Survey and National Health Interview Survey before 1995. County figures: Johns Hopkins University. State indicators: Census Bureau and Bureau of Economic Analysis. Party control: Klarner, State Partisan Balance Data (through 2011), and Ballotpedia (2012 on).`;
+  $("foot").innerHTML = `Reported cases, not infections; many cases were never reported, and reporting rules changed over the century. A ring marks a disease that other states counted that year but this state did not, which is not zero; a dot marks a count too small to draw a figure. The diseases were not all counted from the same year (mumps from 1968, hepatitis A from 1966), so a jump in a state's total can come from a disease entering the record. Faded figures mark an incomplete count: a year with fewer than ${THIN_WEEKS} of ${FULL_YEAR} weekly reports, a national figure where states holding more than 10% of residents did not report or most states were short of weeks, or the provisional year 2025. Measles, whooping cough and polio before 1956 come from the yearly tables of the U.S. Public Health Service; in the 1920s some states were not yet reporting every disease, and the tables print a dash, which their key defines as zero. Where a count is a sum of weekly reports (Alaska through 1958 and Hawaii through 1959, before statehood) it usually runs lower than the yearly total. On a very narrow screen a tile too small for its case total leaves it out; tap the state for the count. Polio counts all reported polio before 1956 and paralytic polio only from 1956, so the 1955 to 1956 change is partly a change in what was counted; the paralytic counts are as first printed, and CDC later revised some yearly totals up or down. Hepatitis A before 1974 includes hepatitis of unspecified type. On each state the top number is the cases shown, and from 2010 on the percentage under it is the kindergarten measles vaccination rate. The map shades each state from 2010 on (the checkbox "Color states by measles vaccination" turns this off) by the share of kindergartners with the measles vaccine (MMR) that school year, as states reported to CDC, against 95%, the national Healthy People 2030 target; it measures one age group, not immunity in the whole population. State figures start with the 2009-10 school year and there are none for 2010-11. CDC flags some states' figures as lower bounds (shown with \u2265, or "at least"), because those states counted a child only if up to date on every required vaccine: those states' true share may be higher, so a state marked this way may not be below the level it appears under. Sources: U.S. Public Health Service, National Office of Vital Statistics, yearly tables of notifiable diseases (measles and polio from 1920, whooping cough from 1922, through 1955); CDC final annual tables of notifiable diseases (whooping cough, measles and paralytic polio from 1956, hepatitis A from 1966, mumps from 1968, all five diseases from 1993, through 2023); CDC weekly tables (2024 and 2025, provisional for 2025); Project Tycho, University of Pittsburgh, CC BY 4.0, from the weekly federal notifiable disease reports (Alaska through 1958 and Hawaii through 1959). Vaccination: CDC National Immunization Survey and SchoolVaxView; U.S. Immunization Survey and National Health Interview Survey before 1995. County vaccination: Dong E, Saiyed S, Nearchou A, Okura Y, Gardner LM, \u201cTrends in County-Level MMR Vaccination Coverage in Children in the United States,\u201d JAMA, 2025, data from Johns Hopkins University. County measles cases: JHU Measles Tracking Team Data Repository at Johns Hopkins University, CC BY 4.0. State indicators: Census Bureau and Bureau of Economic Analysis. Party control: Klarner, State Partisan Balance Data (through 2011), and Ballotpedia (2012 on). What we checked and the limits of these numbers are under \u201cAbout this data\u201d below.`;
   const h = new URLSearchParams(location.hash.slice(1));   // #st=OH&y=1958 opens a state and year
   if (+h.get("y") >= D.y0 && +h.get("y") <= D.y1) { S.year = +h.get("y"); yr.value = S.year; }
   setPlaying(false); layoutMap(); buildTicks(); render();

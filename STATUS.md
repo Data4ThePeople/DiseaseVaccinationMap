@@ -240,3 +240,27 @@ None.
   2.4px, California 1942 3.0px; codes in those years are 6px). Not checked:
   a real phone, tapping, fonts on other systems, survey-year state values
   1995 to 2014 and national figures before 1995 against CDC's archived files.
+- 2026-10-15 Ninth independent tie-out (fresh agent, whole project, of
+  77a88bc): all five claims hold; about 12,000 state-year case counts (all of
+  1993 to 2025, 177 scan cells read by eye, all Alaska and Hawaii Tycho
+  years), all populations, every vaccination series including survey years
+  1995 to 2017 and national figures before 1995, and all county values match
+  their sources. Fixed from its findings: findings page (cities' mumps range
+  15,871 to 47,208; correlation -0.46 from unrounded rates; 9 of 46 states
+  changed survey type, not 17, now computed in 01_vaccination_and_outbreaks.py;
+  three sentences reworded so they state no cause or universal; "Working
+  findings", "Still needed" and "Next steps" removed); 7 more rubella measles
+  footnotes and the hepatitis A footnotes (LA 1966-69, GA 1976, TN 1977, NY
+  1977-84) in hover and state notes; CDC's other kindergarten footnote marks
+  carried through the build and spelled out in the hover and chart notes (12
+  states counted doses at any age in 2024-25); footer gives Tycho through 1958
+  (AK) and 1959 (HI) and the full Johns Hopkins credits; coverage bar keeps its
+  tallest height so the map is one size across years at every desktop size;
+  no sideways scroll at any phone width; on the narrowest phones a total that
+  cannot clear its state code is left out (footer says so); state notes show
+  in full on phones; new "About this data" section under the footer lists how
+  the data was checked and every limit readers need. Agent's count of 28
+  two-decimal county values did not hold on recount (33 county-years, as
+  DATASETS.md says). Eric: no Ballotpedia permission request needed; Johns
+  Hopkins permission email drafted to Lauren Gardner (CSSE repo asks only for
+  the citation, no license).

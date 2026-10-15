@@ -78,7 +78,7 @@ page = tpl.replace("<!--COUNTY_CARDS-->", "\n".join(cards)).replace("<!--MUMPS_S
 head, body = page.split("<main", 1)   # template = title, font links and style, then the page body
 doc = ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
        '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
-       '<meta name="description" content="Places where school vaccination coverage dropped and a measles outbreak followed, and the story behind the mumps record. Working findings from Data 4 The People.">\n'
+       '<meta name="description" content="Places where school vaccination coverage dropped and a measles outbreak followed, and the story behind the mumps record. Findings from Data 4 The People.">\n'
        + head + '</head>\n<body>\n<main' + body + '\n</body>\n</html>\n')
 (ROOT / "dist" / "findings.html").write_text(doc)   # served by GitHub Pages next to the map
 print("dist/findings.html", len(doc))

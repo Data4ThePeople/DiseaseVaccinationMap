@@ -18,20 +18,21 @@ AZ  95.0  94.2  92.8  88.6  87.4
 WI  94.2  91.6  92.8  84.8  85.1
 
 == 2. State MMR change 2019-20 to 2024-25 against 2025 measles rate (rank correlation, states with both years)
-46 states; Spearman -0.45
+46 states; Spearman -0.46
 left out, no kindergarten MMR figure in one of the two years: AK, DC, DE, MT, WV
-leaving out one state at a time, the correlation runs from -0.52 to -0.42
+leaving out one state at a time, the correlation runs from -0.53 to -0.43
+9 of 46 states changed survey type between 2019-20 and 2024-25: AZ census (public). voluntary response (private) -> census; IN voluntary response -> census (public). voluntary response (private); NC census -> census (public). voluntary response (private); NV census -> census (public). voluntary response (private); NY census -> voluntary response; OH census -> census (public). voluntary response (private); PA census -> census (public). voluntary response (private); TX census -> census (public). voluntary response (private); WI stratified 2-stage cluster sample -> census (public). voluntary response (private)
 
 == 3. Whooping cough 2024 against each state's 2015-2019 average, with DTaP kindergarten change 2019-20 to 2023-24
     dtap_chg  base  r2024  pct_above_base
 st                                       
 ID      -9.5  11.6   59.9           416.6
-WI      -8.8  14.4   49.8           246.7
+WI      -8.8  14.4   49.8           246.8
 SD      -5.3   8.0   41.0           413.1
 MN      -4.9  11.5   53.2           364.0
-RI      -0.5   5.2   21.9           324.2
-CT       1.4   2.0    8.6           339.0
-NY      -1.0   4.2   14.4           240.5
+RI      -0.5   5.2   21.9           324.3
+CT       1.4   2.0    8.6           339.5
+NY      -1.0   4.2   14.4           240.6
 47 states; Spearman dtap_chg vs pct_above_base -0.24
 U.S. whooping cough cases 2023, 2024: 7063 43321
 
@@ -75,4 +76,17 @@ CT  96.9  97.0  97.0  96.7  95.9  96.2  95.3  97.3  98.6
 2006 [('IA', 1964, 65.8), ('KS', 968, 35.0), ('WI', 842, 15.1), ('IL', 798, 6.3)]
 2016 [('AR', 2411, 80.9), ('IA', 732, 23.2), ('OK', 505, 12.9), ('NY', 386, 1.9)]
 2017 [('HI', 832, 57.1), ('WA', 779, 10.5), ('NY', 545, 2.7), ('AR', 542, 18.1)]
+
+== 8. Mumps in about 110 large cities, 1924 to 1932 (Project Tycho city rows, weekly counts, each week in the year of its middle day)
+      cases  cities  weeks
+y                         
+1924  39176     114     53
+1925  27844     110     52
+1926  15871     110     52
+1927  37946     109     52
+1928  41059     110     50
+1929  24585     109     51
+1930  34588     110     53
+1931  47208     113     52
+1932  26833     112     40
 U.S. whooping cough rate 2024 12.7 per 100,000, 126% above the 2015-2019 average of 5.6

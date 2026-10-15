@@ -48,6 +48,14 @@ def toddler():
     })
 
 
+KMARK = {"\u2021": "d", "\u00a7": "s", "\u00b6": "p", "\u2020": "m", "\u2021\u2021": "k", "**": "e", "*": "a", "\ufffd": "u"}
+
+
+def marks(f):
+    toks = [t.strip() for t in f.split(".")]
+    return "".join(sorted({KMARK[t] for t in toks if t in KMARK}))
+
+
 def kinder():
     k = pd.read_csv(RAW / "cdc" / "ijqb-a7ye.csv", dtype=str).fillna("")
     k["vaccine"] = k["Vaccine/Exemption"].map(KINDER)
@@ -63,6 +71,12 @@ def kinder():
         # 2020-21: the state counted a child only if up to date on all required vaccines, so the figure
         # is a lower bound ("at least") and the true share may be higher. Kept as a flag so the page can say so.
         "flag": k["Estimate (%)"].where(est.isna(), k.Footnotes.str.contains(">=|\u2265").map({True: ">=", False: ""})),
+        # CDC's other footnote marks, as letters the page spells out (definitions from the dataset's own
+        # "Footnotes For Kindergartner Vaccination Coverage"): d = doses counted regardless of recommended age and
+        # interval, so the figure may be higher than valid doses; s = leaves out some special types of schools;
+        # p = public schools only; m = coverage from a sample; k = kindergarten and 1st grade; e = may include
+        # preschool; a = percent surveyed may be under the 100% shown; u = a mark that is unreadable in CDC's file
+        "notes": k.Footnotes.map(marks),
     })
 
 

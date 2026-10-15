@@ -26,7 +26,9 @@ piv = lambda vac, dose=None: k[(k["Vaccine/Exemption"] == vac) & ((k.Dose == dos
 mmr, dtap, nonmed = piv("MMR"), piv("DTP, DTaP, or DT"), piv("Exemption", "Non-Medical Exemption")
 
 cases = pd.read_csv(ROOT / "data/cases_state_year.csv")
-rate = lambda d: cases[cases.disease == d].pivot_table(index="st", columns="year", values="rate")  # noqa: E731
+# rates from cases and population, not the table's two-decimal rate column, so small rates do not tie
+cases["rate_x"] = cases.cases / cases["pop"] * 1e5
+rate = lambda d: cases[cases.disease == d].pivot_table(index="st", columns="year", values="rate_x")  # noqa: E731
 count = lambda d: cases[cases.disease == d].pivot_table(index="st", columns="year", values="cases")  # noqa: E731
 
 say("== 1. Kindergarten non-medical exemptions, selected states (percent of kindergartners)")
@@ -41,6 +43,12 @@ say(len(t), "states; Spearman", round(t.corr(method="spearman").iloc[0, 1], 2))
 say("left out, no kindergarten MMR figure in one of the two years:", ", ".join(sorted(set(t_all.index) - set(t.index))))
 loo = [t.drop(s).corr(method="spearman").iloc[0, 1] for s in t.index]
 say("leaving out one state at a time, the correlation runs from", round(min(loo), 2), "to", round(max(loo), 2))
+# a change in how a state counts kindergartners (CDC's survey type), ignoring CDC's own abbreviations
+norm = lambda x: x.strip().lower().replace("(pub.)", "(public)").replace("(prv.)", "(private)").replace("vol.", "voluntary").replace("census (public), ", "census (public). ")  # noqa: E731
+sv = k[(k["Vaccine/Exemption"] == "MMR") & k.y.isin([2020, 2025])].pivot_table(index="st", columns="y", values="Survey Type", aggfunc="first")
+sv = sv.loc[sv.index.intersection(t.index)].apply(lambda c: c.map(norm))
+ch = sv[sv[2020] != sv[2025]]
+say(len(ch), "of", len(t), "states changed survey type between 2019-20 and 2024-25:", "; ".join(f"{s} {a} -> {b}" for s, (a, b) in ch[[2020, 2025]].iterrows()))
 
 say("\n== 3. Whooping cough 2024 against each state's 2015-2019 average, with DTaP kindergarten change 2019-20 to 2023-24")
 p = rate("pertussis")
@@ -76,6 +84,15 @@ say({y: int(us[y]) for y in [1968, 1975, 1985, 1986, 1987, 1988, 2005, 2006, 201
 for y in [1968, 1987, 2006, 2016, 2017]:
     top = cases[(cases.disease == "mumps") & (cases.year == y)].nlargest(4, "cases")
     say(y, list(zip(top.st, top.cases, top.rate.round(1))))
+
+say("\n== 8. Mumps in about 110 large cities, 1924 to 1932 (Project Tycho city rows, weekly counts, each week in the year of its middle day)")
+import zipfile  # noqa: E402
+zf = zipfile.ZipFile(ROOT / "data/raw/tycho/US.36989005.zip")
+tc = pd.read_csv(zf.open(next(n for n in zf.namelist() if n.endswith(".csv"))), dtype=str, keep_default_na=False)
+tc = tc[(tc.CityName != "NA") & (tc.PartOfCumulativeCountSeries == "0") & (tc.Fatalities == "0")]
+tc = tc.assign(s=pd.to_datetime(tc.PeriodStartDate), n=tc.CountValue.astype(int))
+tc["y"] = (tc.s + pd.Timedelta(days=3)).dt.year
+say(tc[tc.y.between(1924, 1932)].groupby("y").agg(cases=("n", "sum"), cities=("CityName", "nunique"), weeks=("s", "nunique")).to_string())
 
 (ROOT / "analysis" / "findings_numbers.txt").write_text("\n".join(out) + "\n")
 print("\n".join(out))

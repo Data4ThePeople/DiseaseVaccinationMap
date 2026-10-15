@@ -282,9 +282,12 @@ division and U.S. totals. What the readers could not settle by eye:
   Virginia as 163, each followed by a stray mark, and with those readings the
   column adds to every division total and to the U.S. total of 4,249. Accepted
   by Eric on October 12, 2026 and filled.
-- **Mississippi measles 1968** is printed "*248" with the
-  footnote "Includes rubella" (found by the independent tie-out of October 15,
-  2026). The page shows 248, and its hover and state notes repeat the footnote.
+- **Measles counts printed with a rubella footnote:** Nebraska 1956 (2,289),
+  1957 (322) and 1958 (1,519); Mississippi 1957 (1,290), 1967 (678), 1968
+  (248) and 1969 (221); South Carolina 1964 (4,269). Found by the independent
+  tie-outs of October 15, 2026. The page shows the printed counts, and its
+  hover, state notes and "About this data" section repeat the footnote, as they
+  do for the hepatitis A footnotes below.
 
 Where New York is printed as two rows and one of them is a dash, the table's
 note now says which ("(NYC -)" or "(upstate -)"), and a summed New York value
@@ -324,7 +327,7 @@ those pages. Things a reader of these years should know:
   no data (Eric's decision, October 10, 2026: an upstate-only figure is not
   shown).
 - **Georgia 1974 is printed "NA"** (data not available) and shows as no data.
-- **Footnoted cells kept as printed:** Louisiana 1967, 1968 and 1969 "includes
+- **Footnoted cells kept as printed:** Louisiana 1966, 1967, 1968 and 1969 "includes
   serum hepatitis"; Tennessee 1977 "includes hepatitis, unspecified"; New York
   City 1977 to 1984 carries a note that its cases were classified by a blood
   test for hepatitis B.
@@ -366,8 +369,7 @@ table of low-frequency diseases, and in most later years it is nearly all dashes
 that the scan's text layer drops, so for 29 years the whole column was read from
 the page image (1,852 cells in all, the great majority of them dashes). Alaska
 before 1959 and Hawaii before 1960 are not in the table and keep their Tycho
-all-polio counts. Measles before 1956 still comes from Tycho
-weekly sums.
+all-polio counts.
 
 **Checks run.** State sum against the printed U.S. row: 461 disease-years, no
 mismatch. PDF against the separately parsed HTML edition, 2007 to 2015: 66
@@ -680,8 +682,10 @@ simply absent.
 **Uncertainty.** None published.
 
 **License and attribution.** **No license file in the repository.** The data is
-public and tied to a JAMA paper. Before publication we need to either confirm
-terms with the authors or drop the county layer. Cite: Dong E, Saiyed S,
+public and tied to a JAMA paper. The README of the authors' repository and of
+its copy at github.com/CSSEGISandData/MMR_data asks users to cite the JAMA
+article and gives no other terms; the page cites it. A request for permission
+to the senior author was drafted on October 15, 2026. Cite: Dong E, Saiyed S,
 Nearchou A, Okura Y, Gardner LM. Trends in County-Level MMR Vaccination
 Coverage in Children in the United States. JAMA. 2025.
 
@@ -743,7 +747,8 @@ figure exists for 1986 to 1990. **No state figure exists before 1995.**
 
 **Changes over time.**
 - From 2019 CDC reports by birth year and by age 24 months instead of by survey
-  year. The two are different measures. The page ends the survey-year line at
+  year. The two are different measures. Hepatitis A is measured by age 35
+  months, the other vaccines by age 24 months. The page ends the survey-year line at
   2017 and starts the birth-year line with children born in 2016, drawn at the
   year they reach the age measured, with a gap between.
 - Phone sample: landline only through 2010, landline and cell from 2011, cell
@@ -789,8 +794,8 @@ Built but not shown: unemployment rate (BLS, 1976 on), current-dollar income.
 or Nonpartisan legislature (Nebraska throughout; Minnesota 1937 to 1974). The
 two sources agree on all but 10 of 1,000 state-years in their 1992 to 2011
 overlap. They define a split chamber differently (no seat majority in one,
-ties and coalitions in the other). Ballotpedia's reuse terms have to be
-checked before publication. This is shown as a fact about the year and nothing
+ties and coalitions in the other). Ballotpedia is cited on the page; Eric
+decided on October 15, 2026 not to seek separate permission. This is shown as a fact about the year and nothing
 on the page relates it to disease or vaccination.
 
 **Uncertainty.** Survey figures for small states carry wide margins; the

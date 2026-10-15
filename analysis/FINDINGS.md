@@ -64,7 +64,7 @@ for whooping cough.
     Immunization" (2003), on the law that created the exemption.
     https://hro.house.texas.gov/interim/int78-1.pdf
 - **How to tell it.** This is a story about a pocket that stayed low, not about a
-  decline. It may be the more accurate frame for how outbreaks start.
+  decline.
 
 ### 4. Lancaster County, Pennsylvania, and Collier County, Florida (2026, outside the page)
 
@@ -159,13 +159,14 @@ fallen back to 90.6%.
   Columbia, Montana and West Virginia have no kindergarten figure in one of the
   two years and are left out), a larger drop in kindergarten MMR
   coverage from 2019-20 to 2024-25 goes with a higher 2025 measles rate, but
-  only moderately (rank correlation -0.45; leaving out any one state moves it
-  between -0.42 and -0.52). The measles counts are provisional, and 17 states
+  only moderately (rank correlation -0.46; leaving out any one state moves it
+  between -0.43 and -0.53). The measles counts are provisional, and 9 of 46 states
   changed how they count kindergartners between the two years. Wisconsin is the
   clearest case: it went from a sample of about 3% of students (92.8% in
   2019-20) to a count of nearly all of them (84.8% in 2024-25), so its drop is
   partly a change in method. Most states had few or no cases;
-  the 2025 total (2,026, provisional) sits mostly in a handful of counties.
+  in the Johns Hopkins county tracker, about half (52%) of 2025's cases are in
+  five places (Gaines, Spartanburg, Mohave, Utah's Southwest district, Lea).
 - **Whooping cough, 2024.** Cases rose from 7,063 in 2023 to 43,321 in 2024
   across the country. States with large DTaP drops (Idaho, Wisconsin) rose
   sharply, but so did states with almost no drop (Rhode Island +324%,
@@ -194,7 +195,7 @@ the vaccine era.**
 
 1. **Mumps was common long before 1968.** Our state-level mumps record begins
    in 1968 because that is when state reports start in Project Tycho. Before
-   then, about 110 large cities reported mumps from 1924 to 1932: between 24,585
+   then, about 110 large cities reported mumps from 1924 to 1932: between 15,871
    and 47,208 cases a year in those cities alone. City reporting of mumps then
    stops in the data. CDC counted 185,691 U.S. cases in 1967 (source below). So
    when mumps appears on the map in 1968 at its highest level, that is the first
@@ -227,8 +228,8 @@ the vaccine era.**
    in Iowa) and 2016 to 2017 (6,369 and 6,109; Arkansas, Hawaii, Washington,
    several universities) happened largely among people who had been vaccinated,
    and led CDC's advisory committee to recommend a third dose during outbreaks
-   in January 2018. These are about protection fading in close-contact
-   settings, not about falling coverage, and should not be framed as
+   in January 2018. The committee pointed to protection that fades over time
+   and to close, prolonged contact; these should not be framed as
    vaccine-decline stories. Sources are in the milestone files (Iowa 2006,
    Arkansas 2016, Hawaii 2018, the 2018 third-dose recommendation).
 
