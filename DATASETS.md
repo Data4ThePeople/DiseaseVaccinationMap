@@ -661,7 +661,8 @@ state lines.
 **Units and rounding.** Percent, kept to two decimals so the map's steps are
 picked from the unrounded share: a county at 94.95% is under 95%. The page
 shows one decimal, or two where one decimal would round a county into the next
-step (33 county-years).
+step (37 county-years; 33 of them had been drawn one step too high before the
+two-decimal fix).
 
 **Suppressed values.** Small counties are withheld by some states; these are
 simply absent.

@@ -198,3 +198,15 @@ None.
   polio axis finding was checked and is not a fault (lowest value 53.2%).
   Not checked: what the unreadable mark in 22 of CDC's 2025-26 footnotes
   stands for; every county map by eye; a real phone.
+- 2026-10-14 Sixth independent tie-out (fresh agent) of the latest fixes: all
+  787 state figures, 918 drawn tiles, the legend line for 18 years, the bar
+  chart, 16,380 county values (0 step differences) and 1,646 drawn county
+  shapes match. Fixed from its findings: the national coverage key never hid
+  (a CSS rule overrode it), so it showed on state pages and with coverage off;
+  county notes now list the years the map can draw, from the county figures
+  themselves (Missouri, Nevada, Mississippi, Nebraska, New Mexico, New York and
+  Connecticut had been wrong); DATASETS.md now gives 37 two-decimal county
+  values; the last year label on the bar chart no longer clips; state codes
+  are one size on every tile. Not checked: a real phone, hover boxes on screen,
+  state-page headline cards at phone width, the unreadable mark in CDC's
+  2025-26 footnotes.
