@@ -35,6 +35,8 @@ h1{font-family:var(--serif);font-weight:700;font-size:22px;line-height:1.15;marg
 .covbar[hidden]{display:none}
 .covbar b{color:var(--ink);font-weight:700}
 .covbar span{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.covbar .covgo{font:inherit;font-size:12px;padding:2px 9px;border:1px solid var(--ink);border-radius:3px;background:#fff;color:var(--ink);cursor:pointer}
+.covbar .covgo:hover{background:var(--tile)}
 .covbar i{width:12px;height:12px;border-radius:2px;display:inline-block}
 .covbar span.cnt{white-space:normal}   /* the count sentence can wrap on a phone */
 .rank label{max-width:100%;min-width:0}
@@ -56,7 +58,14 @@ h1{font-family:var(--serif);font-weight:700;font-size:22px;line-height:1.15;marg
 .ticks{position:absolute;left:8px;right:8px;top:0;height:10px;pointer-events:none}
 .ticks i{position:absolute;top:0;width:2px;height:9px;background:var(--ink);opacity:.55;transform:translateX(-1px)}
 .ticks i.st{background:#b3541e;opacity:.9}
-.yrs{display:flex;justify-content:space-between;font-size:10.5px;color:var(--ink3);font-variant-numeric:tabular-nums}
+.yrs{position:relative;height:14px;font-size:10.5px;color:var(--ink3);font-variant-numeric:tabular-nums}
+.yrs span{position:absolute;top:0;transform:translateX(-50%);white-space:nowrap}
+.yrs span.first{transform:none}
+.yrs span.last{transform:translateX(-100%)}
+.yrs span.cvl{color:var(--ink2)}
+.covband{position:relative;height:3px;margin:3px 0 1px}
+.covband[hidden]{display:none}
+.covband i{position:absolute;top:0;height:3px;border-radius:2px;background:#aaa59b}
 .body{flex:1 1 auto;min-height:0;margin-top:6px}
 .main{display:flex;gap:20px;height:100%}
 .mapcol{flex:none;display:flex;flex-direction:column;min-width:0}
@@ -209,6 +218,7 @@ footer p{margin:0;max-width:980px}
     <div class="track">
       <div class="ticks" id="ticks"></div>
       <input id="year" type="range" step="1" aria-label="Year">
+      <div class="covband" id="covband" title="Years with state kindergarten vaccination figures"><i></i></div>
       <div class="yrs" id="yrs"></div>
     </div>
   </div>
@@ -527,6 +537,7 @@ const schoolYear = y => `${y - 1}-${String(y).slice(2)}`;
 const KINDER_YEARS = (() => { const ys = new Set(); const m = (D.vax.kinder || {}).mmr || {}; for (const st in m) if (ST[st]) for (const y in m[st]) ys.add(+y); return [...ys].sort((a, b) => a - b); })();
 const COV_YEARS = (() => { const ys = new Set(); const m = (D.vax.kinder || {}).mmr || {}; for (const st in m) if (ST[st]) for (const y in m[st]) if (+y <= D.y1) ys.add(+y); return [...ys].sort((a, b) => a - b); })();
 /* a year between the first and last school year with figures, including one where no state reported */
+const COV_LAST = COV_YEARS.filter(y => y <= D.y1).pop();   // latest school year with figures that has a map year
 const inCovSpan = y => COV_YEARS.length > 0 && y >= COV_YEARS[0] && y <= COV_YEARS[COV_YEARS.length - 1];
 const covCount = y => { let n = 0, below = 0, low = 0, belowLb = 0, lowLb = 0; for (const s of D.states) { const p = covPoint(s.k, y); if (!p) continue; n++; if (p[0] < COV_LEVEL) { below++; if (p[4]) belowLb++; } if (p[0] < 90) { low++; if (p[4]) lowLb++; } } return { n, below, low, belowLb, lowLb }; };
 const lbNote = k => k ? ` (${k} reported as \u201cat least\u201d)` : "";
@@ -543,7 +554,8 @@ function covBarHtml(y) {
       + `<span><i style="background:${NOFIG};outline:1px solid ${NOFIG_LINE}"></i>no figure</span>` : "")
     + (c.n ? `<span class="cnt">${c.below} of ${c.n} states below the ${COV_LEVEL}% national target${lbNote(c.belowLb)}</span>`
            : inCovSpan(y) ? `<span class="cnt">No state reported a kindergarten figure for the ${schoolYear(y)} school year</span>`
-           : `<span class="cnt">State kindergarten figures run from ${schoolYear(COV_YEARS[0])} to ${schoolYear(COV_YEARS[COV_YEARS.length - 1])}; move the year there to color the map</span>`);
+           : `<span><i style="background:${NOFIG};outline:1px solid ${NOFIG_LINE}"></i>no figure</span><span class="cnt"><b>No state vaccination figures before the ${schoolYear(COV_YEARS[0])} school year, so states are not shaded.</b></span>`
+             + `<button type="button" class="covgo" data-y="${COV_LAST}">Go to ${schoolYear(COV_LAST)}</button>`);
 }
 /* on the wide layout the bar is as tall as its tallest year at this width, so the map keeps one size as the year moves */
 let covFit = { key: "", h: 0 };
@@ -558,7 +570,34 @@ function covBarMin() {
   covFit = { key, h };
   return h;
 }
+/* the band under the slider shows, from any year, which years can be shaded; its label is centered under it
+   and shortened, or left out, where it would run into a year label */
+function placeBand() {
+  const yrs = $("yrs"), cvl = $("cvl");
+  // on a narrow timeline a year label that would touch its neighbor is left out; the first and last always show
+  const ys = [...yrs.children].filter(x => x !== cvl);
+  ys.forEach(x => { x.hidden = false; });
+  const last = ys[ys.length - 1].getBoundingClientRect();
+  let prev = ys[0].getBoundingClientRect();
+  for (const x of ys.slice(1, -1)) {
+    const r = x.getBoundingClientRect();
+    if (r.left < prev.right + 6 || r.right > last.left - 6) x.hidden = true; else prev = r;
+  }
+  $("covband").hidden = !S.cov;
+  if (!cvl) return;
+  cvl.hidden = true;
+  if (!S.cov) return;
+  const b = $("covband").firstElementChild.getBoundingClientRect(), y0 = yrs.getBoundingClientRect().left;
+  const labs = ys.filter(x => !x.hidden).map(x => x.getBoundingClientRect());
+  for (const t of ["vaccination figures", "vaccination"]) {
+    cvl.textContent = t; cvl.hidden = false; cvl.style.left = b.left + b.width / 2 - y0 + "px";
+    const r = cvl.getBoundingClientRect();
+    if (!labs.some(q => q.right + 4 > r.left && q.left - 4 < r.right)) return;
+    cvl.hidden = true;
+  }
+}
 function renderCovBar() {
+  placeBand();
   const el = $("covbar");
   const was = el.hidden, h0 = el.offsetHeight;
   el.hidden = !S.cov || !!S.sel;   // a state page has its own county key
@@ -646,7 +685,7 @@ function drawMap() {
   for (const s of D.states) {
     const x = s.c * (tw + gap), y = s.r * (th + gap);
     const cv = S.cov ? covPoint(s.k, S.year) : null;
-    const nofig = S.cov && !cv && inCovSpan(S.year);
+    const nofig = S.cov && !cv;   // no figure that year, including every year before the first school year with figures
     ctx.fillStyle = cv ? covStep(cv[0])[1] : nofig ? NOFIG : S.hover === s.k ? "#ebebe7" : "#f5f5f3";
     ctx.beginPath(); ctx.roundRect(x + 0.5, y + 0.5, tw - 1, th - 1, 4); ctx.fill();
     if (S.hover === s.k) { ctx.strokeStyle = "#121212"; ctx.lineWidth = 1; ctx.stroke(); }
@@ -1131,7 +1170,13 @@ function init() {
   buildControls();
   const yr = $("year"); yr.min = D.y0; yr.max = D.y1; yr.value = S.year;
   yr.addEventListener("input", () => { setPlaying(false); setYear(+yr.value); });
-  $("yrs").innerHTML = [D.y0, 1950, 1970, 1990, 2010, D.y1].map(y => `<span>${y}</span>`).join("");
+  // labels sit where the slider thumb is for that year (the thumb travels 8px in from each end)
+  const at = y => `calc(8px + (100% - 16px) * ${(y - D.y0) / (D.y1 - D.y0)})`;
+  $("yrs").innerHTML = [D.y0, 1950, 1970, 1990, 2010, D.y1].map((y, i, a) => `<span class="${i === 0 ? "first" : i === a.length - 1 ? "last" : ""}" style="left:${i === 0 ? "0" : i === a.length - 1 ? "100%" : at(y)}">${y}</span>`).join("")
+    + `<span class="cvl" id="cvl">vaccination figures</span>`;
+  const band = $("covband").firstElementChild;
+  band.style.left = at(COV_YEARS[0]); band.style.width = `calc((100% - 16px) * ${(COV_LAST - COV_YEARS[0]) / (D.y1 - D.y0)})`;
+  $("covbar").addEventListener("click", e => { const b = e.target.closest(".covgo"); if (b) { setPlaying(false); setYear(+b.dataset.y); } });
   $("play").addEventListener("click", () => setPlaying(!S.playing));
   $("back").addEventListener("click", closeState);
   $("smap").addEventListener("pointermove", e => countyTip(e.target.dataset && e.target.dataset.f, e));
@@ -1164,6 +1209,7 @@ function init() {
     const v = $("viz"), w = v.clientWidth, h = $("stage").clientHeight;
     if (w === lastW && h === lastH) return;
     lastW = w; lastH = h;
+    placeBand();
     if (!S.sel) layoutMap(); render();
   }).observe($("viz"));
 }

@@ -264,3 +264,12 @@ None.
   DATASETS.md says). Eric: no Ballotpedia permission request needed; Johns
   Hopkins permission email drafted to Lauren Gardner (CSSE repo asks only for
   the citation, no license).
+- 2026-10-15 Liam Aranda-Michel: before 2010 the map looked shaded, since the
+  plain tile was almost the same gray as "95% or more". Eric approved the fix:
+  with coverage on, every year with no state figure draws tiles as "no figure"
+  (white, outlined); before 2009-10 the legend bar says in bold that there are
+  no state vaccination figures and offers a "Go to 2024-25" button; a band
+  under the slider marks the years with figures (labeled where it fits). Year
+  labels under the slider now sit at their true years and drop out on a phone
+  where they would touch. Measured at 6 desktop and 3 phone sizes: no clipping,
+  overlap, stale size or sideways scroll. Tie-out passes.
