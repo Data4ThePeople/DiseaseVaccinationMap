@@ -684,8 +684,9 @@ simply absent.
 **License and attribution.** **No license file in the repository.** The data is
 public and tied to a JAMA paper. The README of the authors' repository and of
 its copy at github.com/CSSEGISandData/MMR_data asks users to cite the JAMA
-article and gives no other terms; the page cites it. A request for permission
-to the senior author was drafted on October 15, 2026. Cite: Dong E, Saiyed S,
+article and gives no other terms; the page cites it. Eric decided on October
+15, 2026 to use the data with that citation and to tell the senior author how
+it is used, rather than ask permission. Cite: Dong E, Saiyed S,
 Nearchou A, Okura Y, Gardner LM. Trends in County-Level MMR Vaccination
 Coverage in Children in the United States. JAMA. 2025.
 
