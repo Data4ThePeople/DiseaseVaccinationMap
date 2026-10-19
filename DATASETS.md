@@ -556,7 +556,7 @@ higher than valid doses; § some special types of schools left out; ¶ public
 schools only; † coverage from a sample; ‡‡ kindergarten and 1st grade; ** may
 include preschool; * percent surveyed may be under the 100% shown. The page
 spells these out in the hover (decoded in `07_build_vaccination.py`). Some
-cells, mostly in 2025-26, carry a mark that is unreadable in CDC's file
+cells, all in 2025-26, carry a mark that is unreadable in CDC's file
 (U+FFFD); the hover says so.
 
 **Uncertainty.** None published. A census with 95% surveyed is solid; a
