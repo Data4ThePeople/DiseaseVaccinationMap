@@ -504,9 +504,9 @@ pooled groups). Vaccines include 1+ dose MMR, DTaP (1+ to 4+ doses), polio
 (1+ to 3+), hepatitis A (1+, 2+). By age 13, 19, 24 and 35 months.
 **This file does not go back to the mid-1990s.** The earlier state estimates
 (survey years 1995 on) were published as yearly tables in a different layout,
-by survey year instead of birth year. They still have to be located and are a
-separate series. The two must not be joined into one line without a visible
-break.
+by survey year instead of birth year. They are a separate series, described
+in "State NIS estimates by survey year, 1995 to 2017" below, and the page
+never joins the two into one line: the charts leave a gap between them.
 
 **Changes over time.** In 2019 CDC changed from reporting by survey year
 (children 19 to 35 months old at interview) to birth year (coverage by age 24
@@ -548,7 +548,16 @@ response) with `Percent Surveyed` beside it, and methods change from year to
 year within a state. What counts as "covered" follows each state's own school
 requirement, so the number of doses differs between states. Comparing two
 states is weaker than comparing one state with itself over time. Footnote
-marks in `Footnotes` carry these differences and have to be decoded.
+marks in `Footnotes` carry these differences. Their meanings are in the
+dataset's own description on data.cdc.gov ("Footnotes For Kindergartner
+Vaccination Coverage"): ≥ or >= a lower bound (shown as "at least"); ‡ doses
+counted regardless of the recommended age and spacing, so the figure may be
+higher than valid doses; § some special types of schools left out; ¶ public
+schools only; † coverage from a sample; ‡‡ kindergarten and 1st grade; ** may
+include preschool; * percent surveyed may be under the 100% shown. The page
+spells these out in the hover (decoded in `07_build_vaccination.py`). Some
+cells, mostly in 2025-26, carry a mark that is unreadable in CDC's file
+(U+FFFD); the hover says so.
 
 **Uncertainty.** None published. A census with 95% surveyed is solid; a
 voluntary response with 30% surveyed is not. The viz shows the survey type
