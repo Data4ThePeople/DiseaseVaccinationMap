@@ -690,8 +690,13 @@ state lines.
 **Units and rounding.** Percent, kept to six decimals, so the map's steps are
 picked from the share as published (a county at 94.96% is under 95%) and the
 page rounds only once, half up. It shows one decimal, or two where one decimal
-would put a county in the next step (33 county-years; before October 14, 2026
-these 33 were drawn one step too high because the share was rounded first).
+would put a county in the next step (28 county-years with the steps used
+since October 21, 2026; 33 with the earlier four steps, which before October
+14, 2026 were drawn one step too high because the share was rounded first).
+Since October 21, 2026 the county map uses the national map's three steps and
+colors (95% or more green, 90% to under 95% amber, under 90% red; it had four
+gray steps with a break at 85%). Measles case circles are dark red so they
+stand apart from the red step.
 
 **Suppressed values.** Small counties are withheld by some states; these are
 simply absent.

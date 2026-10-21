@@ -1021,7 +1021,9 @@ function stateCovChart(st, width) {
 }
 /* county map: kindergarten MMR coverage where the state publishes it by county */
 const inName = st => st === "DC" ? "the District of Columbia" : ST[st].n;   // "for the District of Columbia"
-const MMR_BINS = [[95, "#ebe9e3", "95% or more"], [90, "#cdc9c0", "90 to 94.9%"], [85, "#aaa59b", "85 to 89.9%"], [0, "#77736a", "under 85%"]];
+/* the same three steps and colors as the national map */
+const MMR_BINS = COV_STEPS.map(b => [b[0], b[1], b[3]]);
+const CASE_DOT = "#6e0f1c";   // measles circles in a dark red, so they stand apart from the red step
 const mmrBin = v => MMR_BINS.find(b => v >= b[0]);
 /* rounded once, half up, from the stored share: one decimal, or more where one decimal would put a county
    in the next step (94.96 shows as 94.96, not 95.0) */
@@ -1039,11 +1041,11 @@ function stateSvg(st) {
   if (measlesOn) for (const f in sh.c) {
     const n = (D.cmeasles[f] || {})[y]; if (!n) continue;
     const el = sh.cc[f]; if (!el) continue;
-    dots += `<circle cx="${el[0]}" cy="${el[1]}" r="${sw * (2.2 + Math.sqrt(n) * 1.1)}" fill="${DKEY.measles.color}" fill-opacity=".8" stroke="#fff" stroke-width="${sw * 0.8}" pointer-events="none"/>`;
+    dots += `<circle cx="${el[0]}" cy="${el[1]}" r="${sw * (2.2 + Math.sqrt(n) * 1.1)}" fill="${CASE_DOT}" fill-opacity=".85" stroke="#fff" stroke-width="${sw * 0.8}" pointer-events="none"/>`;
   }
   const svg = `<svg viewBox="${sh.box.join(" ")}" role="img" aria-label="County map of ${esc(ST[st].n)}">${paths}<path d="${sh.d}" fill="none" stroke="#55534e" stroke-width="${sw}" stroke-linejoin="round" pointer-events="none"/>${dots}</svg>`;
   let cap;
-  if (any) cap = `<div class="mapkey"><b>Kindergartners with 2 MMR doses, ${y - 1}-${String(y).slice(2)} school year, by county</b><div>${MMR_BINS.slice().reverse().map(b => `<span><i style="background:${b[1]}"></i>${b[2]}</span>`).join("")}<span><i style="background:${NOFIG};outline:1px solid ${NOFIG_LINE}"></i>no figure</span></div>${dots ? `<div><span>${personSvg(DKEY.measles.color, 6)} Circles: confirmed measles cases in ${y}</span></div>` : ""}</div>`;
+  if (any) cap = `<div class="mapkey"><b>Kindergartners with 2 MMR doses, ${y - 1}-${String(y).slice(2)} school year, by county</b><div>${MMR_BINS.slice().reverse().map(b => `<span><i style="background:${b[1]}"></i>${b[2]}</span>`).join("")}<span><i style="background:${NOFIG};outline:1px solid ${NOFIG_LINE}"></i>no figure</span></div>${dots ? `<div><span><svg width="9" height="9" aria-hidden="true"><circle cx="4.5" cy="4.5" r="4" fill="${CASE_DOT}"/></svg> Circles: confirmed measles cases in ${y}, sized by count</span></div>` : ""}</div>`;
   else if (meta.unmapped && meta.unmapped[y]) cap = `<p class="note">${esc(ST[st].n)} reported ${y - 1}-${String(y).slice(2)} by ${meta.unmapped[y][0]} planning regions, not by county, so the map cannot draw them. The regions ranged from ${meta.unmapped[y][1].toFixed(1)}% to ${meta.unmapped[y][2].toFixed(1)}%.</p>`;
   else if (!meta.n) cap = `<p class="note">No county vaccination figures are available for ${esc(inName(st))}.</p>`;
   else {   // the years the map can actually draw, taken from the county figures themselves

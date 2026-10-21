@@ -287,3 +287,6 @@ None.
   Wisconsin on the wide layout, labeling the two halves with their color
   scales (short labels where space is tight); the text bar above the
   timeline then shows only the counts. Phones keep the full text legend.
+- 2026-10-21: County map now uses the national three steps and colors
+  (green, amber, red; the 85% break is gone). Measles case circles are dark
+  red with a white outline. Two-decimal county values recounted: 28.
