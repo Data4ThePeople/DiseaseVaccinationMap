@@ -273,3 +273,12 @@ None.
   labels under the slider now sit at their true years and drop out on a phone
   where they would touch. Measured at 6 desktop and 3 phone sizes: no clipping,
   overlap, stale size or sideways scroll. Tie-out passes.
+- 2026-10-21: Mike's map changes. One disease at a time (radio buttons,
+  measles by default). Each state tile is split corner to corner: top left is
+  kindergarten coverage for that disease's vaccine (95%+ green, 90 to under 95
+  amber, under 90 red; blank for hepatitis A, which CDC's kindergarten file
+  lacks), bottom right is cases per 100,000 (above 1 red, 0.1 to 1 amber, under
+  0.1 green). Figures are gray; dots and rings removed. Mike set the case
+  cutoffs for measles; the other four diseases use the same cutoffs until he
+  reviews them. Open: Mike to confirm per-disease cutoffs; red-green color
+  blindness flagged to Eric. Tie-out passes.

@@ -30,10 +30,11 @@ h1{font-family:var(--serif);font-weight:700;font-size:22px;line-height:1.15;marg
 .controls label{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;cursor:pointer;user-select:none;white-space:nowrap}
 .controls input{width:15px;height:15px;margin:0;accent-color:var(--c)}
 .controls svg{flex:none}
-.controls label.covt{padding-left:14px;border-left:1px solid var(--rule);--c:#55534e}
-.covbar{display:flex;flex-wrap:wrap;align-items:center;gap:3px 14px;padding:5px 0;border-bottom:1px solid var(--rule);font-size:12px;color:var(--ink2);flex:none}
+.covbar{display:flex;flex-direction:column;gap:3px;padding:5px 0;border-bottom:1px solid var(--rule);font-size:12px;color:var(--ink2);flex:none}
 .covbar[hidden]{display:none}
 .covbar b{color:var(--ink);font-weight:700}
+.covbar .lg{display:flex;flex-wrap:wrap;align-items:center;gap:3px 14px}
+.covbar .tri{flex:none;vertical-align:-1px}
 .covbar span{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
 .covbar .covgo{font:inherit;font-size:12px;padding:2px 9px;border:1px solid var(--ink);border-radius:3px;background:#fff;color:var(--ink);cursor:pointer}
 .covbar .covgo:hover{background:var(--tile)}
@@ -193,7 +194,7 @@ footer p{margin:0;max-width:980px}
   .viz:not(.fit) .rail .charts,.vgrid{grid-template-columns:minmax(0,1fr)}
   .usrow{grid-template-columns:minmax(0,1fr)}
   /* the smallest phones: long lines wrap instead of widening the page */
-  .controls label.covt,.stats span{white-space:normal}
+  .stats span{white-space:normal}
   .stats span{display:inline}
 }
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
@@ -208,7 +209,7 @@ footer p{margin:0;max-width:980px}
     <span class="built">Built by Data 4 The People</span>
   </div>
 
-  <div class="controls" id="controls" role="group" aria-label="Diseases shown"></div>
+  <div class="controls" id="controls" role="radiogroup" aria-label="Disease shown"></div>
 
   <div class="covbar" id="covbar" hidden></div>
 
@@ -356,7 +357,7 @@ const shortTight = n => n >= 999500 ? short(n) : n >= 1e3 ? rnd(n / 1e3, 0) + "k
 const $ = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
-const S = { year: 1941, on: new Set(DIS.map(d => d.k)), hover: null, sel: null, playing: false, cov: true, rankBy: null, rankDesc: true, tblSort: null, tblDesc: true };
+const S = { year: 1941, dis: "measles", on: new Set(["measles"]), hover: null, sel: null, playing: false, rankBy: null, rankDesc: true, tblSort: null, tblDesc: true };
 
 /* cases, rate and source for one disease, state and year. null = no data, which is not zero */
 function cell(dk, st, y) {
@@ -437,7 +438,7 @@ function gapNote(dk, y) {
   while (b < D.y1 && !has(b + 1)) b++;
   return a === b ? "no state counts this year" : `no state counts ${a} to ${b}`;
 }
-const SMALL = 0.04;   // under this share of one figure nothing is drawn; a dot marks it instead
+const SMALL = 0.04;   // under this share of one figure nothing is drawn; the color of the tile still shows the rate
 
 /* ---------- the figure ---------- */
 function person(ctx, x, y, w, color, frac, alpha, back) {
@@ -453,7 +454,7 @@ function person(ctx, x, y, w, color, frac, alpha, back) {
     ctx.closePath();
   };
   ctx.save();
-  // on a gray coverage tile each figure sits on a white silhouette, so light and faded colors stay visible
+  // on a colored tile each figure sits on a white silhouette, so it stays visible on every color
   if (back) { ctx.fillStyle = "#fff"; ctx.strokeStyle = "#fff"; ctx.lineWidth = Math.max(1, w * 0.18); shape(); ctx.fill(); ctx.stroke(); }
   if (frac < 1) {           // a part of a figure: faint whole, solid share from the feet up
     ctx.globalAlpha = 0.16 * alpha; ctx.fillStyle = color; shape(); ctx.fill();
@@ -500,31 +501,38 @@ function setupCanvas(cv, cssW, cssH) {
 /* ---------- controls ---------- */
 function buildControls() {
   const el = $("controls");
-  el.innerHTML = DIS.map(d => `<label style="--c:${d.color}"><input type="checkbox" data-k="${d.k}" checked>${personSvg(d.color, 8)}${esc(d.name)}</label>`).join("")
-    + `<label class="covt"><input type="checkbox" id="cov" checked>Color states by measles vaccination (2010 on)</label>`
-    + `<span class="unit">${personSvg("#55534e", 8)}<span>1 figure = 1 reported case per ${fmt(1e5 / D.unit)} residents in a year</span>`
-    + `<span class="mk"><svg width="8" height="8" aria-hidden="true"><circle cx="4" cy="4" r="2.6" fill="#55534e"/></svg>cases, under ${D.unit * SMALL} per 100,000</span>`
-    + `<span class="mk"><svg width="8" height="8" aria-hidden="true"><circle cx="4" cy="4" r="2.6" fill="none" stroke="#55534e" stroke-width="1.2"/></svg>no data</span>`
-    + `<span class="mk"><span style="opacity:.5">${personSvg("#55534e", 8)}</span>incomplete or provisional</span></span>`;
+  el.innerHTML = DIS.map(d => `<label style="--c:#121212"><input type="radio" name="dis" value="${d.k}"${d.k === S.dis ? " checked" : ""}>${esc(d.name)}</label>`).join("")
+    + `<span class="unit">${personSvg(FIG, 8)}<span>1 figure = 1 reported case per ${fmt(1e5 / D.unit)} residents in a year</span>`
+    + `<span class="mk"><span style="opacity:.5">${personSvg(FIG, 8)}</span>incomplete or provisional</span></span>`;
   el.addEventListener("change", e => {
-    if (e.target.id === "cov") { setCov(e.target.checked); return; }
-    const k = e.target.dataset.k; if (!k) return;
-    e.target.checked ? S.on.add(k) : S.on.delete(k);
-    if (!S.sel) layoutMap();   // the U.S. row may need more or fewer lines
+    const k = e.target.value; if (!DKEY[k]) return;
+    S.dis = k; S.on = new Set([k]); S.rankBy = null;
+    buildTicks(); renderCovBar(); placeBand();
+    if (!S.sel) layoutMap();   // the legend and the U.S. row can change height
     render();
   });
 }
 const shown = () => DIS.filter(d => S.on.has(d.k));
 
-/* ---------- measles vaccination against the 95% level ----------
-   Kindergarten MMR coverage by state and school year (CDC SchoolVaxView), in three steps. This is coverage in one
-   age group, not immunity in the whole population, so the wording stays "below the 95% level". */
+/* ---------- the two halves of each state ----------
+   Each state is split corner to corner. The top-left half is the share of kindergartners with the chosen disease's
+   vaccine (CDC SchoolVaxView), against 95%; the bottom-right half is reported cases per 100,000 residents. Both use
+   green, amber and red. Coverage is one age group, not immunity in the whole population. */
 const COV_LEVEL = 95;
-/* grays, lighter = higher coverage, so the scale never shares a color with a disease figure */
-const COV_STEPS = [[95, "#ebe9e3", "#b0aca3", "95% or more", "#55534e"], [90, "#cdc9c0", "#77736a", "90% to under 95%", "#3d3b37"], [0, "#aaa59b", "#121212", "under 90%", "#121212"]];
-const NOFIG = "#ffffff", NOFIG_LINE = "#b5b1a8";   // white with an outline, so "no figure" never looks like 95% or more
+/* [lowest value, tile fill, strong color for dots and bars, label] */
+const GREEN = ["#86c383", "#3f9142"], AMBER = ["#f4c457", "#d39a14"], RED = ["#e2675f", "#c63a31"];
+const COV_STEPS = [[95, GREEN[0], GREEN[1], "95% or more"], [90, AMBER[0], AMBER[1], "90% to under 95%"], [0, RED[0], RED[1], "under 90%"]];
+const RATE_STEPS = [[1, RED[0], RED[1], "more than 1"], [0.1, AMBER[0], AMBER[1], "0.1 to 1"], [-1, GREEN[0], GREEN[1], "under 0.1"]];
+const NOFIG = "#ffffff", NOFIG_LINE = "#b5b1a8";   // white with an outline, so "no figure" never looks like a color step
+const FIG = "#55534e";   // the figures are gray so they never compete with the colors
 const covStep = v => COV_STEPS.find(b => v >= b[0]);
-const covPoint = (st, y) => vaxPoint("kinder", "mmr", st, y);
+/* more than 1 per 100,000 is red, 0.1 to 1 amber (both ends included), under 0.1 green */
+const rateStep = r => r > 1 ? RATE_STEPS[0] : r >= 0.1 ? RATE_STEPS[1] : RATE_STEPS[2];
+const curDis = () => DKEY[S.dis];
+const lname = d => d.name.charAt(0).toLowerCase() + d.name.slice(1);   // "hepatitis A", not "hepatitis a"
+const curVax = () => curDis().vax;
+const hasKinder = () => !!((D.vax.kinder || {})[curVax()]);   // CDC's kindergarten file has no hepatitis A vaccine
+const covPoint = (st, y) => vaxPoint("kinder", curVax(), st, y);
 /* CDC marks some state figures as a lower bound ("at least"): the true share may be higher */
 /* CDC's footnote marks on a kindergarten figure (letters set in 07_build_vaccination.py), in CDC's own terms */
 const KNOTE = { d: "doses were counted at any age or spacing, so the figure may be higher than the share with valid doses", s: "some special types of schools are left out",
@@ -538,29 +546,40 @@ const KINDER_YEARS = (() => { const ys = new Set(); const m = (D.vax.kinder || {
 const COV_YEARS = (() => { const ys = new Set(); const m = (D.vax.kinder || {}).mmr || {}; for (const st in m) if (ST[st]) for (const y in m[st]) if (+y <= D.y1) ys.add(+y); return [...ys].sort((a, b) => a - b); })();
 /* a year between the first and last school year with figures, including one where no state reported */
 const COV_LAST = COV_YEARS.filter(y => y <= D.y1).pop();   // latest school year with figures that has a map year
-const inCovSpan = y => COV_YEARS.length > 0 && y >= COV_YEARS[0] && y <= COV_YEARS[COV_YEARS.length - 1];
+const inCovSpan = y => hasKinder() && COV_YEARS.length > 0 && y >= COV_YEARS[0] && y <= COV_YEARS[COV_YEARS.length - 1];
 const covCount = y => { let n = 0, below = 0, low = 0, belowLb = 0, lowLb = 0; for (const s of D.states) { const p = covPoint(s.k, y); if (!p) continue; n++; if (p[0] < COV_LEVEL) { below++; if (p[4]) belowLb++; } if (p[0] < 90) { low++; if (p[4]) lowLb++; } } return { n, below, low, belowLb, lowLb }; };
 const lbNote = k => k ? ` (${k} reported as \u201cat least\u201d)` : "";
-function setCov(on) {
-  S.cov = on; $("cov").checked = on;
-  if (on && !S.on.has("measles")) { S.on.add("measles"); document.querySelector('#controls input[data-k="measles"]').checked = true; }
-  if (on && COV_YEARS.length && !COV_YEARS.includes(S.year)) { setPlaying(false); S.year = COV_YEARS[COV_YEARS.length - 1]; $("year").value = S.year; }
-  renderCovBar(); if (!S.sel) layoutMap(); render();
+const KSHORT = { mmr: "MMR", dtap: "DTaP", polio: "polio vaccine" };
+const KVAX_NAME = { mmr: "measles vaccine (MMR)", dtap: "whooping cough vaccine (DTaP)", polio: "polio vaccine" };
+/* the 95% line is the national target only for MMR; for the other vaccines it is the same level, for comparison */
+const levelName = () => curVax() === "mmr" ? `the ${COV_LEVEL}% national target` : `${COV_LEVEL}%`;
+/* a small square split corner to corner, with the half the line describes filled */
+const tri = top => `<svg class="tri" width="15" height="12" viewBox="0 0 15 12" aria-hidden="true"><path d="M0,0H15L0,12Z" fill="${top ? "#77736a" : "#fff"}"/><path d="M15,0V12H0Z" fill="${top ? "#fff" : "#77736a"}"/><rect x=".5" y=".5" width="14" height="11" fill="none" stroke="#77736a"/></svg>`;
+const swatch = (fill, line) => `<i style="background:${fill}${line ? ";outline:1px solid " + NOFIG_LINE : ""}"></i>`;
+function rateCount(y) {
+  let n = 0, red = 0;
+  for (const s of D.states) { const c = cell(S.dis, s.k, y); if (!c || c.rate == null) continue; n++; if (c.rate > 1) red++; }
+  return { n, red };
 }
 function covBarHtml(y) {
-  const c = covCount(y);
-  return `<b title="On each state, the top number is reported cases and the percentage under it is this rate">Kindergartners with the measles vaccine (MMR)${c.n ? ", " + schoolYear(y) + " school year" : ""}</b>`
-    + (inCovSpan(y) ? COV_STEPS.map(b => `<span><i style="background:${b[1]}"></i>${b[3]}</span>`).join("")
-      + `<span><i style="background:${NOFIG};outline:1px solid ${NOFIG_LINE}"></i>no figure</span>` : "")
-    + (c.n ? `<span class="cnt">${c.below} of ${c.n} states below the ${COV_LEVEL}% national target${lbNote(c.belowLb)}</span>`
-           : inCovSpan(y) ? `<span class="cnt">No state reported a kindergarten figure for the ${schoolYear(y)} school year</span>`
-           : `<span><i style="background:${NOFIG};outline:1px solid ${NOFIG_LINE}"></i>no figure</span><span class="cnt"><b>No state vaccination figures before the ${schoolYear(COV_YEARS[0])} school year, so states are not shaded.</b></span>`
-             + `<button type="button" class="covgo" data-y="${COV_LAST}">Go to ${schoolYear(COV_LAST)}</button>`);
+  const d = curDis(), c = covCount(y), r = rateCount(y), nofig = `<span>${swatch(NOFIG, true)}no figure</span>`;
+  let top;
+  if (!hasKinder()) top = `<b>${tri(true)} Top left: vaccination</b><span class="cnt">CDC's state kindergarten figures do not include the ${esc(lname(d))} vaccine, so this half is blank. Toddler figures are in the vaccination chart.</span>`;
+  else if (!inCovSpan(y)) top = `<b>${tri(true)} Top left: vaccination</b><span class="cnt"><b>No state vaccination figures before the ${schoolYear(COV_YEARS[0])} school year, so this half is blank.</b></span>`
+    + `<button type="button" class="covgo" data-y="${COV_LAST}">Go to ${schoolYear(COV_LAST)}</button>`;
+  else top = `<b title="On each state, the percentage under the state's letters is this rate">${tri(true)} Top left: kindergartners with the ${KVAX_NAME[curVax()]}${c.n ? ", " + schoolYear(y) + " school year" : ""}</b>`
+    + COV_STEPS.map(b => `<span>${swatch(b[1])}${b[3]}</span>`).join("") + nofig
+    + (c.n ? `<span class="cnt">${c.below} of ${c.n} states below ${levelName()}${lbNote(c.belowLb)}</span>`
+           : `<span class="cnt">No state reported a kindergarten figure for the ${schoolYear(y)} school year</span>`);
+  const bot = `<b title="On each state, the number at top right is reported cases">${tri(false)} Bottom right: ${esc(lname(d))} cases per 100,000 residents, ${y}</b>`
+    + RATE_STEPS.map(b => `<span>${swatch(b[1])}${b[3]}</span>`).join("") + `<span>${swatch(NOFIG, true)}no data</span>`
+    + (r.n ? `<span class="cnt">${r.red} of ${r.n} states above 1</span>` : `<span class="cnt">${esc(d.name)}: ${gapNote(S.dis, y)}</span>`);
+  return `<div class="lg">${top}</div><div class="lg">${bot}</div>`;
 }
 /* on the wide layout the bar is as tall as its tallest year at this width, so the map keeps one size as the year moves */
 let covFit = { key: "", h: 0 };
 function covBarMin() {
-  const el = $("covbar"), key = String(el.clientWidth);
+  const el = $("covbar"), key = el.clientWidth + "|" + S.dis;
   if (key === covFit.key) return covFit.h;
   const keep = el.innerHTML, mh = el.style.minHeight;
   el.style.minHeight = "";
@@ -583,10 +602,10 @@ function placeBand() {
     const r = x.getBoundingClientRect();
     if (r.left < prev.right + 6 || r.right > last.left - 6) x.hidden = true; else prev = r;
   }
-  $("covband").hidden = !S.cov;
+  $("covband").hidden = !hasKinder();
   if (!cvl) return;
   cvl.hidden = true;
-  if (!S.cov) return;
+  if (!hasKinder()) return;
   const b = $("covband").firstElementChild.getBoundingClientRect(), y0 = yrs.getBoundingClientRect().left;
   const labs = ys.filter(x => !x.hidden).map(x => x.getBoundingClientRect());
   for (const t of ["vaccination figures", "vaccination"]) {
@@ -600,7 +619,7 @@ function renderCovBar() {
   placeBand();
   const el = $("covbar");
   const was = el.hidden, h0 = el.offsetHeight;
-  el.hidden = !S.cov || !!S.sel;   // a state page has its own county key
+  el.hidden = !!S.sel;   // a state page has its own county key
   if (was !== el.hidden && !S.sel && GEO) layoutMap();   // the bar takes a row, so the map is sized again
   if (el.hidden) return;
   el.innerHTML = covBarHtml(S.year);
@@ -620,8 +639,8 @@ function covChart(width) {
     if (i === 0 || i === ys.length - 1 || ys[i] % 5 === 0) g += `<text x="${i === ys.length - 1 ? x + w : x + w / 2}" y="${H - 2}" text-anchor="${i === ys.length - 1 ? "end" : "middle"}" font-size="9" fill="#8a8780">${ys[i]}</text>`;
   }
   const c = covCount(S.year);
-  return `<div class="covchart"><h3>States below ${COV_LEVEL}% kindergarten MMR coverage</h3><svg viewBox="0 0 ${W} ${H}" height="${H}" role="img" aria-label="Number of states below ${COV_LEVEL} percent kindergarten MMR coverage, by school year">${g}</svg>`
-    + `<p class="read">${c.n ? `${schoolYear(S.year)}: <b>${c.below} of ${c.n}</b> states below ${COV_LEVEL}%${lbNote(c.belowLb)}, ${c.low} below 90%${lbNote(c.lowLb)}.` : `No state reported a kindergarten figure for ${schoolYear(S.year)}.`}${doseMarked(S.year) ? ` CDC notes that ${doseMarked(S.year)} of these states counted doses at any age or spacing, so their figures may be higher.` : ""} Darker bars are states under 90%.${c.n && ys.some(v => !covCount(v).n) ? ` A dotted slot means no state reported that year (${ys.filter(v => !covCount(v).n).map(schoolYear).join(", ")}).` : ""} Year is the spring of the school year.</p></div>`;
+  return `<div class="covchart"><h3>States below ${COV_LEVEL}% kindergarten ${KSHORT[curVax()]} coverage</h3><svg viewBox="0 0 ${W} ${H}" height="${H}" role="img" aria-label="Number of states below ${COV_LEVEL} percent kindergarten ${KSHORT[curVax()]} coverage, by school year">${g}</svg>`
+    + `<p class="read">${c.n ? `${schoolYear(S.year)}: <b>${c.below} of ${c.n}</b> states below ${COV_LEVEL}%${lbNote(c.belowLb)}, ${c.low} below 90%${lbNote(c.lowLb)}.` : `No state reported a kindergarten figure for ${schoolYear(S.year)}.`}${doseMarked(S.year) ? ` CDC notes that ${doseMarked(S.year)} of these states counted doses at any age or spacing, so their figures may be higher.` : ""} Red bars are states under 90%; amber bars, 90% to under 95%.${c.n && ys.some(v => !covCount(v).n) ? ` A dotted slot means no state reported that year (${ys.filter(v => !covCount(v).n).map(schoolYear).join(", ")}).` : ""} Year is the spring of the school year.</p></div>`;
 }
 
 /* ---------- national map ---------- */
@@ -648,9 +667,9 @@ function layoutMap() {
     tw = twFor(usH);
     $("usrow").style.height = usH + "px";
   } else { col.style.width = ""; $("usrow").style.height = ""; tw = (main.clientWidth - gap * (cols - 1)) / cols; }
-  // on narrow screens, small tiles with coverage on get taller, so the disease dots have a line of their own under
-  // the rate (the page scrolls there); the wide layout must fit the window, so its tiles keep their shape
-  const th = tw * (!fit && S.cov && tw < 56 ? TALL : RATIO), W = cols * tw + (cols - 1) * gap, H = rows * th + (rows - 1) * gap;
+  // on narrow screens small tiles get taller, so the figures have room under the coverage rate (the page scrolls
+  // there); the wide layout must fit the window, so its tiles keep their shape
+  const th = tw * (!fit && tw < 56 ? TALL : RATIO), W = cols * tw + (cols - 1) * gap, H = rows * th + (rows - 1) * gap;
   if (fit) col.style.width = W + "px";
   $("map").style.width = W + "px";
   GEO = { W, H, tw, th, gap };
@@ -670,13 +689,11 @@ function layoutMap() {
   }
 }
 function drawMap() {
-  const { W, H, tw, th, gap } = GEO, ctx = setupCanvas($("map"), W, H), dz = shown();
+  const { W, H, tw, th, gap } = GEO, ctx = setupCanvas($("map"), W, H), dk = S.dis;
   const fs = Math.max(8, Math.min(11, tw * 0.17)), pad = Math.max(3, tw * 0.07);
-  // a ring is drawn only for a disease some state counted this year; a year with no state counts at all is said once, in the U.S. row
-  const counted = Object.fromEntries(dz.map(d => [d.k, D.states.some(s => cell(d.k, s.k, S.year))]));
   // the case total in a tile's top right; on small tiles its type shrinks to keep a gap from the state code,
   // and if a total still doesn't fit, the state code shrinks on every tile alike so codes stay one size
-  const totOf = s => { let total = 0, any = false; for (const d of dz) { const c = cell(d.k, s.k, S.year); if (c) { any = true; total += c.cases; } } return !any ? (!dz.length ? "" : tw < 56 ? "\u2013" : "no data") : tw < 32 ? shortTight(total) : short(total); };
+  const totOf = s => { const c = cell(dk, s.k, S.year); return !c ? (tw < 56 ? "\u2013" : "no data") : tw < 32 ? shortTight(c.cases) : short(c.cases); };
   const kfont = k => `700 ${k}px Helvetica Neue,Helvetica,Arial,sans-serif`, tfont = t => `${t}px Helvetica Neue,Helvetica,Arial,sans-serif`;
   const gapMin = Math.max(3, tw * 0.1);
   const room = (code, k, tot, t) => { ctx.font = kfont(k); const a = ctx.measureText(code).width; ctx.font = tfont(t); return tw - pad * 2 - a - (tot ? ctx.measureText(tot).width : 0); };
@@ -684,59 +701,38 @@ function drawMap() {
   for (const s of D.states) { const tot = totOf(s); while (tot && kf > 6 && room(s.k, kf, tot, 5) < gapMin) kf -= 0.5; }
   for (const s of D.states) {
     const x = s.c * (tw + gap), y = s.r * (th + gap);
-    const cv = S.cov ? covPoint(s.k, S.year) : null;
-    const nofig = S.cov && !cv;   // no figure that year, including every year before the first school year with figures
-    ctx.fillStyle = cv ? covStep(cv[0])[1] : nofig ? NOFIG : S.hover === s.k ? "#ebebe7" : "#f5f5f3";
-    ctx.beginPath(); ctx.roundRect(x + 0.5, y + 0.5, tw - 1, th - 1, 4); ctx.fill();
-    if (S.hover === s.k) { ctx.strokeStyle = "#121212"; ctx.lineWidth = 1; ctx.stroke(); }
-    else if (nofig) { ctx.strokeStyle = NOFIG_LINE; ctx.lineWidth = 1; ctx.stroke(); }
-    // marks: a ring for a checked disease with no figure this year (no data is not zero),
-    // a dot for one with cases but too few to draw a figure
-    const items = [], marks = []; let total = 0, any = false;
-    for (const d of dz) {
-      const c = cell(d.k, s.k, S.year);
-      if (!c) { if (counted[d.k]) marks.push({ color: d.color, ring: true }); continue; }
-      any = true; total += c.cases;
-      if (c.rate == null) { marks.push({ color: d.color, ring: true }); continue; }
-      if (c.cases > 0 && c.rate / D.unit < SMALL) { marks.push({ color: d.color, ring: false, alpha: thin(c) ? 0.5 : 1 }); continue; }
-      items.push({ rate: c.rate, color: d.color, alpha: thin(c) ? 0.5 : 1 });
-    }
-    // top left the state code, top right the case total; under it, when the state is shaded, its coverage rate.
+    const cv = covPoint(s.k, S.year), c = cell(dk, s.k, S.year), rate = c ? c.rate : null;
+    const topFill = cv ? covStep(cv[0])[1] : NOFIG, botFill = rate != null ? rateStep(rate)[1] : NOFIG;
+    const blank = !cv || rate == null;
+    // two triangles split by a line from the top right corner to the bottom left
+    ctx.save();
+    ctx.beginPath(); ctx.roundRect(x + 0.5, y + 0.5, tw - 1, th - 1, 4); ctx.clip();
+    ctx.fillStyle = topFill; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + tw, y); ctx.lineTo(x, y + th); ctx.closePath(); ctx.fill();
+    ctx.fillStyle = botFill; ctx.beginPath(); ctx.moveTo(x + tw, y); ctx.lineTo(x + tw, y + th); ctx.lineTo(x, y + th); ctx.closePath(); ctx.fill();
+    ctx.strokeStyle = blank ? NOFIG_LINE : "#fff"; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(x + tw, y); ctx.lineTo(x, y + th); ctx.stroke();
+    ctx.restore();
+    ctx.beginPath(); ctx.roundRect(x + 0.5, y + 0.5, tw - 1, th - 1, 4);
+    if (S.hover === s.k) { ctx.strokeStyle = "#121212"; ctx.lineWidth = 1.5; ctx.stroke(); }
+    else if (blank) { ctx.strokeStyle = NOFIG_LINE; ctx.lineWidth = 1; ctx.stroke(); }
+    // top left the state code with the coverage rate under it, in the coverage half; top right the case total.
     // On small tiles the total's type shrinks, then the code's, until there is a clear gap between them.
     let tot = totOf(s), tf = fs;
     while (tot && room(s.k, kf, tot, tf) < gapMin && tf > 5) tf -= 0.5;
     if (tot && room(s.k, kf, tot, tf) < 2) tot = "";   // too narrow for its total: left out rather than touching the code
     ctx.textBaseline = "top"; ctx.font = kfont(kf);
-    ctx.fillStyle = cv && cv[0] < 90 ? "#121212" : "#55534e"; ctx.textAlign = "left"; ctx.fillText(s.k, x + pad, y + pad + (fs - kf) * 0.8);
+    ctx.fillStyle = "#121212"; ctx.textAlign = "left"; ctx.fillText(s.k, x + pad, y + pad + (fs - kf) * 0.8);
     ctx.font = tfont(tf); ctx.textAlign = "right";
-    ctx.fillStyle = !any ? (cv ? (cv[0] < 90 ? "#2b2a27" : "#55534e") : "#a9a6a0") : "#121212"; ctx.fillText(tot, x + tw - pad, y + pad + (fs - tf) * 0.8);
-    let top = y + pad + fs + 3, cvLine = false;
+    ctx.fillStyle = c ? "#121212" : "#55534e"; ctx.fillText(tot, x + tw - pad, y + pad + (fs - tf) * 0.8);
+    let top = y + pad + fs + 3;
     if (cv) {
       const cf = Math.max(7.5, fs - 1);
-      ctx.font = `700 ${cf}px Helvetica Neue,Helvetica,Arial,sans-serif`; ctx.fillStyle = covStep(cv[0])[4];
+      ctx.font = `700 ${cf}px Helvetica Neue,Helvetica,Arial,sans-serif`; ctx.fillStyle = "#121212"; ctx.textAlign = "left";
       // small tiles drop the % sign but keep one decimal, so the number never disagrees with the color
-      const rt = tw < 56 ? (cv[4] ? "\u2265" : "") + cv[0].toFixed(1) : pct(cv);
-      ctx.fillText(rt, x + tw - pad, top - 1);
-      // the dots share the rate's line only when both fit; otherwise they move to the bottom right corner
-      const mw = marks.length * (Math.max(1.5, Math.min(2.6, tw * 0.035)) * 2 + 2);
-      if (!marks.length || mw + ctx.measureText(rt).width + 2 > tw - pad * 2) { top += cf + 1; cvLine = true; }
+      ctx.fillText(tw < 56 ? (cv[4] ? "\u2265" : "") + cv[0].toFixed(1) : pct(cv), x + pad, top - 1);
+      top += cf + 1;
     }
-    if (!any) continue;
-    let figW = tw - pad * 2;
-    if (marks.length) {
-      const r = Math.max(1.5, Math.min(2.6, tw * 0.035)), step = r * 2 + 2, corner = cvLine;
-      const mx = corner ? x + tw - pad - marks.length * step + 2 : x + pad, my = corner ? y + th - pad - r * 2 : top;
-      if (corner) figW -= marks.length * step + 1;
-      marks.forEach((m, i) => {
-        ctx.beginPath(); ctx.arc(mx + r + i * step, my + r, r - (m.ring ? 0.5 : 0), 0, Math.PI * 2);
-        ctx.globalAlpha = m.alpha || 1;
-        if (cv) { ctx.save(); ctx.globalAlpha = 1; ctx.fillStyle = "#fff"; ctx.beginPath(); ctx.arc(mx + r + i * step, my + r, r + 0.8, 0, Math.PI * 2); ctx.fill(); ctx.restore(); ctx.beginPath(); ctx.arc(mx + r + i * step, my + r, r - (m.ring ? 0.5 : 0), 0, Math.PI * 2); }
-        if (m.ring) { ctx.strokeStyle = m.color; ctx.lineWidth = 1; ctx.stroke(); } else { ctx.fillStyle = m.color; ctx.fill(); }
-        ctx.globalAlpha = 1;
-      });
-      if (!corner) top += Math.max(r * 2 + 2, cv ? Math.max(7.5, fs - 1) + 1 : 0);
-    }
-    drawFigures(ctx, figures(items), x + pad, top, figW, y + th - pad - top, Math.max(3.2, tw * 0.1), "bottom", !!cv);
+    if (rate == null) continue;
+    drawFigures(ctx, figures([{ rate, color: FIG, alpha: thin(c) ? 0.5 : 1 }]), x + pad, top, tw - pad * 2, y + th - pad - top, Math.max(3.2, tw * 0.1), "bottom", true);
   }
 }
 
@@ -760,8 +756,8 @@ function tipHtml(st) {
   const rows = [], notes = [];
   for (const d of shown()) {
     const c = cell(d.k, st, S.year);
-    if (!c) { rows.push(`<tr><td>${personSvg(d.color, 6)} ${esc(d.name)}</td><td class="n" colspan="2" style="color:#8a8780">no data</td></tr>`); continue; }
-    rows.push(`<tr><td>${personSvg(d.color, 6)} ${esc(d.name)}</td><td class="n"><b>${fmt(c.cases)}</b></td><td class="n">${c.rate == null ? (c.part ? "New York City only" : "") : fmt1(c.rate) + " per 100k"}</td></tr>`);
+    if (!c) { rows.push(`<tr><td>${esc(d.name)}</td><td class="n" colspan="2" style="color:#8a8780">no data</td></tr>`); continue; }
+    rows.push(`<tr><td>${esc(d.name)}</td><td class="n"><b>${fmt(c.cases)}</b></td><td class="n">${c.rate == null ? (c.part ? "New York City only" : "") : fmt1(c.rate) + " per 100k"}</td></tr>`);
     notes.push(`<div><b>${esc(d.name)}:</b> ${esc(sourceNote(c, d.k))}</div>`);
   }
   const v = vaxLines(st, S.year).map(t => `<div>${t}</div>`).join("");
@@ -844,9 +840,8 @@ function vaxChart(vk, focus, width) {
   }
   const lic = (D.licensed[vk] || []).filter(l => l[0] === S.year).map(l => esc(l[1]));
   const read = [...(txt.length ? txt : [`Not measured in ${S.year}`]), ...lic].join(" · ");
-  const names = DIS.filter(d => d.vax === vk && S.on.has(d.k)).map(d => `${personSvg(d.color, 6)}`).join(" ");
   const what = (D.vaxnote || {})[vk] || "";
-  return `<div class="vchart"><h3>${names} ${esc(D.vaccines[vk])}</h3><p class="what" title="${esc(what)}">${esc(what)}</p><svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="${esc(D.vaccines[vk])} coverage over time">${g}</svg><p class="read">${read}</p></div>`;
+  return `<div class="vchart"><h3>${esc(D.vaccines[vk])}</h3><p class="what" title="${esc(what)}">${esc(what)}</p><svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="${esc(D.vaccines[vk])} coverage over time">${g}</svg><p class="read">${read}</p></div>`;
 }
 const KEYLINE = (focusName) => `<span><svg width="22" height="6"><line x1="0" x2="22" y1="3" y2="3" stroke="#8a8780" stroke-width="2" stroke-dasharray="1 3" stroke-linecap="round"/></svg>U.S. only, before 1995</span><span><svg width="22" height="8"><rect x="0" y="0" width="22" height="8" fill="#121212" fill-opacity=".13"/><line x1="0" x2="22" y1="4" y2="4" stroke="#121212" stroke-width="2"/></svg>Toddlers (survey, with its 95% range)</span><span><svg width="22" height="6"><line x1="0" x2="22" y1="3" y2="3" stroke="#121212" stroke-width="2" stroke-dasharray="3 3"/></svg>Kindergartners (state count)</span>` + (focusName ? `<span><svg width="22" height="6"><line x1="0" x2="22" y1="3" y2="3" stroke="#b9b6af" stroke-width="2"/></svg>United States</span>` : "");
 function vaxFirstYear() {
@@ -861,8 +856,8 @@ function renderRail() {
   // draw each chart at the width of its grid column: one column on the wide layout and on phones, two in between
   const rc = $("railcharts"), cols = $("viz").classList.contains("fit") ? 1 : getComputedStyle(rc).gridTemplateColumns.split(" ").filter(Boolean).length || 1;
   const w = (rc.clientWidth - 16 * (cols - 1)) / cols;
-  $("railcharts").innerHTML = (S.cov && inCovSpan(S.year) ? covChart($("railcharts").clientWidth) : "") + (vaxKeys().map(vk => vaxChart(vk, focus, w)).join("") || `<p class="note">Check a disease to see its vaccine.</p>`);
-  $("railnote").hidden = S.cov && inCovSpan(S.year);
+  $("railcharts").innerHTML = (inCovSpan(S.year) ? covChart($("railcharts").clientWidth) : "") + (vaxKeys().map(vk => vaxChart(vk, focus, w)).join(""));
+  $("railnote").hidden = inCovSpan(S.year);
   $("railnote").textContent = `State figures start in ${vaxFirstYear()}. Before that only national surveys exist, and they relied on parents' recall. A gap in a line means no measurement that year, or that the state moved between a sample of schools and a count of all kindergartners, so the two sides should not be compared. Triangles mark when a vaccine was licensed. Hover a state for its lines and the survey details.`;
 }
 
@@ -870,8 +865,8 @@ function renderRail() {
 function usStats(y) {
   return shown().map(d => {
     const u = usCell(d.k, y);
-    if (!u) return `<span>${personSvg(d.color, 6)} ${esc(d.name)} <b style="font-weight:400;color:#8a8780">${gapNote(d.k, y)}</b></span>`;
-    return `<span>${personSvg(d.color, 6)} ${esc(d.name)} <b>${fmt(u.cases)}</b> ${fmt1(u.rate)} per 100k${u.n < 51 ? ` · ${u.n} of 51 states` : ""}${u.prov ? " · provisional" : u.incomplete ? " · incomplete" : ""}</span>`;
+    if (!u) return `<span>${esc(d.name)} <b style="font-weight:400;color:#8a8780">${gapNote(d.k, y)}</b></span>`;
+    return `<span>${esc(d.name)} <b>${fmt(u.cases)}</b> ${fmt1(u.rate)} per 100k${u.n < 51 ? ` · ${u.n} of 51 states` : ""}${u.prov ? " · provisional" : u.incomplete ? " · incomplete" : ""}</span>`;
   }).join("");
 }
 /* on the wide layout the U.S. row is as tall as its longest year at this width, so every disease line shows
@@ -895,7 +890,7 @@ function renderUS() {
     const u = usCell(d.k, S.year);
     if (!u) continue;
     const soft = u.incomplete || u.prov;   // faded like an incomplete state year
-    items.push({ rate: u.rate, color: d.color, alpha: soft ? 0.5 : 1 });
+    items.push({ rate: u.rate, color: FIG, alpha: soft ? 0.5 : 1 });
   }
   drawFigures(ctx, figures(items), 0, 1, W, 22, 10.5, "top");
   $("usstats").innerHTML = usStats(S.year);
@@ -922,9 +917,9 @@ function renderState() {
   const items = [], stats = [], notes = [];
   for (const d of shown()) {
     const c = cell(d.k, st, S.year);
-    if (!c) { stats.push(`<span>${personSvg(d.color, 6)} ${esc(d.name)} <b style="font-weight:400;color:#8a8780">no data</b></span>`); continue; }
-    if (c.rate != null) items.push({ rate: c.rate, color: d.color, alpha: thin(c) ? 0.5 : 1 });
-    stats.push(`<span>${personSvg(d.color, 6)} ${esc(d.name)} <b>${fmt(c.cases)}</b>${c.rate == null ? (c.part ? " New York City only" : "") : " " + fmt1(c.rate) + " per 100k"}${thin(c) ? (c.code.toLowerCase() === "p" ? " · provisional" : " · incomplete") : ""}</span>`);
+    if (!c) { stats.push(`<span>${esc(d.name)} <b style="font-weight:400;color:#8a8780">no data</b></span>`); continue; }
+    if (c.rate != null) items.push({ rate: c.rate, color: FIG, alpha: thin(c) ? 0.5 : 1 });
+    stats.push(`<span>${esc(d.name)} <b>${fmt(c.cases)}</b>${c.rate == null ? (c.part ? " New York City only" : "") : " " + fmt1(c.rate) + " per 100k"}${thin(c) ? (c.code.toLowerCase() === "p" ? " · provisional" : " · incomplete") : ""}</span>`);
     notes.push(`${d.name}: ${sourceNote(c, d.k)}`);
   }
   drawFigures(ctx, figures(items), 0, 2, W, 44, 18, "top");
@@ -940,15 +935,16 @@ function renderState() {
   const sc = $("scharts"), scols = getComputedStyle(sc).gridTemplateColumns.split(" ").filter(Boolean).length || 1;
   sc.innerHTML = vaxKeys().map(vk => vaxChart(vk, st, (sc.clientWidth - 16 * (scols - 1)) / scols)).join("");
 }
-/* kindergarten MMR coverage in one state, every school year with a figure, against 95% and the U.S. figure,
-   with the state's measles cases under each year */
+/* kindergarten coverage for the chosen disease's vaccine in one state, every school year with a figure, against 95%
+   and the U.S. figure, with the state's cases of that disease under each year */
 function stateCovChart(st, width) {
-  if (!KINDER_YEARS.length) return "";
+  if (!KINDER_YEARS.length || !hasKinder()) return "";
   const ys = []; for (let y = KINDER_YEARS[0]; y <= KINDER_YEARS[KINDER_YEARS.length - 1]; y++) ys.push(y);
-  const pts = ys.map(y => ({ y, p: covPoint(st, y), us: vaxPoint("kinder", "mmr", "US", y), c: cell("measles", st, y) }));
+  const vk = curVax(), dn = esc(lname(curDis())), vn = KVAX_NAME[vk];
+  const pts = ys.map(y => ({ y, p: covPoint(st, y), us: vaxPoint("kinder", vk, "US", y), c: cell(S.dis, st, y) }));
   const have = pts.filter(q => q.p);
   const name = esc(ST[st].n), span = `${schoolYear(ys[0])} to ${schoolYear(ys[ys.length - 1])}`;
-  if (!have.length) return `<h3>Kindergartners with the measles vaccine (MMR), ${span}</h3><p class="read">${name} has no state kindergarten figure in these years.</p>`;
+  if (!have.length) return `<h3>Kindergartners with the ${vn}, ${span}</h3><p class="read">${name} has no state kindergarten figure in these years.</p>`;
   const W = Math.max(260, width), H = 132, ml = 34, mr = 10, mt = 8, mb = 34;
   const lo = Math.min(85, Math.floor(Math.min(...have.map(q => q.p[0])) / 5) * 5);
   const X = y => ml + (y - ys[0] + 0.5) / (ys[ys.length - 1] - ys[0] + 1) * (W - ml - mr), Y = v => mt + (100 - v) / (100 - lo) * (H - mt - mb);
@@ -965,16 +961,16 @@ function stateCovChart(st, width) {
     const cur = q.y === S.year;
     if (q.p) g += `<circle cx="${X(q.y)}" cy="${Y(q.p[0])}" r="${cur ? 4.5 : 3.4}" fill="${covStep(q.p[0])[2]}" stroke="${cur ? "#121212" : q.p[0] >= COV_LEVEL ? "#77736a" : "#fff"}" stroke-width="${cur ? 1.5 : 1}"/>`;
     if ((q.y % 5 === 0 && ys[ys.length - 1] - q.y > 2) || q.y === ys[0] || q.y === ys[ys.length - 1]) g += `<text x="${X(q.y)}" y="${H - mb + 12}" text-anchor="middle" font-size="9.5" fill="#8a8780">${q.y}</text>`;
-    g += `<text x="${X(q.y)}" y="${H - 4}" text-anchor="middle" font-size="${bw < 26 ? 8.5 : 9.5}" fill="${q.c && q.c.cases ? DKEY.measles.color : "#a9a6a0"}" font-weight="${q.c && q.c.cases ? 700 : 400}">${q.c ? short(q.c.cases) : "\u2013"}</text>`;
-    g += `<rect${q.y <= D.y1 ? ` data-y="${q.y}"` : ""} x="${X(q.y) - bw / 2}" y="${mt}" width="${bw}" height="${H - mt}" fill="transparent"><title>${schoolYear(q.y)}: ${q.p ? pct(q.p) : "no figure"}${q.us ? "; United States " + q.us[0].toFixed(1) + "%" : ""}. Measles cases in ${q.y}: ${q.c ? fmt(q.c.cases) : q.y > D.y1 ? "year not finished, not on this map" : "no data"}</title></rect>`;
+    g += `<text x="${X(q.y)}" y="${H - 4}" text-anchor="middle" font-size="${bw < 26 ? 8.5 : 9.5}" fill="${q.c && q.c.cases ? "#121212" : "#a9a6a0"}" font-weight="${q.c && q.c.cases ? 700 : 400}">${q.c ? short(q.c.cases) : "\u2013"}</text>`;
+    g += `<rect${q.y <= D.y1 ? ` data-y="${q.y}"` : ""} x="${X(q.y) - bw / 2}" y="${mt}" width="${bw}" height="${H - mt}" fill="transparent"><title>${schoolYear(q.y)}: ${q.p ? pct(q.p) : "no figure"}${q.us ? "; United States " + q.us[0].toFixed(1) + "%" : ""}. ${curDis().name} cases in ${q.y}: ${q.c ? fmt(q.c.cases) : q.y > D.y1 ? "year not finished, not on this map" : "no data"}</title></rect>`;
   }
   g += `<text x="${ml - 5}" y="${H - 4}" text-anchor="end" font-size="9.5" fill="#8a8780">cases</text>`;
   const now = pts.find(q => q.y === S.year), first = have[0], last = have[have.length - 1];
-  const read = now && now.p ? `${schoolYear(S.year)}: <b>${now.p[4] ? "at least " : ""}${now.p[0].toFixed(1)}%</b>${now.us ? `, United States ${now.us[0].toFixed(1)}%` : ""}${now.c ? `; ${fmt(now.c.cases)} measles ${now.c.cases === 1 ? "case" : "cases"} reported in ${S.year}` : ""}.`
+  const read = now && now.p ? `${schoolYear(S.year)}: <b>${now.p[4] ? "at least " : ""}${now.p[0].toFixed(1)}%</b>${now.us ? `, United States ${now.us[0].toFixed(1)}%` : ""}${now.c ? `; ${fmt(now.c.cases)} ${dn} ${now.c.cases === 1 ? "case" : "cases"} reported in ${S.year}` : ""}.`
     : `${now && S.year >= ys[0] ? `${schoolYear(S.year)}: no figure. ` : ""}${schoolYear(first.y)}: ${pct(first.p)}. ${schoolYear(last.y)}: <b>${pct(last.p)}</b>.`;
-  return `<h3>Kindergartners with the measles vaccine (MMR) in ${name}, ${span}</h3>`
-    + `<svg viewBox="0 0 ${W} ${H}" height="${H}" role="img" aria-label="Kindergarten MMR coverage in ${name} by school year, with measles cases each year">${g}</svg>`
-    + `<p class="read">${read} Dots: <span style="color:${COV_STEPS[0][2]}">\u25cf</span> 95% or more <span style="color:${COV_STEPS[1][2]}">\u25cf</span> 90% to under 95% <span style="color:${COV_STEPS[2][2]}">\u25cf</span> under 90%. Gray line: United States. Dashed line: ${COV_LEVEL}%, the national target. The row under the chart is ${name}'s reported measles cases each year. A gap means no figure that school year.${ys[ys.length - 1] > D.y1 ? ` Case counts on this map end with ${D.y1}, so ${schoolYear(ys[ys.length - 1])} has coverage but no case figure.` : ""}${have.some(q => q.p[4]) ? " In some years CDC flags this state\u2019s figure as a lower bound (\u201cat least\u201d); the true share may be higher." : ""}${have.some(q => q.p[5] && q.p[5].includes("d")) ? " In some years CDC notes that this state counted doses at any age or spacing, so the figure may be higher." : ""} Click a year to move there.</p>`;
+  return `<h3>Kindergartners with the ${vn} in ${name}, ${span}</h3>`
+    + `<svg viewBox="0 0 ${W} ${H}" height="${H}" role="img" aria-label="Kindergarten ${KSHORT[vk]} coverage in ${name} by school year, with ${dn} cases each year">${g}</svg>`
+    + `<p class="read">${read} Dots: <span style="color:${COV_STEPS[0][2]}">\u25cf</span> 95% or more <span style="color:${COV_STEPS[1][2]}">\u25cf</span> 90% to under 95% <span style="color:${COV_STEPS[2][2]}">\u25cf</span> under 90%. Gray line: United States. Dashed line: ${vk === "mmr" ? `${COV_LEVEL}%, the national target` : `${COV_LEVEL}%`}. The row under the chart is ${name}'s reported ${dn} cases each year. A gap means no figure that school year.${ys[ys.length - 1] > D.y1 ? ` Case counts on this map end with ${D.y1}, so ${schoolYear(ys[ys.length - 1])} has coverage but no case figure.` : ""}${have.some(q => q.p[4]) ? " In some years CDC flags this state\u2019s figure as a lower bound (\u201cat least\u201d); the true share may be higher." : ""}${have.some(q => q.p[5] && q.p[5].includes("d")) ? " In some years CDC notes that this state counted doses at any age or spacing, so the figure may be higher." : ""} Click a year to move there.</p>`;
 }
 /* county map: kindergarten MMR coverage where the state publishes it by county */
 const inName = st => st === "DC" ? "the District of Columbia" : ST[st].n;   // "for the District of Columbia"
@@ -1073,7 +1069,6 @@ function setYear(y) { S.year = Math.max(D.y0, Math.min(D.y1, y)); msIndex = 0; $
 
 /* ---------- ranked states ---------- */
 const KVAX = ["mmr", "dtap", "polio"].filter(vk => ((D.vax.kinder || {})[vk]));
-const KVAX_NAME = { mmr: "measles vaccine (MMR)", dtap: "whooping cough vaccine (DTaP)", polio: "polio vaccine" };
 function rankOptions() {
   return KVAX.map(vk => ({ k: "v:" + vk, label: `Kindergartners with the ${KVAX_NAME[vk]}`, vax: vk }))
     .concat(DIS.map(d => ({ k: "d:" + d.k, label: `${d.name} cases per 100,000 residents`, dis: d })));
@@ -1090,8 +1085,8 @@ function renderRank() {
     $("rankord").addEventListener("click", () => { S.rankDesc = !S.rankDesc; renderRank(); });
     $("ranklist").addEventListener("click", e => { const b = e.target.closest("button"); if (b) { openState(b.dataset.st); $("stage").scrollIntoView({ block: "start" }); } });
   }
-  // until the reader picks a measure: coverage when the year has it, measles cases otherwise
-  const o = opts.find(x => x.k === S.rankBy) || (COV_YEARS.includes(S.year) ? opts[0] : opts.find(x => x.k === "d:measles"));
+  // until the reader picks a measure: the chosen disease's kindergarten coverage when the year has it, its cases otherwise
+  const o = opts.find(x => x.k === S.rankBy) || (COV_YEARS.includes(S.year) && opts.find(x => x.k === "v:" + curVax())) || opts.find(x => x.k === "d:" + S.dis);
   sel.value = o.k;
   $("rankord").textContent = S.rankDesc ? "Highest first \u2193" : "Lowest first \u2191";
   $("rankord").setAttribute("aria-label", `Sort order: ${S.rankDesc ? "highest first" : "lowest first"}. Press to reverse.`);
@@ -1123,7 +1118,7 @@ function renderTable() {
   const dz = shown(), y = S.year;
   // columns: for each disease shown, cases and rate; then kindergarten coverage for each of their vaccines, when the year has it
   // each vaccine's column sits right after the first disease it covers, so the two can be read side by side
-  const cols = [], KSHORT = { mmr: "MMR", dtap: "DTaP", polio: "polio vaccine" }, placed = new Set();
+  const cols = [], placed = new Set();
   for (const d of dz) {
     cols.push({ k: "c:" + d.k, label: `${esc(d.name)}<br>cases`, get: c => c.dis[d.k] ? c.dis[d.k].cases : null, d, kind: "cases" });
     cols.push({ k: "r:" + d.k, label: "per 100k", get: c => c.dis[d.k] && c.dis[d.k].rate != null ? c.dis[d.k].rate : null, d, kind: "rate" });
@@ -1197,11 +1192,11 @@ function init() {
     setPlaying(false); msIndex = (Math.min(msIndex, n - 1) + step + n) % n; renderCard();
   });
   document.addEventListener("keydown", e => { if (e.key === "Escape" && S.sel) closeState(); });
-  $("foot").innerHTML = `Reported cases, not infections; many cases were never reported, and reporting rules changed over the century. A ring marks a disease that other states counted that year but this state did not, which is not zero; a dot marks a count too small to draw a figure. The diseases were not all counted from the same year (mumps from 1968, hepatitis A from 1966), so a jump in a state's total can come from a disease entering the record. Faded figures mark an incomplete count: a year with fewer than ${THIN_WEEKS} of ${FULL_YEAR} weekly reports, a national figure where states holding more than 10% of residents did not report or most states were short of weeks, or the provisional year 2025. Measles, whooping cough and polio before 1956 come from the yearly tables of the U.S. Public Health Service; in the 1920s some states were not yet reporting every disease, and the tables print a dash, which their key defines as zero. Where a count is a sum of weekly reports (Alaska through 1958 and Hawaii through 1959, before statehood) it usually runs lower than the yearly total. On a very narrow screen a tile too small for its case total leaves it out; tap the state for the count. Polio counts all reported polio before 1956 and paralytic polio only from 1956, so the 1955 to 1956 change is partly a change in what was counted; the paralytic counts are as first printed, and CDC later revised some yearly totals up or down. Hepatitis A before 1974 includes hepatitis of unspecified type. On each state the top number is the cases shown, and from 2010 on the percentage under it is the kindergarten measles vaccination rate. The map shades each state from 2010 on (the checkbox "Color states by measles vaccination" turns this off) by the share of kindergartners with the measles vaccine (MMR) that school year, as states reported to CDC, against 95%, the national Healthy People 2030 target; it measures one age group, not immunity in the whole population. State figures start with the 2009-10 school year and there are none for 2010-11. CDC flags some states' figures as lower bounds (shown with \u2265, or "at least"), because those states counted a child only if up to date on every required vaccine: those states' true share may be higher, so a state marked this way may not be below the level it appears under. Sources: U.S. Public Health Service, National Office of Vital Statistics, yearly tables of notifiable diseases (measles and polio from 1920, whooping cough from 1922, through 1955); CDC final annual tables of notifiable diseases (whooping cough, measles and paralytic polio from 1956, hepatitis A from 1966, mumps from 1968, all five diseases from 1993, through 2023); CDC weekly tables (2024 and 2025, provisional for 2025); Project Tycho, University of Pittsburgh, CC BY 4.0, from the weekly federal notifiable disease reports (Alaska through 1958 and Hawaii through 1959). Vaccination: CDC National Immunization Survey and SchoolVaxView; U.S. Immunization Survey and National Health Interview Survey before 1995. County vaccination: Dong E, Saiyed S, Nearchou A, Okura Y, Gardner LM, \u201cTrends in County-Level MMR Vaccination Coverage in Children in the United States,\u201d JAMA, 2025, data from Johns Hopkins University. County measles cases: JHU Measles Tracking Team Data Repository at Johns Hopkins University, CC BY 4.0. State indicators: Census Bureau and Bureau of Economic Analysis. Party control: Klarner, State Partisan Balance Data (through 2011), and Ballotpedia (2012 on). What we checked and the limits of these numbers are under \u201cAbout this data\u201d below.`;
-  const h = new URLSearchParams(location.hash.slice(1));   // #st=OH&y=1958 opens a state and year
+  $("foot").innerHTML = `Reported cases, not infections; many cases were never reported, and reporting rules changed over the century. The map shows one disease at a time. Each state is split corner to corner. The top-left half is the share of kindergartners with that disease's vaccine in the school year that ends in the year shown, as states reported to CDC: green for 95% or more, amber for 90% to under 95%, red for under 90%. The bottom-right half is reported cases per 100,000 residents that year: red for more than 1, amber for 0.1 to 1, green for under 0.1. These case cutoffs were set for this map, are the same for every disease, and are not official levels. White means no figure, which is not zero. The diseases were not all counted from the same year (mumps from 1968, hepatitis A from 1966). Faded figures mark an incomplete count: a year with fewer than ${THIN_WEEKS} of ${FULL_YEAR} weekly reports, a national figure where states holding more than 10% of residents did not report or most states were short of weeks, or the provisional year 2025. Measles, whooping cough and polio before 1956 come from the yearly tables of the U.S. Public Health Service; in the 1920s some states were not yet reporting every disease, and the tables print a dash, which their key defines as zero. Where a count is a sum of weekly reports (Alaska through 1958 and Hawaii through 1959, before statehood) it usually runs lower than the yearly total. On a very narrow screen a tile too small for its case total leaves it out; tap the state for the count. Polio counts all reported polio before 1956 and paralytic polio only from 1956, so the 1955 to 1956 change is partly a change in what was counted; the paralytic counts are as first printed, and CDC later revised some yearly totals up or down. Hepatitis A before 1974 includes hepatitis of unspecified type. On each state the number at top right is reported cases, and from 2010 on the percentage under the state's letters is the kindergarten vaccination rate. For the measles vaccine (MMR), 95% is the national Healthy People 2030 target; the map uses the same level for the whooping cough and polio vaccines. Kindergarten coverage measures one age group, not immunity in the whole population. State figures start with the 2009-10 school year and there are none for 2010-11. CDC's state kindergarten figures do not include the hepatitis A vaccine, so for hepatitis A the top-left half is blank; toddler figures are in the vaccination chart. CDC flags some states' figures as lower bounds (shown with \u2265, or "at least"), because those states counted a child only if up to date on every required vaccine: those states' true share may be higher, so a state marked this way may not be below the level it appears under. Sources: U.S. Public Health Service, National Office of Vital Statistics, yearly tables of notifiable diseases (measles and polio from 1920, whooping cough from 1922, through 1955); CDC final annual tables of notifiable diseases (whooping cough, measles and paralytic polio from 1956, hepatitis A from 1966, mumps from 1968, all five diseases from 1993, through 2023); CDC weekly tables (2024 and 2025, provisional for 2025); Project Tycho, University of Pittsburgh, CC BY 4.0, from the weekly federal notifiable disease reports (Alaska through 1958 and Hawaii through 1959). Vaccination: CDC National Immunization Survey and SchoolVaxView; U.S. Immunization Survey and National Health Interview Survey before 1995. County vaccination: Dong E, Saiyed S, Nearchou A, Okura Y, Gardner LM, \u201cTrends in County-Level MMR Vaccination Coverage in Children in the United States,\u201d JAMA, 2025, data from Johns Hopkins University. County measles cases: JHU Measles Tracking Team Data Repository at Johns Hopkins University, CC BY 4.0. State indicators: Census Bureau and Bureau of Economic Analysis. Party control: Klarner, State Partisan Balance Data (through 2011), and Ballotpedia (2012 on). What we checked and the limits of these numbers are under \u201cAbout this data\u201d below.`;
+  const h = new URLSearchParams(location.hash.slice(1));   // #st=OH&y=1958&d=mumps opens a state, year and disease
+  if (DKEY[h.get("d")]) { S.dis = h.get("d"); S.on = new Set([S.dis]); const r = document.querySelector(`#controls input[value="${S.dis}"]`); if (r) r.checked = true; }
   if (+h.get("y") >= D.y0 && +h.get("y") <= D.y1) { S.year = +h.get("y"); yr.value = S.year; }
   setPlaying(false); layoutMap(); buildTicks(); render();
-  if (h.get("cov") === "0") setCov(false);   // on unless the link turns it off
   if (+h.get("y") >= D.y0 && +h.get("y") <= D.y1 && S.year !== +h.get("y")) setYear(+h.get("y"));
   if (ST[h.get("st")]) openState(h.get("st"));
   let lastW = 0, lastH = 0;   // only re-lay-out when the box really changes, never on our own redraws

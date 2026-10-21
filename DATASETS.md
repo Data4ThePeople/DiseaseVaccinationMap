@@ -568,10 +568,18 @@ and percent surveyed on hover.
 ---
 
 **On the page (added October 13, 2026): measles vaccination against the 95% level, and ranked states.**
-The map shades each state tile, by default and from 2010 on (the checkbox
-"Color states by measles vaccination" turns it off), by its
-kindergarten MMR estimate for the school year ending in the selected year, in
-three steps: 95% or more, 90% to under 95%, under 90%. The 95% level is the
+The map shows one disease at a time (chosen with buttons; measles by
+default). Each state tile is split corner to corner (changed October 21, 2026).
+The top-left half is the state's kindergarten estimate for that disease's
+vaccine (MMR for measles and mumps, DTaP for whooping cough, polio vaccine for
+polio) for the school year ending in the selected year, in three steps: 95% or
+more green, 90% to under 95% amber, under 90% red. CDC's kindergarten file has
+no hepatitis A vaccine, so for hepatitis A that half is blank. The
+bottom-right half is reported cases per 100,000 residents that year: more than
+1 red, 0.1 to 1 amber (both ends included), under 0.1 green, computed from the
+unrounded rate. Mike Kinch set these case cutoffs for measles; the same cutoffs
+are used for the other four diseases until he reviews them. They are not
+official levels. White means no figure. The figures on each tile are gray. The 95% level is the
 national Healthy People 2030 target for kindergarten MMR coverage. A bar chart
 counts the states below 95% and below 90% in each school year from 2009-10.
 The number of states with a figure changes by year (43 to 51), so the chart
