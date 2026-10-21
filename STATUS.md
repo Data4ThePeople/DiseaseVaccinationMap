@@ -282,3 +282,8 @@ None.
   cutoffs for measles; the other four diseases use the same cutoffs until he
   reviews them. Open: Mike to confirm per-disease cutoffs; red-green color
   blindness flagged to Eric. Tie-out passes.
+- 2026-10-21: Mike's second round. The map opens at 2010 (older years kept;
+  Play at the end restarts at 2010). A key tile sits in the empty cells above
+  Wisconsin on the wide layout, labeling the two halves with their color
+  scales (short labels where space is tight); the text bar above the
+  timeline then shows only the counts. Phones keep the full text legend.

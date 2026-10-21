@@ -72,6 +72,15 @@ h1{font-family:var(--serif);font-weight:700;font-size:22px;line-height:1.15;marg
 .mapcol{flex:none;display:flex;flex-direction:column;min-width:0}
 .mapwrap{position:relative;flex:none}
 .mapwrap canvas{display:block}
+/* the key: one large example tile in the empty space at the top of the map */
+.mkey{position:absolute;display:flex;gap:8px;pointer-events:none;color:var(--ink);line-height:1.2}
+.mkey[hidden]{display:none}
+.mkey svg{flex:none;display:block}
+.mkey .side{display:flex;flex-direction:column;justify-content:space-between;min-width:0}
+.mkey .side b{display:block;font-weight:700}
+.mkey .sw{display:flex;flex-wrap:wrap;gap:0 7px;color:var(--ink2)}
+.mkey .sw span{display:inline-flex;align-items:center;gap:3px;white-space:nowrap}
+.mkey .sw i{width:9px;height:9px;border-radius:2px;display:inline-block}
 #tiles button{position:absolute;background:none;border:0;padding:0;margin:0;cursor:pointer;border-radius:4px}
 #tiles button:focus-visible{outline:2px solid var(--focus);outline-offset:-1px}
 .rail{flex:1 1 0;min-width:0;overflow:hidden}
@@ -229,6 +238,7 @@ footer p{margin:0;max-width:980px}
       <div class="mapcol" id="mapcol">
         <div class="mapwrap" id="mapwrap">
           <canvas id="map" aria-hidden="true"></canvas>
+          <div class="mkey" id="mkey" hidden></div>
           <div id="tiles"></div>
         </div>
         <div class="usrow" id="usrow">
@@ -357,7 +367,7 @@ const shortTight = n => n >= 999500 ? short(n) : n >= 1e3 ? rnd(n / 1e3, 0) + "k
 const $ = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
-const S = { year: 1941, dis: "measles", on: new Set(["measles"]), hover: null, sel: null, playing: false, rankBy: null, rankDesc: true, tblSort: null, tblDesc: true };
+const S = { year: 2010, dis: "measles", on: new Set(["measles"]), hover: null, sel: null, playing: false, rankBy: null, rankDesc: true, tblSort: null, tblDesc: true };
 
 /* cases, rate and source for one disease, state and year. null = no data, which is not zero */
 function cell(dk, st, y) {
@@ -563,23 +573,59 @@ function rateCount(y) {
 }
 function covBarHtml(y) {
   const d = curDis(), c = covCount(y), r = rateCount(y), nofig = `<span>${swatch(NOFIG, true)}no figure</span>`;
+  const full = !keyShown();   // without the key tile (narrow screens) the bar carries the colors itself
   let top;
   if (!hasKinder()) top = `<b>${tri(true)} Top left: vaccination</b><span class="cnt">CDC's state kindergarten figures do not include the ${esc(lname(d))} vaccine, so this half is blank. Toddler figures are in the vaccination chart.</span>`;
   else if (!inCovSpan(y)) top = `<b>${tri(true)} Top left: vaccination</b><span class="cnt"><b>No state vaccination figures before the ${schoolYear(COV_YEARS[0])} school year, so this half is blank.</b></span>`
     + `<button type="button" class="covgo" data-y="${COV_LAST}">Go to ${schoolYear(COV_LAST)}</button>`;
   else top = `<b title="On each state, the percentage under the state's letters is this rate">${tri(true)} Top left: kindergartners with the ${KVAX_NAME[curVax()]}${c.n ? ", " + schoolYear(y) + " school year" : ""}</b>`
-    + COV_STEPS.map(b => `<span>${swatch(b[1])}${b[3]}</span>`).join("") + nofig
+    + (full ? COV_STEPS.map(b => `<span>${swatch(b[1])}${b[3]}</span>`).join("") + nofig : "")
     + (c.n ? `<span class="cnt">${c.below} of ${c.n} states below ${levelName()}${lbNote(c.belowLb)}</span>`
            : `<span class="cnt">No state reported a kindergarten figure for the ${schoolYear(y)} school year</span>`);
   const bot = `<b title="On each state, the number at top right is reported cases">${tri(false)} Bottom right: ${esc(lname(d))} cases per 100,000 residents, ${y}</b>`
-    + RATE_STEPS.map(b => `<span>${swatch(b[1])}${b[3]}</span>`).join("") + `<span>${swatch(NOFIG, true)}no data</span>`
+    + (full ? RATE_STEPS.map(b => `<span>${swatch(b[1])}${b[3]}</span>`).join("") + `<span>${swatch(NOFIG, true)}no data</span>` : "")
     + (r.n ? `<span class="cnt">${r.red} of ${r.n} states above 1</span>` : `<span class="cnt">${esc(d.name)}: ${gapNote(S.dis, y)}</span>`);
   return `<div class="lg">${top}</div><div class="lg">${bot}</div>`;
+}
+/* the key tile shows on the wide layout, where the empty cells above the map are large enough to read it */
+const keyShown = () => $("viz").classList.contains("fit");
+/* the key's text in a long and a short form; the short one is used where the long one would not fit */
+function keyHtml(w, h, short, fs) {
+  const tw = Math.round(Math.min(h * (short ? 0.95 : 1.15), w * 0.45)), th = Math.round(h);
+  const lf = Math.max(9, Math.min(13, th / 7.5));
+  const svg = `<svg width="${tw}" height="${th}" viewBox="0 0 ${tw} ${th}" aria-hidden="true">`
+    + `<path d="M0,0H${tw}L0,${th}Z" fill="#ecebe6"/><path d="M${tw},0V${th}H0Z" fill="#dddbd4"/>`
+    + `<line x1="${tw}" y1="0" x2="0" y2="${th}" stroke="#fff" stroke-width="1.5"/>`
+    + `<rect x=".75" y=".75" width="${tw - 1.5}" height="${th - 1.5}" rx="4" fill="none" stroke="#121212" stroke-width="1.5"/>`
+    + `<text x="5" y="${4 + lf}" font-size="${lf}" font-weight="700" fill="#121212">Vaccinated</text>`
+    + `<text x="${tw - 5}" y="${th - 5}" font-size="${lf}" font-weight="700" fill="#121212" text-anchor="end">Cases</text></svg>`;
+  const sw = (steps, none) => `<span class="sw">${steps.map(b => `<span><i style="background:${b[1]}"></i>${b[3]}</span>`).join("")}<span><i style="background:${NOFIG};outline:1px solid ${NOFIG_LINE}"></i>${none}</span></span>`;
+  const cov = short ? [["95%+", 0], ["90\u201395%", 1], ["under 90%", 2]] : [["95% or more", 0], ["90 to 95%", 1], ["under 90%", 2]];
+  const rate = short ? [["over 1", 0], ["0.1\u20131", 1], ["under 0.1", 2]] : RATE_STEPS.map((b, i) => [b[3], i]);
+  const vax = !hasKinder() ? (short ? "No kindergarten figures" : "Top left: no kindergarten figures for this vaccine")
+    : short ? `Kindergartners with ${esc(KSHORT[curVax()])}` : `Top left: share of kindergartners with the ${esc(KSHORT[curVax()])}`;
+  return svg + `<div class="side" style="font-size:${fs}px"><div><b>${vax}</b>${hasKinder() ? sw(cov.map(([t, i]) => [0, COV_STEPS[i][1], 0, t]), short ? "none" : "no figure") : ""}</div>`
+    + `<div><b>${short ? "Cases per 100,000" : `Bottom right: ${esc(lname(curDis()))} cases per 100,000 residents`}</b>${sw(rate.map(([t, i]) => [0, RATE_STEPS[i][1], 0, t]), short ? "none" : "no data")}</div></div>`;
+}
+function placeKey() {
+  const k = $("mkey");
+  k.hidden = !keyShown() || !GEO;
+  if (k.hidden) return;
+  const { tw, th, gap } = GEO;   // columns 2 to 5 of the top two rows, which no state uses
+  const w = 4 * tw + 3 * gap, h = 2 * th + gap;
+  k.style.cssText = `left:${tw + gap}px;top:0;width:${w}px;height:${h}px`;
+  // the long text at the largest type that fits, then the short text; the smallest size is used if nothing fits
+  const fs0 = Math.max(9.5, Math.min(12, h / 7));
+  for (const short of [false, true]) for (let fs = fs0; fs >= 8.5; fs -= 0.5) {
+    k.innerHTML = keyHtml(w, h, short, fs);
+    const side = k.lastElementChild;
+    if (side.scrollHeight <= side.clientHeight + 1 && side.scrollWidth <= side.clientWidth + 1 && !(short === false && fs < 9.5)) return;
+  }
 }
 /* on the wide layout the bar is as tall as its tallest year at this width, so the map keeps one size as the year moves */
 let covFit = { key: "", h: 0 };
 function covBarMin() {
-  const el = $("covbar"), key = el.clientWidth + "|" + S.dis;
+  const el = $("covbar"), key = el.clientWidth + "|" + S.dis + "|" + keyShown();
   if (key === covFit.key) return covFit.h;
   const keep = el.innerHTML, mh = el.style.minHeight;
   el.style.minHeight = "";
@@ -690,6 +736,7 @@ function layoutMap() {
 }
 function drawMap() {
   const { W, H, tw, th, gap } = GEO, ctx = setupCanvas($("map"), W, H), dk = S.dis;
+  placeKey();
   const fs = Math.max(8, Math.min(11, tw * 0.17)), pad = Math.max(3, tw * 0.07);
   // the case total in a tile's top right; on small tiles its type shrinks to keep a gap from the state code,
   // and if a total still doesn't fit, the state code shrinks on every tile alike so codes stay one size
@@ -1056,7 +1103,7 @@ const ICON_PAUSE = `<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden=
 function setPlaying(on) {
   S.playing = on; clearTimeout(timer);
   $("play").innerHTML = on ? ICON_PAUSE : ICON_PLAY; $("play").setAttribute("aria-label", on ? "Pause" : "Play");
-  if (on) { if (S.year >= D.y1) setYear(D.y0); schedule(); }
+  if (on) { if (S.year >= D.y1) setYear(COV_YEARS[0]); schedule(); }   // a replay starts where the vaccination figures do
 }
 function schedule() {
   timer = setTimeout(() => {
