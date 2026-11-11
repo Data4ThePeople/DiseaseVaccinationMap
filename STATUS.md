@@ -5,16 +5,16 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 
 ## Current
 
-Post: none yet
-Step: 1
-Since: 2026-10-01
+Post: disease-vaccination-viz (Visualization, author Liam Aranda-Michel)
+Step: 2b
+Since: 2026-11-11
 
 ## Steps
 
 | Step | What | Confirmed | Notes |
 |---|---|---|---|
-| 1  | Exploration and analysis | | |
-| 2a | Draft with brackets resolved | | |
+| 1  | Exploration and analysis | 2026-11-11 | data current through November 7, 2026; two independent tie-outs |
+| 2a | Draft with brackets resolved | 2026-11-11 | Purpose by Liam, toned down with Eric |
 | 2b | Eric's edit, Claude's look-over | | |
 | 2c | Slice markup | | |
 | 2d | Hero 1680x1080 + alt text | | |
@@ -300,3 +300,8 @@ None.
   additions): no numeric differences; county circle key in 2026, "How we
   checked", U.S. row date, 2026 state facts label, unknown-county filing fixed.
   Liam's Purpose toned down (12 changes accepted by Eric).
+- 2026-11-11: Step 1 closed by Eric after confirming every source is current:
+  CDC weekly through week 44 (November 7), kindergarten 2025-26 (CDC's latest,
+  August 28), toddler NIS (CDC's latest, April 2), Johns Hopkins county
+  measles through November 6, Johns Hopkins county MMR (October 2 change was
+  README only). Step 2a confirmed the same day. Now in 2b.
