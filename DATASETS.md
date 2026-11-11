@@ -767,7 +767,10 @@ filed under their own state's unknown key, from the state named in the row,
 and never drawn: the tracker gives some of them a real county's code
 (Oklahoma's unknown cases, Louisiana's Region 1 under Orleans Parish) or
 another state's code (Maryland's unknown cases carry 23, Maine's). Utah's
-health-district rows carry no code and are not drawn either.
+health-district rows carry no code and are not drawn either. For years before 2025,
+with measles chosen, the state page says that county counts start in 2025 and
+earlier years show state totals only, so a map with no circles is not read as
+a year with no cases.
 
 **Known quirks.** Dates are report dates, not illness dates. Kansas withholds
 counts under five by county, Oklahoma gives no county, Tennessee reports by

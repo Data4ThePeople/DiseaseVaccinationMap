@@ -1094,6 +1094,8 @@ const inName = st => st === "DC" ? "the District of Columbia" : ST[st].n;   // "
 /* the same three steps and colors as the national map */
 const MMR_BINS = COV_STEPS.map(b => [b[0], b[1], b[3]]);
 const CASE_DOT = "#6e0f1c";
+/* the first year of the Johns Hopkins county measles tracker */
+const CMEASLES_FIRST = (() => { let m = Infinity; for (const f in D.cmeasles) for (const y in D.cmeasles[f]) if (+y < m) m = +y; return m; })();
 /* the last school year in the Johns Hopkins county file */
 const CMMR_LAST = (() => { let m = 0; for (const f in D.cmmr) for (const y in D.cmmr[f]) if (+y > m) m = +y; return m; })();   // measles circles in a dark red, so they stand apart from the red step
 const mmrBin = v => MMR_BINS.find(b => v >= b[0]);
@@ -1130,7 +1132,9 @@ function stateSvg(st) {
   }
   // the circles get their own line whenever they are drawn, including years with no county vaccination figures
   const ckey = dots ? `<div class="mapkey"><span><svg width="9" height="9" aria-hidden="true"><circle cx="4.5" cy="4.5" r="4" fill="${CASE_DOT}"/></svg> Circles: confirmed measles cases in ${y}${y === +D.cmeaslesThrough.slice(0, 4) ? ` through ${mdy(D.cmeaslesThrough)}` : ""}, sized by count</span></div>` : "";
-  return svg + cap + (any ? "" : ckey);
+  // before the tracker starts, say so, so a map with no circles is not read as a year with no cases
+  const early = measlesOn && y < CMEASLES_FIRST ? `<p class="note">County measles counts start in ${CMEASLES_FIRST}, from the Johns Hopkins measles tracker. Earlier years show state totals only.</p>` : "";
+  return svg + cap + (any ? "" : ckey) + early;
 }
 function countyVaxYear(st) {
   if (S.year <= CMMR_LAST) return S.year;
