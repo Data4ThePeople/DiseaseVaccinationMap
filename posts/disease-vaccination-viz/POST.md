@@ -21,7 +21,7 @@ dividers: false
 
 # Infectious Disease and Vaccination, State by State: An Interactive Map, 1920 to 2026
 
-<iframe src="https://data4thepeople.github.io/DiseaseVaccinationMap/?v=20261111b#embed=1" width="100%" height="1440" loading="lazy" style="border:0" title="Infectious disease and vaccination, state by state: interactive map, 1920 to 2026"></iframe>
+<iframe src="https://data4thepeople.github.io/DiseaseVaccinationMap/?v=20261111c#embed=1" width="100%" height="1440" loading="lazy" style="border:0" title="Infectious disease and vaccination, state by state: interactive map, 1920 to 2026"></iframe>
 
 ::: spacer 40px
 
