@@ -8,7 +8,7 @@ section: Visualization
 author: Liam Aranda-Michel
 author_url: https://www.data4thepeople.com/authors/liam-aranda-michel
 hero: images/disease-vaccination-viz-hero-1680x1080.png
-hero_alt:
+hero_alt: Tile map of the United States on a dark background, one square per state, each split corner to corner. Top-left half: share of kindergartners with the measles vaccine, 2025-26 (green 95% or more, amber 90 to 94.9%, red under 90%). Bottom-right half: 2026 measles cases per 100,000 residents through November 7 (red over 1, amber 0.1 to 1, green under 0.1). Text: Measles and vaccination, state by state. 5,073 cases. 39 of 49 states below 95%. Data 4 The People.
 meta_title:
 description:
 keywords:
