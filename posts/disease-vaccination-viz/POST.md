@@ -92,7 +92,9 @@ These are reported cases, not all cases. Many people who got sick were never cou
 
 In 2026, through November 7, states reported 5,073 measles cases, or 1.48 per 100,000 residents. That is 150% more than in all of 2025 (2,026 cases) and the most in any year since 1991. The 2026 count is provisional. Fourteen states were above 1 case per 100,000 residents, led by Utah (15.03), South Carolina (12.32) and Pennsylvania (11.30).
 
-In the 2025-26 school year, in 39 of the 49 states with a figure, fewer than 95% of kindergartners had the measles vaccine (MMR), and in 18, fewer than 90%. Idaho was lowest, at 75.2%. The national figure was 92.4%, down from 95.2% in the 2019-20 school year.
+The Johns Hopkins measles tracking team, which counts from different reports than CDC, shows the most 2026 cases, through November 6, in Spartanburg County, South Carolina (610 cases), Lancaster County, Pennsylvania (508), and Mifflin County, Pennsylvania (205). Spartanburg also had 330 cases in 2025.
+
+In the 2025-26 school year, in 38 states and DC, fewer than 95% of kindergartners had the measles vaccine (MMR), and in 18 states, fewer than 90%. Kansas and Montana had no figure. Idaho was lowest, at 75.2%. The national figure was 92.4%, down from 95.2% in the 2019-20 school year.
 
 Measles reached its highest point on the map in 1941, when the states counted 894,134 cases.
 
@@ -171,17 +173,29 @@ The code, the data and the full method are at [github.com/Data4ThePeople/Disease
 
 States reported 5,073 measles cases to CDC in 2026 through November 7, or 1.48 per 100,000 residents. That is the most in any year since 1991. The count is provisional, and final counts are usually higher.
 
+### Do states with lower vaccination rates have more measles?
+
+This map puts vaccination and cases side by side. It does not test whether one causes the other, and many other things affect where measles spreads. In 2026, through November 7, 13 of the 38 states and DC where fewer than 95% of kindergartners had the measles vaccine reported more than 1 measles case per 100,000 residents. Of the 10 states at 95% or more, one did: New York. CDC says one dose of the MMR vaccine is 93% effective against measles and two doses are 97% effective.
+
 ### Which states have the highest measles rates in 2026?
 
 Through November 7, Utah (15.03 cases per 100,000 residents), South Carolina (12.32) and Pennsylvania (11.30).
 
+### Can I see measles cases by county?
+
+Yes, for 2025 and 2026. Click a state to see a circle on each county with confirmed measles cases, from the Johns Hopkins measles tracking team, along with county kindergarten vaccination rates where the state publishes them. County counts are not available for earlier years.
+
+### Which counties have the most measles cases in 2026?
+
+Through November 6, the Johns Hopkins measles tracking team counts the most cases in Spartanburg County, South Carolina (610), Lancaster County, Pennsylvania (508), Mifflin County, Pennsylvania (205), Grant County, Wisconsin (137) and Hudspeth County, Texas (136). Its counts come from different reports than CDC's, so its totals differ.
+
 ### What share of kindergartners have the measles vaccine?
 
-In the 2025-26 school year, 92.4% of kindergartners in the U.S. had the measles vaccine (MMR). In 39 of the 49 states with a figure, the share was below 95%.
+In the 2025-26 school year, 92.4% of kindergartners in the U.S. had the measles vaccine (MMR). In 38 states and DC, the share was below 95%.
 
-### Which state has the lowest kindergarten measles vaccination rate?
+### Which states have the lowest kindergarten measles vaccination rates?
 
-In the 2025-26 school year, Idaho, at 75.2%.
+In the 2025-26 school year, Idaho (75.2%), Wisconsin (85.1%) and Minnesota (85.7%).
 
 ### Why is 95% the line between green and amber?
 

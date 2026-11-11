@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: disease-vaccination-viz (Visualization, author Liam Aranda-Michel)
-Step: 2e
+Step: 2f
 Since: 2026-11-11
 
 ## Steps
@@ -18,7 +18,7 @@ Since: 2026-11-11
 | 2b | Eric's edit, Claude's look-over | 2026-11-11 | 6 look-over items accepted |
 | 2c | Slice markup | 2026-11-11 | 91 blocks; embed 1440px, ?v=20261111c |
 | 2d | Hero 1680x1080 + alt text | 2026-11-11 | simplified 2026 measles map, scripts/13_hero.py |
-| 2e | SEO | | |
+| 2e | SEO | 2026-11-11 | dataset schema, 8 keywords, 12 FAQ entries |
 | 2f | Pushed to Prismic (draft) | | |
 | 2g | Mailchimp teaser | | |
 
@@ -27,6 +27,8 @@ Since: 2026-11-11
 None.
 
 ## To do
+
+- **Cross-links** between disease-vaccination-viz and Mike Kinch's editorial, both ways, once his slug is set (Eric, November 11, 2026). Reopens 2b/2f for this post.
 
 - **Weekly automated data refresh** (Eric, November 11, 2026). Fetch every
   updating source each week, rebuild, run the tie-out script, and push only if
@@ -320,3 +322,4 @@ None.
 - 2026-11-11: Step 2b confirmed (look-over items 1 to 6 applied). Now in 2c.
 - 2026-11-11: Step 2c confirmed (embed height 1440px, phones scroll inside the frame). Now in 2d: hero from a simplified 2026 national map.
 - 2026-11-11: Step 2d confirmed. Now in 2e.
+- 2026-11-11: Step 2e confirmed (8 items accepted; cross-links deferred to after Mike's post). Now in 2f.
