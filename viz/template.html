@@ -211,9 +211,8 @@ footer p{margin:0;max-width:980px}
   .stats span{white-space:normal}
   .stats span{display:inline}
 }
-/* embed mode (inside an iframe, or #embed=1): the post carries the title and dek, so they go; the notes collapse */
+/* the notes and disclaimers sit closed under one line everywhere; in embed mode (inside an iframe, or #embed=1) the post carries the title and dek, so they go */
 details.nd>summary{cursor:pointer;color:var(--ink2);font-size:12.5px;padding:8px 0;border-top:1px solid var(--rule)}
-details.nd[open]>summary{display:none}
 .framed .top h1,.framed .top .dek{display:none}
 .framed .top{justify-content:flex-end}
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
@@ -1294,7 +1293,6 @@ function render() {
 function init() {
   if (window.self !== window.top) document.documentElement.dataset.framed = "1";
   if (FRAMED) document.documentElement.classList.add("framed");
-  $("notes").open = !FRAMED;
   document.querySelectorAll(".ptxt").forEach(e => { e.textContent = PARTIAL.end; });
   document.querySelectorAll(".ctxt").forEach(e => { e.textContent = mdy(D.cmeaslesThrough); });
   buildControls();
