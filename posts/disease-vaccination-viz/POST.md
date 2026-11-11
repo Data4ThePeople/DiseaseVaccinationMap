@@ -71,6 +71,7 @@ These are reported cases, not all cases. Many people who got sick were never cou
 - **White means no figure.** A white half is a missing number, not a zero. Before the 2009-10 school year there are no state kindergarten figures, so the top-left half is white in every state.
 - **Each gray figure is one reported case per 2,000 residents.** A faded figure marks a count that is incomplete or provisional.
 - **Hepatitis A has no kindergarten figure.** CDC's state kindergarten figures do not include the hepatitis A vaccine, so for hepatitis A the top-left half stays white. Toddler figures are in the vaccination chart beside the map.
+- **The bar chart beside the map shows reported cases each year** for the disease you picked, for the U.S. or, on a state's page, for that state. It uses a log scale, so the large counts of the 1940s and the small counts of recent years both show. Click a bar to move to that year.
 
 ### What it shows right now
 
