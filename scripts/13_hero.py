@@ -24,6 +24,7 @@ i = y - D["y0"]
 states = D["states"]
 mmr = D["vax"]["kinder"]["mmr"]
 cells, below95, below90, n_cov, above1, total = [], 0, 0, 0, 0, 0
+dc_below = False
 for s in states:
     st = s["k"]
     p = mmr.get(st, {}).get(str(y))
@@ -34,7 +35,9 @@ for s in states:
     total += c or 0
     if v is not None:
         n_cov += 1
-        below95 += v < 95
+        below95 += v < 95 and st != "DC"   # DC is not a state; it is named on its own line
+        if st == "DC":
+            dc_below = v < 95
         below90 += v < 90
     above1 += r is not None and r > 1
     cells.append((s, cov_fill(v), rate_fill(r)))
@@ -74,8 +77,8 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1080" vie
 <text x="90" y="440" font-size="64" font-weight="700" fill="#EDEEEF">{total:,}</text>
 <text x="90" y="478" font-size="23" fill="#BBBDC0">measles cases reported in {y}</text>
 <text x="90" y="506" font-size="23" fill="#BBBDC0">through {through_txt} (provisional)</text>
-<text x="90" y="600" font-size="64" font-weight="700" fill="#EDEEEF">{below95} of {n_cov}</text>
-<text x="90" y="638" font-size="23" fill="#BBBDC0">states below 95% of kindergartners</text>
+<text x="90" y="600" font-size="64" font-weight="700" fill="#EDEEEF">{below95}</text>
+<text x="90" y="638" font-size="23" fill="#BBBDC0">states{", plus DC," if dc_below else ""} below 95% of kindergartners</text>
 <text x="90" y="666" font-size="23" fill="#BBBDC0">with the measles vaccine, {school}</text>
 <g transform="translate(90,760)">
 <rect x="0" y="0" width="100" height="100" rx="5" fill="#2b2e30" stroke="#BBBDC0" stroke-width="1.5"/>
@@ -96,4 +99,4 @@ html.write_text(f'<!doctype html><html><head><meta charset="utf-8"><style>html,b
 png = OUT / "disease-vaccination-viz-hero-1680x1080.png"
 subprocess.run([CHROME, "--headless=new", "--disable-gpu", "--hide-scrollbars", "--window-size=1680,1080",
                 f"--screenshot={png}", html.as_uri()], check=True, capture_output=True)
-print(png, f"| {y} through {through_txt}: {total:,} cases; {below95} of {n_cov} below 95%, {below90} below 90%; {above1} states above 1 per 100,000")
+print(png, f"| {y} through {through_txt}: {total:,} cases; {below95} states{' plus DC' if dc_below else ''} below 95% ({n_cov} with a figure), {below90} below 90%; {above1} states above 1 per 100,000")
