@@ -180,8 +180,10 @@ total for the year, and the running total for the same week of the prior year.
 **Where it comes from.** `https://data.cdc.gov/api/views/x9gk-5huc/rows.csv`,
 232 MB, no login.
 
-**Version and vintage.** Updated weekly; pulled October 1, 2026 (file updated
-September 30, 2026). Covers MMWR 2022 week 1 to 2026 week 38.
+**Version and vintage.** Updated weekly; pulled November 11, 2026 (file updated
+November 11, 2026). Covers MMWR 2022 week 1 to 2026 week 44, which ends
+November 7, 2026. (The first pull, October 1, ran to 2026 week 38; refreshing
+it changed no value for 2021 to 2025.)
 
 **Coverage.** 2022 to 2026 directly; 2021 through the prior-year column. All
 states. Direct counts; nothing filled.
@@ -208,13 +210,21 @@ in the table notes). `N` and `U` are not zero and are shown as "no data".
 **How late reports change the count (measured).** Whooping cough for 2022 was
 2,388 in the last week of 2022 and 3,044 when the same year was printed a year
 later, 27% more. So for year Y the build takes the prior-year column from the
-last week of Y+1. Only 2025 rests on its own last week and is marked
-provisional on the page.
+last week of Y+1. 2025 rests on its own last week and is marked provisional on
+the page. 2024 is the prior-year column a year later: closer to final, but
+still not a final annual table, and the page says so.
 
 **Revisions.** Weekly counts are provisional and are revised for months. The
 week 52 or 53 running total is not the final annual count. Where the final
 annual table exists (see next section) it replaces the provisional number.
-2026 is a partial year (through week 38) and is labeled as such or left out.
+**2026, year to date (added November 11, 2026).** The map's last year is 2026,
+taken from the running total in the file's last week (week 44, ending November
+7, 2026), for every state and disease, and marked provisional and "through
+November 7" everywhere it appears. There is no 2026 population estimate yet,
+so 2026 rates use each state's 2025 population; the page says so. A rate for
+ten months runs lower than a full year would, so a state near a color cutoff
+can show one step lower; the page says this too. The tie-out script compares
+every 2026 state and disease cell with this file.
 
 **Units and rounding.** Whole cases.
 
@@ -557,7 +567,11 @@ schools only; † coverage from a sample; ‡‡ kindergarten and 1st grade; ** 
 include preschool; * percent surveyed may be under the 100% shown. The page
 spells these out in the hover (decoded in `07_build_vaccination.py`). Some
 cells, all in 2025-26, carry a mark that is unreadable in CDC's file
-(U+FFFD); the hover says so.
+(U+FFFD); the hover says so. One more mark, "||", appears only on
+Pennsylvania's polio figure for 2012-13. CDC's key defines it as "Pertussis was
+not required in PA until 2017-18", so it looks misplaced in CDC's own file; the
+hover quotes CDC's wording rather than guessing what was meant (added November
+11, 2026, after the independent check).
 
 **Uncertainty.** None published. A census with 95% surveyed is solid; a
 voluntary response with 30% surveyed is not. The viz shows the survey type
@@ -622,7 +636,9 @@ personal income per resident. Population is the Census Bureau's midyear
 estimate, which BEA republishes.
 
 **Where it comes from.** `https://apps.bea.gov/regional/zip/SAINC.zip`, file
-`SAINC1__ALL_AREAS_1929_2025.csv`. No key needed for the bulk file.
+`SAINC1__ALL_AREAS_1929_2025.csv`. No key needed for the bulk file. The file ends with 2025;
+the map carries 2025 population into 2026 for 2026 rates only, and the state
+page labels that figure as the 2025 estimate.
 
 **Version and vintage.** Last updated September 30, 2026, with revised
 statistics for 2009 to 2025.
@@ -676,9 +692,10 @@ and the page says so and gives the range of the nine regional figures.
 2019-20, Louisiana 2020-21 and 2021-22). The file's notes say an asterisk marks
 a figure "not comparable to later 2-dose MMR data due to the differing
 methodology", so those values are left out on purpose and show as no figure.
-Wisconsin's county figures are capped at 95% by the state, and its source
-changed from the registry to a school survey, which is the likely reason for
-the jumps noted in `analysis/FINDINGS.md`.
+Wisconsin's county figures are capped at 95% by the state. The Johns Hopkins
+note says Wisconsin moved from registry data to school survey data and that
+"previous year data was updated according to the new data provided", so the
+whole series comes from the new source.
 
 **Changes over time and known quirks.** Not one survey. 40 states report
 kindergartners, 4 report K-12, 1 pre-K to 12, 1 a registry of 5 to 6 year
@@ -722,12 +739,20 @@ Status: file and README read.
 from state and county health departments and verified news reports.
 
 **Where it comes from.** `github.com/CSSEGISandData/measles_data`, file
-`measles_county_all_updates.csv`. Updated Fridays; pulled with data through
-September 25, 2026.
+`measles_county_all_updates.csv`. Updated Fridays; pulled November 11, 2026,
+with data through November 6, 2026 (first pull: through September 25, 2026;
+2025 values unchanged). The state page says "through November 6, 2026" for
+2026.
 
 **Coverage.** January 2025 on. Only counties with at least one case. The build
-sums by calendar year of the report date; the page shows 2025 only (2026 is
-unfinished).
+sums by calendar year of the report date; the page shows 2025 and 2026 (2026
+through the last report date, labeled as such). Rows that are not one county
+("Unknown County, X" and health regions such as "Region 1, Louisiana") are
+filed under their own state's unknown key, from the state named in the row,
+and never drawn: the tracker gives some of them a real county's code
+(Oklahoma's unknown cases, Louisiana's Region 1 under Orleans Parish) or
+another state's code (Maryland's unknown cases carry 23, Maine's). Utah's
+health-district rows carry no code and are not drawn either.
 
 **Known quirks.** Dates are report dates, not illness dates. Kansas withholds
 counts under five by county, Oklahoma gives no county, Tennessee reports by

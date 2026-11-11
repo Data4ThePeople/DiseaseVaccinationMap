@@ -635,14 +635,14 @@ kinder,dtap,OR,2023,2022-23 school year,90.9,,,40963.0,Census,100.0,,ad
 kinder,dtap,OR,2024,2023-24 school year,90.5,,,39568.0,Census,100.0,,ad
 kinder,dtap,OR,2025,2024-25 school year,89.6,,,38247.0,Census,100.0,,ad
 kinder,dtap,OR,2026,2025-26 school year,88.6,,,37309.0,Census,100.0,,au
-kinder,dtap,PA,2010,2009-10 school year,,,,149656.0,Census,100.0,NReq,a
+kinder,dtap,PA,2010,2009-10 school year,,,,149656.0,Census,100.0,NReq,aq
 kinder,dtap,PA,2011,2010-11 school year,,,,,,,,
-kinder,dtap,PA,2012,2011-12 school year,,,,148042.0,Census,99.0,NReq,
-kinder,dtap,PA,2013,2012-13 school year,,,,151364.0,Census,97.5,NReq,
-kinder,dtap,PA,2014,2013-14 school year,,,,151253.0,Census,100.0,NReq,ad
-kinder,dtap,PA,2015,2014-15 school year,,,,146378.0,Census,98.3,NReq,d
-kinder,dtap,PA,2016,2015-16 school year,,,,143298.0,Census (public); Voluntary response (private),93.2,NReq,
-kinder,dtap,PA,2017,2016-17 school year,,,,143888.0,Voluntary response,84.4,NReq,
+kinder,dtap,PA,2012,2011-12 school year,,,,148042.0,Census,99.0,NReq,q
+kinder,dtap,PA,2013,2012-13 school year,,,,151364.0,Census,97.5,NReq,q
+kinder,dtap,PA,2014,2013-14 school year,,,,151253.0,Census,100.0,NReq,adq
+kinder,dtap,PA,2015,2014-15 school year,,,,146378.0,Census,98.3,NReq,dq
+kinder,dtap,PA,2016,2015-16 school year,,,,143298.0,Census (public); Voluntary response (private),93.2,NReq,q
+kinder,dtap,PA,2017,2016-17 school year,,,,143888.0,Voluntary response,84.4,NReq,q
 kinder,dtap,PA,2018,2017-18 school year,97.0,,,141571.0,Voluntary response,93.3,,
 kinder,dtap,PA,2019,2018-19 school year,96.6,,,143560.0,Census (public). voluntary response (private),93.3,,
 kinder,dtap,PA,2020,2019-20 school year,96.8,,,140197.0,Census,98.8,,
@@ -3248,7 +3248,7 @@ kinder,polio,OR,2026,2025-26 school year,89.6,,,37309.0,Census,100.0,,au
 kinder,polio,PA,2010,2009-10 school year,94.4,,,149656.0,Census,100.0,,a
 kinder,polio,PA,2011,2010-11 school year,,,,,,,,
 kinder,polio,PA,2012,2011-12 school year,95.5,,,148042.0,Census,99.0,,
-kinder,polio,PA,2013,2012-13 school year,94.9,,,151364.0,Census,97.5,,
+kinder,polio,PA,2013,2012-13 school year,94.9,,,151364.0,Census,97.5,,q
 kinder,polio,PA,2014,2013-14 school year,93.2,,,151253.0,Census,100.0,,ad
 kinder,polio,PA,2015,2014-15 school year,97.0,,,146378.0,Census,98.3,,d
 kinder,polio,PA,2016,2015-16 school year,97.8,,,143298.0,Census (public); Voluntary response (private),93.2,,

@@ -1,6 +1,6 @@
 ---
-title: "Infectious Disease and Vaccination, State by State: An Interactive Map, 1920 to 2025"
-subtitle: A free, interactive map of reported cases of measles, whooping cough, hepatitis A, mumps and polio in every state and DC from 1920 to 2025, with kindergarten vaccination rates from the 2009-10 school year on.
+title: "Infectious Disease and Vaccination, State by State: An Interactive Map, 1920 to 2026"
+subtitle: A free, interactive map of reported cases of measles, whooping cough, hepatitis A, mumps and polio in every state and DC, from as early as 1920 through 2026, with kindergarten vaccination rates from the 2009-10 school year on.
 slug: disease-vaccination-viz
 date: 2026-11-12
 updated: 2026-11-12
@@ -19,9 +19,9 @@ caption_spacer: 20px
 dividers: false
 ---
 
-# Infectious Disease and Vaccination, State by State: An Interactive Map, 1920 to 2025
+# Infectious Disease and Vaccination, State by State: An Interactive Map, 1920 to 2026
 
-<iframe src="https://data4thepeople.github.io/DiseaseVaccinationMap/?v=20261111a#embed=1" width="100%" height="1440" loading="lazy" style="border:0" title="Infectious disease and vaccination, state by state: interactive map, 1920 to 2025"></iframe>
+<iframe src="https://data4thepeople.github.io/DiseaseVaccinationMap/?v=20261111b#embed=1" width="100%" height="1440" loading="lazy" style="border:0" title="Infectious disease and vaccination, state by state: interactive map, 1920 to 2026"></iframe>
 
 ::: spacer 40px
 
@@ -35,12 +35,18 @@ dividers: false
 
 ::: spacer 5px
 
-Measles, whooping cough, hepatitis A, mumps and polio all have vaccines. This map shows how often each one was reported in every state and DC, year by year, from 1920 to 2025. From the 2009-10 school year on, it also shows the share of kindergartners in each state with the vaccine for that disease. The goal is to put more than 100 years of public health records in one place so you can see the numbers for yourself. It is not meant to argue for or against any policy.
+What are we doing as a society?
 
-You can pick one disease at a time, move through the years, and open any state to see its own history, its counties and its vaccination trend. The map uses each publisher's numbers as published. Where a source has no number for a state and year, the map leaves it blank. We do not fill in or estimate any missing value. The map is free to use and needs no sign-in. The underlying data and code are free to download on [GitHub](https://github.com/Data4ThePeople/DiseaseVaccinationMap).
+I mean really, pause and think about it. Our attention spans are commodified and mined by algorithms that boil us down into profit-generating, zombified consumers who would rather scroll a feed than engage with other humans. Misinformation and disinformation gum up every social media platform (or wherever you source those "articles" you tell people you read), making it hard to tell how much of what we see is real and how much is engineered. One casualty of all this is our willingness to vaccinate our children.
+
+In 1998, Andrew Wakefield published a paper claiming a link between the MMR vaccine and developmental regression in children. The journal retracted it in 2010, and the same year he was struck off the U.K. medical register. The claim outlived the paper. Self-styled truth-tellers have since flooded the internet with every wild reason you can think of to keep a child from modern, evidence-based medicine (essential oils, anyone?).
+
+Over the same years, diseases we had pushed back have returned. The share of U.S. kindergartners with the measles vaccine fell from 95.2% in the 2019-20 school year to 92.4% in 2025-26. In 2026, through November 7, states reported 5,073 measles cases, the most in any year since 1991. In 2022, New York reported a case of paralytic polio.
+
+Here, we introduce an open-source tool to track this. The map shows reported cases of measles, whooping cough, hepatitis A, mumps and polio in every state and DC from 1920 to 2026, and from the 2009-10 school year on, the share of kindergartners with each vaccine. You can pick one disease at a time, move through the years, and open any state to see its counties and its own history. The map uses each publisher's numbers as published and leaves a blank where a source has no number; we do not fill in or estimate any missing value. It is free to use and needs no sign-in, and the data and code are on [GitHub](https://github.com/Data4ThePeople/DiseaseVaccinationMap).
 
 ::: blurb Read this first
-These are reported cases, not all cases. Many people who got sick were never counted, and the rules for what to report changed many times over the century. The green, amber and red levels for case rates were set for this map and are not official levels; the same levels are used for every disease. Kindergarten vaccination measures one age group in one school year. It is not a measure of immunity in the whole population.
+These are reported cases, not all cases. Many people who got sick were never counted, and the rules for what to report changed many times over the century. The green, amber and red levels for case rates were set for this map and are not official levels; the same levels are used for every disease. Kindergarten vaccination measures one age group in one school year. It is not a measure of immunity in the whole population. 2026 is not over: it runs through November 7, its counts are provisional, and its rates use 2025 population.
 :::
 
 ## Using the visualization
@@ -49,7 +55,7 @@ These are reported cases, not all cases. Many people who got sick were never cou
 
 **1. Pick a disease.** The buttons above the map choose measles, whooping cough, hepatitis A, mumps or polio. The map shows one disease at a time.
 
-**2. Pick a year.** Drag the slider, or click Play to move through the years. The map opens on 2010, the first year with state vaccination figures. Every year back to 1920 is on the slider.
+**2. Pick a year.** Drag the slider, or click Play to move through the years. The map opens on 2010, the first year with state vaccination figures. Every year from 1920 to 2026 is on the slider.
 
 **3. Hover over or tap a state.** A box shows that state's cases, its rate per 100,000 residents, its vaccination figures and where each number comes from.
 
@@ -68,9 +74,9 @@ These are reported cases, not all cases. Many people who got sick were never cou
 
 ### What it shows right now
 
-In 2025, states reported 2,026 measles cases, or 0.59 per 100,000 residents. That is up 629% from 278 cases in 2024. The 2025 count is provisional, and final counts are usually higher. Nine states were above 1 case per 100,000 residents in 2025, led by Utah (5.03), New Mexico (4.66) and North Dakota (4.50). In 2024, one state was above 1: Minnesota (1.19).
+In 2026, through November 7, states reported 5,073 measles cases, or 1.48 per 100,000 residents. That is 150% more than in all of 2025 (2,026 cases) and the most in any year since 1991. The 2026 count is provisional. Fourteen states were above 1 case per 100,000 residents, led by Utah (15.03), South Carolina (12.32) and Pennsylvania (11.30).
 
-In the 2024-25 school year, 39 of the 49 states with a figure were below 95% of kindergartners with the measles vaccine (MMR), and 15 were below 90%. Idaho was lowest, at 78.5%. The national figure was 92.5%.
+In the 2025-26 school year, 39 of the 49 states with a figure were below 95% of kindergartners with the measles vaccine (MMR), and 18 were below 90%. Idaho was lowest, at 75.2%. The national figure was 92.4%, down from 95.2% in the 2019-20 school year.
 
 Measles reached its highest point on the map in 1941, when the states counted 894,134 cases.
 
@@ -86,9 +92,9 @@ Every chart we publish should be something you can check, question and rebuild y
 
 **Yearly tables of notifiable diseases, U.S. Public Health Service.** Reported cases of measles, polio and whooping cough by state, 1920 to 1955 (whooping cough from 1922).
 
-**Summary of Notifiable Diseases and annual tables, CDC.** Final yearly counts by state from 1956 to 2023: measles, whooping cough and paralytic polio from 1956, hepatitis A from 1966, mumps from 1968.
+**Summary of Notifiable Diseases and annual tables, CDC.** Yearly counts by state from 1956 to 2023: measles, whooping cough and paralytic polio from 1956, hepatitis A from 1966, mumps from 1968. Paralytic polio counts are as first printed; CDC later revised some yearly totals.
 
-**National Notifiable Diseases Surveillance System weekly tables, CDC.** Counts for 2024 and 2025. The 2025 counts are provisional.
+**National Notifiable Diseases Surveillance System weekly tables, CDC.** Counts for 2024 (as counted a year later), 2025 and 2026. The 2025 and 2026 counts are provisional, and 2026 runs through November 7.
 
 **Project Tycho, University of Pittsburgh.** Weekly reports for Alaska through 1958 and Hawaii through 1959, before they became states.
 
@@ -105,8 +111,8 @@ Every chart we publish should be something you can check, question and rebuild y
 ::: spacer 5px
 
 - **We use each publisher's numbers as published.** Nothing is filled in. When a source published no number, the map shows it as blank.
-- **Cases.** Before 1993 the counts come from scanned government reports, read from the page. We kept a year only when its states add up to the table's printed regional totals and those add up to its printed U.S. total. From 1993 on they come from CDC's tables and files.
-- **Rates.** Cases per 100,000 residents, using Census Bureau population for each state and year.
+- **Cases.** Before 1993 the counts come from scanned government reports, read from the page, except Alaska and Hawaii before statehood, which come from Project Tycho's copies of the weekly reports. We kept a year only when its states add up to the table's printed regional totals and those add up to its printed U.S. total. From 1993 on they come from CDC's tables and files.
+- **Rates.** Cases per 100,000 residents, using Census Bureau population for each state and year. There is no 2026 estimate yet, so 2026 rates use 2025 population.
 - **Vaccination.** Each state's kindergarten figure as reported to CDC. CDC marks some figures as lower bounds, and the map shows those as "at least."
 - **Footnotes.** Where a source table says a count includes another disease, such as rubella in some measles counts, the state's hover box says so.
 - **We check the numbers.** A script recomputes the numbers on the map from the source files and compares them. Separate checks, written from scratch without our code, pulled the data again and compared their results with the map.
@@ -125,7 +131,7 @@ These are the main limits. The full list is in [DATASETS.md](https://github.com/
 
 - **Reported cases undercount real cases.** Reporting rules changed many times, and some states in the 1920s were not yet reporting every disease.
 - **What was counted changed.** Polio counts all reported polio before 1956 and paralytic polio only from 1956. Hepatitis A before 1974 includes hepatitis of unspecified type, and CDC changed its definition in 2019.
-- **The 2025 counts are provisional.** Final counts are usually higher.
+- **The 2025 and 2026 counts are provisional.** Final counts are usually higher. 2026 is not over, so its rates run lower than a full year would, and a state near a line between two colors may show one step lower.
 - **States measure kindergarten vaccination in different ways.** Some count every school and some survey a sample, and some changed their method over these years. Compare a state with itself over time more than with another state.
 - **Kindergarten figures start with the 2009-10 school year,** and no state reported one for 2010-11.
 - **Some printed numbers were hard to read.** A few numbers in the scanned reports could not be read with certainty. The notes under the map list them.
@@ -142,21 +148,21 @@ The code, the data and the full method are at [github.com/Data4ThePeople/Disease
 
 ::: spacer 5px
 
-### How many measles cases were there in the U.S. in 2025?
+### How many measles cases have there been in the U.S. in 2026?
 
-States reported 2,026 measles cases to CDC in 2025, or 0.59 per 100,000 residents. The count is provisional, and final counts are usually higher.
+States reported 5,073 measles cases to CDC in 2026 through November 7, or 1.48 per 100,000 residents. That is the most in any year since 1991. The count is provisional, and final counts are usually higher.
 
-### Which states had the highest measles rates in 2025?
+### Which states have the highest measles rates in 2026?
 
-Utah (5.03 cases per 100,000 residents), New Mexico (4.66) and North Dakota (4.50).
+Through November 7, Utah (15.03 cases per 100,000 residents), South Carolina (12.32) and Pennsylvania (11.30).
 
 ### What share of kindergartners have the measles vaccine?
 
-In the 2024-25 school year, 92.5% of kindergartners in the U.S. had the measles vaccine (MMR). In 39 of the 49 states with a figure, the share was below 95%.
+In the 2025-26 school year, 92.4% of kindergartners in the U.S. had the measles vaccine (MMR). In 39 of the 49 states with a figure, the share was below 95%.
 
 ### Which state has the lowest kindergarten measles vaccination rate?
 
-In the 2024-25 school year, Idaho, at 78.5%.
+In the 2025-26 school year, Idaho, at 75.2%.
 
 ### Why is 95% the line between green and amber?
 
@@ -172,7 +178,7 @@ CDC's state kindergarten figures do not include the hepatitis A vaccine. Toddler
 
 ### Where does the data come from?
 
-Case counts come from the U.S. Public Health Service's yearly tables (1920 to 1955), CDC's yearly and weekly tables (1956 to 2025) and Project Tycho. Vaccination figures come from CDC's SchoolVaxView and National Immunization Survey.
+Case counts come from the U.S. Public Health Service's yearly tables (1920 to 1955), CDC's yearly and weekly tables (1956 to 2026) and Project Tycho. Vaccination figures come from CDC's SchoolVaxView and National Immunization Survey.
 
 ### Is the map free to use?
 

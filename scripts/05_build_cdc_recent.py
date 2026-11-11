@@ -8,6 +8,8 @@ York and is added to it.
 
 Output: data/cdc_recent_state_year.csv
 """
+import json
+
 import pandas as pd
 
 from common import DATA, NAME_TO_ABBR, RAW
@@ -44,11 +46,10 @@ if __name__ == "__main__":
     for (disease, st), g in w.groupby(["disease", "st"]):
         for year in sorted(last_week.index):
             lw = last_week[year]
-            if year == last_week.index.max():  # the current, unfinished year
-                continue
+            current = year == last_week.index.max()   # the current, unfinished year: kept as year to date
             own = g[(g.year == year) & (g.week == lw)]
             nxt = g[(g.year == year + 1) & (g.week == last_week.get(year + 1, -1))]
-            use_next = len(nxt) and last_week.get(year + 1, 0) >= 52
+            use_next = not current and len(nxt) and last_week.get(year + 1, 0) >= 52
             src, col = (nxt, "prev") if use_next else (own, "cur")
             if not len(src):
                 continue
@@ -59,7 +60,8 @@ if __name__ == "__main__":
             else:
                 cases, flag = int(src[col].fillna(0).sum()), ""
             rows.append(dict(disease=disease, st=st, year=year, cases=cases, flag=flag,
-                             basis=f"as of week {last_week[year + 1]} of {year + 1}" if use_next else f"provisional, week {lw} of {year}"))
+                             basis=f"as of week {last_week[year + 1]} of {year + 1}" if use_next
+                             else f"provisional, year to date through week {lw} of {year}" if current else f"provisional, week {lw} of {year}"))
         # 2021 exists only as the prior-year column of 2022
         first = min(last_week.index)
         src = g[(g.year == first) & (g.week == last_week[first])]
@@ -75,6 +77,9 @@ if __name__ == "__main__":
     assert not out.duplicated(["disease", "st", "year"]).any()
     out["cases"] = out.cases.astype("Int64")
     out.to_csv(DATA / "cdc_recent_state_year.csv", index=False)
+    # the unfinished year and the last week it covers, for the page to say "through" a date
+    cy = int(last_week.index.max())
+    (DATA / "cdc_recent_meta.json").write_text(json.dumps({"year": cy, "week": int(last_week[cy])}))
     print(out.pivot_table(index="disease", columns="year", values="cases", aggfunc="sum"))
     print(out.groupby(["year", "basis"]).size())
     print(out[out.flag != ""].groupby(["disease", "flag"]).size())

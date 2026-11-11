@@ -290,3 +290,13 @@ None.
 - 2026-10-21: County map now uses the national three steps and colors
   (green, amber, red; the 85% break is gone). Measles case circles are dark
   red with a white outline. Two-decimal county values recounted: 28.
+- 2026-11-11: Post started: disease-vaccination-viz (Liam Aranda-Michel). Embed
+  mode added (title hidden in a frame, notes in "Show notes and disclaimers").
+  2026 added as a partial year: CDC weekly tables through week 44 (November 7),
+  2025 population carried for 2026 rates, Johns Hopkins county measles through
+  November 6, New York State Department of Health statement on the Lewis County
+  measles death added as a headline. Tenth independent tie-out (numbers and
+  words): no numeric differences, eight wording fixes made. Eleventh (2026
+  additions): no numeric differences; county circle key in 2026, "How we
+  checked", U.S. row date, 2026 state facts label, unknown-county filing fixed.
+  Liam's Purpose toned down (12 changes accepted by Eric).

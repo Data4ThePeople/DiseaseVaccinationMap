@@ -7,6 +7,8 @@
 
 Outputs: data/county_mmr.csv, data/county_measles.csv, data/county_mmr_states.csv
 """
+import json
+
 import pandas as pd
 
 from common import DATA, RAW, STATES, download
@@ -46,11 +48,19 @@ if __name__ == "__main__":
     c["year"] = c.date.str[:4].astype(int)
     c["fips"] = c.location_id.fillna("00000").str.zfill(5)   # a row with no id is kept with the unknown-county rows, not dropped
     c["location_name"] = c.location_name.fillna("unknown")
-    # the tracker files Oklahoma's "Unknown County" cases under a real county code; they are not that county's
-    c.loc[c.location_name.str.startswith("Unknown County") & ~c.fips.str.startswith("00"), "fips"] = "00000"
+    # rows that are not one county ("Unknown County, X" and health regions such as "Region 1, Louisiana") are filed
+    # under their state's own unknown key, 00 + state code, taken from the state named in the row: the tracker gives
+    # some of them a real county's code (Oklahoma, Louisiana Region 1) or another state's code (Maryland's carries 23,
+    # which is Maine's). They are never drawn as a county.
+    geo = json.loads((RAW / "geo" / "counties-10m.json").read_text())   # state names and codes from the map's own geography
+    name_fips = {g["properties"]["name"]: g["id"] for g in geo["objects"]["states"]["geometries"]}
+    whole = c.location_name.str.startswith("Unknown County") | c.location_name.str.contains(r"\bRegion\b")
+    c.loc[whole, "fips"] = "000" + c.loc[whole, "location_name"].str.split(", ").str[-1].str.strip().map(name_fips)
+    assert c.fips.notna().all(), "a row not tied to a county names no state the map knows"
     c["cases"] = c.value.astype(int)
     out = c.groupby(["fips", "location_name", "year"], as_index=False).cases.sum()
     out.to_csv(DATA / "county_measles.csv", index=False)
+    (DATA / "county_measles_meta.json").write_text('{"through": "%s"}' % c.date.max())   # last report date in the tracker
 
     print("county MMR:", len(long), "county-years in", long.State.nunique(), "states;", len(regions), "region rows left out in", sorted(regions.State.unique()))
     print(long.groupby("year").agg(counties=("fips", "nunique"), states=("State", "nunique")))

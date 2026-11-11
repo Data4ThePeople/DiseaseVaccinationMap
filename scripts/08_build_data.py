@@ -11,7 +11,7 @@ import pandas as pd
 from common import DATA, RAW, STATES
 from project import geometry_paths, state_paths  # Albers USA, reused from the BirthRate project
 
-Y0, Y1 = 1920, 2025
+Y0, Y1 = 1920, 2026
 UNIT = 50  # one figure = this many reported cases per 100,000 residents in a year
 
 # The five shown. Order is fixed: it sets the color and the drawing order of every tile.
@@ -31,7 +31,7 @@ VACCINES = {
     "hepa": "Hepatitis A vaccine",
 }
 VAXNOTE = {
-    "mmr": "Toddlers: 1 or more doses. Kindergartners: the doses their state requires, 2 in most states. Before 1995: any measles vaccine.",
+    "mmr": "Toddlers: 1 or more doses. Kindergartners: the doses their state requires (CDC reports that every state required 2 doses of measles vaccine in 2019-20). Before 1995: any measles vaccine.",
     "dtap": "Toddlers: 4 or more doses. Kindergartners: the doses their state requires. Before 1995: 3 or more doses.",
     "polio": "Toddlers: 3 or more doses. Kindergartners: the doses their state requires. Before 1995: 3 or more doses.",
     "hepa": "Toddlers: 2 or more doses, by age 35 months. No kindergarten or pre-2008 figures.",
@@ -169,6 +169,11 @@ def main():
     for r in pop.itertuples():
         P[r.st][idx[r.year]] = int(r.pop)
         INC[r.st][idx[r.year]] = None if pd.isna(r.pc_income) else int(r.pc_income)
+    # no population estimate yet for the last, unfinished year: its rates use the year before
+    pop_carried = Y1 not in set(pop.year)
+    if pop_carried:
+        for st in STATES:
+            P[st][idx[Y1]] = P[st][idx[Y1 - 1]]
 
     cases = pd.read_csv(DATA / "cases_state_year.csv")
     keys = [d["k"] for d in DISEASES]
@@ -252,10 +257,10 @@ def main():
     if len(lost):
         print(len(lost), "county MMR rows have no shape:", lost.groupby(["st", "year"]).size().to_dict())
     out = {
-        "kpis": kpi, "party": party, "shapes": shp, "cmmr": cmmr, "cmeasles": cmeasles, "cmeta": cmeta,
+        "kpis": kpi, "party": party, "shapes": shp, "cmmr": cmmr, "cmeasles": cmeasles, "cmeaslesThrough": json.loads((DATA / "county_measles_meta.json").read_text())["through"], "cmeta": cmeta,
         "y0": Y0, "y1": Y1, "unit": UNIT, "diseases": DISEASES, "vaccines": VACCINES, "vaxnote": VAXNOTE,
         "states": [{"k": s, "n": STATES[s], "c": GRID[s][0], "r": GRID[s][1]} for s in sorted(STATES)],
-        "pop": P, "income": INC, "cases": C, "src": S, "weeks": W, "vax": V, "licensed": L, "milestones": ms,
+        "pop": P, "popCarried": Y1 if pop_carried else None, "partial": json.loads((DATA / "cdc_recent_meta.json").read_text()), "income": INC, "cases": C, "src": S, "weeks": W, "vax": V, "licensed": L, "milestones": ms,
     }
     (DATA.parent / "viz" / "data.json").write_text(json.dumps(out, separators=(",", ":"), ensure_ascii=False))
     print("viz/data.json", (DATA.parent / "viz" / "data.json").stat().st_size, "bytes;", len(ms), "milestones")

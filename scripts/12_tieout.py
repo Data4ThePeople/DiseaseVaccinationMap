@@ -131,6 +131,24 @@ for d, labels, areas, st, y in [("pertussis", ["Pertussis"], ["OHIO"], "OH", 202
         got = int(pd.to_numeric(x["Cumulative YTD Current MMWR Year"]).fillna(0).sum())
     check(f"{d} {st} {y}", page(d, st, y), got)
 lines.append("")
+# the unfinished year: every state and disease, year to date in the file's last week
+cy = int(w["Current MMWR Year"].astype(int).max()); lw = str(int(w[w["Current MMWR Year"] == str(cy)]["MMWR WEEK"].astype(int).max()))
+assert D["y1"] == cy and D["partial"] == {"year": cy, "week": int(lw)}, (D["y1"], D["partial"], cy, lw)
+LAB = {"measles": ["Measles, Indigenous", "Measles, Imported"], "pertussis": ["Pertussis"], "mumps": ["Mumps"],
+       "hepatitis_a": ["Hepatitis A, Confirmed"], "polio": ["Poliomyelitis, paralytic"]}
+cur = w[(w["Current MMWR Year"] == str(cy)) & (w["MMWR WEEK"] == lw)]
+bad = n = 0
+for d, labels in LAB.items():
+    for st, name in STATES.items():
+        areas = [name.upper()] + (["NEW YORK CITY"] if st == "NY" else [])
+        x = cur[cur.Label.isin(labels) & cur.area.isin(areas)]
+        got = int(pd.to_numeric(x["Cumulative YTD Current MMWR Year"], errors="coerce").fillna(0).sum())
+        n += 1
+        if page(d, st, cy) != got:
+            bad += 1; lines.append(f"| {d} {st} {cy} | {got} | {page(d, st, cy)} | DIFF |")
+lines += [f"", f"{cy} year to date through week {lw}: {n} state-disease cells compared, {bad} differences.", ""]
+check(f"{cy} rates use {cy - 1} population (all states)", sum(D["pop"][st][cy - Y0] != D["pop"][st][cy - 1 - Y0] for st in STATES), 0)
+lines.append("")
 
 # E
 bea = pd.read_csv(zipfile.ZipFile(RAW / "bea" / "SAINC.zip").open("SAINC1__ALL_AREAS_1929_2025.csv"), dtype=str, encoding="latin-1")

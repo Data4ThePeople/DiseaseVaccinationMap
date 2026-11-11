@@ -697,5 +697,19 @@
     "published": "2026-09-28",
     "blurb": "As of September 24, 2026, CDC had counted 3,659 confirmed measles cases in the United States in 2026.",
     "checked": "2026-10-01"
+  },
+  {
+    "date": "2026-11-02",
+    "scope": "US",
+    "diseases": [
+      "measles"
+    ],
+    "headline": "Joint Statement From New York State Department of Health and Lewis County Public Health on Pediatric Measles-Associated Death in Lewis County",
+    "source": "New York State Department of Health",
+    "url": "https://www.health.ny.gov/press/releases/2026/2026-11-02_measles.htm",
+    "kind": "report",
+    "published": "2026-11-02",
+    "blurb": "On November 2, 2026, New York's health department and Lewis County Public Health reported the death of a child in Lewis County associated with the ongoing measles outbreak, the first known measles-associated death in New York State in more than 30 years.",
+    "checked": "2026-11-11"
   }
 ]

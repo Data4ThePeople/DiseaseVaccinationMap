@@ -5,7 +5,7 @@ Built by `scripts/12_tieout.py`. Every line below was recomputed from a raw file
 
 ## A. Packed data against the case table
 
-21,840 state-years in the table, 21,840 filled cells on the page, 0 differ.
+22,095 state-years in the table, 22,095 filled cells on the page, 0 differ.
 
 ## B. National sum on the page against the U.S. row CDC printed
 
@@ -187,6 +187,11 @@ From `early_readings.csv` (typed from the Public Health Service tables). Alaska 
 | measles TX 2025 | 803 | 803 | ok |
 | pertussis NY 2024 | 2871 | 2871 | ok |
 | mumps CA 2025 | 53 | 53 | ok |
+
+
+2026 year to date through week 44: 255 state-disease cells compared, 0 differences.
+
+| 2026 rates use 2025 population (all states) | 0 | 0 | ok |
 
 ## E. Population and rate
 
