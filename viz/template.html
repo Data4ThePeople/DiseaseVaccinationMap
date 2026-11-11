@@ -206,6 +206,11 @@ footer p{margin:0;max-width:980px}
   .stats span{white-space:normal}
   .stats span{display:inline}
 }
+/* embed mode (inside an iframe, or #embed=1): the post carries the title and dek, so they go; the notes collapse */
+details.nd>summary{cursor:pointer;color:var(--ink2);font-size:12.5px;padding:8px 0;border-top:1px solid var(--rule)}
+details.nd[open]>summary{display:none}
+.framed .top h1,.framed .top .dek{display:none}
+.framed .top{justify-content:flex-end}
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
 </style>
 </head>
@@ -304,6 +309,8 @@ footer p{margin:0;max-width:980px}
     <div class="tblwrap" id="tblwrap"></div>
   </details>
 
+  <details class="nd" id="notes">
+  <summary>Show notes and disclaimers</summary>
   <footer>
     <p id="foot"></p>
   </footer>
@@ -342,12 +349,17 @@ footer p{margin:0;max-width:980px}
       <li>County measles cases come from the Johns Hopkins measles tracker, which counts from different reports than CDC, so its 2025 total is not the same as CDC's.</li>
     </ul>
   </section>
+  </details>
 </div>
 <div id="tip" role="status"></div>
 
 <script>
 "use strict";
 const D = /*__DATA__*/null;
+
+// embed mode: on by default inside an iframe; #embed=1 forces it, #embed=0 turns it off
+const FRAMED = (() => { let f; try { f = window.self !== window.top; } catch (e) { f = true; }
+  const e = new URLSearchParams(location.hash.slice(1)).get("embed"); return e === "1" ? true : e === "0" ? false : f; })();
 
 /* ---------- lookups ---------- */
 const YEARS = D.y1 - D.y0 + 1;
@@ -1211,6 +1223,8 @@ function render() {
 }
 function init() {
   if (window.self !== window.top) document.documentElement.dataset.framed = "1";
+  if (FRAMED) document.documentElement.classList.add("framed");
+  $("notes").open = !FRAMED;
   buildControls();
   const yr = $("year"); yr.min = D.y0; yr.max = D.y1; yr.value = S.year;
   yr.addEventListener("input", () => { setPlaying(false); setYear(+yr.value); });
