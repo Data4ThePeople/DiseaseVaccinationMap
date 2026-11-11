@@ -9,10 +9,25 @@ author: Liam Aranda-Michel
 author_url: https://www.data4thepeople.com/authors/liam-aranda-michel
 hero: images/disease-vaccination-viz-hero-1680x1080.png
 hero_alt: Tile map of the United States on a dark background, one square per state, each split corner to corner. Top-left half: share of kindergartners with the measles vaccine, 2025-26 (green 95% or more, amber 90 to 94.9%, red under 90%). Bottom-right half: 2026 measles cases per 100,000 residents through November 7 (red over 1, amber 0.1 to 1, green under 0.1). Text: Measles and vaccination, state by state. 5,073 cases. 39 of 49 states below 95%. Data 4 The People.
-meta_title:
-description:
-keywords:
+meta_title: "Measles Cases and Vaccination by State: Map, 1920-2026"
+description: "Free interactive map of measles, whooping cough, mumps, hepatitis A and polio cases in every state, 1920 to 2026, with kindergarten vaccination rates."
+keywords: measles cases by state 2026, measles map, measles cases by year, kindergarten vaccination rates by state, MMR vaccination rate by state, measles outbreak 2026, whooping cough cases by state, history of measles in the United States
 schema_type: dataset
+dataset_name: Reported cases of measles, whooping cough, hepatitis A, mumps and polio, and kindergarten vaccination coverage, U.S. states and DC, 1920 to 2026
+dataset_description: "Reported cases by state and year from the U.S. Public Health Service yearly tables (1920 to 1955), CDC's annual notifiable disease tables (1956 to 2023) and CDC's weekly NNDSS tables (2024 to 2026, with 2026 through November 7 and provisional), with Project Tycho for Alaska and Hawaii before statehood; rates per 100,000 residents from Census Bureau population; kindergarten vaccination coverage from CDC SchoolVaxView (2009-10 school year on); toddler coverage from the National Immunization Survey; county MMR coverage and county measles cases from Johns Hopkins University. Values not published by the source are left blank."
+temporal: 1920/2026
+spatial: United States
+measured: Reported cases|count; Cases per 100,000 residents|rate; Kindergartners with the required vaccine doses|percent; Toddler vaccination coverage|percent; County kindergarten MMR coverage|percent; County measles cases|count
+sources: https://www.cdc.gov/nndss/|https://data.cdc.gov/NNDSS/x9gk-5huc|https://www.cdc.gov/schoolvaxview/|https://www.cdc.gov/nis/|https://www.tycho.pitt.edu/|https://github.com/enshengdong/MMR_data|https://github.com/CSSEGISandData/measles_data
+distribution: text/html|https://data4thepeople.github.io/DiseaseVaccinationMap/;text/csv|https://github.com/Data4ThePeople/DiseaseVaccinationMap/tree/main/data
+measurement_technique: Published state counts joined by disease, state and year with no imputation. Counts before 1993 were read from scanned government tables and kept only when the states add to the printed regional and U.S. totals. Rates are cases per 100,000 residents from Census Bureau population; 2026 rates use 2025 population.
+credit: Data 4 The People, from CDC, the U.S. Public Health Service, Project Tycho, the Census Bureau and Johns Hopkins University
+license: https://www.data4thepeople.com/terms-of-use
+app_url: https://data4thepeople.github.io/DiseaseVaccinationMap/
+app_name: "Infectious Disease and Vaccination, State by State: interactive map, 1920 to 2026"
+app_category: EducationalApplication
+app_description: Free interactive map of reported cases of measles, whooping cough, hepatitis A, mumps and polio in every state and DC from as early as 1920 through 2026, with kindergarten vaccination rates from the 2009-10 school year on.
+app_features: All 50 states and DC, 1920 to 2026|One disease at a time: measles, whooping cough, hepatitis A, mumps or polio|Each state split into vaccination and case rate|Play through the years|Cases each year for the U.S. and each state|State pages with county vaccination and 2025-2026 county measles cases|Ranking and table of every state|Headlines from public health records on the timeline
 drop_cap: false
 heading_spacer: 20px
 caption_spacer: 20px
