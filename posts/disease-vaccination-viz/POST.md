@@ -59,7 +59,7 @@ These are reported cases, not all cases. Many people who got sick were never cou
 
 **3. Hover over or tap a state.** A box shows that state's cases, its rate per 100,000 residents, its vaccination figures and where each number comes from.
 
-**4. Click a state.** The state view shows its counties, its vaccination trend with cases under each year, and facts about the state that year: population, income, poverty, schooling, health insurance, jobs and which party held the governor's office and the legislature.
+**4. Click a state.** The state view shows its counties, a chart of its cases each year, its vaccination trend, and facts about the state that year: population, income, poverty, schooling, health insurance, jobs and which party held the governor's office and the legislature.
 
 **5. Rank the states.** The list under the map ranks every state by vaccination or by case rate for the year shown. A table with every number is under it.
 
@@ -77,7 +77,7 @@ These are reported cases, not all cases. Many people who got sick were never cou
 
 In 2026, through November 7, states reported 5,073 measles cases, or 1.48 per 100,000 residents. That is 150% more than in all of 2025 (2,026 cases) and the most in any year since 1991. The 2026 count is provisional. Fourteen states were above 1 case per 100,000 residents, led by Utah (15.03), South Carolina (12.32) and Pennsylvania (11.30).
 
-In the 2025-26 school year, 39 of the 49 states with a figure were below 95% of kindergartners with the measles vaccine (MMR), and 18 were below 90%. Idaho was lowest, at 75.2%. The national figure was 92.4%, down from 95.2% in the 2019-20 school year.
+In the 2025-26 school year, in 39 of the 49 states with a figure, fewer than 95% of kindergartners had the measles vaccine (MMR), and in 18, fewer than 90%. Idaho was lowest, at 75.2%. The national figure was 92.4%, down from 95.2% in the 2019-20 school year.
 
 Measles reached its highest point on the map in 1941, when the states counted 894,134 cases.
 
@@ -116,7 +116,7 @@ Every chart we publish should be something you can check, question and rebuild y
 - **Rates.** Cases per 100,000 residents, using Census Bureau population for each state and year. There is no 2026 estimate yet, so 2026 rates use 2025 population.
 - **Vaccination.** Each state's kindergarten figure as reported to CDC. CDC marks some figures as lower bounds, and the map shows those as "at least."
 - **Footnotes.** Where a source table says a count includes another disease, such as rubella in some measles counts, the state's hover box says so.
-- **We check the numbers.** A script recomputes the numbers on the map from the source files and compares them. Separate checks, written from scratch without our code, pulled the data again and compared their results with the map.
+- **We check the numbers.** A script recomputes the numbers on the map from the source files and compares them. Separate checks, written from scratch without our code, pulled the data again and compared their results with the map. Neither check found a number that differed from the map.
 
 ## Updating
 
@@ -130,14 +130,15 @@ Kindergarten vaccination figures come out once a year. We will add each new scho
 
 ::: spacer 5px
 
-These are the main limits. The full list is in [DATASETS.md](https://github.com/Data4ThePeople/DiseaseVaccinationMap/blob/main/DATASETS.md) and in the notes under the map.
+These are the main limits. The full list is in [DATASETS.md](https://github.com/Data4ThePeople/DiseaseVaccinationMap/blob/main/DATASETS.md) and under "Show notes and disclaimers" at the bottom of the map.
 
 - **Reported cases undercount real cases.** Reporting rules changed many times, and some states in the 1920s were not yet reporting every disease.
 - **What was counted changed.** Polio counts all reported polio before 1956 and paralytic polio only from 1956. Hepatitis A before 1974 includes hepatitis of unspecified type, and CDC changed its definition in 2019.
 - **The 2025 and 2026 counts are provisional.** Final counts are usually higher. 2026 is not over, so its rates run lower than a full year would, and a state near a line between two colors may show one step lower.
 - **States measure kindergarten vaccination in different ways.** Some count every school and some survey a sample, and some changed their method over these years. Compare a state with itself over time more than with another state.
+- **County figures have their own limits.** County vaccination figures were compiled by Johns Hopkins from state reports, and some states count grades other than kindergarten. They run through the 2024-25 school year, so the 2026 county map shows the latest year available. County measles counts start in 2025.
 - **Kindergarten figures start with the 2009-10 school year,** and no state reported one for 2010-11.
-- **Some printed numbers were hard to read.** A few numbers in the scanned reports could not be read with certainty. The notes under the map list them.
+- **Some printed numbers were hard to read.** A few numbers in the scanned reports could not be read with certainty. They are listed under "Show notes and disclaimers" at the bottom of the map.
 
 ## Reproduce it yourself
 

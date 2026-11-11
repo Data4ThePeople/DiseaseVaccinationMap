@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: disease-vaccination-viz (Visualization, author Liam Aranda-Michel)
-Step: 2b
+Step: 2c
 Since: 2026-11-11
 
 ## Steps
@@ -15,7 +15,7 @@ Since: 2026-11-11
 |---|---|---|---|
 | 1  | Exploration and analysis | 2026-11-11 | data current through November 7, 2026; two independent tie-outs |
 | 2a | Draft with brackets resolved | 2026-11-11 | Purpose by Liam, toned down with Eric |
-| 2b | Eric's edit, Claude's look-over | | |
+| 2b | Eric's edit, Claude's look-over | 2026-11-11 | 6 look-over items accepted |
 | 2c | Slice markup | | |
 | 2d | Hero 1680x1080 + alt text | | |
 | 2e | SEO | | |
@@ -317,3 +317,4 @@ None.
   August 28), toddler NIS (CDC's latest, April 2), Johns Hopkins county
   measles through November 6, Johns Hopkins county MMR (October 2 change was
   README only). Step 2a confirmed the same day. Now in 2b.
+- 2026-11-11: Step 2b confirmed (look-over items 1 to 6 applied). Now in 2c.
