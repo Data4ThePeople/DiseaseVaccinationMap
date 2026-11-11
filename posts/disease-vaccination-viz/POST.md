@@ -122,7 +122,9 @@ Every chart we publish should be something you can check, question and rebuild y
 
 ::: spacer 5px
 
-We plan to add each new year when CDC publishes its counts and kindergarten figures.
+We plan to update the map every week. CDC posts new case counts each week, and the Johns Hopkins measles tracker updates its county counts every Friday. Each week we plan to pull both, rebuild the map, and check every number against the source files before the update goes live. Until a year is over, its counts are provisional and will keep changing; the date each count runs through is shown on the map.
+
+Kindergarten vaccination figures come out once a year. We will add each new school year when CDC publishes it.
 
 ## Honest notes and limitations
 
