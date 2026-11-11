@@ -581,6 +581,14 @@ and percent surveyed on hover.
 
 ---
 
+**On the page (added November 11, 2026): reported cases each year.** A bar
+chart beside the map shows the chosen disease's reported cases each year,
+1920 to 2026, for the U.S. (the same sum of reporting states as the U.S. row)
+or, on a state's page, for that state. It uses a log scale so the 1940s and
+recent years both show; a year counted as zero gets a short mark on the floor
+and a year with no count gets no bar. Faded bars are incomplete or provisional,
+as on the map.
+
 **On the page (added October 13, 2026): measles vaccination against the 95% level, and ranked states.**
 The map shows one disease at a time (chosen with buttons; measles by
 default). Each state tile is split corner to corner (changed October 21, 2026).
@@ -728,6 +736,13 @@ article and gives no other terms; the page cites it. Eric decided on October
 it is used, rather than ask permission. Cite: Dong E, Saiyed S,
 Nearchou A, Okura Y, Gardner LM. Trends in County-Level MMR Vaccination
 Coverage in Children in the United States. JAMA. 2025.
+
+
+**After the file's last school year (added November 11, 2026).** The file ends
+with 2024-25. For a later year (2026) the state page colors the counties with
+the state's latest year in the file and says so in the caption ("the latest
+available, none yet for 2025-26") and in the hover. The measles circles stay on
+their own year. Earlier years show only their own figures.
 
 ---
 

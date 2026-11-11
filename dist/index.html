@@ -43,6 +43,11 @@ h1{font-family:var(--serif);font-weight:700;font-size:22px;line-height:1.15;marg
 .rank label{max-width:100%;min-width:0}
 .rank select{max-width:100%}   /* a long option name never widens the page on a phone */
 .covchart{margin:0 0 8px;grid-column:1/-1}
+.trend{margin:0 0 8px;grid-column:1/-1}
+.trend h3{font-size:12px;font-weight:700;margin:0}
+.trend svg{display:block;width:100%;overflow:visible}
+.trend rect[data-y]{cursor:pointer}
+.trend .read{font-size:11.5px;color:var(--ink2);line-height:1.3;margin:1px 0 0}
 .covchart h3{font-size:12px;font-weight:700;margin:0}
 .covchart svg{display:block;width:100%;overflow:visible}
 .covchart rect[data-y]{cursor:pointer}
@@ -83,7 +88,7 @@ h1{font-family:var(--serif);font-weight:700;font-size:22px;line-height:1.15;marg
 .mkey .sw i{width:9px;height:9px;border-radius:2px;display:inline-block}
 #tiles button{position:absolute;background:none;border:0;padding:0;margin:0;cursor:pointer;border-radius:4px}
 #tiles button:focus-visible{outline:2px solid var(--focus);outline-offset:-1px}
-.rail{flex:1 1 0;min-width:0;overflow:hidden}
+.rail{flex:1 1 0;min-width:0;overflow:hidden auto}   /* on short screens the column scrolls rather than cutting a chart off */
 .rail h2,.panel h2{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;margin:0;font-weight:700}
 .rail .who{font-family:var(--serif);font-size:15px;margin:0 0 3px;color:var(--ink)}
 .vchart{margin:0 0 5px}
@@ -254,9 +259,10 @@ details.nd[open]>summary{display:none}
           </div>
         </div>
       </div>
-      <aside class="rail" aria-label="Vaccination coverage">
-        <h2>Vaccination coverage</h2>
+      <aside class="rail" aria-label="Cases and vaccination">
+        <h2>Cases and vaccination</h2>
         <p class="who" id="railwho"></p>
+        <div id="railtrend"></div>
         <div class="keyline" id="railkey"></div>
         <div class="charts" id="railcharts"></div>
         <p class="note" id="railnote"></p>
@@ -275,6 +281,7 @@ details.nd[open]>summary{display:none}
         <canvas id="sfig" aria-hidden="true"></canvas>
         <div class="stats" id="sstats"></div>
         <p class="note" id="snote"></p>
+        <div id="strend"></div>
       </div>
     </div>
     <div class="sgrid2">
@@ -719,6 +726,38 @@ function covChart(width) {
     + `<p class="read">${c.n ? `${schoolYear(S.year)}: <b>${c.below} of ${c.n}</b> states below ${COV_LEVEL}%${lbNote(c.belowLb)}, ${c.low} below 90%${lbNote(c.lowLb)}.` : `No state reported a kindergarten figure for ${schoolYear(S.year)}.`}${doseMarkedBelow(S.year) ? ` CDC notes that ${doseMarkedBelow(S.year)} of the states below ${COV_LEVEL}% counted doses at any age or spacing, so their figures may be higher.` : ""} Red bars are states under 90%; amber bars, 90% to under 95%.${c.n && ys.some(v => !covCount(v).n) ? ` A dotted slot means no state reported that year (${ys.filter(v => !covCount(v).n).map(schoolYear).join(", ")}).` : ""} Year is the spring of the school year.</p></div>`;
 }
 
+/* ---------- reported cases each year, for the U.S. or one state ----------
+   A log scale, so the thousands of the 1940s and the dozens of recent years both show. A year with no count has no
+   bar; a year counted as zero has a short mark on the floor. Faded bars are incomplete or provisional. */
+function trendChart(st, width) {
+  const d = curDis(), us = st === "US", rows = [];
+  for (let y = D.y0; y <= D.y1; y++) {
+    const c = us ? usCell(d.k, y) : cell(d.k, st, y);
+    rows.push(c ? { y, n: c.cases, soft: us ? (c.incomplete || c.prov) : thin(c) } : { y, n: null });
+  }
+  const have = rows.filter(r => r.n != null);
+  const where = us ? "the U.S." : esc(ST[st].n), title = `${esc(d.name)} cases reported in ${where} each year`;
+  if (!have.length) return `<div class="trend"><h3>${title}</h3><p class="read">No counts of ${esc(lname(d))} for ${where}.</p></div>`;
+  const W = Math.max(200, Math.round(width)), H = 66, ml = 34, mr = 4, mt = 4, mb = 13;
+  const top = Math.max(1, Math.ceil(Math.log10(Math.max(...have.map(r => r.n)) || 1)));
+  const bw = (W - ml - mr) / rows.length, X = y => ml + (y - D.y0) * bw;
+  const Y = n => mt + (1 - Math.log10(n) / top) * (H - mt - mb);   // 1 case sits on the floor
+  let g = "";
+  for (let k = 0; k <= top; k += top > 4 ? 2 : 1) g += `<line x1="${ml}" x2="${W - mr}" y1="${Y(10 ** k)}" y2="${Y(10 ** k)}" stroke="#e3e2dd"/><text x="${ml - 4}" y="${Y(10 ** k) + 3}" text-anchor="end" font-size="9" fill="#8a8780">${short(10 ** k)}</text>`;
+  for (const y of [1920, 1940, 1960, 1980, 2000, 2020]) g += `<text x="${X(y) + bw / 2}" y="${H - 2}" text-anchor="middle" font-size="9" fill="#8a8780">${y}</text>`;
+  for (const r of rows) {
+    const cur = r.y === S.year, x = X(r.y);
+    if (r.n > 0) g += `<rect x="${x + 0.15}" y="${Y(Math.max(1, r.n))}" width="${Math.max(0.6, bw - 0.3)}" height="${Y(1) - Y(Math.max(1, r.n)) + 1}" fill="${cur ? "#121212" : "#a9a6a0"}" opacity="${r.soft && !cur ? 0.45 : 1}"/>`;
+    else if (r.n === 0) g += `<rect x="${x + 0.15}" y="${Y(1) - 0.5}" width="${Math.max(0.6, bw - 0.3)}" height="1.5" fill="${cur ? "#121212" : "#a9a6a0"}"/>`;
+    g += `<rect data-y="${r.y}" x="${x}" y="${mt}" width="${bw}" height="${H - mt - mb + 1}" fill="transparent"><title>${r.y}: ${r.n == null ? "no count" : fmt(r.n) + (r.n === 1 ? " case" : " cases")}${r.y === PARTIAL.year && r.n != null ? `, through ${PARTIAL.end}` : ""}</title></rect>`;
+  }
+  g += `<line x1="${X(S.year) + bw / 2}" x2="${X(S.year) + bw / 2}" y1="${mt}" y2="${H - mb}" stroke="#121212" stroke-width="0.75" stroke-dasharray="2 2"/>`;
+  const now = rows.find(r => r.y === S.year), peak = have.reduce((a, b) => b.n > a.n ? b : a);
+  const nowTxt = now.n == null ? `${S.year}: no count` : `${S.year}: <b>${fmt(now.n)}</b>${S.year === PARTIAL.year ? ` through ${PARTIAL.short}, provisional` : ""}`;
+  return `<div class="trend"><h3>${title}</h3><svg viewBox="0 0 ${W} ${H}" height="${H}" role="img" aria-label="${title}, ${D.y0} to ${D.y1}, on a log scale">${g}</svg>`
+    + `<p class="read">${nowTxt} · highest: ${fmt(peak.n)} in ${peak.y}. Log scale, so small counts still show. Faded bars are incomplete or provisional. Click a year to move there.</p></div>`;
+}
+
 /* ---------- national map ---------- */
 let GEO = null;
 function layoutMap() {
@@ -933,6 +972,7 @@ function renderRail() {
   // draw each chart at the width of its grid column: one column on the wide layout and on phones, two in between
   const rc = $("railcharts"), cols = $("viz").classList.contains("fit") ? 1 : getComputedStyle(rc).gridTemplateColumns.split(" ").filter(Boolean).length || 1;
   const w = (rc.clientWidth - 16 * (cols - 1)) / cols;
+  $("railtrend").innerHTML = trendChart(focus, $("railcharts").clientWidth);
   $("railcharts").innerHTML = (inCovSpan(S.year) ? covChart($("railcharts").clientWidth) : "") + (vaxKeys().map(vk => vaxChart(vk, focus, w)).join(""));
   $("railnote").hidden = inCovSpan(S.year);
   $("railnote").textContent = `State figures start in ${vaxFirstYear()}. Before that only national surveys exist, and they relied on parents' recall. A gap in a line means no measurement that year, or that the state moved between a sample of schools and a count of all kindergartners, so the two sides should not be compared. Triangles mark when a vaccine was licensed. Hover a state for its lines and the survey details.`;
@@ -1002,6 +1042,7 @@ function renderState() {
   drawFigures(ctx, figures(items), 0, 2, W, 44, 18, "top");
   $("sstats").innerHTML = stats.join("");
   $("snote").textContent = notes.join(" ");
+  $("strend").innerHTML = trendChart(st, $("strend").clientWidth);
   $("smap").innerHTML = D.shapes && D.shapes[st] ? stateSvg(st) : "";
   $("smap").style.display = D.shapes && D.shapes[st] ? "" : "none";
   $("kpih").textContent = `${s.n} in ${S.year}`;
@@ -1053,17 +1094,21 @@ function stateCovChart(st, width) {
 const inName = st => st === "DC" ? "the District of Columbia" : ST[st].n;   // "for the District of Columbia"
 /* the same three steps and colors as the national map */
 const MMR_BINS = COV_STEPS.map(b => [b[0], b[1], b[3]]);
-const CASE_DOT = "#6e0f1c";   // measles circles in a dark red, so they stand apart from the red step
+const CASE_DOT = "#6e0f1c";
+/* the last school year in the Johns Hopkins county file */
+const CMMR_LAST = (() => { let m = 0; for (const f in D.cmmr) for (const y in D.cmmr[f]) if (+y > m) m = +y; return m; })();   // measles circles in a dark red, so they stand apart from the red step
 const mmrBin = v => MMR_BINS.find(b => v >= b[0]);
 /* rounded once, half up, from the stored share: one decimal, or more where one decimal would put a county
    in the next step (94.96 shows as 94.96, not 95.0) */
 const cpct = v => { for (let d = 1; d < 4; d++) { const t = rnd(v, d); if (mmrBin(+t) === mmrBin(v)) return t; } return rnd(v, 4); };
 function stateSvg(st) {
-  const sh = D.shapes[st], sw = sh.box[2] / 260, y = S.year, meta = D.cmeta[st] || { n: 0 };
-  let paths = "", dots = "";
-  const any = Object.keys(sh.c).some(f => (D.cmmr[f] || {})[y] != null);
+  const sh = D.shapes[st], sw = sh.box[2] / 260, meta = D.cmeta[st] || { n: 0 };
+  let y = S.year, paths = "", dots = "";
+  // after the last school year Johns Hopkins has compiled, the counties show the state's latest year, labeled as such
+  const vy = countyVaxYear(st), latest = vy !== S.year;
+  const any = Object.keys(sh.c).some(f => (D.cmmr[f] || {})[vy] != null);
   for (const f in sh.c) {   // a county with no figure in a year the state has some is white with a gray outline
-    const v = (D.cmmr[f] || {})[y];
+    const v = (D.cmmr[f] || {})[vy];
     paths += v != null ? `<path data-f="${f}" d="${sh.c[f][1]}" fill="${mmrBin(v)[1]}" stroke="#fff" stroke-width="${sw * 0.6}"/>`
       : `<path data-f="${f}" d="${sh.c[f][1]}" fill="${any ? NOFIG : "#f5f5f3"}" stroke="${any ? NOFIG_LINE : "#fff"}" stroke-width="${sw * 0.6}"/>`;
   }
@@ -1075,7 +1120,7 @@ function stateSvg(st) {
   }
   const svg = `<svg viewBox="${sh.box.join(" ")}" role="img" aria-label="County map of ${esc(ST[st].n)}">${paths}<path d="${sh.d}" fill="none" stroke="#55534e" stroke-width="${sw}" stroke-linejoin="round" pointer-events="none"/>${dots}</svg>`;
   let cap;
-  if (any) cap = `<div class="mapkey"><b>${meta.age && meta.age !== "Kindergarten" ? `Children with 2 MMR doses (${esc(meta.age)}, as ${esc(inName(st))} reports it)` : "Kindergartners with 2 MMR doses"}, ${y - 1}-${String(y).slice(2)} school year, by county</b><div>${MMR_BINS.slice().reverse().map(b => `<span><i style="background:${b[1]}"></i>${b[2]}</span>`).join("")}<span><i style="background:${NOFIG};outline:1px solid ${NOFIG_LINE}"></i>no figure</span></div>${dots ? `<div><span><svg width="9" height="9" aria-hidden="true"><circle cx="4.5" cy="4.5" r="4" fill="${CASE_DOT}"/></svg> Circles: confirmed measles cases in ${y}${y === +D.cmeaslesThrough.slice(0, 4) ? ` through ${mdy(D.cmeaslesThrough)}` : ""}, sized by count</span></div>` : ""}</div>`;
+  if (any) cap = `<div class="mapkey"><b>${meta.age && meta.age !== "Kindergarten" ? `Children with 2 MMR doses (${esc(meta.age)}, as ${esc(inName(st))} reports it)` : "Kindergartners with 2 MMR doses"}, ${vy - 1}-${String(vy).slice(2)} school year, by county${latest ? `, the latest available (none yet for ${S.year - 1}-${String(S.year).slice(2)})` : ""}</b><div>${MMR_BINS.slice().reverse().map(b => `<span><i style="background:${b[1]}"></i>${b[2]}</span>`).join("")}<span><i style="background:${NOFIG};outline:1px solid ${NOFIG_LINE}"></i>no figure</span></div>${dots ? `<div><span><svg width="9" height="9" aria-hidden="true"><circle cx="4.5" cy="4.5" r="4" fill="${CASE_DOT}"/></svg> Circles: confirmed measles cases in ${y}${y === +D.cmeaslesThrough.slice(0, 4) ? ` through ${mdy(D.cmeaslesThrough)}` : ""}, sized by count</span></div>` : ""}</div>`;
   else if (meta.unmapped && meta.unmapped[y]) cap = `<p class="note">${esc(ST[st].n)} reported ${y - 1}-${String(y).slice(2)} by ${meta.unmapped[y][0]} planning regions, not by county, so the map cannot draw them. The regions ranged from ${meta.unmapped[y][1].toFixed(1)}% to ${meta.unmapped[y][2].toFixed(1)}%.</p>`;
   else if (!meta.n) cap = `<p class="note">No county vaccination figures are available for ${esc(inName(st))}.</p>`;
   else {   // the years the map can actually draw, taken from the county figures themselves
@@ -1088,12 +1133,17 @@ function stateSvg(st) {
   const ckey = dots ? `<div class="mapkey"><span><svg width="9" height="9" aria-hidden="true"><circle cx="4.5" cy="4.5" r="4" fill="${CASE_DOT}"/></svg> Circles: confirmed measles cases in ${y}${y === +D.cmeaslesThrough.slice(0, 4) ? ` through ${mdy(D.cmeaslesThrough)}` : ""}, sized by count</span></div>` : "";
   return svg + cap + (any ? "" : ckey);
 }
+function countyVaxYear(st) {
+  if (S.year <= CMMR_LAST) return S.year;
+  const sh = D.shapes[st], cys = Object.keys(sh.c).flatMap(f => Object.keys(D.cmmr[f] || {}).map(Number));
+  return cys.length ? Math.max(...cys) : S.year;
+}
 function countyTip(f, e) {
   const st = S.sel, sh = D.shapes[st], y = S.year, tip = $("tip");
   if (!f) { tip.style.display = "none"; return; }
-  const v = (D.cmmr[f] || {})[y], n = (D.cmeasles[f] || {})[y], meta = D.cmeta[st] || {};
+  const vy = countyVaxYear(st), v = (D.cmmr[f] || {})[vy], n = (D.cmeasles[f] || {})[y], meta = D.cmeta[st] || {};
   tip.innerHTML = `<h4>${esc(sh.c[f][0])}, ${esc(ST[st].n)}</h4>`
-    + (v != null ? `<div>2 MMR doses, ${y - 1}-${String(y).slice(2)}: <b>${cpct(v)}%</b></div><div class="q">${esc(meta.age || "")}${meta.origin ? ", " + esc(meta.origin.toLowerCase()) : ""}. Compiled by Johns Hopkins from state reports.</div>` : `<div style="color:#8a8780">No county vaccination figure for ${y}.</div>`)
+    + (v != null ? `<div>2 MMR doses, ${vy - 1}-${String(vy).slice(2)}${vy !== y ? " (latest available)" : ""}: <b>${cpct(v)}%</b></div><div class="q">${esc(meta.age || "")}${meta.origin ? ", " + esc(meta.origin.toLowerCase()) : ""}. Compiled by Johns Hopkins from state reports.</div>` : `<div style="color:#8a8780">No county vaccination figure for ${y}.</div>`)
     + (n ? `<div class="q">Confirmed measles cases reported in ${y}${y === +D.cmeaslesThrough.slice(0, 4) ? ` through ${mdy(D.cmeaslesThrough)}` : ""}: <b>${fmt(n)}</b></div>` : "");
   tip.style.display = "block"; placeTip(e.clientX, e.clientY);
 }
@@ -1270,7 +1320,7 @@ function init() {
     const again = document.querySelector(`#tblwrap button[data-sort="${k || ""}"]`); if (again) again.focus({ preventScroll: true });
   });
   if (new URLSearchParams(location.hash.slice(1)).get("tbl")) { $("tbl").open = true; S.tblSort = new URLSearchParams(location.hash.slice(1)).get("tbl"); }
-  for (const id of ["railcharts", "scov"]) $(id).addEventListener("click", e => { const y = +(e.target.dataset && e.target.dataset.y); if (y) { setPlaying(false); setYear(y); } });
+  for (const id of ["railcharts", "railtrend", "scov", "strend"]) $(id).addEventListener("click", e => { const y = +(e.target.dataset && e.target.dataset.y); if (y) { setPlaying(false); setYear(y); } });
   $("card").addEventListener("click", e => {
     const step = +(e.target.dataset && e.target.dataset.step); if (!step) return;
     const n = msInScope().filter(m => msYear(m) === S.year).length;
