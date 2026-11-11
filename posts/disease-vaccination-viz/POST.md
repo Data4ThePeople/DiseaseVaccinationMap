@@ -4,6 +4,7 @@ subtitle: A free, interactive map of reported cases of measles, whooping cough, 
 slug: disease-vaccination-viz
 date: 2026-11-12
 updated: 2026-11-12
+prismic_id: avUARxEAAC4AX6y7
 section: Visualization
 author: Liam Aranda-Michel
 author_url: https://www.data4thepeople.com/authors/liam-aranda-michel
