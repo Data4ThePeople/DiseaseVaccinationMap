@@ -26,6 +26,18 @@ Since: 2026-11-11
 
 None.
 
+## To do
+
+- **Weekly automated data refresh** (Eric, November 11, 2026). Fetch every
+  updating source each week, rebuild, run the tie-out script, and push only if
+  it passes: CDC NNDSS weekly tables (`x9gk-5huc`, updated weekly), Johns
+  Hopkins measles tracker (updated Fridays), CDC kindergarten coverage
+  (`ijqb-a7ye`, yearly) and NIS-Child (`fhky-rtsk`, yearly), Johns Hopkins
+  county MMR (irregular). The "through" dates on the page come from the data,
+  so they move on their own. Open questions: where it runs (a GitHub Action in
+  the repo is the likely fit) and whether a new CDC year-end needs a person to
+  look before it goes live.
+
 ## Log
 
 - 2026-10-01 Step 1 opened. Topic: infectious disease incidence by state as far
