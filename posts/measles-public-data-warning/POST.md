@@ -54,7 +54,7 @@ This assumes of course that these clinicians have the numbers in a form they can
 
 Such tools have limits.  Whether and when the virus reaches a community is partly chance.  State-level data hide local variation, and reported coverage can lag behind reality.  Nor will data alone persuade a parent who has decided vaccines are dangerous; in [one randomized trial](https://doi.org/10.1542/peds.2013-2365), corrective messages about vaccine safety actually reduced vaccination intentions among the most hesitant parents. Yet open data can equip the people those parents trust, namely pediatricians, school nurses, local journalists.
 
-Open data can also change the timing of public attention. If a small team could assemble this picture in days, health departments with far greater resources could track these signals routinely, targeting catch-up vaccination where coverage is lowest before an outbreak rather than after.  Reporters could tell the story of a community’s growing vulnerability while there is still time to change its ending.
+Open data can also change the timing of public attention. If a small team with no funding could assemble this picture in a few weeks, health departments with far greater resources could track these signals routinely, targeting catch-up vaccination where coverage is lowest before an outbreak rather than after.  Reporters could tell the story of a community’s growing vulnerability while there is still time to change its ending.
 
 Measles is the canary: the most contagious of the vaccine-preventable diseases, and the first to return when coverage slips. Whooping cough and mumps tend to follow, and the map tracks them too.
 
