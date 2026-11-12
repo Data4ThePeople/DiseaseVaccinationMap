@@ -43,6 +43,7 @@ None.
   look before it goes live.
 
 ## Log
+- 2026-11-12: 2f confirmed for both posts. 2g in progress: one email for both, drafted in posts/disease-vaccination-viz/EMAIL.md.
 - 2026-11-12: map trims empty space under itself in embeds; iframe 1440 -> 1380 (cache v=20261112a); 20px spacer after the Read this first blurb; Liam's draft re-pushed.
 - 2026-11-12: PAHO check, no ruling yet (commission meets Nov 10-13). Mike's PAHO sentence now "is meeting"; draft re-pushed.
 
