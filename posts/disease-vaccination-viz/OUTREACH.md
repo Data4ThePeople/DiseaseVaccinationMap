@@ -43,9 +43,23 @@ News hook: PAHO's commission met November 10 to 13; a decision on U.S. measles e
 
 ## Confirmed
 
-(Eric's numbers go here.)
+Eric, November 12, 2026: 1, 2, 3, 5, 10, 13, 14, 15, 16, 17, plus 4, 6, 11, 12 (no public email; drafts saved with no recipient).
 
 ## Drafts
 
 | # | Recipient | Subject | Draft saved |
 |---|---|---|---|
+| 1 | Aubrey Whelan, awhelan@inquirer.com | Pennsylvania measles, by county, 1920 to 2026 | 2026-11-12 |
+| 2 | Hope Kirwan, hope.kirwan@wpr.org | Wisconsin measles and vaccination, county by county | 2026-11-12 |
+| 3 | Sean P. Means, spmeans@sltrib.com | Utah's measles outbreak was in the data a decade early | 2026-11-12 |
+| 4 | Max Roth (no recipient; FOX 13 tips) | Utah's measles rate and a decade of declining vaccination | 2026-11-12 |
+| 5 | Kevin Richert, krichert@idahoednews.org | Idaho kindergarten vaccination, beside a century of measles | 2026-11-12 |
+| 6 | Emily Russell (no recipient; NCPR submissions) | New York measles, 1920 to 2026, county by county | 2026-11-12 |
+| 10 | Amy Maxmen, amaxmen@kff.org | Utah measles and the public health communication gap | 2026-11-12 |
+| 11 | Rob Stein (no recipient; NPR contact form) | Kindergarten vaccination, state by state, since 2009-10 | 2026-11-12 |
+| 12 | Annika Kim Constantino (no recipient; X @annikakimc) | State measles data ahead of the PAHO decision | 2026-11-12 |
+| 13 | Kia Kjensrud, kkjensrud@wiaap.org | A free map of Wisconsin measles and vaccination | 2026-11-12 |
+| 14 | Pennsylvania Chapter, AAP, info@paaap.org | A free map of Pennsylvania measles and vaccination | 2026-11-12 |
+| 15 | Karen Sharpnack, info@idahoimmune.org | For Karen Sharpnack: a free map of Idaho vaccination | 2026-11-12 |
+| 16 | Jen McNally (NASN media), jmcnally@nasn.org | A free measles and vaccination map for school nurses | 2026-11-12 |
+| 17 | Kim Boller, hello@grandparentsforvaccines.com (confirm address) | For Kim Boller: a century of measles, state by state | 2026-11-12 |

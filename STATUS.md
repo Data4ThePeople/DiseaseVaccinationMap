@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: disease-vaccination-viz and measles-public-data-warning (published together)
-Step: 4a
+Step: 4b
 Since: 2026-11-12
 
 ## Steps
@@ -22,8 +22,8 @@ Since: 2026-11-12
 | 2f | Pushed to Prismic (draft) | 2026-11-12 | both posts; Liam avUARxEAAC4AX6y7, Mike avUTphEAACcAX8fh |
 | 2g | Mailchimp teaser | 2026-11-12 | one email for both, in Eric's voice |
 | 3  | Social posts | 2026-11-12 | X, Bluesky, LinkedIn for each post; two GIFs |
-| 4a | Outreach list | | |
-| 4b | Outreach drafts in Gmail | | |
+| 4a | Outreach list | 2026-11-12 | 22 found, 14 confirmed |
+| 4b | Outreach drafts in Gmail | | 14 drafts saved, not sent |
 
 ## Stale
 
@@ -46,6 +46,7 @@ None.
   look before it goes live.
 
 ## Log
+- 2026-11-12: 4a confirmed (14 of 22). 4b: 14 tailored Gmail drafts saved, none sent; 4 have no recipient.
 - 2026-11-12: Step 3 (social) confirmed. Process now has Step 3 and Step 4; Step 4a (outreach list) opened.
 - 2026-11-12: 2g confirmed (one email). Social drafted for both posts: X, Bluesky, LinkedIn; GIFs map-measles-2010-2026.gif (live map) and six-states-one-at-a-time.gif.
 - 2026-11-12: 2g email in Eric's voice; all 7 additions accepted.
