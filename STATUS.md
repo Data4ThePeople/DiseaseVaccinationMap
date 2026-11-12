@@ -28,6 +28,8 @@ None.
 
 ## To do
 
+- **v2: case color levels by disease** (Eric, November 11, 2026). The measles levels (above 1, 0.1 to 1, under 0.1 per 100,000) are used for every disease for now; whooping cough shows red in nearly every state. Set levels per disease, with Mike Kinch.
+
 - **Second post: measles-public-data-warning** (Michael S. Kinch's essay, Data 4 Thought). Step 2a confirmed 2026-11-11 (accepted claim edits, "a small team with no funding… in a few weeks", trust sentence cut to doctors, two typos fixed); now in 2b. charts 01 to 03 from scripts/14_kinch_charts.py; social GIFs in posts/measles-public-data-warning/social/.
 - **Cross-links** between disease-vaccination-viz and Mike Kinch's editorial, both ways, once his slug is set (Eric, November 11, 2026). Reopens 2b/2f for this post.
 
