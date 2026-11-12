@@ -28,7 +28,7 @@ None.
 
 ## To do
 
-- **Second post: measles-public-data-warning** (Michael S. Kinch's essay, Data 4 Thought). Step 2a drafted 2026-11-11: Mike's text verbatim with the accepted claim edits; charts 01 to 03 from scripts/14_kinch_charts.py; social GIFs in posts/measles-public-data-warning/social/.
+- **Second post: measles-public-data-warning** (Michael S. Kinch's essay, Data 4 Thought). Step 2a confirmed 2026-11-11 (accepted claim edits, "a small team with no funding… in a few weeks", trust sentence cut to doctors, two typos fixed); now in 2b. charts 01 to 03 from scripts/14_kinch_charts.py; social GIFs in posts/measles-public-data-warning/social/.
 - **Cross-links** between disease-vaccination-viz and Mike Kinch's editorial, both ways, once his slug is set (Eric, November 11, 2026). Reopens 2b/2f for this post.
 
 - **Weekly automated data refresh** (Eric, November 11, 2026). Fetch every
@@ -324,3 +324,4 @@ None.
 - 2026-11-11: Step 2c confirmed (embed height 1440px, phones scroll inside the frame). Now in 2d: hero from a simplified 2026 national map.
 - 2026-11-11: Step 2d confirmed. Now in 2e.
 - 2026-11-11: Step 2e confirmed (8 items accepted; cross-links deferred to after Mike's post). Now in 2f.
+- 2026-11-11: measles-public-data-warning step 2a confirmed. Now in 2b. disease-vaccination-viz waits at 2f for the cross-links.
