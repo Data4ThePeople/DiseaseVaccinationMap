@@ -48,9 +48,9 @@ Nothing on the map will surprise an epidemiologist.   The heavy toll of the earl
 
 *Reported measles cases in the U.S. each year, 1920 to 2026, on a log scale. The measles vaccine was licensed in 1963. Sources: U.S. Public Health Service and CDC disease tables, Project Tycho; 2026 runs through November 7 and is provisional.*
 
-That kind of access matters most locally, where trust is highest.  Americans [consistently report more trust](https://www.kff.org/public-opinion/kff-polling-on-health-information-and-trust/) in their own doctors and local news outlets than in national institutions.  Physicians are best placed to communicates messages of an abstract threshold nature. 
+That kind of access matters most locally, where trust is highest.  Americans [consistently report more trust](https://www.kff.org/public-opinion/kff-polling-on-health-information-and-trust/) in their own doctors than in national institutions.  Physicians are best placed to communicate messages of an abstract threshold nature. 
 
-This assumes of course that these clinicians have the numbers in a form they can use. That is a goal of our present project, we provide the data, its implications and allow a skeptical user to question how we came to those outcomes. 
+This assumes of course that these clinicians have the numbers in a form they can use. That is a goal of our present project: we provide the data and its implications, and allow a skeptical user to question how we came to those outcomes. 
 
 Such tools have limits.  Whether and when the virus reaches a community is partly chance.  State-level data hide local variation, and reported coverage can lag behind reality.  Nor will data alone persuade a parent who has decided vaccines are dangerous; in [one randomized trial](https://doi.org/10.1542/peds.2013-2365), corrective messages about vaccine safety actually reduced vaccination intentions among the most hesitant parents. Yet open data can equip the people those parents trust, namely pediatricians, school nurses, local journalists.
 
