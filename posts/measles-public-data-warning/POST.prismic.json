@@ -3,6 +3,9 @@
   "page_subtitle": "Utah\u2019s outbreak was foreshadowed in public data for a decade. The problem wasn\u2019t a lack of evidence; it was who could see it.",
   "published_date": "2026-11-12",
   "updated_date": "2026-11-12",
+  "meta_title": "Utah's Measles Outbreak Was in the Data a Decade Early",
+  "meta_description": "Utah fell below 95% kindergarten measles vaccination in 2015. A decade later it has the highest measles rate in the U.S. Why public health missed the warning.",
+  "meta_keywords": "Utah measles outbreak 2026, Utah kindergarten vaccination rate, why are measles cases rising, US measles elimination status, measles vaccination rate warning signs, vaccine exemption rates by state, measles cases by county 2026, public health data and vaccine hesitancy",
   "make_this_main_post": false,
   "slices": [
     {
@@ -310,5 +313,5 @@
       }
     }
   ],
-  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"Public Health Is Losing a Measles Argument It Should Be Winning\",\n  \"description\": \"\",\n  \"datePublished\": \"2026-11-12T07:00:00-04:00\",\n  \"dateModified\": \"2026-11-12T07:00:00-04:00\",\n  \"articleSection\": \"Data 4 Thought\",\n  \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n  \"inLanguage\": \"en-US\",\n  \"isAccessibleForFree\": true,\n  \"author\": {\n    \"@type\": \"Person\",\n    \"name\": \"Michael S. Kinch\",\n    \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n  },\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Data 4 The People\",\n    \"url\": \"https://data4thepeople.com\"\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.data4thepeople.com/p/measles-public-data-warning\"\n  }\n}"
+  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"Public Health Is Losing a Measles Argument It Should Be Winning\",\n  \"description\": \"Utah fell below 95% kindergarten measles vaccination in 2015. A decade later it has the highest measles rate in the U.S. Why public health missed the warning.\",\n  \"datePublished\": \"2026-11-12T07:00:00-04:00\",\n  \"dateModified\": \"2026-11-12T07:00:00-04:00\",\n  \"articleSection\": \"Data 4 Thought\",\n  \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n  \"inLanguage\": \"en-US\",\n  \"isAccessibleForFree\": true,\n  \"keywords\": [\n    \"Utah measles outbreak 2026\",\n    \"Utah kindergarten vaccination rate\",\n    \"why are measles cases rising\",\n    \"US measles elimination status\",\n    \"measles vaccination rate warning signs\",\n    \"vaccine exemption rates by state\",\n    \"measles cases by county 2026\",\n    \"public health data and vaccine hesitancy\"\n  ],\n  \"author\": {\n    \"@type\": \"Person\",\n    \"name\": \"Michael S. Kinch\",\n    \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n  },\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Data 4 The People\",\n    \"url\": \"https://data4thepeople.com\"\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.data4thepeople.com/p/measles-public-data-warning\"\n  }\n}"
 }
