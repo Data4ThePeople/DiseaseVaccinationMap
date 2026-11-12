@@ -118,17 +118,17 @@
       "items": [],
       "primary": {
         "image": {
-          "alt": "Twelve county maps in pairs, 2025 and 2026, for Pennsylvania, South Carolina, Wisconsin, Ohio, New York and Kentucky. Counties are lightly shaded by the share of kindergartners with two MMR doses. Dark red circles sized by measles cases per county grow sharply from 2025 to 2026: Pennsylvania 16 to 1,489, South Carolina 333 to 671, Wisconsin 36 to 466, Ohio 45 to 310, New York 48 to 218, Kentucky 14 to 206. Data 4 The People, from Johns Hopkins University.",
+          "alt": "Twelve county maps in pairs, 2025 and 2026, for Pennsylvania, South Carolina, Utah, Wisconsin, Ohio and New York. Counties are lightly shaded by the share of kindergartners with two MMR doses. Dark red circles sized by measles cases per county grow sharply from 2025 to 2026: Pennsylvania 16 to 1,489, South Carolina 333 to 671, Utah 197 to 528, Wisconsin 36 to 466, Ohio 45 to 310, New York 48 to 218. Data 4 The People, from Johns Hopkins University.",
           "copyright": null
         },
         "source_text": [
           {
             "type": "paragraph",
-            "text": "Measles cases by county in the six states with the most 2026 cases that report by county, 2025 and 2026. Counties are shaded by their latest kindergarten MMR rate, 2024-25. Source: Johns Hopkins University; 2026 runs through November 6.",
+            "text": "Measles cases by county in the six states with the most 2026 cases, 2025 and 2026. Counties are shaded by their latest kindergarten MMR rate, 2024-25. Utah reports most cases by health district, so each district is one circle. Source: Johns Hopkins University; 2026 runs through November 6.",
             "spans": [
               {
                 "start": 0,
-                "end": 236,
+                "end": 290,
                 "type": "em"
               }
             ],

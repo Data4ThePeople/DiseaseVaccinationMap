@@ -147,10 +147,17 @@ cm["st_name"] = cm.location_name.str.split(", ").str[-1]
 NAME_TO_ST = {s["n"]: k for k, s in STATES.items()}
 cm["st"] = cm.st_name.map(NAME_TO_ST)
 drawn = cm[~cm.fips.str.startswith("000")]
-# a state qualifies when it places at least 90% of its cases on a county (Utah and Virginia report most by health district)
-_tot = cm[cm.year == Y1].groupby("st").cases.sum()
-_drawn = drawn[drawn.year == Y1].groupby("st").cases.sum().reindex(_tot.index).fillna(0)
-SIX = _tot[_drawn / _tot >= 0.9].sort_values(ascending=False).head(6).index.tolist()
+# Utah reports most cases by local health district, each a group of whole counties; a district's cases are drawn as
+# one circle at the middle of its counties' centers (Utah's local health departments)
+DISTRICTS = {
+    "Bear River, Utah": ["49003", "49005", "49033"],                                   # Box Elder, Cache, Rich
+    "Central, Utah": ["49023", "49027", "49031", "49039", "49041", "49055"],           # Juab, Millard, Piute, Sanpete, Sevier, Wayne
+    "Southeast Health District, Utah": ["49007", "49015", "49019"],                    # Carbon, Emery, Grand
+    "Southwest Health District, Utah": ["49001", "49017", "49021", "49025", "49053"],  # Beaver, Garfield, Iron, Kane, Washington
+    "Tricounty, Utah": ["49009", "49013", "49047"],                                    # Daggett, Duchesne, Uintah
+}
+# the six states with the most cases in the last year, counted from every row (county, district or unknown)
+SIX = cm[cm.year == Y1].groupby("st").cases.sum().sort_values(ascending=False).head(6).index.tolist()
 YEAR_A, YEAR_B = Y1 - 1, Y1
 PX_R = lambda n: 2.5 + math.sqrt(n) * 1.7   # circle radius in pixels, the same scale on every map
 
@@ -169,17 +176,21 @@ def county_map(st, year, w, h):
         v = (D["cmmr"].get(f) or {}).get(str(vyear)) if vyear else None
         out += f'<path d="{d}" fill="{county_fill(v)}" stroke="{BG}" stroke-width="{0.6 / scale}"/>'
     out += f'<path d="{sh["d"]}" fill="none" stroke="{INK2}" stroke-width="{1.2 / scale}"/>'
-    rows = drawn[(drawn.st == st) & (drawn.year == year)].sort_values("cases", ascending=False)
+    rows = cm[(cm.st == st) & (cm.year == year)].sort_values("cases", ascending=False)
     for r in rows.itertuples():
-        c = sh["cc"].get(r.fips)
+        if r.location_name in DISTRICTS:   # a district: the middle of its counties' centers
+            pts = [sh["cc"][f] for f in DISTRICTS[r.location_name] if f in sh["cc"]]
+            c = [sum(q[0] for q in pts) / len(pts), sum(q[1] for q in pts) / len(pts)]
+        else:
+            c = sh["cc"].get(r.fips)
         if c:
             out += f'<circle cx="{c[0]}" cy="{c[1]}" r="{PX_R(r.cases) / scale}" fill="{DOT}" fill-opacity=".85" stroke="#ffffff" stroke-width="{1 / scale}"/>'
     return out + "</svg>", int(cm[(cm.st == st) & (cm.year == year)].cases.sum()), vyear
 
 
 def legend_circles(x, y):
-    out = f'<text x="{x}" y="{y}" font-size="20" fill="{INK2}">Measles cases in a county:</text>'
-    cx = x + 270
+    out = f'<text x="{x}" y="{y}" font-size="20" fill="{INK2}">Measles cases in a county or district:</text>'
+    cx = x + 340
     for n in (10, 100, 500):
         r = PX_R(n)
         out += f'<circle cx="{cx + r}" cy="{y - 7}" r="{r}" fill="{DOT}" fill-opacity=".85" stroke="#fff" stroke-width="1"/><text x="{cx + 2 * r + 8}" y="{y}" font-size="20" fill="{INK2}">{n}</text>'
@@ -193,7 +204,7 @@ def chart_six():
     mw, mh = 330, 240
     g = svg_open(W, H)
     g += title(80, 88, f"Measles cases by county, {YEAR_A} and {YEAR_B}",
-               f"The six states with the most {YEAR_B} cases that report by county. {YEAR_B} runs through {CM_TXT}.")
+               f"The six states with the most {YEAR_B} cases. {YEAR_B} runs through {CM_TXT}.")
     g += legend_circles(80, 190)
     for i, st in enumerate(SIX):
         col, row = i % 2, i // 2
@@ -206,7 +217,7 @@ def chart_six():
             mx = x0 + j * (mw + 40)
             g += f'<g transform="translate({mx},{y0 + 40})">{m}</g>'
             g += f'<text x="{mx}" y="{y0 + 40 + mh + 40}" font-size="20" fill="{INK2}"><tspan font-weight="700" fill="{INK}">{yy}:</tspan> {fmt(n)} {"case" if n == 1 else "cases"}</text>'
-    g += foot(80, H - 24, f"Counties are colored by the latest county figures, 2024-25. Utah and Virginia report most cases by health district, not county, so they are not shown. Source: Johns Hopkins University. {CREDIT}", W)
+    g += foot(80, H - 24, f"Counties are colored by the latest county figures, 2024-25. Utah reports most cases by health district, so its districts are drawn as one circle each, at the middle of their counties. Source: Johns Hopkins University. {CREDIT}", W)
     g += "</svg>"
     shoot(g, W, H, IMG / "02-six-states-2025-2026.png")
 
@@ -220,7 +231,7 @@ def gif_six():
         g = svg_open(W, H)
         g += f'<text x="60" y="70" font-size="34" font-weight="700" fill="{INK}" font-family="{SERIF}">Measles cases by county</text>'
         g += f'<text x="{W - 60}" y="76" font-size="64" font-weight="700" fill="{INK}" text-anchor="end">{yy}</text>'
-        g += f'<text x="60" y="108" font-size="20" fill="{INK2}">The six states with the most {YEAR_B} cases that report by county{f", through {CM_TXT}" if yy == YEAR_B else ""}</text>'
+        g += f'<text x="60" y="108" font-size="20" fill="{INK2}">The six states with the most {YEAR_B} cases{f", through {CM_TXT}" if yy == YEAR_B else ""}. Utah’s cases are drawn by health district.</text>'
         for i, st in enumerate(SIX):
             col, row = i % 3, i // 3
             x0, y0 = 60 + col * 380, 150 + row * 380
