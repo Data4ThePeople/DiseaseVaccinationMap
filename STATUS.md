@@ -330,3 +330,4 @@ None.
 - 2026-11-11: measles-public-data-warning step 2c confirmed (Kentucky swapped for Utah in chart B). Now in 2d: hero is chart A at 1680x1080.
 - 2026-11-11: measles-public-data-warning step 2d confirmed (hero = Utah chart, removed from the body) and step 2e confirmed (8 keywords, article schema with Mike's author page, closing line on the charts' source). Now in 2f.
 - 2026-11-11: Cross-links done: Mike's essay links "free, open map" to disease-vaccination-viz and Liam's author page; Liam's post links Mike's essay and author page after the Read this first box. disease-vaccination-viz draft re-pushed (same document).
+- 2026-11-11: Both posts set to publish November 12, 2026, 6:30 a.m. Eastern; both drafts re-pushed. Tomorrow: Eric sets author and tags in Prismic; check PAHO for a ruling (Mike's "decision is expected within days" sentence); confirm 2f for both; 2g Mailchimp.

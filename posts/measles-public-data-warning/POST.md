@@ -3,6 +3,7 @@ title: "Public Health Is Losing a Measles Argument It Should Be Winning"
 subtitle: "Utah’s outbreak was foreshadowed in public data for a decade. The problem wasn’t a lack of evidence; it was who could see it."
 slug: measles-public-data-warning
 date: 2026-11-12
+time: 06:30:00-05:00
 updated: 2026-11-12
 prismic_id: avUTphEAACcAX8fh
 section: Data 4 Thought

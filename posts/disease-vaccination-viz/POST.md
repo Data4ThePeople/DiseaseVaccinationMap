@@ -3,6 +3,7 @@ title: "Infectious Disease and Vaccination, State by State: An Interactive Map, 
 subtitle: A free, interactive map of reported cases of measles, whooping cough, hepatitis A, mumps and polio in every state and DC, from as early as 1920 through 2026, with kindergarten vaccination rates from the 2009-10 school year on.
 slug: disease-vaccination-viz
 date: 2026-11-12
+time: 06:30:00-05:00
 updated: 2026-11-12
 prismic_id: avUARxEAAC4AX6y7
 section: Visualization
