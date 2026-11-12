@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: disease-vaccination-viz and measles-public-data-warning (published together)
-Step: 4b
+Step: complete (both posts)
 Since: 2026-11-12
 
 ## Steps
@@ -23,7 +23,7 @@ Since: 2026-11-12
 | 2g | Mailchimp teaser | 2026-11-12 | one email for both, in Eric's voice |
 | 3  | Social posts | 2026-11-12 | X, Bluesky, LinkedIn for each post; two GIFs |
 | 4a | Outreach list | 2026-11-12 | 22 found, 14 confirmed |
-| 4b | Outreach drafts in Gmail | | 14 drafts saved, not sent |
+| 4b | Outreach emails | 2026-11-12 | 14 tailored drafts; Eric sent all 14 |
 
 ## Stale
 
@@ -33,7 +33,9 @@ None.
 
 - **v2: case color levels by disease** (Eric, November 11, 2026). The measles levels (above 1, 0.1 to 1, under 0.1 per 100,000) are used for every disease for now; whooping cough shows red in nearly every state. Set levels per disease, with Mike Kinch.
 
-- **Second post: measles-public-data-warning** (Michael S. Kinch's essay, Data 4 Thought). Step 2a confirmed 2026-11-11 (accepted claim edits, "a small team with no funding… in a few weeks", trust sentence cut to doctors, two typos fixed); now in 2b. charts 01 to 03 from scripts/14_kinch_charts.py; social GIFs in posts/measles-public-data-warning/social/.
+- **Iowa 2026 measles source gap** (found November 12, 2026). CDC weekly tables show 0 Iowa measles cases for 2026; the Johns Hopkins county tracker shows 50. The state total and the county circles disagree on Iowa's page. Find out why.
+
+- **PAHO decision on U.S. measles elimination** (expected the week of November 16, 2026). When it comes, update the PAHO sentence in Mike's essay.
 
 - **Weekly automated data refresh** (Eric, November 11, 2026). Fetch every
   updating source each week, rebuild, run the tie-out script, and push only if
@@ -46,6 +48,7 @@ None.
   look before it goes live.
 
 ## Log
+- 2026-11-12: Step 4 confirmed; Eric sent all 14 outreach emails. Both posts complete.
 - 2026-11-12: 4a confirmed (14 of 22). 4b: 14 tailored Gmail drafts saved, none sent; 4 have no recipient.
 - 2026-11-12: Step 3 (social) confirmed. Process now has Step 3 and Step 4; Step 4a (outreach list) opened.
 - 2026-11-12: 2g confirmed (one email). Social drafted for both posts: X, Bluesky, LinkedIn; GIFs map-measles-2010-2026.gif (live map) and six-states-one-at-a-time.gif.

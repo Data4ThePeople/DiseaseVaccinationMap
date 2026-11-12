@@ -63,3 +63,7 @@ Eric, November 12, 2026: 1, 2, 3, 5, 10, 13, 14, 15, 16, 17, plus 4, 6, 11, 12 (
 | 15 | Karen Sharpnack, info@idahoimmune.org | For Karen Sharpnack: a free map of Idaho vaccination | 2026-11-12 |
 | 16 | Jen McNally (NASN media), jmcnally@nasn.org | A free measles and vaccination map for school nurses | 2026-11-12 |
 | 17 | Kim Boller, hello@grandparentsforvaccines.com (confirm address) | For Kim Boller: a century of measles, state by state | 2026-11-12 |
+
+## Sent
+
+Eric sent all 14 on November 12, 2026.
