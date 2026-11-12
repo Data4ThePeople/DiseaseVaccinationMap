@@ -5,9 +5,9 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 
 ## Current
 
-Post: disease-vaccination-viz (Visualization, author Liam Aranda-Michel)
-Step: 2f
-Since: 2026-11-11
+Post: disease-vaccination-viz and measles-public-data-warning (published together)
+Step: 4a
+Since: 2026-11-12
 
 ## Steps
 
@@ -19,8 +19,11 @@ Since: 2026-11-11
 | 2c | Slice markup | 2026-11-11 | 91 blocks; embed 1440px, ?v=20261111c |
 | 2d | Hero 1680x1080 + alt text | 2026-11-11 | simplified 2026 measles map, scripts/13_hero.py |
 | 2e | SEO | 2026-11-11 | dataset schema, 8 keywords, 12 FAQ entries |
-| 2f | Pushed to Prismic (draft) | | |
-| 2g | Mailchimp teaser | | |
+| 2f | Pushed to Prismic (draft) | 2026-11-12 | both posts; Liam avUARxEAAC4AX6y7, Mike avUTphEAACcAX8fh |
+| 2g | Mailchimp teaser | 2026-11-12 | one email for both, in Eric's voice |
+| 3  | Social posts | 2026-11-12 | X, Bluesky, LinkedIn for each post; two GIFs |
+| 4a | Outreach list | | |
+| 4b | Outreach drafts in Gmail | | |
 
 ## Stale
 
@@ -43,6 +46,7 @@ None.
   look before it goes live.
 
 ## Log
+- 2026-11-12: Step 3 (social) confirmed. Process now has Step 3 and Step 4; Step 4a (outreach list) opened.
 - 2026-11-12: 2g confirmed (one email). Social drafted for both posts: X, Bluesky, LinkedIn; GIFs map-measles-2010-2026.gif (live map) and six-states-one-at-a-time.gif.
 - 2026-11-12: 2g email in Eric's voice; all 7 additions accepted.
 - 2026-11-12: 2f confirmed for both posts. 2g in progress: one email for both, drafted in posts/disease-vaccination-viz/EMAIL.md.
