@@ -20,6 +20,7 @@ html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans)
 /* the whole tool sits in one screen: header, controls, player, map or state view, headline */
 .stage{display:flex;flex-direction:column;padding:10px 0 8px}
 .fit .stage{height:100vh;height:100dvh;min-height:600px;max-height:920px;overflow:hidden}
+.fit .stage:not(.sel){min-height:min(600px,var(--fitH,600px));max-height:min(920px,var(--fitH,920px))}
 .top{display:flex;align-items:baseline;gap:6px 18px;flex-wrap:wrap;flex:none}
 .kicker{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);font-weight:700;margin:0}
 h1{font-family:var(--serif);font-weight:700;font-size:22px;line-height:1.15;margin:0}
@@ -768,6 +769,7 @@ function layoutMap() {
   const main = $("main"), col = $("mapcol");
   let tw;
   if (fit) {   // as large as both the height left over (after the U.S. row) and the width beside the rail allow
+    $("stage").style.removeProperty("--fitH");   // measure at full height; trimmed again below
     const byW = (main.clientWidth - 280 - 20 - gap * (cols - 1)) / cols;
     const twFor = usH => Math.max(34, Math.min((main.clientHeight - usH - 8 - gap * (rows - 1)) / rows / RATIO, byW));
     // a narrower map can wrap the U.S. lines once more, so settle the two together
@@ -786,6 +788,7 @@ function layoutMap() {
   // there); the wide layout must fit the window, so its tiles keep their shape
   const th = tw * (!fit && tw < 56 ? TALL : RATIO), W = cols * tw + (cols - 1) * gap, H = rows * th + (rows - 1) * gap;
   if (fit) col.style.width = W + "px";
+  trimNeed = 0;
   $("map").style.width = W + "px";
   GEO = { W, H, tw, th, gap };
   const tiles = $("tiles");
@@ -1295,7 +1298,21 @@ function renderTable() {
 function render() {
   $("bigyear").textContent = S.year; renderCovBar();
   if (S.sel) renderState(); else { drawMap(); renderRail(); renderUS(); if (S.hover) $("tip").innerHTML = tipHtml(S.hover); }
-  renderCard(); renderRank(); renderTable();
+  renderCard(); renderRank(); renderTable(); trimStage();
+}
+/* when the width, not the height, limits the map, the screen would leave empty space under the map and the rail:
+   trim it to the taller of the two. The trim only grows while one disease plays at one width, so the page below
+   does not jump from year to year */
+let trimNeed = 0, trimDis = null;
+function trimStage() {
+  const st = $("stage");
+  if (!$("viz").classList.contains("fit") || S.sel) { st.style.removeProperty("--fitH"); return; }
+  if (S.dis !== trimDis) { trimNeed = 0; trimDis = S.dis; }
+  const main = $("main"), rail = document.querySelector(".rail");
+  st.style.removeProperty("--fitH");
+  const railH = Math.max(0, ...[...rail.children].map(e => e.getBoundingClientRect().bottom)) - rail.getBoundingClientRect().top + rail.scrollTop + 8;   // an empty note has no box; 8 for the last chart's margin
+  trimNeed = Math.max(trimNeed, Math.ceil(Math.max($("mapwrap").offsetHeight + 8 + $("usrow").offsetHeight, railH)));
+  if (main.clientHeight - trimNeed > 2) st.style.setProperty("--fitH", st.clientHeight - (main.clientHeight - trimNeed) + "px");
 }
 function init() {
   if (window.self !== window.top) document.documentElement.dataset.framed = "1";
