@@ -43,6 +43,7 @@ None.
   look before it goes live.
 
 ## Log
+- 2026-11-12: 2g confirmed (one email). Social drafted for both posts: X, Bluesky, LinkedIn; GIFs map-measles-2010-2026.gif (live map) and six-states-one-at-a-time.gif.
 - 2026-11-12: 2g email in Eric's voice; all 7 additions accepted.
 - 2026-11-12: 2f confirmed for both posts. 2g in progress: one email for both, drafted in posts/disease-vaccination-viz/EMAIL.md.
 - 2026-11-12: map trims empty space under itself in embeds; iframe 1440 -> 1380 (cache v=20261112a); 20px spacer after the Read this first blurb; Liam's draft re-pushed.

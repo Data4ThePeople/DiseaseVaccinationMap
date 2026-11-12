@@ -12,6 +12,7 @@ import datetime as dt
 import json
 import math
 import subprocess
+import sys
 from pathlib import Path
 
 import pandas as pd
@@ -251,6 +252,33 @@ def gif_six():
     make_gif(frames, [2600, 4000], SOC / "six-states-2025-2026.gif")
 
 
+def gif_cycle():
+    """one state at a time, 2025 beside 2026, three seconds each"""
+    W, H = 1200, 900
+    mw, mh = 520, 470
+    frames = []
+    for k, st in enumerate(SIX):
+        g = svg_open(W, H)
+        g += f'<text x="60" y="70" font-size="34" font-weight="700" fill="{INK}" font-family="{SERIF}">Measles cases by county, {YEAR_A} and {YEAR_B}</text>'
+        g += f'<text x="60" y="108" font-size="20" fill="{INK2}">The six states with the most {YEAR_B} cases. {YEAR_B} runs through {CM_TXT}.</text>'
+        g += f'<text x="60" y="170" font-size="40" font-weight="700" fill="{INK}">{STATES[st]["n"]}</text>'
+        g += f'<text x="{W - 60}" y="170" font-size="22" fill="{INK3}" text-anchor="end">{k + 1} of {len(SIX)}</text>'
+        for j, yy in enumerate((YEAR_A, YEAR_B)):
+            m, n, _ = county_map(st, yy, mw, mh)
+            mx = 60 + j * (mw + 40)
+            g += f'<g transform="translate({mx},200)">{m}</g>'
+            g += f'<text x="{mx}" y="{200 + mh + 44}" font-size="26" fill="{INK2}"><tspan font-weight="700" fill="{INK}">{yy}:</tspan> {fmt(n)} {"case" if n == 1 else "cases"}</text>'
+        if st == "UT":
+            g += f'<text x="60" y="{H - 104}" font-size="18" fill="{INK2}">Utah reports most cases by health district, so each district is one circle.</text>'
+        g += f'<text x="60" y="{H - 66}" font-size="18" fill="{INK2}">Circles: confirmed measles cases in a county or district (Johns Hopkins).</text>'
+        g += f'<text x="60" y="{H - 40}" font-size="18" fill="{INK2}">Counties: kindergartners with 2 MMR doses, 2024-25 (<tspan fill="{GREEN}">95%+</tspan> <tspan fill="{AMBER}">90 to 94.9%</tspan> <tspan fill="{RED}">under 90%</tspan>). Dark gray: no figure.</text>'
+        g += f'<text x="60" y="{H - 14}" font-size="16" fill="{INK3}">{CREDIT}</text></svg>'
+        p = TMP / f"cycle-{st}.png"
+        shoot(g, W, H, p)
+        frames.append(p)
+    make_gif(frames, [3000] * len(frames), SOC / "six-states-one-at-a-time.gif")
+
+
 # ---------- 03 U.S. cases, 1920 to 2026 ----------
 def chart_century():
     W, H = 1600, 900
@@ -331,6 +359,9 @@ def make_gif(frames, ms, out):
 if __name__ == "__main__":
     for p in (IMG, SOC, TMP):
         p.mkdir(parents=True, exist_ok=True)
+    if sys.argv[1:] == ["cycle"]:   # only the one-state-at-a-time social GIF
+        gif_cycle()
+        sys.exit()
     cov, ut_cases = chart_utah()
     chart_six()
     tot, peak, low, since = chart_century()
