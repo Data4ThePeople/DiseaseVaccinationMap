@@ -65,6 +65,8 @@ Here, we introduce an open-source tool to track this. The map shows reported cas
 These are reported cases, not all cases. Many people who got sick were never counted, and the rules for what to report changed many times over the century. The green, amber and red levels for case rates were set for this map and are not official levels; the same levels are used for every disease. Kindergarten vaccination measures one age group in one school year. It is not a measure of immunity in the whole population. 2026 is not over: it runs through November 7, its counts are provisional, and its rates use 2025 population.
 :::
 
+For one argument about what these numbers mean, read [Michael S. Kinch](https://www.data4thepeople.com/authors/michael-kinch)'s essay, [Public Health Is Losing a Measles Argument It Should Be Winning](https://www.data4thepeople.com/p/measles-public-data-warning).
+
 ## Using the visualization
 
 ::: spacer 5px
