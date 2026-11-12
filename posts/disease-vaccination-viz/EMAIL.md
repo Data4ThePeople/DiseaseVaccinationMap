@@ -1,6 +1,6 @@
 # Mailchimp teaser: Infectious Disease and Vaccination, State by State, with Mike Kinch's essay
 
-One email for both posts, from Eric (November 12, 2026). Body from Eric's notes in chat, typos fixed; see the list in chat for Claude's additions.
+One email for both posts, from Eric (November 12, 2026). Body from Eric's notes in chat, typos fixed; Claude's 7 additions accepted by Eric.
 
 Map post: https://www.data4thepeople.com/p/disease-vaccination-viz
 Essay: https://www.data4thepeople.com/p/measles-public-data-warning
