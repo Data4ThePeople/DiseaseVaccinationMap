@@ -18,12 +18,12 @@
         "html_content": [
           {
             "type": "preformatted",
-            "text": "<style>html,body{margin:0;padding:0;overflow:hidden}iframe{display:block}</style><iframe src=\"https://data4thepeople.github.io/DiseaseVaccinationMap/?v=20261111c#embed=1\" width=\"100%\" height=\"1440\" loading=\"lazy\" style=\"border:0\" title=\"Infectious disease and vaccination, state by state: interactive map, 1920 to 2026\"></iframe>",
+            "text": "<style>html,body{margin:0;padding:0;overflow:hidden}iframe{display:block}</style><iframe src=\"https://data4thepeople.github.io/DiseaseVaccinationMap/?v=20261112a#embed=1\" width=\"100%\" height=\"1380\" loading=\"lazy\" style=\"border:0\" title=\"Infectious disease and vaccination, state by state: interactive map, 1920 to 2026\"></iframe>",
             "spans": [],
             "direction": "ltr"
           }
         ],
-        "embed_height": "1440px"
+        "embed_height": "1380px"
       }
     },
     {
@@ -189,6 +189,16 @@
             "direction": "ltr"
           }
         ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
       }
     },
     {

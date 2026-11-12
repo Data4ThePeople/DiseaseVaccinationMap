@@ -38,7 +38,7 @@ dividers: false
 
 # Infectious Disease and Vaccination, State by State: An Interactive Map, 1920 to 2026
 
-<iframe src="https://data4thepeople.github.io/DiseaseVaccinationMap/?v=20261111c#embed=1" width="100%" height="1440" loading="lazy" style="border:0" title="Infectious disease and vaccination, state by state: interactive map, 1920 to 2026"></iframe>
+<iframe src="https://data4thepeople.github.io/DiseaseVaccinationMap/?v=20261112a#embed=1" width="100%" height="1380" loading="lazy" style="border:0" title="Infectious disease and vaccination, state by state: interactive map, 1920 to 2026"></iframe>
 
 ::: spacer 40px
 
@@ -65,6 +65,8 @@ Here, we introduce an open-source tool to track this. The map shows reported cas
 ::: blurb Read this first
 These are reported cases, not all cases. Many people who got sick were never counted, and the rules for what to report changed many times over the century. The green, amber and red levels for case rates were set for this map and are not official levels; the same levels are used for every disease. Kindergarten vaccination measures one age group in one school year. It is not a measure of immunity in the whole population. 2026 is not over: it runs through November 7, its counts are provisional, and its rates use 2025 population.
 :::
+
+::: spacer
 
 For one argument about what these numbers mean, read [Michael S. Kinch](https://www.data4thepeople.com/authors/michael-kinch)'s essay, [Public Health Is Losing a Measles Argument It Should Be Winning](https://www.data4thepeople.com/p/measles-public-data-warning).
 
