@@ -59,4 +59,6 @@ Measles is the canary: the most contagious of the vaccine-preventable diseases, 
 
 Two centuries of vaccine history show that resistance to vaccination never fully disappears. The past decade in Utah shows something else: its consequences are visible long before they arrive. The question is whether anyone is looking.
 
-*The charts in this essay come from Data 4 The People's [free interactive map of infectious disease and vaccination by state, 1920 to 2026](https://www.data4thepeople.com/p/disease-vaccination-viz), built from CDC, U.S. Public Health Service and Johns Hopkins University data.*
+::: blurb
+The charts in this essay come from Data 4 The People's [free interactive map of infectious disease and vaccination by state, 1920 to 2026](https://www.data4thepeople.com/p/disease-vaccination-viz), built from CDC, U.S. Public Health Service and Johns Hopkins University data.
+:::

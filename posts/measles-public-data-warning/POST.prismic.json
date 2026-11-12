@@ -281,15 +281,41 @@
             "text": "Two centuries of vaccine history show that resistance to vaccination never fully disappears. The past decade in Utah shows something else: its consequences are visible long before they arrive. The question is whether anyone is looking.",
             "spans": [],
             "direction": "ltr"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "highlited_page_blurb",
+      "slice_label": null,
+      "variation": "noTitle",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "content": [
           {
             "type": "paragraph",
-            "text": "The charts in this essay come from Data 4 The People's [free interactive map of infectious disease and vaccination by state, 1920 to 2026](https://www.data4thepeople.com/p/disease-vaccination-viz), built from CDC, U.S. Public Health Service and Johns Hopkins University data.",
+            "text": "The charts in this essay come from Data 4 The People's free interactive map of infectious disease and vaccination by state, 1920 to 2026, built from CDC, U.S. Public Health Service and Johns Hopkins University data.",
             "spans": [
               {
-                "start": 0,
-                "end": 275,
-                "type": "em"
+                "start": 55,
+                "end": 136,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.data4thepeople.com/p/disease-vaccination-viz",
+                  "target": "_blank"
+                }
               }
             ],
             "direction": "ltr"
