@@ -58,7 +58,7 @@
           },
           {
             "type": "paragraph",
-            "text": "In a grim sense, measles is the most legible of infectious diseases.  In a population with no immunity, one infected person passes the virus to 12 to 18 others30307-9), on average.  Because the virus is so efficient, a community\u2019s vaccination record is close to a forecast.  Each school year in which fewer than 95 percent of entering kindergartners are vaccinated adds another cohort of susceptible children.  Older, better-protected cohorts mask the deficit for a while.  But unvaccinated children cluster in particular schools, congregations and neighborhoods, and within those clusters immunity can sink far below what a statewide average suggests.  When the virus finally arrives, often with a single traveler, it finds the gaps.",
+            "text": "In a grim sense, measles is the most legible of infectious diseases.  In a population with no immunity, one infected person passes the virus to 12 to 18 others, on average.  Because the virus is so efficient, a community\u2019s vaccination record is close to a forecast.  Each school year in which fewer than 95 percent of entering kindergartners are vaccinated adds another cohort of susceptible children.  Older, better-protected cohorts mask the deficit for a while.  But unvaccinated children cluster in particular schools, congregations and neighborhoods, and within those clusters immunity can sink far below what a statewide average suggests.  When the virus finally arrives, often with a single traveler, it finds the gaps.",
             "spans": [
               {
                 "start": 144,
@@ -66,7 +66,7 @@
                 "type": "hyperlink",
                 "data": {
                   "link_type": "Web",
-                  "url": "https://doi.org/10.1016/S1473-3099(17",
+                  "url": "https://doi.org/10.1016/S1473-3099%2817%2930307-9",
                   "target": "_blank"
                 }
               }
