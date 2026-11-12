@@ -7,7 +7,7 @@ updated: 2026-11-12
 section: Data 4 Thought
 author: Michael S. Kinch
 hero: images/measles-public-data-warning-hero-1680x1080.png
-hero_alt:
+hero_alt: Chart on a dark background titled Utah fell below 95% a decade before its measles outbreak. A line shows the share of Utah kindergartners with the measles vaccine each school year: 98.5% in 2014, 94.0% in 2015, then lower most years to 87.2% in 2026, against a dashed 95% target line. Bars below show Utah measles cases: near zero from 2010 to 2024, then 178 in 2025 and 532 in 2026 through November 7. Data 4 The People, from CDC.
 meta_title:
 description:
 keywords:

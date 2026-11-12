@@ -138,6 +138,10 @@ def chart_utah():
     g += foot(ml, H - 24, f"Year is the spring of the school year; no state figures for 2010-11. {Y1} cases run through {THROUGH_TXT} and are provisional (faded bar). Sources: CDC SchoolVaxView and CDC disease tables. {CREDIT}", W)
     g += "</svg>"
     shoot(g, W, H, IMG / "01-utah-decade.png")
+    # the hero: the same chart drawn at 1680x1080 (scaled as vector, so the type stays sharp), on the same background
+    hero = (f'<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1080" viewBox="0 0 1680 1080"><rect width="1680" height="1080" fill="{BG}"/>'
+            f'<svg x="0" y="0" width="1680" height="1080" viewBox="0 0 {W} {H}" preserveAspectRatio="xMidYMid meet" font-family="{SANS}">{g[g.index(">") + 1:]}</svg>')
+    shoot(hero, 1680, 1080, IMG / "measles-public-data-warning-hero-1680x1080.png")
     return cov, cases
 
 
