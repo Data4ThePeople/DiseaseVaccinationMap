@@ -1,13 +1,13 @@
 # Mailchimp teaser: Infectious Disease and Vaccination, State by State, with Mike Kinch's essay
 
-One email for both posts (Eric, November 12, 2026).
+One email for both posts, from Eric (November 12, 2026). Body from Eric's notes in chat, typos fixed; see the list in chat for Claude's additions.
 
 Map post: https://www.data4thepeople.com/p/disease-vaccination-viz
 Essay: https://www.data4thepeople.com/p/measles-public-data-warning
 
 ```
 Subject:  Measles and vaccination, state by state
-Preview:  A free map of a century of disease and vaccines, and an essay on Utah's early warning.
+Preview:  Two guest contributors, a new interactive map and an essay on this year's outbreak.
 ```
 
 ## 1. Hero
@@ -21,15 +21,17 @@ Tile map of the United States on a dark background, one square per state, each s
 ## 2. Headline
 
 ```
-Infectious Disease and Vaccination, State by State: An Interactive Map, 1920 to 2026
+Two Guest Contributors on Measles and Vaccination
 ```
 
 ## 3. Body, part one
 
 ```
-Today we are publishing two pieces together. The first is a free, interactive map built by Liam Aranda-Michel, an MIT undergraduate. Liam started with a simple question: why is there no single place where an ordinary person can watch vaccination rates and disease rise and fall together? His map shows reported cases of measles, whooping cough, hepatitis A, mumps and polio in every state and DC, from as early as 1920 through 2026, and from the 2009-10 school year on, the share of kindergartners with each vaccine.
+Today, Data 4 The People is publishing work from two guest contributors on a very important topic: measles, and the vaccination rates that keep it in check.
 
-The share of U.S. kindergartners with the measles vaccine fell from 95.2% in the 2019-20 school year to 92.4% in 2025-26. In 2026, through November 7, states reported 5,073 measles cases, the most in any year since 1991. The second piece is an essay by Michael S. Kinch, who used the map's data to look at where this year's cases are. This chart from his essay shows measles cases by county in the six states with the most cases in 2026.
+Liam Aranda-Michel is an OSV fellow. I met Liam at an offsite, we started talking, and I immediately asked him to start working on a project for us. Today's interactive map is his vision, brought to life through Data 4 The People's process. It shows reported cases of measles, whooping cough, hepatitis A, mumps and polio in every state from as early as 1920 through 2026, next to the share of kindergartners with each vaccine.
+
+But Liam and I are not experts on measles. So, as part of our research process, we connected with the gentleman who literally wrote the book on vaccines and infectious diseases, Dr. Michael Kinch. He helped us enhance the visualization and validate the data. And we are fortunate to have thoughts directly from him on this outbreak, published on our site today as well. This chart from Mike's essay shows measles cases by county in the six states with the most cases in 2026.
 ```
 
 ## 4. Chart
@@ -43,11 +45,14 @@ Twelve county maps in pairs, 2025 and 2026, for Pennsylvania, South Carolina, Ut
 ## 5. Body, part two
 
 ```
-In the essay, Mike looks closely at Utah. By 2015, the share of Utah kindergartners vaccinated against measles had slipped below 95 percent, the level needed to stop the virus from spreading. A decade later, Utah has the highest measles rate in the country. Mike makes the case that the warning was public the whole time, in state reports and federal data tables, and asks why so few of the people in a position to act on it saw it.
-
+Explore Liam's map: https://www.data4thepeople.com/p/disease-vaccination-viz
 Read Mike's essay: https://www.data4thepeople.com/p/measles-public-data-warning
 
-Then open the map and look up your own state. You can pick a disease, play through the years, and click any state to see its counties.
+Today's posts are historic for Data 4 The People, not just for the content, but for the process. Our vision is to bring our agentic AI data journalism process to others, so curious people with brilliant ideas (Liam) can be matched with experts (Mike) to create education that can cut through the noise. Today, we pulled this off.
+
+To be clear, it's a manual process behind the scenes right now. With support, our goal is to create a platform that can organically bring all the Liams and Mikes of the world together to create data-driven content that can start the painfully slow process of restoring truth.
+
+If you want to support this vision, you can donate here: https://donate.mazloweb.com/donate/support-data-4-the-people
 ```
 
 ## 6. Call to action
