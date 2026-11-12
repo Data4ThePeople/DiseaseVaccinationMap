@@ -28,6 +28,7 @@ None.
 
 ## To do
 
+- **Second post: measles-public-data-warning** (Michael S. Kinch's essay, Data 4 Thought). Step 2a drafted 2026-11-11: Mike's text verbatim with the accepted claim edits; charts 01 to 03 from scripts/14_kinch_charts.py; social GIFs in posts/measles-public-data-warning/social/.
 - **Cross-links** between disease-vaccination-viz and Mike Kinch's editorial, both ways, once his slug is set (Eric, November 11, 2026). Reopens 2b/2f for this post.
 
 - **Weekly automated data refresh** (Eric, November 11, 2026). Fetch every
