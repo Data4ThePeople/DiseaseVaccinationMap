@@ -69,8 +69,19 @@
         "paragraph_text": [
           {
             "type": "paragraph",
-            "text": "A decade later, Utah is at the center of the worst U.S. measles epidemic in more than three decades.  Since June 2025, the state has recorded more than 720 cases. Nationally, states had reported 5,073 measles cases to the Centers for Disease Control and Prevention in 2026 as of Nov. 7, 150 percent more than the total for 2025.  This month, the Pan American Health Organization is scheduled to review whether the U.S. still meets the criteria for measles elimination, a status it earned in 2000.",
-            "spans": [],
+            "text": "A decade later, Utah has the highest measles rate in the country, in the worst U.S. measles epidemic in more than three decades.  Since June 2025, the state has recorded more than 700 cases. Nationally, states had reported 5,073 measles cases to the Centers for Disease Control and Prevention in 2026 as of Nov. 7, 150 percent more than the total for 2025.  This week, a Pan American Health Organization commission met to review whether the U.S. still meets the criteria for measles elimination, a status it earned in 2000. Its decision is expected within days.",
+            "spans": [
+              {
+                "start": 371,
+                "end": 403,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.paho.org/en/news/2-3-2026-update-review-measles-elimination-status",
+                  "target": "_blank"
+                }
+              }
+            ],
             "direction": "ltr"
           },
           {
@@ -159,7 +170,28 @@
           {
             "type": "paragraph",
             "text": "That gap prompted our project.  Liam Aranda-Michel, an MIT undergraduate, asked a deceptively simple question, \u201cWhy is there no single place where an ordinary person can watch vaccination rates and disease rise and fall together?\u201d  Working with Data 4 The People, a nonprofit that curates public data sets and turns them into tools for nonspecialists, we built a free, open map that sets a century of state-level cases of vaccine-preventable diseases against childhood vaccination coverage.",
-            "spans": [],
+            "spans": [
+              {
+                "start": 32,
+                "end": 50,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.data4thepeople.com/authors/liam-aranda-michel",
+                  "target": "_blank"
+                }
+              },
+              {
+                "start": 363,
+                "end": 377,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.data4thepeople.com/p/disease-vaccination-viz",
+                  "target": "_blank"
+                }
+              }
+            ],
             "direction": "ltr"
           },
           {
@@ -218,7 +250,7 @@
         "paragraph_text": [
           {
             "type": "paragraph",
-            "text": "That kind of access matters most locally, where trust is highest.  Americans consistently report more trust in their own doctors and local news outlets than in national institutions.  Physicians are best placed to communicates messages of an abstract threshold nature.",
+            "text": "That kind of access matters most locally, where trust is highest.  Americans consistently report more trust in their own doctors than in national institutions.  Physicians are best placed to communicate messages of an abstract threshold nature.",
             "spans": [
               {
                 "start": 77,
@@ -235,7 +267,7 @@
           },
           {
             "type": "paragraph",
-            "text": "This assumes of course that these clinicians have the numbers in a form they can use. That is a goal of our present project, we provide the data, its implications and allow a skeptical user to question how we came to those outcomes.",
+            "text": "This assumes of course that these clinicians have the numbers in a form they can use. That is a goal of our present project: we provide the data and its implications, and allow a skeptical user to question how we came to those outcomes.",
             "spans": [],
             "direction": "ltr"
           },
@@ -258,7 +290,7 @@
           },
           {
             "type": "paragraph",
-            "text": "Open data can also change the timing of public attention. If a small team could assemble this picture in days, health departments with far greater resources could track these signals routinely, targeting catch-up vaccination where coverage is lowest before an outbreak rather than after.  Reporters could tell the story of a community\u2019s growing vulnerability while there is still time to change its ending.",
+            "text": "Open data can also change the timing of public attention. If a small team with no funding for this project could assemble this picture in a few weeks, health departments with far greater resources could track these signals routinely, targeting catch-up vaccination where coverage is lowest before an outbreak rather than after.  Reporters could tell the story of a community\u2019s growing vulnerability while there is still time to change its ending.",
             "spans": [],
             "direction": "ltr"
           },

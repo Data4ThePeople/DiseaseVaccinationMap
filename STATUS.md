@@ -327,3 +327,4 @@ None.
 - 2026-11-11: Step 2d confirmed. Now in 2e.
 - 2026-11-11: Step 2e confirmed (8 items accepted; cross-links deferred to after Mike's post). Now in 2f.
 - 2026-11-11: measles-public-data-warning step 2a confirmed. Now in 2b. disease-vaccination-viz waits at 2f for the cross-links.
+- 2026-11-11: measles-public-data-warning step 2b confirmed (links to the map post and Liam's author page, Utah "more than 700", funding wording; Mike's whooping cough sentence kept). Now in 2c.
