@@ -759,6 +759,7 @@ function trendChart(st, width) {
 
 /* ---------- national map ---------- */
 let GEO = null;
+let lastPointer = "mouse";   // the kind of pointer last pressed: "mouse", "touch" or "pen"
 function layoutMap() {
   const viz = $("viz"), fit = viz.clientWidth >= 900, cols = 11, rows = 8, gap = 3, RATIO = 0.78, TALL = 1.08;
   viz.classList.toggle("fit", fit);
@@ -791,10 +792,12 @@ function layoutMap() {
   if (!tiles.children.length) {
     tiles.innerHTML = D.states.map(s => `<button type="button" data-st="${s.k}" aria-label="${esc(s.n)}"></button>`).join("");
     tiles.addEventListener("click", e => { const b = e.target.closest("button"); if (b) openState(b.dataset.st); });
-    tiles.addEventListener("pointerover", e => { const b = e.target.closest("button"); if (b) setHover(b.dataset.st, e); });
+    // a finger has no hover: on a touch screen a tap opens the state at once, with no hover box (a box shown on the
+    // first tap would also stop phones from sending the click, and nothing would take it away again)
+    tiles.addEventListener("pointerover", e => { if (e.pointerType !== "mouse") return; const b = e.target.closest("button"); if (b) setHover(b.dataset.st, e); });
     tiles.addEventListener("pointermove", e => { if (S.hover) placeTip(e.clientX, e.clientY); });
     tiles.addEventListener("pointerleave", () => setHover(null));
-    tiles.addEventListener("focusin", e => { const b = e.target.closest("button"); if (b) { const r = b.getBoundingClientRect(); setHover(b.dataset.st, { clientX: r.right, clientY: r.top }); } });
+    tiles.addEventListener("focusin", e => { if (lastPointer === "touch" || lastPointer === "pen") return; const b = e.target.closest("button"); if (b) { const r = b.getBoundingClientRect(); setHover(b.dataset.st, { clientX: r.right, clientY: r.top }); } });
     tiles.addEventListener("focusout", () => setHover(null));
   }
   for (const b of tiles.children) {
@@ -1312,7 +1315,15 @@ function init() {
   $("play").addEventListener("click", () => setPlaying(!S.playing));
   $("back").addEventListener("click", closeState);
   $("smap").addEventListener("pointermove", e => countyTip(e.target.dataset && e.target.dataset.f, e));
-  $("smap").addEventListener("pointerleave", () => countyTip(null));
+  $("smap").addEventListener("pointerleave", e => { if (e.pointerType === "mouse") countyTip(null); });
+  $("smap").addEventListener("pointerdown", e => { if (e.pointerType !== "mouse") countyTip(e.target.dataset && e.target.dataset.f, e); });
+  // on a touch screen a tapped county keeps its box until the next tap somewhere else, or a scroll
+  document.addEventListener("pointerdown", e => {
+    lastPointer = e.pointerType;
+    if (e.pointerType === "mouse") return;
+    if (!(e.target.dataset && e.target.dataset.f)) { countyTip(null); if (S.hover) setHover(null); }
+  }, true);
+  addEventListener("scroll", () => { if (lastPointer !== "mouse" && $("tip").style.display === "block") { countyTip(null); if (S.hover) setHover(null); } }, { passive: true });
   $("tbl").addEventListener("toggle", renderTable);
   $("tblwrap").addEventListener("click", e => {
     const b = e.target.closest("button[data-sort]"); if (!b) return;
