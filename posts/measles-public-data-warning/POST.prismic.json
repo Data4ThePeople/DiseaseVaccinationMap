@@ -26,43 +26,6 @@
       }
     },
     {
-      "slice_type": "blog_body_content_image",
-      "slice_label": null,
-      "variation": "default",
-      "version": "initial",
-      "items": [],
-      "primary": {
-        "image": {
-          "alt": "Line chart of the share of Utah kindergartners with the measles vaccine each school year from 2010 to 2026, against a dashed 95% line. It is 98.5% in 2014, falls to 94.0% in 2015 and declines most years after, to 87.2% in 2026. Under it, bars of Utah measles cases each year: near zero from 2010 to 2024, then 178 in 2025 and 532 in 2026 through November 7. Data 4 The People, from CDC.",
-          "copyright": null
-        },
-        "source_text": [
-          {
-            "type": "paragraph",
-            "text": "Utah's kindergarten measles vaccination rate fell below 95% in the 2014-15 school year and kept falling. Its measles cases stayed near zero until 2025. Source: CDC SchoolVaxView and CDC disease tables; 2026 runs through November 7 and is provisional.",
-            "spans": [
-              {
-                "start": 0,
-                "end": 250,
-                "type": "em"
-              }
-            ],
-            "direction": "ltr"
-          }
-        ]
-      }
-    },
-    {
-      "slice_type": "spacer",
-      "slice_label": null,
-      "variation": "default",
-      "version": "initial",
-      "items": [],
-      "primary": {
-        "spacer_value": "20px"
-      }
-    },
-    {
       "slice_type": "paragarph_text",
       "slice_label": null,
       "variation": "default",

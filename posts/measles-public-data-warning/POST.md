@@ -22,9 +22,6 @@ dividers: false
 
 By 2015, the share of Utah kindergartners vaccinated against measles had slipped below 95 percent, the level of immunity needed to stop the virus from spreading.  No alarm sounded.  The figure appeared, as such figures do every year, in a state report and a federal data table.  Then it slipped a little further the next year, and the year after that.
 
-![Line chart of the share of Utah kindergartners with the measles vaccine each school year from 2010 to 2026, against a dashed 95% line. It is 98.5% in 2014, falls to 94.0% in 2015 and declines most years after, to 87.2% in 2026. Under it, bars of Utah measles cases each year: near zero from 2010 to 2024, then 178 in 2025 and 532 in 2026 through November 7. Data 4 The People, from CDC.](images/01-utah-decade.png)
-
-*Utah's kindergarten measles vaccination rate fell below 95% in the 2014-15 school year and kept falling. Its measles cases stayed near zero until 2025. Source: CDC SchoolVaxView and CDC disease tables; 2026 runs through November 7 and is provisional.*
 
 A decade later, Utah has the highest measles rate in the country, in the worst U.S. measles epidemic in more than three decades.  Since June 2025, the state has recorded more than 700 cases. Nationally, states had reported 5,073 measles cases to the Centers for Disease Control and Prevention in 2026 as of Nov. 7, 150 percent more than the total for 2025.  This week, a [Pan American Health Organization](https://www.paho.org/en/news/2-3-2026-update-review-measles-elimination-status) commission met to review whether the U.S. still meets the criteria for measles elimination, a status it earned in 2000. Its decision is expected within days.
 
