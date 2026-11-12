@@ -1,13 +1,4 @@
 fips,location_name,year,cases
-00000,"Bear River, Utah",2025,4
-00000,"Bear River, Utah",2026,10
-00000,"Central, Utah",2025,3
-00000,"Central, Utah",2026,118
-00000,"Southeast Health District, Utah",2025,3
-00000,"Southeast Health District, Utah",2026,2
-00000,"Southwest Health District, Utah",2025,155
-00000,"Southwest Health District, Utah",2026,112
-00000,"Tricounty, Utah",2026,80
 00001,"North, Alabama",2025,1
 00001,"North, Alabama",2026,1
 00006,"Unknown County, California",2025,3
@@ -54,6 +45,15 @@ fips,location_name,year,cases
 00047,"Nashville-Davidson County Region, Tennessee",2026,2
 00047,"Upper Cumberland Region, Tennessee",2025,4
 00048,"Unknown County, Texas",2025,1
+00049,"Bear River, Utah",2025,4
+00049,"Bear River, Utah",2026,10
+00049,"Central, Utah",2025,3
+00049,"Central, Utah",2026,118
+00049,"Southeast Health District, Utah",2025,3
+00049,"Southeast Health District, Utah",2026,2
+00049,"Southwest Health District, Utah",2025,155
+00049,"Southwest Health District, Utah",2026,112
+00049,"Tricounty, Utah",2026,80
 00050,"Unknown County, Vermont",2025,1
 00051,"Central Region, Virginia",2025,1
 00051,"Central Region, Virginia",2026,158

@@ -1,0 +1,506 @@
+{
+ "Bear River, Utah": {
+  "st": "UT",
+  "label": "Bear River Health District",
+  "fips": [
+   "49003",
+   "49005",
+   "49033"
+  ],
+  "source": "https://www.ualhd.org/",
+  "note": "Box Elder, Cache, Rich"
+ },
+ "Central, Utah": {
+  "st": "UT",
+  "label": "Central Utah Health District",
+  "fips": [
+   "49023",
+   "49027",
+   "49031",
+   "49039",
+   "49041",
+   "49055"
+  ],
+  "source": "https://www.ualhd.org/",
+  "note": "Juab, Millard, Piute, Sanpete, Sevier, Wayne"
+ },
+ "Southeast Health District, Utah": {
+  "st": "UT",
+  "label": "Southeast Utah Health District",
+  "fips": [
+   "49007",
+   "49015",
+   "49019"
+  ],
+  "source": "https://www.ualhd.org/",
+  "note": "Carbon, Emery, Grand"
+ },
+ "Southwest Health District, Utah": {
+  "st": "UT",
+  "label": "Southwest Utah Health District",
+  "fips": [
+   "49001",
+   "49017",
+   "49021",
+   "49025",
+   "49053"
+  ],
+  "source": "https://www.ualhd.org/",
+  "note": "Beaver, Garfield, Iron, Kane, Washington"
+ },
+ "Tricounty, Utah": {
+  "st": "UT",
+  "label": "TriCounty Health District",
+  "fips": [
+   "49009",
+   "49013",
+   "49047"
+  ],
+  "source": "https://www.ualhd.org/",
+  "note": "Daggett, Duchesne, Uintah"
+ },
+ "Central Region, Virginia": {
+  "st": "VA",
+  "label": "Central Health Planning Region",
+  "fips": [
+   "51007",
+   "51025",
+   "51029",
+   "51036",
+   "51037",
+   "51041",
+   "51049",
+   "51053",
+   "51075",
+   "51081",
+   "51083",
+   "51085",
+   "51087",
+   "51111",
+   "51117",
+   "51127",
+   "51135",
+   "51145",
+   "51147",
+   "51149",
+   "51181",
+   "51183",
+   "51570",
+   "51595",
+   "51670",
+   "51730",
+   "51760"
+  ],
+  "source": "https://www.vdh.virginia.gov/content/uploads/2020/05/Locality-to-HD-to-HPR.pdf",
+  "note": "VDH health planning region; counties plus independent cities, from VDH Locality-to-HD-to-HPR table. All 133 VA county-equivalents assigned exactly once."
+ },
+ "Eastern Region, Virginia": {
+  "st": "VA",
+  "label": "Eastern Health Planning Region",
+  "fips": [
+   "51001",
+   "51057",
+   "51073",
+   "51093",
+   "51095",
+   "51097",
+   "51101",
+   "51103",
+   "51115",
+   "51119",
+   "51131",
+   "51133",
+   "51159",
+   "51175",
+   "51193",
+   "51199",
+   "51550",
+   "51620",
+   "51650",
+   "51700",
+   "51710",
+   "51735",
+   "51740",
+   "51800",
+   "51810",
+   "51830"
+  ],
+  "source": "https://www.vdh.virginia.gov/content/uploads/2020/05/Locality-to-HD-to-HPR.pdf",
+  "note": "VDH health planning region; counties plus independent cities, from VDH Locality-to-HD-to-HPR table. All 133 VA county-equivalents assigned exactly once."
+ },
+ "Northern Region, Virginia": {
+  "st": "VA",
+  "label": "Northern Health Planning Region",
+  "fips": [
+   "51013",
+   "51059",
+   "51107",
+   "51153",
+   "51510",
+   "51600",
+   "51610",
+   "51683",
+   "51685"
+  ],
+  "source": "https://www.vdh.virginia.gov/content/uploads/2020/05/Locality-to-HD-to-HPR.pdf",
+  "note": "VDH health planning region; counties plus independent cities, from VDH Locality-to-HD-to-HPR table. All 133 VA county-equivalents assigned exactly once."
+ },
+ "Northwest Region, Virginia": {
+  "st": "VA",
+  "label": "Northwest Health Planning Region",
+  "fips": [
+   "51003",
+   "51015",
+   "51017",
+   "51033",
+   "51043",
+   "51047",
+   "51061",
+   "51065",
+   "51069",
+   "51079",
+   "51091",
+   "51099",
+   "51109",
+   "51113",
+   "51125",
+   "51137",
+   "51139",
+   "51157",
+   "51163",
+   "51165",
+   "51171",
+   "51177",
+   "51179",
+   "51187",
+   "51530",
+   "51540",
+   "51630",
+   "51660",
+   "51678",
+   "51790",
+   "51820",
+   "51840"
+  ],
+  "source": "https://www.vdh.virginia.gov/content/uploads/2020/05/Locality-to-HD-to-HPR.pdf",
+  "note": "VDH health planning region; counties plus independent cities, from VDH Locality-to-HD-to-HPR table. All 133 VA county-equivalents assigned exactly once."
+ },
+ "Southwest Region, Virginia": {
+  "st": "VA",
+  "label": "Southwest Health Planning Region",
+  "fips": [
+   "51005",
+   "51009",
+   "51011",
+   "51019",
+   "51021",
+   "51023",
+   "51027",
+   "51031",
+   "51035",
+   "51045",
+   "51051",
+   "51063",
+   "51067",
+   "51071",
+   "51077",
+   "51089",
+   "51105",
+   "51121",
+   "51141",
+   "51143",
+   "51155",
+   "51161",
+   "51167",
+   "51169",
+   "51173",
+   "51185",
+   "51191",
+   "51195",
+   "51197",
+   "51520",
+   "51580",
+   "51590",
+   "51640",
+   "51680",
+   "51690",
+   "51720",
+   "51750",
+   "51770",
+   "51775"
+  ],
+  "source": "https://www.vdh.virginia.gov/content/uploads/2020/05/Locality-to-HD-to-HPR.pdf",
+  "note": "VDH health planning region; counties plus independent cities, from VDH Locality-to-HD-to-HPR table. All 133 VA county-equivalents assigned exactly once."
+ },
+ "HHS District 3, Iowa": {
+  "st": "IA",
+  "label": "HHS District 3",
+  "fips": [
+   "19005",
+   "19017",
+   "19023",
+   "19033",
+   "19037",
+   "19043",
+   "19065",
+   "19067",
+   "19069",
+   "19075",
+   "19083",
+   "19089",
+   "19127",
+   "19131",
+   "19171",
+   "19191"
+  ],
+  "source": "https://hhs.iowa.gov/media/19018/download?inline",
+  "note": "Iowa HHS District map dated 4.30.26, linked from the Iowa HHS measles page, which reports cases by \"HHS District 1-7\"."
+ },
+ "HHS District 4, Iowa": {
+  "st": "IA",
+  "label": "HHS District 4",
+  "fips": [
+   "19001",
+   "19003",
+   "19009",
+   "19029",
+   "19071",
+   "19077",
+   "19129",
+   "19137",
+   "19145",
+   "19155",
+   "19159",
+   "19165",
+   "19173",
+   "19175"
+  ],
+  "source": "https://hhs.iowa.gov/media/19018/download?inline",
+  "note": "Iowa HHS District map dated 4.30.26, linked from the Iowa HHS measles page, which reports cases by \"HHS District 1-7\"."
+ },
+ "HHS District 5, Iowa": {
+  "st": "IA",
+  "label": "HHS District 5",
+  "fips": [
+   "19015",
+   "19039",
+   "19049",
+   "19053",
+   "19073",
+   "19079",
+   "19099",
+   "19117",
+   "19121",
+   "19125",
+   "19153",
+   "19169",
+   "19181",
+   "19185"
+  ],
+  "source": "https://hhs.iowa.gov/media/19018/download?inline",
+  "note": "Iowa HHS District map dated 4.30.26, linked from the Iowa HHS measles page, which reports cases by \"HHS District 1-7\"."
+ },
+ "HHS District 6, Iowa": {
+  "st": "IA",
+  "label": "HHS District 6",
+  "fips": [
+   "19007",
+   "19011",
+   "19051",
+   "19087",
+   "19095",
+   "19101",
+   "19107",
+   "19111",
+   "19123",
+   "19135",
+   "19157",
+   "19177",
+   "19179",
+   "19183"
+  ],
+  "source": "https://hhs.iowa.gov/media/19018/download?inline",
+  "note": "Iowa HHS District map dated 4.30.26, linked from the Iowa HHS measles page, which reports cases by \"HHS District 1-7\"."
+ },
+ "HHS District 7, Iowa": {
+  "st": "IA",
+  "label": "HHS District 7",
+  "fips": [
+   "19013",
+   "19019",
+   "19031",
+   "19045",
+   "19055",
+   "19057",
+   "19061",
+   "19097",
+   "19103",
+   "19105",
+   "19113",
+   "19115",
+   "19139",
+   "19163"
+  ],
+  "source": "https://hhs.iowa.gov/media/19018/download?inline",
+  "note": "Iowa HHS District map dated 4.30.26, linked from the Iowa HHS measles page, which reports cases by \"HHS District 1-7\"."
+ },
+ "East Tennessee Region, Tennessee": {
+  "st": "TN",
+  "label": "East Tennessee Region",
+  "fips": [
+   "47001",
+   "47009",
+   "47013",
+   "47025",
+   "47029",
+   "47057",
+   "47063",
+   "47089",
+   "47105",
+   "47123",
+   "47129",
+   "47145",
+   "47151",
+   "47155",
+   "47173"
+  ],
+  "source": "https://www.tn.gov/health/health-program-areas/localdepartments/east-region.html",
+  "note": "15 counties; excludes Knox (Knox County Health Department, metro). tn.gov returned 403 to direct fetch; list confirmed via TDH pages in search results (regional office contact page, 2010 TDH release, Healthy Development Coordinators page)."
+ },
+ "Mid-Cumberland Region, Tennessee": {
+  "st": "TN",
+  "label": "Mid-Cumberland Region",
+  "fips": [
+   "47021",
+   "47043",
+   "47083",
+   "47085",
+   "47125",
+   "47147",
+   "47149",
+   "47161",
+   "47165",
+   "47169",
+   "47187",
+   "47189"
+  ],
+  "source": "https://www.tn.gov/health/health-program-areas/localdepartments/mid-cumberland-region.html",
+  "note": "12 counties; excludes Davidson (Metro Nashville Public Health). tn.gov blocked direct fetch; confirmed via TDH Healthy Development Coordinators and regional contact pages in search results."
+ },
+ "Upper Cumberland Region, Tennessee": {
+  "st": "TN",
+  "label": "Upper Cumberland Region",
+  "fips": [
+   "47015",
+   "47027",
+   "47035",
+   "47041",
+   "47049",
+   "47087",
+   "47111",
+   "47133",
+   "47137",
+   "47141",
+   "47159",
+   "47175",
+   "47177",
+   "47185"
+  ],
+  "source": "https://www.tn.gov/health/health-program-areas/localdepartments/upper-cumberland-region.html",
+  "note": "14 counties (TDH regional director posting says 14 counties). tn.gov blocked direct fetch; confirmed via TDH pages in search results."
+ },
+ "Memphis-Shelby County Region, Tennessee": {
+  "st": "TN",
+  "label": "Memphis-Shelby County",
+  "fips": [
+   "47157"
+  ],
+  "source": "https://www.tn.gov/health/health-program-areas/localdepartments.html",
+  "note": "Shelby County only (Shelby County Health Department, one of six TDH metro regions)."
+ },
+ "Nashville-Davidson County Region, Tennessee": {
+  "st": "TN",
+  "label": "Nashville-Davidson County",
+  "fips": [
+   "47037"
+  ],
+  "source": "https://www.tn.gov/health/health-program-areas/localdepartments.html",
+  "note": "Davidson County only (Metro Public Health Department of Nashville/Davidson County)."
+ },
+ "Region 1, Louisiana": {
+  "st": "LA",
+  "label": "Region 1 (Greater New Orleans)",
+  "fips": [
+   "22051",
+   "22071",
+   "22075",
+   "22087"
+  ],
+  "source": "https://ldh.la.gov/ophregions",
+  "note": "LDH Office of Public Health Region 1 (Greater New Orleans). Parishes."
+ },
+ "Region 9, Louisiana": {
+  "st": "LA",
+  "label": "Region 9 (Northshore)",
+  "fips": [
+   "22063",
+   "22091",
+   "22103",
+   "22105",
+   "22117"
+  ],
+  "source": "https://www.ldh.la.gov/oph-regional-offices/region/9",
+  "note": "LDH OPH Region 9 (Northshore). Parishes."
+ },
+ "Twin Cities Metro Area, Minnesota": {
+  "st": "MN",
+  "label": "Twin Cities Metro Area",
+  "fips": [
+   "27003",
+   "27019",
+   "27037",
+   "27053",
+   "27123",
+   "27139",
+   "27163"
+  ],
+  "source": "https://www.health.state.mn.us/diseases/reportable/dcn/index.html",
+  "note": "MDH \"Metropolitan\" district = the seven-county metro; same set in MDH Metro preparedness region profile (health.mn.gov/communities/ep/regional/metro.pdf). MDH measles releases say \"Twin Cities metro area\" without restating the counties."
+ },
+ "Coastal Health District, Georgia": {
+  "st": "GA",
+  "label": "Coastal Health District",
+  "fips": [
+   "13029",
+   "13039",
+   "13051",
+   "13103",
+   "13127",
+   "13179",
+   "13183",
+   "13191"
+  ],
+  "source": "https://dph.georgia.gov/document/document/short-district-office-directory-and-map/download",
+  "note": "Georgia DPH District 9-1 (Coastal); also coastalhealthdistrict.org."
+ },
+ "North, Alabama": {
+  "st": "AL",
+  "label": "Northern Public Health District",
+  "fips": [
+   "01033",
+   "01043",
+   "01059",
+   "01071",
+   "01077",
+   "01079",
+   "01083",
+   "01089",
+   "01093",
+   "01095",
+   "01103",
+   "01133"
+  ],
+  "source": "https://www.alabamapublichealth.gov/blog/assets/countycontacts.pdf",
+  "note": "ADPH Northern District per roster dated 3.25.2026 (12 counties). ADPH measles releases (2025 child case, Oct 2026 Huntsville case) say \"North Alabama\" informally; mapping the tracker label to the Northern District is an assumption. The Oct 2026 case (Huntsville, Madison County) falls inside it."
+ }
+}

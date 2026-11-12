@@ -762,22 +762,40 @@ with data through November 6, 2026 (first pull: through September 25, 2026;
 **Coverage.** January 2025 on. Only counties with at least one case. The build
 sums by calendar year of the report date; the page shows 2025 and 2026 (2026
 through the last report date, labeled as such). Rows that are not one county
-("Unknown County, X" and health regions such as "Region 1, Louisiana") are
-filed under their own state's unknown key, from the state named in the row,
-and never drawn: the tracker gives some of them a real county's code
+("Unknown County, X", rows with no county code, and health regions such as
+"Region 1, Louisiana") are filed under their own state's key, from the state
+named in the row: the tracker gives some of them a real county's code
 (Oklahoma's unknown cases, Louisiana's Region 1 under Orleans Parish) or
-another state's code (Maryland's unknown cases carry 23, Maine's). Utah's
-health-district rows carry no code and are not drawn either. For years before 2025,
+another state's code (Maryland's unknown cases carry 23, Maine's).
+
+**Health regions.** Some states report cases for a health district or region,
+not a county. `data/regions.json` lists each region the tracker names whose
+counties are published by the state health department, with the counties'
+FIPS codes and the source: Utah's five health districts, Virginia's five
+health planning regions (VDH locality table), Iowa's HHS Districts 3 to 7
+(Iowa HHS district map, April 30, 2026), Tennessee's East Tennessee,
+Mid-Cumberland and Upper Cumberland regions, Louisiana's Regions 1 and 9,
+Minnesota's Twin Cities Metro Area (seven counties), Georgia's Coastal Health
+District, and Alabama's Northern Public Health District (the tracker's "North,
+Alabama"). The state page draws each region's cases as one circle with a dashed
+ring at the middle of its counties' centers, and its hover box names the
+region, its counties and its count. Tennessee's Memphis-Shelby and
+Nashville-Davidson regions are one county each and are drawn as those counties.
+Rows the map cannot place (unknown county, and four region names with no
+official county list: Iowa's 2025 "Central", "Eastern" and "Western",
+Illinois's "Metro East", and "Kansas City, Missouri", a city that spans parts
+of four counties) are counted, and the state page states how many cases that
+year are not drawn. The build checks that county, region and not-placed cases
+add to the tracker total. For years before 2025,
 with measles chosen, the state page says that county counts start in 2025 and
 earlier years show state totals only, so a map with no circles is not read as
 a year with no cases.
 
 **Known quirks.** Dates are report dates, not illness dates. Kansas withholds
-counts under five by county, Oklahoma gives no county, Tennessee reports by
-region and Utah reports by health district; those cases sit in "unknown county"
-rows and do not appear on a county map. In 2025 that is 262 of 2,286 cases (the tracker files Oklahoma's 17 unknown-county cases under Oklahoma County's code; the build moves them to the unknown rows), and
-Utah's Southwest district (155) is the largest. Rows with no location id (6
-rows, 1 of them in 2025) are kept with the unknown-county rows. The 2025 county sum (2,286) is close to but not the same as CDC's
+counts under five by county, Oklahoma gives no county, and several states report
+some cases by region (see Health regions). The tracker files Oklahoma's 17
+unknown-county cases in 2025 under Oklahoma County's code; the build moves them
+to the not-placed rows. The 2025 county sum (2,286) is close to but not the same as CDC's
 provisional state sum for 2025 (2,026 in our weekly extract); the two are
 different compilations and neither is final.
 

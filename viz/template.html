@@ -1125,35 +1125,54 @@ function stateSvg(st) {
     const el = sh.cc[f]; if (!el) continue;
     dots += `<circle cx="${el[0]}" cy="${el[1]}" r="${sw * (2.2 + Math.sqrt(n) * 1.1)}" fill="${CASE_DOT}" fill-opacity=".85" stroke="#fff" stroke-width="${sw * 0.8}" pointer-events="none"/>`;
   }
+  // cases a state reports for a health district or region, not one county: one circle with a dashed ring at the
+  // middle of the region's counties, drawn under the county circles so the smaller ones stay visible
+  let rdots = "";
+  if (measlesOn) for (const [k, g] of Object.entries(D.cregion[st] || {})) {
+    const n = g.y[y], pts = g.f.map(f => sh.cc[f]).filter(Boolean); if (!n || !pts.length) continue;
+    const cx = pts.reduce((a, p) => a + p[0], 0) / pts.length, cy = pts.reduce((a, p) => a + p[1], 0) / pts.length;
+    rdots += `<circle data-r="${esc(k)}" cx="${cx}" cy="${cy}" r="${sw * (2.2 + Math.sqrt(n) * 1.1)}" fill="${CASE_DOT}" fill-opacity=".85" stroke="#fff" stroke-width="${sw * 1.1}" stroke-dasharray="${sw * 2.4} ${sw * 1.4}" style="cursor:pointer"/>`;
+  }
+  const unplaced = measlesOn ? (D.cunplaced[st] || {})[y] || 0 : 0;
+  const circTxt = `Circles: confirmed measles cases in ${y}${y === +D.cmeaslesThrough.slice(0, 4) ? ` through ${mdy(D.cmeaslesThrough)}` : ""}, sized by count${rdots ? `. A dashed ring marks cases ${esc(ST[st].n)} reported for a health district or region, not one county, placed at the middle of its counties` : ""}`;
+  const unTxt = unplaced ? `<p class="note">${fmt(unplaced)} ${unplaced === 1 ? "case" : "cases"} in ${y} ${unplaced === 1 ? "was" : "were"} reported with no county or region the map can place, so ${unplaced === 1 ? "it is" : "they are"} not drawn.</p>` : "";
+  dots = rdots + dots;
   const svg = `<svg viewBox="${sh.box.join(" ")}" role="img" aria-label="County map of ${esc(ST[st].n)}">${paths}<path d="${sh.d}" fill="none" stroke="#55534e" stroke-width="${sw}" stroke-linejoin="round" pointer-events="none"/>${dots}</svg>`;
   let cap;
-  if (any) cap = `<div class="mapkey"><b>${meta.age && meta.age !== "Kindergarten" ? `Children with 2 MMR doses (${esc(meta.age)}, as ${esc(inName(st))} reports it)` : "Kindergartners with 2 MMR doses"}, ${vy - 1}-${String(vy).slice(2)} school year, by county${latest ? `, the latest available (none yet for ${S.year - 1}-${String(S.year).slice(2)})` : ""}</b><div>${MMR_BINS.slice().reverse().map(b => `<span><i style="background:${b[1]}"></i>${b[2]}</span>`).join("")}<span><i style="background:${NOFIG};outline:1px solid ${NOFIG_LINE}"></i>no figure</span></div>${dots ? `<div><span><svg width="9" height="9" aria-hidden="true"><circle cx="4.5" cy="4.5" r="4" fill="${CASE_DOT}"/></svg> Circles: confirmed measles cases in ${y}${y === +D.cmeaslesThrough.slice(0, 4) ? ` through ${mdy(D.cmeaslesThrough)}` : ""}, sized by count</span></div>` : ""}</div>`;
+  if (any) cap = `<div class="mapkey"><b>${meta.age && meta.age !== "Kindergarten" ? `Children with 2 MMR doses (${esc(meta.age)}, as ${esc(inName(st))} reports it)` : "Kindergartners with 2 MMR doses"}, ${vy - 1}-${String(vy).slice(2)} school year, by county${latest ? `, the latest available (none yet for ${S.year - 1}-${String(S.year).slice(2)})` : ""}</b><div>${MMR_BINS.slice().reverse().map(b => `<span><i style="background:${b[1]}"></i>${b[2]}</span>`).join("")}<span><i style="background:${NOFIG};outline:1px solid ${NOFIG_LINE}"></i>no figure</span></div>${dots ? `<div><span><svg width="9" height="9" aria-hidden="true"><circle cx="4.5" cy="4.5" r="4" fill="${CASE_DOT}"/></svg> ${circTxt}</span></div>` : ""}</div>`;
   else if (meta.unmapped && meta.unmapped[y]) cap = `<p class="note">${esc(ST[st].n)} reported ${y - 1}-${String(y).slice(2)} by ${meta.unmapped[y][0]} planning regions, not by county, so the map cannot draw them. The regions ranged from ${meta.unmapped[y][1].toFixed(1)}% to ${meta.unmapped[y][2].toFixed(1)}%.</p>`;
   else if (!meta.n) cap = `<p class="note">No county vaccination figures are available for ${esc(inName(st))}.</p>`;
   else {   // the years the map can actually draw, taken from the county figures themselves
     const ys = [...new Set(Object.keys(sh.c).flatMap(f => Object.keys(D.cmmr[f] || {}).map(Number)))].sort((a, b) => a - b), runs = [];
-    if (!ys.length) return svg + `<p class="note">No county vaccination figures are available for ${esc(inName(st))}.</p>` + (dots ? `<div class="mapkey"><span><svg width="9" height="9" aria-hidden="true"><circle cx="4.5" cy="4.5" r="4" fill="${CASE_DOT}"/></svg> Circles: confirmed measles cases in ${y}, sized by count</span></div>` : "");
+    if (!ys.length) return svg + `<p class="note">No county vaccination figures are available for ${esc(inName(st))}.</p>` + unTxt + (dots ? `<div class="mapkey"><span><svg width="9" height="9" aria-hidden="true"><circle cx="4.5" cy="4.5" r="4" fill="${CASE_DOT}"/></svg> ${circTxt}</span></div>` : "");
     for (const v of ys) { const r = runs[runs.length - 1]; if (r && v === r[1] + 1) r[1] = v; else runs.push([v, v]); }
     cap = `<p class="note">County vaccination figures for ${esc(inName(st))} cover school ${runs.length === 1 && runs[0][0] === runs[0][1] ? "year" : "years"} ${runs.map(r => r[0] === r[1] ? schoolYear(r[0]) : schoolYear(r[0]) + " to " + schoolYear(r[1])).join(", ")}${meta.unmapped ? `; ${Object.keys(meta.unmapped).map(v => schoolYear(+v)).join(", ")} was reported by planning region, which the map cannot draw` : ""}. Move the year there to color the map.</p>`;
   }
   // the circles get their own line whenever they are drawn, including years with no county vaccination figures
-  const ckey = dots ? `<div class="mapkey"><span><svg width="9" height="9" aria-hidden="true"><circle cx="4.5" cy="4.5" r="4" fill="${CASE_DOT}"/></svg> Circles: confirmed measles cases in ${y}${y === +D.cmeaslesThrough.slice(0, 4) ? ` through ${mdy(D.cmeaslesThrough)}` : ""}, sized by count</span></div>` : "";
+  const ckey = dots ? `<div class="mapkey"><span><svg width="9" height="9" aria-hidden="true"><circle cx="4.5" cy="4.5" r="4" fill="${CASE_DOT}"/></svg> ${circTxt}</span></div>` : "";
   // before the tracker starts, say so, so a map with no circles is not read as a year with no cases
   const early = measlesOn && y < CMEASLES_FIRST ? `<p class="note">County measles counts start in ${CMEASLES_FIRST}, from the Johns Hopkins measles tracker. Earlier years show state totals only.</p>` : "";
-  return svg + cap + (any ? "" : ckey) + early;
+  return svg + cap + (any ? "" : ckey) + unTxt + early;
 }
 function countyVaxYear(st) {
   if (S.year <= CMMR_LAST) return S.year;
   const sh = D.shapes[st], cys = Object.keys(sh.c).flatMap(f => Object.keys(D.cmmr[f] || {}).map(Number));
   return cys.length ? Math.max(...cys) : S.year;
 }
-function countyTip(f, e) {
-  const st = S.sel, sh = D.shapes[st], y = S.year, tip = $("tip");
+function countyTip(f, e, r) {
+  const st = S.sel, sh = D.shapes[st], y = S.year, tip = $("tip"), thru = y === +D.cmeaslesThrough.slice(0, 4) ? ` through ${mdy(D.cmeaslesThrough)}` : "";
+  if (r && (D.cregion[st] || {})[r]) {   // a health district or region's circle
+    const g = D.cregion[st][r], names = g.f.map(c => sh.c[c] && sh.c[c][0]).filter(Boolean);
+    tip.innerHTML = `<h4>${esc(g.n)}, ${esc(ST[st].n)}</h4><div>Takes in ${names.length > 8 ? `${names.length} counties${st === "VA" ? " and independent cities" : ""}` : esc(names.length > 1 ? names.slice(0, -1).join(", ") + " and " + names[names.length - 1] : names[0])}.</div>`
+      + `<div class="q">Confirmed measles cases reported in ${y}${thru}: <b>${fmt(g.y[y] || 0)}</b></div><div class="q">${esc(ST[st].n)} reported these cases for the area as a whole, not by county.</div>`;
+    tip.style.display = "block"; placeTip(e.clientX, e.clientY); return;
+  }
   if (!f) { tip.style.display = "none"; return; }
   const vy = countyVaxYear(st), v = (D.cmmr[f] || {})[vy], n = (D.cmeasles[f] || {})[y], meta = D.cmeta[st] || {};
   tip.innerHTML = `<h4>${esc(sh.c[f][0])}, ${esc(ST[st].n)}</h4>`
     + (v != null ? `<div>2 MMR doses, ${vy - 1}-${String(vy).slice(2)}${vy !== y ? " (latest available)" : ""}: <b>${cpct(v)}%</b></div><div class="q">${esc(meta.age || "")}${meta.origin ? ", " + esc(meta.origin.toLowerCase()) : ""}. Compiled by Johns Hopkins from state reports.</div>` : `<div style="color:#8a8780">No county vaccination figure for ${y}.</div>`)
-    + (n ? `<div class="q">Confirmed measles cases reported in ${y}${y === +D.cmeaslesThrough.slice(0, 4) ? ` through ${mdy(D.cmeaslesThrough)}` : ""}: <b>${fmt(n)}</b></div>` : "");
+    + (n ? `<div class="q">Confirmed measles cases reported in ${y}${thru}: <b>${fmt(n)}</b></div>` : "")
+    + (S.on.has("measles") ? Object.values(D.cregion[st] || {}).filter(g => g.f.includes(f) && g.y[y]).map(g => `<div class="q">Part of ${esc(g.n)}, which reported <b>${fmt(g.y[y])}</b> ${g.y[y] === 1 ? "case" : "cases"} in ${y} for the area as a whole.</div>`).join("") : "");
   tip.style.display = "block"; placeTip(e.clientX, e.clientY);
 }
 function kpiHtml(st) {
@@ -1331,14 +1350,14 @@ function init() {
   $("covbar").addEventListener("click", e => { const b = e.target.closest(".covgo"); if (b) { setPlaying(false); setYear(+b.dataset.y); } });
   $("play").addEventListener("click", () => setPlaying(!S.playing));
   $("back").addEventListener("click", closeState);
-  $("smap").addEventListener("pointermove", e => countyTip(e.target.dataset && e.target.dataset.f, e));
+  $("smap").addEventListener("pointermove", e => countyTip(e.target.dataset && e.target.dataset.f, e, e.target.dataset && e.target.dataset.r));
   $("smap").addEventListener("pointerleave", e => { if (e.pointerType === "mouse") countyTip(null); });
-  $("smap").addEventListener("pointerdown", e => { if (e.pointerType !== "mouse") countyTip(e.target.dataset && e.target.dataset.f, e); });
+  $("smap").addEventListener("pointerdown", e => { if (e.pointerType !== "mouse") countyTip(e.target.dataset && e.target.dataset.f, e, e.target.dataset && e.target.dataset.r); });
   // on a touch screen a tapped county keeps its box until the next tap somewhere else, or a scroll
   document.addEventListener("pointerdown", e => {
     lastPointer = e.pointerType;
     if (e.pointerType === "mouse") return;
-    if (!(e.target.dataset && e.target.dataset.f)) { countyTip(null); if (S.hover) setHover(null); }
+    if (!(e.target.dataset && (e.target.dataset.f || e.target.dataset.r))) { countyTip(null); if (S.hover) setHover(null); }
   }, true);
   addEventListener("scroll", () => { if (lastPointer !== "mouse" && $("tip").style.display === "block") { countyTip(null); if (S.hover) setHover(null); } }, { passive: true });
   $("tbl").addEventListener("toggle", renderTable);

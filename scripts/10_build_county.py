@@ -49,12 +49,16 @@ if __name__ == "__main__":
     c["fips"] = c.location_id.fillna("00000").str.zfill(5)   # a row with no id is kept with the unknown-county rows, not dropped
     c["location_name"] = c.location_name.fillna("unknown")
     # rows that are not one county ("Unknown County, X" and health regions such as "Region 1, Louisiana") are filed
-    # under their state's own unknown key, 00 + state code, taken from the state named in the row: the tracker gives
+    # under their state's own key, 00 + state code, taken from the state named in the row: the tracker gives
     # some of them a real county's code (Oklahoma, Louisiana Region 1) or another state's code (Maryland's carries 23,
-    # which is Maine's). They are never drawn as a county.
+    # which is Maine's). They are never drawn as a county; 08_build_data.py places the health regions listed in
+    # data/regions.json at the middle of their counties and counts the rest as not placed.
     geo = json.loads((RAW / "geo" / "counties-10m.json").read_text())   # state names and codes from the map's own geography
     name_fips = {g["properties"]["name"]: g["id"] for g in geo["objects"]["states"]["geometries"]}
-    whole = c.location_name.str.startswith("Unknown County") | c.location_name.str.contains(r"\bRegion\b")
+    # a row is not one county when the tracker says so by name, or gives it no county code (0, or only the state's
+    # two digits, as for Utah's health districts and Iowa's HHS districts)
+    whole = (c.location_name.str.startswith("Unknown County") | c.location_name.str.contains(r"\bRegion\b")
+             | c.fips.str.startswith("000"))
     c.loc[whole, "fips"] = "000" + c.loc[whole, "location_name"].str.split(", ").str[-1].str.strip().map(name_fips)
     assert c.fips.notna().all(), "a row not tied to a county names no state the map knows"
     c["cases"] = c.value.astype(int)

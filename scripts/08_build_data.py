@@ -89,12 +89,29 @@ def county():
         M.setdefault(r.fips, {})[int(r.year)] = r.pct
     cm = pd.read_csv(DATA / "county_measles.csv", dtype={"fips": str})
     cm = cm[cm.year.between(Y0, Y1)]
-    K = {}
+    # rows filed under a state's own key (000 + state code) are not one county: a health region listed in
+    # data/regions.json is kept with its counties, to be drawn at their middle; the rest are counted as not placed
+    regions = json.loads((DATA / "regions.json").read_text())
+    K, R, U = {}, {}, {}
     for r in cm.itertuples():
-        K.setdefault(r.fips, {})[int(r.year)] = K.get(r.fips, {}).get(int(r.year), 0) + int(r.cases)   # placeholder codes repeat
+        y, n = int(r.year), int(r.cases)
+        if not r.fips.startswith("000"):
+            K.setdefault(r.fips, {})[y] = K.get(r.fips, {}).get(y, 0) + n
+        elif r.location_name in regions and len(regions[r.location_name]["fips"]) == 1:   # a region that is one whole county
+            f = regions[r.location_name]["fips"][0]
+            K.setdefault(f, {})[y] = K.get(f, {}).get(y, 0) + n
+        elif r.location_name in regions:
+            g = regions[r.location_name]
+            e = R.setdefault(g["st"], {}).setdefault(r.location_name, {"n": g["label"], "f": g["fips"], "y": {}})
+            e["y"][y] = e["y"].get(y, 0) + n
+        else:
+            st = FIPS[r.fips[3:]]
+            U.setdefault(st, {})[y] = U.get(st, {}).get(y, 0) + n
+    assert sum(sum(v.values()) for v in K.values()) + sum(sum(e["y"].values()) for g in R.values() for e in g.values()) \
+        + sum(sum(v.values()) for v in U.values()) == cm.cases.sum(), "county, region and not-placed cases must add to the tracker total"
     meta = pd.read_csv(DATA / "county_mmr_states.csv").fillna("")
     T = {r.st: {"years": r.years, "unit": r.unit.strip(), "age": r.age, "origin": r.origin, "n": int(r.county_rows)} for r in meta.itertuples()}
-    return M, K, T, mmr
+    return M, K, T, mmr, R, U
 
 
 def kpis(years):
@@ -245,7 +262,7 @@ def main():
         seen.add(key)
     ms.sort(key=lambda m: m["date"])
 
-    cmmr, cmeasles, cmeta, mmr_rows = county()
+    cmmr, cmeasles, cmeta, mmr_rows, cregion, cunplaced = county()
     kpi, party = kpis(years)
     shp = shapes()
     # county figures the map cannot draw: the file has a value but no shape carries that code
@@ -257,7 +274,7 @@ def main():
     if len(lost):
         print(len(lost), "county MMR rows have no shape:", lost.groupby(["st", "year"]).size().to_dict())
     out = {
-        "kpis": kpi, "party": party, "shapes": shp, "cmmr": cmmr, "cmeasles": cmeasles, "cmeaslesThrough": json.loads((DATA / "county_measles_meta.json").read_text())["through"], "cmeta": cmeta,
+        "kpis": kpi, "party": party, "shapes": shp, "cmmr": cmmr, "cmeasles": cmeasles, "cregion": cregion, "cunplaced": cunplaced, "cmeaslesThrough": json.loads((DATA / "county_measles_meta.json").read_text())["through"], "cmeta": cmeta,
         "y0": Y0, "y1": Y1, "unit": UNIT, "diseases": DISEASES, "vaccines": VACCINES, "vaxnote": VAXNOTE,
         "states": [{"k": s, "n": STATES[s], "c": GRID[s][0], "r": GRID[s][1]} for s in sorted(STATES)],
         "pop": P, "popCarried": Y1 if pop_carried else None, "partial": json.loads((DATA / "cdc_recent_meta.json").read_text()), "income": INC, "cases": C, "src": S, "weeks": W, "vax": V, "licensed": L, "milestones": ms,
