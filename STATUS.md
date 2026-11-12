@@ -43,6 +43,7 @@ None.
   look before it goes live.
 
 ## Log
+- 2026-11-12: PAHO check, no ruling yet (commission meets Nov 10-13). Mike's PAHO sentence now "is meeting"; draft re-pushed.
 
 - 2026-10-01 Step 1 opened. Topic: infectious disease incidence by state as far
   back as good data goes, drawn with people icons on a state map, with
