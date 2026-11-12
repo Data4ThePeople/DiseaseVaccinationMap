@@ -4,6 +4,7 @@ subtitle: "Utah’s outbreak was foreshadowed in public data for a decade. The p
 slug: measles-public-data-warning
 date: 2026-11-12
 updated: 2026-11-12
+prismic_id: avUTphEAACcAX8fh
 section: Data 4 Thought
 author: Michael S. Kinch
 author_url: https://www.data4thepeople.com/authors/michael-kinch
@@ -56,3 +57,5 @@ Open data can also change the timing of public attention. If a small team with n
 Measles is the canary: the most contagious of the vaccine-preventable diseases, and the first to return when coverage slips. Whooping cough and mumps tend to follow, and the map tracks them too.
 
 Two centuries of vaccine history show that resistance to vaccination never fully disappears. The past decade in Utah shows something else: its consequences are visible long before they arrive. The question is whether anyone is looking.
+
+*The charts in this essay come from Data 4 The People's [free interactive map of infectious disease and vaccination by state, 1920 to 2026](https://www.data4thepeople.com/p/disease-vaccination-viz), built from CDC, U.S. Public Health Service and Johns Hopkins University data.*
